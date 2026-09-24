@@ -10,7 +10,7 @@ title: Countdown
 
 ## Usage
 
-To apply this component, add the `gls-countdown` attribute to a container element and define a date when the countdown should expire. Just add `date: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support), e.g. `{%isodate%}` (UTC time).
+To apply this component, add the `gls-countdown` attribute to a container element and define a date when the countdown should expire. Just add `date: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support), e.g. `2099-12-31T23:59:59Z` (UTC time).
 
 Add the following classes to child elements to apply the necessary functionality.
 
@@ -23,7 +23,7 @@ Add the following classes to child elements to apply the necessary functionality
 | `.gls-countdown-number`  | Add this class to use it as selector for custom CSS style. |
 
 ```html
-<div gls-countdown="date: {%isodate%}">
+<div gls-countdown="date: 2099-12-31T23:59:59Z">
     <span class="gls-countdown-number gls-countdown-days"></span>
     <span class="gls-countdown-number gls-countdown-hours"></span>
     <span class="gls-countdown-number gls-countdown-minutes"></span>
@@ -34,11 +34,11 @@ Add the following classes to child elements to apply the necessary functionality
 To style the countdown use style classes from the [Base component](https://getuikit.com/docs/base), [Heading component](https://getuikit.com/docs/heading) or [Text component](https://getuikit.com/docs/text).
 
 ```html
-<div class="gls-h1" gls-countdown="date: {%isodate%}"></div>
+<div class="gls-h1" gls-countdown="date: 2099-12-31T23:59:59Z"></div>
 ```
 
 <div class="gls-docs-example">
-<div class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin" gls-grid gls-countdown="date: {%isodate%}">
+<div class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin" gls-grid gls-countdown="date: 2099-12-31T23:59:59Z">
     <div>
         <div class="gls-countdown-number gls-countdown-days"></div>
     </div>
@@ -55,7 +55,7 @@ To style the countdown use style classes from the [Base component](https://getui
 </div>
 
 ```html
-<div class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin" gls-grid gls-countdown="date: {%isodate%}">
+<div class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin" gls-grid gls-countdown="date: 2099-12-31T23:59:59Z">
     <div>
         <div class="gls-countdown-number gls-countdown-days"></div>
     </div>
@@ -78,7 +78,7 @@ To style the countdown use style classes from the [Base component](https://getui
 To insert a separator between each number, use the `.gls-countdown-separator` class.
 
 ```html
-<div gls-countdown="date: {%isodate%}">
+<div gls-countdown="date: 2099-12-31T23:59:59Z">
     <span class="gls-countdown-number gls-countdown-days"></span>
     <span class="gls-countdown-separator">:</span>
     <span class="gls-countdown-number gls-countdown-hours"></span>
@@ -90,7 +90,7 @@ To insert a separator between each number, use the `.gls-countdown-separator` cl
 ```
 
 <div class="gls-docs-example">
-<div class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin" gls-grid gls-countdown="date: {%isodate%}">
+<div class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin" gls-grid gls-countdown="date: 2099-12-31T23:59:59Z">
     <div>
         <div class="gls-countdown-number gls-countdown-days"></div>
     </div>
@@ -110,7 +110,7 @@ To insert a separator between each number, use the `.gls-countdown-separator` cl
 </div>
 
 ```html
-<div class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin" gls-grid gls-countdown="date: {%isodate%}">
+<div class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin" gls-grid gls-countdown="date: 2099-12-31T23:59:59Z">
     <div>
         <div class="gls-countdown-number gls-countdown-days"></div>
     </div>
@@ -145,7 +145,7 @@ To add a label to each number, use the `.gls-countdown-label` class.
 To style the labels use style classes from the [Base component](https://getuikit.com/docs/base), [Heading component](https://getuikit.com/docs/heading) or [Text component](https://getuikit.com/docs/text).
 
 <div class="gls-docs-example">
-<div class="gls-grid-small gls-child-width-auto gls-text-center gls-margin" gls-grid gls-countdown="date: {%isodate%}">
+<div class="gls-grid-small gls-child-width-auto gls-text-center gls-margin" gls-grid gls-countdown="date: 2099-12-31T23:59:59Z">
     <div>
         <div class="gls-h1 gls-countdown-number gls-countdown-days"></div>
         <div class="gls-countdown-label gls-text-small gls-visible@s">Days</div>
@@ -169,7 +169,7 @@ To style the labels use style classes from the [Base component](https://getuikit
 </div>
 
 ```html
-<div class="gls-grid-small gls-child-width-auto gls-text-center gls-margin" gls-grid gls-countdown="date: {%isodate%}">
+<div class="gls-grid-small gls-child-width-auto gls-text-center gls-margin" gls-grid gls-countdown="date: 2099-12-31T23:59:59Z">
     <div>
         <div class="gls-h1 gls-countdown-number gls-countdown-days"></div>
         <div class="gls-countdown-label gls-text-small gls-visible@s">Days</div>

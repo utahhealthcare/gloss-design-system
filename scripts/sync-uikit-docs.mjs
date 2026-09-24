@@ -58,6 +58,12 @@ function convertExampleFences(source) {
     return output.join('\n');
 }
 
+function replaceUiKitLiquidTags(source) {
+    // UIkit's site defines this tag in a custom plugin. Use a stable,
+    // far-future value so the imported example works in plain Jekyll.
+    return source.replaceAll('{%isodate%}', '2099-12-31T23:59:59Z');
+}
+
 function rewriteDocumentationLinks(source) {
     return source.replace(/\]\(([^)\s]+\.md)(#[^)]*)?\)/g, (_match, file, hash = '') => {
         const slug = path.posix.basename(file, '.md');
@@ -90,7 +96,9 @@ async function renderPage(page, sourceRevision) {
     const destinationPath = path.resolve(projectDirectory, page.destination);
     const source = await readFile(sourcePath, 'utf8');
     const transformed = rewriteDocumentationLinks(
-        convertExampleFences(replaceGlossClasses(source)),
+        convertExampleFences(
+            replaceUiKitLiquidTags(replaceGlossClasses(source)),
+        ),
     );
     const rendered = addFrontMatter(
         transformed,
