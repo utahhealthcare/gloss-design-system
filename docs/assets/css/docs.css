@@ -56,15 +56,17 @@ body {
     position: relative;
 }
 
-.docs-sidebar-left + .docs-main {
-    padding-inline-start: var(--docs-sidebar-left-width);
-}
-
 .docs-sidebar-right {
     position: absolute;
     inset-block-start: 0;
     inset-inline-start: calc(100% + var(--docs-sidebar-right-left));
     width: var(--docs-sidebar-right-width);
+}
+
+@media (min-width: 960px) {
+    .docs-sidebar-left + .docs-main {
+        padding-inline-start: var(--docs-sidebar-left-width);
+    }
 }
 
 @media (min-width: 1200px) {
