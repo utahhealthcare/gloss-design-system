@@ -17,15 +17,24 @@ body {
     border-bottom: 1px solid #e5e5e5;
 }
 
+.docs-header .gls-navbar-nav > li > a,
+.docs-header .gls-navbar-item {
+    color: #ffffff;
+}
+
+.docs-header .gls-navbar-nav > li > a:hover,
+.docs-header .gls-navbar-item:hover {
+    color: #ffffff;
+}
+
 .docs-wordmark {
-    color: inherit;
     font-size: 1.125rem;
     font-weight: 600;
     text-decoration: none;
 }
 
 .docs-wordmark span {
-    color: #7c0000;
+    color: inherit;
 }
 
 .docs-sidebar {
