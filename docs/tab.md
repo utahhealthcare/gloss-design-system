@@ -12,8 +12,8 @@ title: Tab
 
 The Tab component consists of clickable tabs, that are aligned side by side in a list. Its JavaScript functionality extends the [Switcher component](https://getuikit.com/docs/switcher) and is necessary to dynamically transition through different contents using the tabbed navigation.
 
-| Class/Attribute | Description                                                                                                                                                    |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Class/Attribute  | Description                                                                                                                                                    |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `gls-tab`        | Add this attribute to a `<ul>` element to define the Tab component. Use `<a>` elements as tab items within the list.                                           |
 | `.gls-active `   | Add this class to a list item to apply an active state.                                                                                                        |
 | `.gls-disabled ` | Add this class to a list item to apply a disabled state. Also remove the `href` attribute from the anchor to make it inaccessible through keyboard navigation. |
@@ -44,14 +44,16 @@ The Tab component consists of clickable tabs, that are aligned side by side in a
 </ul>
 ```
 
-***
+---
 
 ## Bottom modifier
 
 Add the `.gls-tab-bottom` class to flip tab items to the bottom.
 
 ```html
-<ul class="gls-tab-bottom" gls-tab>…</ul>
+<ul class="gls-tab-bottom" gls-tab>
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -70,7 +72,7 @@ Add the `.gls-tab-bottom` class to flip tab items to the bottom.
 </ul>
 ```
 
-***
+---
 
 ## Left/Right modifiers
 
@@ -79,9 +81,13 @@ Add the `.gls-tab-left` or `.gls-tab-right` class to align tabs vertically to th
 When using the vertical alignment, you will usually create a grid to apply the layout as seen in the [Switcher example](https://getuikit.com/docs/switcher#vertical-tabs).
 
 ```html
-<ul class="gls-tab-left" gls-tab>…</ul>
+<ul class="gls-tab-left" gls-tab>
+    …
+</ul>
 
-<ul class="gls-tab-right" gls-tab>…</ul>
+<ul class="gls-tab-right" gls-tab>
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -101,6 +107,7 @@ When using the vertical alignment, you will usually create a grid to apply the l
             <li><a href="#">Item</a></li>
         </ul>
     </div>
+
 </div>
 </div>
 
@@ -124,24 +131,28 @@ When using the vertical alignment, you will usually create a grid to apply the l
 </div>
 ```
 
-***
+---
 
 ### Responsive
 
 To change the default breakpoint between the vertical and horizontal alignment, just apply the `media` option to the attribute with the appropriate viewport width. Add a number in pixel, for example `media: 640`, or a breakpoint, for example `media: @m`.
 
 ```html
-<ul class="gls-tab-left" gls-tab="media: @s">…</ul>
+<ul class="gls-tab-left" gls-tab="media: @s">
+    …
+</ul>
 ```
 
-***
+---
 
 ## Alignment
 
 You can combine tabs with the [Flex component](https://getuikit.com/docs/flex) or the [Width component](https://getuikit.com/docs/width) to modify the alignment of the navigations.
 
 ```html
-<ul class="gls-flex-right" gls-tab>…</ul>
+<ul class="gls-flex-right" gls-tab>
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -198,7 +209,7 @@ You can combine tabs with the [Flex component](https://getuikit.com/docs/flex) o
 </div>
 ```
 
-***
+---
 
 ## Tabs and Dropdown
 
@@ -207,15 +218,15 @@ Tabs can be used to trigger a dropdown menu from the [Dropdown component](https:
 ```html
 <ul gls-tab>
     <li>
-
         <!-- This is the menu item toggling the dropdown -->
         <a href=""></a>
 
         <!-- This is the dropdown -->
         <div gls-dropdown="mode: click">
-            <ul class="gls-nav gls-dropdown-nav">…</ul>
+            <ul class="gls-nav gls-dropdown-nav">
+                …
+            </ul>
         </div>
-
     </li>
 </ul>
 ```
@@ -262,23 +273,23 @@ Tabs can be used to trigger a dropdown menu from the [Dropdown component](https:
 </ul>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option      | Value          | Default | Description                                                                                                                                                  |
-|-------------|----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `connect`   | CSS selector   | `false` | Related item's container. By default, this is the next element with the 'gls-switcher' class.                                                                 |
+| ----------- | -------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `connect`   | CSS selector   | `false` | Related item's container. By default, this is the next element with the 'gls-switcher' class.                                                                |
 | `toggle `   | CSS selector   | `> *`   | The toggle selector, which triggers content switching on click.                                                                                              |
 | `active `   | Number         | `0`     | Active index on init. Providing a negative number indicates a position starting from the end of the set.                                                     |
-| `animation` | String         | `false` | Space-separated names of [animations](https://getuikit.com/docs/animation). Comma-separated for animation out.                                                                      |
+| `animation` | String         | `false` | Space-separated names of [animations](https://getuikit.com/docs/animation). Comma-separated for animation out.                                               |
 | `duration`  | Number         | `200`   | The animation duration.                                                                                                                                      |
 | `swiping`   | Boolean        | `true`  | Use swiping.                                                                                                                                                 |
 | `media`     | Number, String | `960`   | Condition for the horizontal mode - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
-***
+---
 
 ## JavaScript
 
@@ -294,14 +305,14 @@ UIkit.tab(element, options);
 
 The following events will be triggered on the connected items of the elements with this component attached:
 
-| Name         | Description                                                                                         |
-| ------------ | --------------------------------------------------------------------------------------------------- |
-| `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event.      |
-| `show`       | Fires after an item is shown.                                                                       |
-| `shown`      | Fires after the item's show animation has been completed.                                           |
-| `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event.      |
-| `hide`       | Fires after an item's hide animation has started.                                                   |
-| `hidden`     | Fires after an item is hidden.                                                                      |
+| Name         | Description                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------- |
+| `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
+| `show`       | Fires after an item is shown.                                                                  |
+| `shown`      | Fires after the item's show animation has been completed.                                      |
+| `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
+| `hide`       | Fires after an item's hide animation has started.                                              |
+| `hidden`     | Fires after an item is hidden.                                                                 |
 
 ### Methods
 
@@ -319,17 +330,17 @@ Shows the Tab item with the given index.
 | ------- | -------------------- | ------- | -------------------------------- |
 | `index` | String, Number, Node | 0       | Tab item to show. 0 based index. |
 
-***
+---
 
 ## Accessibility
 
 The Tab component adheres to the [Tab WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *tab navigation* has the `tablist` role, and if it is a [Nav component](https://getuikit.com/docs/nav), the `aria-orientation` state is set to `vertical`.
-- The *tab navigation items* have the `presentation` role.
-- The *tab navigation links* have an ID, the `tab` role, the `aria-selected` state and the `aria-controls` property set to the ID of the respective content item.
-- The *content list* has the `presentation` role.
-- The *content list items* have the ID, the `tabpanel` role and the `aria-labelledby` property set to the ID of the respective tab.
+- The _tab navigation_ has the `tablist` role, and if it is a [Nav component](https://getuikit.com/docs/nav), the `aria-orientation` state is set to `vertical`.
+- The _tab navigation items_ have the `presentation` role.
+- The _tab navigation links_ have an ID, the `tab` role, the `aria-selected` state and the `aria-controls` property set to the ID of the respective content item.
+- The _content list_ has the `presentation` role.
+- The _content list items_ have the ID, the `tabpanel` role and the `aria-labelledby` property set to the ID of the respective tab.
 
 ### Keyboard interaction
 

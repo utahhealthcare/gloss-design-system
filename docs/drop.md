@@ -40,11 +40,13 @@ To group the toggle and the dropdown, just wrap them with a container element an
 ```html
 <div class="gls-inline">
     <button class="gls-button gls-button-default" type="button">Hover, Click</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div class="gls-card gls-card-body gls-card-default" gls-drop>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Mode
 
@@ -75,16 +77,20 @@ By default, the drop is toggled on hover and on click. Set the `mode` option to 
 ```html
 <div class="gls-inline">
     <button class="gls-button gls-button-default" type="button">Hover</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="mode: hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div class="gls-card gls-card-body gls-card-default" gls-drop="mode: hover">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 
 <div class="gls-inline">
     <button class="gls-button gls-button-default" type="button">Click</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div class="gls-card gls-card-body gls-card-default" gls-drop="mode: click">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Parent icon
 
@@ -104,12 +110,16 @@ To create a parent icon, just add the `gls-drop-parent-icon` attribute to a `<sp
 
 ```html
 <div class="gls-inline">
-    <button class="gls-button gls-button-default" type="button">Parent <span gls-drop-parent-icon></span></button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <button class="gls-button gls-button-default" type="button">
+        Parent <span gls-drop-parent-icon></span>
+    </button>
+    <div class="gls-card gls-card-body gls-card-default" gls-drop="mode: click">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Width and Grid
 
@@ -142,16 +152,18 @@ Use one of the classes from the [Width component](https://getuikit.com/docs/widt
 <div class="gls-card gls-card-body gls-card-default gls-width-large" gls-drop>
     <div class="gls-drop-grid gls-child-width-1-2@m" gls-grid>
         <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt.
         </div>
         <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt.
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Position
 
@@ -196,21 +208,27 @@ By default, the drop is positioned below the toggle. To change its position, set
 ```html
 <div class="gls-inline">
     <button class="gls-button gls-button-default" type="button">Top Right</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: top-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: top-right">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 
 <div class="gls-inline">
     <button class="gls-button gls-button-default" type="button">Bottom Center</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: bottom-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: bottom-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 
 <div class="gls-inline">
     <button class="gls-button gls-button-default" type="button">Right Top</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: right-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: right-top">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Boundary
 
@@ -237,17 +255,25 @@ By default, the drop automatically changes its positions if it exceeds the viewp
 
 ```html
 <div class="boundary gls-panel gls-placeholder gls-height-medium">
-
     <button class="gls-button gls-button-default gls-float-left" type="button">Bottom Right</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: bottom-right; boundary: !.boundary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div
+        class="gls-card gls-card-body gls-card-default"
+        gls-drop="pos: bottom-right; boundary: !.boundary"
+    >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 
     <button class="gls-button gls-button-default gls-float-right" type="button">Bottom Left</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: bottom-left; boundary: !.boundary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-
+    <div
+        class="gls-card gls-card-body gls-card-default"
+        gls-drop="pos: bottom-left; boundary: !.boundary"
+    >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Shift and flip
 
@@ -271,17 +297,25 @@ To disable automatic shifting and flipping, add the `shift: false` or `flip: fal
 
 ```html
 <div class="boundary gls-panel gls-placeholder gls-height-medium">
-
     <button class="gls-button gls-button-default gls-float-left" type="button">Bottom Right</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: bottom-right; boundary: !.boundary; shift: false; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div
+        class="gls-card gls-card-body gls-card-default"
+        gls-drop="pos: bottom-right; boundary: !.boundary; shift: false; flip: false"
+    >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 
     <button class="gls-button gls-button-default gls-float-right" type="button">Bottom Left</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: bottom-left; boundary: !.boundary; shift: false; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-
+    <div
+        class="gls-card gls-card-body gls-card-default"
+        gls-drop="pos: bottom-left; boundary: !.boundary; shift: false; flip: false"
+    >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Auto update
 
@@ -291,7 +325,7 @@ By default, the drop repositions on scrolling. To disable dynamic positioning, a
 <div gls-drop="auto-update: false"></div>
 ```
 
-***
+---
 
 ## Target
 
@@ -318,17 +352,27 @@ By default, the drop is aligned to its toggle. To position the drop to a differe
 
 ```html
 <div class="target gls-panel gls-placeholder gls-height-medium">
-
     <button class="gls-button gls-button-default gls-float-left" type="button">Bottom Left</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: bottom-left; target: !.target">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div
+        class="gls-card gls-card-body gls-card-default"
+        gls-drop="pos: bottom-left; target: !.target"
+    >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 
-    <button class="gls-button gls-button-default gls-float-right" type="button">Bottom Right</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: bottom-right; target: !.target">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-
+    <button class="gls-button gls-button-default gls-float-right" type="button">
+        Bottom Right
+    </button>
+    <div
+        class="gls-card gls-card-body gls-card-default"
+        gls-drop="pos: bottom-right; target: !.target"
+    >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Inset
 
@@ -352,17 +396,27 @@ By default, the drop is positioned outside the toggle. To change the position to
 
 ```html
 <div class="target gls-panel gls-placeholder gls-height-medium">
-
     <button class="gls-button gls-button-default gls-float-left" type="button">Bottom Left</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: bottom-left; target: !.target; inset: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div
+        class="gls-card gls-card-body gls-card-default"
+        gls-drop="pos: bottom-left; target: !.target; inset: true"
+    >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 
-    <button class="gls-button gls-button-default gls-float-right" type="button">Bottom Right</button>
-    <div class="gls-card gls-card-body gls-card-default" gls-drop="pos: bottom-right; target: !.target; inset: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-
+    <button class="gls-button gls-button-default gls-float-right" type="button">
+        Bottom Right
+    </button>
+    <div
+        class="gls-card gls-card-body gls-card-default"
+        gls-drop="pos: bottom-right; target: !.target; inset: true"
+    >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Stretch
 
@@ -384,25 +438,30 @@ To stretch the drop to fill the size of its closest scrolling ancestor, add the 
         </ul>
 
     </div>
+
 </nav>
 </div>
 
 ```html
 <nav class="gls-navbar-container" gls-navbar>
     <div class="gls-navbar-left">
-
         <ul class="gls-navbar-nav">
             <li>
                 <a href>Hover</a>
-                <div class="gls-navbar-dropdown" gls-drop="boundary: !.gls-navbar; stretch: x; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                <div
+                    class="gls-navbar-dropdown"
+                    gls-drop="boundary: !.gls-navbar; stretch: x; flip: false"
+                >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt.
+                </div>
             </li>
         </ul>
-
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Animation
 
@@ -419,7 +478,12 @@ Apply one or more animations to the dropdown by adding the `animation: gls-anima
 
 ```html
 <button class="gls-button gls-button-default" type="button">Hover</button>
-<div class="gls-card gls-card-body gls-card-default" gls-drop="animation: gls-animation-slide-top-small; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+<div
+    class="gls-card gls-card-body gls-card-default"
+    gls-drop="animation: gls-animation-slide-top-small; animate-out: true"
+>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+</div>
 ```
 
 Alternatively, the Drop component has two additional animation types that are not covered by the Animation component. `slide-*` animations slide the drop and its content from a selected direction, while with the `reveal-*` animations, the content of the drop stays static and is revealed from a selected direction.
@@ -467,31 +531,53 @@ Alternatively, the Drop component has two additional animation types that are no
 
 ```html
 <div class="gls-margin" gls-margin>
-
     <div class="gls-inline">
         <button class="gls-button gls-button-default" type="button">Slide Top</button>
-        <div class="gls-card gls-card-body gls-card-default" gls-drop="animation: slide-top; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        <div
+            class="gls-card gls-card-body gls-card-default"
+            gls-drop="animation: slide-top; animate-out: true; duration: 700"
+        >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt.
+        </div>
     </div>
 
     <div class="gls-inline">
         <button class="gls-button gls-button-default" type="button">Reveal Top</button>
-        <div class="gls-card gls-card-body gls-card-default" gls-drop="animation: reveal-top; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        <div
+            class="gls-card gls-card-body gls-card-default"
+            gls-drop="animation: reveal-top; animate-out: true; duration: 700"
+        >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt.
+        </div>
     </div>
 
     <div class="gls-inline">
         <button class="gls-button gls-button-default" type="button">Slide Left</button>
-        <div class="gls-card gls-card-body gls-card-default" gls-drop="animation: slide-left; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        <div
+            class="gls-card gls-card-body gls-card-default"
+            gls-drop="animation: slide-left; animate-out: true; duration: 700"
+        >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt.
+        </div>
     </div>
 
     <div class="gls-inline">
         <button class="gls-button gls-button-default" type="button">Reveal Left</button>
-        <div class="gls-card gls-card-body gls-card-default" gls-drop="animation: reveal-left; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        <div
+            class="gls-card gls-card-body gls-card-default"
+            gls-drop="animation: reveal-left; animate-out: true; duration: 700"
+        >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt.
+        </div>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Offset
 
@@ -508,40 +594,42 @@ To define a custom offset between the drop and its toggle, add the `offset` opti
 
 ```html
 <button class="gls-button gls-button-default" type="button">Hover</button>
-<div class="gls-card gls-card-body gls-card-default" gls-drop="offset: 80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+<div class="gls-card gls-card-body gls-card-default" gls-drop="offset: 80">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+</div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option            | Value                 | Default             | Description                                                                                              |
-| ----------------- | --------------------- | ------------------- | -------------------------------------------------------------------------------------------------------- |
-| `toggle`          | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                    |
-| `pos`             | String                | `bottom-left`       | Drop position.                                                                                           |
-| `stretch`         | Boolean, String       | `false`             | Stretch drop on both (true) or given axis (`x`, `y`).                                                    |
-| `mode`            | String                | `click, hover`      | Comma-separated list of drop trigger behavior modes (`click`, `hover`).                                  |
-| `delay-show`      | Number                | `0`                 | Delay time in hover mode before a drop is shown in ms.                                                   |
-| `delay-hide`      | Number                | `800`               | Delay time in hover mode before a drop is hidden in ms.                                                  |
-| `auto-update`     | Boolean               | `true`              | Disable dynamic positioning while scrolling by setting this option to `false`.                           |
-| `boundary`        | CSS selector          | `false`             | The area the drop can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
-| `boundary-x`      | CSS selector          | `false`             | The area on the x-axis the drop can't exceed causing it to flip and shift.                               |
-| `boundary-y`      | CSS selector          | `false`             | The area on the y-axis the drop can't exceed causing it to flip and shift.                               |
-| `target`          | Boolean, CSS selector | `false`             | The element the drop is positioned to (`true` for window).                                               |
-| `target-x`        | Boolean, CSS selector | `false`             | The element's X axis the drop is positioned to (`true` for window).                                      |
-| `target-y`        | Boolean, CSS selector | `false`             | The element's Y axis the drop is positioned to (`true` for window).                                      |
-| `inset`           | Boolean               | `false`             | Position inside its target.                                                                              |
-| `flip`            | Boolean               | `true`              | Flip the drop along the main axis if it overflows the boundary.                                          |
-| `shift`           | Boolean               | `true`              | Shift the drop along the cross-axis if it overflows the boundary.                                        |
-| `offset`          | Number                | `0`                 | The drop offset.                                                                                         |
+| Option            | Value                 | Default              | Description                                                                                              |
+| ----------------- | --------------------- | -------------------- | -------------------------------------------------------------------------------------------------------- |
+| `toggle`          | CSS selector          | `- *`                | CSS selector for the element to be used as toggle. By default, the preceding element.                    |
+| `pos`             | String                | `bottom-left`        | Drop position.                                                                                           |
+| `stretch`         | Boolean, String       | `false`              | Stretch drop on both (true) or given axis (`x`, `y`).                                                    |
+| `mode`            | String                | `click, hover`       | Comma-separated list of drop trigger behavior modes (`click`, `hover`).                                  |
+| `delay-show`      | Number                | `0`                  | Delay time in hover mode before a drop is shown in ms.                                                   |
+| `delay-hide`      | Number                | `800`                | Delay time in hover mode before a drop is hidden in ms.                                                  |
+| `auto-update`     | Boolean               | `true`               | Disable dynamic positioning while scrolling by setting this option to `false`.                           |
+| `boundary`        | CSS selector          | `false`              | The area the drop can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
+| `boundary-x`      | CSS selector          | `false`              | The area on the x-axis the drop can't exceed causing it to flip and shift.                               |
+| `boundary-y`      | CSS selector          | `false`              | The area on the y-axis the drop can't exceed causing it to flip and shift.                               |
+| `target`          | Boolean, CSS selector | `false`              | The element the drop is positioned to (`true` for window).                                               |
+| `target-x`        | Boolean, CSS selector | `false`              | The element's X axis the drop is positioned to (`true` for window).                                      |
+| `target-y`        | Boolean, CSS selector | `false`              | The element's Y axis the drop is positioned to (`true` for window).                                      |
+| `inset`           | Boolean               | `false`              | Position inside its target.                                                                              |
+| `flip`            | Boolean               | `true`               | Flip the drop along the main axis if it overflows the boundary.                                          |
+| `shift`           | Boolean               | `true`               | Shift the drop along the cross-axis if it overflows the boundary.                                        |
+| `offset`          | Number                | `0`                  | The drop offset.                                                                                         |
 | `animation`       | String                | `gls-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                  |
-| `animate-out`     | Boolean               | `false`             | Use animation when closing the drop.                                                                     |
-| `bg-scroll`       | Boolean               | `true`              | Allow background scrolling while drop is opened.                                                         |
-| `close-on-scroll` | Boolean               | `false`             | Close the drop on scrolling a parent scroll container.                                                   |
-| `duration`        | Number                | `200`               | The animation duration.                                                                                  |
-| `container`       | Boolean               | `false`             | Define a target container via a selector to specify where the drop should be appended in the DOM.        |
+| `animate-out`     | Boolean               | `false`              | Use animation when closing the drop.                                                                     |
+| `bg-scroll`       | Boolean               | `true`               | Allow background scrolling while drop is opened.                                                         |
+| `close-on-scroll` | Boolean               | `false`              | Close the drop on scrolling a parent scroll container.                                                   |
+| `duration`        | Number                | `200`                | The animation duration.                                                                                  |
+| `container`       | Boolean               | `false`              | Define a target container via a selector to specify where the drop should be appended in the DOM.        |
 
 `pos` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
@@ -549,7 +637,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 <span gls-drop="top-left"></span>
 ```
 
-***
+---
 
 ## JavaScript
 
@@ -600,14 +688,13 @@ Hides the drop.
 | ------- | ------- | ------- | ---------------------- |
 | `delay` | Boolean | true    | Delay hiding the drop. |
 
-
-***
+---
 
 ## Accessibility
 
 The Drop component adheres to the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *toggle* has the `button` role, the `aria-expanded` state and the `aria-haspopup` property.
+- The _toggle_ has the `button` role, the `aria-expanded` state and the `aria-haspopup` property.
 
 ### Keyboard interaction
 

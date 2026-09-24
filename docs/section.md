@@ -39,39 +39,44 @@ By default, a section is blank. That is why it is important to add a modifier cl
         </div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-section gls-section-muted">
     <div class="gls-container">
-
         <h3>Section</h3>
 
         <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
         </div>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Style modifiers
 
 To apply different background colors and paddings, add one of the following classes.
 
-| Class                   | Description                                     |
-| ----------------------- | ----------------------------------------------- |
+| Class                    | Description                                     |
+| ------------------------ | ----------------------------------------------- |
 | `.gls-section-default`   | Adds the default background color of your site. |
 | `.gls-section-muted`     | Adds a muted background color.                  |
 | `.gls-section-primary`   | Adds a primary background color.                |
@@ -100,6 +105,7 @@ To apply different background colors and paddings, add one of the following clas
         </div>
 
     </div>
+
 </div>
 
 <div class="gls-section gls-section-muted">
@@ -120,6 +126,7 @@ To apply different background colors and paddings, add one of the following clas
         </div>
 
     </div>
+
 </div>
 
 <div class="gls-section gls-section-primary gls-light">
@@ -140,6 +147,7 @@ To apply different background colors and paddings, add one of the following clas
         </div>
 
     </div>
+
 </div>
 
 <div class="gls-section gls-section-secondary gls-light">
@@ -160,6 +168,7 @@ To apply different background colors and paddings, add one of the following clas
         </div>
 
     </div>
+
 </div>
 
 <div class="gls-section-default">
@@ -182,114 +191,141 @@ To apply different background colors and paddings, add one of the following clas
 
         </div>
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-section gls-section-default">
     <div class="gls-container">
-
         <h3>Section Default</h3>
 
         <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
         </div>
-
     </div>
 </div>
 
 <div class="gls-section gls-section-muted">
     <div class="gls-container">
-
         <h3>Section Muted</h3>
 
         <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
         </div>
-
     </div>
 </div>
 
 <div class="gls-section gls-section-primary gls-light">
     <div class="gls-container">
-
         <h3>Section Primary</h3>
 
         <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
         </div>
-
     </div>
 </div>
 
 <div class="gls-section gls-section-secondary gls-light">
     <div class="gls-container">
-
         <h3>Section Secondary</h3>
 
         <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
         </div>
-
     </div>
 </div>
 
 <div class="gls-section-default">
-    <div class="gls-section gls-light gls-background-cover" style="background-image: url(images/dark.jpg)">
+    <div
+        class="gls-section gls-light gls-background-cover"
+        style="background-image: url(images/dark.jpg)"
+    >
         <div class="gls-container">
-
             <h3>Section with Images</h3>
 
             <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.
+                    </p>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.
+                    </p>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.
+                    </p>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ### Preserve color
 
@@ -321,13 +357,13 @@ The `.gls-section-primary` and `.gls-section-secondary` classes are extending th
         </div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-section gls-section-primary gls-preserve-color">
     <div class="gls-container">
-
         <div class="gls-panel gls-light gls-margin-medium">
             <h3>Section Primary with cards</h3>
         </div>
@@ -344,29 +380,28 @@ The `.gls-section-primary` and `.gls-section-secondary` classes are extending th
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Size modifier
 
 You can add different paddings to each section or remove it altogether.
 
-| Class                         | Description                                                                            |
-| ----------------------------- | -------------------------------------------------------------------------------------- |
-| `.gls-section-xsmall`          | Add this class to decrease a section's padding to a minimum.                           |
-| `.gls-section-small`           | Add this class to decrease a section's padding.                                        |
-| `.gls-section-large`           | Add this class to increase a section's padding.                                        |
-| `.gls-section-xlarge`          | Add this class to further increase a section's padding.                                |
+| Class                          | Description                                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| `.gls-section-xsmall`          | Add this class to decrease a section's padding to a minimum.                                                  |
+| `.gls-section-small`           | Add this class to decrease a section's padding.                                                               |
+| `.gls-section-large`           | Add this class to increase a section's padding.                                                               |
+| `.gls-section-xlarge`          | Add this class to further increase a section's padding.                                                       |
 | `.gls-padding-remove-vertical` | Add this class from the [Padding component](https://getuikit.com/docs/padding) to remove a section's padding. |
 
 Add one of the following classes to modify the padding in only one direction.
 
-| Class                       | Description                 |
-| --------------------------- | --------------------------- |
+| Class                        | Description                 |
+| ---------------------------- | --------------------------- |
 | `.gls-section-xsmall-top`    | Add x-small top padding.    |
 | `.gls-section-xsmall-bottom` | Add x-small bottom padding. |
 | `.gls-section-small-top`     | Add small top padding.      |
@@ -394,31 +429,37 @@ Add one of the following classes to modify the padding in only one direction.
             </div>
         </div>
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-section gls-section-large gls-section-muted">
     <div class="gls-container">
-
         <h3>Section Large</h3>
 
         <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
             </div>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Overlap modifier
 

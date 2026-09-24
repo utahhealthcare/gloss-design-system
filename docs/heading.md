@@ -14,8 +14,8 @@ Combine this component with the [Text component](https://getuikit.com/docs/text)
 
 Add one of the following classes to modify the size and style of headings. Usually, these classes would be used on heading elements, but they work also with any other element like a `div` element. Note that these classes extend the heading classes from the [Base component](https://getuikit.com/docs/base#headings) upward, and the smallest modifier picks up the size after `h1` element.
 
-| Class                 | Description                                      |
-|-----------------------|--------------------------------------------------|
+| Class                  | Description                                      |
+| ---------------------- | ------------------------------------------------ |
 | `.gls-heading-small`   | Add this class to apply a small-sized heading.   |
 | `.gls-heading-medium`  | Add this class to apply a medium-sized heading.  |
 | `.gls-heading-large`   | Add this class to apply a large-sized heading.   |
@@ -45,7 +45,7 @@ Add one of the following classes to modify the size and style of headings. Usual
 <h1 class="gls-heading-3xlarge">3X-Large</h1>
 ```
 
-***
+---
 
 ## Divider modifier
 
@@ -63,7 +63,7 @@ To apply a divider to a heading, add the `.gls-heading-divider` class. You can c
 <h1 class="gls-heading-divider">Heading Divider</h1>
 ```
 
-***
+---
 
 ## Bullet modifier
 
@@ -81,7 +81,7 @@ To apply a bullet to a heading, add the `.gls-heading-bullet` class. You can com
 <h1 class="gls-heading-bullet">Heading Bullet</h1>
 ```
 
-***
+---
 
 ## Line modifier
 

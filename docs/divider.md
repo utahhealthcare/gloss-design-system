@@ -12,7 +12,7 @@ title: Divider
 
 You can use a simple `<hr>` element to illustrate a separation of different content parts on your pages. The Divider component allows you to add different styles to these dividers.
 
-***
+---
 
 ## Divider icon
 
@@ -23,10 +23,10 @@ Add the `.gls-divider-icon` class to a `<hr>` or `<div>` element to create a div
 </div>
 
 ```html
-<hr class="gls-divider-icon">
+<hr class="gls-divider-icon" />
 ```
 
-***
+---
 
 ## Divider small
 
@@ -37,10 +37,10 @@ Add the `.gls-divider-small` class to a `<hr>` or `<div>` element to create a sm
 </div>
 
 ```html
-<hr class="gls-divider-small">
+<hr class="gls-divider-small" />
 ```
 
-***
+---
 
 ## Divider vertical
 
@@ -51,5 +51,5 @@ Add the `.gls-divider-vertical` class to a `<hr>` or `<div>` element to create a
 </div>
 
 ```html
-<hr class="gls-divider-vertical">
+<hr class="gls-divider-vertical" />
 ```

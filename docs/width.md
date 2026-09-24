@@ -10,20 +10,20 @@ title: Width
 
 UIkit's Width component is often used in combination with [grids](https://getuikit.com/docs/grid) to split the content into responsive columns. You can apply fractions, automatic width or expand units to fill the remaining space and combine these modes.
 
-***
+---
 
 ## Usage
 
 Add one of the `.gls-width-*` classes to an element to determine its size. Typically, you would use a grid from the [Grid component](https://getuikit.com/docs/grid) and its child elements to create the units.
 
-| Class                                                              | Description                                           |
-| ------------------------------------------------------------------ | ----------------------------------------------------- |
-| `.gls-width-1-1`                                                    | Fills 100% of the available width.                    |
-| `.gls-width-1-2`                                                    | The element takes up halves of its parent container.  |
-| `.gls-width-1-3`, `.gls-width-2-3`                                   | The element takes up thirds of its parent container.  |
-| `.gls-width-1-4`, `.gls-width-3-4`                                   | The element takes up fourths of its parent container. |
+| Class                                                                     | Description                                           |
+| ------------------------------------------------------------------------- | ----------------------------------------------------- |
+| `.gls-width-1-1`                                                          | Fills 100% of the available width.                    |
+| `.gls-width-1-2`                                                          | The element takes up halves of its parent container.  |
+| `.gls-width-1-3`, `.gls-width-2-3`                                        | The element takes up thirds of its parent container.  |
+| `.gls-width-1-4`, `.gls-width-3-4`                                        | The element takes up fourths of its parent container. |
 | `.gls-width-1-5`, `.gls-width-2-5`,<br>`.gls-width-3-5`, `.gls-width-4-5` | The element takes up fifths of its parent container.  |
-| `.gls-width-1-6`, `.gls-width-5-6`                                   | The element takes up sixths of its parent container.  |
+| `.gls-width-1-6`, `.gls-width-5-6`                                        | The element takes up sixths of its parent container.  |
 
 **Note** We remove redundancy into each set of unit classes, so that for instance instead of `.gls-width-3-6` you should use `.gls-width-1-2`.
 
@@ -98,14 +98,14 @@ Add one of the `.gls-width-*` classes to an element to determine its size. Typic
 </div>
 ```
 
-***
+---
 
 ## Auto and expand
 
 The Width component provides additional modifiers to give you more flexibility in the distribution of items.
 
-| Class              | Description                                                            |
-| ------------------ | ---------------------------------------------------------------------- |
+| Class               | Description                                                            |
+| ------------------- | ---------------------------------------------------------------------- |
 | `.gls-width-auto`   | The item expands only to the width of its own content.                 |
 | `.gls-width-expand` | The item expands to fill up the remaining space of the grid container. |
 
@@ -138,14 +138,14 @@ The Width component provides additional modifiers to give you more flexibility i
 </div>
 ```
 
-***
+---
 
 ## Equal child widths
 
 To create a grid whose child elements' widths are evenly split, you don't have to apply the same class to each list item within the grid. Just add one of the `.gls-child-width-*` classes to the grid itself.
 
-| Class                    | Description                                                         |
-| ------------------------ | ------------------------------------------------------------------- |
+| Class                     | Description                                                         |
+| ------------------------- | ------------------------------------------------------------------- |
 | `.gls-child-width-1-2`    | All elements take up half of their parent container.                |
 | `.gls-child-width-1-3`    | All elements take up a third of their parent container.             |
 | `.gls-child-width-1-4`    | All elements take up a fourth of their parent container.            |
@@ -252,14 +252,14 @@ Items that use width classes with fractions will break into a new row, if they n
 </div>
 ```
 
-***
+---
 
 ## Fixed width
 
 In addition to the calculated width classes, you can also add one of the following classes, which apply fixed widths.
 
-| Class               | Description                       |
-| ------------------- | --------------------------------- |
+| Class                | Description                       |
+| -------------------- | --------------------------------- |
 | `.gls-width-small`   | Applies a fixed width of _150px_. |
 | `.gls-width-medium`  | Applies a fixed width of _300px_. |
 | `.gls-width-large`   | Applies a fixed width of _450px_. |
@@ -279,14 +279,24 @@ In addition to the calculated width classes, you can also add one of the followi
 </div>
 
 ```html
-<div class="gls-width-small gls-margin"><div class="gls-card gls-card-small gls-card-default gls-card-body">Small</div></div>
-<div class="gls-width-medium gls-margin"><div class="gls-card gls-card-small gls-card-default gls-card-body">Medium</div></div>
-<div class="gls-width-large gls-margin"><div class="gls-card gls-card-small gls-card-default gls-card-body">Large</div></div>
-<div class="gls-width-xlarge gls-margin"><div class="gls-card gls-card-small gls-card-default gls-card-body">X-Large</div></div>
-<div class="gls-width-2xlarge gls-margin"><div class="gls-card gls-card-small gls-card-default gls-card-body">2X-Large</div></div>
+<div class="gls-width-small gls-margin">
+    <div class="gls-card gls-card-small gls-card-default gls-card-body">Small</div>
+</div>
+<div class="gls-width-medium gls-margin">
+    <div class="gls-card gls-card-small gls-card-default gls-card-body">Medium</div>
+</div>
+<div class="gls-width-large gls-margin">
+    <div class="gls-card gls-card-small gls-card-default gls-card-body">Large</div>
+</div>
+<div class="gls-width-xlarge gls-margin">
+    <div class="gls-card gls-card-small gls-card-default gls-card-body">X-Large</div>
+</div>
+<div class="gls-width-2xlarge gls-margin">
+    <div class="gls-card gls-card-small gls-card-default gls-card-body">2X-Large</div>
+</div>
 ```
 
-***
+---
 
 ## Mixing widths
 
@@ -335,14 +345,14 @@ You can also combine `.gls-child-width-*` classes with `.gls-width-*` classes fo
 </div>
 ```
 
-***
+---
 
 ## Responsive width
 
 UIkit provides a number of responsive width classes. Basically they work just like the usual width classes, except that they have suffixes that represent the breakpoint from which they come to effect. These classes can be combined with the [Visibility component](https://getuikit.com/docs/visibility). This is great for adjusting your layout and content for different device sizes.
 
-| Class                                       | Description                                                                             |
-| ------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Class                                         | Description                                                                             |
+| --------------------------------------------- | --------------------------------------------------------------------------------------- |
 | `.gls-width-*`<br> `.gls-child-width-*`       | Affects all device widths, grid columns stay side by side.                              |
 | `.gls-width-*@s`<br> `.gls-child-width-*@s`   | Affects device widths of _640px_ and larger. Grid columns will stack on smaller sizes.  |
 | `.gls-width-*@m`<br> `.gls-child-width-*@m`   | Affects device widths of _960px_ and larger. Grid columns will stack on smaller sizes.  |
@@ -396,19 +406,19 @@ UIkit provides a number of responsive width classes. Basically they work just li
         <div class="gls-card gls-card-default gls-card-body">1-4@m</div>
     </div>
     <div class="gls-width-1-5@m gls-hidden@l">
-        <div class="gls-card gls-card-secondary gls-card-body">1-5@m<br>hidden@l</div>
+        <div class="gls-card gls-card-secondary gls-card-body">1-5@m<br />hidden@l</div>
     </div>
     <div class="gls-width-1-5@m gls-width-1-3@l">
-        <div class="gls-card gls-card-default gls-card-body">1-5@m<br>1-3@l</div>
+        <div class="gls-card gls-card-default gls-card-body">1-5@m<br />1-3@l</div>
     </div>
     <div class="gls-width-3-5@m gls-width-2-3@l">
-        <div class="gls-card gls-card-default gls-card-body">3-5@m<br>2-3@l</div>
+        <div class="gls-card gls-card-default gls-card-body">3-5@m<br />2-3@l</div>
     </div>
 </div>
 
 <div class="gls-grid-match gls-grid-small gls-text-center" gls-grid>
     <div class="gls-width-auto@m gls-visible@l">
-        <div class="gls-card gls-card-primary gls-card-body">auto@m<br>visible@l</div>
+        <div class="gls-card gls-card-primary gls-card-body">auto@m<br />visible@l</div>
     </div>
     <div class="gls-width-1-3@m">
         <div class="gls-card gls-card-default gls-card-body">1-3@m</div>

@@ -12,14 +12,14 @@ title: Search
 
 The Search component consists of a search form and the search input itself.
 
-| Class/Attribute    | Description                                                           |
-|--------------------|-----------------------------------------------------------------------|
+| Class/Attribute     | Description                                                           |
+| ------------------- | --------------------------------------------------------------------- |
 | `.gls-search`       | Add this class to a container element to define the Search component. |
 | `.gls-search-input` | Add this class to an `<input>` element to create the search field.    |
 
 ```html
 <form class="gls-search" aria-label="Search">
-    <input class="gls-search-input" type="search" placeholder="" aria-label="">
+    <input class="gls-search-input" type="search" placeholder="" aria-label="" />
 </form>
 ```
 
@@ -33,11 +33,11 @@ By default, the search has no additional styling. In this example we are using t
 
 ```html
 <form class="gls-search gls-search-default">
-    <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search">
+    <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" />
 </form>
 ```
 
-***
+---
 
 ## Search icon
 
@@ -46,11 +46,11 @@ To create a search icon, add the `gls-search-icon` attribute to a `<span>` eleme
 ```html
 <form class="gls-search gls-search-default">
     <span gls-search-icon></span>
-    <input class="gls-search-input" type="search" placeholder="" aria-label="">
+    <input class="gls-search-input" type="search" placeholder="" aria-label="" />
 </form>
 
 <form class="gls-search gls-search-default">
-    <input class="gls-search-input" type="search" placeholder="" aria-label="">
+    <input class="gls-search-input" type="search" placeholder="" aria-label="" />
     <span class="gls-search-icon-flip" gls-search-icon></span>
 </form>
 ```
@@ -75,19 +75,19 @@ To create a search icon, add the `gls-search-icon` attribute to a `<span>` eleme
 <div class="gls-margin">
     <form class="gls-search gls-search-default">
         <span gls-search-icon></span>
-        <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search">
+        <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" />
     </form>
 </div>
 
 <div class="gls-margin">
     <form class="gls-search gls-search-default">
-        <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search">
+        <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" />
         <span class="gls-search-icon-flip" gls-search-icon></span>
     </form>
 </div>
 ```
 
-***
+---
 
 ### Clickable
 
@@ -96,11 +96,11 @@ To enable an action, use an `<a>` or `<button>` element to create the icon.
 ```html
 <form class="gls-search gls-search-default">
     <button gls-search-icon></button>
-    <input class="gls-search-input" type="search" placeholder="" aria-label="">
+    <input class="gls-search-input" type="search" placeholder="" aria-label="" />
 </form>
 
 <form class="gls-search gls-search-default">
-    <input class="gls-search-input" type="search" placeholder="" aria-label="">
+    <input class="gls-search-input" type="search" placeholder="" aria-label="" />
     <button class="gls-search-icon-flip" gls-search-icon></button>
 </form>
 ```
@@ -125,19 +125,19 @@ To enable an action, use an `<a>` or `<button>` element to create the icon.
 <div class="gls-margin">
     <form class="gls-search gls-search-default">
         <button gls-search-icon></button>
-        <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search">
+        <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" />
     </form>
 </div>
 
 <div class="gls-margin">
     <form class="gls-search gls-search-default">
-        <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search">
+        <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" />
         <button class="gls-search-icon-flip" gls-search-icon></button>
     </form>
 </div>
 ```
 
-***
+---
 
 ## Default modifier
 
@@ -157,11 +157,11 @@ To apply the default search styling, add the `.gls-search-default` class.
 ```html
 <form class="gls-search gls-search-default">
     <span gls-search-icon></span>
-    <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search">
+    <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" />
 </form>
 ```
 
-***
+---
 
 ## Navbar modifier
 
@@ -183,25 +183,29 @@ To apply a dedicated search style when used in a navbar from the [Navbar compone
         </div>
 
     </div>
+
 </nav>
 </div>
 
 ```html
 <nav class="gls-navbar-container" gls-navbar>
     <div class="gls-navbar-left">
-
         <div class="gls-navbar-item">
             <form class="gls-search gls-search-navbar">
                 <span gls-search-icon></span>
-                <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search">
+                <input
+                    class="gls-search-input"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                />
             </form>
         </div>
-
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Medium modifier
 
@@ -221,11 +225,11 @@ To increase the size of the search, for example when using the search in a dropd
 ```html
 <form class="gls-search gls-search-medium">
     <span gls-search-icon></span>
-    <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search">
+    <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" />
 </form>
 ```
 
-***
+---
 
 ## Large modifier
 
@@ -245,11 +249,11 @@ To increase the size of the search, for example when using the search in a fulls
 ```html
 <form class="gls-search gls-search-large">
     <span gls-search-icon></span>
-    <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search">
+    <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" />
 </form>
 ```
 
-***
+---
 
 ## Toggle
 
@@ -267,7 +271,7 @@ To apply a hover state to the search icon when using an `<a>` or `<button>` elem
 <a class="gls-search-toggle" href="" gls-search-icon></a>
 ```
 
-***
+---
 
 ## Search in navbar
 
@@ -320,36 +324,44 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
 ```html
 <nav class="gls-navbar-container gls-margin" gls-navbar>
-
     <div class="nav-overlay gls-navbar-left">
-
         <a class="gls-navbar-item gls-logo" href="#">Logo</a>
 
         <ul class="gls-navbar-nav">
             <li class="gls-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
         </ul>
-
     </div>
 
     <div class="nav-overlay gls-navbar-right">
-
-        <a class="gls-navbar-toggle" gls-search-icon gls-toggle="target: .nav-overlay; animation: gls-animation-fade" href="#"></a>
-
+        <a
+            class="gls-navbar-toggle"
+            gls-search-icon
+            gls-toggle="target: .nav-overlay; animation: gls-animation-fade"
+            href="#"
+        ></a>
     </div>
 
     <div class="nav-overlay gls-navbar-left gls-flex-1" hidden>
-
         <div class="gls-navbar-item gls-width-expand">
             <form class="gls-search gls-search-navbar gls-width-1-1">
-                <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
+                <input
+                    class="gls-search-input"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    autofocus
+                />
             </form>
         </div>
 
-        <a class="gls-navbar-toggle" gls-close gls-toggle="target: .nav-overlay; animation: gls-animation-fade" href="#"></a>
-
+        <a
+            class="gls-navbar-toggle"
+            gls-close
+            gls-toggle="target: .nav-overlay; animation: gls-animation-fade"
+            href="#"
+        ></a>
     </div>
-
 </nav>
 ```
 
@@ -379,32 +391,35 @@ The search icon can be used as a toggle to open the search inside a navbar – a
         </div>
 
     </div>
+
 </nav>
 </div>
 
 ```html
 <nav class="gls-navbar-container gls-margin" gls-navbar>
     <div class="gls-navbar-left">
-
         <a class="gls-navbar-item gls-logo" href="#">Logo</a>
 
         <ul class="gls-navbar-nav">
             <li class="gls-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
         </ul>
-
     </div>
     <div class="gls-navbar-right">
-
         <div>
             <a class="gls-navbar-toggle" href gls-search-icon></a>
             <div class="gls-drop" gls-drop="mode: click; pos: left-center; offset: 0">
                 <form class="gls-search gls-search-navbar gls-width-1-1">
-                    <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
+                    <input
+                        class="gls-search-input"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                        autofocus
+                    />
                 </form>
             </div>
         </div>
-
     </div>
 </nav>
 ```
@@ -444,41 +459,45 @@ The search icon can be used as a toggle to open the search inside a navbar – a
         </div>
 
     </div>
+
 </nav>
 </div>
 
 ```html
 <nav class="gls-navbar-container gls-margin" gls-navbar>
     <div class="gls-navbar-left">
-
         <a class="gls-navbar-item gls-logo" href="#">Logo</a>
 
         <ul class="gls-navbar-nav">
             <li class="gls-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
         </ul>
-
     </div>
     <div class="gls-navbar-right">
-
         <div>
             <a class="gls-navbar-toggle" href gls-search-icon></a>
-            <div class="gls-navbar-dropdown" gls-drop="mode: click; boundary: !.gls-navbar; flip: false">
-
+            <div
+                class="gls-navbar-dropdown"
+                gls-drop="mode: click; boundary: !.gls-navbar; flip: false"
+            >
                 <div class="gls-grid-small gls-flex-middle" gls-grid>
                     <div class="gls-width-expand">
                         <form class="gls-search gls-search-navbar gls-width-1-1">
-                            <input class="gls-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
+                            <input
+                                class="gls-search-input"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                                autofocus
+                            />
                         </form>
                     </div>
                     <div class="gls-width-auto">
                         <a class="gls-drop-close" href="#" gls-close></a>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </div>
 </nav>
 ```
@@ -502,6 +521,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
         <a class="gls-navbar-toggle" href="#modal-full" gls-search-icon gls-toggle></a>
 
     </div>
+
 </nav>
 
 <div id="modal-full" class="gls-modal-full gls-modal" gls-modal>
@@ -517,19 +537,15 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 ```html
 <nav class="gls-navbar gls-navbar-container gls-margin">
     <div class="gls-navbar-left">
-
         <a class="gls-navbar-item gls-logo" href="#">Logo</a>
 
         <ul class="gls-navbar-nav">
             <li class="gls-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
         </ul>
-
     </div>
     <div class="gls-navbar-right">
-
         <a class="gls-navbar-toggle" href="#modal-full" gls-search-icon gls-toggle></a>
-
     </div>
 </nav>
 
@@ -537,13 +553,19 @@ The search icon can be used as a toggle to open the search inside a navbar – a
     <div class="gls-modal-dialog gls-flex gls-flex-center gls-flex-middle" gls-height-viewport>
         <button class="gls-modal-close-full" type="button" gls-close></button>
         <form class="gls-search gls-search-large">
-            <input class="gls-search-input gls-text-center" type="search" placeholder="Search" aria-label="Search" autofocus>
+            <input
+                class="gls-search-input gls-text-center"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                autofocus
+            />
         </form>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Accessibility
 
@@ -552,7 +574,7 @@ Set the appropriate WAI-ARIA roles, states and properties to the Search componen
 - If no `<label>` element is associated with the search control, set the `aria-label` property to the search `<input>` element to describe its meaning.
 
 ```html
-<input class="gls-search-input" type="search" aria-label="…">
+<input class="gls-search-input" type="search" aria-label="…" />
 ```
 
 ### Internationalization
@@ -560,6 +582,6 @@ Set the appropriate WAI-ARIA roles, states and properties to the Search componen
 The Search component uses the following translation strings. Learn more about [translating components](https://getuikit.com/docs/accessibility#internationalization).
 
 | Key      | Default         | Description                               |
-|----------|-----------------|-------------------------------------------|
+| -------- | --------------- | ----------------------------------------- |
 | `toggle` | `Open Search`   | `aria-label` attribute for toggle button. |
 | `submit` | `Submit Search` | `aria-label` attribute for submit button. |

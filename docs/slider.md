@@ -20,7 +20,7 @@ To define the widths of the slider items, use the [Width component](https://getu
 <div gls-slider>
     <div class="gls-slider-items gls-child-width-1-3@s gls-child-width-1-4@">
         <div>
-            <img src="" width="" height="" alt="">
+            <img src="" width="" height="" alt="" />
         </div>
     </div>
 </div>
@@ -80,59 +80,67 @@ To define the widths of the slider items, use the [Width component](https://getu
 
 ```html
 <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slider>
-
     <div class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m">
         <div>
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>1</h1></div>
         </div>
         <div>
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>2</h1></div>
         </div>
         <div>
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>3</h1></div>
         </div>
         <div>
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>4</h1></div>
         </div>
         <div>
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>5</h1></div>
         </div>
         <div>
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>6</h1></div>
         </div>
         <div>
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>7</h1></div>
         </div>
         <div>
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>8</h1></div>
         </div>
         <div>
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>9</h1></div>
         </div>
         <div>
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>10</h1></div>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slider-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slider-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slider-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slider-item="next"
+    ></a>
 </div>
 ```
 
 **Note** To lazy load images in the slides, use the `loading="lazy"` attribute. The Slider will automatically remove the attribute from images in adjacent slides.
 
-***
+---
 
 ## Container
 
@@ -140,21 +148,19 @@ The `.gls-slider-container` class is responsible for the clipping of the slider 
 
 ```html
 <div gls-slider>
-
     <div class="gls-slider-container">
         <div class="gls-slider-items gls-child-width-1-4">
             <div>
-                <img src="" width="" height="" alt="">
+                <img src="" width="" height="" alt="" />
             </div>
         </div>
     </div>
-
 </div>
 ```
 
 Since the slider effect needs a clipping container, box shadows of content items are also clipped. To widen the container to prevent box-shadows from clipping, add the `.gls-slider-container-offset` class.
 
-***
+---
 
 ## Gap
 
@@ -164,7 +170,7 @@ To apply a gap to the slider items, use the [Grid component](https://getuikit.co
 <div gls-slider>
     <div class="gls-slider-items gls-child-width-1-2@s gls-child-width-1-3@m gls-grid">
         <div>
-            <img src="" width="" height="" alt="">
+            <img src="" width="" height="" alt="" />
         </div>
     </div>
 </div>
@@ -244,77 +250,85 @@ To apply a gap to the slider items, use the [Grid component](https://getuikit.co
 
 ```html
 <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slider>
-
     <div class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@m gls-grid">
         <div>
             <div class="gls-panel">
-                <img src="images/slider1.jpg" width="400" height="600" alt="">
+                <img src="images/slider1.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>1</h1></div>
             </div>
         </div>
         <div>
             <div class="gls-panel">
-                <img src="images/slider2.jpg" width="400" height="600" alt="">
+                <img src="images/slider2.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>2</h1></div>
             </div>
         </div>
         <div>
             <div class="gls-panel">
-                <img src="images/slider3.jpg" width="400" height="600" alt="">
+                <img src="images/slider3.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>3</h1></div>
             </div>
         </div>
         <div>
             <div class="gls-panel">
-                <img src="images/slider4.jpg" width="400" height="600" alt="">
+                <img src="images/slider4.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>4</h1></div>
             </div>
         </div>
         <div>
             <div class="gls-panel">
-                <img src="images/slider5.jpg" width="400" height="600" alt="">
+                <img src="images/slider5.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>5</h1></div>
             </div>
         </div>
         <div>
             <div class="gls-panel">
-                <img src="images/slider1.jpg" width="400" height="600" alt="">
+                <img src="images/slider1.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>6</h1></div>
             </div>
         </div>
         <div>
             <div class="gls-panel">
-                <img src="images/slider2.jpg" width="400" height="600" alt="">
+                <img src="images/slider2.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>7</h1></div>
             </div>
         </div>
         <div>
             <div class="gls-panel">
-                <img src="images/slider3.jpg" width="400" height="600" alt="">
+                <img src="images/slider3.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>8</h1></div>
             </div>
         </div>
         <div>
             <div class="gls-panel">
-                <img src="images/slider4.jpg" width="400" height="600" alt="">
+                <img src="images/slider4.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>9</h1></div>
             </div>
         </div>
         <div>
             <div class="gls-panel">
-                <img src="images/slider5.jpg" width="400" height="600" alt="">
+                <img src="images/slider5.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>10</h1></div>
             </div>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slider-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slider-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slider-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slider-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ## Center
 
@@ -367,50 +381,62 @@ By default, items of the slider always are aligned to the left. To center the li
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slider="center: true">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slider="center: true"
+>
     <div class="gls-slider-items gls-grid">
         <div class="gls-width-3-4">
             <div class="gls-panel">
-                <img src="images/photo.jpg" width="600" height="400" alt="">
+                <img src="images/photo.jpg" width="600" height="400" alt="" />
                 <div class="gls-position-center gls-panel"><h1>1</h1></div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-panel">
-                <img src="images/dark.jpg" width="600" height="400" alt="">
+                <img src="images/dark.jpg" width="600" height="400" alt="" />
                 <div class="gls-position-center gls-panel"><h1>2</h1></div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-panel">
-                <img src="images/light.jpg" width="600" height="400" alt="">
+                <img src="images/light.jpg" width="600" height="400" alt="" />
                 <div class="gls-position-center gls-panel"><h1>3</h1></div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-panel">
-                <img src="images/photo2.jpg" width="600" height="400" alt="">
+                <img src="images/photo2.jpg" width="600" height="400" alt="" />
                 <div class="gls-position-center gls-panel"><h1>4</h1></div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-panel">
-                <img src="images/photo3.jpg" width="600" height="400" alt="">
+                <img src="images/photo3.jpg" width="600" height="400" alt="" />
                 <div class="gls-position-center gls-panel"><h1>5</h1></div>
             </div>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slider-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slider-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slider-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slider-item="next"
+    ></a>
 </div>
 ```
 
 **Note** In this example, we add the `.gls-width-3-4` class to each item, which makes the slider look very similar to a slideshow.
 
-***
+---
 
 ## Autoplay
 
@@ -420,7 +446,7 @@ To activate autoplay, just add the `autoplay: true` option to the attribute. You
 <div gls-slider="autoplay: true">…</div>
 ```
 
-***
+---
 
 ## Infinite Scrolling
 
@@ -430,7 +456,7 @@ By default, infinite scrolling is enabled. To disable this behavior, just add th
 <div gls-slider="finite: true">…</div>
 ```
 
-***
+---
 
 ## Slide Sets
 
@@ -493,58 +519,70 @@ To loop through a set of slides instead of single items, just add `sets: true` t
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slider="sets: true">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slider="sets: true"
+>
     <div class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@m">
         <div>
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>1</h1></div>
         </div>
         <div>
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>2</h1></div>
         </div>
         <div>
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>3</h1></div>
         </div>
         <div>
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>4</h1></div>
         </div>
         <div>
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>5</h1></div>
         </div>
         <div>
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>6</h1></div>
         </div>
         <div>
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>7</h1></div>
         </div>
         <div>
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>8</h1></div>
         </div>
         <div>
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>9</h1></div>
         </div>
         <div>
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>10</h1></div>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slider-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slider-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slider-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slider-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ## Navigation
 
@@ -552,7 +590,6 @@ To navigate through your slides, just use the `gls-slider-item` attribute. To ta
 
 ```html
 <div gls-slider>
-
     <div class="gls-slider-items">…</div>
 
     <a href gls-slider-item="previous">…</a>
@@ -563,7 +600,6 @@ To navigate through your slides, just use the `gls-slider-item` attribute. To ta
         <li gls-slider-item="1"><a href>…</a></li>
         <li gls-slider-item="2"><a href>…</a></li>
     </ul>
-
 </div>
 ```
 
@@ -573,11 +609,9 @@ If there is no item specific content in the navigation items, you can also add t
 
 ```html
 <div gls-slider>
-
     <div class="gls-slider-items">…</div>
 
     <ul class="gls-slider-nav gls-dotnav"></ul>
-
 </div>
 ```
 
@@ -641,65 +675,73 @@ If there is no item specific content in the navigation items, you can also add t
 
 ```html
 <div gls-slider>
-
     <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1">
-
-        <div class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m">
+        <div
+            class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m"
+        >
             <div>
-                <img src="images/slider1.jpg" width="400" height="600" alt="">
+                <img src="images/slider1.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>1</h1></div>
             </div>
             <div>
-                <img src="images/slider2.jpg" width="400" height="600" alt="">
+                <img src="images/slider2.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>2</h1></div>
             </div>
             <div>
-                <img src="images/slider3.jpg" width="400" height="600" alt="">
+                <img src="images/slider3.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>3</h1></div>
             </div>
             <div>
-                <img src="images/slider4.jpg" width="400" height="600" alt="">
+                <img src="images/slider4.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>4</h1></div>
             </div>
             <div>
-                <img src="images/slider5.jpg" width="400" height="600" alt="">
+                <img src="images/slider5.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>5</h1></div>
             </div>
             <div>
-                <img src="images/slider1.jpg" width="400" height="600" alt="">
+                <img src="images/slider1.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>6</h1></div>
             </div>
             <div>
-                <img src="images/slider2.jpg" width="400" height="600" alt="">
+                <img src="images/slider2.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>7</h1></div>
             </div>
             <div>
-                <img src="images/slider3.jpg" width="400" height="600" alt="">
+                <img src="images/slider3.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>8</h1></div>
             </div>
             <div>
-                <img src="images/slider4.jpg" width="400" height="600" alt="">
+                <img src="images/slider4.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>9</h1></div>
             </div>
             <div>
-                <img src="images/slider5.jpg" width="400" height="600" alt="">
+                <img src="images/slider5.jpg" width="400" height="600" alt="" />
                 <div class="gls-position-center gls-panel"><h1>10</h1></div>
             </div>
         </div>
 
-        <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slider-item="previous"></a>
-        <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slider-item="next"></a>
-
+        <a
+            class="gls-position-center-left gls-position-small gls-hidden-hover"
+            href
+            gls-slidenav-previous
+            gls-slider-item="previous"
+        ></a>
+        <a
+            class="gls-position-center-right gls-position-small gls-hidden-hover"
+            href
+            gls-slidenav-next
+            gls-slider-item="next"
+        ></a>
     </div>
 
     <ul class="gls-slider-nav gls-dotnav gls-flex-center gls-margin"></ul>
-
 </div>
 ```
 
 **Note** For better visibility of overlaying navigations, add the `.gls-light` or `.gls-dark` class from the [Inverse component](https://getuikit.com/docs/inverse).
 
-***
+---
 
 ## Navigation outside
 
@@ -707,20 +749,16 @@ To place a navigation outside of a slider, add the `.gls-position-center-left-ou
 
 ```html
 <div gls-slider>
-
     <div class="gls-position-relative">
-
         <div class="gls-slider-container">
             <div class="gls-slider-items">…</div>
         </div>
 
         <a class="gls-position-center-left-out" href gls-slider-item="previous">…</a>
         <a class="gls-position-center-right-out" href gls-slider-item="next">…</a>
-
     </div>
 
     <ul class="gls-slider-nav gls-dotnav"></ul>
-
 </div>
 ```
 
@@ -793,72 +831,90 @@ To place a navigation outside of a slider, add the `.gls-position-center-left-ou
 
 ```html
 <div gls-slider>
-
     <div class="gls-position-relative">
-
         <div class="gls-slider-container gls-light">
-            <div class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m">
+            <div
+                class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m"
+            >
                 <div>
-                    <img src="images/slider1.jpg" width="400" height="600" alt="">
+                    <img src="images/slider1.jpg" width="400" height="600" alt="" />
                     <div class="gls-position-center gls-panel"><h1>1</h1></div>
                 </div>
                 <div>
-                    <img src="images/slider2.jpg" width="400" height="600" alt="">
+                    <img src="images/slider2.jpg" width="400" height="600" alt="" />
                     <div class="gls-position-center gls-panel"><h1>2</h1></div>
                 </div>
                 <div>
-                    <img src="images/slider3.jpg" width="400" height="600" alt="">
+                    <img src="images/slider3.jpg" width="400" height="600" alt="" />
                     <div class="gls-position-center gls-panel"><h1>3</h1></div>
                 </div>
                 <div>
-                    <img src="images/slider4.jpg" width="400" height="600" alt="">
+                    <img src="images/slider4.jpg" width="400" height="600" alt="" />
                     <div class="gls-position-center gls-panel"><h1>4</h1></div>
                 </div>
                 <div>
-                    <img src="images/slider5.jpg" width="400" height="600" alt="">
+                    <img src="images/slider5.jpg" width="400" height="600" alt="" />
                     <div class="gls-position-center gls-panel"><h1>5</h1></div>
                 </div>
                 <div>
-                    <img src="images/slider1.jpg" width="400" height="600" alt="">
+                    <img src="images/slider1.jpg" width="400" height="600" alt="" />
                     <div class="gls-position-center gls-panel"><h1>6</h1></div>
                 </div>
                 <div>
-                    <img src="images/slider2.jpg" width="400" height="600" alt="">
+                    <img src="images/slider2.jpg" width="400" height="600" alt="" />
                     <div class="gls-position-center gls-panel"><h1>7</h1></div>
                 </div>
                 <div>
-                    <img src="images/slider3.jpg" width="400" height="600" alt="">
+                    <img src="images/slider3.jpg" width="400" height="600" alt="" />
                     <div class="gls-position-center gls-panel"><h1>8</h1></div>
                 </div>
                 <div>
-                    <img src="images/slider4.jpg" width="400" height="600" alt="">
+                    <img src="images/slider4.jpg" width="400" height="600" alt="" />
                     <div class="gls-position-center gls-panel"><h1>9</h1></div>
                 </div>
                 <div>
-                    <img src="images/slider5.jpg" width="400" height="600" alt="">
+                    <img src="images/slider5.jpg" width="400" height="600" alt="" />
                     <div class="gls-position-center gls-panel"><h1>10</h1></div>
                 </div>
             </div>
         </div>
 
         <div class="gls-hidden@s gls-light">
-            <a class="gls-position-center-left gls-position-small" href gls-slidenav-previous gls-slider-item="previous"></a>
-            <a class="gls-position-center-right gls-position-small" href gls-slidenav-next gls-slider-item="next"></a>
+            <a
+                class="gls-position-center-left gls-position-small"
+                href
+                gls-slidenav-previous
+                gls-slider-item="previous"
+            ></a>
+            <a
+                class="gls-position-center-right gls-position-small"
+                href
+                gls-slidenav-next
+                gls-slider-item="next"
+            ></a>
         </div>
 
         <div class="gls-visible@s">
-            <a class="gls-position-center-left-out gls-position-small" href gls-slidenav-previous gls-slider-item="previous"></a>
-            <a class="gls-position-center-right-out gls-position-small" href gls-slidenav-next gls-slider-item="next"></a>
+            <a
+                class="gls-position-center-left-out gls-position-small"
+                href
+                gls-slidenav-previous
+                gls-slider-item="previous"
+            ></a>
+            <a
+                class="gls-position-center-right-out gls-position-small"
+                href
+                gls-slidenav-next
+                gls-slider-item="next"
+            ></a>
         </div>
-
     </div>
 
     <ul class="gls-slider-nav gls-dotnav gls-flex-center gls-margin"></ul>
-
 </div>
 ```
 
-***
+---
 
 ## Parallax animation
 
@@ -921,52 +977,52 @@ Instead of a step-by-step animation using navigation controls, the slider can us
 
 ```html
 <div gls-slider="parallax: true;">
-
-    <div class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m gls-light">
+    <div
+        class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m gls-light"
+    >
         <div>
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>1</h1></div>
         </div>
         <div>
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>2</h1></div>
         </div>
         <div>
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>3</h1></div>
         </div>
         <div>
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>4</h1></div>
         </div>
         <div>
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>5</h1></div>
         </div>
         <div>
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>6</h1></div>
         </div>
         <div>
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>7</h1></div>
         </div>
         <div>
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>8</h1></div>
         </div>
         <div>
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>9</h1></div>
         </div>
         <div>
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>10</h1></div>
         </div>
     </div>
 
     <ul class="gls-slider-nav gls-dotnav gls-flex-center gls-margin"></ul>
-
 </div>
 ```
 
@@ -1029,56 +1085,56 @@ To adjust the parallax duration, set the `parallax-start` and `parallax-end` opt
 
 ```html
 <div gls-slider="parallax: true; parallax-start: 100%; parallax-end: 100%;">
-
-    <div class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m gls-light">
+    <div
+        class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m gls-light"
+    >
         <div>
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>1</h1></div>
         </div>
         <div>
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>2</h1></div>
         </div>
         <div>
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>3</h1></div>
         </div>
         <div>
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>4</h1></div>
         </div>
         <div>
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>5</h1></div>
         </div>
         <div>
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>6</h1></div>
         </div>
         <div>
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>7</h1></div>
         </div>
         <div>
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>8</h1></div>
         </div>
         <div>
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>9</h1></div>
         </div>
         <div>
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>10</h1></div>
         </div>
     </div>
 
     <ul class="gls-slider-nav gls-dotnav gls-flex-center gls-margin"></ul>
-
 </div>
 ```
 
-***
+---
 
 ## Viewport height
 
@@ -1088,10 +1144,13 @@ Use the [Cover component](https://getuikit.com/docs/cover) so that images cover 
 
 ```html
 <div gls-slider>
-    <div class="gls-slider-items gls-child-width-1-3@m gls-grid-match" gls-height-viewport="min: 300">
+    <div
+        class="gls-slider-items gls-child-width-1-3@m gls-grid-match"
+        gls-height-viewport="min: 300"
+    >
         <div>
             <div class="gls-cover-container">
-                <img src="" alt="" gls-cover>
+                <img src="" alt="" gls-cover />
             </div>
         </div>
     </div>
@@ -1141,50 +1200,65 @@ Use the [Cover component](https://getuikit.com/docs/cover) so that images cover 
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slider="center: true">
-
-    <div class="gls-slider-items gls-grid gls-grid-match" gls-height-viewport="offset-top: true; offset-bottom: 30">
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slider="center: true"
+>
+    <div
+        class="gls-slider-items gls-grid gls-grid-match"
+        gls-height-viewport="offset-top: true; offset-bottom: 30"
+    >
         <div class="gls-width-3-4">
             <div class="gls-cover-container">
-                <img src="images/photo.jpg" alt="" gls-cover>
+                <img src="images/photo.jpg" alt="" gls-cover />
                 <div class="gls-position-center gls-panel"><h1>1</h1></div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-cover-container">
-                <img src="images/dark.jpg" alt="" gls-cover>
+                <img src="images/dark.jpg" alt="" gls-cover />
                 <div class="gls-position-center gls-panel"><h1>2</h1></div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-cover-container">
-                <img src="images/light.jpg" alt="" gls-cover>
+                <img src="images/light.jpg" alt="" gls-cover />
                 <div class="gls-position-center gls-panel"><h1>3</h1></div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-cover-container">
-                <img src="images/photo2.jpg" alt="" gls-cover>
+                <img src="images/photo2.jpg" alt="" gls-cover />
                 <div class="gls-position-center gls-panel"><h1>4</h1></div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-cover-container">
-                <img src="images/photo3.jpg" alt="" gls-cover>
+                <img src="images/photo3.jpg" alt="" gls-cover />
                 <div class="gls-position-center gls-panel"><h1>5</h1></div>
             </div>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slider-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slider-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slider-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slider-item="next"
+    ></a>
 </div>
 ```
 
 **Note** This example is set to 70% of the viewport height.
 
-***
+---
 
 ## Content
 
@@ -1265,80 +1339,101 @@ The slider is not restricted to images. Any content can be used like text, video
 
 ```html
 <div class="gls-slider-container-offset" gls-slider>
-
     <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1">
-
         <div class="gls-slider-items gls-child-width-1-2@s gls-grid">
             <div>
                 <div class="gls-card gls-card-default">
                     <div class="gls-card-media-top">
-                        <img src="images/photo.jpg" width="1800" height="1200" alt="">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
                     </div>
                     <div class="gls-card-body">
                         <h3 class="gls-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.
+                        </p>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="gls-card gls-card-default">
                     <div class="gls-card-media-top">
-                        <img src="images/dark.jpg" width="1800" height="1200" alt="">
+                        <img src="images/dark.jpg" width="1800" height="1200" alt="" />
                     </div>
                     <div class="gls-card-body">
                         <h3 class="gls-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.
+                        </p>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="gls-card gls-card-default">
                     <div class="gls-card-media-top">
-                        <img src="images/light.jpg" width="1800" height="1200" alt="">
+                        <img src="images/light.jpg" width="1800" height="1200" alt="" />
                     </div>
                     <div class="gls-card-body">
                         <h3 class="gls-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.
+                        </p>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="gls-card gls-card-default">
                     <div class="gls-card-media-top">
-                        <img src="images/photo2.jpg" width="1800" height="1200" alt="">
+                        <img src="images/photo2.jpg" width="1800" height="1200" alt="" />
                     </div>
                     <div class="gls-card-body">
                         <h3 class="gls-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.
+                        </p>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="gls-card gls-card-default">
                     <div class="gls-card-media-top">
-                        <img src="images/photo3.jpg" width="1800" height="1200" alt="">
+                        <img src="images/photo3.jpg" width="1800" height="1200" alt="" />
                     </div>
                     <div class="gls-card-body">
                         <h3 class="gls-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slider-item="previous"></a>
-        <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slider-item="next"></a>
-
+        <a
+            class="gls-position-center-left gls-position-small gls-hidden-hover"
+            href
+            gls-slidenav-previous
+            gls-slider-item="previous"
+        ></a>
+        <a
+            class="gls-position-center-right gls-position-small gls-hidden-hover"
+            href
+            gls-slidenav-next
+            gls-slider-item="next"
+        ></a>
     </div>
 
     <ul class="gls-slider-nav gls-dotnav gls-flex-center gls-margin"></ul>
-
 </div>
 ```
 
 **Note** Since the slider effect needs a clipping container, box shadows of content items are also clipped. To widen the container to prevent box-shadows from clipping, add the `.gls-slider-container-offset` class. Alternatively, use the `gls-slider="center: true"` mode if your content items have a box shadow.
 
-***
+---
 
 ## Content overlays
 
@@ -1348,11 +1443,9 @@ Add content overlays using the [Position component](https://getuikit.com/docs/po
 <div gls-slider>
     <div class="gls-slider-items">
         <div>
-            <img src="" width="" height="" alt="">
+            <img src="" width="" height="" alt="" />
             <div class="gls-position-center">
-
                 <!-- The content goes here -->
-
             </div>
         </div>
     </div>
@@ -1415,57 +1508,65 @@ Add content overlays using the [Position component](https://getuikit.com/docs/po
 
 ```html
 <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slider>
-
     <div class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m">
         <div>
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>1</h1></div>
         </div>
         <div>
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>2</h1></div>
         </div>
         <div>
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>3</h1></div>
         </div>
         <div>
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>4</h1></div>
         </div>
         <div>
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>5</h1></div>
         </div>
         <div>
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>6</h1></div>
         </div>
         <div>
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>7</h1></div>
         </div>
         <div>
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>8</h1></div>
         </div>
         <div>
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>9</h1></div>
         </div>
         <div>
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
             <div class="gls-position-center gls-panel"><h1>10</h1></div>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slider-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slider-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slider-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slider-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ## Content parallax
 
@@ -1477,15 +1578,11 @@ This functionality is inherited from the [Parallax component](https://getuikit.c
 <div gls-slider>
     <div class="gls-slider-items">
         <div>
-            <img src="" width="" height="" alt="">
+            <img src="" width="" height="" alt="" />
             <div class="gls-position-center">
-
                 <div gls-slider-parallax="x: 100,-100">
-
                     <!-- The content goes here -->
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -1563,11 +1660,10 @@ The next example defines different in and out animations. The content slides in 
 
 ```html
 <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slider>
-
     <div class="gls-slider-items gls-grid">
         <div class="gls-width-4-5">
             <div class="gls-panel">
-                <img src="images/photo.jpg" width="1800" height="1200" alt="">
+                <img src="images/photo.jpg" width="1800" height="1200" alt="" />
                 <div class="gls-position-center gls-text-center">
                     <h2 gls-slider-parallax="x: 100,-100">Heading</h2>
                     <p gls-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
@@ -1576,7 +1672,7 @@ The next example defines different in and out animations. The content slides in 
         </div>
         <div class="gls-width-4-5">
             <div class="gls-panel">
-                <img src="images/dark.jpg" width="1800" height="1200" alt="">
+                <img src="images/dark.jpg" width="1800" height="1200" alt="" />
                 <div class="gls-position-center gls-text-center">
                     <h2 gls-slider-parallax="x: 100,-100">Heading</h2>
                     <p gls-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
@@ -1585,7 +1681,7 @@ The next example defines different in and out animations. The content slides in 
         </div>
         <div class="gls-width-4-5">
             <div class="gls-panel">
-                <img src="images/light.jpg" width="1800" height="1200" alt="">
+                <img src="images/light.jpg" width="1800" height="1200" alt="" />
                 <div class="gls-position-center gls-text-center">
                     <h2 gls-slider-parallax="x: 100,-100">Heading</h2>
                     <p gls-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
@@ -1594,7 +1690,7 @@ The next example defines different in and out animations. The content slides in 
         </div>
         <div class="gls-width-4-5">
             <div class="gls-panel">
-                <img src="images/photo2.jpg" width="1800" height="1200" alt="">
+                <img src="images/photo2.jpg" width="1800" height="1200" alt="" />
                 <div class="gls-position-center gls-text-center">
                     <h2 gls-slider-parallax="x: 100,-100">Heading</h2>
                     <p gls-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
@@ -1603,7 +1699,7 @@ The next example defines different in and out animations. The content slides in 
         </div>
         <div class="gls-width-4-5">
             <div class="gls-panel">
-                <img src="images/photo3.jpg" width="1800" height="1200" alt="">
+                <img src="images/photo3.jpg" width="1800" height="1200" alt="" />
                 <div class="gls-position-center gls-text-center">
                     <h2 gls-slider-parallax="x: 100,-100">Heading</h2>
                     <p gls-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
@@ -1612,32 +1708,36 @@ The next example defines different in and out animations. The content slides in 
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slider-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slider-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slider-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slider-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ## Content transitions
 
 Add `clsActivated: gls-transition-active` to the attribute to trigger transition classes from the [Transition component](https://getuikit.com/docs/transition) automatically inside slides. Contrary to the parallax effect, transitions are not attached to the slider animation and start playing independently after the slider animation.
 
-
 ```html
 <div gls-slider="clsActivated: gls-transition-active">
     <div class="gls-slider-items">
         <div>
-            <img src="" width="" height="" alt="">
+            <img src="" width="" height="" alt="" />
             <div class="gls-position-bottom">
-
                 <div class="gls-transition-slide-bottom">
-
                     <!-- The content goes here -->
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -1704,63 +1804,95 @@ Together with the [Overlay component](https://getuikit.com/docs/overlay), conten
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slider="clsActivated: gls-transition-active; center: true">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slider="clsActivated: gls-transition-active; center: true"
+>
     <div class="gls-slider-items gls-grid">
         <div class="gls-width-3-4">
             <div class="gls-panel">
-                <img src="images/photo.jpg" width="1800" height="1200" alt="">
-                <div class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom">
+                <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                <div
+                    class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom"
+                >
                     <h3 class="gls-margin-remove">Bottom</h3>
-                    <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="gls-margin-remove">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-panel">
-                <img src="images/dark.jpg" width="1800" height="1200" alt="">
-                <div class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom">
+                <img src="images/dark.jpg" width="1800" height="1200" alt="" />
+                <div
+                    class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom"
+                >
                     <h3 class="gls-margin-remove">Bottom</h3>
-                    <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="gls-margin-remove">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-panel">
-                <img src="images/light.jpg" width="1800" height="1200" alt="">
-                <div class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom">
+                <img src="images/light.jpg" width="1800" height="1200" alt="" />
+                <div
+                    class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom"
+                >
                     <h3 class="gls-margin-remove">Bottom</h3>
-                    <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="gls-margin-remove">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-panel">
-                <img src="images/photo2.jpg" width="1800" height="1200" alt="">
-                <div class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom">
+                <img src="images/photo2.jpg" width="1800" height="1200" alt="" />
+                <div
+                    class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom"
+                >
                     <h3 class="gls-margin-remove">Bottom</h3>
-                    <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="gls-margin-remove">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="gls-width-3-4">
             <div class="gls-panel">
-                <img src="images/photo3.jpg" width="1800" height="1200" alt="">
-                <div class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom">
+                <img src="images/photo3.jpg" width="1800" height="1200" alt="" />
+                <div
+                    class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom"
+                >
                     <h3 class="gls-margin-remove">Bottom</h3>
-                    <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="gls-margin-remove">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slider-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slider-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slider-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slider-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ### Toggle on hover
 
@@ -1770,15 +1902,11 @@ To toggle transitions on hover, use the `.gls-transition-toggle` class from the 
 <div gls-slider>
     <div class="gls-slider-items">
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="" width="" height="" alt="">
+            <img src="" width="" height="" alt="" />
             <div class="gls-position-bottom">
-
                 <div class="gls-transition-slide-bottom">
-
                     <!-- The content goes here -->
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -1838,63 +1966,83 @@ To toggle transitions on hover, use the `.gls-transition-toggle` class from the 
 
 ```html
 <div gls-slider>
-
-    <div class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m gls-light">
+    <div
+        class="gls-slider-items gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m gls-light"
+    >
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
-            <div class="gls-position-center gls-panel"><h1 class="gls-transition-slide-bottom-small">1</h1></div>
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
+            <div class="gls-position-center gls-panel">
+                <h1 class="gls-transition-slide-bottom-small">1</h1>
+            </div>
         </div>
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
-            <div class="gls-position-center gls-panel"><h1 class="gls-transition-slide-bottom-small">2</h1></div>
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
+            <div class="gls-position-center gls-panel">
+                <h1 class="gls-transition-slide-bottom-small">2</h1>
+            </div>
         </div>
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
-            <div class="gls-position-center gls-panel"><h1 class="gls-transition-slide-bottom-small">3</h1></div>
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
+            <div class="gls-position-center gls-panel">
+                <h1 class="gls-transition-slide-bottom-small">3</h1>
+            </div>
         </div>
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
-            <div class="gls-position-center gls-panel"><h1 class="gls-transition-slide-bottom-small">4</h1></div>
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
+            <div class="gls-position-center gls-panel">
+                <h1 class="gls-transition-slide-bottom-small">4</h1>
+            </div>
         </div>
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
-            <div class="gls-position-center gls-panel"><h1 class="gls-transition-slide-bottom-small">5</h1></div>
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
+            <div class="gls-position-center gls-panel">
+                <h1 class="gls-transition-slide-bottom-small">5</h1>
+            </div>
         </div>
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="images/slider1.jpg" width="400" height="600" alt="">
-            <div class="gls-position-center gls-panel"><h1 class="gls-transition-slide-bottom-small">6</h1></div>
+            <img src="images/slider1.jpg" width="400" height="600" alt="" />
+            <div class="gls-position-center gls-panel">
+                <h1 class="gls-transition-slide-bottom-small">6</h1>
+            </div>
         </div>
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="images/slider2.jpg" width="400" height="600" alt="">
-            <div class="gls-position-center gls-panel"><h1 class="gls-transition-slide-bottom-small">7</h1></div>
+            <img src="images/slider2.jpg" width="400" height="600" alt="" />
+            <div class="gls-position-center gls-panel">
+                <h1 class="gls-transition-slide-bottom-small">7</h1>
+            </div>
         </div>
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="images/slider3.jpg" width="400" height="600" alt="">
-            <div class="gls-position-center gls-panel"><h1 class="gls-transition-slide-bottom-small">8</h1></div>
+            <img src="images/slider3.jpg" width="400" height="600" alt="" />
+            <div class="gls-position-center gls-panel">
+                <h1 class="gls-transition-slide-bottom-small">8</h1>
+            </div>
         </div>
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="images/slider4.jpg" width="400" height="600" alt="">
-            <div class="gls-position-center gls-panel"><h1 class="gls-transition-slide-bottom-small">9</h1></div>
+            <img src="images/slider4.jpg" width="400" height="600" alt="" />
+            <div class="gls-position-center gls-panel">
+                <h1 class="gls-transition-slide-bottom-small">9</h1>
+            </div>
         </div>
         <div class="gls-transition-toggle" tabindex="0">
-            <img src="images/slider5.jpg" width="400" height="600" alt="">
-            <div class="gls-position-center gls-panel"><h1 class="gls-transition-slide-bottom-small">10</h1></div>
+            <img src="images/slider5.jpg" width="400" height="600" alt="" />
+            <div class="gls-position-center gls-panel">
+                <h1 class="gls-transition-slide-bottom-small">10</h1>
+            </div>
         </div>
     </div>
 
     <ul class="gls-slider-nav gls-dotnav gls-flex-center gls-margin"></ul>
-
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option              | Value   | Default | Description                                                             |
-|---------------------|---------|---------|-------------------------------------------------------------------------|
+| ------------------- | ------- | ------- | ----------------------------------------------------------------------- |
 | `autoplay`          | Boolean | `false` | Slider autoplays.                                                       |
 | `autoplay-interval` | Number  | `7000`  | The delay between switching slides in autoplay mode.                    |
 | `center`            | Boolean | `false` | Center the active slide.                                                |
@@ -1907,7 +2055,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `sets`              | Boolean | `false` | Slide in sets.                                                          |
 | `velocity`          | Number  | `1`     | The animation velocity (pixel/ms).                                      |
 
-***
+---
 
 ## JavaScript
 
@@ -1923,14 +2071,14 @@ UIkit.slider(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name             | Description                                                    |
-|------------------|----------------------------------------------------------------|
-| `beforeitemshow` | Fires before an item is shown.                                 |
-| `itemshow`       | Fires after an item is shown.                                  |
-| `itemshown`      | Fires after an item's show animation has been completed.       |
-| `beforeitemhide` | Fires before an item is hidden.                                |
-| `itemhide`       | Fires after an item's hide animation has started.              |
-| `itemhidden`     | Fires after an item's hide animation has been completed.       |
+| Name             | Description                                              |
+| ---------------- | -------------------------------------------------------- |
+| `beforeitemshow` | Fires before an item is shown.                           |
+| `itemshow`       | Fires after an item is shown.                            |
+| `itemshown`      | Fires after an item's show animation has been completed. |
+| `beforeitemhide` | Fires before an item is hidden.                          |
+| `itemhide`       | Fires after an item's hide animation has started.        |
+| `itemhidden`     | Fires after an item's hide animation has been completed. |
 
 ### Methods
 
@@ -1960,25 +2108,25 @@ UIkit.slider(element).stopAutoplay();
 
 Stops the slider autoplay.
 
-***
+---
 
 ## Accessibility
 
 The Slider component adheres to the [Carousel WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *slider* has the `aria-roledescription` property set to `carousel`.
-- The *slide list* has an ID and the `aria-live` property.
-- The *slides* have an ID, the `group` role if the slider has only a previous/next navigation or the `tabpanel` role if it has a tab navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property.
+- The _slider_ has the `aria-roledescription` property set to `carousel`.
+- The _slide list_ has an ID and the `aria-live` property.
+- The _slides_ have an ID, the `group` role if the slider has only a previous/next navigation or the `tabpanel` role if it has a tab navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property.
 
 The tab navigation adheres to the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
 
-- The *tab navigation* has the `tablist` role.
-- The *tab navigation items* have the `presentation` role.
-- The *tab navigation links* have the `tab` role, the `aria-selected` state, the `aria-controls` property set to the ID of the respective slide, and an `aria-label` property.
+- The _tab navigation_ has the `tablist` role.
+- The _tab navigation items_ have the `presentation` role.
+- The _tab navigation links_ have the `tab` role, the `aria-selected` state, the `aria-controls` property set to the ID of the respective slide, and an `aria-label` property.
 
 The previous/next navigation adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
 
-- The *prev/next navigation items* have an `aria-label` property, the `aria-controls` property set to the ID of the slide list, and if an `<a>` element is used, the `button` role.
+- The _prev/next navigation items_ have an `aria-label` property, the `aria-controls` property set to the ID of the slide list, and if an `<a>` element is used, the `button` role.
 
 ### Keyboard interaction
 
@@ -1993,7 +2141,7 @@ Autoplay stops when any element in the Slider component receives focus. The tab 
 The Slider component uses the following translation strings. Learn more about [translating components](https://getuikit.com/docs/accessibility#internationalization).
 
 | Key          | Default          | Description                               |
-|--------------|------------------|-------------------------------------------|
+| ------------ | ---------------- | ----------------------------------------- |
 | `next`       | `Next Slide`     | `aria-label` for next slide button.       |
 | `previous`   | `Previous Slide` | `aria-label` for previous slide button.   |
 | `slideX`     | `Slide %s`       | `aria-label` for pagination slide button. |

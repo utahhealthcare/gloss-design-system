@@ -24,14 +24,14 @@ To create a label, just add the `.gls-label` class to a `<span>` element.
 <span class="gls-label">Default</span>
 ```
 
-***
+---
 
 ## Style modifiers
 
 Add one of the following classes for additional styles.
 
-| Class               | Description                              |
-|---------------------|------------------------------------------|
+| Class                | Description                              |
+| -------------------- | ---------------------------------------- |
 | `.gls-label-success` | Indicates success or a positive message. |
 | `.gls-label-warning` | Indicates a warning.                     |
 | `.gls-label-danger`  | Indicates an error or important message. |

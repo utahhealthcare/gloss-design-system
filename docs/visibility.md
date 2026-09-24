@@ -12,8 +12,8 @@ title: Visibility
 
 Add one of these classes to hide an element.
 
-| Class           | Description                                                                                                                        |
-|-----------------|------------------------------------------------------------------------------------------------------------------------------------|
+| Class            | Description                                                                                                                        |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | `.gls-hidden`    | Hides the element on any device. This is more of a legacy class. The recommended way to do this, is to use the `hidden` attribute. |
 | `.gls-invisible` | Hides the element without removing it from the document flow.                                                                      |
 
@@ -23,7 +23,7 @@ Add one of these classes to hide an element.
 <div class="gls-invisible"></div>
 ```
 
-***
+---
 
 ## Responsive
 
@@ -33,8 +33,8 @@ This component provides responsive classes to hide or display elements on differ
 
 Add one of the `.gls-hidden-*` classes to hide the element from screens larger than a specified width.
 
-| Class          | Description                                        |
-|----------------|----------------------------------------------------|
+| Class           | Description                                        |
+| --------------- | -------------------------------------------------- |
 | `gls-hidden@s`  | Only affects device widths of _640px_ and larger.  |
 | `gls-hidden@m`  | Only affects device widths of _960px_ and larger.  |
 | `gls-hidden@l`  | Only affects device widths of _1200px_ and larger. |
@@ -105,14 +105,14 @@ Add one of the `.gls-hidden-*` classes to hide the element from screens larger t
 </div>
 ```
 
-***
+---
 
 ### Visible
 
 Use `.gls-visible-*` classes to show the element for screens larger than the specified width.
 
-| Class           | Description                                        |
-|-----------------|----------------------------------------------------|
+| Class            | Description                                        |
+| ---------------- | -------------------------------------------------- |
 | `gls-visible@s`  | Only affects device widths of _640px_ and larger.  |
 | `gls-visible@m`  | Only affects device widths of _960px_ and larger.  |
 | `gls-visible@l`  | Only affects device widths of _1200px_ and larger. |
@@ -159,38 +159,54 @@ Use `.gls-visible-*` classes to show the element for screens larger than the spe
     <div>
         <div class="gls-panel">
             <div class="gls-alert gls-margin-remove">Small</div>
-            <div class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@s">✔ Small</div>
+            <div
+                class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@s"
+            >
+                ✔ Small
+            </div>
         </div>
     </div>
     <div>
         <div class="gls-panel">
             <div class="gls-alert gls-margin-remove">Medium</div>
-            <div class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@m">✔ Medium</div>
+            <div
+                class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@m"
+            >
+                ✔ Medium
+            </div>
         </div>
     </div>
     <div>
         <div class="gls-panel">
             <div class="gls-alert gls-margin-remove">Large</div>
-            <div class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@l">✔ Large</div>
+            <div
+                class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@l"
+            >
+                ✔ Large
+            </div>
         </div>
     </div>
     <div>
         <div class="gls-panel">
             <div class="gls-alert gls-margin-remove">X-Large</div>
-            <div class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@xl">✔ X-Large</div>
+            <div
+                class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@xl"
+            >
+                ✔ X-Large
+            </div>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Toggle
 
 To display elements on hover or focus only, add the `.gls-visible-toggle` class to a parent element and one of the following classes to any child elements that should be hidden.
 
-| Class                 | Description                                                    |
-|-----------------------|----------------------------------------------------------------|
+| Class                  | Description                                                    |
+| ---------------------- | -------------------------------------------------------------- |
 | `.gls-hidden-hover`    | The element is removed from the document flow when hidden.     |
 | `.gls-invisible-hover` | The element is not removed from the document flow when hidden. |
 
@@ -238,17 +254,19 @@ If there are `a` or `button` elements within the hidden child element, they are 
         </div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-child-width-1-2@s" gls-grid>
     <div class="gls-visible-toggle" tabindex="-1">
-
         <h4>Hidden when not hovered</h4>
 
         <div gls-grid>
-            <div class="gls-width-expand">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="gls-width-expand">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
             <div class="gls-width-auto">
                 <ul class="gls-hidden-hover gls-iconnav">
                     <li><a href="#" gls-icon="icon: pencil"></a></li>
@@ -257,14 +275,14 @@ If there are `a` or `button` elements within the hidden child element, they are 
                 </ul>
             </div>
         </div>
-
     </div>
     <div class="gls-visible-toggle" tabindex="-1">
-
         <h4>Invisible when not hovered</h4>
 
         <div gls-grid>
-            <div class="gls-width-expand">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="gls-width-expand">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
             <div class="gls-width-auto">
                 <ul class="gls-invisible-hover gls-iconnav">
                     <li><a href="#" gls-icon="icon: pencil"></a></li>
@@ -273,12 +291,11 @@ If there are `a` or `button` elements within the hidden child element, they are 
                 </ul>
             </div>
         </div>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Touch
 
@@ -314,13 +331,17 @@ Add the `.gls-hidden-touch` class to hide elements on touch devices and the `.gl
     <div>
         <div class="gls-panel">
             <div class="gls-alert gls-margin-remove gls-alert-success">✔ Hidden Touch</div>
-            <div class="gls-alert gls-position-cover gls-margin-remove gls-hidden-touch">Hidden Touch</div>
+            <div class="gls-alert gls-position-cover gls-margin-remove gls-hidden-touch">
+                Hidden Touch
+            </div>
         </div>
     </div>
     <div>
         <div class="gls-panel">
             <div class="gls-alert gls-margin-remove gls-alert-success">✔ Hidden No-Touch</div>
-            <div class="gls-alert gls-position-cover gls-margin-remove gls-hidden-notouch">Hidden No-Touch</div>
+            <div class="gls-alert gls-position-cover gls-margin-remove gls-hidden-notouch">
+                Hidden No-Touch
+            </div>
         </div>
     </div>
 </div>

@@ -21,7 +21,9 @@ The Dropnav toggles are styled through other components, some of which will be s
     <li>
         <a href=""></a>
         <div class="gls-dropdown">
-            <ul class="gls-nav gls-dropdown-nav">…</ul>
+            <ul class="gls-nav gls-dropdown-nav">
+                …
+            </ul>
         </div>
     </li>
 </ul>
@@ -87,7 +89,7 @@ In this example we are using the [Subnav component](https://getuikit.com/docs/su
 </nav>
 ```
 
-***
+---
 
 ## Dropbar
 
@@ -152,7 +154,6 @@ A dropbar extends to the full width of the dropnav and displays the dropdown wit
 
 ```html
 <nav gls-dropnav="dropbar: true">
-
     <ul class="gls-subnav">
         <li class="gls-active"><a href="#">Active</a></li>
         <li>
@@ -199,11 +200,10 @@ A dropbar extends to the full width of the dropnav and displays the dropdown wit
             </div>
         </li>
     </ul>
-
 </nav>
 ```
 
-***
+---
 
 ## Click mode
 
@@ -271,7 +271,7 @@ A parent item inside the dropnav can be enabled by either hovering or clicking t
 </nav>
 ```
 
-***
+---
 
 ## Alignment
 
@@ -345,7 +345,7 @@ By default, the dropdowns are positioned below the dropbar item and are aligned 
 </nav>
 ```
 
-***
+---
 
 ## Target
 
@@ -407,13 +407,13 @@ By default, the dropdowns are aligned to their toggle item. To position the drop
         </ul>
 
     </nav>
+
 </div>
 </div>
 
 ```html
 <div class="gls-section gls-section-muted gls-section-small">
     <nav gls-dropnav="target: !.gls-section; align: center">
-
         <ul class="gls-subnav">
             <li class="gls-active"><a href="#">Active</a></li>
             <li>
@@ -460,12 +460,11 @@ By default, the dropdowns are aligned to their toggle item. To position the drop
                 </div>
             </li>
         </ul>
-
     </nav>
 </div>
 ```
 
-***
+---
 
 ## Stretch
 
@@ -530,7 +529,6 @@ To stretch a dropdown, use the [Drop component](https://getuikit.com/docs/drop) 
 
 ```html
 <nav gls-dropnav="boundary: true; stretch: x; flip: false">
-
     <ul class="gls-subnav">
         <li class="gls-active"><a href="#">Active</a></li>
         <li>
@@ -577,11 +575,10 @@ To stretch a dropdown, use the [Drop component](https://getuikit.com/docs/drop) 
             </div>
         </li>
     </ul>
-
 </nav>
 ```
 
-***
+---
 
 ## Parent icon
 
@@ -654,7 +651,7 @@ To create a parent icon, just use the [Drop component](https://getuikit.com/docs
 </nav>
 ```
 
-***
+---
 
 ## Dropnav and tab
 
@@ -662,8 +659,11 @@ The dropnav is easily applied to the [Tab component](https://getuikit.com/docs/t
 
 ```html
 <nav gls-dropnav>
-    <ul class="gls-tab">…</ul>
-<nav>
+    <ul class="gls-tab">
+        …
+    </ul>
+    <nav></nav>
+</nav>
 ```
 
 <div class="gls-docs-example">
@@ -724,34 +724,34 @@ The dropnav is easily applied to the [Tab component](https://getuikit.com/docs/t
 </nav>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option            | Value                 | Default             | Description                                                                                                  |
-| ----------------- | --------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `align`           | String                | `left`              | Dropdown alignment (`left`, `right`, `center`).                                                              |
-| `dropbar `        | Boolean               | `false`             | Enable or disable dropbar behavior.                                                                          |
-| `dropbar-anchor`  | CSS selector          | `false`             | If set, dropbar will be inserted after the anchor element.                                                   |
-| `stretch`         | Boolean, String       | `false`             | Stretch dropdown on both (true) or given axis (`x`, `y`).                                                    |
-| `mode`            | String                | `click, hover`      | Comma-separated list of dropdown trigger behavior modes (`click`, `hover`).                                  |
-| `delay-show`      | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
-| `delay-hide`      | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
-| `boundary`        | CSS selector          | `true`              | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
-| `target`          | Boolean, CSS selector | `false`             | The element the dropdown is positioned to (`true` for window).                                               |
-| `target-x`        | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to (`true` for window).                                      |
-| `target-y`        | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
-| `offset`          | Number                | `0`                 | The dropdown offset.                                                                                         |
+| Option            | Value                 | Default              | Description                                                                                                  |
+| ----------------- | --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `align`           | String                | `left`               | Dropdown alignment (`left`, `right`, `center`).                                                              |
+| `dropbar `        | Boolean               | `false`              | Enable or disable dropbar behavior.                                                                          |
+| `dropbar-anchor`  | CSS selector          | `false`              | If set, dropbar will be inserted after the anchor element.                                                   |
+| `stretch`         | Boolean, String       | `false`              | Stretch dropdown on both (true) or given axis (`x`, `y`).                                                    |
+| `mode`            | String                | `click, hover`       | Comma-separated list of dropdown trigger behavior modes (`click`, `hover`).                                  |
+| `delay-show`      | Number                | `0`                  | Delay time in hover mode before a dropdown is shown in ms.                                                   |
+| `delay-hide`      | Number                | `800`                | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
+| `boundary`        | CSS selector          | `true`               | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
+| `target`          | Boolean, CSS selector | `false`              | The element the dropdown is positioned to (`true` for window).                                               |
+| `target-x`        | Boolean, CSS selector | `false`              | The element's X axis the dropdown is positioned to (`true` for window).                                      |
+| `target-y`        | Boolean, CSS selector | `false`              | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
+| `offset`          | Number                | `0`                  | The dropdown offset.                                                                                         |
 | `animation`       | String                | `gls-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                      |
-| `animate-out`     | Boolean               | `false`             | Use animation when closing the drop.                                                                         |
-| `bg-scroll`       | Boolean               | `true`              | Allow background scrolling while dropdown is opened.                                                         |
-| `close-on-scroll` | Boolean               | `false`             | Close the drop on scrolling a parent scroll container.                                                       |
-| `duration`        | Number                | `200`               | The animation duration.                                                                                      |
-| `container`       | Boolean               | `false`             | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
+| `animate-out`     | Boolean               | `false`              | Use animation when closing the drop.                                                                         |
+| `bg-scroll`       | Boolean               | `true`               | Allow background scrolling while dropdown is opened.                                                         |
+| `close-on-scroll` | Boolean               | `false`              | Close the drop on scrolling a parent scroll container.                                                       |
+| `duration`        | Number                | `200`                | The animation duration.                                                                                      |
+| `container`       | Boolean               | `false`              | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
 
-***
+---
 
 ## JavaScript
 
@@ -776,14 +776,14 @@ The following events will be triggered on elements with this component attached:
 | `hide`       | Fires after an item's hide animation has started.                                              |
 | `hidden`     | Fires after an item is hidden.                                                                 |
 
-***
+---
 
 ## Accessibility
 
 The Dropnav component adheres to the [Disclosure Navigation Menu WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/examples/disclosure-navigation-hybrid/) and automatically sets the appropriate WAI-ARIA states and properties.
 
-- The *nav items* and *toggle items* have the `aria-expanded` state and the `aria-haspopup` property.
-- The *toggle items* also have the `aria-label` property.
+- The _nav items_ and _toggle items_ have the `aria-expanded` state and the `aria-haspopup` property.
+- The _toggle items_ also have the `aria-label` property.
 
 ### Keyboard interaction
 

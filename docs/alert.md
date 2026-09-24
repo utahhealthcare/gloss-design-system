@@ -21,10 +21,13 @@ To apply this component, add the `gls-alert` attribute to a block element.
 </div>
 
 ```html
-<div gls-alert>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div gls-alert>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
 ```
 
-***
+---
 
 ## Close button
 
@@ -48,18 +51,21 @@ To create a close button and enable its functionality, add the `.gls-alert-close
 <div gls-alert>
     <a href class="gls-alert-close" gls-close></a>
     <h3>Notice</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </p>
 </div>
 ```
 
-***
+---
 
 ## Style modifiers
 
 There are several style modifiers available. Just add one of the following classes to apply a different look.
 
-| Class               | Description                               |
-|---------------------|-------------------------------------------|
+| Class                | Description                               |
+| -------------------- | ----------------------------------------- |
 | `.gls-alert-primary` | Give the message a prominent styling.     |
 | `.gls-alert-success` | Indicates success or a positive message.  |
 | `.gls-alert-warning` | Indicates a message containing a warning. |
@@ -90,36 +96,44 @@ There are several style modifiers available. Just add one of the following class
 ```html
 <div class="gls-alert-primary" gls-alert>
     <a href class="gls-alert-close" gls-close></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </p>
 </div>
 
 <div class="gls-alert-success" gls-alert>
     <a href class="gls-alert-close" gls-close></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </p>
 </div>
 
 <div class="gls-alert-warning" gls-alert>
     <a href class="gls-alert-close" gls-close></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </p>
 </div>
 
 <div class="gls-alert-danger" gls-alert>
     <a href class="gls-alert-close" gls-close></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </p>
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option       | Value        | Default           | Description                         |
-|--------------|--------------|-------------------|-------------------------------------|
-| `animation`  | Boolean      | `true`            | Fade out or hide directly.          |
-| `duration`   | Number       | `150`             | Animation duration in milliseconds. |
-| `sel-close`  | CSS selector | `.gls-alert-close` | The close trigger element.          |
+| Option      | Value        | Default            | Description                         |
+| ----------- | ------------ | ------------------ | ----------------------------------- |
+| `animation` | Boolean      | `true`             | Fade out or hide directly.          |
+| `duration`  | Number       | `150`              | Animation duration in milliseconds. |
+| `sel-close` | CSS selector | `.gls-alert-close` | The close trigger element.          |
 
 `animation` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
@@ -127,7 +141,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 <span gls-alert="false"></span>
 ```
 
-***
+---
 
 ## JavaScript
 
@@ -144,7 +158,7 @@ UIkit.alert(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                                                                    |
-|--------------|------------------------------------------------------------------------------------------------|
+| ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
 | `hide`       | Fires after an item is hidden.                                                                 |
 

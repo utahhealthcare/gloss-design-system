@@ -32,7 +32,7 @@ If `title` is the only option in the attribute value, you can also use `gls-tool
 
 **Note** The tooltip content is rendered as HTML. Sanitization is the developer's responsibility.
 
-***
+---
 
 ## Alignment
 
@@ -69,17 +69,37 @@ Add one of the following options to the `gls-tooltip` attribute to adjust the to
 ```html
 <p gls-margin>
     <button class="gls-button gls-button-default" gls-tooltip="Hello World">Top</button>
-    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: top-left">Top Left</button>
-    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: top-right">Top Right</button>
-    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: bottom">Bottom</button>
-    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: bottom-left">Bottom Left</button>
-    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: bottom-right">Bottom Right</button>
-    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: left">Left</button>
-    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: right">Right</button>
+    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: top-left">
+        Top Left
+    </button>
+    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: top-right">
+        Top Right
+    </button>
+    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: bottom">
+        Bottom
+    </button>
+    <button
+        class="gls-button gls-button-default"
+        gls-tooltip="title: Hello World; pos: bottom-left"
+    >
+        Bottom Left
+    </button>
+    <button
+        class="gls-button gls-button-default"
+        gls-tooltip="title: Hello World; pos: bottom-right"
+    >
+        Bottom Right
+    </button>
+    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: left">
+        Left
+    </button>
+    <button class="gls-button gls-button-default" gls-tooltip="title: Hello World; pos: right">
+        Right
+    </button>
 </p>
 ```
 
-***
+---
 
 ## Delay
 
@@ -94,25 +114,27 @@ If you want the tooltip to appear with a little delay, just add the `delay` opti
 </div>
 
 ```html
-<button class="gls-button gls-button-default" gls-tooltip="title: Hello World; delay: 500">Hover</button>
+<button class="gls-button gls-button-default" gls-tooltip="title: Hello World; delay: 500">
+    Hover
+</button>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option      | Value  | Default                 | Description                                                                                          |
-|-------------|--------|-------------------------|------------------------------------------------------------------------------------------------------|
-| `title`     | String |                         | Tooltip text.                                                                                        |
-| `pos`       | String | `top-center`            | Tooltip position.                                                                                    |
-| `offset`    | Number | `false`                 | Tooltip offset.                                                                                      |
-| `animation` | String | `gls-animation-scale-up` | Space-separated names of [animations](https://getuikit.com/docs/animation). Comma-separated for animation out.              |
-| `duration`  | Number | `100`                   | The animation duration.                                                                              |
-| `delay`     | Number | `0`                     | The show delay.                                                                                      |
-| `cls`       | String | `gls-active`             | The active class.                                                                                    |
-| `container` | String | `body`                  | Define a target container via a selector to specify where the tooltip should be appended in the DOM. |
+| Option      | Value  | Default                  | Description                                                                                                    |
+| ----------- | ------ | ------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| `title`     | String |                          | Tooltip text.                                                                                                  |
+| `pos`       | String | `top-center`             | Tooltip position.                                                                                              |
+| `offset`    | Number | `false`                  | Tooltip offset.                                                                                                |
+| `animation` | String | `gls-animation-scale-up` | Space-separated names of [animations](https://getuikit.com/docs/animation). Comma-separated for animation out. |
+| `duration`  | Number | `100`                    | The animation duration.                                                                                        |
+| `delay`     | Number | `0`                      | The show delay.                                                                                                |
+| `cls`       | String | `gls-active`             | The active class.                                                                                              |
+| `container` | String | `body`                   | Define a target container via a selector to specify where the tooltip should be appended in the DOM.           |
 
 `title` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
@@ -120,7 +142,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 <span gls-tooltip="Hello World"></span>
 ```
 
-***
+---
 
 ## JavaScript
 
@@ -148,8 +170,8 @@ The following events will be triggered on elements, which are injected by this c
 #### Example
 
 ```javascript
-UIkit.util.on(document, 'show', '.gls-tooltip.gls-active', function() {
-  // do something
+UIkit.util.on(document, 'show', '.gls-tooltip.gls-active', function () {
+    // do something
 });
 ```
 
@@ -173,11 +195,11 @@ UIkit.tooltip(element).hide();
 
 Hides the Tooltip.
 
-***
+---
 
 ## Accessibility
 
 The Tooltip component adheres to the [Tooltip Widget WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *element with the tooltip* has an ID.
-- The *tooltip* has the `tooltip` role and the `aria-describedby` property set to the ID of the element with the tooltip.
+- The _element with the tooltip_ has an ID.
+- The _tooltip_ has the `tooltip` role and the `aria-describedby` property set to the ID of the element with the tooltip.

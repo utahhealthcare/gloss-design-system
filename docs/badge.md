@@ -22,6 +22,5 @@ To create a badge, just add the `.gls-badge` class to an inline element like `<a
 </div>
 
 ```html
-<span class="gls-badge">1</span>
-<span class="gls-badge">100</span>
+<span class="gls-badge">1</span> <span class="gls-badge">100</span>
 ```

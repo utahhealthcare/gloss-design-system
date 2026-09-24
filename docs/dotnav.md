@@ -12,8 +12,8 @@ title: Dotnav
 
 To create a navigation with dots, use the following classes. This component is built with Flexbox. So to align a dotnav, you can use [Flex component](https://getuikit.com/docs/flex).
 
-| Class        | Description                                                                                                         |
-|--------------|---------------------------------------------------------------------------------------------------------------------|
+| Class         | Description                                                                                                         |
+| ------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `.gls-dotnav` | Add this class to a `<ul>` element to define the Dotnav component. Use `<a>` elements as nav items within the list. |
 | `.gls-active` | Add this class to a list item to apply an active state.                                                             |
 
@@ -44,14 +44,16 @@ To create a navigation with dots, use the following classes. This component is b
 </ul>
 ```
 
-***
+---
 
 ## Vertical alignment
 
 The dotnav can also be displayed vertically. Just add the `.gls-dotnav-vertical` modifier.
 
 ```html
-<ul class="gls-dotnav gls-dotnav-vertical">…</ul>
+<ul class="gls-dotnav gls-dotnav-vertical">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -74,8 +76,7 @@ The dotnav can also be displayed vertically. Just add the `.gls-dotnav-vertical`
 </ul>
 ```
 
-
-***
+---
 
 ## Position as overlay
 
@@ -85,13 +86,13 @@ Use the `.gls-light` or `.gls-dark` class from the [Inverse component](https://g
 
 ```html
 <div class="gls-position-relative gls-light">
-
     <!-- The element which is wrapped goes here -->
 
     <div class="gls-position-bottom-center gls-position-small">
-        <ul class="gls-dotnav">…</ul>
+        <ul class="gls-dotnav">
+            …
+        </ul>
     </div>
-
 </div>
 ```
 
@@ -123,16 +124,15 @@ Use the `.gls-light` or `.gls-dark` class from the [Inverse component](https://g
 
 ```html
 <div class="gls-position-relative gls-light" gls-slideshow>
-
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/size1.jpg" alt="" gls-cover>
+            <img src="images/size1.jpg" alt="" gls-cover />
         </div>
     </div>
 
@@ -143,11 +143,10 @@ Use the `.gls-light` or `.gls-dark` class from the [Inverse component](https://g
             <li gls-slideshow-item="2"><a href="#">Item 3</a></li>
         </ul>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Vertically center in viewport
 
@@ -155,6 +154,8 @@ The dotnav can also be centered vertically inside your viewport by adding the `.
 
 ```html
 <div class="gls-position-center-right gls-position-medium gls-position-fixed">
-    <ul class="gls-dotnav gls-dotnav-vertical">…</ul>
+    <ul class="gls-dotnav gls-dotnav-vertical">
+        …
+    </ul>
 </div>
 ```

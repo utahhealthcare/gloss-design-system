@@ -14,20 +14,20 @@ The Base component utilizes styling of the famous [Normalize.css](http://necolas
 
 **Note** [Form](https://getuikit.com/docs/form), [Button](https://getuikit.com/docs/button) and [Table](https://getuikit.com/docs/table) elements are not normalized or styled by default. This happens in their specific component class. UIkit tries to apply as little styling as possible to plain HTML elements in order to remain robust and conflict-free with 3rd party CSS.
 
-***
+---
 
 ## Links
 
 Turn text into hypertext using the `<a>` element. You can also add the `.gls-link` class to a `<span>` or similar element to apply the default link styling. For additional styling options, take a look at the [Link component](https://getuikit.com/docs/link).
 
-***
+---
 
 ## Text-level semantics
 
 The following list gives you a short overview of the most commonly used text-level semantics and how to utilize them.
 
 | Element    | Description                                                                                               |
-|------------|-----------------------------------------------------------------------------------------------------------|
+| ---------- | --------------------------------------------------------------------------------------------------------- |
 | `<abbr>`   | Define an abbreviation using the <abbr title="Title Text">abbr element with a title</abbr>.               |
 | `<b>`      | Create bold text with the <b>b element</b>.                                                               |
 | `<cite>`   | Define the title of a work with the <cite>cite element</cite>.                                            |
@@ -50,7 +50,7 @@ The following list gives you a short overview of the most commonly used text-lev
 | `<u>`      | Define underlined text using the <u>u element</u>.                                                        |
 | `<var>`    | Define a variable using the <var>var element</var>.                                                       |
 
-***
+---
 
 ## Embedded content
 
@@ -66,11 +66,11 @@ Resize the browser window to see the responsive behavior of the image.
 
 ```html
 <div class="gls-width-large">
-    <img src="images/photo.jpg" width="1800" height="1200" alt="Image">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="Image" />
 </div>
 ```
 
-***
+---
 
 ## Paragraphs
 
@@ -81,10 +81,13 @@ Create a paragraph by using the `<p>` element.
 </div>
 
 ```html
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</p>
 ```
 
-***
+---
 
 ## Headings
 
@@ -110,7 +113,7 @@ Add the `.gls-h1`, `.gls-h2`, `.gls-h3`, `.gls-h4`, `.gls-h5` or `.gls-h6` class
 <h6>h6 Heading 6</h6>
 ```
 
-***
+---
 
 ## Lists
 
@@ -138,10 +141,12 @@ Create an unordered list using the `<ul>` element and the `<ol>` element for ord
 ```html
 <ul>
     <li>Item 1</li>
-    <li>Item 2
+    <li>
+        Item 2
         <ul>
             <li>Item 1</li>
-            <li>Item 2
+            <li>
+                Item 2
                 <ul>
                     <li>Item 1</li>
                     <li>Item 2</li>
@@ -154,7 +159,7 @@ Create an unordered list using the `<ul>` element and the `<ol>` element for ord
 </ul>
 ```
 
-***
+---
 
 ## Description list
 
@@ -182,7 +187,7 @@ Create a description list using the `<dl>` element. Use `<dt>` to define the ter
 </dl>
 ```
 
-***
+---
 
 ## Horizontal rule
 
@@ -199,16 +204,20 @@ Create a horizontal rule by using the `<hr>` element. For additional styling opt
 </div>
 
 ```html
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<hr />
 
-<hr>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</p>
 ```
 
-***
+---
 
 ## Blockquote
 
@@ -223,12 +232,17 @@ To quote multiple lines of content from another source within your document, use
 
 ```html
 <blockquote cite="#">
-    <p class="gls-margin-remove">The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element.</p>
-    <footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
+    <p class="gls-margin-remove">
+        The blockquote element represents content that is quoted from another source, optionally
+        with a citation which must be within a footer or cite element.
+    </p>
+    <footer>
+        Someone famous in <cite><a href="#">Source Title</a></cite>
+    </footer>
 </blockquote>
 ```
 
-***
+---
 
 ## Preformatted text
 

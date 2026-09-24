@@ -25,10 +25,13 @@ The [Base component](https://getuikit.com/docs/base) determines the default link
 ```html
 <a class="gls-link-muted" href="#">Link</a>
 
-<p class="gls-link-muted">Lorem ipsum <a href="#">dolor sit</a> amet, consectetur adipiscing elit, sed do <a href="#">eiusmod</a> tempor incididunt ut <a href="#">labore et</a> dolore magna aliqua.</p>
+<p class="gls-link-muted">
+    Lorem ipsum <a href="#">dolor sit</a> amet, consectetur adipiscing elit, sed do
+    <a href="#">eiusmod</a> tempor incididunt ut <a href="#">labore et</a> dolore magna aliqua.
+</p>
 ```
 
-***
+---
 
 ## Text modifier
 
@@ -54,7 +57,7 @@ To make a link appear like body text and apply a hover effect, add the `.gls-lin
 </ul>
 ```
 
-***
+---
 
 ## Heading modifier
 
@@ -72,7 +75,7 @@ To style a link inside a heading element, add the `.gls-link-heading` class to t
 <h3><a class="gls-link-heading" href="#">Heading</a></h3>
 ```
 
-***
+---
 
 ## Reset modifier
 
@@ -90,7 +93,7 @@ To reset a link's color, so that it inherits the color from its parent, add the 
 <h3><a class="gls-link-reset" href="#">Heading</a></h3>
 ```
 
-***
+---
 
 ## Toggle
 
@@ -110,8 +113,14 @@ To use an anchor as a parent element and apply the link style on one of its chil
 </div>
 
 ```html
-<a href class="gls-display-block gls-card gls-card-body gls-card-default gls-link-toggle gls-width-medium">
+<a
+    href
+    class="gls-display-block gls-card gls-card-body gls-card-default gls-link-toggle gls-width-medium"
+>
     <h3 class="gls-card-title"><span class="gls-link-heading">Heading</span></h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </p>
 </a>
 ```

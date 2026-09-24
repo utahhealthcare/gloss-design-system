@@ -12,8 +12,8 @@ title: Margin
 
 Add one or more of the following classes to any element to create the same vertical and/or horizontal margin that a paragraph usually has.
 
-| Class               | Description                                                                      |
-|---------------------|----------------------------------------------------------------------------------|
+| Class                | Description                                                                      |
+| -------------------- | -------------------------------------------------------------------------------- |
 | `.gls-margin`        | Adds top margin, if it is preceded by another element, and always bottom margin. |
 | `.gls-margin-top`    | Adds top margin.                                                                 |
 | `.gls-margin-bottom` | Adds bottom margin.                                                              |
@@ -30,18 +30,24 @@ Add one or more of the following classes to any element to create the same verti
 </div>
 
 ```html
-<div class="gls-margin gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-<div class="gls-margin gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="gls-margin gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
+<div class="gls-margin gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
 ```
 
-***
+---
 
 ## X-Small margin
 
 Add one of the following classes to add very small spacing to block elements.
 
-| Class                     | Description                                                                            |
-|---------------------------|----------------------------------------------------------------------------------------|
+| Class                       | Description                                                                              |
+| --------------------------- | ---------------------------------------------------------------------------------------- |
 | `.gls-margin-xsmall`        | Adds smaller top margin, if it is preceded by another element, and always bottom margin. |
 | `.gls-margin-xsmall-top`    | Adds smaller top margin.                                                                 |
 | `.gls-margin-xsmall-bottom` | Adds smaller bottom margin.                                                              |
@@ -54,18 +60,24 @@ Add one of the following classes to add very small spacing to block elements.
 </div>
 
 ```html
-<div class="gls-margin-xsmall gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-<div class="gls-margin-xsmall gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="gls-margin-xsmall gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
+<div class="gls-margin-xsmall gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
 ```
 
-***
+---
 
 ## Small margin
 
 Add one of the following classes to add small spacing to block elements.
 
-| Class                     | Description                                                                            |
-|---------------------------|----------------------------------------------------------------------------------------|
+| Class                      | Description                                                                            |
+| -------------------------- | -------------------------------------------------------------------------------------- |
 | `.gls-margin-small`        | Adds small top margin, if it is preceded by another element, and always bottom margin. |
 | `.gls-margin-small-top`    | Adds small top margin.                                                                 |
 | `.gls-margin-small-bottom` | Adds small bottom margin.                                                              |
@@ -78,18 +90,24 @@ Add one of the following classes to add small spacing to block elements.
 </div>
 
 ```html
-<div class="gls-margin-small gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-<div class="gls-margin-small gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="gls-margin-small gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
+<div class="gls-margin-small gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
 ```
 
-***
+---
 
 ## Medium margin
 
 Add one of the following classes to add medium spacing to block elements.
 
-| Class                      | Description                                                                             |
-|----------------------------|-----------------------------------------------------------------------------------------|
+| Class                       | Description                                                                             |
+| --------------------------- | --------------------------------------------------------------------------------------- |
 | `.gls-margin-medium`        | Adds medium top margin, if it is preceded by another element, and always bottom margin. |
 | `.gls-margin-medium-top`    | Adds medium top margin.                                                                 |
 | `.gls-margin-medium-bottom` | Adds medium bottom margin.                                                              |
@@ -102,18 +120,24 @@ Add one of the following classes to add medium spacing to block elements.
 </div>
 
 ```html
-<div class="gls-margin-medium gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-<div class="gls-margin-medium gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="gls-margin-medium gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
+<div class="gls-margin-medium gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
 ```
 
-***
+---
 
 ## Large margin
 
 Add one of the following classes to add large spacing to block elements.
 
-| Class                     | Description                                                                        |
-|---------------------------|------------------------------------------------------------------------------------|
+| Class                      | Description                                                                        |
+| -------------------------- | ---------------------------------------------------------------------------------- |
 | `.gls-margin-large`        | Adds large margin, if it is preceded by another element, and always bottom margin. |
 | `.gls-margin-large-top`    | Adds large top margin.                                                             |
 | `.gls-margin-large-bottom` | Adds large bottom margin.                                                          |
@@ -126,18 +150,24 @@ Add one of the following classes to add large spacing to block elements.
 </div>
 
 ```html
-<div class="gls-margin-large gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-<div class="gls-margin-large gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="gls-margin-large gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
+<div class="gls-margin-large gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
 ```
 
-***
+---
 
 ## X-Large margin
 
 Add one of the following classes to add very large spacing to block elements.
 
-| Class                      | Description                                                                         |
-|----------------------------|-------------------------------------------------------------------------------------|
+| Class                       | Description                                                                         |
+| --------------------------- | ----------------------------------------------------------------------------------- |
 | `.gls-margin-xlarge`        | Adds larger margin, if it is preceded by another element, and always bottom margin. |
 | `.gls-margin-xlarge-top`    | Adds larger top margin.                                                             |
 | `.gls-margin-xlarge-bottom` | Adds larger bottom margin.                                                          |
@@ -150,18 +180,24 @@ Add one of the following classes to add very large spacing to block elements.
 </div>
 
 ```html
-<div class="gls-margin-xlarge gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-<div class="gls-margin-xlarge gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="gls-margin-xlarge gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
+<div class="gls-margin-xlarge gls-card gls-card-default gls-card-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+</div>
 ```
 
-***
+---
 
 ## Remove margin
 
 Add one of the following classes to remove the margin from block elements.
 
-| Class                           | Description                                                |
-|---------------------------------|------------------------------------------------------------|
+| Class                            | Description                                                |
+| -------------------------------- | ---------------------------------------------------------- |
 | `.gls-margin-remove`             | Removes all margins.                                       |
 | `.gls-margin-remove-top`         | Removes top margin.                                        |
 | `.gls-margin-remove-bottom`      | Removes bottom margin.                                     |
@@ -176,27 +212,27 @@ Add one of the following classes to remove the margin from block elements.
 <h1 class="gls-margin-remove"></h1>
 ```
 
-***
+---
 
 ### Responsive
 
 UIkit provides a number of responsive classes to remove margins. Basically, they work just like the usual margin remove classes, except that they have suffixes that represent the breakpoint from which they come into effect.
 
-| Class                                                        | Description                                   |
-|--------------------------------------------------------------|-----------------------------------------------|
+| Class                                                          | Description                                   |
+| -------------------------------------------------------------- | --------------------------------------------- |
 | `.gls-margin-remove-left@s`<br> `.gls-margin-remove-right@s`   | Affects device widths of _640px_ and larger.  |
 | `.gls-margin-remove-left@m`<br> `.gls-margin-remove-right@m`   | Affects device widths of _960px_ and larger.  |
 | `.gls-margin-remove-left@l`<br> `.gls-margin-remove-right@l`   | Affects device widths of _1200px_ and larger. |
 | `.gls-margin-remove-left@xl`<br> `.gls-margin-remove-right@xl` | Affects device widths of _1600px_ and larger. |
 
-***
+---
 
 ## Auto margin
 
 Add one of the following classes to set auto margin. This can be useful to center or otherwise align block elements with a fixed width as well as flex elements.
 
-| Class                      | Description                                                                         |
-|----------------------------|-------------------------------------------------------------------------------------|
+| Class                       | Description                                                                         |
+| --------------------------- | ----------------------------------------------------------------------------------- |
 | `.gls-margin-auto`          | Sets left and right margin to auto, horizontally centering block and flex elements. |
 | `.gls-margin-auto-top`      | Sets top margin to auto, pushing block and flex elements to the bottom.             |
 | `.gls-margin-auto-bottom`   | Sets bottom margin to auto, pushing block and flex elements to the top.             |
@@ -213,23 +249,31 @@ Add one of the following classes to set auto margin. This can be useful to cente
 </div>
 
 ```html
-<div class="gls-margin gls-margin-auto-left gls-width-1-2@s gls-card gls-card-default gls-card-body gls-text-center">Block element</div>
+<div
+    class="gls-margin gls-margin-auto-left gls-width-1-2@s gls-card gls-card-default gls-card-body gls-text-center"
+>
+    Block element
+</div>
 
 <div class="gls-flex gls-height-medium gls-background-muted gls-margin gls-text-center">
-    <div class="gls-margin-auto gls-margin-auto-vertical gls-width-1-2@s gls-card gls-card-default gls-card-body">Flex item</div>
+    <div
+        class="gls-margin-auto gls-margin-auto-vertical gls-width-1-2@s gls-card gls-card-default gls-card-body"
+    >
+        Flex item
+    </div>
 </div>
 ```
 
-***
+---
 
 ### Responsive
 
 UIkit provides a number of responsive margin auto classes. Basically, they work just like the usual margin auto classes, except that they have suffixes that represent the breakpoint from which they come into effect.
 
-| Class                                                                             | Description                                   |
-|-----------------------------------------------------------------------------------|-----------------------------------------------|
+| Class                                                                                | Description                                   |
+| ------------------------------------------------------------------------------------ | --------------------------------------------- |
 | `.gls-margin-auto-left@s`<br> `.gls-margin-auto@s`<br> `.gls-margin-auto-right@s`    | Affects device widths of _640px_ and larger.  |
-| `.gls-margin-auto-left@m`<br> `.gls-margin-auto@m`<br>   `.gls-margin-auto-right@m`  | Affects device widths of _960px_ and larger.  |
+| `.gls-margin-auto-left@m`<br> `.gls-margin-auto@m`<br> `.gls-margin-auto-right@m`    | Affects device widths of _960px_ and larger.  |
 | `.gls-margin-auto-left@l`<br> `.gls-margin-auto@l`<br> `.gls-margin-auto-right@l`    | Affects device widths of _1200px_ and larger. |
 | `.gls-margin-auto-left@xl`<br> `.gls-margin-auto@xl`<br> `.gls-margin-auto-right@xl` | Affects device widths of _1600px_ and larger. |
 
@@ -240,12 +284,24 @@ UIkit provides a number of responsive margin auto classes. Basically, they work 
 </div>
 
 ```html
-<div class="gls-margin gls-margin-auto-right gls-margin-auto@m gls-width-1-2@s gls-card gls-card-default gls-card-body gls-text-center">Block element</div>
-<div class="gls-margin gls-margin-auto gls-margin-auto-left@m gls-width-1-2@s gls-card gls-card-default gls-card-body gls-text-center">Block element</div>
-<div class="gls-margin gls-margin-auto-left gls-margin-auto-right@m gls-width-1-2@s gls-card gls-card-default gls-card-body gls-text-center">Block element</div>
+<div
+    class="gls-margin gls-margin-auto-right gls-margin-auto@m gls-width-1-2@s gls-card gls-card-default gls-card-body gls-text-center"
+>
+    Block element
+</div>
+<div
+    class="gls-margin gls-margin-auto gls-margin-auto-left@m gls-width-1-2@s gls-card gls-card-default gls-card-body gls-text-center"
+>
+    Block element
+</div>
+<div
+    class="gls-margin gls-margin-auto-left gls-margin-auto-right@m gls-width-1-2@s gls-card gls-card-default gls-card-body gls-text-center"
+>
+    Block element
+</div>
 ```
 
-***
+---
 
 ## Dynamic wrapping
 
@@ -288,18 +344,18 @@ To add spacing to stacking elements, for example inline elements that wrap on sm
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option         | Value  | Default             | Description                                                                                                |
-|----------------|--------|---------------------|------------------------------------------------------------------------------------------------------------|
+| Option         | Value  | Default                | Description                                                                                                   |
+| -------------- | ------ | ---------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `margin `      | String | `gls-margin-small-top` | This class is added to items that break into the next row, typically to create a margin for the previous row. |
-| `first-column` | String | `gls-first-column`     | This class is added to the first element in each row.                                                      |
+| `first-column` | String | `gls-first-column`     | This class is added to the first element in each row.                                                         |
 
-***
+---
 
 ## JavaScript
 

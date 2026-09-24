@@ -28,12 +28,14 @@ The toggle can be used to add or remove a class or attribute from the item. By d
 
 ```html
 <div>
-    <button class="gls-button gls-button-default" type="button" gls-toggle="target: #toggle-usage">Toggle</button>
+    <button class="gls-button gls-button-default" type="button" gls-toggle="target: #toggle-usage">
+        Toggle
+    </button>
     <p id="toggle-usage">What's up?</p>
 </div>
 ```
 
-***
+---
 
 ## Multiple items
 
@@ -52,14 +54,16 @@ You can also toggle multiple items at the same time. Just add the `target: SELEC
 </div>
 
 ```html
-<button class="gls-button gls-button-default" type="button" gls-toggle="target: .toggle">Toggle</button>
+<button class="gls-button gls-button-default" type="button" gls-toggle="target: .toggle">
+    Toggle
+</button>
 <p class="toggle">Hello!</p>
 <p class="toggle" hidden>Bazinga!</p>
 ```
 
 **Note** In this example we added the `hidden` attribute to one of the items, so that only the other item will be shown. The toggle will switch visible states between both elements.
 
-***
+---
 
 ## Custom class
 
@@ -76,11 +80,19 @@ If you don't want to toggle the `hidden` attribute, you can also toggle a custom
 </div>
 
 ```html
-<button class="gls-button gls-button-default" type="button" gls-toggle="target: #toggle-custom; cls: gls-card-primary">Toggle</button>
-<div id="toggle-custom" class="gls-card gls-card-default gls-card-body gls-margin-small">Custom class</div>
+<button
+    class="gls-button gls-button-default"
+    type="button"
+    gls-toggle="target: #toggle-custom; cls: gls-card-primary"
+>
+    Toggle
+</button>
+<div id="toggle-custom" class="gls-card gls-card-default gls-card-body gls-margin-small">
+    Custom class
+</div>
 ```
 
-***
+---
 
 ## Animations
 
@@ -97,8 +109,17 @@ The Toggle component allows you to add animations to items when toggling between
 </div>
 
 ```html
-<button href="#toggle-animation" class="gls-button gls-button-default" type="button" gls-toggle="target: #toggle-animation; animation: gls-animation-fade">Toggle</button>
-<div id="toggle-animation" class="gls-card gls-card-default gls-card-body gls-margin-small">Animation</div>
+<button
+    href="#toggle-animation"
+    class="gls-button gls-button-default"
+    type="button"
+    gls-toggle="target: #toggle-animation; animation: gls-animation-fade"
+>
+    Toggle
+</button>
+<div id="toggle-animation" class="gls-card gls-card-default gls-card-body gls-margin-small">
+    Animation
+</div>
 ```
 
 ### Multiple animations
@@ -106,7 +127,10 @@ The Toggle component allows you to add animations to items when toggling between
 You can also apply multiple animations from the [Animation component](https://getuikit.com/docs/animation). That way you can add different in and out animations.
 
 ```html
-<button type="button" gls-toggle="target: #my-id; animation: gls-animation-slide-left, gls-animation-slide-bottom"></button>
+<button
+    type="button"
+    gls-toggle="target: #my-id; animation: gls-animation-slide-left, gls-animation-slide-bottom"
+></button>
 <p id="my-id"></p>
 ```
 
@@ -116,8 +140,19 @@ You can also apply multiple animations from the [Animation component](https://ge
 </div>
 
 ```html
-<button class="gls-button gls-button-default" type="button" gls-toggle="target: #toggle-animation-multiple; animation:  gls-animation-slide-left, gls-animation-slide-bottom">Toggle</button>
-<div id="toggle-animation-multiple" class="gls-card gls-card-default gls-card-body gls-margin-small">Animation</div>
+<button
+    class="gls-button gls-button-default"
+    type="button"
+    gls-toggle="target: #toggle-animation-multiple; animation:  gls-animation-slide-left, gls-animation-slide-bottom"
+>
+    Toggle
+</button>
+<div
+    id="toggle-animation-multiple"
+    class="gls-card gls-card-default gls-card-body gls-margin-small"
+>
+    Animation
+</div>
 ```
 
 ### Queued animations
@@ -125,7 +160,10 @@ You can also apply multiple animations from the [Animation component](https://ge
 When toggling multiple items with an animation, you might want to wait until the first animation has run through before animating the second item. To do so, just add the `queued: true` option to the `gls-toggle` attribute.
 
 ```html
-<button type="button" gls-toggle="target: .my-class; animation: gls-animation-fade; queued: true"></button>
+<button
+    type="button"
+    gls-toggle="target: .my-class; animation: gls-animation-fade; queued: true"
+></button>
 <p class="my-class"></p>
 <p class="my-class"></p>
 ```
@@ -137,12 +175,22 @@ When toggling multiple items with an animation, you might want to wait until the
 </div>
 
 ```html
-<button class="gls-button gls-button-default" type="button" gls-toggle="target: .toggle-animation-queued; animation: gls-animation-fade; queued: true; duration: 300">Toggle</button>
-<p class="toggle-animation-queued gls-card gls-card-default gls-card-body gls-margin-small">Animation</p>
-<p class="toggle-animation-queued gls-card gls-card-primary gls-card-body gls-margin-small" hidden>Animation</p>
+<button
+    class="gls-button gls-button-default"
+    type="button"
+    gls-toggle="target: .toggle-animation-queued; animation: gls-animation-fade; queued: true; duration: 300"
+>
+    Toggle
+</button>
+<p class="toggle-animation-queued gls-card gls-card-default gls-card-body gls-margin-small">
+    Animation
+</p>
+<p class="toggle-animation-queued gls-card gls-card-primary gls-card-body gls-margin-small" hidden>
+    Animation
+</p>
 ```
 
-***
+---
 
 ## Modes
 
@@ -155,7 +203,6 @@ A toggle can be triggered in different ways. Just add the `mode` option to the `
 | `click, hover` | The toggle will be triggered on click and hover.                                 |
 | `media`        | The toggling behavior depends on the viewport width. [More information](#media). |
 
-
 ```html
 <button type="button" gls-toggle="target: #my-id; mode: hover"></button>
 <p id="my-id"></p>
@@ -167,7 +214,13 @@ A toggle can be triggered in different ways. Just add the `mode` option to the `
 </div>
 
 ```html
-<button class="gls-button gls-button-default" type="button" gls-toggle="target: #toggle-hover; mode: hover">hover</button>
+<button
+    class="gls-button gls-button-default"
+    type="button"
+    gls-toggle="target: #toggle-hover; mode: hover"
+>
+    hover
+</button>
 <p id="toggle-hover">What's up?</p>
 ```
 
@@ -178,7 +231,10 @@ When using the `media` mode, the `media` option with one of possible values has 
 ```html
 <!-- The primary modifier will only be applied on large screens -->
 
-<div class="gls-card gls-card-default" gls-toggle="cls: gls-card-primary; mode: media; media: @l"></div>
+<div
+    class="gls-card gls-card-default"
+    gls-toggle="cls: gls-card-primary; mode: media; media: @l"
+></div>
 ```
 
 <div class="gls-docs-example">
@@ -188,14 +244,17 @@ When using the `media` mode, the `media` option with one of possible values has 
 </div>
 
 ```html
-<div class="gls-card gls-card-default gls-card-body gls-width-medium" gls-toggle="cls: gls-card-primary; mode: media; media: @l">
+<div
+    class="gls-card gls-card-default gls-card-body gls-width-medium"
+    gls-toggle="cls: gls-card-primary; mode: media; media: @l"
+>
     Primary on large screens
 </div>
 ```
 
 **Note** The initial toggle state depends on the `cls` option. It is either the first given class in the space separated list or if set to `false`, the `hidden` attribute. If more than one class is given, the other classes are simply being toggled on state change.
 
-***
+---
 
 ## Component options
 
@@ -207,7 +266,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `mode`      | String                  | `click` | Comma-separated list of trigger behaviour modes. (`hover`, `click`, `media`)                                                                                             |
 | `cls`       | String                  | `false` | The class that is being toggled. Defaults to the `hidden` attribute.                                                                                                     |
 | `media`     | Boolean, Number, String | `false` | Condition to trigger the toggle in media mode - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
-| `animation` | String                  | `false` | Space-separated names of [animations](https://getuikit.com/docs/animation). Comma-separated for animation out.                                                                                  |
+| `animation` | String                  | `false` | Space-separated names of [animations](https://getuikit.com/docs/animation). Comma-separated for animation out.                                                           |
 | `duration`  | Number                  | `200`   | Animation duration in milliseconds.                                                                                                                                      |
 | `queued`    | Boolean                 | `true`  | Toggle the targets successively.                                                                                                                                         |
 
@@ -217,7 +276,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 <span gls-toggle=".my-class"></span>
 ```
 
-***
+---
 
 ## JavaScript
 
@@ -254,11 +313,11 @@ UIkit.toggle(element).toggle();
 
 Toggles the Toggle's target.
 
-***
+---
 
 ## Accessibility
 
 The Toggle component automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *toggle* element has the `button` role if an `<a>` element is used.
+- The _toggle_ element has the `button` role if an `<a>` element is used.
 - To implement the [Disclosure (Show/Hide) design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/), manually set an `aria-expanded` attribute. It will automatically update when toggling.

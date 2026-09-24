@@ -12,8 +12,8 @@ title: Pagination
 
 The Pagination component consists of button-like styled links, that are aligned side by side in a horizontal list.
 
-| Class            | Description                                                                                                                    |
-|------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Class             | Description                                                                                                                    |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `.gls-pagination` | Add this class to a `<ul>` element to define the Pagination component. Use `<a>` elements as pagination items within the list. |
 | `.gls-active`     | Add this class to a list item to apply an active state and use a `<span>` instead of an `<a>` element.                         |
 | `.gls-disabled`   | Add this class to a list item to apply a disabled state and use a `<span>` instead of an `<a>` element.                        |
@@ -49,7 +49,9 @@ The Pagination component consists of button-like styled links, that are aligned 
 ```html
 <nav aria-label="Pagination">
     <ul class="gls-pagination" gls-margin>
-        <li><a href="#"><span gls-pagination-previous></span></a></li>
+        <li>
+            <a href="#"><span gls-pagination-previous></span></a>
+        </li>
         <li><a href="#">1</a></li>
         <li class="gls-disabled"><span>…</span></li>
         <li><a href="#">4</a></li>
@@ -61,19 +63,23 @@ The Pagination component consists of button-like styled links, that are aligned 
         <li><a href="#">10</a></li>
         <li class="gls-disabled"><span>…</span></li>
         <li><a href="#">20</a></li>
-        <li><a href="#"><span gls-pagination-next></span></a></li>
+        <li>
+            <a href="#"><span gls-pagination-next></span></a>
+        </li>
     </ul>
 </nav>
 ```
 
-***
+---
 
 ## Alignment
 
 The Pagination component utilizes flexbox, so navigations can easily be aligned with the [Flex component](https://getuikit.com/docs/flex).
 
 ```html
-<ul class="gls-pagination gls-flex-center">…</ul>
+<ul class="gls-pagination gls-flex-center">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -107,32 +113,40 @@ The Pagination component utilizes flexbox, so navigations can easily be aligned 
 ```html
 <nav aria-label="Pagination">
     <ul class="gls-pagination gls-flex-center" gls-margin>
-        <li><a href="#"><span gls-pagination-previous></span></a></li>
+        <li>
+            <a href="#"><span gls-pagination-previous></span></a>
+        </li>
         <li><a href="#">1</a></li>
         <li class="gls-disabled"><span>…</span></li>
         <li><a href="#">5</a></li>
         <li><a href="#">6</a></li>
         <li class="gls-active"><span aria-current="page">7</span></li>
         <li><a href="#">8</a></li>
-        <li><a href="#"><span gls-pagination-next></span></a></li>
+        <li>
+            <a href="#"><span gls-pagination-next></span></a>
+        </li>
     </ul>
 </nav>
 
 <nav aria-label="Pagination">
     <ul class="gls-pagination gls-flex-right gls-margin-medium-top" gls-margin>
-        <li><a href="#"><span gls-pagination-previous></span></a></li>
+        <li>
+            <a href="#"><span gls-pagination-previous></span></a>
+        </li>
         <li><a href="#">1</a></li>
         <li class="gls-disabled"><span>…</span></li>
         <li><a href="#">5</a></li>
         <li><a href="#">6</a></li>
         <li class="gls-active"><span aria-current="page">7</span></li>
         <li><a href="#">8</a></li>
-        <li><a href="#"><span gls-pagination-next></span></a></li>
+        <li>
+            <a href="#"><span gls-pagination-next></span></a>
+        </li>
     </ul>
 </nav>
 ```
 
-***
+---
 
 ## Previous and next
 
@@ -140,8 +154,12 @@ To apply a previous and next button, add the `gls-pagination-previous` or `gls-p
 
 ```html
 <ul class="gls-pagination">
-    <li><a href=""><span gls-pagination-previous></span></a></li>
-    <li><a href=""><span gls-pagination-next></span></a></li>
+    <li>
+        <a href=""><span gls-pagination-previous></span></a>
+    </li>
+    <li>
+        <a href=""><span gls-pagination-next></span></a>
+    </li>
 </ul>
 ```
 
@@ -157,14 +175,19 @@ To apply a previous and next button, add the `gls-pagination-previous` or `gls-p
 ```html
 <nav>
     <ul class="gls-pagination">
-        <li><a href="#"><span class="gls-margin-xsmall-right" gls-pagination-previous></span> Previous</a></li>
-        <li class="gls-margin-auto-left"><a href="#">Next <span class="gls-margin-xsmall-left" gls-pagination-next></span></a></li>
+        <li>
+            <a href="#"
+                ><span class="gls-margin-xsmall-right" gls-pagination-previous></span> Previous</a
+            >
+        </li>
+        <li class="gls-margin-auto-left">
+            <a href="#">Next <span class="gls-margin-xsmall-left" gls-pagination-next></span></a>
+        </li>
     </ul>
 </nav>
 ```
 
-
-***
+---
 
 ## Accessibility
 
@@ -175,18 +198,20 @@ Set the appropriate WAI-ARIA roles, states and properties to the Pagination comp
 
 ```html
 <nav aria-label="Pagination">
-    <ul class="gls-pagination">…</ul>
+    <ul class="gls-pagination">
+        …
+    </ul>
 </nav>
 ```
 
 The previous/next pagination adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *prev/next pagination items* have the `button` role and the `aria-label` property.
+- The _prev/next pagination items_ have the `button` role and the `aria-label` property.
 
 ### Internationalization
 
 The Pagination component uses the following translation strings. Learn more about [translating components](https://getuikit.com/docs/accessibility#internationalization).
 
-| Key          | Default              | Description             |
-|--------------|----------------------|-------------------------|
-| `label`      | `Next/Previous page` | `aria-label` attribute. |
+| Key     | Default              | Description             |
+| ------- | -------------------- | ----------------------- |
+| `label` | `Next/Previous page` | `aria-label` attribute. |

@@ -12,8 +12,8 @@ title: Accordion
 
 The Accordion component consists of a parent container with the `gls-accordion` attribute, and a title and content part for each accordion item.
 
-| Class                   | Description                                                                |
-| ----------------------- | -------------------------------------------------------------------------- |
+| Class                    | Description                                                                |
+| ------------------------ | -------------------------------------------------------------------------- |
 | `.gls-accordion-title`   | Defines and styles the toggle for each accordion item. Use `<a>` elements. |
 | `.gls-accordion-content` | Defines the content part for each accordion item.                          |
 
@@ -56,25 +56,34 @@ To apply a style to the accordion add the `.gls-accordion-default` modifier.
     <li class="gls-open">
         <a class="gls-accordion-title" href>Item 1</a>
         <div class="gls-accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
         </div>
     </li>
     <li>
         <a class="gls-accordion-title" href>Item 2</a>
         <div class="gls-accordion-content">
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+            <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor reprehenderit.
+            </p>
         </div>
     </li>
     <li>
         <a class="gls-accordion-title" href>Item 3</a>
         <div class="gls-accordion-content">
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.
+            </p>
         </div>
     </li>
 </ul>
 ```
 
-***
+---
 
 ### Icon
 
@@ -130,14 +139,16 @@ To create an accordion icon, just add a `span` element with the `gls-accordion-i
 </ul>
 ```
 
-***
+---
 
 ## No collapsing
 
 By default, all accordion items can be collapsed. To prevent this behavior and always maintain one open item, add the `collapsible: false` option to the attribute.
 
 ```html
-<ul class="gls-accordion-default" gls-accordion="collapsible: false">…</ul>
+<ul class="gls-accordion-default" gls-accordion="collapsible: false">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -186,14 +197,16 @@ By default, all accordion items can be collapsed. To prevent this behavior and a
 </ul>
 ```
 
-***
+---
 
 ## Multiple open items
 
 To display multiple content sections at the same time without one collapsing when the other one is opened, add the `multiple: true` option to the `gls-accordion` attribute.
 
 ```html
-<ul class="gls-accordion-default" gls-accordion="multiple: true">…</ul>
+<ul class="gls-accordion-default" gls-accordion="multiple: true">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -242,7 +255,7 @@ To display multiple content sections at the same time without one collapsing whe
 </ul>
 ```
 
-***
+---
 
 ## Set open items
 
@@ -304,26 +317,26 @@ To specify which items should be opened initially, add the `.gls-open` class to 
 </ul>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option        | Value   | Default                   | Description                                                                                                                                                                                              |
-| ------------- | ------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `active`      | Number  | `false`                   | Index of the element to open initially.                                                                                                                                                                  |
-| `animation`   | Boolean | `true`                    | Reveal item directly or with a transition.                                                                                                                                                               |
-| `collapsible` | Boolean | `true`                    | Allow all items to be closed.                                                                                                                                                                            |
+| Option        | Value   | Default                    | Description                                                                                                                                                                                              |
+| ------------- | ------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `active`      | Number  | `false`                    | Index of the element to open initially.                                                                                                                                                                  |
+| `animation`   | Boolean | `true`                     | Reveal item directly or with a transition.                                                                                                                                                               |
+| `collapsible` | Boolean | `true`                     | Allow all items to be closed.                                                                                                                                                                            |
 | `content`     | String  | `> .gls-accordion-content` | The content selector, which selects the accordion content elements.                                                                                                                                      |
-| `duration`    | Number  | `200`                     | Animation duration in milliseconds.                                                                                                                                                                      |
-| `multiple`    | Boolean | `false`                   | Allow multiple open items.                                                                                                                                                                               |
-| `targets`     | String  | `> *`                     | CSS selector of the element(s) to toggle.                                                                                                                                                                |
+| `duration`    | Number  | `200`                      | Animation duration in milliseconds.                                                                                                                                                                      |
+| `multiple`    | Boolean | `false`                    | Allow multiple open items.                                                                                                                                                                               |
+| `targets`     | String  | `> *`                      | CSS selector of the element(s) to toggle.                                                                                                                                                                |
 | `toggle`      | String  | `> .gls-accordion-title`   | The toggle selector, which toggles accordion items.                                                                                                                                                      |
-| `transition`  | String  | `ease`                    | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
-| `offset`      | Number  | `0`                       | Pixel offset added to scroll top.                                                                                                                                                                        |
+| `transition`  | String  | `ease`                     | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
+| `offset`      | Number  | `0`                        | Pixel offset added to scroll top.                                                                                                                                                                        |
 
-***
+---
 
 ## JavaScript
 
@@ -343,7 +356,7 @@ The following events will be triggered on elements with this component attached:
 | ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
-| `shown`      | Fires after the item's show animation has been completed.                                           |
+| `shown`      | Fires after the item's show animation has been completed.                                      |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
 | `hide`       | Fires after an item's hide animation has started.                                              |
 | `hidden`     | Fires after an item is hidden.                                                                 |
@@ -365,14 +378,14 @@ Toggles the content pane.
 | `index`   | String, Number, Node | 0       | Accordion pane to toggle. 0 based index.     |
 | `animate` | Boolean              | true    | Suppress opening animation by passing false. |
 
-***
+---
 
 ## Accessibility
 
 The Accordion component adheres to the [Accordion WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *titles* have an ID, the `button` role, the `aria-expanded` state and the `aria-controls` property set to the ID of the respective content.
-- The *contents* have an ID, the `region` role and the `aria-labelledby` property set to the ID of the respective title.
+- The _titles_ have an ID, the `button` role, the `aria-expanded` state and the `aria-controls` property set to the ID of the respective content.
+- The _contents_ have an ID, the `region` role and the `aria-labelledby` property set to the ID of the respective title.
 
 ### Keyboard interaction
 

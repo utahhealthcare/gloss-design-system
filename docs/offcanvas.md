@@ -12,16 +12,15 @@ title: Offcanvas
 
 To apply this component, add the `gls-offcanvas` attribute to a parent `<div>` element and use the following classes.
 
-| Class                 | Description                                                                                                                          |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `.gls-offcanvas-bar`   | Add this class to a child `<div>` element.                                                                                           |
+| Class                  | Description                                                                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `.gls-offcanvas-bar`   | Add this class to a child `<div>` element.                                                                                            |
 | `.gls-offcanvas-close` | Add this class and the `gls-close` attribute to an `<a>` or `<button>` element to create a close button and enable its functionality. |
 
 You can use any element to toggle an off-canvas sidebar. To enable the necessary JavaScript, add the `gls-toggle` attribute. An `<a>` element needs to be linked to the id of the off-canvas container. If you are using another element, like a button, just add the `gls-toggle="target: #ID"` attribute to target the id of the off-canvas container.
 
 ```html
 <body>
-
     <!-- This is a button toggling the off-canvas -->
     <button gls-toggle="target: #my-id" type="button"></button>
 
@@ -31,12 +30,9 @@ You can use any element to toggle an off-canvas sidebar. To enable the necessary
     <!-- This is the off-canvas -->
     <div id="my-id" gls-offcanvas>
         <div class="gls-offcanvas-bar">
-
             <button class="gls-offcanvas-close" type="button" gls-close></button>
-
         </div>
     </div>
-
 </body>
 ```
 
@@ -55,28 +51,37 @@ You can use any element to toggle an off-canvas sidebar. To enable the necessary
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
     </div>
+
 </div>
 </div>
 
 ```html
-<button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #offcanvas-usage">Open</button>
+<button
+    class="gls-button gls-button-default gls-margin-small-right"
+    type="button"
+    gls-toggle="target: #offcanvas-usage"
+>
+    Open
+</button>
 
 <a href="#offcanvas-usage" gls-toggle>Open</a>
 
 <div id="offcanvas-usage" gls-offcanvas>
     <div class="gls-offcanvas-bar">
-
         <button class="gls-offcanvas-close" type="button" gls-close></button>
 
         <h3>Title</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ### Overlay
 
@@ -100,27 +105,31 @@ To add an overlay, blanking out the page, add the `overlay: true` parameter to t
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
     </div>
+
 </div>
 </div>
 
 ```html
-<button class="gls-button gls-button-default" type="button" gls-toggle="target: #offcanvas-overlay">Open</button>
+<button class="gls-button gls-button-default" type="button" gls-toggle="target: #offcanvas-overlay">
+    Open
+</button>
 
 <div id="offcanvas-overlay" gls-offcanvas="overlay: true">
     <div class="gls-offcanvas-bar">
-
         <button class="gls-offcanvas-close" type="button" gls-close></button>
-
 
         <h3>Title</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Flip modifier
 
@@ -143,34 +152,38 @@ Add the `flip: true` parameter to the `gls-offcanvas` attribute to adjust its al
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
     </div>
+
 </div>
 </div>
 
 ```html
-<button class="gls-button gls-button-default" type="button" gls-toggle="target: #offcanvas-flip">Open</button>
+<button class="gls-button gls-button-default" type="button" gls-toggle="target: #offcanvas-flip">
+    Open
+</button>
 
 <div id="offcanvas-flip" gls-offcanvas="flip: true; overlay: true">
     <div class="gls-offcanvas-bar">
-
         <button class="gls-offcanvas-close" type="button" gls-close></button>
 
         <h3>Title</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
     </div>
 </div>
 ```
 
-
-***
+---
 
 ## Animation modes
 
 By default, the off-canvas slides in. But you can actually choose between different animation modes for the off-canvas's entrance. Just add one of the following attributes.
 
 | Parameter      | Description                                                                   |
-|----------------|-------------------------------------------------------------------------------|
+| -------------- | ----------------------------------------------------------------------------- |
 | `mode: slide`  | The off-canvas slides out and overlays the content. This is the default mode. |
 | `mode: push`   | The off-canvas slides out and pushes the site.                                |
 | `mode: reveal` | The off-canvas slides out and reveals its content while pushing the site.     |
@@ -199,6 +212,7 @@ By default, the off-canvas slides in. But you can actually choose between differ
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
     </div>
+
 </div>
 
 <div id="offcanvas-push" gls-offcanvas="mode: push; overlay: true">
@@ -211,6 +225,7 @@ By default, the off-canvas slides in. But you can actually choose between differ
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
     </div>
+
 </div>
 
 <div id="offcanvas-reveal" gls-offcanvas="mode: reveal; overlay: true">
@@ -223,6 +238,7 @@ By default, the off-canvas slides in. But you can actually choose between differ
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
     </div>
+
 </div>
 
 <div id="offcanvas-none" gls-offcanvas="mode: none; overlay: true">
@@ -235,68 +251,101 @@ By default, the off-canvas slides in. But you can actually choose between differ
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
     </div>
+
 </div>
 </div>
 
 ```html
-<button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #offcanvas-slide">Slide</button>
+<button
+    class="gls-button gls-button-default gls-margin-small-right"
+    type="button"
+    gls-toggle="target: #offcanvas-slide"
+>
+    Slide
+</button>
 
-<button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #offcanvas-push">Push</button>
+<button
+    class="gls-button gls-button-default gls-margin-small-right"
+    type="button"
+    gls-toggle="target: #offcanvas-push"
+>
+    Push
+</button>
 
-<button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #offcanvas-reveal">Reveal</button>
+<button
+    class="gls-button gls-button-default gls-margin-small-right"
+    type="button"
+    gls-toggle="target: #offcanvas-reveal"
+>
+    Reveal
+</button>
 
-<button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #offcanvas-none">None</button>
+<button
+    class="gls-button gls-button-default gls-margin-small-right"
+    type="button"
+    gls-toggle="target: #offcanvas-none"
+>
+    None
+</button>
 
 <div id="offcanvas-slide" gls-offcanvas="overlay: true">
     <div class="gls-offcanvas-bar">
-
         <button class="gls-offcanvas-close" type="button" gls-close></button>
 
         <h3>Title</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
     </div>
 </div>
 
 <div id="offcanvas-push" gls-offcanvas="mode: push; overlay: true">
     <div class="gls-offcanvas-bar">
-
         <button class="gls-offcanvas-close" type="button" gls-close></button>
 
         <h3>Title</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
     </div>
 </div>
 
 <div id="offcanvas-reveal" gls-offcanvas="mode: reveal; overlay: true">
     <div class="gls-offcanvas-bar">
-
         <button class="gls-offcanvas-close" type="button" gls-close></button>
 
         <h3>Title</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
     </div>
 </div>
 
 <div id="offcanvas-none" gls-offcanvas="mode: none; overlay: true">
     <div class="gls-offcanvas-bar">
-
         <button class="gls-offcanvas-close" type="button" gls-close></button>
 
         <h3>Title</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Nav in Off-canvas
 
@@ -305,7 +354,9 @@ You can use the [Nav component](https://getuikit.com/docs/nav) inside an off-can
 ```html
 <div id="my-id" gls-offcanvas>
     <div class="gls-offcanvas-bar">
-        <ul class="gls-nav gls-nav-default">…</ul>
+        <ul class="gls-nav gls-nav-default">
+            …
+        </ul>
     </div>
 </div>
 ```
@@ -335,6 +386,7 @@ You can use the [Nav component](https://getuikit.com/docs/nav) inside an off-can
         </ul>
 
     </div>
+
 </div>
 
 <div id="offcanvas-nav" gls-offcanvas="overlay: true">
@@ -357,17 +409,25 @@ You can use the [Nav component](https://getuikit.com/docs/nav) inside an off-can
         </ul>
 
     </div>
+
 </div>
 </div>
 
 ```html
-<button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #offcanvas-nav-primary">Primary Nav</button>
+<button
+    class="gls-button gls-button-default gls-margin-small-right"
+    type="button"
+    gls-toggle="target: #offcanvas-nav-primary"
+>
+    Primary Nav
+</button>
 
-<button class="gls-button gls-button-default" type="button" gls-toggle="target: #offcanvas-nav">Default Nav</button>
+<button class="gls-button gls-button-default" type="button" gls-toggle="target: #offcanvas-nav">
+    Default Nav
+</button>
 
 <div id="offcanvas-nav-primary" gls-offcanvas="overlay: true">
     <div class="gls-offcanvas-bar gls-flex gls-flex-column">
-
         <ul class="gls-nav gls-nav-primary gls-nav-center gls-margin-auto-vertical">
             <li class="gls-active"><a href="#">Active</a></li>
             <li class="gls-parent">
@@ -378,18 +438,29 @@ You can use the [Nav component](https://getuikit.com/docs/nav) inside an off-can
                 </ul>
             </li>
             <li class="gls-nav-header">Header</li>
-            <li><a href="#"><span class="gls-margin-xsmall-right" gls-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="gls-margin-xsmall-right" gls-icon="icon: thumbnails"></span> Item</a></li>
+            <li>
+                <a href="#"
+                    ><span class="gls-margin-xsmall-right" gls-icon="icon: table"></span> Item</a
+                >
+            </li>
+            <li>
+                <a href="#"
+                    ><span class="gls-margin-xsmall-right" gls-icon="icon: thumbnails"></span>
+                    Item</a
+                >
+            </li>
             <li class="gls-nav-divider"></li>
-            <li><a href="#"><span class="gls-margin-xsmall-right" gls-icon="icon: trash"></span> Item</a></li>
+            <li>
+                <a href="#"
+                    ><span class="gls-margin-xsmall-right" gls-icon="icon: trash"></span> Item</a
+                >
+            </li>
         </ul>
-
     </div>
 </div>
 
 <div id="offcanvas-nav" gls-offcanvas="overlay: true">
     <div class="gls-offcanvas-bar">
-
         <ul class="gls-nav gls-nav-default">
             <li class="gls-active"><a href="#">Active</a></li>
             <li class="gls-parent">
@@ -400,25 +471,37 @@ You can use the [Nav component](https://getuikit.com/docs/nav) inside an off-can
                 </ul>
             </li>
             <li class="gls-nav-header">Header</li>
-            <li><a href="#"><span class="gls-margin-xsmall-right" gls-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="gls-margin-xsmall-right" gls-icon="icon: thumbnails"></span> Item</a></li>
+            <li>
+                <a href="#"
+                    ><span class="gls-margin-xsmall-right" gls-icon="icon: table"></span> Item</a
+                >
+            </li>
+            <li>
+                <a href="#"
+                    ><span class="gls-margin-xsmall-right" gls-icon="icon: thumbnails"></span>
+                    Item</a
+                >
+            </li>
             <li class="gls-nav-divider"></li>
-            <li><a href="#"><span class="gls-margin-xsmall-right" gls-icon="icon: trash"></span> Item</a></li>
+            <li>
+                <a href="#"
+                    ><span class="gls-margin-xsmall-right" gls-icon="icon: trash"></span> Item</a
+                >
+            </li>
         </ul>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option      | Value   | Default | Description                                                                                                                                               |
-|-------------|---------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mode`      | String  | `slide` | Off-canvas animation mode (`slide`, `reveal`, `push` or `none`).                                                                                           |
+| ----------- | ------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `mode`      | String  | `slide` | Off-canvas animation mode (`slide`, `reveal`, `push` or `none`).                                                                                          |
 | `flip`      | Boolean | `false` | Flip off-canvas to the right side.                                                                                                                        |
 | `overlay`   | Boolean | `false` | Display the off-canvas together with an overlay.                                                                                                          |
 | `esc-close` | Boolean | `true`  | Close the off-canvas when the _Esc_ key is pressed.                                                                                                       |
@@ -431,7 +514,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 <span gls-offcanvas="push"></span>
 ```
 
-***
+---
 
 ## JavaScript
 
@@ -448,7 +531,7 @@ UIkit.offcanvas(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                               |
-|--------------|-----------------------------------------------------------|
+| ------------ | --------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown.                            |
 | `show`       | Fires after an item is shown.                             |
 | `shown`      | Fires after the item's show animation has been completed. |
@@ -476,17 +559,17 @@ UIkit.offcanvas(element).hide();
 
 Hides the Offcanvas.
 
-***
+---
 
 ## Accessibility
 
 The Offcanvas component adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *offcanvas bar* has the `dialog` role, and if the offcanvas has an overlay, the `aria-modal` property.
+- The _offcanvas bar_ has the `dialog` role, and if the offcanvas has an overlay, the `aria-modal` property.
 
 The Close component automatically sets the appropriate WAI-ARIA roles and properties.
 
-- The *close icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
+- The _close icon_ has the `aria-label` property, and if an `<a>` element is used, the `button` role.
 
 ### Keyboard interaction
 

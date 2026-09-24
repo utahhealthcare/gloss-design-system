@@ -12,8 +12,8 @@ title: Tile
 
 To apply this component, add the `.gls-tile` class to a `<div>` element. By default, a tile is blank. That is why it is important to add one of the following modifier classes for styling.
 
-| Class                | Description                          |
-|----------------------|--------------------------------------|
+| Class                 | Description                          |
+| --------------------- | ------------------------------------ |
 | `.gls-tile-default`   | Applies the default tile background. |
 | `.gls-tile-muted`     | Applies a muted tile background.     |
 | `.gls-tile-primary`   | Applies the primary tile background. |
@@ -109,6 +109,7 @@ The `.gls-tile-primary` and `.gls-tile-secondary` classes are extending the inve
 
         </div>
     </div>
+
 </div>
 </div>
 
@@ -116,7 +117,6 @@ The `.gls-tile-primary` and `.gls-tile-secondary` classes are extending the inve
 <div class="gls-child-width-1-2@s gls-grid-collapse gls-grid-match gls-text-center" gls-grid>
     <div>
         <div class="gls-tile gls-tile-primary">
-
             <div class="gls-panel gls-light gls-margin-medium">
                 <h3>Tile Primary with card</h3>
             </div>
@@ -124,12 +124,10 @@ The `.gls-tile-primary` and `.gls-tile-secondary` classes are extending the inve
             <div class="gls-card gls-card-default gls-card-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-
         </div>
     </div>
     <div>
         <div class="gls-tile gls-tile-secondary">
-
             <div class="gls-panel gls-light gls-margin-medium">
                 <h3>Tile Secondary with card</h3>
             </div>
@@ -137,13 +135,12 @@ The `.gls-tile-primary` and `.gls-tile-secondary` classes are extending the inve
             <div class="gls-card gls-card-default gls-card-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Tile and padding
 

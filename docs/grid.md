@@ -10,7 +10,7 @@ title: Grid
 
 The Grid system of UIkit allows you to arrange block elements in columns. It works closely together with the [Width component](https://getuikit.com/docs/width) to determine how much space of the container each item will take up, and it can also be combined with the [Flex component](https://getuikit.com/docs/flex) to align and order grid items.
 
-***
+---
 
 ## Usage
 
@@ -24,6 +24,7 @@ To create the grid container, add the `gls-grid` attribute to a `<div>` element.
     <div></div>
 </div>
 ```
+
 **Note** Often cards from the [Card component](https://getuikit.com/docs/card) are used inside a grid. This also goes for the following examples for visualization.
 
 <div class="gls-docs-example">
@@ -54,14 +55,14 @@ To create the grid container, add the `gls-grid` attribute to a `<div>` element.
 </div>
 ```
 
-***
+---
 
 ## Gap modifiers
 
 The Grid component comes with a default gap that is decreased automatically from a certain breakpoint usually on a smaller desktop viewport width. To apply a different gap, add one of the following classes.
 
-| Class               | Description                                                                          |
-| ------------------- | ------------------------------------------------------------------------------------ |
+| Class                | Description                                                                          |
+| -------------------- | ------------------------------------------------------------------------------------ |
 | `.gls-grid-small`    | Add this class to apply a small gap.                                                 |
 | `.gls-grid-medium`   | Add this class to apply a medium gap like the default one, but without a breakpoint. |
 | `.gls-grid-large`    | Add this class to apply a large gap with breakpoints.                                |
@@ -158,7 +159,10 @@ The Grid component comes with a default gap that is decreased automatically from
     </div>
 </div>
 
-<div class="gls-grid-collapse gls-child-width-expand@s gls-text-center gls-margin-large-top" gls-grid>
+<div
+    class="gls-grid-collapse gls-child-width-expand@s gls-text-center gls-margin-large-top"
+    gls-grid
+>
     <div>
         <div class="gls-background-muted gls-padding">Item</div>
     </div>
@@ -171,14 +175,14 @@ The Grid component comes with a default gap that is decreased automatically from
 </div>
 ```
 
-***
+---
 
 ### Column and Row
 
 To apply a different gap to just the column or row, add one of the following classes.
 
-| Class                                                 | Description                                                                      |
-| ----------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Class                                                   | Description                                                                      |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | `.gls-grid-column-small`<br>`.gls-grid-row-small`       | Add one of these classes to apply a small gap to the column or row.              |
 | `.gls-grid-column-medium`<br>`.gls-grid-row-medium`     | Add one of these classes to apply a medium gap to the column or row.             |
 | `.gls-grid-column-large`<br>`.gls-grid-row-large`       | Add one of these classes to apply a large gap to the column or row.              |
@@ -212,7 +216,10 @@ To apply a different gap to just the column or row, add one of the following cla
 </div>
 
 ```html
-<div class="gls-grid-column-small gls-grid-row-large gls-child-width-1-3@s gls-text-center" gls-grid>
+<div
+    class="gls-grid-column-small gls-grid-row-large gls-child-width-1-3@s gls-text-center"
+    gls-grid
+>
     <div>
         <div class="gls-card gls-card-default gls-card-body">Item</div>
     </div>
@@ -234,7 +241,7 @@ To apply a different gap to just the column or row, add one of the following cla
 </div>
 ```
 
-***
+---
 
 ## Nested grid
 
@@ -293,7 +300,7 @@ You can easily extend your grid layout with nested grids.
 </div>
 ```
 
-***
+---
 
 ## Divider modifier
 
@@ -313,13 +320,22 @@ Add the `.gls-grid-divider` class to separate grid cells with lines. This class 
 
 ```html
 <div class="gls-grid-divider gls-child-width-expand@s" gls-grid>
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </div>
+    <div>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+    </div>
+    <div>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Match height
 
@@ -347,17 +363,17 @@ To match the height of the direct child of each cell, add the `.gls-grid-match` 
 <div class="gls-grid-match gls-child-width-expand@s gls-text-center" gls-grid>
     <div>
         <div class="gls-card gls-card-default gls-card-body">Item</div>
-     </div>
-    <div>
-        <div class="gls-card gls-card-default gls-card-body">Item<br>…</div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-card-body">Item<br>…<br>…</div>
+        <div class="gls-card gls-card-default gls-card-body">Item<br />…</div>
+    </div>
+    <div>
+        <div class="gls-card gls-card-default gls-card-body">Item<br />…<br />…</div>
     </div>
 </div>
 ```
 
-***
+---
 
 ### Match only one cell
 
@@ -394,21 +410,21 @@ You can also match the height of the direct child of just one cell. To do so, ad
     <div class="gls-grid-item-match">
         <div class="gls-card gls-card-default gls-card-body">
             <h3>Heading</h3>
-            <p>
-                Lorem ipsum dolor sit amet.
-            </p>
+            <p>Lorem ipsum dolor sit amet.</p>
         </div>
-     </div>
+    </div>
     <div>
         <h3>Heading</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ### Targets
 
@@ -440,20 +456,24 @@ For a more specific selection of the elements whose heights should be matched, a
 </div>
 
 ```html
-<div class="gls-child-width-expand@s gls-text-center" gls-grid gls-height-match="target: > div > .gls-card">
+<div
+    class="gls-child-width-expand@s gls-text-center"
+    gls-grid
+    gls-height-match="target: > div > .gls-card"
+>
     <div>
         <div class="gls-card gls-card-default gls-card-body">Item</div>
-     </div>
-    <div>
-        <div class="gls-card gls-card-default gls-card-body">Item<br>…</div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-card-body">Item<br>…<br>…</div>
+        <div class="gls-card gls-card-default gls-card-body">Item<br />…</div>
+    </div>
+    <div>
+        <div class="gls-card gls-card-default gls-card-body">Item<br />…<br />…</div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Grid and width
 
@@ -495,7 +515,7 @@ The grid is mostly used in combination with the [Width component](https://getuik
 </div>
 ```
 
-***
+---
 
 ### Child width
 
@@ -535,7 +555,7 @@ If the grid columns are evenly split, you can add one of the `.gls-child-width-*
 
 For more detailed information, take a look at the [Width component](https://getuikit.com/docs/width).
 
-***
+---
 
 ## Grid and flex
 
@@ -594,18 +614,16 @@ You can easily combine the grid with the [Flex component](https://getuikit.com/d
 </div>
 ```
 
-***
+---
 
 ## Masonry
 
 If grid cells have different heights, set the `masonry` option to either `pack` or `next` to create a layout free of gaps.
 
-
 | Masonry | Description                                                                              |
 | ------- | ---------------------------------------------------------------------------------------- |
 | `pack`  | Sorts items into columns with the most room to make column heights as equal as possible. |
 | `next`  | Uses the natural item order.                                                             |
-
 
 ```html
 <div gls-grid="masonry: pack">…</div>
@@ -646,44 +664,89 @@ If grid cells have different heights, set the `masonry` option to either `pack` 
 ```html
 <div class="gls-child-width-1-2@s gls-child-width-1-3@m" gls-grid="masonry: pack">
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 100px">Item 1</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 100px"
+        >
+            Item 1
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 150px">Item 2</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 150px"
+        >
+            Item 2
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 300px">Item 3</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 300px"
+        >
+            Item 3
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 120px">Item 4</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 120px"
+        >
+            Item 4
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 180px">Item 5</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 180px"
+        >
+            Item 5
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 250px">Item 6</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 250px"
+        >
+            Item 6
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 140px">Item 7</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 140px"
+        >
+            Item 7
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 210px">Item 8</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 210px"
+        >
+            Item 8
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 200px">Item 9</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 200px"
+        >
+            Item 9
+        </div>
     </div>
 </div>
 ```
 
 **Note** You can view more examples in the tests for the [Grid Masonry](../assets/uikit/tests/grid-masonry.html).
 
-***
+---
 
 ## Filter and order
 
 Grid items can also be filtered and sorted by category, date or other metadata. Take a look at the [Filter component](https://getuikit.com/docs/filter).
 
-***
+---
 
 ## Parallax
 
@@ -735,7 +798,10 @@ To move single columns of a grid at different speeds while scrolling, just add `
 </div>
 
 ```html
-<div class="gls-child-width-1-2@s gls-child-width-1-3@m gls-child-width-1-4@l gls-text-center" gls-grid="parallax: 150">
+<div
+    class="gls-child-width-1-2@s gls-child-width-1-3@m gls-child-width-1-4@l gls-text-center"
+    gls-grid="parallax: 150"
+>
     <div>
         <div class="gls-card gls-card-default gls-card-body">Item</div>
     </div>
@@ -820,40 +886,88 @@ To justify the grid parallax if columns have different heights, for example in m
 </div>
 
 ```html
-<div class="gls-child-width-1-2@s gls-child-width-1-3@m" gls-grid="parallax-justify: true; masonry: pack">
+<div
+    class="gls-child-width-1-2@s gls-child-width-1-3@m"
+    gls-grid="parallax-justify: true; masonry: pack"
+>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 100px">Item 1</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 100px"
+        >
+            Item 1
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 150px">Item 2</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 150px"
+        >
+            Item 2
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 300px">Item 3</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 300px"
+        >
+            Item 3
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 120px">Item 4</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 120px"
+        >
+            Item 4
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 180px">Item 5</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 180px"
+        >
+            Item 5
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 250px">Item 6</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 250px"
+        >
+            Item 6
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 140px">Item 7</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 140px"
+        >
+            Item 7
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 210px">Item 8</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 210px"
+        >
+            Item 8
+        </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle" style="height: 200px">Item 9</div>
+        <div
+            class="gls-card gls-card-default gls-flex gls-flex-center gls-flex-middle"
+            style="height: 200px"
+        >
+            Item 9
+        </div>
     </div>
 </div>
 ```
 
 **Note** You can view more examples in the [Grid Parallax](../assets/uikit/tests/grid-parallax.html) tests.
 
-***
+---
 
 ## Component options
 
@@ -861,15 +975,15 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option             | Value           | Default                 | Description                                                                                                                                                                                         |
 | ------------------ | --------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `margin `          | String          | `gls-grid-margin`        | This class is added to items that break into the next row, typically to create margin to the previous row.                                                                                          |
-| `first-column`     | String          | `gls-first-column`       | This class is added to the first element in each row.                                                                                                                                               |
+| `margin `          | String          | `gls-grid-margin`       | This class is added to items that break into the next row, typically to create margin to the previous row.                                                                                          |
+| `first-column`     | String          | `gls-first-column`      | This class is added to the first element in each row.                                                                                                                                               |
 | `masonry`          | String, Boolean | `false`, `pack`, `next` | Enables masonry layout for this grid.                                                                                                                                                               |
 | `parallax`         | Number          | `0`                     | Parallax translation value. The value can be in vh, % and px. Falsy disables the parallax effect (default).                                                                                         |
 | `parallax-start`   | Length          | `0`                     | Start offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the grid's top border and viewport's bottom border intersect.   |
 | `parallax-end`     | Length          | `0`                     | End offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the grid's bottom border and the viewport's top border intersect. |
 | `parallax-justify` | Boolean         | `false`                 | With parallax enabled, all columns will reach the bottom at the same time.                                                                                                                          |
 
-***
+---
 
 ## JavaScript
 

@@ -26,7 +26,7 @@ Simply add the `gls-scroll` attribute to any page-internal link that contains a 
 
 The height of a sticky element, for example the sticky navbar, is automatically added as offset to the scroll target so it is not covered by the sticky element.
 
-***
+---
 
 ## Offset
 
@@ -38,7 +38,7 @@ To define a general offset when linking directly to a specific section on a page
 
 If there is already an offset for a sticky element, the `offset` option is added up.
 
-***
+---
 
 ## Callback after scroll
 
@@ -65,7 +65,9 @@ UIkit.util.on('#js-scroll-trigger', 'scrolled', function () {
 </div>
 
 ```html
-<a id="js-scroll-trigger" class="gls-button gls-button-primary" href="#target" gls-scroll>Down with callback</a>
+<a id="js-scroll-trigger" class="gls-button gls-button-primary" href="#target" gls-scroll
+    >Down with callback</a
+>
 
 <script>
     UIkit.util.on('#js-scroll-trigger', 'scrolled', function () {
@@ -74,17 +76,17 @@ UIkit.util.on('#js-scroll-trigger', 'scrolled', function () {
 </script>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option   | Value  | Default | Description                 |
-|----------|--------|---------|-----------------------------|
+| -------- | ------ | ------- | --------------------------- |
 | `offset` | Number | `0`     | Offset added to scroll top. |
 
-***
+---
 
 ## JavaScript
 

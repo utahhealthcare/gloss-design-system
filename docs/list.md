@@ -36,14 +36,14 @@ To apply this component, add the `.gls-list` class to an unordered or ordered li
 </ul>
 ```
 
-***
+---
 
 ## Style type modifiers
 
 Add one of the following classes to set the marker of a list item.
 
-| Class              | Description                                      |
-| ------------------ | ------------------------------------------------ |
+| Class               | Description                                      |
+| ------------------- | ------------------------------------------------ |
 | `.gls-list-disc`    | Use a filled circle as a marker.                 |
 | `.gls-list-circle`  | Use a hollow circle as marker.                   |
 | `.gls-list-square`  | Use a filled square as marker                    |
@@ -51,7 +51,9 @@ Add one of the following classes to set the marker of a list item.
 | `.gls-list-hyphen`  | Use a hyphen as marker                           |
 
 ```html
-<ul class="gls-list gls-list-disc">…</ul>
+<ul class="gls-list gls-list-disc">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -107,7 +109,6 @@ Add one of the following classes to set the marker of a list item.
 
 ```html
 <div class="gls-child-width-expand@s" gls-grid>
-
     <div>
         <h4>Disc</h4>
         <ul class="gls-list gls-list-disc">
@@ -152,25 +153,26 @@ Add one of the following classes to set the marker of a list item.
             <li>List item 3</li>
         </ul>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Color modifiers
 
 Add one of the following classes to set the marker color.
 
-| Class                | Description                                                      |
-| -------------------- | ---------------------------------------------------------------- |
+| Class                 | Description                                                      |
+| --------------------- | ---------------------------------------------------------------- |
 | `.gls-list-muted`     | Add this class to mute the marker.                               |
 | `.gls-list-emphasis`  | Add this class to emphasize the marker.                          |
 | `.gls-list-primary`   | Add this class to emphasize the marker with the primary color.   |
 | `.gls-list-secondary` | Add this class to emphasize the marker with the secondary color. |
 
 ```html
-<ul class="gls-list gls-list-disc gls-list-primary">…</ul>
+<ul class="gls-list gls-list-disc gls-list-primary">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -217,7 +219,6 @@ Add one of the following classes to set the marker color.
 
 ```html
 <div class="gls-child-width-expand@s" gls-grid>
-
     <div>
         <h4>Muted</h4>
         <ul class="gls-list gls-list-disc gls-list-muted">
@@ -253,18 +254,19 @@ Add one of the following classes to set the marker color.
             <li>List item 3</li>
         </ul>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Image bullet modifier
 
 Add the `.gls-list-bullet` class to set a custom image bullet as a marker of a list item. Mind, that it can not be combined with color modifiers.
 
 ```html
-<ul class="gls-list gls-list-bullet">…</ul>
+<ul class="gls-list gls-list-bullet">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -283,14 +285,16 @@ Add the `.gls-list-bullet` class to set a custom image bullet as a marker of a l
 </ul>
 ```
 
-***
+---
 
 ## Divider modifier
 
 Add the `.gls-list-divider` class to separate list items with lines.
 
 ```html
-<ul class="gls-list gls-list-divider">…</ul>
+<ul class="gls-list gls-list-divider">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -309,14 +313,16 @@ Add the `.gls-list-divider` class to separate list items with lines.
 </ul>
 ```
 
-***
+---
 
 ## Striped modifier
 
 Add zebra-striping to a list using the `.gls-list-striped` class.
 
 ```html
-<ul class="gls-list gls-list-striped">…</ul>
+<ul class="gls-list gls-list-striped">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -335,19 +341,21 @@ Add zebra-striping to a list using the `.gls-list-striped` class.
 </ul>
 ```
 
-***
+---
 
 ## Size modifier
 
 Add one of the following classes to increase or decrease the spacing between list items. You can combine this with any of the other list modifiers.
 
-| Class               | Description                              |
-| ------------------- | ---------------------------------------- |
+| Class                | Description                              |
+| -------------------- | ---------------------------------------- |
 | `.gls-list-large`    | Increase the spacing between list items. |
 | `.gls-list-collapse` | Remove the spacing between list items.   |
 
 ```html
-<ul class="gls-list gls-list-large">…</ul>
+<ul class="gls-list gls-list-large">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -432,7 +440,6 @@ Add one of the following classes to increase or decrease the spacing between lis
 <h4>Large</h4>
 
 <div class="gls-child-width-expand@s" gls-grid>
-
     <div>
         <ul class="gls-list gls-list-large">
             <li>List item 1</li>
@@ -464,13 +471,11 @@ Add one of the following classes to increase or decrease the spacing between lis
             <li>List item 3</li>
         </ul>
     </div>
-
 </div>
 
 <h4>Collapse</h4>
 
 <div class="gls-child-width-expand@s" gls-grid>
-
     <div>
         <ul class="gls-list gls-list-collapse">
             <li>List item 1</li>
@@ -502,11 +507,10 @@ Add one of the following classes to increase or decrease the spacing between lis
             <li>List item 3</li>
         </ul>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Accessibility
 

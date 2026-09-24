@@ -14,8 +14,8 @@ To apply this component, add the `gls-countdown` attribute to a container elemen
 
 Add the following classes to child elements to apply the necessary functionality.
 
-| Class                   | Description                                                |
-| ----------------------- | ---------------------------------------------------------- |
+| Class                    | Description                                                |
+| ------------------------ | ---------------------------------------------------------- |
 | `.gls-countdown-days`    | Add this class to indicate the days to be counted down.    |
 | `.gls-countdown-hours`   | Add this class to indicate the hours to be counted down.   |
 | `.gls-countdown-minutes` | Add this class to indicate the minutes to be counted down. |
@@ -55,7 +55,11 @@ To style the countdown use style classes from the [Base component](https://getui
 </div>
 
 ```html
-<div class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin" gls-grid gls-countdown="date: 2099-12-31T23:59:59Z">
+<div
+    class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin"
+    gls-grid
+    gls-countdown="date: 2099-12-31T23:59:59Z"
+>
     <div>
         <div class="gls-countdown-number gls-countdown-days"></div>
     </div>
@@ -71,7 +75,7 @@ To style the countdown use style classes from the [Base component](https://getui
 </div>
 ```
 
-***
+---
 
 ## Separator
 
@@ -110,7 +114,11 @@ To insert a separator between each number, use the `.gls-countdown-separator` cl
 </div>
 
 ```html
-<div class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin" gls-grid gls-countdown="date: 2099-12-31T23:59:59Z">
+<div
+    class="gls-h1 gls-grid-small gls-child-width-auto gls-flex-middle gls-margin"
+    gls-grid
+    gls-countdown="date: 2099-12-31T23:59:59Z"
+>
     <div>
         <div class="gls-countdown-number gls-countdown-days"></div>
     </div>
@@ -129,7 +137,7 @@ To insert a separator between each number, use the `.gls-countdown-separator` cl
 </div>
 ```
 
-***
+---
 
 ## Label
 
@@ -169,7 +177,11 @@ To style the labels use style classes from the [Base component](https://getuikit
 </div>
 
 ```html
-<div class="gls-grid-small gls-child-width-auto gls-text-center gls-margin" gls-grid gls-countdown="date: 2099-12-31T23:59:59Z">
+<div
+    class="gls-grid-small gls-child-width-auto gls-text-center gls-margin"
+    gls-grid
+    gls-countdown="date: 2099-12-31T23:59:59Z"
+>
     <div>
         <div class="gls-h1 gls-countdown-number gls-countdown-days"></div>
         <div class="gls-countdown-label gls-text-small gls-visible@s">Days</div>
@@ -192,18 +204,18 @@ To style the labels use style classes from the [Base component](https://getuikit
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. For more information, take a look at the chapter on [component configuration](https://getuikit.com/docs/javascript#component-configuration).
 
-| Option   | Value   | Default | Description                                                                                                                                         |
-| -------- | ------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Option   | Value   | Default | Description                                                                                                                                     |
+| -------- | ------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | `date`   | String  | `false` | Any string parsable by `Date.parse`. See [Reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse). |
-| `reload` | Boolean | `false` | Reload page after countdown expires. Initially expired countdowns won't reload the page.                                                            |
+| `reload` | Boolean | `false` | Reload page after countdown expires. Initially expired countdowns won't reload the page.                                                        |
 
-***
+---
 
 ## JavaScript
 
@@ -235,13 +247,13 @@ UIkit.countdown(element).stop();
 
 Stops the countdown.
 
-***
+---
 
 ## Accessibility
 
 The Countdown component automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *container* element has the `timer` role.
+- The _container_ element has the `timer` role.
 
 <script>
     UIkit.util.attr(UIkit.util.$$('[gls-countdown]'), 'date', new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString());

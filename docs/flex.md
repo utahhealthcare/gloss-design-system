@@ -10,14 +10,14 @@ title: Flex
 
 The Flex component has an essential role in building layouts in UIkit. A lot of components, for example the [Grid](https://getuikit.com/docs/grid) as well as horizontal navigations, like the [Navbar](https://getuikit.com/docs/navbar), [Subnav](https://getuikit.com/docs/subnav), [Breadcrumb](https://getuikit.com/docs/breadcrumb), [Pagination](https://getuikit.com/docs/pagination), [Tab](https://getuikit.com/docs/tab) and [Dotnav](https://getuikit.com/docs/dotnav) are built with flexbox and can be used together with the utility classes from this component.
 
-***
+---
 
 ## Usage
 
 To apply the flexbox layout model, use one of the following classes. By default, all flex items are aligned to the left, as wide as their content and matched in height.
 
-| Class             | Description                                                  |
-| ----------------- | ------------------------------------------------------------ |
+| Class              | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
 | `.gls-flex`        | Create the flex container and behave like a block element.   |
 | `.gls-flex-inline` | Create the flex container and behave like an inline element. |
 
@@ -43,19 +43,19 @@ To apply the flexbox layout model, use one of the following classes. By default,
 </div>
 ```
 
-***
+---
 
 ## Horizontal alignment
 
 These classes define the horizontal alignment of flex items and distribute the space between them. Add one or more of them to the flex container in order to configure the alignments of the flex items. By default, flex items are aligned to the left as does the `.gls-flex-left` class.
 
-| Class                                                                                                              | Description                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| `.gls-flex-left`                                                                                                    | Add this class to align flex items to the left.                                                    |
-| `.gls-flex-center`                                                                                                  | Add this class to center flex items along the main axis.                                           |
-| `.gls-flex-right`                                                                                                   | Add this class to align flex items to the right.                                                   |
-| `.gls-flex-between`                                                                                                 | Add this class to distribute items evenly, with equal space between the items along the main axis. |
-| `.gls-flex-around`                                                                                                  | Add this class to distribute items evenly with equal space on both sides of each item.             |
+| Class                                                                                                                   | Description                                                                                        |
+| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `.gls-flex-left`                                                                                                        | Add this class to align flex items to the left.                                                    |
+| `.gls-flex-center`                                                                                                      | Add this class to center flex items along the main axis.                                           |
+| `.gls-flex-right`                                                                                                       | Add this class to align flex items to the right.                                                   |
+| `.gls-flex-between`                                                                                                     | Add this class to distribute items evenly, with equal space between the items along the main axis. |
+| `.gls-flex-around`                                                                                                      | Add this class to distribute items evenly with equal space on both sides of each item.             |
 | `.gls-flex-left@s`<br>`.gls-flex-center@s`<br>`.gls-flex-right@s`<br>`.gls-flex-between@s`<br>`.gls-flex-around@s`      | Only affects device widths of _640px_ and higher.                                                  |
 | `.gls-flex-left@m`<br>`.gls-flex-center@m`<br>`.gls-flex-right@m`<br>`.gls-flex-between@m`<br>`.gls-flex-around@m`      | Only affects device widths of _960px_ and higher.                                                  |
 | `.gls-flex-left@l`<br>`.gls-flex-center@l`<br>`.gls-flex-right@l`<br>`.gls-flex-between@l`<br>`.gls-flex-around@l`      | Only affects device widths of _1200px_ and higher.                                                 |
@@ -105,18 +105,18 @@ These classes define the horizontal alignment of flex items and distribute the s
 </div>
 ```
 
-***
+---
 
 ## Vertical alignment
 
 These classes define the vertical alignment of flex items. By default, flex items fill the height of their container as does the `.gls-flex-stretch` class.
 
-| Class                                                                                         | Description                                                             |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| `.gls-flex-stretch`                                                                            | Add this class to expand flex items to fill the height of their parent. |
-| `.gls-flex-top`                                                                                | Add this class to align flex items to the top.                          |
-| `.gls-flex-middle`                                                                             | Add this class to center flex items along the cross axis.               |
-| `.gls-flex-bottom`                                                                             | Add this class to align flex items to the bottom.                       |
+| Class                                                                                             | Description                                                             |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `.gls-flex-stretch`                                                                               | Add this class to expand flex items to fill the height of their parent. |
+| `.gls-flex-top`                                                                                   | Add this class to align flex items to the top.                          |
+| `.gls-flex-middle`                                                                                | Add this class to center flex items along the cross axis.               |
+| `.gls-flex-bottom`                                                                                | Add this class to align flex items to the bottom.                       |
 | `.gls-flex-stretch@s`<br> `.gls-flex-top@s`<br> `.gls-flex-middle@s`<br> `.gls-flex-bottom@s`     | Only affects device widths of _640px_ and higher.                       |
 | `.gls-flex-stretch@m`<br> `.gls-flex-top@m`<br> `.gls-flex-middle@m`<br> `.gls-flex-bottom@m`     | Only affects device widths of _960px_ and higher.                       |
 | `.gls-flex-stretch@l`<br> `.gls-flex-top@l`<br> `.gls-flex-middle@l`<br> `.gls-flex-bottom@l`     | Only affects device widths of _1200px_ and higher.                      |
@@ -137,23 +137,23 @@ These classes define the vertical alignment of flex items. By default, flex item
 ```html
 <div class="gls-flex gls-flex-middle gls-text-center">
     <div class="gls-card gls-card-default gls-card-body">Item 1</div>
-    <div class="gls-card gls-card-default gls-card-body gls-margin-left">Item 2<br>…</div>
-    <div class="gls-card gls-card-default gls-card-body gls-margin-left">Item 3<br>…<br>…</div>
+    <div class="gls-card gls-card-default gls-card-body gls-margin-left">Item 2<br />…</div>
+    <div class="gls-card gls-card-default gls-card-body gls-margin-left">Item 3<br />…<br />…</div>
 </div>
 ```
 
-***
+---
 
 ## Direction modifiers
 
 These classes define the axis that flex items are placed on and their direction. By default, items run horizontally from left to right as does the `.gls-flex-row` class.
 
-| Class                                      | Description                                               |
-| ------------------------------------------ | --------------------------------------------------------- |
-| `.gls-flex-row`                             | Add this class to lay out flex items as horizontal rows.  |
-| `.gls-flex-row-reverse`                     | Add this class to lay out flex items from right to left.  |
-| `.gls-flex-column`                          | Add this class to lay out flex items as vertical columns. |
-| `.gls-flex-column-reverse`                  | Add this class to lay out flex items from bottom to top.  |
+| Class                                        | Description                                               |
+| -------------------------------------------- | --------------------------------------------------------- |
+| `.gls-flex-row`                              | Add this class to lay out flex items as horizontal rows.  |
+| `.gls-flex-row-reverse`                      | Add this class to lay out flex items from right to left.  |
+| `.gls-flex-column`                           | Add this class to lay out flex items as vertical columns. |
+| `.gls-flex-column-reverse`                   | Add this class to lay out flex items from bottom to top.  |
 | `.gls-flex-row@s`<br> `.gls-flex-column@s`   | Only affects device widths of _640px_ and higher.         |
 | `.gls-flex-row@m`<br> `.gls-flex-column@m`   | Only affects device widths of _960px_ and higher.         |
 | `.gls-flex-row@l`<br> `.gls-flex-column@l`   | Only affects device widths of _1200px_ and higher.        |
@@ -179,28 +179,28 @@ These classes define the axis that flex items are placed on and their direction.
 </div>
 ```
 
-***
+---
 
 ## Wrap modifiers
 
 By default, flex items are fit into one line and run from left to right. Add one of these classes to modify the behavior of wrapping flex items.
 
-| Class                   | Description                                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------------------------- |
+| Class                    | Description                                                                                       |
+| ------------------------ | ------------------------------------------------------------------------------------------------- |
 | `.gls-flex-wrap`         | Add this class to make flex items wrap into another line when they no longer fit their container. |
 | `.gls-flex-wrap-reverse` | Add this class to change the items' direction so that they run from right to left.                |
 | `.gls-flex-nowrap`       | Add this class to force the flex items into one line. This is the default behavior.               |
 
 The following classes modify the alignment of wrapping flex items.
 
-| Class                   | Description                                                                                                                |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `.gls-flex-wrap-stretch` | Add this class, so that item lines stretch to take up the remaining space                                                  |
+| Class                    | Description                                                                                                                    |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| `.gls-flex-wrap-stretch` | Add this class, so that item lines stretch to take up the remaining space                                                      |
 | `.gls-flex-wrap-between` | Add this class to distribute item lines evenly, with the first row at the top and the last row at the bottom of the container. |
-| `.gls-flex-wrap-around`  | Add this class to distribute lines evenly with equal space at the top and bottom of each row.                              |
-| `.gls-flex-wrap-top`     | Add this class to align multi-line flex items to the top.                                                                  |
-| `.gls-flex-wrap-middle`  | Add this class to vertically centered multirow flex items.                                                                 |
-| `.gls-flex-wrap-bottom`  | Add this class to align multi-line flex items to the bottom.                                                               |
+| `.gls-flex-wrap-around`  | Add this class to distribute lines evenly with equal space at the top and bottom of each row.                                  |
+| `.gls-flex-wrap-top`     | Add this class to align multi-line flex items to the top.                                                                      |
+| `.gls-flex-wrap-middle`  | Add this class to vertically centered multirow flex items.                                                                     |
+| `.gls-flex-wrap-bottom`  | Add this class to align multi-line flex items to the bottom.                                                                   |
 
 ```html
 <div class="gls-flex gls-flex-wrap gls-flex-wrap-around"></div>
@@ -220,24 +220,36 @@ The following classes modify the alignment of wrapping flex items.
 ```html
 <div class="gls-flex gls-flex-wrap gls-flex-wrap-around gls-background-muted gls-height-medium">
     <div class="gls-width-1-3 gls-card gls-card-default gls-card-body gls-card-small">Item 1</div>
-    <div class="gls-width-1-2 gls-card gls-card-default gls-card-body gls-card-small gls-margin-left">Item 2</div>
+    <div
+        class="gls-width-1-2 gls-card gls-card-default gls-card-body gls-card-small gls-margin-left"
+    >
+        Item 2
+    </div>
     <div class="gls-width-1-3 gls-card gls-card-default gls-card-body gls-card-small">Item 3</div>
-    <div class="gls-width-1-3 gls-card gls-card-default gls-card-body gls-card-small gls-margin-left">Item 4</div>
+    <div
+        class="gls-width-1-3 gls-card gls-card-default gls-card-body gls-card-small gls-margin-left"
+    >
+        Item 4
+    </div>
     <div class="gls-width-1-2 gls-card gls-card-default gls-card-body gls-card-small">Item 5</div>
-    <div class="gls-width-1-3 gls-card gls-card-default gls-card-body gls-card-small gls-margin-left">Item 6</div>
+    <div
+        class="gls-width-1-3 gls-card gls-card-default gls-card-body gls-card-small gls-margin-left"
+    >
+        Item 6
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Item order
 
 By default, flex items are laid out according to the source order. To display a certain item as the first or last one, just add one of these classes.
 
-| Class                                     | Description                                        |
-| ----------------------------------------- | -------------------------------------------------- |
-| `.gls-flex-first`                          | Displays the item as the first one.                |
-| `.gls-flex-last`                           | Displays the item as the last one.                 |
+| Class                                       | Description                                        |
+| ------------------------------------------- | -------------------------------------------------- |
+| `.gls-flex-first`                           | Displays the item as the first one.                |
+| `.gls-flex-last`                            | Displays the item as the last one.                 |
 | `.gls-flex-first@s`<br>`.gls-flex-last@s`   | Only affects device widths of _640px_ and higher.  |
 | `.gls-flex-first@m`<br>`.gls-flex-last@m`   | Only affects device widths of _960px_ and higher.  |
 | `.gls-flex-first@l`<br>`.gls-flex-last@l`   | Only affects device widths of _1200px_ and higher. |
@@ -245,8 +257,8 @@ By default, flex items are laid out according to the source order. To display a 
 
 ```html
 <div class="gls-flex">
-  <div></div>
-  <div class="gls-flex-first"></div>
+    <div></div>
+    <div class="gls-flex-first"></div>
 </div>
 ```
 
@@ -266,24 +278,24 @@ By default, flex items are laid out according to the source order. To display a 
 </div>
 ```
 
-***
+---
 
 ## Item dimensions
 
 To determine how much space a flex item should take up, add one of the following classes to the item. By default, items determine their size by their content, but are allowed to shrink.
 
-| Class                                                            | Description                                               |
-| ---------------------------------------------------------------- | --------------------------------------------------------- |
-| `.gls-flex-initial`                                               | The box's size is determined by its content, but shrinks. |
-| `.gls-flex-none`                                                  | The box's size is determined by its content.              |
-| `.gls-flex-auto`                                                  | The space is allocated considering the item's content.    |
-| `.gls-flex-1`                                                     | The space is allocated solely based on flex.              |
+| Class                                                               | Description                                               |
+| ------------------------------------------------------------------- | --------------------------------------------------------- |
+| `.gls-flex-initial`                                                 | The box's size is determined by its content, but shrinks. |
+| `.gls-flex-none`                                                    | The box's size is determined by its content.              |
+| `.gls-flex-auto`                                                    | The space is allocated considering the item's content.    |
+| `.gls-flex-1`                                                       | The space is allocated solely based on flex.              |
 | `.gls-flex-initial@s`<br> `.gls-flex-none@s`<br> `.gls-flex-1@s`    | Only affects device widths of _640px_ and higher.         |
 | `.gls-flex-initial@m`<br> `.gls-flex-none@m`<br> `.gls-flex-1@m`    | Only affects device widths of _960px_ and higher.         |
 | `.gls-flex-initial@l`<br> `.gls-flex-none@l`<br> `.gls-flex-1@l`    | Only affects device widths of _1200px_ and higher.        |
 | `.gls-flex-initial@xl`<br> `.gls-flex-none@xl`<br> `.gls-flex-1@xl` | Only affects device widths of _1600px_ and higher.        |
 
-***
+---
 
 ## Flex and grid
 
@@ -303,10 +315,13 @@ The Flex component can be combined with a grid from the [Grid component](https:/
 ```html
 <div class="gls-flex-middle" gls-grid>
     <div class="gls-width-2-3@m">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna.
+        </p>
     </div>
     <div class="gls-width-1-3@m gls-flex-first">
-        <img src="images/light.jpg" width="1800" height="1200" alt="Image">
+        <img src="images/light.jpg" width="1800" height="1200" alt="Image" />
     </div>
 </div>
 ```

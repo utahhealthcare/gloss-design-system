@@ -12,8 +12,8 @@ title: Card
 
 The Card component consists of the card itself, the card body and an optional card title. Typically, cards are arranged in grid columns from the [Grid component](https://getuikit.com/docs/grid).
 
-| Class            | Description                                                                    |
-| ---------------- | ------------------------------------------------------------------------------ |
+| Class             | Description                                                                    |
+| ----------------- | ------------------------------------------------------------------------------ |
 | `.gls-card`       | Add this class to a `<div>` element to define the Card component.              |
 | `.gls-card-body`  | Add this class to the card to create padding between the card and its content. |
 | `.gls-card-title` | Add this class to a heading to define a card title.                            |
@@ -36,18 +36,21 @@ By default, a card is blank. That is why it is important to add a modifier class
 ```html
 <div class="gls-card gls-card-default gls-card-body gls-width-1-2@m">
     <h3 class="gls-card-title">Default</h3>
-    <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>
+        Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+    </p>
 </div>
 ```
 
-***
+---
 
 ## Style modifiers
 
 UIkit includes a number of modifiers that can be used to add a specific style to cards.
 
-| Class                | Description                                                     |
-| -------------------- | --------------------------------------------------------------- |
+| Class                 | Description                                                     |
+| --------------------- | --------------------------------------------------------------- |
 | `.gls-card-default`   | Add this class to create a visually styled box.                 |
 | `.gls-card-primary`   | Add this class to emphasize it with a primary color.            |
 | `.gls-card-secondary` | Add this class to give it a secondary background color.         |
@@ -117,8 +120,10 @@ UIkit includes a number of modifiers that can be used to add a specific style to
     </div>
     <div>
         <div class="gls-inline-clip">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
-            <div class="gls-card gls-card-overlay gls-card-body gls-position-cover gls-position-small">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+            <div
+                class="gls-card gls-card-overlay gls-card-body gls-position-cover gls-position-small"
+            >
                 <h3 class="gls-card-title">Overlay</h3>
                 <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -127,7 +132,7 @@ UIkit includes a number of modifiers that can be used to add a specific style to
 </div>
 ```
 
-***
+---
 
 ## Hover modifier
 
@@ -203,8 +208,10 @@ To create a hover effect on the card, add the `.gls-card-hover` class. This come
     </div>
     <div>
         <div class="gls-inline-clip">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
-            <div class="gls-card gls-card-overlay gls-card-hover gls-card-body gls-position-cover gls-position-small">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+            <div
+                class="gls-card gls-card-overlay gls-card-hover gls-card-body gls-position-cover gls-position-small"
+            >
                 <h3 class="gls-card-title">Overlay</h3>
                 <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -213,14 +220,14 @@ To create a hover effect on the card, add the `.gls-card-hover` class. This come
 </div>
 ```
 
-***
+---
 
 ## Size modifiers
 
 You can apply different size modifiers to cards that will decrease or increase their padding.
 
-| Class            | Description                                |
-| ---------------- | ------------------------------------------ |
+| Class             | Description                                |
+| ----------------- | ------------------------------------------ |
 | `.gls-card-small` | Add this class to apply a smaller padding. |
 | `.gls-card-large` | Add this class to apply a larger padding.  |
 
@@ -252,19 +259,25 @@ You can apply different size modifiers to cards that will decrease or increase t
     <div>
         <div class="gls-card gls-card-default gls-card-small gls-card-body">
             <h3 class="gls-card-title">Small</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
         </div>
     </div>
     <div>
         <div class="gls-card gls-card-default gls-card-large gls-card-body">
             <h3 class="gls-card-title">Large</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Header and footer
 
@@ -307,16 +320,27 @@ You can also divide a card into header and footer — around the default body. J
     <div class="gls-card-header">
         <div class="gls-grid-small gls-flex-middle" gls-grid>
             <div class="gls-width-auto">
-                <img class="gls-border-circle" width="40" height="40" src="images/avatar.jpg" alt="Avatar">
+                <img
+                    class="gls-border-circle"
+                    width="40"
+                    height="40"
+                    src="images/avatar.jpg"
+                    alt="Avatar"
+                />
             </div>
             <div class="gls-width-expand">
                 <h3 class="gls-card-title gls-margin-remove-bottom">Title</h3>
-                <p class="gls-text-meta gls-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                <p class="gls-text-meta gls-margin-remove-top">
+                    <time datetime="2016-04-01T19:00">April 01, 2016</time>
+                </p>
             </div>
         </div>
     </div>
     <div class="gls-card-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt.
+        </p>
     </div>
     <div class="gls-card-footer">
         <a href="#" class="gls-button gls-button-text">Read more</a>
@@ -324,14 +348,14 @@ You can also divide a card into header and footer — around the default body. J
 </div>
 ```
 
-***
+---
 
 ## Media
 
 To display an image inside a card without any spacing, add one of the following classes to a `<div>` around the `<img>` element. Mind that you need to modify the source order accordingly.
 
-| Class                   | Description                                                           |
-| ----------------------- | --------------------------------------------------------------------- |
+| Class                    | Description                                                           |
+| ------------------------ | --------------------------------------------------------------------- |
 | `.gls-card-media-top`    | This class indicates that the media element is aligned to the top.    |
 | `.gls-card-media-bottom` | This class indicates that the media element is aligned to the bottom. |
 | `.gls-card-media-left`   | This class indicates that the media element is aligned to the left.   |
@@ -340,7 +364,7 @@ To display an image inside a card without any spacing, add one of the following 
 ```html
 <div class="gls-card gls-card-default">
     <div class="gls-card-media-top">
-        <img src="" width="" height="" alt="">
+        <img src="" width="" height="" alt="" />
     </div>
     <div class="gls-card-body"></div>
 </div>
@@ -378,11 +402,14 @@ To display an image inside a card without any spacing, add one of the following 
     <div>
         <div class="gls-card gls-card-default">
             <div class="gls-card-media-top">
-                <img src="images/light.jpg" width="1800" height="1200" alt="">
+                <img src="images/light.jpg" width="1800" height="1200" alt="" />
             </div>
             <div class="gls-card-body">
                 <h3 class="gls-card-title">Media Top</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt.
+                </p>
             </div>
         </div>
     </div>
@@ -390,17 +417,20 @@ To display an image inside a card without any spacing, add one of the following 
         <div class="gls-card gls-card-default">
             <div class="gls-card-body">
                 <h3 class="gls-card-title">Media Bottom</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt.
+                </p>
             </div>
             <div class="gls-card-media-bottom">
-                <img src="images/light.jpg" width="1800" height="1200" alt="">
+                <img src="images/light.jpg" width="1800" height="1200" alt="" />
             </div>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ### Horizontal alignment
 
@@ -411,7 +441,7 @@ To do that, you could for example add the `.gls-cover-container` class from the 
 ```html
 <div class="gls-card gls-card-default gls-child-width-1-2" gls-grid>
     <div class="gls-card-media-left gls-cover-container">
-        <img src="" alt="" gls-cover>
+        <img src="" alt="" gls-cover />
         <canvas width="" height=""></canvas>
     </div>
     <div>
@@ -451,32 +481,38 @@ To do that, you could for example add the `.gls-cover-container` class from the 
 ```html
 <div class="gls-card gls-card-default gls-grid-collapse gls-child-width-1-2@s gls-margin" gls-grid>
     <div class="gls-card-media-left gls-cover-container">
-        <img src="images/light.jpg" alt="" gls-cover>
+        <img src="images/light.jpg" alt="" gls-cover />
         <canvas width="600" height="400"></canvas>
     </div>
     <div>
         <div class="gls-card-body">
             <h3 class="gls-card-title">Media Left</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt.
+            </p>
         </div>
     </div>
 </div>
 
 <div class="gls-card gls-card-default gls-grid-collapse gls-child-width-1-2@s gls-margin" gls-grid>
     <div class="gls-flex-last@s gls-card-media-right gls-cover-container">
-        <img src="images/light.jpg" alt="" gls-cover>
+        <img src="images/light.jpg" alt="" gls-cover />
         <canvas width="600" height="400"></canvas>
     </div>
     <div>
         <div class="gls-card-body">
             <h3 class="gls-card-title">Media Right</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt.
+            </p>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Badge
 
@@ -500,6 +536,9 @@ To position a badge inside a card, add the `.gls-card-badge` class to a containe
 <div class="gls-card gls-card-default gls-card-body gls-width-1-2@m">
     <div class="gls-card-badge gls-label">Badge</div>
     <h3 class="gls-card-title">Title</h3>
-    <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>
+        Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </p>
 </div>
 ```

@@ -42,10 +42,10 @@ Add the `ratio: 3` parameter to the `gls-spinner` attribute to triple its size â
 <span gls-spinner="ratio: 4.5"></span>
 ```
 
-***
+---
 
 ## Accessibility
 
 The Spinner component automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *spinner* has the `status` role.
+- The _spinner_ has the `status` role.

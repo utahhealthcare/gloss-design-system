@@ -14,8 +14,8 @@ The Modal component consists of an overlay, a dialog and an optional close butto
 
 Add the `gls-modal` attribute to a `<div>` element to create the modal container and an overlay that blanks out the page. It is important to add an `id` to indicate the element for toggling. Use the following classes to define the modal's sections.
 
-| Class              | Description                                                                                             |
-|--------------------|---------------------------------------------------------------------------------------------------------|
+| Class               | Description                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------- |
 | `.gls-modal-dialog` | Add this class to a child `<div>` element to create the dialog                                          |
 | `.gls-modal-body`   | Add this class to create padding between the modal and its content.                                     |
 | `.gls-modal-title`  | Add this class to a heading element to create the modal title.                                          |
@@ -39,6 +39,7 @@ Add the `gls-modal` attribute to a `<div>` element to create the modal container
 <button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #modal-example">Open</button>
 
 <!-- This is an anchor toggling the modal -->
+
 <a href="#modal-example" gls-toggle>Open</a>
 
 <!-- This is the modal -->
@@ -56,7 +57,13 @@ Add the `gls-modal` attribute to a `<div>` element to create the modal container
 
 ```html
 <!-- This is a button toggling the modal -->
-<button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #modal-example">Open</button>
+<button
+    class="gls-button gls-button-default gls-margin-small-right"
+    type="button"
+    gls-toggle="target: #modal-example"
+>
+    Open
+</button>
 
 <!-- This is an anchor toggling the modal -->
 <a href="#modal-example" gls-toggle>Open</a>
@@ -65,16 +72,25 @@ Add the `gls-modal` attribute to a `<div>` element to create the modal container
 <div id="modal-example" gls-modal>
     <div class="gls-modal-dialog gls-modal-body">
         <h2 class="gls-modal-title">Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
         <p class="gls-text-right">
-            <button class="gls-button gls-button-default gls-modal-close" type="button">Cancel</button>
+            <button class="gls-button gls-button-default gls-modal-close" type="button">
+                Cancel
+            </button>
             <button class="gls-button gls-button-primary" type="button">Save</button>
         </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Close button
 
@@ -110,6 +126,7 @@ Add the `gls-close` attribute from the [Close component](https://getuikit.com/do
 </div>
 
 <!-- This is a button toggling the modal with the outside close button -->
+
 <button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #modal-close-outside">Outside</button>
 
 <!-- This is the modal with the outside close button -->
@@ -124,31 +141,57 @@ Add the `gls-close` attribute from the [Close component](https://getuikit.com/do
 
 ```html
 <!-- This is a button toggling the modal with the default close button -->
-<button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #modal-close-default">Default</button>
+<button
+    class="gls-button gls-button-default gls-margin-small-right"
+    type="button"
+    gls-toggle="target: #modal-close-default"
+>
+    Default
+</button>
 
 <!-- This is the modal with the default close button -->
 <div id="modal-close-default" gls-modal>
     <div class="gls-modal-dialog gls-modal-body">
         <button class="gls-modal-close-default" type="button" gls-close></button>
         <h2 class="gls-modal-title">Default</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
     </div>
 </div>
 
 <!-- This is a button toggling the modal with the outside close button -->
-<button class="gls-button gls-button-default gls-margin-small-right" type="button" gls-toggle="target: #modal-close-outside">Outside</button>
+<button
+    class="gls-button gls-button-default gls-margin-small-right"
+    type="button"
+    gls-toggle="target: #modal-close-outside"
+>
+    Outside
+</button>
 
 <!-- This is the modal with the outside close button -->
 <div id="modal-close-outside" gls-modal>
     <div class="gls-modal-dialog gls-modal-body">
         <button class="gls-modal-close-outside" type="button" gls-close></button>
         <h2 class="gls-modal-title">Outside</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Center modal
 
@@ -171,6 +214,7 @@ To vertically center the modal dialog, you can use the `.gls-margin-auto-vertica
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     </div>
+
 </div>
 </div>
 
@@ -179,25 +223,30 @@ To vertically center the modal dialog, you can use the `.gls-margin-auto-vertica
 
 <div id="modal-center" class="gls-flex-top" gls-modal>
     <div class="gls-modal-dialog gls-modal-body gls-margin-auto-vertical">
-
         <button class="gls-modal-close-default" type="button" gls-close></button>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
     </div>
 </div>
 ```
 
 **Note** `.gls-flex-top` on the modal container is needed to support IE 11.
 
-***
+---
 
 ## Header and footer
 
 To divide the modal into different content sections, use the following classes.
 
-| Class              | Description                                                     |
-|--------------------|-----------------------------------------------------------------|
+| Class               | Description                                                     |
+| ------------------- | --------------------------------------------------------------- |
 | `.gls-modal-header` | Add this class to a `<div>` element to create the modal header. |
 | `.gls-modal-footer` | Add this class to a `<div>` element to create the modal footer. |
 
@@ -244,18 +293,26 @@ To divide the modal into different content sections, use the following classes.
             <h2 class="gls-modal-title">Modal Title</h2>
         </div>
         <div class="gls-modal-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
         </div>
         <div class="gls-modal-footer gls-text-right">
-            <button class="gls-button gls-button-default gls-modal-close" type="button">Cancel</button>
+            <button class="gls-button gls-button-default gls-modal-close" type="button">
+                Cancel
+            </button>
             <button class="gls-button gls-button-primary" type="button">Save</button>
         </div>
     </div>
 </div>
 ```
 
-
-***
+---
 
 ## Container modifier
 
@@ -284,12 +341,19 @@ Add the `.gls-modal-container` class to expand the modal dialog to the default [
     <div class="gls-modal-dialog gls-modal-body">
         <button class="gls-modal-close-default" type="button" gls-close></button>
         <h2 class="gls-modal-title">Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Full modifier
 
@@ -329,17 +393,28 @@ Using the [grid](https://getuikit.com/docs/grid) and [width](https://getuikit.co
     <div class="gls-modal-dialog">
         <button class="gls-modal-close-full gls-close-large" type="button" gls-close></button>
         <div class="gls-grid-collapse gls-child-width-1-2@s gls-flex-middle" gls-grid>
-            <div class="gls-background-cover" style="background-image: url('images/photo.jpg');" gls-height-viewport></div>
+            <div
+                class="gls-background-cover"
+                style="background-image: url('images/photo.jpg');"
+                gls-height-viewport
+            ></div>
             <div class="gls-padding-large">
                 <h1>Headline</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Overflow
 
@@ -391,6 +466,7 @@ By default, the page will scroll with the modal, if its content exceeds the wind
         </div>
 
     </div>
+
 </div>
 </div>
 
@@ -399,7 +475,6 @@ By default, the page will scroll with the modal, if its content exceeds the wind
 
 <div id="modal-overflow" gls-modal>
     <div class="gls-modal-dialog">
-
         <button class="gls-modal-close-default" type="button" gls-close></button>
 
         <div class="gls-modal-header">
@@ -407,37 +482,99 @@ By default, the page will scroll with the modal, if its content exceeds the wind
         </div>
 
         <div class="gls-modal-body" gls-overflow-auto>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
         </div>
 
         <div class="gls-modal-footer gls-text-right">
-            <button class="gls-button gls-button-default gls-modal-close" type="button">Cancel</button>
+            <button class="gls-button gls-button-default gls-modal-close" type="button">
+                Cancel
+            </button>
             <button class="gls-button gls-button-primary" type="button">Save</button>
         </div>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Media
 
@@ -491,7 +628,7 @@ If you want to display media, you should first check, if the [Lightbox component
 </div>
 
 ```html
- <p gls-margin>
+<p gls-margin>
     <a class="gls-button gls-button-default" href="#modal-media-image" gls-toggle>Image</a>
     <a class="gls-button gls-button-default" href="#modal-media-video" gls-toggle>Video</a>
     <a class="gls-button gls-button-default" href="#modal-media-youtube" gls-toggle>YouTube</a>
@@ -501,33 +638,54 @@ If you want to display media, you should first check, if the [Lightbox component
 <div id="modal-media-image" class="gls-flex-top" gls-modal>
     <div class="gls-modal-dialog gls-width-auto gls-margin-auto-vertical">
         <button class="gls-modal-close-outside" type="button" gls-close></button>
-        <img src="images/photo.jpg" width="1800" height="1200" alt="">
+        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
     </div>
 </div>
 
 <div id="modal-media-video" class="gls-flex-top" gls-modal>
     <div class="gls-modal-dialog gls-width-auto gls-margin-auto-vertical">
         <button class="gls-modal-close-outside" type="button" gls-close></button>
-        <video src="https://yootheme.com/media/videos/yootheme-pro.mp4" width="1920" height="1080" controls playsinline gls-video></video>
+        <video
+            src="https://yootheme.com/media/videos/yootheme-pro.mp4"
+            width="1920"
+            height="1080"
+            controls
+            playsinline
+            gls-video
+        ></video>
     </div>
 </div>
 
 <div id="modal-media-youtube" class="gls-flex-top" gls-modal>
     <div class="gls-modal-dialog gls-width-auto gls-margin-auto-vertical">
         <button class="gls-modal-close-outside" type="button" gls-close></button>
-        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" loading="lazy" gls-video gls-responsive></iframe>
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA"
+            width="1920"
+            height="1080"
+            loading="lazy"
+            gls-video
+            gls-responsive
+        ></iframe>
     </div>
 </div>
 
 <div id="modal-media-vimeo" class="gls-flex-top" gls-modal>
     <div class="gls-modal-dialog gls-width-auto gls-margin-auto-vertical">
         <button class="gls-modal-close-outside" type="button" gls-close></button>
-        <iframe src="https://player.vimeo.com/video/1084537" width="1280" height="720" loading="lazy" gls-video gls-responsive></iframe>
+        <iframe
+            src="https://player.vimeo.com/video/1084537"
+            width="1280"
+            height="720"
+            loading="lazy"
+            gls-video
+            gls-responsive
+        ></iframe>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Groups
 
@@ -599,10 +757,19 @@ You can group multiple modals by linking from one to the other and back. Use thi
             <h2 class="gls-modal-title">Headline 1</h2>
         </div>
         <div class="gls-modal-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
         </div>
         <div class="gls-modal-footer gls-text-right">
-            <button class="gls-button gls-button-default gls-modal-close" type="button">Cancel</button>
+            <button class="gls-button gls-button-default gls-modal-close" type="button">
+                Cancel
+            </button>
             <a href="#modal-group-2" class="gls-button gls-button-primary" gls-toggle>Next</a>
         </div>
     </div>
@@ -615,33 +782,42 @@ You can group multiple modals by linking from one to the other and back. Use thi
             <h2 class="gls-modal-title">Headline 2</h2>
         </div>
         <div class="gls-modal-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
         </div>
         <div class="gls-modal-footer gls-text-right">
-            <button class="gls-button gls-button-default gls-modal-close" type="button">Cancel</button>
+            <button class="gls-button gls-button-default gls-modal-close" type="button">
+                Cancel
+            </button>
             <a href="#modal-group-1" class="gls-button gls-button-primary" gls-toggle>Previous</a>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option      | Value   | Default                     | Description                                                                                                                                          |
-|-------------|---------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `esc-close` | Boolean | `true`                      | Close the modal when the _Esc_ key is pressed.                                                                                                       |
-| `bg-close`  | Boolean | `true`                      | Close the modal when the background is clicked.                                                                                                      |
-| `stack`     | Boolean | `false`                     | Stack modals, when more than one is open. By default, the previous modal will be hidden.                                                             |
-| `container` | String  | `true`                      | Define a target container via a selector to specify where the modal should be appended in the DOM. Setting it to `false` will prevent this behavior. |
+| Option      | Value   | Default                      | Description                                                                                                                                          |
+| ----------- | ------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `esc-close` | Boolean | `true`                       | Close the modal when the _Esc_ key is pressed.                                                                                                       |
+| `bg-close`  | Boolean | `true`                       | Close the modal when the background is clicked.                                                                                                      |
+| `stack`     | Boolean | `false`                      | Stack modals, when more than one is open. By default, the previous modal will be hidden.                                                             |
+| `container` | String  | `true`                       | Define a target container via a selector to specify where the modal should be appended in the DOM. Setting it to `false` will prevent this behavior. |
 | `cls-page`  | String  | `gls-modal-page`             | Class to add to `<html>` when modal is active                                                                                                        |
 | `cls-panel` | String  | `gls-modal-dialog`           | Class of the element to be considered the panel of the modal                                                                                         |
 | `sel-close` | String  | `[class*="gls-modal-close"]` | CSS selector for all elements that should trigger the closing of the modal                                                                           |
 
-***
+---
 
 ## JavaScript
 
@@ -658,7 +834,7 @@ UIkit.modal(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                               |
-|--------------|-----------------------------------------------------------|
+| ------------ | --------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown.                            |
 | `show`       | Fires after an item is shown.                             |
 | `shown`      | Fires after the item's show animation has been completed. |
@@ -686,14 +862,14 @@ UIkit.modal(element).hide();
 
 Hides the Modal.
 
-***
+---
 
 ## Modal dialogs
 
 The component comes with a number of prepared modal dialogs that you can use for user interaction. You can call the dialog directly from JavaScript and use callback functions to process the user input.
 
 | Code                                          | Description                                              |
-|-----------------------------------------------|----------------------------------------------------------|
+| --------------------------------------------- | -------------------------------------------------------- |
 | `UIkit.modal.alert('UIkit alert!')`           | Show an alert box with one button.                       |
 | `UIkit.modal.confirm('UIkit confirm!')`       | Show a confirm dialog with your message and two buttons. |
 | `UIkit.modal.prompt('Name:', 'Your name')`    | Show a dialog asking for a text input.                   |
@@ -704,11 +880,14 @@ The component comes with a number of prepared modal dialogs that you can use for
 To process the user input, the modal uses a promise-based interface which provides a `then()` function to register your callback functions. The `UIkit.modal.dialog` function however will return the modal itself.
 
 ```js
-UIkit.modal.confirm('UIkit confirm!').then(function() {
-    console.log('Confirmed.')
-}, function () {
-    console.log('Rejected.')
-});
+UIkit.modal.confirm('UIkit confirm!').then(
+    function () {
+        console.log('Confirmed.');
+    },
+    function () {
+        console.log('Rejected.');
+    },
+);
 ```
 
 The returned promise has a property `dialog`, which holds a reference to the modal itself. This lets you manipulate e.g. the markup of the modal's element.
@@ -716,7 +895,7 @@ The returned promise has a property `dialog`, which holds a reference to the mod
 To translate the button labels, the dialog functions accept an optional `options` object parameter. This has a key `i18n` and two properties `ok` and `cancel`.
 
 ```js
-const modal = UIkit.modal.confirm('UIkit confirm!', {i18n: {ok: 'okay'}}).dialog; // The modal component
+const modal = UIkit.modal.confirm('UIkit confirm!', { i18n: { ok: 'okay' } }).dialog; // The modal component
 const el = modal.$el; // The modal element
 ```
 
@@ -772,7 +951,6 @@ const el = modal.$el; // The modal element
 
 ```html
 <p gls-margin>
-
     <a id="js-modal-dialog" class="gls-button gls-button-default" href="#">Dialog</a>
 
     <a id="js-modal-alert" class="gls-button gls-button-default" href="#">Alert</a>
@@ -782,55 +960,55 @@ const el = modal.$el; // The modal element
     <a id="js-modal-prompt" class="gls-button gls-button-default" href="#">Prompt</a>
 
     <script>
+        UIkit.util.on('#js-modal-dialog', 'click', function (e) {
+            e.preventDefault();
+            e.target.blur();
+            UIkit.modal.dialog('<p class="gls-modal-body">UIkit dialog!</p>');
+        });
 
-       UIkit.util.on('#js-modal-dialog', 'click', function (e) {
-           e.preventDefault();
-           e.target.blur();
-           UIkit.modal.dialog('<p class="gls-modal-body">UIkit dialog!</p>');
-       });
+        UIkit.util.on('#js-modal-alert', 'click', function (e) {
+            e.preventDefault();
+            e.target.blur();
+            UIkit.modal.alert('UIkit alert!').then(function () {
+                console.log('Alert closed.');
+            });
+        });
 
-       UIkit.util.on('#js-modal-alert', 'click', function (e) {
-           e.preventDefault();
-           e.target.blur();
-           UIkit.modal.alert('UIkit alert!').then(function () {
-               console.log('Alert closed.')
-           });
-       });
+        UIkit.util.on('#js-modal-confirm', 'click', function (e) {
+            e.preventDefault();
+            e.target.blur();
+            UIkit.modal.confirm('UIkit confirm!').then(
+                function () {
+                    console.log('Confirmed.');
+                },
+                function () {
+                    console.log('Rejected.');
+                },
+            );
+        });
 
-       UIkit.util.on('#js-modal-confirm', 'click', function (e) {
-           e.preventDefault();
-           e.target.blur();
-           UIkit.modal.confirm('UIkit confirm!').then(function () {
-               console.log('Confirmed.')
-           }, function () {
-               console.log('Rejected.')
-           });
-       });
-
-       UIkit.util.on('#js-modal-prompt', 'click', function (e) {
-           e.preventDefault();
-           e.target.blur();
-           UIkit.modal.prompt('Name:', 'Your name').then(function (name) {
-               console.log('Prompted:', name)
-           });
-       });
-
+        UIkit.util.on('#js-modal-prompt', 'click', function (e) {
+            e.preventDefault();
+            e.target.blur();
+            UIkit.modal.prompt('Name:', 'Your name').then(function (name) {
+                console.log('Prompted:', name);
+            });
+        });
     </script>
-
 </p>
 ```
 
-***
+---
 
 ## Accessibility
 
 The Modal component adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/) and automatically sets the appropriate WAI-ARIA roles and properties.
 
-- The *modal* has the `dialog` role and the `aria-modal` property.
+- The _modal_ has the `dialog` role and the `aria-modal` property.
 
 The Close component automatically sets the appropriate WAI-ARIA roles and properties.
 
-- The *close icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
+- The _close icon_ has the `aria-label` property, and if an `<a>` element is used, the `button` role.
 
 ### Keyboard interaction
 

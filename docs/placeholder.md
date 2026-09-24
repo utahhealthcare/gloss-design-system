@@ -21,5 +21,7 @@ This component applies a specially styled area to create a placeholder space, wh
 </div>
 
 ```html
-<div class="gls-placeholder gls-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<div class="gls-placeholder gls-text-center">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
 ```

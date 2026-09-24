@@ -38,13 +38,19 @@ Typically, classes from the [Animation component](https://getuikit.com/docs/anim
 ```html
 <div class="gls-child-width-1-2@m gls-grid-match" gls-grid>
     <div>
-        <div class="gls-card gls-card-default gls-card-body" gls-scrollspy="cls: gls-animation-slide-left; repeat: true">
+        <div
+            class="gls-card gls-card-default gls-card-body"
+            gls-scrollspy="cls: gls-animation-slide-left; repeat: true"
+        >
             <h3 class="gls-card-title">Left</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-card-body" gls-scrollspy="cls: gls-animation-slide-right; repeat: true">
+        <div
+            class="gls-card gls-card-default gls-card-body"
+            gls-scrollspy="cls: gls-animation-slide-right; repeat: true"
+        >
             <h3 class="gls-card-title">Right</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
@@ -54,7 +60,7 @@ Typically, classes from the [Animation component](https://getuikit.com/docs/anim
 
 This example uses the `repeat: true` option. Scroll up and down to see the triggered animations. The layout is made with the [Card component](https://getuikit.com/docs/card).
 
-***
+---
 
 ## Groups
 
@@ -109,7 +115,11 @@ You can also group scrollspy elements, so you won't have to apply the attribute 
 </div>
 
 ```html
-<div class="gls-child-width-1-3@m" gls-grid gls-scrollspy="cls: gls-animation-fade; target: .gls-card; delay: 500; repeat: true">
+<div
+    class="gls-child-width-1-3@m"
+    gls-grid
+    gls-scrollspy="cls: gls-animation-fade; target: .gls-card; delay: 500; repeat: true"
+>
     <div>
         <div class="gls-card gls-card-default gls-card-body">
             <h3 class="gls-card-title">Fade</h3>
@@ -149,7 +159,7 @@ You can also group scrollspy elements, so you won't have to apply the attribute 
 </div>
 ```
 
-***
+---
 
 ## Set `cls` option per target
 
@@ -186,7 +196,11 @@ You can also give each target a separate `cls` option. Just add the `gls-scrolls
 </div>
 
 ```html
-<div class="gls-child-width-1-3@m" gls-grid gls-scrollspy="cls: gls-animation-slide-bottom; target: .gls-card; delay: 300; repeat: true">
+<div
+    class="gls-child-width-1-3@m"
+    gls-grid
+    gls-scrollspy="cls: gls-animation-slide-bottom; target: .gls-card; delay: 300; repeat: true"
+>
     <div>
         <div class="gls-card gls-card-default gls-card-body">
             <h3 class="gls-card-title">Bottom</h3>
@@ -194,7 +208,10 @@ You can also give each target a separate `cls` option. Just add the `gls-scrolls
         </div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-card-body" gls-scrollspy-class="gls-animation-slide-top">
+        <div
+            class="gls-card gls-card-default gls-card-body"
+            gls-scrollspy-class="gls-animation-slide-top"
+        >
             <h3 class="gls-card-title">Top</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
@@ -208,7 +225,7 @@ You can also give each target a separate `cls` option. Just add the `gls-scrolls
 </div>
 ```
 
-***
+---
 
 ## Component options
 
@@ -229,7 +246,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 <span gls-scrollspy="my-class"></span>
 ```
 
-***
+---
 
 ## JavaScript
 
@@ -250,7 +267,7 @@ The following events will be triggered on elements with this component attached:
 | `inview`  | Fires after an item moves into the viewport.    |
 | `outview` | Fires after an item moves into out of viewport. |
 
-***
+---
 
 ## Scrollspy nav
 
@@ -265,21 +282,21 @@ To automatically update the active menu item depending on the scroll position of
 
 For an example of the scrollspy nav, just check out the fixed nav on the right side of this page or take a look at the test. Any of the following options can be applied to the `gls-scrollspy-nav` attribute. Separate multiple options with a semicolon.
 
-***
+---
 
 ### Scrollspy nav options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option    | Value                 | Default     | Description                                                   |
-|-----------|-----------------------|-------------|---------------------------------------------------------------|
-| `cls`     | String                | `gls-active` | Class to add to the active links.                             |
-| `closest` | Boolean, CSS selector | `false`     | Target to apply the class to. Defaults to the element itself. |
-| `scroll`  | Boolean               | `false`     | Adds the [Scroll component](https://getuikit.com/docs/scroll) to its links.          |
-| `target`  | CSS selector          | `a[href]`   | Targets the anchor elements that should be used.              |
-| `offset`  | Number                | `0`         | Offset added to scroll top.                                   |
+| Option    | Value                 | Default      | Description                                                                 |
+| --------- | --------------------- | ------------ | --------------------------------------------------------------------------- |
+| `cls`     | String                | `gls-active` | Class to add to the active links.                                           |
+| `closest` | Boolean, CSS selector | `false`      | Target to apply the class to. Defaults to the element itself.               |
+| `scroll`  | Boolean               | `false`      | Adds the [Scroll component](https://getuikit.com/docs/scroll) to its links. |
+| `target`  | CSS selector          | `a[href]`    | Targets the anchor elements that should be used.                            |
+| `offset`  | Number                | `0`          | Offset added to scroll top.                                                 |
 
-***
+---
 
 ### Scrollspy nav JavaScript
 

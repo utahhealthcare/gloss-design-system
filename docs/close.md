@@ -26,12 +26,11 @@ To apply this component, add the `gls-close` attribute to an `<a>` or `<button>`
 <button type="button" aria-label="Close" gls-close></button>
 ```
 
-***
+---
 
 ## Large modifier
 
 Add the `.gls-close-large` class for a larger close button.
-
 
 ```html
 <button class="gls-close-large" type="button" gls-close></button>
@@ -45,7 +44,7 @@ Add the `.gls-close-large` class for a larger close button.
 <button class="gls-close-large" type="button" aria-label="Close" gls-close></button>
 ```
 
-***
+---
 
 ## Close in alerts
 
@@ -67,11 +66,13 @@ This is an example of how this component is used with an alert box from the [Ale
 ```html
 <div gls-alert>
     <button class="gls-alert-close" type="button" aria-label="Close" gls-close></button>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </p>
 </div>
 ```
 
-***
+---
 
 ## Close in drops
 
@@ -101,13 +102,16 @@ This is an example of how this component is used with the [Drop component](https
     <div gls-drop="mode: click">
         <div class="gls-card gls-card-body gls-card-default">
             <button class="gls-drop-close" type="button" aria-label="Close" gls-close></button>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt.
+            </p>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Close in modals
 
@@ -142,27 +146,36 @@ This is an example of how this component is used with the [Modal component](http
     <div class="gls-modal-dialog gls-modal-body">
         <button class="gls-modal-close-default" type="button" aria-label="Close" gls-close></button>
         <h2 class="gls-modal-title">Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
         <p class="gls-text-right">
-            <button class="gls-button gls-button-default gls-modal-close" type="button">Cancel</button>
+            <button class="gls-button gls-button-default gls-modal-close" type="button">
+                Cancel
+            </button>
             <button class="gls-button gls-button-primary" type="button">Save</button>
         </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Accessibility
 
 The Close component automatically sets the appropriate WAI-ARIA roles and properties.
 
-- The *close icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
+- The _close icon_ has the `aria-label` property, and if an `<a>` element is used, the `button` role.
 
 ### Internationalization
 
 The Close component uses the following translation strings. Learn more about [translating components](https://getuikit.com/docs/accessibility#internationalization).
 
-| Key          | Default        | Description             |
-|--------------|----------------|-------------------------|
-| `label`      | `Close`        | `aria-label` attribute. |
+| Key     | Default | Description             |
+| ------- | ------- | ----------------------- |
+| `label` | `Close` | `aria-label` attribute. |

@@ -12,15 +12,19 @@ title: Thumbnav
 
 To create a navigation with thumbnails, use the following classes. This component is built with Flexbox. So to align a thumbnav, you can use [Flex component](https://getuikit.com/docs/flex).
 
-| Class          | Description                                                                                                                            |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Class           | Description                                                                                                                            |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | `.gls-thumbnav` | Add this class to a `<ul>` element to define the Thumbnav component. Nest your thumbnail images inside `<a>` elements within the list. |
 | `.gls-active `  | Add this class to a list item to apply an active state.                                                                                |
 
 ```html
 <ul class="gls-thumbnav">
-    <li class="gls-active"><a href=""><img src="" width="" height="" alt=""></a></li>
-    <li><a href=""><img src="" alt=""></a></li>
+    <li class="gls-active">
+        <a href=""><img src="" width="" height="" alt="" /></a>
+    </li>
+    <li>
+        <a href=""><img src="" alt="" /></a>
+    </li>
 </ul>
 ```
 
@@ -36,20 +40,28 @@ To create a navigation with thumbnails, use the following classes. This componen
 
 ```html
 <ul class="gls-thumbnav" gls-margin>
-    <li class="gls-active"><a href="#"><img src="images/photo.jpg" width="100" height="67" alt=""></a></li>
-    <li><a href="#"><img src="images/dark.jpg" width="100" height="67" alt=""></a></li>
-    <li><a href="#"><img src="images/light.jpg" width="100" height="67" alt=""></a></li>
+    <li class="gls-active">
+        <a href="#"><img src="images/photo.jpg" width="100" height="67" alt="" /></a>
+    </li>
+    <li>
+        <a href="#"><img src="images/dark.jpg" width="100" height="67" alt="" /></a>
+    </li>
+    <li>
+        <a href="#"><img src="images/light.jpg" width="100" height="67" alt="" /></a>
+    </li>
 </ul>
 ```
 
-***
+---
 
 ## Vertical alignment
 
 The thumbnav can also be displayed vertically. Just add the `.gls-thumbnav-vertical` modifier.
 
 ```html
-<ul class="gls-thumbnav gls-thumbnav-vertical">…</ul>
+<ul class="gls-thumbnav gls-thumbnav-vertical">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -62,14 +74,19 @@ The thumbnav can also be displayed vertically. Just add the `.gls-thumbnav-verti
 
 ```html
 <ul class="gls-thumbnav gls-thumbnav-vertical" gls-margin>
-    <li class="gls-active"><a href="#"><img src="images/photo.jpg" width="100" height="67" alt=""></a></li>
-    <li><a href="#"><img src="images/dark.jpg" width="100" height="67" alt=""></a></li>
-    <li><a href="#"><img src="images/light.jpg" width="100" height="67" alt=""></a></li>
+    <li class="gls-active">
+        <a href="#"><img src="images/photo.jpg" width="100" height="67" alt="" /></a>
+    </li>
+    <li>
+        <a href="#"><img src="images/dark.jpg" width="100" height="67" alt="" /></a>
+    </li>
+    <li>
+        <a href="#"><img src="images/light.jpg" width="100" height="67" alt="" /></a>
+    </li>
 </ul>
 ```
 
-
-***
+---
 
 ## Position as overlay
 
@@ -77,13 +94,13 @@ To position the thumbnav on top of an element or the [Slideshow component](https
 
 ```html
 <div class="gls-position-relative">
-
     <!-- The element which is wrapped goes here -->
 
     <div class="gls-position-bottom-center gls-position-small">
-        <ul class="gls-thumbnav">…</ul>
+        <ul class="gls-thumbnav">
+            …
+        </ul>
     </div>
-
 </div>
 ```
 
@@ -115,26 +132,30 @@ To position the thumbnav on top of an element or the [Slideshow component](https
 
 ```html
 <div class="gls-position-relative" gls-slideshow="animation: fade">
-
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
+            <img src="images/light.jpg" alt="" gls-cover />
         </div>
     </div>
 
     <div class="gls-position-bottom-center gls-position-small">
         <ul class="gls-slideshow-nav gls-thumbnav">
-            <li gls-slideshow-item="0"><a href="#"><img src="images/photo.jpg" width="100" height="67" alt=""></a></li>
-            <li gls-slideshow-item="1"><a href="#"><img src="images/dark.jpg" width="100" height="67" alt=""></a></li>
-            <li gls-slideshow-item="2"><a href="#"><img src="images/light.jpg" width="100" height="67" alt=""></a></li>
+            <li gls-slideshow-item="0">
+                <a href="#"><img src="images/photo.jpg" width="100" height="67" alt="" /></a>
+            </li>
+            <li gls-slideshow-item="1">
+                <a href="#"><img src="images/dark.jpg" width="100" height="67" alt="" /></a>
+            </li>
+            <li gls-slideshow-item="2">
+                <a href="#"><img src="images/light.jpg" width="100" height="67" alt="" /></a>
+            </li>
         </ul>
     </div>
-
 </div>
 ```

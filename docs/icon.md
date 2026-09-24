@@ -10,7 +10,7 @@ title: Icon
 
 UIkit comes with its own SVG icon system and a comprehensive library, which comprises a growing number of elegant outline icons. This component injects SVGs into the site, so that they adopt color and can be styled with CSS.
 
-***
+---
 
 ## Usage
 
@@ -46,7 +46,7 @@ If `icon` is the only option in the attribute value, you can also use `gls-icon=
 <a href="" gls-icon="heart"></a>
 ```
 
-***
+---
 
 ## Library
 
@@ -314,7 +314,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
     </div>
 </div>
 
-***
+---
 
 ## Ratio
 
@@ -334,7 +334,7 @@ Add the `ratio: 2` parameter to the `gls-icon` attribute to double its size – 
 <span gls-icon="icon: check; ratio: 3.5"></span>
 ```
 
-***
+---
 
 ## Link modifier
 
@@ -360,7 +360,7 @@ To reset the default link styling to a more muted color when using an icon insid
 </div>
 ```
 
-***
+---
 
 ## Button modifier
 
@@ -386,7 +386,7 @@ Use the modifier `.gls-icon-button` class on an `<a>` element to create an icon 
 </div>
 ```
 
-***
+---
 
 ## Overlay modifier
 
@@ -418,35 +418,36 @@ Use the modifier `.gls-icon-overlay` class to make the icon work best on backgro
         </a>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-child-width-1-2@m" gls-grid>
     <div>
-
         <a href class="gls-inline gls-dark">
-            <img src="images/light.jpg" width="1800" height="1200" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="" />
             <div class="gls-position-center">
-                <span class="gls-icon-overlay" href="#" gls-icon="ratio: 3; icon: play-circle"></span>
+                <span
+                    class="gls-icon-overlay"
+                    href="#"
+                    gls-icon="ratio: 3; icon: play-circle"
+                ></span>
             </div>
         </a>
-
     </div>
     <div>
-
         <a href class="gls-inline gls-light">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
             <div class="gls-position-center">
                 <span class="gls-icon-overlay" href="#" gls-icon="ratio: 3; icon: youtube"></span>
             </div>
         </a>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Image modifier
 
@@ -460,14 +461,14 @@ You can also make any background image scale to the size of an icon. Just add th
 <span class="gls-icon gls-icon-image" style="background-image: url(images/dark.jpg);"></span>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option  | Value  | Default | Description          |
-|---------|--------|---------|----------------------|
+| ------- | ------ | ------- | -------------------- |
 | `icon`  | String |         | The icon to display. |
 | `ratio` | Number | `1`     | The icon size ratio. |
 
@@ -477,7 +478,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 <span gls-icon="heart"></span>
 ```
 
-***
+---
 
 ## JavaScript
 
@@ -488,6 +489,7 @@ Learn more about [JavaScript components](https://getuikit.com/docs/javascript#pr
 ```js
 UIkit.icon(element, options);
 ```
+
 ### Properties
 
 #### svg
@@ -495,10 +497,12 @@ UIkit.icon(element, options);
 A JavaScript Promise that will resolve with the added SVG Node.
 
 ```js
-UIkit.icon(element).svg.then(function(svg) { svg.querySelector('path').style.stroke = 'red'; })
+UIkit.icon(element).svg.then(function (svg) {
+    svg.querySelector('path').style.stroke = 'red';
+});
 ```
 
-***
+---
 
 ## Accessibility
 

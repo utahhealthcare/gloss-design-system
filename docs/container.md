@@ -18,14 +18,14 @@ Add the `.gls-container` class to a block element to give it a max-width and wra
 <div class="gls-container"></div>
 ```
 
-***
+---
 
 ## Size modifiers
 
 Add one of the following classes to the container to apply a different max-width.
 
-| Class                  | Description                                                                                                    |
-|------------------------|----------------------------------------------------------------------------------------------------------------|
+| Class                   | Description                                                                                                    |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
 | `.gls-container-xsmall` | Add this class for a xsmall container.                                                                         |
 | `.gls-container-small`  | Add this class for a small container.                                                                          |
 | `.gls-container-large`  | Add this class for a large container.                                                                          |
@@ -44,7 +44,7 @@ Add one of the following classes to the container to apply a different max-width
 <div class="gls-container gls-container-expand"></div>
 ```
 
-***
+---
 
 ## Container in sections
 

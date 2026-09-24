@@ -12,7 +12,7 @@ title: Upload
 
 This JavaScript component utilizes the latest XMLHttpRequest Level 2 specification and provides the ability to upload files via Ajax including tracking of the upload progress. The component provides two ways of uploading files: `select` and `drop`. While the `select` request can only be applied to `<input type="file">` elements, you can basically use any element with `drop`, which enables you to simply drag and drop files from your desktop into the specified element to upload them. Note that this component does not handle your file uploads on the server.
 
-***
+---
 
 ## Select
 
@@ -27,12 +27,12 @@ In this example we are using a simple button which opens up the file select wind
 
 ```html
 <div class="js-upload" gls-form-custom>
-    <input type="file" multiple>
+    <input type="file" multiple />
     <button class="gls-button gls-button-default" type="button" tabindex="-1">Select</button>
 </div>
 ```
 
-***
+---
 
 ## Drop area
 
@@ -118,7 +118,7 @@ This example shows how to realize a drop area with the option to select the file
     <span gls-icon="icon: cloud-upload"></span>
     <span class="gls-text-middle">Attach binaries by dropping them here or</span>
     <div gls-form-custom>
-        <input type="file" multiple>
+        <input type="file" multiple />
         <span class="gls-link">selecting one</span>
     </div>
 </div>
@@ -126,11 +126,9 @@ This example shows how to realize a drop area with the option to select the file
 <progress id="js-progressbar" class="gls-progress" value="0" max="100" hidden></progress>
 
 <script>
-
     var bar = document.getElementById('js-progressbar');
 
     UIkit.upload('.js-upload', {
-
         url: '',
         multiple: true,
 
@@ -180,15 +178,12 @@ This example shows how to realize a drop area with the option to select the file
             }, 1000);
 
             alert('Upload Completed');
-        }
-
+        },
     });
-
 </script>
-
 ```
 
-***
+---
 
 ## Upload listeners
 
@@ -196,11 +191,9 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
 
 ```html
 <script>
-
     var bar = document.getElementById('js-progressbar');
 
     UIkit.upload('.js-upload', {
-
         url: '',
         multiple: true,
 
@@ -209,7 +202,6 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
 
             // The environment object can still be modified here.
             // var {data, method, headers, xhr, responseType} = environment;
-
         },
         beforeAll: function () {
             console.log('beforeAll', arguments);
@@ -254,34 +246,32 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
             }, 1000);
 
             alert('Upload Completed');
-        }
-
+        },
     });
-
 </script>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option             | Value    | Default                 | Description                                                                                   |
-|--------------------|----------|-------------------------|-----------------------------------------------------------------------------------------------|
+| ------------------ | -------- | ----------------------- | --------------------------------------------------------------------------------------------- |
 | `url`              | String   |                         | The request url.                                                                              |
 | `multiple`         | Boolean  | `false`                 | Allow multiple files to be uploaded.                                                          |
 | `name`             | String   | `files[]`               | The name parameter.                                                                           |
 | `method`           | String   | `POST`                  | The request type.                                                                             |
 | `params`           | Object   | `{}`                    | Additional parameters.                                                                        |
-| `allow`            | String   | `false`                 | File name filter (eg. *.png). Separate multiple values with a pipe (*.png\|*.gif).            |
-| `mime`             | String   | `false`                 | File MIME type filter (eg. image/*). Separate multiple values with a pipe (image/*\|video/*). |
+| `allow`            | String   | `false`                 | File name filter (eg. _.png). Separate multiple values with a pipe (_.png\|*.gif).            |
+| `mime`             | String   | `false`                 | File MIME type filter (eg. image/_). Separate multiple values with a pipe (image/_\|video/*). |
 | `maxSize`          | Number   | `0`                     | The maximum file size per file. (kB)                                                          |
 | `concurrent`       | Number   | `1`                     | Number of files that will be uploaded simultaneously.                                         |
 | `type`             | String   |                         | The expected response data type (xml, json, script, or html)                                  |
 | `msg-invalid-mime` | String   | `Invalid File Type: %s` | Invalid MIME type message.                                                                    |
 | `msg-invalid-name` | String   | `Invalid File Name: %s` | Invalid name message.                                                                         |
-| `cls-dragover`     | String   | `gls-dragover`           | File name filter.                                                                             |
+| `cls-dragover`     | String   | `gls-dragover`          | File name filter.                                                                             |
 | `abort`            | Function |                         | The abort callback.                                                                           |
 | `before-all`       | Function |                         | The beforeAll callback.                                                                       |
 | `before-send`      | Function |                         | The beforeSend callback.                                                                      |
@@ -294,7 +284,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `progress`         | Function |                         | The progress callback.                                                                        |
 | `fail`             | Function |                         | The fail callback. If the name or MIME type is invalid.                                       |
 
-***
+---
 
 ## JavaScript
 
@@ -311,5 +301,5 @@ UIkit.upload(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name     | Description                            |
-|----------|----------------------------------------|
+| -------- | -------------------------------------- |
 | `upload` | Fires before files are being uploaded. |

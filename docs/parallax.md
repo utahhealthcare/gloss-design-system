@@ -16,14 +16,14 @@ To apply this component, add the `gls-parallax` attribute to any element. Use on
 | ------------------ | ---------------------------------- | -------------- | ----------- |
 | `x`                | Animate translateX.                | Length         | `0`         |
 | `y`                | Animate translateY.                | Length         | `0`         |
-| `bgy`              | Animate background Y position.     | Length         | *Initial*   |
-| `bgx`              | Animate background X position.     | Length         | *Initial*   |
+| `bgy`              | Animate background Y position.     | Length         | _Initial_   |
+| `bgx`              | Animate background X position.     | Length         | _Initial_   |
 | `rotate`           | Animate rotation clockwise.        | `deg`          | `0`         |
 | `scale`            | Animate scaling.                   | Number, Length | `1`         |
-| `color`            | Animate color                      | Color          | *Initial*   |
-| `background-color` | Animate background-color           | Color          | *Initial*   |
-| `border-color`     | Animate border color               | Color          | *Initial*   |
-| `opacity`          | Animate the opacity.               | Number         | *Initial*   |
+| `color`            | Animate color                      | Color          | _Initial_   |
+| `background-color` | Animate background-color           | Color          | _Initial_   |
+| `border-color`     | Animate border color               | Color          | _Initial_   |
+| `opacity`          | Animate the opacity.               | Number         | _Initial_   |
 | `blur`             | Animate the blur filter.           | `px`           | `0`         |
 | `hue`              | Animate the hue rotation filter.   | `deg`          | `0`         |
 | `grayscale`        | Animate the grayscale filter.      | `%`            | `0`         |
@@ -35,7 +35,6 @@ To apply this component, add the `gls-parallax` attribute to any element. Use on
 You can use `px`, `%`, `vw` and `vh` units for the length values. The pixel unit can be left out. For example, `x: 200` is the same as `x: 200px`. Basic mathematics operands `+` and `-` are also supported.
 
 Set one of the options to create an animation stop. The property is animated from its start value to the defined stop value.
-
 
 ```html
 <div gls-parallax="bgy: -200">…</div>
@@ -50,14 +49,18 @@ Set one of the options to create an animation stop. The property is animated fro
 </div>
 
 ```html
-<div class="gls-height-large gls-background-cover gls-light gls-flex" gls-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
-
-    <h1 class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical">Headline</h1>
-
+<div
+    class="gls-height-large gls-background-cover gls-light gls-flex"
+    gls-parallax="bgy: -200"
+    style="background-image: url('images/dark.jpg');"
+>
+    <h1 class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical">
+        Headline
+    </h1>
 </div>
 ```
 
-***
+---
 
 ## Start stop
 
@@ -77,15 +80,21 @@ To set a custom start value, create another animation stop by using two values s
 </div>
 
 ```html
-<div class="gls-height-large gls-background-cover gls-overflow-hidden gls-light gls-flex" style="background-image: url('images/dark.jpg');">
+<div
+    class="gls-height-large gls-background-cover gls-overflow-hidden gls-light gls-flex"
+    style="background-image: url('images/dark.jpg');"
+>
     <div class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical">
         <h1 gls-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">Headline</h1>
-        <p gls-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p gls-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+        </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Multiple stops
 
@@ -105,15 +114,27 @@ To better control the property animation, you can set intermediate stops along t
 </div>
 
 ```html
-<div class="gls-height-large gls-background-cover gls-overflow-hidden gls-light gls-flex" style="background-image: url('images/dark.jpg');">
+<div
+    class="gls-height-large gls-background-cover gls-overflow-hidden gls-light gls-flex"
+    style="background-image: url('images/dark.jpg');"
+>
     <div class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical">
-        <h1 gls-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; end: 50vh + 50%;">Headline</h1>
-        <p gls-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; end: 50vh + 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h1
+            gls-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; end: 50vh + 50%;"
+        >
+            Headline
+        </h1>
+        <p
+            gls-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; end: 50vh + 50%;"
+        >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+        </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Stop positions
 
@@ -133,15 +154,27 @@ Set an optional stop position to specify the percentage along the animation sequ
 </div>
 
 ```html
-<div class="gls-height-large gls-background-cover gls-overflow-hidden gls-light gls-flex" style="background-image: url('images/dark.jpg');">
+<div
+    class="gls-height-large gls-background-cover gls-overflow-hidden gls-light gls-flex"
+    style="background-image: url('images/dark.jpg');"
+>
     <div class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical">
-        <h1 gls-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; end: 50vh + 50%;">Headline</h1>
-        <p gls-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; end: 50vh + 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h1
+            gls-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; end: 50vh + 50%;"
+        >
+            Headline
+        </h1>
+        <p
+            gls-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; end: 50vh + 50%;"
+        >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+        </p>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Nesting
 
@@ -162,14 +195,21 @@ Different parallax animations can easily be nested.
 </div>
 
 ```html
-<div class="gls-height-large gls-background-cover gls-light gls-flex" gls-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
-
-    <h1 class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical" gls-parallax="y: 100,0">Headline</h1>
-
+<div
+    class="gls-height-large gls-background-cover gls-light gls-flex"
+    gls-parallax="bgy: -200"
+    style="background-image: url('images/dark.jpg');"
+>
+    <h1
+        class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical"
+        gls-parallax="y: 100,0"
+    >
+        Headline
+    </h1>
 </div>
 ```
 
-***
+---
 
 ## Target
 
@@ -190,14 +230,22 @@ The animation starts and stops depending on the element position in the viewport
 </div>
 
 ```html
-<div id="test-target" class="gls-height-large gls-background-cover gls-light gls-flex" gls-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
-
-    <h1 class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical" gls-parallax="target: #test-target; y: 100,0">Headline</h1>
-
+<div
+    id="test-target"
+    class="gls-height-large gls-background-cover gls-light gls-flex"
+    gls-parallax="bgy: -200"
+    style="background-image: url('images/dark.jpg');"
+>
+    <h1
+        class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical"
+        gls-parallax="target: #test-target; y: 100,0"
+    >
+        Headline
+    </h1>
 </div>
 ```
 
-***
+---
 
 ## Start and end
 
@@ -221,17 +269,49 @@ To adjust the animation duration, set the `start` and `end` options. The `start`
 </div>
 
 ```html
-<div id="test-start-end" class="gls-height-large gls-background-cover gls-overflow-hidden gls-light gls-flex" style="background-image: url('images/dark.jpg');">
-     <div class="gls-grid gls-margin-auto gls-flex-inline">
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-start-end; y: 398; easing: 0;">0 / 0</div></div>
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-start-end; start: 100%; end: 100%; y: 398; easing: 0;">100% / 100%</div></div>
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-start-end; start: 30vh; end: 30vh; y: 398; easing: 0;">30vh / 30vh</div></div>
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-start-end; start: 100% + 100; end: 100% + 100; y: 398; easing: 0;">100% + 100 / 100% + 100</div></div>
+<div
+    id="test-start-end"
+    class="gls-height-large gls-background-cover gls-overflow-hidden gls-light gls-flex"
+    style="background-image: url('images/dark.jpg');"
+>
+    <div class="gls-grid gls-margin-auto gls-flex-inline">
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-start-end; y: 398; easing: 0;"
+            >
+                0 / 0
+            </div>
+        </div>
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-start-end; start: 100%; end: 100%; y: 398; easing: 0;"
+            >
+                100% / 100%
+            </div>
+        </div>
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-start-end; start: 30vh; end: 30vh; y: 398; easing: 0;"
+            >
+                30vh / 30vh
+            </div>
+        </div>
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-start-end; start: 100% + 100; end: 100% + 100; y: 398; easing: 0;"
+            >
+                100% + 100 / 100% + 100
+            </div>
+        </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Easing
 
@@ -252,20 +332,73 @@ To adjust the easing of the animation, add the `easing` option. `0` transitions 
 </div>
 
 ```html
-<div id="test-easing" class="gls-height-large gls-background-cover gls-overflow-hidden gls-light gls-flex" style="background-image: url('images/dark.jpg');">
-     <div class="gls-grid gls-margin-auto gls-margin-auto-vertical gls-flex-inline">
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: -2">-2</div></div>
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: -1">-1</div></div>
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: -0.5">-0.5</div></div>
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 0">0</div></div>
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 0.5">0.5</div></div>
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 1">1</div></div>
-        <div><div class="gls-card gls-card-default gls-padding-small" gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 2">2</div></div>
+<div
+    id="test-easing"
+    class="gls-height-large gls-background-cover gls-overflow-hidden gls-light gls-flex"
+    style="background-image: url('images/dark.jpg');"
+>
+    <div class="gls-grid gls-margin-auto gls-margin-auto-vertical gls-flex-inline">
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: -2"
+            >
+                -2
+            </div>
+        </div>
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: -1"
+            >
+                -1
+            </div>
+        </div>
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: -0.5"
+            >
+                -0.5
+            </div>
+        </div>
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 0"
+            >
+                0
+            </div>
+        </div>
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 0.5"
+            >
+                0.5
+            </div>
+        </div>
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 1"
+            >
+                1
+            </div>
+        </div>
+        <div>
+            <div
+                class="gls-card gls-card-default gls-padding-small"
+                gls-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 2"
+            >
+                2
+            </div>
+        </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Colors
 
@@ -284,14 +417,22 @@ The transition from one color to another, for example for borders, backgrounds o
 </div>
 
 ```html
-<div id="test-color" class="test-color gls-height-large gls-overflow-hidden gls-flex" gls-parallax="start: 100%; end: 100%; background-color: yellow,white; border-color: #00f,#f00;" style="border: 10px solid #000;">
-
-    <h1 class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical" gls-parallax="target: #test-target; start: 100%; end: 100%; color: #0f0;">Headline</h1>
-
+<div
+    id="test-color"
+    class="test-color gls-height-large gls-overflow-hidden gls-flex"
+    gls-parallax="start: 100%; end: 100%; background-color: yellow,white; border-color: #00f,#f00;"
+    style="border: 10px solid #000;"
+>
+    <h1
+        class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical"
+        gls-parallax="target: #test-target; start: 100%; end: 100%; color: #0f0;"
+    >
+        Headline
+    </h1>
 </div>
 ```
 
-***
+---
 
 ## Filters
 
@@ -310,14 +451,22 @@ CSS filters are an easy way to add graphical effects to any element on your page
 </div>
 
 ```html
-<div id="test-filter" class="gls-height-large gls-background-cover gls-overflow-hidden gls-flex" gls-parallax="start: 100%; end: 100%; sepia: 100;" style="background-image: url('images/light.jpg');">
-
-    <h1 class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical" gls-parallax="target: #test-filter; start: 100%; end: 100%; blur: 0,10;">Headline</h1>
-
+<div
+    id="test-filter"
+    class="gls-height-large gls-background-cover gls-overflow-hidden gls-flex"
+    gls-parallax="start: 100%; end: 100%; sepia: 100;"
+    style="background-image: url('images/light.jpg');"
+>
+    <h1
+        class="gls-width-1-2@m gls-text-center gls-margin-auto gls-margin-auto-vertical"
+        gls-parallax="target: #test-filter; start: 100%; end: 100%; blur: 0,10;"
+    >
+        Headline
+    </h1>
 </div>
 ```
 
-***
+---
 
 ## SVG Strokes
 
@@ -325,7 +474,7 @@ The Parallax component can be used to animate SVG strokes. The effect looks like
 
 ```html
 <div gls-parallax="stroke: 45">
-    <img src="" width="" height="" alt="" gls-svg>
+    <img src="" width="" height="" alt="" gls-svg />
 </div>
 ```
 
@@ -337,13 +486,13 @@ The Parallax component can be used to animate SVG strokes. The effect looks like
 
 ```html
 <div class="gls-text-center" gls-parallax="start: 100%; end: 100%; stroke: 100%;">
-    <img src="images/strokes.svg" width="350" height="340" alt="" gls-svg>
+    <img src="images/strokes.svg" width="350" height="340" alt="" gls-svg />
 </div>
 ```
 
 **Note** It's recommended to use percent unit `%`, so you don't have to know the exact length of the strokes.
 
-***
+---
 
 ## SVG Images
 
@@ -351,11 +500,11 @@ The Parallax component can be applied to the elements of inline SVG images, like
 
 ```html
 <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="10" height="10" gls-parallax="rotate: 360"/>
+    <rect x="0" y="0" width="10" height="10" gls-parallax="rotate: 360" />
 </svg>
 ```
 
-***
+---
 
 ## Responsive
 
@@ -371,7 +520,7 @@ The parallax can also be applied to certain viewports only. Add the `media` opti
 
 Together with the [Sticky component](https://getuikit.com/docs/sticky) you can achieve complex sticky parallax effects. View some examples in the tests for the [Sticky Parallax](../assets/uikit/tests/sticky-parallax.html).
 
-***
+---
 
 ## Component options
 
@@ -385,7 +534,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `end`    | Length                  | `0`     | End offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the target's bottom border and the viewport's top border intersect. |
 | `media`  | Boolean, Number, String | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)).                                            |
 
-***
+---
 
 ## JavaScript
 

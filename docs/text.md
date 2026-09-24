@@ -14,69 +14,69 @@ Combine this component with the [Heading component](https://getuikit.com/docs/he
 
 UIkit offers various text utilities to style your text.
 
-| Class           | Description                                                                                                           |
-|-----------------|-----------------------------------------------------------------------------------------------------------------------|
-| `.gls-text-lead` | <span class="gls-text-lead">Add this class to highlight text, for example in article subtitles.</span>                 |
+| Class            | Description                                                                                                           |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `.gls-text-lead` | <span class="gls-text-lead">Add this class to highlight text, for example in article subtitles.</span>                |
 | `.gls-text-meta` | <span class="gls-text-meta">Add this class to a paragraph that contains meta text about an article or similar.</span> |
 
-***
+---
 
 ## Font size
 
 The following classes will modify the font size of your text.
 
-| Class              | Description                                                                       |
-|--------------------|-----------------------------------------------------------------------------------|
+| Class               | Description                                                                        |
+| ------------------- | ---------------------------------------------------------------------------------- |
 | `.gls-text-small`   | <span class="gls-text-small">Add this class to decrease the font size.</span>      |
 | `.gls-text-default` | <span class="gls-text-default">Add this class to set default the font size.</span> |
 | `.gls-text-large`   | <span class="gls-text-large">Add this class to increase the font size.</span>      |
 
-***
+---
 
 ## Font weight
 
 Add one of the following classes to modify the font-weight of your text.
 
-| Class              | Description                                                                         |
-|--------------------|-------------------------------------------------------------------------------------|
+| Class               | Description                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------ |
 | `.gls-text-light`   | <span class="gls-text-light">Add this class to apply a font-weight of `300`.</span>  |
 | `.gls-text-normal`  | <span class="gls-text-normal">Add this class to apply a font-weight of `400`.</span> |
 | `.gls-text-bold`    | <span class="gls-text-bold">Add this class to apply a font-weight of `700`.</span>   |
 | `.gls-text-lighter` | <span class="gls-text-lighter">Add this class to apply a lighter font weight.</span> |
 | `.gls-text-bolder`  | <span class="gls-text-bolder">Add this class to apply a bolder font weight.</span>   |
 
-***
+---
 
 ## Font style
 
 Add the `.gls-text-italic` class to create <span class="gls-text-italic">italic text</span>.
 
-***
+---
 
 ## Text transform
 
 The following classes will transform the text into uppercased, capitalized or lowercase characters.
 
-| Class                 | Description                                                                                  |
-|-----------------------|----------------------------------------------------------------------------------------------|
+| Class                  | Description                                                                                   |
+| ---------------------- | --------------------------------------------------------------------------------------------- |
 | `.gls-text-capitalize` | <span class="gls-text-capitalize">Add this class to transform your text to capitalize.</span> |
 | `.gls-text-uppercase`  | <span class="gls-text-uppercase">Add this class to transform your text to uppercase.</span>   |
 | `.gls-text-lowercase`  | <span class="gls-text-lowercase">Add this class to transform your text to lowercase.</span>   |
 
-***
+---
 
 ## Text decoration
 
 Add the `.gls-text-decoration-none` class to remove any text decoration from a <a class="gls-text-decoration-none" href>link</a>.
 
-***
+---
 
 ## Text color
 
 Use one of these classes to apply a different color to text elements.
 
-| Class                | Description                                                                                       |
-|----------------------|---------------------------------------------------------------------------------------------------|
+| Class                 | Description                                                                                        |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
 | `.gls-text-muted`     | <span class="gls-text-muted">Add this class to mute text.</span>                                   |
 | `.gls-text-emphasis`  | <span class="gls-text-emphasis">Add this class to emphasize text.</span>                           |
 | `.gls-text-primary`   | <span class="gls-text-primary">Add this class to emphasize text with the primary color.</span>     |
@@ -85,7 +85,7 @@ Use one of these classes to apply a different color to text elements.
 | `.gls-text-warning`   | <span class="gls-text-warning">Add this class to indicate a warning.</span>                        |
 | `.gls-text-danger`    | <span class="gls-text-danger">Add this class to indicate danger.</span>                            |
 
-***
+---
 
 ## Text background
 
@@ -95,14 +95,14 @@ To apply a gradient or background image to text, add the `.gls-text-background` 
 <h1><span class="gls-text-background"></span></h1>
 ```
 
-***
+---
 
 ## Text alignment
 
 Add one of these useful classes to align your text.
 
-| Class              | Description                |
-|--------------------|----------------------------|
+| Class               | Description                |
+| ------------------- | -------------------------- |
 | `.gls-text-left`    | Aligns text to the left.   |
 | `.gls-text-right`   | Aligns text to the right.  |
 | `.gls-text-center`  | Centers text horizontally. |
@@ -146,30 +146,32 @@ Add one of these useful classes to align your text.
     <div>
         <div class="gls-card gls-card-default gls-card-small">
             <div class="gls-text-right gls-card-body">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.gls-text-right</code>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                <code>.gls-text-right</code>
             </div>
         </div>
     </div>
     <div>
         <div class="gls-card gls-card-default gls-card-small">
             <div class="gls-text-center gls-card-body">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.gls-text-center</code>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                <code>.gls-text-center</code>
             </div>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ### Responsive
 
 UIkit provides a number of responsive alignment classes. Basically, they work just like the usual alignment classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
-| Class                                                               | Description                                   |
-|---------------------------------------------------------------------|-----------------------------------------------|
+| Class                                                                  | Description                                   |
+| ---------------------------------------------------------------------- | --------------------------------------------- |
 | `.gls-text-left@s`<br> `.gls-text-center@s`<br> `.gls-text-right@s`    | Affects device widths of _640px_ and larger.  |
-| `.gls-text-left@m`<br> `.gls-text-center@m`<br>   `.gls-text-right@m`  | Affects device widths of _960px_ and larger.  |
+| `.gls-text-left@m`<br> `.gls-text-center@m`<br> `.gls-text-right@m`    | Affects device widths of _960px_ and larger.  |
 | `.gls-text-left@l`<br> `.gls-text-center@l`<br> `.gls-text-right@l`    | Affects device widths of _1200px_ and larger. |
 | `.gls-text-left@xl`<br> `.gls-text-center@xl`<br> `.gls-text-right@xl` | Affects device widths of _1600px_ and larger. |
 
@@ -204,35 +206,38 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
     <div>
         <div class="gls-card gls-card-default gls-card-small">
             <div class="gls-text-center@s gls-card-body">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.gls-text-center@s</code>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                <code>.gls-text-center@s</code>
             </div>
         </div>
     </div>
     <div>
         <div class="gls-card gls-card-default gls-card-small">
             <div class="gls-text-right@l gls-card-body">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.gls-text-right@l</code>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                <code>.gls-text-right@l</code>
             </div>
         </div>
     </div>
     <div>
         <div class="gls-card gls-card-default gls-card-small">
             <div class="gls-text-center@m gls-card-body">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.gls-text-center@m</code>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                <code>.gls-text-center@m</code>
             </div>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ### Vertical alignment
 
 Add one of these classes to vertically align text to an object.
 
-| Class               | Description                  |
-|---------------------|------------------------------|
+| Class                | Description                  |
+| -------------------- | ---------------------------- |
 | `.gls-text-top`      | Aligns text to the top.      |
 | `.gls-text-middle`   | Centers text vertically.     |
 | `.gls-text-bottom`   | Aligns text to the bottom.   |
@@ -258,28 +263,28 @@ Add one of these classes to vertically align text to an object.
 ```html
 <div class="gls-child-width-1-3@m gls-child-width-1-2@s" gls-grid>
     <div>
-        <img src="images/avatar.jpg" width="50" height="50">
+        <img src="images/avatar.jpg" width="50" height="50" />
         <span class="gls-text-top">Lorem ipsum.</span>
     </div>
     <div>
-        <img src="images/avatar.jpg" width="50" height="50">
+        <img src="images/avatar.jpg" width="50" height="50" />
         <span class="gls-text-middle">Lorem ipsum.</span>
     </div>
     <div>
-        <img src="images/avatar.jpg" width="50" height="50">
+        <img src="images/avatar.jpg" width="50" height="50" />
         <span class="gls-text-bottom">Lorem ipsum.</span>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Text wrapping
 
 Add one of these useful classes to wrap your text.
 
-| Class               | Description                                                                                        |
-|---------------------|----------------------------------------------------------------------------------------------------|
+| Class                | Description                                                                                        |
+| -------------------- | -------------------------------------------------------------------------------------------------- |
 | `.gls-text-truncate` | Prevents text from wrapping into multiple lines, truncating it and displaying an ellipsis instead. |
 | `.gls-text-break`    | Breaks strings, if their length exceeds the width of their container.                              |
 | `.gls-text-nowrap`   | Prevents text from wrapping into multiple lines.                                                   |
@@ -298,15 +303,20 @@ Add one of these useful classes to wrap your text.
 ```html
 <div class="gls-child-width-1-2@s" gls-grid>
     <div>
-        <div class="gls-panel gls-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="gls-panel gls-text-truncate">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+        </div>
     </div>
     <div>
-        <div class="gls-panel gls-text-break">Loremipsumdolorsitamet,consecteturadipiscingelit,seddoeiusmodtemporincididuntutlaboreetdoloremagnaaliqua.</div>
+        <div class="gls-panel gls-text-break">
+            Loremipsumdolorsitamet,consecteturadipiscingelit,seddoeiusmodtemporincididuntutlaboreetdoloremagnaaliqua.
+        </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Text stroke
 

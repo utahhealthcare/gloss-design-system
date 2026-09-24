@@ -20,7 +20,7 @@ Add an image in the background of each slide using the `gls-cover` attribute fro
 <div gls-slideshow>
     <div class="gls-slideshow-items">
         <div>
-            <img src="" alt="" gls-cover>
+            <img src="" alt="" gls-cover />
         </div>
     </div>
 </div>
@@ -49,28 +49,36 @@ Add an image in the background of each slide using the `gls-cover` attribute fro
 
 ```html
 <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow>
-
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
+            <img src="images/light.jpg" alt="" gls-cover />
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slideshow-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slideshow-item="next"
+    ></a>
 </div>
 ```
 
 **Note** To lazy load images in the slides, use the `loading="lazy"` attribute. The Slideshow will automatically remove the attribute from images in adjacent slides.
 
-***
+---
 
 ## Animations
 
@@ -83,7 +91,6 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 | `scale`   | Slides are scaled up and fade out. |
 | `pull`    | Slides are pulled from the deck.   |
 | `push`    | Slides are pushed to the deck.     |
-
 
 ```html
 <div gls-slideshow="animation: fade">…</div>
@@ -211,135 +218,182 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
         </div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-child-width-1-2@m" gls-grid>
     <div>
-
         <div class="gls-h3">Slide</div>
 
         <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow>
-
             <div class="gls-slideshow-items">
                 <div>
-                    <img src="images/photo.jpg" alt="" gls-cover>
+                    <img src="images/photo.jpg" alt="" gls-cover />
                 </div>
                 <div>
-                    <img src="images/dark.jpg" alt="" gls-cover>
+                    <img src="images/dark.jpg" alt="" gls-cover />
                 </div>
                 <div>
-                    <img src="images/light.jpg" alt="" gls-cover>
+                    <img src="images/light.jpg" alt="" gls-cover />
                 </div>
             </div>
 
-            <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-            <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+            <a
+                class="gls-position-center-left gls-position-small gls-hidden-hover"
+                href
+                gls-slidenav-previous
+                gls-slideshow-item="previous"
+            ></a>
+            <a
+                class="gls-position-center-right gls-position-small gls-hidden-hover"
+                href
+                gls-slidenav-next
+                gls-slideshow-item="next"
+            ></a>
         </div>
-
     </div>
     <div>
-
         <div class="gls-h3">Fade</div>
 
-        <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="animation: fade">
-
+        <div
+            class="gls-position-relative gls-visible-toggle gls-light"
+            tabindex="-1"
+            gls-slideshow="animation: fade"
+        >
             <div class="gls-slideshow-items">
                 <div>
-                    <img src="images/photo.jpg" alt="" gls-cover>
+                    <img src="images/photo.jpg" alt="" gls-cover />
                 </div>
                 <div>
-                    <img src="images/dark.jpg" alt="" gls-cover>
+                    <img src="images/dark.jpg" alt="" gls-cover />
                 </div>
                 <div>
-                    <img src="images/light.jpg" alt="" gls-cover>
+                    <img src="images/light.jpg" alt="" gls-cover />
                 </div>
             </div>
 
-            <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-            <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+            <a
+                class="gls-position-center-left gls-position-small gls-hidden-hover"
+                href
+                gls-slidenav-previous
+                gls-slideshow-item="previous"
+            ></a>
+            <a
+                class="gls-position-center-right gls-position-small gls-hidden-hover"
+                href
+                gls-slidenav-next
+                gls-slideshow-item="next"
+            ></a>
         </div>
-
     </div>
     <div>
-
         <div class="gls-h3">Scale</div>
 
-        <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="animation: scale">
-
+        <div
+            class="gls-position-relative gls-visible-toggle gls-light"
+            tabindex="-1"
+            gls-slideshow="animation: scale"
+        >
             <div class="gls-slideshow-items">
                 <div>
-                    <img src="images/photo.jpg" alt="" gls-cover>
+                    <img src="images/photo.jpg" alt="" gls-cover />
                 </div>
                 <div>
-                    <img src="images/dark.jpg" alt="" gls-cover>
+                    <img src="images/dark.jpg" alt="" gls-cover />
                 </div>
                 <div>
-                    <img src="images/light.jpg" alt="" gls-cover>
+                    <img src="images/light.jpg" alt="" gls-cover />
                 </div>
             </div>
 
-            <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-            <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+            <a
+                class="gls-position-center-left gls-position-small gls-hidden-hover"
+                href
+                gls-slidenav-previous
+                gls-slideshow-item="previous"
+            ></a>
+            <a
+                class="gls-position-center-right gls-position-small gls-hidden-hover"
+                href
+                gls-slidenav-next
+                gls-slideshow-item="next"
+            ></a>
         </div>
-
     </div>
     <div>
-
         <div class="gls-h3">Pull</div>
 
-        <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="animation: pull">
-
+        <div
+            class="gls-position-relative gls-visible-toggle gls-light"
+            tabindex="-1"
+            gls-slideshow="animation: pull"
+        >
             <div class="gls-slideshow-items">
                 <div>
-                    <img src="images/photo.jpg" alt="" gls-cover>
+                    <img src="images/photo.jpg" alt="" gls-cover />
                 </div>
                 <div>
-                    <img src="images/dark.jpg" alt="" gls-cover>
+                    <img src="images/dark.jpg" alt="" gls-cover />
                 </div>
                 <div>
-                    <img src="images/light.jpg" alt="" gls-cover>
+                    <img src="images/light.jpg" alt="" gls-cover />
                 </div>
             </div>
 
-            <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-            <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+            <a
+                class="gls-position-center-left gls-position-small gls-hidden-hover"
+                href
+                gls-slidenav-previous
+                gls-slideshow-item="previous"
+            ></a>
+            <a
+                class="gls-position-center-right gls-position-small gls-hidden-hover"
+                href
+                gls-slidenav-next
+                gls-slideshow-item="next"
+            ></a>
         </div>
-
     </div>
     <div>
-
         <div class="gls-h3">Push</div>
 
-        <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="animation: push">
-
+        <div
+            class="gls-position-relative gls-visible-toggle gls-light"
+            tabindex="-1"
+            gls-slideshow="animation: push"
+        >
             <div class="gls-slideshow-items">
                 <div>
-                    <img src="images/photo.jpg" alt="" gls-cover>
+                    <img src="images/photo.jpg" alt="" gls-cover />
                 </div>
                 <div>
-                    <img src="images/dark.jpg" alt="" gls-cover>
+                    <img src="images/dark.jpg" alt="" gls-cover />
                 </div>
                 <div>
-                    <img src="images/light.jpg" alt="" gls-cover>
+                    <img src="images/light.jpg" alt="" gls-cover />
                 </div>
             </div>
 
-            <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-            <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+            <a
+                class="gls-position-center-left gls-position-small gls-hidden-hover"
+                href
+                gls-slidenav-previous
+                gls-slideshow-item="previous"
+            ></a>
+            <a
+                class="gls-position-center-right gls-position-small gls-hidden-hover"
+                href
+                gls-slidenav-next
+                gls-slideshow-item="next"
+            ></a>
         </div>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Autoplay
 
@@ -349,7 +403,7 @@ To activate autoplay, just add the `autoplay: true` option to the attribute. You
 <div gls-slideshow="autoplay: true">…</div>
 ```
 
-***
+---
 
 ## Infinite Scrolling
 
@@ -359,7 +413,7 @@ By default, infinite scrolling is enabled. To disable this behavior, just add th
 <div gls-slideshow="finite: true">…</div>
 ```
 
-***
+---
 
 ## Ratio
 
@@ -391,27 +445,39 @@ The slideshow always takes up the full width of its parent container. The height
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="ratio: 7:3; animation: push">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slideshow="ratio: 7:3; animation: push"
+>
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
+            <img src="images/light.jpg" alt="" gls-cover />
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slideshow-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slideshow-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ## Min/Max height
 
@@ -443,27 +509,39 @@ By default, the slideshow height adopts the defined ratio. A minimum or maximum 
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="min-height: 300; max-height: 600; animation: push">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slideshow="min-height: 300; max-height: 600; animation: push"
+>
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
+            <img src="images/light.jpg" alt="" gls-cover />
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slideshow-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slideshow-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ## Viewport height
 
@@ -471,7 +549,9 @@ Adding the `gls-height-viewport` attribute from the [Height component](https://g
 
 ```html
 <div gls-slideshow="ratio: false">
-    <ul class="gls-slideshow-items" gls-height-viewport="min: 300">…</ul>
+    <ul class="gls-slideshow-items" gls-height-viewport="min: 300">
+        …
+    </ul>
 </div>
 ```
 
@@ -497,29 +577,41 @@ Adding the `gls-height-viewport` attribute from the [Height component](https://g
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="ratio: false">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slideshow="ratio: false"
+>
     <div class="gls-slideshow-items" gls-height-viewport="offset-top: true; offset-bottom: 30">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
+            <img src="images/light.jpg" alt="" gls-cover />
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slideshow-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slideshow-item="next"
+    ></a>
 </div>
 ```
 
 **Note** This example is set to 70% of the viewport height.
 
-***
+---
 
 ## Navigation
 
@@ -527,7 +619,6 @@ To navigate through your slides, just use the `gls-slideshow-item` attribute. To
 
 ```html
 <div gls-slideshow>
-
     <div class="gls-slideshow-items">…</div>
 
     <a href gls-slideshow-item="previous">…</a>
@@ -538,7 +629,6 @@ To navigate through your slides, just use the `gls-slideshow-item` attribute. To
         <li gls-slideshow-item="1"><a href>…</a></li>
         <li gls-slideshow-item="2"><a href>…</a></li>
     </ul>
-
 </div>
 ```
 
@@ -548,11 +638,9 @@ If there is no item specific content in the navigation items, you can also add t
 
 ```html
 <div gls-slideshow>
-
     <div class="gls-slideshow-items">…</div>
 
     <ul class="gls-slideshow-nav gls-dotnav"></ul>
-
 </div>
 ```
 
@@ -585,34 +673,40 @@ If there is no item specific content in the navigation items, you can also add t
 
 ```html
 <div gls-slideshow="animation: push">
-
     <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1">
-
         <div class="gls-slideshow-items">
             <div>
-                <img src="images/photo.jpg" alt="" gls-cover>
+                <img src="images/photo.jpg" alt="" gls-cover />
             </div>
             <div>
-                <img src="images/dark.jpg" alt="" gls-cover>
+                <img src="images/dark.jpg" alt="" gls-cover />
             </div>
             <div>
-                <img src="images/light.jpg" alt="" gls-cover>
+                <img src="images/light.jpg" alt="" gls-cover />
             </div>
         </div>
 
-        <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-        <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+        <a
+            class="gls-position-center-left gls-position-small gls-hidden-hover"
+            href
+            gls-slidenav-previous
+            gls-slideshow-item="previous"
+        ></a>
+        <a
+            class="gls-position-center-right gls-position-small gls-hidden-hover"
+            href
+            gls-slidenav-next
+            gls-slideshow-item="next"
+        ></a>
     </div>
 
     <ul class="gls-slideshow-nav gls-dotnav gls-flex-center gls-margin"></ul>
-
 </div>
 ```
 
 **Note** For better visibility of overlaying navigations, add the `.gls-light` or `.gls-dark` class from the [Inverse component](https://getuikit.com/docs/inverse).
 
-***
+---
 
 ## Parallax animation
 
@@ -644,21 +738,19 @@ Instead of a step-by-step animation using navigation controls, the slideshow can
 
 ```html
 <div gls-slideshow="animation: push; parallax: true;">
-
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
+            <img src="images/light.jpg" alt="" gls-cover />
         </div>
     </div>
 
     <ul class="gls-slideshow-nav gls-dotnav gls-flex-center gls-margin"></ul>
-
 </div>
 ```
 
@@ -690,25 +782,23 @@ To adjust the parallax duration, set the `parallax-start` and `parallax-end` opt
 
 ```html
 <div gls-slideshow="animation: push; parallax: true; parallax-start: 100%; parallax-end: 100%;">
-
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
+            <img src="images/light.jpg" alt="" gls-cover />
         </div>
     </div>
 
     <ul class="gls-slideshow-nav gls-dotnav gls-flex-center gls-margin"></ul>
-
 </div>
 ```
 
-***
+---
 
 ## Videos
 
@@ -749,27 +839,52 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="animation: push">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slideshow="animation: push"
+>
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
         </div>
         <div>
-            <video src="https://yootheme.com/media/videos/yootheme-pro.mp4" autoplay loop muted playsinline gls-cover></video>
+            <video
+                src="https://yootheme.com/media/videos/yootheme-pro.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                gls-cover
+            ></video>
         </div>
         <div>
-            <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?playsinline=1&amp;rel=0&amp;controls=0&amp;loop=1" width="1920" height="1080" allowfullscreen gls-cover></iframe>
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?playsinline=1&amp;rel=0&amp;controls=0&amp;loop=1"
+                width="1920"
+                height="1080"
+                allowfullscreen
+                gls-cover
+            ></iframe>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slideshow-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slideshow-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ## Ken Burns effect
 
@@ -779,8 +894,10 @@ To add a simple Ken Burns effect, wrap the image with a `div` and add the `.gls-
 <div gls-slideshow>
     <div class="gls-slideshow-items">
         <div>
-            <div class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-center-left">
-                <img src="" alt="" gls-cover>
+            <div
+                class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-center-left"
+            >
+                <img src="" alt="" gls-cover />
             </div>
         </div>
     </div>
@@ -815,33 +932,51 @@ To add a simple Ken Burns effect, wrap the image with a `div` and add the `.gls-
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="animation: push">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slideshow="animation: push"
+>
     <div class="gls-slideshow-items">
         <div>
-            <div class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-center-left">
-                <img src="images/photo.jpg" alt="" gls-cover>
+            <div
+                class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-center-left"
+            >
+                <img src="images/photo.jpg" alt="" gls-cover />
             </div>
         </div>
         <div>
-            <div class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-top-right">
-                <img src="images/dark.jpg" alt="" gls-cover>
+            <div
+                class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-top-right"
+            >
+                <img src="images/dark.jpg" alt="" gls-cover />
             </div>
         </div>
         <div>
-            <div class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-bottom-left">
-                <img src="images/light.jpg" alt="" gls-cover>
+            <div
+                class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-bottom-left"
+            >
+                <img src="images/light.jpg" alt="" gls-cover />
             </div>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slideshow-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slideshow-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ## Content overlays
 
@@ -851,11 +986,9 @@ Add content overlays using the [Position component](https://getuikit.com/docs/po
 <div gls-slideshow>
     <div class="gls-slideshow-items">
         <div>
-            <img src="" alt="" gls-cover>
+            <img src="" alt="" gls-cover />
             <div class="gls-position-center gls-position-small">
-
                 <!-- The content goes here -->
-
             </div>
         </div>
     </div>
@@ -908,32 +1041,39 @@ Add content overlays using the [Position component](https://getuikit.com/docs/po
 
 ```html
 <div class="gls-position-relative gls-visible-toggle" tabindex="-1" gls-slideshow="animation: push">
-
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
             <div class="gls-position-center gls-position-small gls-text-center gls-light">
                 <h2 class="gls-margin-remove">Center</h2>
-                <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="gls-margin-remove">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
             </div>
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
             <div class="gls-position-bottom gls-position-medium gls-text-center gls-light">
                 <h3 class="gls-margin-remove">Bottom</h3>
-                <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="gls-margin-remove">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
             </div>
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
+            <img src="images/light.jpg" alt="" gls-cover />
             <div class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center">
                 <h3 class="gls-margin-remove">Overlay Bottom</h3>
-                <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="gls-margin-remove">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
             </div>
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
-            <div class="gls-overlay gls-overlay-default gls-position-bottom-right gls-position-small">
+            <img src="images/dark.jpg" alt="" gls-cover />
+            <div
+                class="gls-overlay gls-overlay-default gls-position-bottom-right gls-position-small"
+            >
                 <h3 class="gls-margin-remove">Overlay Bottom Right</h3>
                 <p class="gls-margin-remove">Lorem ipsum dolor sit amet.</p>
             </div>
@@ -941,14 +1081,23 @@ Add content overlays using the [Position component](https://getuikit.com/docs/po
     </div>
 
     <div class="gls-light">
-        <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-        <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
+        <a
+            class="gls-position-center-left gls-position-small gls-hidden-hover"
+            href
+            gls-slidenav-previous
+            gls-slideshow-item="previous"
+        ></a>
+        <a
+            class="gls-position-center-right gls-position-small gls-hidden-hover"
+            href
+            gls-slidenav-next
+            gls-slideshow-item="next"
+        ></a>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Content parallax
 
@@ -960,15 +1109,11 @@ This functionality is inherited from the [Parallax component](https://getuikit.c
 <div gls-slideshow>
     <div class="gls-slideshow-items">
         <div>
-            <img src="" alt="" gls-cover>
+            <img src="" alt="" gls-cover />
             <div class="gls-position-center gls-position-small">
-
                 <div gls-slideshow-parallax="x: 100,-100">
-
                     <!-- The content goes here -->
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -1021,39 +1166,53 @@ The next example defines different in and out animations. The content slides in 
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="animation: push">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slideshow="animation: push"
+>
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
             <div class="gls-position-center gls-position-small gls-text-center">
                 <h2 gls-slideshow-parallax="x: 100,-100">Heading</h2>
                 <p gls-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
             <div class="gls-position-center gls-position-small gls-text-center">
                 <h2 gls-slideshow-parallax="x: 100,-100">Heading</h2>
                 <p gls-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
+            <img src="images/light.jpg" alt="" gls-cover />
             <div class="gls-position-center gls-position-small gls-text-center">
                 <h2 gls-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
-                <p gls-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+                <p gls-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">
+                    Lorem ipsum dolor sit amet.
+                </p>
             </div>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slideshow-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slideshow-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ### Advanced effects
 
@@ -1064,9 +1223,12 @@ The parallax attribute can be used to add additional effects to the slideshow an
     <div class="gls-slideshow-items">
         <div>
             <div class="gls-position-cover" gls-slideshow-parallax="scale: 1.2,1.2,1">
-                <img src="" alt="" gls-cover>
+                <img src="" alt="" gls-cover />
             </div>
-            <div class="gls-position-cover" gls-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+            <div
+                class="gls-position-cover"
+                gls-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"
+            ></div>
         </div>
     </div>
 </div>
@@ -1121,14 +1283,20 @@ The parallax attribute can be used to add additional effects to the slideshow an
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="animation: push">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slideshow="animation: push"
+>
     <div class="gls-slideshow-items">
         <div>
             <div class="gls-position-cover" gls-slideshow-parallax="scale: 1.2,1.2,1">
-                <img src="images/photo.jpg" alt="" gls-cover>
+                <img src="images/photo.jpg" alt="" gls-cover />
             </div>
-            <div class="gls-position-cover" gls-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+            <div
+                class="gls-position-cover"
+                gls-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"
+            ></div>
             <div class="gls-position-center gls-position-medium gls-text-center">
                 <div gls-slideshow-parallax="scale: 1,1,0.8">
                     <h2 gls-slideshow-parallax="x: 200,0,0">Heading</h2>
@@ -1138,9 +1306,12 @@ The parallax attribute can be used to add additional effects to the slideshow an
         </div>
         <div>
             <div class="gls-position-cover" gls-slideshow-parallax="scale: 1.2,1.2,1">
-                <img src="images/dark.jpg" alt="" gls-cover>
+                <img src="images/dark.jpg" alt="" gls-cover />
             </div>
-            <div class="gls-position-cover" gls-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+            <div
+                class="gls-position-cover"
+                gls-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"
+            ></div>
             <div class="gls-position-center gls-position-medium gls-text-center">
                 <div gls-slideshow-parallax="scale: 1,1,0.8">
                     <h2 gls-slideshow-parallax="x: 200,0,0">Heading</h2>
@@ -1150,9 +1321,12 @@ The parallax attribute can be used to add additional effects to the slideshow an
         </div>
         <div>
             <div class="gls-position-cover" gls-slideshow-parallax="scale: 1.2,1.2,1">
-                <img src="images/light.jpg" alt="" gls-cover>
+                <img src="images/light.jpg" alt="" gls-cover />
             </div>
-            <div class="gls-position-cover" gls-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+            <div
+                class="gls-position-cover"
+                gls-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"
+            ></div>
             <div class="gls-position-center gls-position-medium gls-text-center">
                 <div gls-slideshow-parallax="scale: 1,1,0.8">
                     <h2 gls-slideshow-parallax="x: 200,0,0">Heading</h2>
@@ -1162,9 +1336,18 @@ The parallax attribute can be used to add additional effects to the slideshow an
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slideshow-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slideshow-item="next"
+    ></a>
 </div>
 ```
 
@@ -1176,15 +1359,11 @@ Transition classes from the [Transition component](https://getuikit.com/docs/tra
 <div gls-slideshow>
     <div class="gls-slideshow-items">
         <div>
-            <img src="" alt="" gls-cover>
+            <img src="" alt="" gls-cover />
             <div class="gls-position-bottom gls-position-small">
-
                 <div class="gls-transition-slide-bottom">
-
                     <!-- The content goes here -->
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -1227,39 +1406,63 @@ Together with the [Overlay component](https://getuikit.com/docs/overlay), conten
 </div>
 
 ```html
-<div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow="animation: fade">
-
+<div
+    class="gls-position-relative gls-visible-toggle gls-light"
+    tabindex="-1"
+    gls-slideshow="animation: fade"
+>
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
-            <div class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom">
+            <img src="images/photo.jpg" alt="" gls-cover />
+            <div
+                class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom"
+            >
                 <h3 class="gls-margin-remove">Bottom</h3>
-                <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="gls-margin-remove">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
             </div>
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
-            <div class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom">
+            <img src="images/dark.jpg" alt="" gls-cover />
+            <div
+                class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom"
+            >
                 <h3 class="gls-margin-remove">Bottom</h3>
-                <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="gls-margin-remove">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
             </div>
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
-            <div class="gls-overlay gls-overlay-primary gls-position-right gls-text-center gls-transition-slide-right gls-width-medium">
+            <img src="images/light.jpg" alt="" gls-cover />
+            <div
+                class="gls-overlay gls-overlay-primary gls-position-right gls-text-center gls-transition-slide-right gls-width-medium"
+            >
                 <h3 class="gls-margin-remove">Left</h3>
-                <p class="gls-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="gls-margin-remove">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
             </div>
         </div>
     </div>
 
-    <a class="gls-position-center-left gls-position-small gls-hidden-hover" href gls-slidenav-previous gls-slideshow-item="previous"></a>
-    <a class="gls-position-center-right gls-position-small gls-hidden-hover" href gls-slidenav-next gls-slideshow-item="next"></a>
-
+    <a
+        class="gls-position-center-left gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-previous
+        gls-slideshow-item="previous"
+    ></a>
+    <a
+        class="gls-position-center-right gls-position-small gls-hidden-hover"
+        href
+        gls-slidenav-next
+        gls-slideshow-item="next"
+    ></a>
 </div>
 ```
 
-***
+---
 
 ## Component options
 
@@ -1268,7 +1471,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 ### Slideshow
 
 | Option              | Value           | Default | Description                                                            |
-|---------------------|-----------------|---------|------------------------------------------------------------------------|
+| ------------------- | --------------- | ------- | ---------------------------------------------------------------------- |
 | `animation`         | String          | `slide` | Slideshow animation mode (`slide`, `fade`, `scale`, `pull` or `push`). |
 | `autoplay`          | Boolean         | `false` | Slideshow autoplays.                                                   |
 | `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                   |
@@ -1282,7 +1485,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `min-height`        | Boolean, Number | `false` | The minimum height.                                                    |
 | `max-height`        | Boolean, Number | `false` | The maximum height.                                                    |
 
-***
+---
 
 ## JavaScript
 
@@ -1299,7 +1502,7 @@ UIkit.slideshow(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name             | Description                                              |
-| ---------------- | ---------------------------------------------------------|
+| ---------------- | -------------------------------------------------------- |
 | `beforeitemshow` | Fires before an item is shown.                           |
 | `itemshow`       | Fires after an item is shown.                            |
 | `itemshown`      | Fires after an item's show animation has been completed. |
@@ -1335,25 +1538,25 @@ UIkit.slideshow(element).stopAutoplay();
 
 Stops the slideshow autoplay.
 
-***
+---
 
 ## Accessibility
 
 The Slideshow component adheres to the [Carousel WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *slideshow* has the `aria-roledescription` property set to `carousel`.
-- The *slide list* has an ID and the `aria-live` property.
-- The *slides* have an ID, the `group` role if the slideshow has only a previous/next navigation or the `tabpanel` role if it has a tab navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property.
+- The _slideshow_ has the `aria-roledescription` property set to `carousel`.
+- The _slide list_ has an ID and the `aria-live` property.
+- The _slides_ have an ID, the `group` role if the slideshow has only a previous/next navigation or the `tabpanel` role if it has a tab navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property.
 
 The tab navigation adheres to the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
 
-- The *tab navigation* has the `tablist` role.
-- The *tab navigation items* have the `presentation` role.
-- The *tab navigation links* have the `tab` role, the `aria-selected` state, the `aria-controls` property set to the ID of the respective slide, and an `aria-label` property.
+- The _tab navigation_ has the `tablist` role.
+- The _tab navigation items_ have the `presentation` role.
+- The _tab navigation links_ have the `tab` role, the `aria-selected` state, the `aria-controls` property set to the ID of the respective slide, and an `aria-label` property.
 
 The previous/next navigation adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
 
-- The *prev/next navigation items* have an `aria-label` property, the `aria-controls` property set to the ID of the slide list, and if an `<a>` element is used, the `button` role.
+- The _prev/next navigation items_ have an `aria-label` property, the `aria-controls` property set to the ID of the slide list, and if an `<a>` element is used, the `button` role.
 
 ### Keyboard interaction
 

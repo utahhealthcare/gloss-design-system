@@ -10,7 +10,7 @@ title: Image
 
 The Image component emulates browser features of the `<img>` element, but for background images. This includes `loading="lazy"`, `srcset` and `sizes` attributes as well as the `<source>` element from the `<picture>` element. This speeds up page loading times and decreases traffic by only loading background images as they enter the viewport. Optimized background images are served for different device widths and high-resolution (retina) displays.
 
-***
+---
 
 ## Usage
 
@@ -27,12 +27,16 @@ To apply this component, add the `gls-img` and the `data-src` attribute containi
 </div>
 
 ```html
-<div class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover gls-light" data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" gls-img>
-  <h1>Background Image</h1>
+<div
+    class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover gls-light"
+    data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80"
+    gls-img
+>
+    <h1>Background Image</h1>
 </div>
 ```
 
-****
+---
 
 ## Eager loading
 
@@ -49,12 +53,16 @@ To avoid lazy loading background images for the first visible viewport but still
 </div>
 
 ```html
-<div class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover gls-light" data-src="https://images.unsplash.com/photo-1495321308589-43affb814eee?fit=crop&w=650&h=433&q=80" gls-img="loading: eager">
-  <h1>Background Image</h1>
+<div
+    class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover gls-light"
+    data-src="https://images.unsplash.com/photo-1495321308589-43affb814eee?fit=crop&w=650&h=433&q=80"
+    gls-img="loading: eager"
+>
+    <h1>Background Image</h1>
 </div>
 ```
 
-***
+---
 
 ## Srcset
 
@@ -75,16 +83,19 @@ To use the `srcset` feature for background images, just add the `data-srcset` at
 </div>
 
 ```html
-<div class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover"
-     data-src="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?fit=crop&w=650&h=433&q=80"
-     data-srcset="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?fit=crop&w=650&h=433&q=80 650w,
+<div
+    class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover"
+    data-src="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?fit=crop&w=650&h=433&q=80"
+    data-srcset="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?fit=crop&w=650&h=433&q=80 650w,
                   https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?fit=crop&w=1300&h=866&q=80 1300w"
-     sizes="(min-width: 650px) 650px, 100vw" gls-img>
+    sizes="(min-width: 650px) 650px, 100vw"
+    gls-img
+>
     <h1>Background Image</h1>
 </div>
 ```
 
-***
+---
 
 ## Picture sources
 
@@ -106,10 +117,12 @@ To use different image sources just like the `<picture>` element that contains `
 </div>
 
 ```html
-<div class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover gls-light"
-     sources="srcset: https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?fit=crop&w=650&h=433&q=80; media: (min-width: 1200px)"
-     data-src="https://images.unsplash.com/photo-1546349851-64285be8e9fa?fit=crop&w=650&h=433&q=80"
-     gls-img>
+<div
+    class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover gls-light"
+    sources="srcset: https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?fit=crop&w=650&h=433&q=80; media: (min-width: 1200px)"
+    data-src="https://images.unsplash.com/photo-1546349851-64285be8e9fa?fit=crop&w=650&h=433&q=80"
+    gls-img
+>
     <h1>Background Image</h1>
 </div>
 ```
@@ -134,14 +147,17 @@ It's possible to offer multiple image sources and also multiple resolutions for 
 </div>
 
 ```html
-<div class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover gls-light"
-     sources="srcset: https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?fit=crop&w=650&h=433&q=80 650w,
+<div
+    class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover gls-light"
+    sources="srcset: https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?fit=crop&w=650&h=433&q=80 650w,
                       https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?fit=crop&w=1300&h=866&q=80 1300w;
               media: (min-width: 1200px)"
-     data-src="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=650&h=433&q=80"
-     data-srcset="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=650&h=433&q=80 650w,
+    data-src="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=650&h=433&q=80"
+    data-srcset="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=650&h=433&q=80 650w,
                   https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=1300&h=866&q=80 1300w"
-     sizes="(min-width: 650px) 650px, 100vw" gls-img>
+    sizes="(min-width: 650px) 650px, 100vw"
+    gls-img
+>
     <h1>Background Image</h1>
 </div>
 ```
@@ -164,16 +180,21 @@ Multiple sources can be defined using JSON syntax.
 The JSON needs to be HTML encoded.
 
 ```html
-<div sources="[{&quot;type&quot;: &quot;____&quot;,
-                &quot;srcset&quot;: &quot;____&quot;
+<div
+    sources='[{"type": "____",
+                "srcset": "____"
                },
-               {&quot;type&quot;: &quot;____&quot;,
-                &quot;srcset&quot;: &quot;____&quot;
-               }]"
-     data-src="" gls-img>…</div>
+               {"type": "____",
+                "srcset": "____"
+               }]'
+    data-src=""
+    gls-img
+>
+    …
+</div>
 ```
 
-This example offers alternative image formats like *WebP* and *AVIF*.
+This example offers alternative image formats like _WebP_ and _AVIF_.
 
 <div class="gls-docs-example">
 <div class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover"
@@ -190,27 +211,29 @@ This example offers alternative image formats like *WebP* and *AVIF*.
 </div>
 
 ```html
-<div class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover"
-     sources="[{&quot;srcset&quot;: &quot;images/image-type.avif&quot;,
-                &quot;type&quot;: &quot;image\/avif&quot;
+<div
+    class="gls-height-medium gls-flex gls-flex-center gls-flex-middle gls-background-cover"
+    sources='[{"srcset": "images/image-type.avif",
+                "type": "image\/avif"
                 },
-                {&quot;srcset&quot;: &quot;images/image-type.webp&quot;,
-                &quot;type&quot;: &quot;image\/webp&quot;
-                }]"
-        data-src="images/image-type.jpg"
-        gls-img>
+                {"srcset": "images/image-type.webp",
+                "type": "image\/webp"
+                }]'
+    data-src="images/image-type.jpg"
+    gls-img
+>
     <h1>Background Image</h1>
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option    | Value  | Default | Description                                                                                                                                                                             |
-|-----------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------- | ------ | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `dataSrc` | String |         | The image's `src` attribute.                                                                                                                                                            |
 | `sources` | String |         | The image's sources. This option is used for background images only. The source attributes are passed in `key: value;` format for a single source. For multiple sources in JSON format. |
 | `loading` | String | `lazy`  | Enable lazy/eager loading. Set to `eager` for images within the first visible viewport.                                                                                                 |
@@ -219,7 +242,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 `dataSrc` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
-***
+---
 
 ## JavaScript
 

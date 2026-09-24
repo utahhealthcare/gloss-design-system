@@ -12,8 +12,8 @@ title: Padding
 
 To apply this component, add one of the following classes to a block element.
 
-| Class               | Description                          |
-|---------------------|--------------------------------------|
+| Class                | Description                          |
+| -------------------- | ------------------------------------ |
 | `.gls-padding`       | Adds default padding to the element. |
 | `.gls-padding-small` | Adds small padding to the element.   |
 | `.gls-padding-large` | Adds large padding to the element.   |
@@ -30,18 +30,19 @@ To apply this component, add one of the following classes to a block element.
 
 ```html
 <div class="gls-padding gls-background-muted gls-width-1-2@s">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
 </div>
 ```
 
-***
+---
 
 ## Remove padding
 
 In some cases you want to remove padding from an element, rather than adding it. To do so, apply one of the following classes.
 
-| Class                           | Description                                     |
-|---------------------------------|-------------------------------------------------|
+| Class                            | Description                                     |
+| -------------------------------- | ----------------------------------------------- |
 | `.gls-padding-remove`            | Removes all padding from an element.            |
 | `.gls-padding-remove-top`        | Removes top padding from an element.            |
 | `.gls-padding-remove-bottom`     | Removes bottom padding from an element.         |

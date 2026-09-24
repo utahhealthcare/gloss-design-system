@@ -3,6 +3,7 @@ import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { fileURLToPath } from 'node:url';
+import prettier from 'prettier';
 
 const execFileAsync = promisify(execFile);
 const projectDirectory = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -96,9 +97,7 @@ async function renderPage(page, sourceRevision) {
     const destinationPath = path.resolve(projectDirectory, page.destination);
     const source = await readFile(sourcePath, 'utf8');
     const transformed = rewriteDocumentationLinks(
-        convertExampleFences(
-            replaceUiKitLiquidTags(replaceGlossClasses(source)),
-        ),
+        convertExampleFences(replaceUiKitLiquidTags(replaceGlossClasses(source))),
     );
     const rendered = addFrontMatter(
         transformed,
@@ -106,6 +105,11 @@ async function renderPage(page, sourceRevision) {
         page.source,
         sourceRevision,
     );
+    const prettierOptions = (await prettier.resolveConfig(destinationPath)) ?? {};
+    const formatted = await prettier.format(rendered, {
+        ...prettierOptions,
+        filepath: destinationPath,
+    });
 
     if (shouldCheck) {
         let current;
@@ -122,7 +126,7 @@ async function renderPage(page, sourceRevision) {
             throw error;
         }
 
-        if (current !== rendered) {
+        if (current !== formatted) {
             throw new Error(`${page.destination} is stale. Run npm run sync:uikit-docs.`);
         }
 
@@ -130,19 +134,52 @@ async function renderPage(page, sourceRevision) {
     }
 
     await mkdir(path.dirname(destinationPath), { recursive: true });
-    await writeFile(destinationPath, rendered);
+    await writeFile(destinationPath, formatted);
 }
 
 const sourceRevision = await revision();
 const navigation = JSON.parse(await readFile(navigationPath, 'utf8'));
-const componentSlugs = Object.values(navigation[config.section] ?? {});
-const pages = componentSlugs.map((slug) => ({
+const components = Object.entries(navigation[config.section] ?? {}).map(([title, slug]) => ({
+    title,
+    slug,
+}));
+const pages = components.map(({ slug }) => ({
     source: `docs/pages/${slug}.md`,
     destination: path.posix.join(config.destinationRoot, `${slug}.md`),
 }));
+const componentDataPath = path.resolve(
+    projectDirectory,
+    config.destinationRoot,
+    '_data',
+    'components.json',
+);
+const componentData = `${JSON.stringify(components, null, 4)}\n`;
 
 for (const page of pages) {
     await renderPage(page, sourceRevision);
+}
+
+if (shouldCheck) {
+    let current;
+
+    try {
+        current = await readFile(componentDataPath, 'utf8');
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            throw new Error('docs/_data/components.json is missing. Run npm run sync:uikit-docs.', {
+                cause: error,
+            });
+        }
+
+        throw error;
+    }
+
+    if (current !== componentData) {
+        throw new Error('docs/_data/components.json is stale. Run npm run sync:uikit-docs.');
+    }
+} else {
+    await mkdir(path.dirname(componentDataPath), { recursive: true });
+    await writeFile(componentDataPath, componentData);
 }
 
 if (shouldCheck) {

@@ -58,7 +58,7 @@ In this example we are using the [Subnav component](https://getuikit.com/docs/su
 </div>
 ```
 
-***
+---
 
 ## Navigation controls
 
@@ -101,7 +101,7 @@ Setting the attribute to `next` and `previous` will switch to the adjacent items
 </div>
 ```
 
-***
+---
 
 ## Connect multiple containers
 
@@ -109,7 +109,9 @@ It is also possible to connect multiple content containers. Just add the `connec
 
 ```html
 <!-- This is the nav containing the toggling elements -->
-<ul gls-switcher="connect: .my-class">…</ul>
+<ul gls-switcher="connect: .my-class">
+    …
+</ul>
 
 <!-- These are the containers of the content items -->
 <div class="gls-switcher my-class">…</div>
@@ -165,14 +167,16 @@ It is also possible to connect multiple content containers. Just add the `connec
 </div>
 ```
 
-***
+---
 
 ## Animations
 
 You can apply all animations from the [Animation component](https://getuikit.com/docs/animation) to switcher items. To do so, add the `animation` parameter with the relevant class to the `gls-switcher` attribute.
 
 ```html
-<ul gls-switcher="animation: gls-animation-fade">…</ul>
+<ul gls-switcher="animation: gls-animation-fade">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -203,14 +207,16 @@ You can apply all animations from the [Animation component](https://getuikit.com
 </div>
 ```
 
-***
+---
 
 ### Multiple animations
 
 You can also apply multiple animations from the [Animation component](https://getuikit.com/docs/animation). That way you can add different in and out animations.
 
 ```html
-<ul gls-switcher="animation: gls-animation-slide-left-medium, gls-animation-slide-right-medium">…</ul>
+<ul gls-switcher="animation: gls-animation-slide-left-medium, gls-animation-slide-right-medium">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -228,7 +234,10 @@ You can also apply multiple animations from the [Animation component](https://ge
 </div>
 
 ```html
-<ul class="gls-subnav gls-subnav-pill" gls-switcher="animation: gls-animation-slide-left-medium, gls-animation-slide-right-medium">
+<ul
+    class="gls-subnav gls-subnav-pill"
+    gls-switcher="animation: gls-animation-slide-left-medium, gls-animation-slide-right-medium"
+>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
@@ -241,7 +250,7 @@ You can also apply multiple animations from the [Animation component](https://ge
 </div>
 ```
 
-***
+---
 
 ## Switcher and subnav
 
@@ -249,7 +258,9 @@ The switcher is easily applied to the [Subnav component](https://getuikit.com/do
 
 ```html
 <!-- This is the subnav containing the toggling elements -->
-<ul class="gls-subnav gls-subnav-pill" gls-switcher>…</ul>
+<ul class="gls-subnav gls-subnav-pill" gls-switcher>
+    …
+</ul>
 
 <!-- This is the container of the content items -->
 <div class="gls-switcher"></div>
@@ -277,14 +288,22 @@ The switcher is easily applied to the [Subnav component](https://getuikit.com/do
 </ul>
 
 <div class="gls-switcher gls-margin">
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </div>
+    <div>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+    </div>
+    <div>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur, sed do eiusmod.
+    </div>
 </div>
 ```
 
-
-***
+---
 
 ## Switcher and tab
 
@@ -292,10 +311,14 @@ As an exception to the rule, add the `gls-tab` attribute instead of `gls-switche
 
 ```html
 <!-- This is the subnav containing the toggling elements -->
-<ul gls-tab>…</ul>
+<ul gls-tab>
+    …
+</ul>
 
 <!-- This is the container of the content items -->
-<ul class="gls-switcher">…</ul>
+<ul class="gls-switcher">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -320,13 +343,22 @@ As an exception to the rule, add the `gls-tab` attribute instead of `gls-switche
 </ul>
 
 <div class="gls-switcher gls-margin">
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </div>
+    <div>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+    </div>
+    <div>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur, sed do eiusmod.
+    </div>
 </div>
 ```
 
-***
+---
 
 ### Vertical tabs
 
@@ -335,7 +367,9 @@ Use the [Grid](https://getuikit.com/docs/grid) and [Width](https://getuikit.com/
 ```html
 <div gls-grid>
     <div class="gls-width-auto">
-        <ul class="gls-tab-left" gls-tab="connect: #my-id">…</ul>
+        <ul class="gls-tab-left" gls-tab="connect: #my-id">
+            …
+        </ul>
     </div>
     <div class="gls-width-expand">
         <div id="my-id" class="gls-switcher">…</div>
@@ -389,7 +423,10 @@ Use the [Grid](https://getuikit.com/docs/grid) and [Width](https://getuikit.com/
     <div>
         <div gls-grid>
             <div class="gls-width-auto@m">
-                <ul class="gls-tab-left" gls-tab="connect: #component-tab-left; animation: gls-animation-fade">
+                <ul
+                    class="gls-tab-left"
+                    gls-tab="connect: #component-tab-left; animation: gls-animation-fade"
+                >
                     <li><a href="#">Active</a></li>
                     <li><a href="#">Item</a></li>
                     <li><a href="#">Item</a></li>
@@ -397,9 +434,18 @@ Use the [Grid](https://getuikit.com/docs/grid) and [Width](https://getuikit.com/
             </div>
             <div class="gls-width-expand@m">
                 <div id="component-tab-left" class="gls-switcher">
-                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <div>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
+                    </div>
+                    <div>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur, sed do eiusmod.
+                    </div>
                 </div>
             </div>
         </div>
@@ -407,7 +453,10 @@ Use the [Grid](https://getuikit.com/docs/grid) and [Width](https://getuikit.com/
     <div>
         <div gls-grid>
             <div class="gls-width-auto@m gls-flex-last@m">
-                <ul class="gls-tab-right" gls-tab="connect: #component-tab-right; animation: gls-animation-fade">
+                <ul
+                    class="gls-tab-right"
+                    gls-tab="connect: #component-tab-right; animation: gls-animation-fade"
+                >
                     <li><a href="#">Active</a></li>
                     <li><a href="#">Item</a></li>
                     <li><a href="#">Item</a></li>
@@ -415,9 +464,18 @@ Use the [Grid](https://getuikit.com/docs/grid) and [Width](https://getuikit.com/
             </div>
             <div class="gls-width-expand@m">
                 <div id="component-tab-right" class="gls-switcher">
-                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <div>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
+                    </div>
+                    <div>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur, sed do eiusmod.
+                    </div>
                 </div>
             </div>
         </div>
@@ -425,7 +483,7 @@ Use the [Grid](https://getuikit.com/docs/grid) and [Width](https://getuikit.com/
 </div>
 ```
 
-***
+---
 
 ## Switcher and button
 
@@ -463,15 +521,24 @@ The switcher can also be applied to buttons or button groups from the [Button co
 </div>
 
 <div class="gls-switcher gls-margin">
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </div>
+    <div>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+    </div>
+    <div>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur, sed do eiusmod.
+    </div>
 </div>
 ```
 
 **Note** Since this example does not wrap the buttons into list items the clickable elements which trigger the content switching has to be changed by using the `toggle` option.
 
-***
+---
 
 ## Switcher and nav
 
@@ -480,7 +547,9 @@ To apply the switcher to the [Nav component](https://getuikit.com/docs/nav), add
 ```html
 <div gls-grid>
     <div class="gls-width-small">
-        <ul class="gls-nav gls-nav-default" gls-switcher="connect: #my-id">…</ul>
+        <ul class="gls-nav gls-nav-default" gls-switcher="connect: #my-id">
+            …
+        </ul>
     </div>
     <div class="gls-width-expand">
         <div id="my-id" class="gls-switcher">…</div>
@@ -508,48 +577,57 @@ To apply the switcher to the [Nav component](https://getuikit.com/docs/nav), add
         </div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div gls-grid>
     <div class="gls-width-small@m">
-
-        <ul class="gls-nav gls-nav-default" gls-switcher="connect: #component-nav; animation: gls-animation-fade">
+        <ul
+            class="gls-nav gls-nav-default"
+            gls-switcher="connect: #component-nav; animation: gls-animation-fade"
+        >
             <li><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
             <li><a href="#">Item</a></li>
         </ul>
-
     </div>
     <div class="gls-width-expand@m">
-
         <div id="component-nav" class="gls-switcher">
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-            <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </div>
+            <div>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur, sed do eiusmod.
+            </div>
         </div>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option        | Value        | Default              | Description                                                                                              |
-|---------------|--------------|----------------------|----------------------------------------------------------------------------------------------------------|
-| `connect`     | CSS selector | `~.gls-switcher`      | Related items container. By default succeeding elements with class 'gls-switcher'.                        |
-| `toggle `     | CSS selector | `> * > :first-child` | Select the clickable elements which trigger content switching.                                           |
-| `itemNav `    | CSS selector | `false`              | Related nav container. By default, nav items are found in related items container only.                  |
-| `active `     | Number       | `0`                  | Active index on init. Providing a negative number indicates a position starting from the end of the set. |
-| `animation`   | String       | `false`              | Space-separated names of [animations](https://getuikit.com/docs/animation). Comma-separated for animation out.                  |
-| `duration`    | Number       | `200`                | The animation duration.                                                                                  |
-| `swiping`     | Boolean      | `true`               | Use swiping.                                                                                             |
-| `followFocus` | Boolean      | `false`              | Selection follows focus automatically.                                                                   |
+| Option        | Value        | Default              | Description                                                                                                    |
+| ------------- | ------------ | -------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `connect`     | CSS selector | `~.gls-switcher`     | Related items container. By default succeeding elements with class 'gls-switcher'.                             |
+| `toggle `     | CSS selector | `> * > :first-child` | Select the clickable elements which trigger content switching.                                                 |
+| `itemNav `    | CSS selector | `false`              | Related nav container. By default, nav items are found in related items container only.                        |
+| `active `     | Number       | `0`                  | Active index on init. Providing a negative number indicates a position starting from the end of the set.       |
+| `animation`   | String       | `false`              | Space-separated names of [animations](https://getuikit.com/docs/animation). Comma-separated for animation out. |
+| `duration`    | Number       | `200`                | The animation duration.                                                                                        |
+| `swiping`     | Boolean      | `true`               | Use swiping.                                                                                                   |
+| `followFocus` | Boolean      | `false`              | Selection follows focus automatically.                                                                         |
 
 `connect` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
@@ -557,7 +635,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 <span gls-switcher=".switcher-container"></span>
 ```
 
-***
+---
 
 ## JavaScript
 
@@ -598,17 +676,17 @@ Shows the Switcher item with given index.
 | ------- | -------------------- | ------- | ------------------------------------- |
 | `index` | String, Number, Node | 0       | Switcher item to show. 0 based index. |
 
-***
+---
 
 ## Accessibility
 
 The Switcher component adheres to the [Tab WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *toggle navigation* has the `tablist` role, and if it is a [Nav component](https://getuikit.com/docs/nav), the `aria-orientation` state is set to `vertical`.
-- The *toggle navigation items* have the `presentation` role.
-- The *toggle navigation links* have an ID, the `tab` role, the `aria-selected` state and the `aria-controls` property set to the ID of the respective content item.
-- The *content list* has the `presentation` role.
-- The *content list items* have the ID, the `tabpanel` role and the `aria-labelledby` property set to the ID of the respective toggle item.
+- The _toggle navigation_ has the `tablist` role, and if it is a [Nav component](https://getuikit.com/docs/nav), the `aria-orientation` state is set to `vertical`.
+- The _toggle navigation items_ have the `presentation` role.
+- The _toggle navigation links_ have an ID, the `tab` role, the `aria-selected` state and the `aria-controls` property set to the ID of the respective content item.
+- The _content list_ has the `presentation` role.
+- The _content list items_ have the ID, the `tabpanel` role and the `aria-labelledby` property set to the ID of the respective toggle item.
 
 ### Keyboard interaction
 

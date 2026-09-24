@@ -12,7 +12,7 @@ This component is based on the print styles from [HTML5 Boilerplate](https://git
 
 This component is applied by a media query (`@media print`) and does not need to be directly added to your classes.
 
-***
+---
 
 ## Modifications
 

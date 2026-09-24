@@ -12,8 +12,8 @@ title: Nav
 
 To apply this component, use the following classes.
 
-| Class         | Description                                                                                                      |
-| ------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Class          | Description                                                                                                      |
+| -------------- | ---------------------------------------------------------------------------------------------------------------- |
 | `.gls-nav`     | Add this class to a `<ul>` element to define the Nav component. Use `<a>` elements as nav items within the list. |
 | `.gls-active ` | Add this class to a list item to apply an active state to a menu item.                                           |
 
@@ -46,7 +46,7 @@ To apply this component, use the following classes.
 
 **Note** By default, the nav has no styling. That's why it is important to add a modifier class. In our example we are using the `.gls-nav-default` class.
 
-***
+---
 
 ## Nested navs
 
@@ -60,7 +60,9 @@ Add the `.gls-parent` class to an item to turn it into a parent. Add the `.gls-n
             <li><a href=""></a></li>
             <li>
                 <a href=""></a>
-                <ul>…</ul>
+                <ul>
+                    …
+                </ul>
             </li>
         </ul>
     </li>
@@ -109,8 +111,7 @@ Add the `.gls-parent` class to an item to turn it into a parent. Add the `.gls-n
 </div>
 ```
 
-
-***
+---
 
 ## Accordion
 
@@ -119,7 +120,9 @@ By default, child menu items are always visible. To apply an accordion effect, j
 **Note** The attribute automatically sets the `.gls-nav` class, so you don't have to apply it manually.
 
 ```html
-<ul gls-nav>…</ul>
+<ul gls-nav>
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -178,7 +181,7 @@ By default, child menu items are always visible. To apply an accordion effect, j
 </div>
 ```
 
-***
+---
 
 ### Parent icon
 
@@ -249,14 +252,16 @@ To create a parent icon, just add the `gls-nav-parent-icon` attribute to a `<spa
 </div>
 ```
 
-***
+---
 
 ### Multiple open subnavs
 
 When clicking on a parent item, an open one will close, allowing only one open nested list at a time. To allow multiple open subnavs, just add the `multiple: true` option to the attribute.
 
 ```html
-<ul gls-nav="multiple: true">…</ul>
+<ul gls-nav="multiple: true">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -315,14 +320,14 @@ When clicking on a parent item, an open one will close, allowing only one open n
 </div>
 ```
 
-***
+---
 
 ## Header and divider
 
 Add one of the following classes to a list item to create a header or a divider between items.
 
-| Element           | Description                                                                  |
-| ----------------- | ---------------------------------------------------------------------------- |
+| Element            | Description                                                                  |
+| ------------------ | ---------------------------------------------------------------------------- |
 | `.gls-nav-header`  | Add this class to a `<li>` element to create a header.                       |
 | `.gls-nav-divider` | Add this class to a `<li>` element to create a divider separating nav items. |
 
@@ -356,7 +361,7 @@ Add one of the following classes to a list item to create a header or a divider 
 </div>
 ```
 
-***
+---
 
 ## Subtitle
 
@@ -368,7 +373,9 @@ Add the `.gls-nav-subtitle` class to a `div` element to create an item subtitled
         <a href="">
             <div>
                 Item
-                <div class="gls-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div>
+                <div class="gls-nav-subtitle">
+                    Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                </div>
             </div>
         </a>
     </li>
@@ -389,22 +396,60 @@ Add the `.gls-nav-subtitle` class to a `div` element to create an item subtitled
 ```html
 <div class="gls-width-1-2@s gls-width-2-5@m">
     <ul class="gls-nav gls-nav-default">
-        <li class="gls-active"><a href="#"><div>Active<div class="gls-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
-        <li><a href="#"><div>Item<div class="gls-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
-        <li><a href="#"><div>Item<div class="gls-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
-        <li><a href="#"><div>Item<div class="gls-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
+        <li class="gls-active">
+            <a href="#"
+                ><div>
+                    Active
+                    <div class="gls-nav-subtitle">
+                        Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                </div></a
+            >
+        </li>
+        <li>
+            <a href="#"
+                ><div>
+                    Item
+                    <div class="gls-nav-subtitle">
+                        Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                </div></a
+            >
+        </li>
+        <li>
+            <a href="#"
+                ><div>
+                    Item
+                    <div class="gls-nav-subtitle">
+                        Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                </div></a
+            >
+        </li>
+        <li>
+            <a href="#"
+                ><div>
+                    Item
+                    <div class="gls-nav-subtitle">
+                        Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                </div></a
+            >
+        </li>
     </ul>
 </div>
 ```
 
-***
+---
 
 ## Default modifier
 
 Add the `.gls-nav-default` class to give the nav its default style. You can place the nav inside cards or anywhere else in your content.
 
 ```html
-<ul class="gls-nav gls-nav-default">…</ul>
+<ul class="gls-nav gls-nav-default">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -453,22 +498,36 @@ Add the `.gls-nav-default` class to give the nav its default style. You can plac
             </ul>
         </li>
         <li class="gls-nav-header">Header</li>
-        <li><a href="#"><span class="gls-margin-xsmall-right" gls-icon="icon: table"></span> Item</a></li>
-        <li><a href="#"><span class="gls-margin-xsmall-right" gls-icon="icon: thumbnails"></span> Item</a></li>
+        <li>
+            <a href="#"
+                ><span class="gls-margin-xsmall-right" gls-icon="icon: table"></span> Item</a
+            >
+        </li>
+        <li>
+            <a href="#"
+                ><span class="gls-margin-xsmall-right" gls-icon="icon: thumbnails"></span> Item</a
+            >
+        </li>
         <li class="gls-nav-divider"></li>
-        <li><a href="#"><span class="gls-margin-xsmall-right" gls-icon="icon: trash"></span> Item</a></li>
+        <li>
+            <a href="#"
+                ><span class="gls-margin-xsmall-right" gls-icon="icon: trash"></span> Item</a
+            >
+        </li>
     </ul>
 </div>
 ```
 
-***
+---
 
 ## Primary modifier
 
 Add the `.gls-nav-primary` class to give the nav a more distinct styling, for example when placing it inside a modal.
 
 ```html
-<ul class="gls-nav gls-nav-primary">…</ul>
+<ul class="gls-nav gls-nav-primary">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -517,14 +576,16 @@ Add the `.gls-nav-primary` class to give the nav a more distinct styling, for ex
 </div>
 ```
 
-***
+---
 
 ## Secondary modifier
 
 Add the `.gls-nav-secondary` class to have an extra style if the nav has subtitles.
 
 ```html
-<ul class="gls-nav gls-nav-secondary">…</ul>
+<ul class="gls-nav gls-nav-secondary">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -541,22 +602,60 @@ Add the `.gls-nav-secondary` class to have an extra style if the nav has subtitl
 ```html
 <div class="gls-width-1-2@s">
     <ul class="gls-nav gls-nav-secondary">
-        <li class="gls-active"><a href="#"><div>Active<div class="gls-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
-        <li><a href="#"><div>Item<div class="gls-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
-        <li><a href="#"><div>Item<div class="gls-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
-        <li><a href="#"><div>Item<div class="gls-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
+        <li class="gls-active">
+            <a href="#"
+                ><div>
+                    Active
+                    <div class="gls-nav-subtitle">
+                        Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                </div></a
+            >
+        </li>
+        <li>
+            <a href="#"
+                ><div>
+                    Item
+                    <div class="gls-nav-subtitle">
+                        Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                </div></a
+            >
+        </li>
+        <li>
+            <a href="#"
+                ><div>
+                    Item
+                    <div class="gls-nav-subtitle">
+                        Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                </div></a
+            >
+        </li>
+        <li>
+            <a href="#"
+                ><div>
+                    Item
+                    <div class="gls-nav-subtitle">
+                        Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                </div></a
+            >
+        </li>
     </ul>
 </div>
 ```
 
-***
+---
 
 ## Center modifier
 
 Add the `.gls-nav-center` class to the center nav items. This can be combined with the default and primary style modifiers.
 
 ```html
-<ul class="gls-nav gls-nav-default gls-nav-center">…</ul>
+<ul class="gls-nav gls-nav-default gls-nav-center">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -579,14 +678,16 @@ Add the `.gls-nav-center` class to the center nav items. This can be combined wi
 </div>
 ```
 
-***
+---
 
 ## Divider modifier
 
 Add the `.gls-nav-divider` class to separate nav items with lines. This can be combined with the default, primary and secondary style modifiers.
 
 ```html
-<ul class="gls-nav gls-nav-default gls-nav-divider">…</ul>
+<ul class="gls-nav gls-nav-default gls-nav-divider">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -609,20 +710,22 @@ Add the `.gls-nav-divider` class to separate nav items with lines. This can be c
 </div>
 ```
 
-***
+---
 
 ## Size modifiers
 
 Add one of the following classes to modify the size of primary navs.
 
-| Class                 | Description                                      |
-|-----------------------|--------------------------------------------------|
-| `.gls-nav-medium`  | Add this class to apply a medium-sized primary nav.  |
-| `.gls-nav-large`   | Add this class to apply a large-sized primary nav.   |
-| `.gls-nav-xlarge`  | Add this class to apply a xlarge-sized primary nav.  |
+| Class             | Description                                         |
+| ----------------- | --------------------------------------------------- |
+| `.gls-nav-medium` | Add this class to apply a medium-sized primary nav. |
+| `.gls-nav-large`  | Add this class to apply a large-sized primary nav.  |
+| `.gls-nav-xlarge` | Add this class to apply a xlarge-sized primary nav. |
 
 ```html
-<ul class="gls-nav gls-nav-primary gls-nav-large">…</ul>
+<ul class="gls-nav gls-nav-primary gls-nav-large">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -647,7 +750,7 @@ Add one of the following classes to modify the size of primary navs.
 </div>
 ```
 
-***
+---
 
 ## Nav in Dropdown
 
@@ -655,7 +758,9 @@ Add the `.gls-dropdown-nav` class to place a nav inside a default dropdown from 
 
 ```html
 <div gls-dropdown>
-    <ul class="gls-nav gls-dropdown-nav">…</ul>
+    <ul class="gls-nav gls-dropdown-nav">
+        …
+    </ul>
 </div>
 ```
 
@@ -689,7 +794,7 @@ Add the `.gls-dropdown-nav` class to place a nav inside a default dropdown from 
 </div>
 ```
 
-***
+---
 
 ## Nav in Navbar
 
@@ -697,7 +802,9 @@ Add the `.gls-navbar-dropdown-nav` class to place the nav inside a navbar dropdo
 
 ```html
 <div class="gls-navbar-dropdown">
-    <ul class="gls-nav gls-navbar-dropdown-nav">…</ul>
+    <ul class="gls-nav gls-navbar-dropdown-nav">
+        …
+    </ul>
 </div>
 ```
 
@@ -723,13 +830,13 @@ Add the `.gls-navbar-dropdown-nav` class to place the nav inside a navbar dropdo
         </ul>
 
     </div>
+
 </nav>
 </div>
 
 ```html
 <nav class="gls-navbar-container" gls-navbar>
     <div class="gls-navbar-left">
-
         <ul class="gls-navbar-nav">
             <li>
                 <a href="#">Parent</a>
@@ -746,12 +853,11 @@ Add the `.gls-navbar-dropdown-nav` class to place the nav inside a navbar dropdo
                 </div>
             </li>
         </ul>
-
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Nav in offcanvas
 
@@ -774,6 +880,7 @@ A nav can be used inside an offcanvas from the [Offcanvas component](https://get
         </ul>
 
     </div>
+
 </div>
 </div>
 
@@ -782,7 +889,6 @@ A nav can be used inside an offcanvas from the [Offcanvas component](https://get
 
 <div id="offcanvas-slide" gls-offcanvas>
     <div class="gls-offcanvas-bar">
-
         <ul class="gls-nav gls-nav-default">
             <li class="gls-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
@@ -792,29 +898,28 @@ A nav can be used inside an offcanvas from the [Offcanvas component](https://get
             <li class="gls-nav-divider"></li>
             <li><a href="#">Item</a></li>
         </ul>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option        | Value           | Default        | Description                                                                             |
-| ------------- | --------------- | -------------- | --------------------------------------------------------------------------------------- |
-| `targets`     | CSS selector    | `> .gls-parent` | The element(s) to toggle.                                                               |
-| `toggle `     | CSS selector    | `> a`          | The toggle element(s).                                                                  |
-| `content`     | CSS selector    | `> ul`         | The content element(s).                                                                 |
-| `collapsible` | Boolean         | `true`         | Allow all items to be closed.                                                           |
-| `multiple`    | Boolean         | `false`        | Allow multiple open items.                                                              |
-| `transition`  | String          | `ease`         | The transition to use.                                                                  |
-| `animation`   | Boolean, String | `true`         | Space-separated names of [animations](https://getuikit.com/docs/animation). Comma-separated for animation out. |
-| `duration`    | Number          | `200`          | The animation duration in milliseconds.                                                 |
+| Option        | Value           | Default         | Description                                                                                                    |
+| ------------- | --------------- | --------------- | -------------------------------------------------------------------------------------------------------------- |
+| `targets`     | CSS selector    | `> .gls-parent` | The element(s) to toggle.                                                                                      |
+| `toggle `     | CSS selector    | `> a`           | The toggle element(s).                                                                                         |
+| `content`     | CSS selector    | `> ul`          | The content element(s).                                                                                        |
+| `collapsible` | Boolean         | `true`          | Allow all items to be closed.                                                                                  |
+| `multiple`    | Boolean         | `false`         | Allow multiple open items.                                                                                     |
+| `transition`  | String          | `ease`          | The transition to use.                                                                                         |
+| `animation`   | Boolean, String | `true`          | Space-separated names of [animations](https://getuikit.com/docs/animation). Comma-separated for animation out. |
+| `duration`    | Number          | `200`           | The animation duration in milliseconds.                                                                        |
 
-***
+---
 
 ## JavaScript
 

@@ -19,13 +19,13 @@ UIkit.notification({
     message: 'my-message!',
     status: 'primary',
     pos: 'top-right',
-    timeout: 5000
+    timeout: 5000,
 });
 
 // Shortcuts
 UIkit.notification('My message');
 UIkit.notification('My message', status);
-UIkit.notification('My message', { /* options */ });
+UIkit.notification('My message', {/* options */});
 ```
 
 <div class="gls-docs-example">
@@ -34,11 +34,16 @@ UIkit.notification('My message', { /* options */ });
 </div>
 
 ```html
-<button class="demo gls-button gls-button-default" type="button" onclick="UIkit.notification({message: 'Notification message'})">Click me</button>
-
+<button
+    class="demo gls-button gls-button-default"
+    type="button"
+    onclick="UIkit.notification({message: 'Notification message'})"
+>
+    Click me
+</button>
 ```
 
-***
+---
 
 ## HTML message
 
@@ -53,31 +58,35 @@ UIkit.notification("<span gls-icon='icon: check'></span> Message");
 </div>
 
 ```html
-<button class="gls-button gls-button-default demo" type="button" onclick="UIkit.notification({message: '<span gls-icon=\'icon: check\'></span> Message with an icon'})">With icon</button>
+<button
+    class="gls-button gls-button-default demo"
+    type="button"
+    onclick="UIkit.notification({message: '<span gls-icon=\'icon: check\'></span> Message with an icon'})"
+>
+    With icon
+</button>
 ```
 
 **Note** The message is rendered as HTML. Sanitization is the developer's responsibility.
 
-***
+---
 
 ## Position
 
 Add one of the following parameters to adjust the notification's position to different corners.
 
-
 ```js
-UIkit.notification("…", {pos: 'top-right'})
+UIkit.notification('…', { pos: 'top-right' });
 ```
 
-| Position        | Code                                                |
-|-----------------|-----------------------------------------------------|
+| Position        | Code                                              |
+| --------------- | ------------------------------------------------- |
 | `top-left`      | `UIkit.notification("…", {pos: 'top-left'})`      |
 | `top-center`    | `UIkit.notification("…", {pos: 'top-center'})`    |
 | `top-right`     | `UIkit.notification("…", {pos: 'top-right'})`     |
 | `bottom-left`   | `UIkit.notification("…", {pos: 'bottom-left'})`   |
 | `bottom-center` | `UIkit.notification("…", {pos: 'bottom-center'})` |
 | `bottom-right`  | `UIkit.notification("…", {pos: 'bottom-right'})`  |
-
 
 <div class="gls-docs-example">
 <p gls-margin>
@@ -92,28 +101,63 @@ UIkit.notification("…", {pos: 'top-right'})
 
 ```html
 <p gls-margin>
-    <button class="gls-button gls-button-default" type="button" onclick="UIkit.notification({message: 'Top Left…', pos: 'top-left'})">Top Left</button>
-    <button class="gls-button gls-button-default" type="button" onclick="UIkit.notification({message: 'Top Center…', pos: 'top-center'})">Top Center</button>
-    <button class="gls-button gls-button-default" type="button" onclick="UIkit.notification({message: 'Top Right…', pos: 'top-right'})">Top Right</button>
-    <button class="gls-button gls-button-default" type="button" onclick="UIkit.notification({message: 'Bottom Left…', pos: 'bottom-left'})">Bottom Left</button>
-    <button class="gls-button gls-button-default" type="button" onclick="UIkit.notification({message: 'Bottom Center…', pos: 'bottom-center'})">Bottom Center</button>
-    <button class="gls-button gls-button-default" type="button" onclick="UIkit.notification({message: 'Bottom Right…', pos: 'bottom-right'})">Bottom Right</button>
+    <button
+        class="gls-button gls-button-default"
+        type="button"
+        onclick="UIkit.notification({message: 'Top Left…', pos: 'top-left'})"
+    >
+        Top Left
+    </button>
+    <button
+        class="gls-button gls-button-default"
+        type="button"
+        onclick="UIkit.notification({message: 'Top Center…', pos: 'top-center'})"
+    >
+        Top Center
+    </button>
+    <button
+        class="gls-button gls-button-default"
+        type="button"
+        onclick="UIkit.notification({message: 'Top Right…', pos: 'top-right'})"
+    >
+        Top Right
+    </button>
+    <button
+        class="gls-button gls-button-default"
+        type="button"
+        onclick="UIkit.notification({message: 'Bottom Left…', pos: 'bottom-left'})"
+    >
+        Bottom Left
+    </button>
+    <button
+        class="gls-button gls-button-default"
+        type="button"
+        onclick="UIkit.notification({message: 'Bottom Center…', pos: 'bottom-center'})"
+    >
+        Bottom Center
+    </button>
+    <button
+        class="gls-button gls-button-default"
+        type="button"
+        onclick="UIkit.notification({message: 'Bottom Right…', pos: 'bottom-right'})"
+    >
+        Bottom Right
+    </button>
 </p>
 ```
 
-
-***
+---
 
 ## Style
 
 A notification can be styled by adding a status to the message to indicate a primary, success, warning or danger status.
 
 ```js
-UIkit.notification("…", {status: 'primary'})
+UIkit.notification('…', { status: 'primary' });
 ```
 
-| Style     | Code                                            |
-|-----------|-------------------------------------------------|
+| Style     | Code                                          |
+| --------- | --------------------------------------------- |
 | `primary` | `UIkit.notification("…", {status:'primary'})` |
 | `success` | `UIkit.notification("…", {status:'success'})` |
 | `warning` | `UIkit.notification("…", {status:'warning'})` |
@@ -130,14 +174,38 @@ UIkit.notification("…", {status: 'primary'})
 
 ```html
 <p gls-margin>
-    <button class="gls-button gls-button-default demo" type="button" onclick="UIkit.notification({message: 'Primary message…', status: 'primary'})">Primary</button>
-    <button class="gls-button gls-button-default demo" type="button" onclick="UIkit.notification({message: 'Success message…', status: 'success'})">Success</button>
-    <button class="gls-button gls-button-default demo" type="button" onclick="UIkit.notification({message: 'Warning message…', status: 'warning'})">Warning</button>
-    <button class="gls-button gls-button-default demo" type="button" onclick="UIkit.notification({message: 'Danger message…', status: 'danger'})">Danger</button>
+    <button
+        class="gls-button gls-button-default demo"
+        type="button"
+        onclick="UIkit.notification({message: 'Primary message…', status: 'primary'})"
+    >
+        Primary
+    </button>
+    <button
+        class="gls-button gls-button-default demo"
+        type="button"
+        onclick="UIkit.notification({message: 'Success message…', status: 'success'})"
+    >
+        Success
+    </button>
+    <button
+        class="gls-button gls-button-default demo"
+        type="button"
+        onclick="UIkit.notification({message: 'Warning message…', status: 'warning'})"
+    >
+        Warning
+    </button>
+    <button
+        class="gls-button gls-button-default demo"
+        type="button"
+        onclick="UIkit.notification({message: 'Danger message…', status: 'danger'})"
+    >
+        Danger
+    </button>
 </p>
 ```
 
-***
+---
 
 ## Close all
 
@@ -149,25 +217,26 @@ You can close all open notifications by calling `UIkit.notification.closeAll()`.
 </div>
 
 ```html
-<button class="gls-button gls-button-default close" onclick="UIkit.notification.closeAll()">Close All</button>
-
+<button class="gls-button gls-button-default close" onclick="UIkit.notification.closeAll()">
+    Close All
+</button>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option     | Value  | Default      | Description                                                                                                   |
-|------------|--------|--------------|---------------------------------------------------------------------------------------------------------------|
+| ---------- | ------ | ------------ | ------------------------------------------------------------------------------------------------------------- |
 | `message ` | String | `false`      | Notification message to show.                                                                                 |
 | `status`   | String | `null`       | Notification status color.                                                                                    |
 | `timeout`  | Number | `5000`       | Visibility duration until a notification disappears. If set to `0`, notification will not hide automatically. |
 | `group`    | String |              | Useful, if you want to close all notifications in a specific group.                                           |
 | `pos`      | String | `top-center` | Display corner.                                                                                               |
 
-***
+---
 
 ## JavaScript
 
@@ -187,7 +256,7 @@ UIkit.notification(message, status);
 The following events will be triggered on elements with this component attached:
 
 | Name    | Description                                   |
-|---------|-----------------------------------------------|
+| ------- | --------------------------------------------- |
 | `close` | Fires after the notification has been closed. |
 
 ### Methods
@@ -203,13 +272,13 @@ UIkit.notification(element).close(immediate);
 Closes the notification.
 
 | Name        | Type    | Default | Description                      |
-|-------------|---------|---------|----------------------------------|
+| ----------- | ------- | ------- | -------------------------------- |
 | `immediate` | Boolean | true    | Transition the notification out. |
 
-***
+---
 
 ## Accessibility
 
 The Notification component automatically sets the appropriate WAI-ARIA role, states and properties.
 
-- The *notification* has the `alert` role.
+- The _notification_ has the `alert` role.

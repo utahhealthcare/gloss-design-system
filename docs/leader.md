@@ -10,7 +10,7 @@ title: Leader
 
 A leader, also known as a dot leader or a tab leader, is a repeating pattern used to visually connect content across horizontal spaces. It is most commonly used for restaurant menus, between the meals and prices, and for tables of contents, between titles and page numbers.
 
-***
+---
 
 ## Usage
 
@@ -34,7 +34,7 @@ To apply this component, add the `gls-leader` attribute to the element on the le
 </div>
 ```
 
-***
+---
 
 ## Fill character
 
@@ -61,15 +61,19 @@ To change the dot to any custom character, just add the `fill: STRING` option to
 **Note** The default fill character can be set through CSS or a Less variable.
 
 ```css
-.gls-leader-fill-content::before { content: '.'; }
-:root { --gls-leader-fill-content: '.'; }
+.gls-leader-fill-content::before {
+    content: '.';
+}
+:root {
+    --gls-leader-fill-content: '.';
+}
 ```
 
 ```less
 @leader-fill-content: '.';
 ```
 
-***
+---
 
 ## Responsive
 
@@ -79,19 +83,18 @@ It's possible to disable the leader for different device widths by applying the 
 <div gls-leader="media: @m"></div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
-
 
 | Option  | Value                   | Default | Description                                                                                                                                                |
 | ------- | ----------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `fill`  | String                  |         | Optional fill character.                                                                                                                                   |
 | `media` | Boolean, Number, String | `false` | Condition for the space filling - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
-***
+---
 
 ## JavaScript
 

@@ -40,7 +40,11 @@ Additionally, add the `gls-drop` attribute to the dropbar and a toggle element b
 <div class="gls-overflow-auto gls-height-medium">
     <div class="gls-inline">
         <button class="gls-button gls-button-default" type="button">Hover</button>
-        <div class="gls-dropbar gls-dropbar-top" gls-drop="stretch: x">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="gls-dropbar gls-dropbar-top" gls-drop="stretch: x">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
     </div>
 </div>
 ```
@@ -74,39 +78,38 @@ The dropbar is typically used together with the [Navbar component](https://getui
 
 ```html
 <div class="gls-overflow-auto gls-height-medium">
-
     <nav class="gls-navbar-container">
         <div class="gls-container">
             <div gls-navbar>
-
                 <div class="gls-navbar-left">
-
                     <ul class="gls-navbar-nav">
                         <li>
                             <a href>Parent</a>
-                            <div class="gls-dropbar gls-dropbar-top" gls-drop="stretch: x">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            <div class="gls-dropbar gls-dropbar-top" gls-drop="stretch: x">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </div>
                         </li>
                     </ul>
-
                 </div>
-
             </div>
         </div>
     </nav>
-
 </div>
 ```
 
 Mind, that there is a dedicated implementation for multiple dropbars in the [Navbar component](https://getuikit.com/docs/navbar#dropbar) and [Dropnav component](https://getuikit.com/docs/dropnav#dropbar).
 
-***
+---
 
 ## Direction
 
 To set the appropriate dropbar style, add one of the following direction modifier classes.
 
-| Direction           | Description                       |
-| ------------------- | --------------------------------- |
+| Direction            | Description                       |
+| -------------------- | --------------------------------- |
 | `gls-dropbar-top`    | Open the dropbar from the top.    |
 | `gls-dropbar-bottom` | Open the dropbar from the bottom. |
 | `gls-dropbar-left`   | Open the dropbar from the left.   |
@@ -114,12 +117,12 @@ To set the appropriate dropbar style, add one of the following direction modifie
 
 To open the dropbar from a specific direction use the `pos` and `stretch` options from the [Drop component](https://getuikit.com/docs/drop).
 
-| Position                       | Description                                                                   |
-| ------------------------------ | ----------------------------------------------------------------------------- |
-| `pos: top-left; stretch: x`    | Positions the dropbar above the toggle and stretches it horizontally.         |
-| `pos: bottom-left; stretch: x` | Positions the dropbar below the toggle and stretches it horizontally          |
-| `pos: left-top; stretch: y`    | Positions the dropbar to the left of the toggle and stretches it vertically   |
-| `pos: right-top; stretch: y`   | Positions the dropbar  to the right of the toggle and stretches it vertically |
+| Position                       | Description                                                                  |
+| ------------------------------ | ---------------------------------------------------------------------------- |
+| `pos: top-left; stretch: x`    | Positions the dropbar above the toggle and stretches it horizontally.        |
+| `pos: bottom-left; stretch: x` | Positions the dropbar below the toggle and stretches it horizontally         |
+| `pos: left-top; stretch: y`    | Positions the dropbar to the left of the toggle and stretches it vertically  |
+| `pos: right-top; stretch: y`   | Positions the dropbar to the right of the toggle and stretches it vertically |
 
 ```html
 <div class="gls-dropbar gls-dropbar-left" gls-drop="pos: left-top; stretch: y"></div>
@@ -160,45 +163,61 @@ To open the dropbar from a specific direction use the `pos` and `stretch` option
 
 ```html
 <div class="gls-overflow-auto gls-height-medium">
-
     <nav class="gls-navbar-container">
         <div class="gls-container">
             <div gls-navbar>
-
                 <div class="gls-navbar-left">
-
                     <ul class="gls-navbar-nav">
                         <li>
                             <a href>Top</a>
-                            <div class="gls-dropbar gls-dropbar-top" gls-drop="stretch: x; target: !.gls-navbar-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            <div
+                                class="gls-dropbar gls-dropbar-top"
+                                gls-drop="stretch: x; target: !.gls-navbar-container"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </div>
                         </li>
                         <li>
                             <a href>Left</a>
-                            <div class="gls-dropbar gls-dropbar-left" gls-drop="stretch: y; target: !.gls-navbar-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                            <div
+                                class="gls-dropbar gls-dropbar-left"
+                                gls-drop="stretch: y; target: !.gls-navbar-container"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam.
+                            </div>
                         </li>
                         <li>
                             <a href>Right</a>
-                            <div class="gls-dropbar gls-dropbar-right" gls-drop="pos: bottom-right; stretch: y; target: !.gls-navbar-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                            <div
+                                class="gls-dropbar gls-dropbar-right"
+                                gls-drop="pos: bottom-right; stretch: y; target: !.gls-navbar-container"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam.
+                            </div>
                         </li>
                     </ul>
-
                 </div>
-
             </div>
         </div>
     </nav>
-
 </div>
 ```
 
-***
+---
 
 ## Animation
 
 To animate the dropbar use the `slide-*` or `reveal-*` animations from the [Drop component](https://getuikit.com/docs/drop). `slide-*` animations slide the dropbar and its content from a selected direction, while in the `reveal-*` animations, the content of the dropbar stays static and is revealed from a selected direction. Set `animate-out: true` to also show an animation when closing the dropbar.
 
-| Animation       | Description                           |
-| --------------- | ------------------------------------- |
+| Animation       | Description                          |
+| --------------- | ------------------------------------ |
 | `slide-top`     | Slides the dropbar from the top.     |
 | `slide-bottom`  | Slides the dropbar from the bottom.  |
 | `slide-left`    | Slides the dropbar from the left.    |
@@ -259,50 +278,88 @@ To animate the dropbar use the `slide-*` or `reveal-*` animations from the [Drop
 
 ```html
 <div class="gls-overflow-auto gls-height-medium">
-
     <nav class="gls-navbar-container">
         <div class="gls-container">
             <div gls-navbar>
-
                 <div class="gls-navbar-left">
-
                     <ul class="gls-navbar-nav">
                         <li>
                             <a href>Slide Top</a>
-                            <div class="gls-dropbar gls-dropbar-top" gls-drop="stretch: x; target: !.gls-navbar-container; animation: slide-top; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            <div
+                                class="gls-dropbar gls-dropbar-top"
+                                gls-drop="stretch: x; target: !.gls-navbar-container; animation: slide-top; animate-out: true; duration: 700"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </div>
                         </li>
                         <li>
                             <a href>Reveal Top</a>
-                            <div class="gls-dropbar gls-dropbar-top" gls-drop="stretch: x; target: !.gls-navbar-container; animation: reveal-top; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            <div
+                                class="gls-dropbar gls-dropbar-top"
+                                gls-drop="stretch: x; target: !.gls-navbar-container; animation: reveal-top; animate-out: true; duration: 700"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </div>
                         </li>
                         <li>
                             <a href>Slide Left</a>
-                            <div class="gls-dropbar gls-dropbar-left" gls-drop="stretch: y; target: !.gls-navbar-container; animation: slide-left; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                            <div
+                                class="gls-dropbar gls-dropbar-left"
+                                gls-drop="stretch: y; target: !.gls-navbar-container; animation: slide-left; animate-out: true; duration: 700"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam.
+                            </div>
                         </li>
                         <li>
                             <a href>Reveal Left</a>
-                            <div class="gls-dropbar gls-dropbar-left" gls-drop="stretch: y; target: !.gls-navbar-container; animation: reveal-left; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                            <div
+                                class="gls-dropbar gls-dropbar-left"
+                                gls-drop="stretch: y; target: !.gls-navbar-container; animation: reveal-left; animate-out: true; duration: 700"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam.
+                            </div>
                         </li>
                         <li>
                             <a href>Slide Right</a>
-                            <div class="gls-dropbar gls-dropbar-right" gls-drop="pos: bottom-right; stretch: y;  target: !.gls-navbar-container; animation: slide-right; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                            <div
+                                class="gls-dropbar gls-dropbar-right"
+                                gls-drop="pos: bottom-right; stretch: y;  target: !.gls-navbar-container; animation: slide-right; animate-out: true; duration: 700"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam.
+                            </div>
                         </li>
                         <li>
                             <a href>Reveal Right</a>
-                            <div class="gls-dropbar gls-dropbar-right" gls-drop="pos: bottom-right; stretch: y;  target: !.gls-navbar-container; animation: reveal-right; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                            <div
+                                class="gls-dropbar gls-dropbar-right"
+                                gls-drop="pos: bottom-right; stretch: y;  target: !.gls-navbar-container; animation: reveal-right; animate-out: true; duration: 700"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam.
+                            </div>
                         </li>
                     </ul>
-
                 </div>
-
             </div>
         </div>
     </nav>
-
 </div>
 ```
 
-***
+---
 
 ## Nav in dropbar
 
@@ -311,7 +368,9 @@ A dropbar can contain a nav from the [Nav component](https://getuikit.com/docs/n
 ```html
 <button type="button"></button>
 <div class="gls-dropbar gls-dropbar-top" gls-drop="stretch: x">
-    <ul class="gls-nav gls-dropdown-nav">…</ul>
+    <ul class="gls-nav gls-dropdown-nav">
+        …
+    </ul>
 </div>
 ```
 
@@ -352,13 +411,10 @@ A dropbar can contain a nav from the [Nav component](https://getuikit.com/docs/n
 
 ```html
 <div class="gls-overflow-auto gls-height-large">
-
     <nav class="gls-navbar-container">
         <div class="gls-container">
             <div gls-navbar>
-
                 <div class="gls-navbar-left">
-
                     <ul class="gls-navbar-nav">
                         <li>
                             <a href>Hover</a>
@@ -375,22 +431,18 @@ A dropbar can contain a nav from the [Nav component](https://getuikit.com/docs/n
                             </div>
                         </li>
                     </ul>
-
                 </div>
-
             </div>
         </div>
     </nav>
-
 </div>
 ```
 
-***
+---
 
 ## Large modifier
 
 Add the `.gls-dropbar-large` class for a dropbar with larger vertical padding.
-
 
 ```html
 <div class="gls-dropbar gls-dropbar-top gls-dropbar-large" gls-drop="stretch: x"></div>
@@ -433,17 +485,17 @@ Add the `.gls-dropbar-large` class for a dropbar with larger vertical padding.
 
 ```html
 <div class="gls-overflow-auto gls-height-large">
-
     <nav class="gls-navbar-container">
         <div class="gls-container">
             <div gls-navbar>
-
                 <div class="gls-navbar-left">
-
                     <ul class="gls-navbar-nav">
                         <li>
                             <a href>Hover</a>
-                            <div class="gls-dropbar gls-dropbar-top gls-dropbar-large" gls-drop="stretch: x">
+                            <div
+                                class="gls-dropbar gls-dropbar-top gls-dropbar-large"
+                                gls-drop="stretch: x"
+                            >
                                 <ul class="gls-nav gls-navbar-dropdown-nav">
                                     <li class="gls-active"><a href="#">Active</a></li>
                                     <li><a href="#">Item</a></li>
@@ -456,23 +508,20 @@ Add the `.gls-dropbar-large` class for a dropbar with larger vertical padding.
                             </div>
                         </li>
                     </ul>
-
                 </div>
-
             </div>
         </div>
     </nav>
-
 </div>
 ```
 
-***
+---
 
 ## Accessibility
 
 The Drop component adheres to the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *toggle* has the `button` role, the `aria-expanded` state and the `aria-haspopup` property.
+- The _toggle_ has the `button` role, the `aria-expanded` state and the `aria-haspopup` property.
 
 ### Keyboard interaction
 

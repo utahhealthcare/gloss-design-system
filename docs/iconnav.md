@@ -10,7 +10,7 @@ title: Iconnav
 
 ## Usage
 
-To apply this component, add the `.gls-iconnav` class to a `<ul>`  element. Use `<a>` elements as menu items within the list and add icons from the [Icon component](https://getuikit.com/docs/icon). To apply an active state to a menu item, just add the `.gls-active` class.
+To apply this component, add the `.gls-iconnav` class to a `<ul>` element. Use `<a>` elements as menu items within the list and add icons from the [Icon component](https://getuikit.com/docs/icon). To apply an active state to a menu item, just add the `.gls-active` class.
 
 ```html
 <ul class="gls-iconnav">
@@ -32,18 +32,22 @@ To apply this component, add the `.gls-iconnav` class to a `<ul>`  element. Use 
     <li><a href="#" gls-icon="icon: plus"></a></li>
     <li><a href="#" gls-icon="icon: file-edit"></a></li>
     <li><a href="#" gls-icon="icon: copy"></a></li>
-    <li><a href="#"><span gls-icon="icon: bag"></span> (2)</a></li>
+    <li>
+        <a href="#"><span gls-icon="icon: bag"></span> (2)</a>
+    </li>
 </ul>
 ```
 
-***
+---
 
 ## Vertical alignment
 
 By default, the items of an iconnav are aligned horizontally. To apply a vertical alignment, add the `.gls-iconnav-vertical` class.
 
 ```html
-<ul class="gls-iconnav gls-iconnav-vertical">…</ul>
+<ul class="gls-iconnav gls-iconnav-vertical">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -60,11 +64,13 @@ By default, the items of an iconnav are aligned horizontally. To apply a vertica
     <li><a href="#" gls-icon="icon: plus"></a></li>
     <li><a href="#" gls-icon="icon: file-edit"></a></li>
     <li><a href="#" gls-icon="icon: copy"></a></li>
-    <li><a href="#"><span gls-icon="icon: bag"></span> (2)</a></li>
+    <li>
+        <a href="#"><span gls-icon="icon: bag"></span> (2)</a>
+    </li>
 </ul>
 ```
 
-***
+---
 
 ## Accessibility
 

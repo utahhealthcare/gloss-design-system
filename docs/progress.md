@@ -45,23 +45,16 @@ To apply this component, add the `.gls-progress` class to a `<progress>` element
 <progress id="js-progressbar" class="gls-progress" value="10" max="100"></progress>
 
 <script>
-
     UIkit.util.ready(function () {
-
         var bar = document.getElementById('js-progressbar');
 
         var animate = setInterval(function () {
-
             bar.value += 10;
 
             if (bar.value >= bar.max) {
                 clearInterval(animate);
             }
-
         }, 1000);
-
     });
-
 </script>
-
 ```

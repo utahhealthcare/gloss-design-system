@@ -14,7 +14,7 @@ Add the `.gls-overlay` class to an element following an image to create the over
 
 ```html
 <div class="gls-inline">
-    <img src="" width="" height="" alt="">
+    <img src="" width="" height="" alt="" />
     <div class="gls-overlay gls-position-bottom"></div>
 </div>
 ```
@@ -32,14 +32,14 @@ Add the `.gls-overlay` class to an element following an image to create the over
 
 ```html
 <div class="gls-inline">
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
     <div class="gls-overlay gls-light gls-position-bottom">
         <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Style modifiers
 
@@ -72,36 +72,33 @@ For a simple background color, add the `.gls-overlay-default` class.
         </div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-child-width-1-2@m" gls-grid>
     <div>
-
         <div class="gls-inline">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
             <div class="gls-overlay gls-overlay-default gls-position-bottom">
                 <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
-
     </div>
     <div>
-
         <div class="gls-inline">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
             <div class="gls-overlay-default gls-position-cover"></div>
             <div class="gls-overlay gls-position-bottom gls-dark">
                 <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ### Primary
 
@@ -130,36 +127,33 @@ For a prominent background color, add the `.gls-overlay-primary` class.
         </div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-child-width-1-2@m" gls-grid>
     <div>
-
         <div class="gls-inline">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
             <div class="gls-overlay gls-overlay-primary gls-position-bottom">
                 <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
-
     </div>
     <div>
-
         <div class="gls-inline">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
             <div class="gls-overlay-primary gls-position-cover"></div>
             <div class="gls-overlay gls-position-bottom gls-light">
                 <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Overlay icon
 
@@ -195,37 +189,34 @@ To display an overlay icon, add the `gls-overlay-icon` attribute to a `<span>` e
         </div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-child-width-1-2@m" gls-grid>
     <div>
-
         <div class="gls-inline gls-light">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
             <div class="gls-position-center">
                 <span gls-overlay-icon></span>
             </div>
         </div>
-
     </div>
     <div>
-
         <div class="gls-inline gls-dark">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
             <div class="gls-overlay-default gls-position-cover">
                 <div class="gls-position-center">
                     <span gls-overlay-icon></span>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 ```
 
-***
+---
 
 ## Position
 
@@ -260,7 +251,7 @@ Add one of the `.gls-position-*` classes from the [Position component](https://g
 <div class="gls-child-width-1-2@m" gls-grid>
     <div>
         <div class="gls-inline">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
             <div class="gls-overlay gls-overlay-default gls-position-top">
                 <p>Top</p>
             </div>
@@ -268,7 +259,7 @@ Add one of the `.gls-position-*` classes from the [Position component](https://g
     </div>
     <div>
         <div class="gls-inline">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
             <div class="gls-overlay gls-overlay-default gls-position-center">
                 <p>Center</p>
             </div>

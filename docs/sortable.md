@@ -10,7 +10,7 @@ title: Sortable
 
 Drag and drop an element to a new location within the sortable grid, while the other items adjust to fit. This is great, if you want to sort items like gallery or menu items, for example.
 
-***
+---
 
 ## Usage
 
@@ -53,7 +53,11 @@ To apply this component, add the `gls-sortable` attribute to a container and cre
 </div>
 
 ```html
-<ul class="gls-grid-small gls-child-width-1-2 gls-child-width-1-4@s" gls-sortable="handle: .gls-card" gls-grid>
+<ul
+    class="gls-grid-small gls-child-width-1-2 gls-child-width-1-4@s"
+    gls-sortable="handle: .gls-card"
+    gls-grid
+>
     <li>
         <div class="gls-card gls-card-default gls-card-body gls-text-center">Item 1</div>
     </li>
@@ -81,7 +85,7 @@ To apply this component, add the `gls-sortable` attribute to a container and cre
 </ul>
 ```
 
-***
+---
 
 ## Handle
 
@@ -142,51 +146,87 @@ By default, the entire sortable element can be used for drag and drop sorting. T
 </div>
 
 ```html
-<ul class="gls-grid-small gls-child-width-1-2 gls-child-width-1-4@s" gls-sortable="handle: .gls-sortable-handle" gls-grid>
+<ul
+    class="gls-grid-small gls-child-width-1-2 gls-child-width-1-4@s"
+    gls-sortable="handle: .gls-sortable-handle"
+    gls-grid
+>
     <li>
         <div class="gls-card gls-card-default gls-card-body">
-            <span class="gls-sortable-handle gls-margin-xsmall-right gls-text-center" gls-icon="icon: table"></span>Item 1
+            <span
+                class="gls-sortable-handle gls-margin-xsmall-right gls-text-center"
+                gls-icon="icon: table"
+            ></span
+            >Item 1
         </div>
     </li>
     <li>
         <div class="gls-card gls-card-default gls-card-body">
-            <span class="gls-sortable-handle gls-margin-xsmall-right gls-text-center" gls-icon="icon: table"></span>Item 2
+            <span
+                class="gls-sortable-handle gls-margin-xsmall-right gls-text-center"
+                gls-icon="icon: table"
+            ></span
+            >Item 2
         </div>
     </li>
     <li>
         <div class="gls-card gls-card-default gls-card-body">
-            <span class="gls-sortable-handle gls-margin-xsmall-right gls-text-center" gls-icon="icon: table"></span>Item 3
+            <span
+                class="gls-sortable-handle gls-margin-xsmall-right gls-text-center"
+                gls-icon="icon: table"
+            ></span
+            >Item 3
         </div>
     </li>
     <li>
         <div class="gls-card gls-card-default gls-card-body">
-            <span class="gls-sortable-handle gls-margin-xsmall-right gls-text-center" gls-icon="icon: table"></span>Item 4
+            <span
+                class="gls-sortable-handle gls-margin-xsmall-right gls-text-center"
+                gls-icon="icon: table"
+            ></span
+            >Item 4
         </div>
     </li>
     <li>
         <div class="gls-card gls-card-default gls-card-body">
-            <span class="gls-sortable-handle gls-margin-xsmall-right gls-text-center" gls-icon="icon: table"></span>Item 5
+            <span
+                class="gls-sortable-handle gls-margin-xsmall-right gls-text-center"
+                gls-icon="icon: table"
+            ></span
+            >Item 5
         </div>
     </li>
     <li>
         <div class="gls-card gls-card-default gls-card-body">
-            <span class="gls-sortable-handle gls-margin-xsmall-right gls-text-center" gls-icon="icon: table"></span>Item 6
+            <span
+                class="gls-sortable-handle gls-margin-xsmall-right gls-text-center"
+                gls-icon="icon: table"
+            ></span
+            >Item 6
         </div>
     </li>
     <li>
         <div class="gls-card gls-card-default gls-card-body">
-            <span class="gls-sortable-handle gls-margin-xsmall-right gls-text-center" gls-icon="icon: table"></span>Item 7
+            <span
+                class="gls-sortable-handle gls-margin-xsmall-right gls-text-center"
+                gls-icon="icon: table"
+            ></span
+            >Item 7
         </div>
     </li>
     <li>
         <div class="gls-card gls-card-default gls-card-body">
-            <span class="gls-sortable-handle gls-margin-xsmall-right gls-text-center" gls-icon="icon: table"></span>Item 8
+            <span
+                class="gls-sortable-handle gls-margin-xsmall-right gls-text-center"
+                gls-icon="icon: table"
+            ></span
+            >Item 8
         </div>
     </li>
 </ul>
 ```
 
-***
+---
 
 ## Group
 
@@ -288,14 +328,16 @@ To be able to sort items from one list to another, you can group them by adding 
 </div>
 ```
 
-***
+---
 
 ## Custom class
 
 You can also apply one or more custom classes to items when they are being dragged. To do so, add the `cls-custom: MY-CLASS` option to the attribute.
 
 ```html
-<ul gls-sortable="cls-custom: my-class">…</ul>
+<ul gls-sortable="cls-custom: my-class">
+    …
+</ul>
 ```
 
 **Note** In this example, we are using a nav from the [Nav component](https://getuikit.com/docs/nav). When dragging an item it will get a box-shadow and background.
@@ -311,7 +353,10 @@ You can also apply one or more custom classes to items when they are being dragg
 </div>
 
 ```html
-<ul class="gls-nav gls-nav-default gls-width-medium" gls-sortable="cls-custom: gls-box-shadow-small gls-flex gls-flex-middle gls-background">
+<ul
+    class="gls-nav gls-nav-default gls-width-medium"
+    gls-sortable="cls-custom: gls-box-shadow-small gls-flex gls-flex-middle gls-background"
+>
     <li class="gls-active"><a href="#">Active</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
@@ -320,18 +365,18 @@ You can also apply one or more custom classes to items when they are being dragg
 </ul>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option            | Value           | Default                   | Description                                   |
-| ----------------- | --------------- |---------------------------| --------------------------------------------- |
-| `group`           | String          |                           | The group                                     |
-| `animation`       | String, Boolean | `slide`                   | Animation mode (`slide`, `false`).            |
-| `duration`        | Number          | `150`                     | Animation duration in milliseconds.           |
-| `threshold`       | Number          | `5`                       | Mouse move threshold before dragging starts.  |
+| Option            | Value           | Default                    | Description                                   |
+| ----------------- | --------------- | -------------------------- | --------------------------------------------- |
+| `group`           | String          |                            | The group                                     |
+| `animation`       | String, Boolean | `slide`                    | Animation mode (`slide`, `false`).            |
+| `duration`        | Number          | `150`                      | Animation duration in milliseconds.           |
+| `threshold`       | Number          | `5`                        | Mouse move threshold before dragging starts.  |
 | `cls-item`        | String          | `gls-sortable-item`        | The item class.                               |
 | `cls-placeholder` | String          | `gls-sortable-placeholder` | The placeholder class.                        |
 | `cls-drag`        | String          | `gls-sortable-drag`        | The ghost class.                              |
@@ -339,10 +384,10 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `cls-base`        | String          | `gls-sortable`             | The list's class.                             |
 | `cls-no-drag`     | String          | `gls-sortable-nodrag`      | Disable dragging on elements with this class. |
 | `cls-empty`       | String          | `gls-sortable-empty`       | The empty list class.                         |
-| `cls-custom`      | String          |                           | The ghost's custom class.                     |
-| `handle`          | String          | `false`                   | The handle selector.                          |
+| `cls-custom`      | String          |                            | The ghost's custom class.                     |
+| `handle`          | String          | `false`                    | The handle selector.                          |
 
-***
+---
 
 ## JavaScript
 

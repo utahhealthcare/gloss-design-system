@@ -12,20 +12,19 @@ title: Comment
 
 The Comment component consists of the comment itself, a comment header, including an avatar, a title and meta text, and a comment body.
 
-| Class                | Description                                                                        |
-|----------------------|------------------------------------------------------------------------------------|
-| `.gls-comment`        | Add this class to define the Comment component.                                    |
-| `.gls-comment-body`   | Add this class to create a comment body.                                           |
-| `.gls-comment-header` | Add this class to create a comment header.                                         |
-| `.gls-comment-title`  | Add this class to a heading to create a comment title.                             |
+| Class                 | Description                                                                                               |
+| --------------------- | --------------------------------------------------------------------------------------------------------- |
+| `.gls-comment`        | Add this class to define the Comment component.                                                           |
+| `.gls-comment-body`   | Add this class to create a comment body.                                                                  |
+| `.gls-comment-header` | Add this class to create a comment header.                                                                |
+| `.gls-comment-title`  | Add this class to a heading to create a comment title.                                                    |
 | `.gls-comment-meta`   | Add this class to create meta text about your comment, e.g. a [subnav](https://getuikit.com/docs/subnav). |
-| `.gls-comment-avatar` | Add this class to an `<img>` element to create an avatar for the comment author.   |
-
+| `.gls-comment-avatar` | Add this class to an `<img>` element to create an avatar for the comment author.                          |
 
 ```html
 <article class="gls-comment">
     <header class="gls-comment-header">
-        <img class="gls-comment-avatar" src="" width="" height="" alt="">
+        <img class="gls-comment-avatar" src="" width="" height="" alt="" />
         <h4 class="gls-comment-title"></h4>
         <ul class="gls-comment-meta gls-subnav"></ul>
     </header>
@@ -60,10 +59,18 @@ The Comment component consists of the comment itself, a comment header, includin
     <header class="gls-comment-header">
         <div class="gls-grid-medium gls-flex-middle" gls-grid>
             <div class="gls-width-auto">
-                <img class="gls-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                <img
+                    class="gls-comment-avatar"
+                    src="images/avatar.jpg"
+                    width="80"
+                    height="80"
+                    alt=""
+                />
             </div>
             <div class="gls-width-expand">
-                <h4 class="gls-comment-title gls-margin-remove"><a class="gls-link-reset" href="#">Author</a></h4>
+                <h4 class="gls-comment-title gls-margin-remove">
+                    <a class="gls-link-reset" href="#">Author</a>
+                </h4>
                 <ul class="gls-comment-meta gls-subnav gls-subnav-divider gls-margin-remove-top">
                     <li><a href="#">12 days ago</a></li>
                     <li><a href="#">Reply</a></li>
@@ -72,12 +79,17 @@ The Comment component consists of the comment itself, a comment header, includin
         </div>
     </header>
     <div class="gls-comment-body">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet.
+        </p>
     </div>
 </article>
 ```
 
-***
+---
 
 ## Primary modifier
 
@@ -114,10 +126,18 @@ To style a comment differently, for example to highlight it as the admin's comme
     <header class="gls-comment-header">
         <div class="gls-grid-medium gls-flex-middle" gls-grid>
             <div class="gls-width-auto">
-                <img class="gls-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                <img
+                    class="gls-comment-avatar"
+                    src="images/avatar.jpg"
+                    width="80"
+                    height="80"
+                    alt=""
+                />
             </div>
             <div class="gls-width-expand">
-                <h4 class="gls-comment-title gls-margin-remove"><a class="gls-link-reset" href="#">Author</a></h4>
+                <h4 class="gls-comment-title gls-margin-remove">
+                    <a class="gls-link-reset" href="#">Author</a>
+                </h4>
                 <ul class="gls-comment-meta gls-subnav gls-subnav-divider gls-margin-remove-top">
                     <li><a href="#">12 days ago</a></li>
                     <li><a href="#">Reply</a></li>
@@ -126,12 +146,17 @@ To style a comment differently, for example to highlight it as the admin's comme
         </div>
     </header>
     <div class="gls-comment-body">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet.
+        </p>
     </div>
 </article>
 ```
 
-***
+---
 
 ## Lists
 
@@ -221,36 +246,75 @@ Add the `.gls-comment-list` class to a `<ul>` element to create a list of commen
             <header class="gls-comment-header gls-position-relative">
                 <div class="gls-grid-medium gls-flex-middle" gls-grid>
                     <div class="gls-width-auto">
-                        <img class="gls-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                        <img
+                            class="gls-comment-avatar"
+                            src="images/avatar.jpg"
+                            width="80"
+                            height="80"
+                            alt=""
+                        />
                     </div>
                     <div class="gls-width-expand">
-                        <h4 class="gls-comment-title gls-margin-remove"><a class="gls-link-reset" href="#">Author</a></h4>
-                        <p class="gls-comment-meta gls-margin-remove-top"><a class="gls-link-reset" href="#">12 days ago</a></p>
+                        <h4 class="gls-comment-title gls-margin-remove">
+                            <a class="gls-link-reset" href="#">Author</a>
+                        </h4>
+                        <p class="gls-comment-meta gls-margin-remove-top">
+                            <a class="gls-link-reset" href="#">12 days ago</a>
+                        </p>
                     </div>
                 </div>
-                <div class="gls-position-top-right gls-position-small gls-hidden-hover"><a class="gls-link-muted" href="#">Reply</a></div>
+                <div class="gls-position-top-right gls-position-small gls-hidden-hover">
+                    <a class="gls-link-muted" href="#">Reply</a>
+                </div>
             </header>
             <div class="gls-comment-body">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
             </div>
         </article>
         <ul>
             <li>
-                <article class="gls-comment gls-comment-primary gls-visible-toggle" tabindex="-1" role="comment">
+                <article
+                    class="gls-comment gls-comment-primary gls-visible-toggle"
+                    tabindex="-1"
+                    role="comment"
+                >
                     <header class="gls-comment-header gls-position-relative">
                         <div class="gls-grid-medium gls-flex-middle" gls-grid>
                             <div class="gls-width-auto">
-                                <img class="gls-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                                <img
+                                    class="gls-comment-avatar"
+                                    src="images/avatar.jpg"
+                                    width="80"
+                                    height="80"
+                                    alt=""
+                                />
                             </div>
                             <div class="gls-width-expand">
-                                <h4 class="gls-comment-title gls-margin-remove"><a class="gls-link-reset" href="#">Author</a></h4>
-                                <p class="gls-comment-meta gls-margin-remove-top"><a class="gls-link-reset" href="#">12 days ago</a></p>
+                                <h4 class="gls-comment-title gls-margin-remove">
+                                    <a class="gls-link-reset" href="#">Author</a>
+                                </h4>
+                                <p class="gls-comment-meta gls-margin-remove-top">
+                                    <a class="gls-link-reset" href="#">12 days ago</a>
+                                </p>
                             </div>
                         </div>
-                        <div class="gls-position-top-right gls-position-small gls-hidden-hover"><a class="gls-link-muted" href="#">Reply</a></div>
+                        <div class="gls-position-top-right gls-position-small gls-hidden-hover">
+                            <a class="gls-link-muted" href="#">Reply</a>
+                        </div>
                     </header>
                     <div class="gls-comment-body">
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                        </p>
                     </div>
                 </article>
             </li>
@@ -259,17 +323,35 @@ Add the `.gls-comment-list` class to a `<ul>` element to create a list of commen
                     <header class="gls-comment-header gls-position-relative">
                         <div class="gls-grid-medium gls-flex-middle" gls-grid>
                             <div class="gls-width-auto">
-                                <img class="gls-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                                <img
+                                    class="gls-comment-avatar"
+                                    src="images/avatar.jpg"
+                                    width="80"
+                                    height="80"
+                                    alt=""
+                                />
                             </div>
                             <div class="gls-width-expand">
-                                <h4 class="gls-comment-title gls-margin-remove"><a class="gls-link-reset" href="#">Author</a></h4>
-                                <p class="gls-comment-meta gls-margin-remove-top"><a class="gls-link-reset" href="#">12 days ago</a></p>
+                                <h4 class="gls-comment-title gls-margin-remove">
+                                    <a class="gls-link-reset" href="#">Author</a>
+                                </h4>
+                                <p class="gls-comment-meta gls-margin-remove-top">
+                                    <a class="gls-link-reset" href="#">12 days ago</a>
+                                </p>
                             </div>
                         </div>
-                        <div class="gls-position-top-right gls-position-small gls-hidden-hover"><a class="gls-link-muted" href="#">Reply</a></div>
+                        <div class="gls-position-top-right gls-position-small gls-hidden-hover">
+                            <a class="gls-link-muted" href="#">Reply</a>
+                        </div>
                     </header>
                     <div class="gls-comment-body">
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                        </p>
                     </div>
                 </article>
             </li>
@@ -278,13 +360,13 @@ Add the `.gls-comment-list` class to a `<ul>` element to create a list of commen
 </ul>
 ```
 
-***
+---
 
 ## Accessibility
 
 Set the appropriate WAI-ARIA roles, states and properties to the Comment component.
 
-- Set the `comment` role for each *comment*.
+- Set the `comment` role for each _comment_.
 
 ```html
 <ul class="gls-comment-list">

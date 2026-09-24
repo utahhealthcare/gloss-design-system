@@ -10,15 +10,15 @@ title: Height
 
 UIkit's Height component offers three options to set heights: using simple fixed height utility classes, depending on the viewport or by matching the heights of different elements.
 
-***
+---
 
 ## Usage
 
 UIkit provides a number of useful classes to alter an element's height.
 
-| Class                                             | Description                                                                                  |
-| ------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| `.gls-height-1-1`                                  | This class applies a height of 100%. This only works if the parent element has a set height. |
+| Class                                               | Description                                                                                  |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `.gls-height-1-1`                                   | This class applies a height of 100%. This only works if the parent element has a set height. |
 | `.gls-height-small `<br> `.gls-height-max-small `   | These classes apply a height or max-height of _150px_.                                       |
 | `.gls-height-medium `<br> `.gls-height-max-medium ` | These classes apply a height or max-height of _300px_.                                       |
 | `.gls-height-large `<br> `.gls-height-max-large `   | These classes apply a height or max-height of _450px_.                                       |
@@ -44,18 +44,30 @@ UIkit provides a number of useful classes to alter an element's height.
 ```html
 <div class="gls-child-width-1-3@s" gls-grid>
     <div>
-        <div class="gls-height-small gls-card gls-card-default gls-card-body gls-flex gls-flex-center gls-flex-middle">Small</div>
+        <div
+            class="gls-height-small gls-card gls-card-default gls-card-body gls-flex gls-flex-center gls-flex-middle"
+        >
+            Small
+        </div>
     </div>
     <div>
-        <div class="gls-height-medium gls-card gls-card-default gls-card-body gls-flex gls-flex-center gls-flex-middle">Medium</div>
+        <div
+            class="gls-height-medium gls-card gls-card-default gls-card-body gls-flex gls-flex-center gls-flex-middle"
+        >
+            Medium
+        </div>
     </div>
     <div>
-        <div class="gls-height-large gls-card gls-card-default gls-card-body gls-flex gls-flex-center gls-flex-middle">Large</div>
+        <div
+            class="gls-height-large gls-card gls-card-default gls-card-body gls-flex gls-flex-center gls-flex-middle"
+        >
+            Large
+        </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Viewport height
 
@@ -84,7 +96,7 @@ Add the `gls-height-viewport` attribute to create a container that fills the hei
 
 You can view examples in the tests for [Height Viewport](../assets/uikit/tests/height-viewport.html) and [Height Expand](../assets/uikit/tests/height-expand.html).
 
-***
+---
 
 ## Match height
 
@@ -108,7 +120,7 @@ To expand all children of a container to the same height regardless of their con
 <span gls-height-match=".my-class"></span>
 ```
 
-***
+---
 
 ### Match cards
 
@@ -138,13 +150,18 @@ You can also target and match specific elements inside the container, like cards
 ```html
 <div class="gls-child-width-1-2@s" gls-grid gls-height-match="target: > div > .gls-card">
     <div>
-        <div class="gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="gls-card gls-card-default gls-card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+        </div>
     </div>
     <div>
         <div class="gls-card gls-card-default gls-card-body">Lorem Ipsum</div>
     </div>
     <div>
-        <div class="gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="gls-card gls-card-default gls-card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
     </div>
     <div>
         <div class="gls-card gls-card-default gls-card-body">Lorem Ipsum</div>
@@ -152,7 +169,7 @@ You can also target and match specific elements inside the container, like cards
 </div>
 ```
 
-***
+---
 
 ### Match all
 
@@ -180,15 +197,24 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 </div>
 
 ```html
-<div class="gls-child-width-1-2@s" gls-grid gls-height-match="target: > div > .gls-card; row: false">
+<div
+    class="gls-child-width-1-2@s"
+    gls-grid
+    gls-height-match="target: > div > .gls-card; row: false"
+>
     <div class="gls-first-column">
-        <div class="gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="gls-card gls-card-default gls-card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+        </div>
     </div>
     <div>
         <div class="gls-card gls-card-default gls-card-body">Lorem Ipsum</div>
     </div>
     <div class="gls-grid-margin gls-first-column">
-        <div class="gls-card gls-card-default gls-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="gls-card gls-card-default gls-card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
     </div>
     <div class="gls-grid-margin">
         <div class="gls-card gls-card-default gls-card-body">Lorem Ipsum</div>
@@ -196,7 +222,7 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 </div>
 ```
 
-***
+---
 
 ## Placeholder height
 
@@ -238,9 +264,11 @@ For example, if there is an absolutely positioned transparent navbar, a placehol
 
 ```html
 <div class="gls-position-relative">
-
     <div class="tm-header gls-position-top">
-        <nav class="gls-navbar-container gls-navbar-transparent" gls-inverse="sel-active: .gls-navbar-transparent">
+        <nav
+            class="gls-navbar-container gls-navbar-transparent"
+            gls-inverse="sel-active: .gls-navbar-transparent"
+        >
             <div class="gls-container">
                 <div gls-navbar>
                     <div class="gls-navbar-left">
@@ -255,21 +283,25 @@ For example, if there is an absolutely positioned transparent navbar, a placehol
         <div gls-height-placeholder="!.gls-position-relative .tm-header"></div>
         <div class="gls-section">
             <div class="gls-container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
             </div>
         </div>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-***
+---
 
 ## JavaScript
 

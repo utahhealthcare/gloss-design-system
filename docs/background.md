@@ -12,8 +12,8 @@ title: Background
 
 To apply a background color to an element, add one of the following classes. The actual color for each modifier is defined by the UIkit style that you have chosen or customized.
 
-| Class                      | Description                           |
-|----------------------------|---------------------------------------|
+| Class                       | Description                           |
+| --------------------------- | ------------------------------------- |
 | `.gls-background-default`   | Applies the default background color. |
 | `.gls-background-muted`     | Applies a muted background color.     |
 | `.gls-background-primary`   | Applies the primary background color. |
@@ -75,14 +75,14 @@ To apply a background color to an element, add one of the following classes. The
 </div>
 ```
 
-***
+---
 
 ## Size modifiers
 
 This component features classes to specify the size of background images by keeping their intrinsic ratios.
 
-| Class                       | Description                                                                                    |
-|-----------------------------|------------------------------------------------------------------------------------------------|
+| Class                        | Description                                                                                    |
+| ---------------------------- | ---------------------------------------------------------------------------------------------- |
 | `.gls-background-cover`      | Scales the background image to completely cover the containing area.                           |
 | `.gls-background-contain`    | Scales the background image as far as its width and height can fit inside the containing area. |
 | `.gls-background-width-1-1`  | Scales the background image to fill 100% of the available width.                               |
@@ -112,26 +112,32 @@ This component features classes to specify the size of background images by keep
 ```html
 <div class="gls-child-width-1-2@s gls-light" gls-grid>
     <div>
-        <div class="gls-background-cover gls-height-medium gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/dark.jpg);">
+        <div
+            class="gls-background-cover gls-height-medium gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/dark.jpg);"
+        >
             <p class="gls-h4">Cover</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-contain gls-background-muted gls-height-medium gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/dark.jpg);">
+        <div
+            class="gls-background-contain gls-background-muted gls-height-medium gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/dark.jpg);"
+        >
             <p class="gls-h4">Contain</p>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Position modifiers
 
 To alter the background position of your image — which is in the top left-hand corner of the area by default, add one of the following classes.
 
-| Class                          | Description                                                           |
-|--------------------------------|-----------------------------------------------------------------------|
+| Class                           | Description                                                           |
+| ------------------------------- | --------------------------------------------------------------------- |
 | `.gls-background-top-left`      | The initial position of the image is in the top left hand corner.     |
 | `.gls-background-top-center`    | The initial position of the image is at the top.                      |
 | `.gls-background-top-right`     | The initial position of the image is in the top right hand corner.    |
@@ -164,19 +170,25 @@ To alter the background position of your image — which is in the top left-hand
 ```html
 <div class="gls-child-width-1-2@s gls-light" gls-grid>
     <div>
-        <div class="gls-background-top-right gls-background-cover gls-height-medium gls-panel gls-flex gls-flex-middle gls-flex-center" style="background-image: url(images/dark.jpg);">
+        <div
+            class="gls-background-top-right gls-background-cover gls-height-medium gls-panel gls-flex gls-flex-middle gls-flex-center"
+            style="background-image: url(images/dark.jpg);"
+        >
             <p class="gls-h4">Top Right</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-top-left gls-background-cover gls-height-medium gls-panel gls-flex gls-flex-middle gls-flex-center" style="background-image: url(images/dark.jpg);">
+        <div
+            class="gls-background-top-left gls-background-cover gls-height-medium gls-panel gls-flex gls-flex-middle gls-flex-center"
+            style="background-image: url(images/dark.jpg);"
+        >
             <p class="gls-h4">Top Left</p>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## No repeat
 
@@ -186,7 +198,7 @@ To keep smaller images from repeating to fill the background area, add the `.gls
 <div class="gls-background-norepeat"></div>
 ```
 
-***
+---
 
 ## Attachment
 
@@ -201,17 +213,20 @@ You can also apply a fixed background attachment, so that the image remains in i
 </div>
 
 ```html
-<div class="gls-background-fixed gls-background-center-center gls-height-medium gls-width-large" style="background-image: url(images/dark.jpg);"></div>
+<div
+    class="gls-background-fixed gls-background-center-center gls-height-medium gls-width-large"
+    style="background-image: url(images/dark.jpg);"
+></div>
 ```
 
-***
+---
 
 ## Responsive
 
 Add one of the following classes to limit the display of background images to certain viewport sizes. This is great in cases where the image and content overlap on a phone screen in a way that would make text illegible.
 
-| Class                     | Description                                                            |
-|---------------------------|------------------------------------------------------------------------|
+| Class                      | Description                                                            |
+| -------------------------- | ---------------------------------------------------------------------- |
 | `.gls-background-image@s`  | Displays the background image on device widths of _640px_ and larger.  |
 | `.gls-background-image@m`  | Displays the background image on device widths of _960px_ and larger.  |
 | `.gls-background-image@l`  | Displays the background image on device widths of _1200px_ and larger. |
@@ -231,21 +246,23 @@ Resize your browser window to see the effect in the example below.
 </div>
 
 ```html
-<div class="gls-background-image@m gls-background-cover gls-background-muted gls-height-medium gls-width-large gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/dark.jpg);">
+<div
+    class="gls-background-image@m gls-background-cover gls-background-muted gls-height-medium gls-width-large gls-flex gls-flex-center gls-flex-middle"
+    style="background-image: url(images/dark.jpg);"
+>
     <p class="gls-h4 gls-margin-remove gls-visible@m gls-light">Image shown</p>
     <p class="gls-h4 gls-margin-remove gls-hidden@m">Image not shown</p>
 </div>
 ```
 
-***
+---
 
 ## Blend modes
 
 Add one of the following classes to apply different blend modes to your background image. You can combine these with the background color classes, as well. For a better understanding of how background blend modes work, take a look at this [CSS Tricks article](https://css-tricks.com/almanac/properties/b/background-blend-mode/).
 
-
-| Class                              | Description                                    |
-|------------------------------------|------------------------------------------------|
+| Class                               | Description                                    |
+| ----------------------------------- | ---------------------------------------------- |
 | `.gls-background-blend-multiply`    | This class sets the blend mode to multiply.    |
 | `.gls-background-blend-screen`      | This class sets the blend mode to screen.      |
 | `.gls-background-blend-overlay`     | This class sets the blend mode to overlay.     |
@@ -349,77 +366,122 @@ Add one of the following classes to apply different blend modes to your backgrou
 ```html
 <div class="gls-child-width-1-2 gls-child-width-1-3@s gls-grid-small gls-light" gls-grid>
     <div>
-        <div class="gls-background-blend-multiply gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-multiply gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Multiply</p>
-       </div>
+        </div>
     </div>
     <div>
-        <div class="gls-background-blend-screen gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-screen gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Screen</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-overlay gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-overlay gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Overlay</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-darken gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-darken gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Darken</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-lighten gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-lighten gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Lighten</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-color-dodge gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-color-dodge gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Color Dodge</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-color-burn gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-color-burn gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Color Burn</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-hard-light gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-hard-light gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Hard Light</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-soft-light gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-soft-light gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Soft Light</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-difference gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-difference gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Difference</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-exclusion gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-exclusion gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Exclusion</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-hue gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-hue gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Hue</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-saturation gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-saturation gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Saturation</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-color gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-color gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Color</p>
         </div>
     </div>
     <div>
-        <div class="gls-background-blend-luminosity gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle" style="background-image: url(images/photo.jpg);">
+        <div
+            class="gls-background-blend-luminosity gls-background-primary gls-background-cover gls-height-small gls-panel gls-flex gls-flex-center gls-flex-middle"
+            style="background-image: url(images/photo.jpg);"
+        >
             <p class="gls-h4">Luminosity</p>
         </div>
     </div>

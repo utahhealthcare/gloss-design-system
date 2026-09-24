@@ -12,11 +12,11 @@ title: Subnav
 
 To apply this component, use the following classes. To align a subnav, for example to horizontally center it, you can use the [Flex component](https://getuikit.com/docs/flex).
 
-| Class         | Description                                                                                                         |
-|---------------|---------------------------------------------------------------------------------------------------------------------|
-| `.gls-subnav`  | Add this class to a `<ul>` element to define the Subnav component. Use `<a>` elements as nav items within the list. |
-| `.gls-active ` | Add this class to a list item to apply an active state.                                                             |
-| `.gls-disabled`   | Add this class to a list item to apply a disabled state and use a `<span>` instead of an `<a>` element.                        |
+| Class           | Description                                                                                                         |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `.gls-subnav`   | Add this class to a `<ul>` element to define the Subnav component. Use `<a>` elements as nav items within the list. |
+| `.gls-active `  | Add this class to a list item to apply an active state.                                                             |
+| `.gls-disabled` | Add this class to a list item to apply a disabled state and use a `<span>` instead of an `<a>` element.             |
 
 ```html
 <ul class="gls-subnav">
@@ -46,14 +46,16 @@ To apply this component, use the following classes. To align a subnav, for examp
 
 **Note** For a better layout, if items should wrap into the next row, add the `gls-margin` attribute from the [Margin component](https://getuikit.com/docs/margin).
 
-***
+---
 
 ## Divider modifier
 
 Add the `.gls-subnav-divider` class to separate menu items with lines.
 
 ```html
-<ul class="gls-subnav gls-subnav-divider">…</ul>
+<ul class="gls-subnav gls-subnav-divider">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -72,14 +74,16 @@ Add the `.gls-subnav-divider` class to separate menu items with lines.
 </ul>
 ```
 
-***
+---
 
 ## Pill modifier
 
 Add the `.gls-subnav-pill` class to highlight the active menu item with a background.
 
 ```html
-<ul class="gls-subnav gls-subnav-pill">…</ul>
+<ul class="gls-subnav gls-subnav-pill">
+    …
+</ul>
 ```
 
 <div class="gls-docs-example">
@@ -98,7 +102,7 @@ Add the `.gls-subnav-pill` class to highlight the active menu item with a backgr
 </ul>
 ```
 
-***
+---
 
 ## Subnav and Dropdown
 
@@ -107,15 +111,15 @@ You can also use a dropdown from the [Dropdown component](https://getuikit.com/d
 ```html
 <ul class="gls-subnav">
     <li>
-
         <!-- This is the menu item toggling the dropdown -->
         <a href=""></a>
 
         <!-- This is the dropdown -->
         <div gls-dropdown="mode: click">
-            <ul class="gls-nav gls-dropdown-nav">…</ul>
+            <ul class="gls-nav gls-dropdown-nav">
+                …
+            </ul>
         </div>
-
     </li>
 </ul>
 ```

@@ -43,16 +43,22 @@ A dropdown can be enabled by hovering and clicking the toggle. Just add the `mod
 ```html
 <div class="gls-inline">
     <button class="gls-button gls-button-default" type="button">Hover</button>
-    <div gls-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div gls-dropdown>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </div>
 </div>
 
 <div class="gls-inline">
     <button class="gls-button gls-button-default" type="button">Click</button>
-    <div gls-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div gls-dropdown="mode: click">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Nav in dropdown
 
@@ -61,7 +67,9 @@ A dropdown can contain a nav from the [Nav component](https://getuikit.com/docs/
 ```html
 <button type="button"></button>
 <div gls-dropdown>
-    <ul class="gls-nav gls-dropdown-nav">…</ul>
+    <ul class="gls-nav gls-dropdown-nav">
+        …
+    </ul>
 </div>
 ```
 
@@ -95,7 +103,7 @@ A dropdown can contain a nav from the [Nav component](https://getuikit.com/docs/
 </div>
 ```
 
-***
+---
 
 ## Width and Grid
 
@@ -169,12 +177,11 @@ Use one of the classes from the [Width component](https://getuikit.com/docs/widt
 </div>
 ```
 
-***
+---
 
 ## Large modifier
 
 Add the `.gls-dropdown-large` class for a dropdown with larger padding.
-
 
 ```html
 <div class="gls-dropdown-large" gls-dropdown></div>
@@ -214,7 +221,7 @@ Add the `.gls-dropdown-large` class for a dropdown with larger padding.
 </div>
 ```
 
-***
+---
 
 ## Position
 
@@ -333,7 +340,7 @@ By default, the dropdown is positioned below the toggle. To change its position,
 </div>
 ```
 
-***
+---
 
 ## Boundary
 
@@ -380,7 +387,6 @@ By default, the dropdown automatically changes its positions if it exceeds the v
 
 ```html
 <div class="boundary gls-panel gls-placeholder gls-height-medium">
-
     <button class="gls-button gls-button-default gls-float-left" type="button">Bottom Right</button>
     <div gls-dropdown="pos: bottom-right; boundary: !.boundary">
         <ul class="gls-nav gls-dropdown-nav">
@@ -406,11 +412,10 @@ By default, the dropdown automatically changes its positions if it exceeds the v
             <li><a href="#">Item</a></li>
         </ul>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Shift and flip
 
@@ -454,7 +459,6 @@ To disable automatic shifting and flipping, add the `shift: false` or `flip: fal
 
 ```html
 <div class="boundary gls-panel gls-placeholder gls-height-medium">
-
     <button class="gls-button gls-button-default gls-float-left" type="button">Bottom Right</button>
     <div gls-dropdown="pos: bottom-right; boundary: !.boundary; shift: false; flip: false">
         <ul class="gls-nav gls-dropdown-nav">
@@ -480,11 +484,10 @@ To disable automatic shifting and flipping, add the `shift: false` or `flip: fal
             <li><a href="#">Item</a></li>
         </ul>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Auto update
 
@@ -494,7 +497,7 @@ By default, the drop repositions on scrolling. To disable dynamic positioning, a
 <div gls-dropdown="auto-update: false"></div>
 ```
 
-***
+---
 
 ## Target
 
@@ -541,7 +544,6 @@ By default, the dropdown is aligned to its toggle. To position the dropdown to a
 
 ```html
 <div class="target gls-panel gls-placeholder gls-height-medium">
-
     <button class="gls-button gls-button-default gls-float-left" type="button">Bottom Left</button>
     <div gls-dropdown="pos: bottom-left; target: !.target">
         <ul class="gls-nav gls-dropdown-nav">
@@ -555,7 +557,9 @@ By default, the dropdown is aligned to its toggle. To position the dropdown to a
         </ul>
     </div>
 
-    <button class="gls-button gls-button-default gls-float-right" type="button">Bottom Right</button>
+    <button class="gls-button gls-button-default gls-float-right" type="button">
+        Bottom Right
+    </button>
     <div gls-dropdown="pos: bottom-right; target: !.target">
         <ul class="gls-nav gls-dropdown-nav">
             <li class="gls-active"><a href="#">Active</a></li>
@@ -567,11 +571,10 @@ By default, the dropdown is aligned to its toggle. To position the dropdown to a
             <li><a href="#">Item</a></li>
         </ul>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Inset
 
@@ -615,7 +618,6 @@ By default, the dropdown is positioned outside the toggle. To change the positio
 
 ```html
 <div class="target gls-panel gls-placeholder gls-height-large">
-
     <button class="gls-button gls-button-default gls-float-left" type="button">Bottom Left</button>
     <div gls-dropdown="pos: bottom-left; target: !.target; inset: true">
         <ul class="gls-nav gls-dropdown-nav">
@@ -629,7 +631,9 @@ By default, the dropdown is positioned outside the toggle. To change the positio
         </ul>
     </div>
 
-    <button class="gls-button gls-button-default gls-float-right" type="button">Bottom Right</button>
+    <button class="gls-button gls-button-default gls-float-right" type="button">
+        Bottom Right
+    </button>
     <div gls-dropdown="pos: bottom-right; target: !.target; inset: true">
         <ul class="gls-nav gls-dropdown-nav">
             <li class="gls-active"><a href="#">Active</a></li>
@@ -641,11 +645,10 @@ By default, the dropdown is positioned outside the toggle. To change the positio
             <li><a href="#">Item</a></li>
         </ul>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Stretch
 
@@ -677,17 +680,20 @@ To stretch the dropdown to fill the size of its closest scrolling ancestor, add 
         </ul>
 
     </div>
+
 </nav>
 </div>
 
 ```html
 <nav class="gls-navbar-container" gls-navbar>
     <div class="gls-navbar-left">
-
         <ul class="gls-navbar-nav">
             <li>
                 <a href>Hover</a>
-                <div class="gls-navbar-dropdown" gls-dropdown="boundary: !.gls-navbar; stretch: x; flip: false">
+                <div
+                    class="gls-navbar-dropdown"
+                    gls-dropdown="boundary: !.gls-navbar; stretch: x; flip: false"
+                >
                     <ul class="gls-nav gls-dropdown-nav">
                         <li class="gls-active"><a href="#">Active</a></li>
                         <li><a href="#">Item</a></li>
@@ -700,12 +706,11 @@ To stretch the dropdown to fill the size of its closest scrolling ancestor, add 
                 </div>
             </li>
         </ul>
-
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Animation
 
@@ -830,7 +835,6 @@ Alternatively, the Drop component has two additional animation types that are no
 
 ```html
 <div class="gls-margin" gls-margin>
-
     <div class="gls-inline">
         <button class="gls-button gls-button-default" type="button">Slide Top</button>
         <div gls-dropdown="animation: slide-top; animate-out: true; duration: 700">
@@ -890,11 +894,10 @@ Alternatively, the Drop component has two additional animation types that are no
             </ul>
         </div>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Offset
 
@@ -923,48 +926,48 @@ To define a custom offset between the dropdown and its toggle, add the `offset` 
 <button class="gls-button gls-button-default" type="button">Hover</button>
 <div gls-dropdown="offset: 80">
     <ul class="gls-nav gls-dropdown-nav">
-            <li class="gls-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="gls-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="gls-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+        <li class="gls-active"><a href="#">Active</a></li>
+        <li><a href="#">Item</a></li>
+        <li class="gls-nav-header">Header</li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li class="gls-nav-divider"></li>
+        <li><a href="#">Item</a></li>
+    </ul>
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option            | Value                 | Default             | Description                                                                                                  |
-| ----------------- | --------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `toggle`          | CSS selector          | `- *`               | CSS selector for the element to be used as a toggle. By default, the preceding element.                      |
-| `pos`             | String                | `bottom-left`       | Drop position.                                                                                               |
-| `stretch`         | Boolean, String       | `false`             | Stretch dropdown on both (true) or given axis (`x`, `y`).                                                    |
-| `mode`            | String                | `click, hover`      | Comma-separated list of dropdown trigger behavior modes (`click`, `hover`).                                  |
-| `delay-show`      | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
-| `delay-hide`      | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
-| `auto-update`     | Boolean               | `true`              | Disable dynamic positioning while scrolling by setting this option to `false`.                               |
-| `boundary`        | CSS selector          | `false`             | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
-| `boundary-x`      | CSS selector          | `false`             | The area on the x-axis the drop can't exceed causing it to flip and shift.                               |
-| `boundary-y`      | CSS selector          | `false`             | The area on the y-axis the drop can't exceed causing it to flip and shift.                               |
-| `target`          | Boolean, CSS selector | `false`             | The element the dropdown is positioned to (`true` for window).                                               |
-| `target-x`        | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to (`true` for window).                                      |
-| `target-y`        | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
-| `inset`           | Boolean               | `false`             | Position inside its target.                                                                                  |
-| `flip`            | Boolean               | `true`              | Flip the dropdown along the main axis if it overflows the boundary.                                          |
-| `shift`           | Boolean               | `true`              | Shift the dropdown along the cross axis if it overflows the boundary.                                        |
-| `offset`          | Number                | `0`                 | The dropdown offset.                                                                                         |
+| Option            | Value                 | Default              | Description                                                                                                  |
+| ----------------- | --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `toggle`          | CSS selector          | `- *`                | CSS selector for the element to be used as a toggle. By default, the preceding element.                      |
+| `pos`             | String                | `bottom-left`        | Drop position.                                                                                               |
+| `stretch`         | Boolean, String       | `false`              | Stretch dropdown on both (true) or given axis (`x`, `y`).                                                    |
+| `mode`            | String                | `click, hover`       | Comma-separated list of dropdown trigger behavior modes (`click`, `hover`).                                  |
+| `delay-show`      | Number                | `0`                  | Delay time in hover mode before a dropdown is shown in ms.                                                   |
+| `delay-hide`      | Number                | `800`                | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
+| `auto-update`     | Boolean               | `true`               | Disable dynamic positioning while scrolling by setting this option to `false`.                               |
+| `boundary`        | CSS selector          | `false`              | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
+| `boundary-x`      | CSS selector          | `false`              | The area on the x-axis the drop can't exceed causing it to flip and shift.                                   |
+| `boundary-y`      | CSS selector          | `false`              | The area on the y-axis the drop can't exceed causing it to flip and shift.                                   |
+| `target`          | Boolean, CSS selector | `false`              | The element the dropdown is positioned to (`true` for window).                                               |
+| `target-x`        | Boolean, CSS selector | `false`              | The element's X axis the dropdown is positioned to (`true` for window).                                      |
+| `target-y`        | Boolean, CSS selector | `false`              | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
+| `inset`           | Boolean               | `false`              | Position inside its target.                                                                                  |
+| `flip`            | Boolean               | `true`               | Flip the dropdown along the main axis if it overflows the boundary.                                          |
+| `shift`           | Boolean               | `true`               | Shift the dropdown along the cross axis if it overflows the boundary.                                        |
+| `offset`          | Number                | `0`                  | The dropdown offset.                                                                                         |
 | `animation`       | String                | `gls-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                      |
-| `animate-out`     | Boolean               | `false`             | Use animation when closing the drop.                                                                         |
-| `bg-scroll`       | Boolean               | `true`              | Allow background scrolling while dropdown is opened.                                                         |
-| `close-on-scroll` | Boolean               | `false`             | Close the dropdown on scrolling a parent scroll container.                                                   |
-| `duration`        | Number                | `200`               | The animation duration.                                                                                      |
-| `container`       | Boolean               | `false`             | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
+| `animate-out`     | Boolean               | `false`              | Use animation when closing the drop.                                                                         |
+| `bg-scroll`       | Boolean               | `true`               | Allow background scrolling while dropdown is opened.                                                         |
+| `close-on-scroll` | Boolean               | `false`              | Close the dropdown on scrolling a parent scroll container.                                                   |
+| `duration`        | Number                | `200`                | The animation duration.                                                                                      |
+| `container`       | Boolean               | `false`              | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
 
 `pos` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
@@ -972,7 +975,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 <span gls-dropdown="top-left"></span>
 ```
 
-***
+---
 
 ## JavaScript
 
@@ -1023,13 +1026,13 @@ Hides the dropdown.
 | ------- | ------- | ------- | -------------------------- |
 | `delay` | Boolean | true    | Delay hiding the Dropdown. |
 
-***
+---
 
 ## Accessibility
 
 The Dropdown component adheres to the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *toggle* has the `button` role, the `aria-expanded` state and the `aria-haspopup` property.
+- The _toggle_ has the `button` role, the `aria-expanded` state and the `aria-haspopup` property.
 
 ### Keyboard interaction
 

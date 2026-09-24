@@ -35,13 +35,19 @@ Add the `.gls-description-list` class to display terms and descriptions below ea
     <dt>Description term</dt>
     <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
     <dt>Description term</dt>
-    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+    <dd>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </dd>
     <dt>Description term</dt>
-    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+    <dd>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </dd>
 </dl>
 ```
 
-***
+---
 
 ## Divider modifier
 
@@ -70,8 +76,14 @@ Add the `.gls-description-list-divider` class to add a horizontal line between l
     <dt>Description term</dt>
     <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
     <dt>Description term</dt>
-    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+    <dd>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </dd>
     <dt>Description term</dt>
-    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+    <dd>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+    </dd>
 </dl>
 ```

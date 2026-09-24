@@ -14,14 +14,14 @@ The Navbar component initializes all dropdowns with the same options, so they do
 
 The Navbar component consists of a navbar container, the navbar itself and one or more navigations.
 
-| Element                                                           | Description                                                                                                    |
-| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `gls-navbar`                                                       | Add this attribute to a `<nav>` element to define the Navbar component.                                        |
-| `.gls-navbar-container`                                            | Add this class to the same `<nav>` element or a parent element to add the navbar background style.             |
-| `.gls-navbar-left`<br> `.gls-navbar-center`<br>  `.gls-navbar-right` | Add one of these classes to a `<div>` element to align the navigation.                                         |
-| `.gls-navbar-nav`                                                  | Add this class to a `<ul>` element to create the navigation. Use `<a>` elements as menu items within the list. |
-| `.gls-parent`                                                      | Add this class to indicate a parent menu item.                                                                 |
-| `.gls-active`                                                      | Add this class to indicate an active menu item.                                                                |
+| Element                                                             | Description                                                                                                    |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `gls-navbar`                                                        | Add this attribute to a `<nav>` element to define the Navbar component.                                        |
+| `.gls-navbar-container`                                             | Add this class to the same `<nav>` element or a parent element to add the navbar background style.             |
+| `.gls-navbar-left`<br> `.gls-navbar-center`<br> `.gls-navbar-right` | Add one of these classes to a `<div>` element to align the navigation.                                         |
+| `.gls-navbar-nav`                                                   | Add this class to a `<ul>` element to create the navigation. Use `<a>` elements as menu items within the list. |
+| `.gls-parent`                                                       | Add this class to indicate a parent menu item.                                                                 |
+| `.gls-active`                                                       | Add this class to indicate an active menu item.                                                                |
 
 ```html
 <nav class="gls-navbar-container" gls-navbar>
@@ -55,13 +55,13 @@ The Navbar component consists of a navbar container, the navbar itself and one o
         </ul>
 
     </div>
+
 </nav>
 </div>
 
 ```html
 <nav class="gls-navbar-container" gls-navbar>
     <div class="gls-navbar-left">
-
         <ul class="gls-navbar-nav">
             <li class="gls-active"><a href="#">Active</a></li>
             <li>
@@ -76,7 +76,6 @@ The Navbar component consists of a navbar container, the navbar itself and one o
             </li>
             <li><a href="#">Item</a></li>
         </ul>
-
     </div>
 </nav>
 ```
@@ -117,6 +116,7 @@ Neither the navbar, nor the navbar container have horizontal padding. To set the
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -124,9 +124,7 @@ Neither the navbar, nor the navbar container have horizontal padding. To set the
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar>
-
             <div class="gls-navbar-left">
-
                 <ul class="gls-navbar-nav">
                     <li class="gls-active"><a href="#">Active</a></li>
                     <li>
@@ -141,15 +139,13 @@ Neither the navbar, nor the navbar container have horizontal padding. To set the
                     </li>
                     <li><a href="#">Item</a></li>
                 </ul>
-
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Multiple navigations
 
@@ -208,6 +204,7 @@ You can place more than one navigation inside a navbar container. That way you c
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -215,9 +212,7 @@ You can place more than one navigation inside a navbar container. That way you c
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar>
-
             <div class="gls-navbar-left">
-
                 <ul class="gls-navbar-nav">
                     <li class="gls-active"><a href="#">Active</a></li>
                     <li>
@@ -232,11 +227,9 @@ You can place more than one navigation inside a navbar container. That way you c
                     </li>
                     <li><a href="#">Item</a></li>
                 </ul>
-
             </div>
 
             <div class="gls-navbar-right">
-
                 <ul class="gls-navbar-nav">
                     <li class="gls-active"><a href="#">Active</a></li>
                     <li>
@@ -251,15 +244,13 @@ You can place more than one navigation inside a navbar container. That way you c
                     </li>
                     <li><a href="#">Item</a></li>
                 </ul>
-
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Transparent modifier
 
@@ -302,17 +293,17 @@ When using an image or a colored background for the hero section of your website
             </div>
         </nav>
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-position-relative">
-    <img src="images/light.jpg" width="1800" height="1200" alt="">
+    <img src="images/light.jpg" width="1800" height="1200" alt="" />
     <div class="gls-position-top">
         <nav class="gls-navbar-container gls-navbar-transparent">
             <div class="gls-container">
                 <div gls-navbar>
-
                     <div class="gls-navbar-left">
                         <ul class="gls-navbar-nav">
                             <li class="gls-active"><a href="#">Active</a></li>
@@ -333,7 +324,6 @@ When using an image or a colored background for the hero section of your website
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </nav>
@@ -341,7 +331,7 @@ When using an image or a colored background for the hero section of your website
 </div>
 ```
 
-***
+---
 
 ## Subtitle
 
@@ -403,6 +393,7 @@ To define a subtitle, create a `<div>` element inside an item's `<a>` element. A
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -410,9 +401,7 @@ To define a subtitle, create a `<div>` element inside an item's `<a>` element. A
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar>
-
             <div class="gls-navbar-left">
-
                 <ul class="gls-navbar-nav">
                     <li class="gls-active">
                         <a href="#">
@@ -446,15 +435,13 @@ To define a subtitle, create a `<div>` element inside an item's `<a>` element. A
                         </a>
                     </li>
                 </ul>
-
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Content item
 
@@ -464,7 +451,9 @@ You can also add custom content to the navbar, like text, icons, buttons or form
 <nav class="gls-navbar-container" gls-navbar>
     <div class="gls-navbar-left">
         <a href="" class="gls-navbar-item gls-logo"></a>
-        <ul class="gls-navbar-nav">…</ul>
+        <ul class="gls-navbar-nav">
+            …
+        </ul>
         <div class="gls-navbar-item">…</div>
     </div>
 </nav>
@@ -505,6 +494,7 @@ Add the `.gls-logo` class from the [Utility component](https://getuikit.com/docs
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -512,15 +502,16 @@ Add the `.gls-logo` class from the [Utility component](https://getuikit.com/docs
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar>
-
             <div class="gls-navbar-left">
-
                 <a class="gls-navbar-item gls-logo" href="#" aria-label="Back to Home">Logo</a>
 
                 <ul class="gls-navbar-nav">
                     <li>
                         <a href="#">
-                            <span class="gls-icon gls-margin-xsmall-right" gls-icon="icon: star"></span>
+                            <span
+                                class="gls-icon gls-margin-xsmall-right"
+                                gls-icon="icon: star"
+                            ></span>
                             Features
                         </a>
                     </li>
@@ -532,19 +523,22 @@ Add the `.gls-logo` class from the [Utility component](https://getuikit.com/docs
 
                 <div class="gls-navbar-item">
                     <form action="javascript:void(0)">
-                        <input class="gls-input gls-form-width-small" type="text" placeholder="Input" aria-label="Input">
+                        <input
+                            class="gls-input gls-form-width-small"
+                            type="text"
+                            placeholder="Input"
+                            aria-label="Input"
+                        />
                         <button class="gls-button gls-button-default">Button</button>
                     </form>
                 </div>
-
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Centered logo
 
@@ -594,6 +588,7 @@ You can create a split menu with a centered logo. Just add the `gls-navbar-cente
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -601,9 +596,7 @@ You can create a split menu with a centered logo. Just add the `gls-navbar-cente
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar>
-
             <div class="gls-navbar-center">
-
                 <div class="gls-navbar-center-left">
                     <ul class="gls-navbar-nav">
                         <li class="gls-active"><a href="#">Active</a></li>
@@ -626,16 +619,13 @@ You can create a split menu with a centered logo. Just add the `gls-navbar-cente
                         <li><a href="#">Item</a></li>
                     </ul>
                 </div>
-
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-
-***
+---
 
 ## Toggle item
 
@@ -667,6 +657,7 @@ Add the `.gls-navbar-toggle` class and the `gls-navbar-toggle-icon` attribute to
 
         </div>
     </div>
+
 </nav>
 
 <nav class="gls-navbar-container gls-margin">
@@ -688,6 +679,7 @@ Add the `.gls-navbar-toggle` class and the `gls-navbar-toggle-icon` attribute to
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -695,7 +687,6 @@ Add the `.gls-navbar-toggle` class and the `gls-navbar-toggle-icon` attribute to
 <nav class="gls-navbar-container gls-margin">
     <div class="gls-container">
         <div gls-navbar="mode: click">
-
             <div class="gls-navbar-left">
                 <a class="gls-navbar-toggle" gls-navbar-toggle-icon href="#"></a>
                 <div class="gls-navbar-dropdown">
@@ -706,7 +697,6 @@ Add the `.gls-navbar-toggle` class and the `gls-navbar-toggle-icon` attribute to
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 </nav>
@@ -714,10 +704,10 @@ Add the `.gls-navbar-toggle` class and the `gls-navbar-toggle-icon` attribute to
 <nav class="gls-navbar-container gls-margin">
     <div class="gls-container">
         <div gls-navbar="mode: click">
-
             <div class="gls-navbar-left">
                 <a class="gls-navbar-toggle" href="#">
-                    <span gls-navbar-toggle-icon></span> <span class="gls-margin-xsmall-left">Menu</span>
+                    <span gls-navbar-toggle-icon></span>
+                    <span class="gls-margin-xsmall-left">Menu</span>
                 </a>
                 <div class="gls-navbar-dropdown">
                     <ul class="gls-nav gls-navbar-dropdown-nav">
@@ -727,13 +717,12 @@ Add the `.gls-navbar-toggle` class and the `gls-navbar-toggle-icon` attribute to
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Dropdowns
 
@@ -744,7 +733,9 @@ A navbar can contain a dropdown from the [Dropdown component](https://getuikit.c
     <li>
         <a href=""></a>
         <div class="gls-navbar-dropdown">
-            <ul class="gls-nav gls-navbar-dropdown-nav">…</ul>
+            <ul class="gls-nav gls-navbar-dropdown-nav">
+                …
+            </ul>
         </div>
     </li>
 </ul>
@@ -799,6 +790,7 @@ A navbar can contain a dropdown from the [Dropdown component](https://getuikit.c
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -806,9 +798,7 @@ A navbar can contain a dropdown from the [Dropdown component](https://getuikit.c
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar>
-
             <div class="gls-navbar-left">
-
                 <ul class="gls-navbar-nav">
                     <li class="gls-active"><a href="#">Active</a></li>
                     <li>
@@ -827,10 +817,8 @@ A navbar can contain a dropdown from the [Dropdown component](https://getuikit.c
                     </li>
                     <li><a href="#">Item</a></li>
                 </ul>
-
             </div>
             <div class="gls-navbar-right">
-
                 <ul class="gls-navbar-nav">
                     <li>
                         <a href="#">Parent</a>
@@ -848,13 +836,12 @@ A navbar can contain a dropdown from the [Dropdown component](https://getuikit.c
                     </li>
                 </ul>
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ### Click mode
 
@@ -890,6 +877,7 @@ A parent item inside the navbar can be enabled by either hovering or clicking th
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -897,9 +885,7 @@ A parent item inside the navbar can be enabled by either hovering or clicking th
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar="mode: click">
-
             <div class="gls-navbar-left">
-
                 <ul class="gls-navbar-nav">
                     <li class="gls-active"><a href="#">Active</a></li>
                     <li>
@@ -914,15 +900,13 @@ A parent item inside the navbar can be enabled by either hovering or clicking th
                     </li>
                     <li><a href="#">Item</a></li>
                 </ul>
-
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ### Alignment
 
@@ -962,6 +946,7 @@ By default, the dropdowns are positioned below the navbar item and are aligned t
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -969,9 +954,7 @@ By default, the dropdowns are positioned below the navbar item and are aligned t
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar="align: center">
-
             <div class="gls-navbar-center">
-
                 <ul class="gls-navbar-nav">
                     <li>
                         <a href="#">Parent</a>
@@ -984,15 +967,13 @@ By default, the dropdowns are positioned below the navbar item and are aligned t
                         </div>
                     </li>
                 </ul>
-
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ### Target
 
@@ -1118,6 +1099,7 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -1125,9 +1107,7 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar="target: !.gls-navbar; align: center">
-
             <div class="gls-navbar-left">
-
                 <ul class="gls-navbar-nav">
                     <li>
                         <a href="#">Parent</a>
@@ -1213,7 +1193,6 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
                         </div>
                     </li>
                 </ul>
-
             </div>
 
             <div class="gls-navbar-right">
@@ -1234,13 +1213,12 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
                     </li>
                 </ul>
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ### Dropbar
 
@@ -1338,13 +1316,12 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
 
 ```html
 <div class="gls-position-relative">
-
     <nav class="gls-navbar-container">
         <div class="gls-container">
-            <div gls-navbar="dropbar: true; dropbar-anchor: !.gls-navbar-container; target-y: !.gls-navbar-container">
-
+            <div
+                gls-navbar="dropbar: true; dropbar-anchor: !.gls-navbar-container; target-y: !.gls-navbar-container"
+            >
                 <div class="gls-navbar-left">
-
                     <ul class="gls-navbar-nav">
                         <li class="gls-active"><a href="#">Active</a></li>
                         <li>
@@ -1391,11 +1368,9 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
                             </div>
                         </li>
                     </ul>
-
                 </div>
 
                 <div class="gls-navbar-right">
-
                     <ul class="gls-navbar-nav">
                         <li>
                             <a href="#">Parent</a>
@@ -1412,17 +1387,14 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
                             </div>
                         </li>
                     </ul>
-
                 </div>
-
             </div>
         </div>
     </nav>
-
 </div>
 ```
 
-***
+---
 
 ### Stretch
 
@@ -1490,6 +1462,7 @@ To stretch a dropdown, use the [Drop component](https://getuikit.com/docs/drop) 
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -1497,14 +1470,15 @@ To stretch a dropdown, use the [Drop component](https://getuikit.com/docs/drop) 
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar>
-
             <div class="gls-navbar-left">
-
                 <ul class="gls-navbar-nav">
                     <li class="gls-active"><a href="#">Active</a></li>
                     <li>
                         <a href>Parent</a>
-                        <div class="gls-navbar-dropdown" gls-drop="boundary: !.gls-navbar; stretch: x; flip: false">
+                        <div
+                            class="gls-navbar-dropdown"
+                            gls-drop="boundary: !.gls-navbar; stretch: x; flip: false"
+                        >
                             <ul class="gls-nav gls-navbar-dropdown-nav">
                                 <li class="gls-active"><a href="#">Active</a></li>
                                 <li><a href="#">Item</a></li>
@@ -1518,7 +1492,10 @@ To stretch a dropdown, use the [Drop component](https://getuikit.com/docs/drop) 
                     </li>
                     <li>
                         <a href>Parent</a>
-                        <div class="gls-navbar-dropdown" gls-drop="boundary: !.gls-navbar; stretch: x; flip: false">
+                        <div
+                            class="gls-navbar-dropdown"
+                            gls-drop="boundary: !.gls-navbar; stretch: x; flip: false"
+                        >
                             <div class="gls-drop-grid gls-child-width-1-2" gls-grid>
                                 <div>
                                     <ul class="gls-nav gls-navbar-dropdown-nav">
@@ -1546,15 +1523,13 @@ To stretch a dropdown, use the [Drop component](https://getuikit.com/docs/drop) 
                         </div>
                     </li>
                 </ul>
-
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Parent icon
 
@@ -1618,6 +1593,7 @@ To create a parent icon, just add the `gls-navbar-parent-icon` attribute to a `<
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -1625,9 +1601,7 @@ To create a parent icon, just add the `gls-navbar-parent-icon` attribute to a `<
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar>
-
             <div class="gls-navbar-left">
-
                 <ul class="gls-navbar-nav">
                     <li class="gls-active"><a href="#">Active</a></li>
                     <li>
@@ -1646,10 +1620,8 @@ To create a parent icon, just add the `gls-navbar-parent-icon` attribute to a `<
                     </li>
                     <li><a href="#">Item</a></li>
                 </ul>
-
             </div>
             <div class="gls-navbar-right">
-
                 <ul class="gls-navbar-nav">
                     <li>
                         <a href="#">Parent <span gls-navbar-parent-icon></span></a>
@@ -1667,13 +1639,12 @@ To create a parent icon, just add the `gls-navbar-parent-icon` attribute to a `<
                     </li>
                 </ul>
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Width and Grid
 
@@ -1681,8 +1652,8 @@ You can place a grid from the [Grid component](https://getuikit.com/docs/grid) i
 
 To accommodate up to five columns, you also need to add one of the following classes. Columns will stack if they no longer fit into the container.
 
-| Class                         | Description                                              |
-| ----------------------------- | -------------------------------------------------------- |
+| Class                          | Description                                              |
+| ------------------------------ | -------------------------------------------------------- |
 | `.gls-navbar-dropdown-width-2` | Add this class to double the dropdown's width.           |
 | `.gls-navbar-dropdown-width-3` | Add this class to triple the dropdown's width.           |
 | `.gls-navbar-dropdown-width-4` | Add this class to multiply the dropdown's width by four. |
@@ -1692,7 +1663,9 @@ To accommodate up to five columns, you also need to add one of the following cla
 <div class="gls-navbar-dropdown gls-navbar-dropdown-width-2">
     <div class="gls-drop-grid gls-child-width-1-2" gls-grid>
         <div>
-            <ul class="gls-nav gls-navbar-dropdown-nav">…</ul>
+            <ul class="gls-nav gls-navbar-dropdown-nav">
+                …
+            </ul>
         </div>
         <div>…</div>
     </div>
@@ -1742,6 +1715,7 @@ To accommodate up to five columns, you also need to add one of the following cla
 
         </div>
     </div>
+
 </nav>
 </div>
 
@@ -1749,9 +1723,7 @@ To accommodate up to five columns, you also need to add one of the following cla
 <nav class="gls-navbar-container">
     <div class="gls-container">
         <div gls-navbar>
-
             <div class="gls-navbar-left">
-
                 <ul class="gls-navbar-nav">
                     <li>
                         <a href="#">Two Columns</a>
@@ -1783,15 +1755,13 @@ To accommodate up to five columns, you also need to add one of the following cla
                         </div>
                     </li>
                 </ul>
-
             </div>
-
         </div>
     </div>
 </nav>
 ```
 
-***
+---
 
 ## Sticky Navbar
 
@@ -1849,18 +1819,18 @@ The navbar itself has a modifier class `gls-navbar-sticky` that ensures an optim
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
 
     </div>
+
 </div>
 </div>
 
 ```html
-<div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: + *; offset: 80">
-
+<div
+    gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: + *; offset: 80"
+>
     <nav class="gls-navbar-container">
         <div class="gls-container">
             <div gls-navbar>
-
                 <div class="gls-navbar-left">
-
                     <ul class="gls-navbar-nav">
                         <li class="gls-active"><a href="#">Active</a></li>
                         <li>
@@ -1875,24 +1845,37 @@ The navbar itself has a modifier class `gls-navbar-sticky` that ensures an optim
                         </li>
                         <li><a href="#">Item</a></li>
                     </ul>
-
                 </div>
-
             </div>
         </div>
     </nav>
-
 </div>
 
-<div class="gls-section gls-section-secondary gls-background-cover" style="background-image: url('images/dark.jpg');">
+<div
+    class="gls-section gls-section-secondary gls-background-cover"
+    style="background-image: url('images/dark.jpg');"
+>
     <div class="gls-container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum.
+        </p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+        <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris.
+        </p>
 
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum.
+        </p>
     </div>
 </div>
 ```
@@ -1979,19 +1962,21 @@ Instead of using a Dropdown, you can also show the subnavigation in a Dropbar, w
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
 
     </div>
+
 </div>
 
 </div>
 
 ```html
-<div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: + *; offset: 80">
-
+<div
+    gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: + *; offset: 80"
+>
     <nav class="gls-navbar-container">
         <div class="gls-container">
-            <div gls-navbar="dropbar: true; dropbar-anchor: !.gls-navbar-container; target-y: !.gls-navbar-container">
-
+            <div
+                gls-navbar="dropbar: true; dropbar-anchor: !.gls-navbar-container; target-y: !.gls-navbar-container"
+            >
                 <div class="gls-navbar-left">
-
                     <ul class="gls-navbar-nav">
                         <li class="gls-active"><a href="#">Active</a></li>
                         <li>
@@ -2038,30 +2023,42 @@ Instead of using a Dropdown, you can also show the subnavigation in a Dropbar, w
                             </div>
                         </li>
                     </ul>
-
                 </div>
-
             </div>
         </div>
     </nav>
-
 </div>
 
-<div class="gls-section gls-section-secondary gls-background-cover" style="background-image: url('images/dark.jpg');">
+<div
+    class="gls-section gls-section-secondary gls-background-cover"
+    style="background-image: url('images/dark.jpg');"
+>
     <div class="gls-container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum.
+        </p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+        <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris.
+        </p>
 
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum.
+        </p>
     </div>
 </div>
-
 ```
 
-***
+---
 
 ### Transparent sticky navbar
 
@@ -2070,7 +2067,9 @@ When a [transparent navbar](https://getuikit.com/docs/navbar#transparent-modifie
 By default, the immediate toggling of classes does not look ideal. Instead, set `start: 200` to make the navbar disappear and then re-appear when the user has scrolled 200px past the navbar. In that case, the navbar can also slide in with an animation. Just set `animation: gls-animation-slide-top`.
 
 ```html
-<div gls-sticky="start: 200; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent gls-light">
+<div
+    gls-sticky="start: 200; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent gls-light"
+>
     <nav class="gls-navbar-container gls-light" gls-navbar>…</nav>
 </div>
 ```
@@ -2120,14 +2119,16 @@ By default, the immediate toggling of classes does not look ideal. Instead, set 
 </div>
 
 ```html
-<div class="gls-section-secondary gls-background-cover gls-preserve-color" style="background-image: url('images/dark.jpg');">
-
-    <div gls-sticky="start: 170; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent gls-light; end: ! *; offset: 80">
-
+<div
+    class="gls-section-secondary gls-background-cover gls-preserve-color"
+    style="background-image: url('images/dark.jpg');"
+>
+    <div
+        gls-sticky="start: 170; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent gls-light; end: ! *; offset: 80"
+    >
         <nav class="gls-navbar-container gls-light">
             <div class="gls-container gls-container-expand">
                 <div gls-navbar>
-
                     <ul class="gls-navbar-nav">
                         <li class="gls-active"><a href="#">Active</a></li>
                         <li>
@@ -2142,7 +2143,6 @@ By default, the immediate toggling of classes does not look ideal. Instead, set 
                         </li>
                         <li><a href="#">Item</a></li>
                     </ul>
-
                 </div>
             </div>
         </nav>
@@ -2150,16 +2150,28 @@ By default, the immediate toggling of classes does not look ideal. Instead, set 
 
     <div class="gls-section gls-light">
         <div class="gls-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris.
+            </p>
 
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
         </div>
     </div>
-
 </div>
 ```
 
@@ -2177,8 +2189,16 @@ Use the [Inverse component](https://getuikit.com/docs/inverse) to color the tran
 For example, set `dropbar-transparent-mode: remove` if the navbar is only transparent in the hero section, but not when sticky.
 
 ```html
-<div gls-sticky="start: 200; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent">
-    <nav class="gls-navbar-container" gls-inverse="sel-active: .gls-navbar-transparent" gls-navbar="dropbar: true; dropbar-transparent-mode: remove">…</nav>
+<div
+    gls-sticky="start: 200; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent"
+>
+    <nav
+        class="gls-navbar-container"
+        gls-inverse="sel-active: .gls-navbar-transparent"
+        gls-navbar="dropbar: true; dropbar-transparent-mode: remove"
+    >
+        …
+    </nav>
 </div>
 ```
 
@@ -2264,16 +2284,19 @@ For example, set `dropbar-transparent-mode: remove` if the navbar is only transp
 </div>
 
 ```html
-<div class="gls-section-secondary gls-background-cover gls-preserve-color gls-inverse-light" style="background-image: url('images/dark.jpg');">
-
-    <div gls-sticky="start: 170; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent; end: ! *; offset: 80">
-
+<div
+    class="gls-section-secondary gls-background-cover gls-preserve-color gls-inverse-light"
+    style="background-image: url('images/dark.jpg');"
+>
+    <div
+        gls-sticky="start: 170; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent; end: ! *; offset: 80"
+    >
         <nav class="gls-navbar-container" gls-inverse="sel-active: .gls-navbar-transparent">
             <div class="gls-container">
-                <div gls-navbar="dropbar: true; dropbar-transparent-mode: remove; dropbar-anchor: !.gls-navbar-container; target-y: !.gls-navbar-container">
-
+                <div
+                    gls-navbar="dropbar: true; dropbar-transparent-mode: remove; dropbar-anchor: !.gls-navbar-container; target-y: !.gls-navbar-container"
+                >
                     <div class="gls-navbar-left">
-
                         <ul class="gls-navbar-nav">
                             <li class="gls-active"><a href="#">Active</a></li>
                             <li>
@@ -2320,27 +2343,36 @@ For example, set `dropbar-transparent-mode: remove` if the navbar is only transp
                                 </div>
                             </li>
                         </ul>
-
                     </div>
-
                 </div>
             </div>
         </nav>
-
     </div>
 
     <div class="gls-section gls-light">
         <div class="gls-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris.
+            </p>
 
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
         </div>
     </div>
-
 </div>
 ```
 
@@ -2349,7 +2381,13 @@ Alternatively, if the navbar is always transparent even when sticky, set `dropba
 ```html
 <div class="gls-inverse-light">
     <div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky">
-        <nav class="gls-navbar-container gls-navbar-transparent gls-position-relative gls-position-z-index-high" gls-inverse="sel-active: .gls-navbar-transparent" gls-navbar="dropbar: true; dropbar-transparent-mode: behind; dropbar-anchor: !.gls-navbar-container; target-y: !.gls-navbar-container">…</nav>
+        <nav
+            class="gls-navbar-container gls-navbar-transparent gls-position-relative gls-position-z-index-high"
+            gls-inverse="sel-active: .gls-navbar-transparent"
+            gls-navbar="dropbar: true; dropbar-transparent-mode: behind; dropbar-anchor: !.gls-navbar-container; target-y: !.gls-navbar-container"
+        >
+            …
+        </nav>
     </div>
 </div>
 ```
@@ -2436,16 +2474,22 @@ Alternatively, if the navbar is always transparent even when sticky, set `dropba
 </div>
 
 ```html
-<div class="gls-section-secondary gls-background-cover gls-preserve-color gls-inverse-light" style="background-image: url('images/dark.jpg');">
-
-    <div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: ! *; offset: 80">
-
-        <nav class="gls-navbar-container gls-navbar-transparent gls-position-relative gls-position-z-index-high" gls-inverse="sel-active: .gls-navbar-transparent">
+<div
+    class="gls-section-secondary gls-background-cover gls-preserve-color gls-inverse-light"
+    style="background-image: url('images/dark.jpg');"
+>
+    <div
+        gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: ! *; offset: 80"
+    >
+        <nav
+            class="gls-navbar-container gls-navbar-transparent gls-position-relative gls-position-z-index-high"
+            gls-inverse="sel-active: .gls-navbar-transparent"
+        >
             <div class="gls-container">
-                <div gls-navbar="dropbar: true; dropbar-transparent-mode: behind; dropbar-anchor: !.gls-navbar-container; target-y: !.gls-navbar-container">
-
+                <div
+                    gls-navbar="dropbar: true; dropbar-transparent-mode: behind; dropbar-anchor: !.gls-navbar-container; target-y: !.gls-navbar-container"
+                >
                     <div class="gls-navbar-left">
-
                         <ul class="gls-navbar-nav">
                             <li class="gls-active"><a href="#">Active</a></li>
                             <li>
@@ -2492,27 +2536,36 @@ Alternatively, if the navbar is always transparent even when sticky, set `dropba
                                 </div>
                             </li>
                         </ul>
-
                     </div>
-
                 </div>
             </div>
         </nav>
-
     </div>
 
     <div class="gls-section gls-light">
         <div class="gls-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris.
+            </p>
 
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
         </div>
     </div>
-
 </div>
 ```
 
@@ -2521,8 +2574,16 @@ When using a sticky transparent navbar, it's quite common to blend it with the p
 Since only white color blends well with the page background, make sure the navbar has light colors or use the `.gls-light` class. Do not use the `gls-inverse` attribute to color the navbar automatically.
 
 ```html
-<div class="gls-blend-difference gls-position-z-index-high" gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky">
-    <nav class="gls-navbar-container gls-navbar-transparent gls-light" gls-navbar="container: !.gls-section-default; dropbar: true; dropbar-transparent-mode: behind; close-on-scroll: true; dropbar-anchor: !.gls-blend-difference">…</nav>
+<div
+    class="gls-blend-difference gls-position-z-index-high"
+    gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky"
+>
+    <nav
+        class="gls-navbar-container gls-navbar-transparent gls-light"
+        gls-navbar="container: !.gls-section-default; dropbar: true; dropbar-transparent-mode: behind; close-on-scroll: true; dropbar-anchor: !.gls-blend-difference"
+    >
+        …
+    </nav>
 </div>
 ```
 
@@ -2612,18 +2673,21 @@ Since only white color blends well with the page background, make sure the navba
 </div>
 
 ```html
-<div class="gls-section-default gls-background-cover gls-preserve-color" style="background-image: url('images/light.jpg');">
-
+<div
+    class="gls-section-default gls-background-cover gls-preserve-color"
+    style="background-image: url('images/light.jpg');"
+>
     <div id="test">
-
-        <div class="gls-blend-difference gls-position-z-index-high" gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: !.gls-section-default; offset: 80">
-
+        <div
+            class="gls-blend-difference gls-position-z-index-high"
+            gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: !.gls-section-default; offset: 80"
+        >
             <nav class="gls-navbar-container gls-navbar-transparent gls-light">
                 <div class="gls-container">
-                    <div gls-navbar="container: #test; dropbar: true; dropbar-transparent-mode: behind; close-on-scroll: true; dropbar-anchor: !.gls-blend-difference; target-y: #test .gls-navbar-container">
-
+                    <div
+                        gls-navbar="container: #test; dropbar: true; dropbar-transparent-mode: behind; close-on-scroll: true; dropbar-anchor: !.gls-blend-difference; target-y: #test .gls-navbar-container"
+                    >
                         <div class="gls-navbar-left">
-
                             <ul class="gls-navbar-nav">
                                 <li class="gls-active"><a href="#">Active</a></li>
                                 <li>
@@ -2646,7 +2710,9 @@ Since only white color blends well with the page background, make sure the navba
                                         <div class="gls-drop-grid gls-child-width-1-2" gls-grid>
                                             <div>
                                                 <ul class="gls-nav gls-navbar-dropdown-nav">
-                                                    <li class="gls-active"><a href="#">Active</a></li>
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
                                                     <li><a href="#">Item</a></li>
                                                     <li class="gls-nav-header">Header</li>
                                                     <li><a href="#">Item</a></li>
@@ -2657,7 +2723,9 @@ Since only white color blends well with the page background, make sure the navba
                                             </div>
                                             <div>
                                                 <ul class="gls-nav gls-navbar-dropdown-nav">
-                                                    <li class="gls-active"><a href="#">Active</a></li>
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
                                                     <li><a href="#">Item</a></li>
                                                     <li class="gls-nav-header">Header</li>
                                                     <li><a href="#">Item</a></li>
@@ -2670,29 +2738,37 @@ Since only white color blends well with the page background, make sure the navba
                                     </div>
                                 </li>
                             </ul>
-
                         </div>
-
                     </div>
                 </div>
             </nav>
-
         </div>
-
     </div>
 
     <div class="gls-section">
         <div class="gls-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris.
+            </p>
 
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
         </div>
     </div>
-
 </div>
 ```
 
@@ -2702,10 +2778,15 @@ To color navbar parts separately, just add the `target: .gls-navbar-left, .gls-n
 
 ```html
 <div class="gls-position-relative">
-
     <div class="gls-position-top">
         <div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky">
-            <nav class="gls-navbar-container gls-navbar-transparent" gls-inverse="target: .gls-navbar-left, .gls-navbar-center, .gls-navbar-right" gls-navbar>…</nav>
+            <nav
+                class="gls-navbar-container gls-navbar-transparent"
+                gls-inverse="target: .gls-navbar-left, .gls-navbar-center, .gls-navbar-right"
+                gls-navbar
+            >
+                …
+            </nav>
         </div>
     </div>
 
@@ -2720,7 +2801,6 @@ To color navbar parts separately, just add the `target: .gls-navbar-left, .gls-n
             <div class="gls-tile gls-tile-secondary">…</div>
         </div>
     </div>
-
 </div>
 ```
 
@@ -2843,36 +2923,33 @@ To color navbar parts separately, just add the `target: .gls-navbar-left, .gls-n
 
 ```html
 <div class="gls-position-relative">
-
     <div class="gls-position-top">
-
-        <div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: !.gls-position-relative; offset: 80">
-            <nav class="gls-navbar-container gls-navbar-transparent" gls-inverse="target: .gls-navbar-left, .gls-navbar-center, .gls-navbar-right">
+        <div
+            gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: !.gls-position-relative; offset: 80"
+        >
+            <nav
+                class="gls-navbar-container gls-navbar-transparent"
+                gls-inverse="target: .gls-navbar-left, .gls-navbar-center, .gls-navbar-right"
+            >
                 <div class="gls-container">
                     <div gls-navbar>
                         <div class="gls-navbar-left">
-
                             <ul class="gls-navbar-nav">
                                 <li class="gls-active"><a href="#">Active</a></li>
                                 <li><a href="#">Item</a></li>
                             </ul>
-
                         </div>
                         <div class="gls-navbar-center">
-
                             <ul class="gls-navbar-nav">
                                 <li class="gls-active"><a href="">Active</a></li>
                                 <li><a href="#">Item</a></li>
                             </ul>
-
                         </div>
                         <div class="gls-navbar-right">
-
                             <ul class="gls-navbar-nav">
                                 <li class="gls-active"><a href="">Active</a></li>
                                 <li><a href="#">Item</a></li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -2882,113 +2959,103 @@ To color navbar parts separately, just add the `target: .gls-navbar-left, .gls-n
 
     <div class="gls-child-width-1-3@s gls-grid-collapse gls-grid-match" gls-grid>
         <div>
-
             <div class="gls-tile gls-tile-default">
-                <div gls-height-placeholder="!.gls-position-relative .gls-position-top" class="gls-margin-remove-adjacent"></div>
+                <div
+                    gls-height-placeholder="!.gls-position-relative .gls-position-top"
+                    class="gls-margin-remove-adjacent"
+                ></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-primary">
-                <div gls-height-placeholder="!.gls-position-relative .gls-position-top" class="gls-margin-remove-adjacent"></div>
+                <div
+                    gls-height-placeholder="!.gls-position-relative .gls-position-top"
+                    class="gls-margin-remove-adjacent"
+                ></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-secondary">
-                <div gls-height-placeholder="!.gls-position-relative .gls-position-top" class="gls-margin-remove-adjacent"></div>
+                <div
+                    gls-height-placeholder="!.gls-position-relative .gls-position-top"
+                    class="gls-margin-remove-adjacent"
+                ></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
     </div>
 
     <div class="gls-child-width-1-3@s gls-grid-collapse gls-grid-match" gls-grid>
         <div>
-
             <div class="gls-tile gls-tile-primary">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-muted">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-default">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
     </div>
 
     <div class="gls-child-width-1-3@s gls-grid-collapse gls-grid-match" gls-grid>
         <div>
-
             <div class="gls-tile gls-tile-default">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-secondary">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-muted">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
     </div>
-
 </div>
 ```
 
 For more detailed information on coloring the navbar depending on the page background, take a look at the [Inverse component](https://getuikit.com/docs/inverse).
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
-| Option                     | Value                 | Default             | Description                                                                                                  |
-| -------------------------- | --------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `align`                    | String                | `left`              | Dropdown alignment (`left`, `right`, `center`).                                                              |
-| `dropbar `                 | Boolean               | `false`             | Enable or disable dropbar behavior.                                                                          |
-| `dropbar-anchor`           | CSS selector          | `false`             | If set, dropbar will be inserted after the anchor element.                                                   |
-| `dropbar-transparent-mode` | Boolean, String       | `false`             | The dropbar transparent mode (`behind`, `remove`).                                                           |
-| `stretch`                  | Boolean, String       | `false`             | Stretch dropdown on both (true) or given axis (`x`, `y`).                                                    |
-| `mode`                     | String                | `click, hover`      | Comma-separated list of dropdown trigger behavior modes (`click`, `hover`).                                  |
-| `delay-show`               | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
-| `delay-hide`               | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
-| `boundary`                 | CSS selector          | `true`              | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
-| `target`                   | Boolean, CSS selector | `false`             | The element the dropdown is positioned to (`true` for window).                                               |
-| `target-x`                 | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to (`true` for window).                                      |
-| `target-y`                 | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
-| `offset`                   | Number                | `0`                 | The dropdown offset.                                                                                         |
+| Option                     | Value                 | Default              | Description                                                                                                  |
+| -------------------------- | --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `align`                    | String                | `left`               | Dropdown alignment (`left`, `right`, `center`).                                                              |
+| `dropbar `                 | Boolean               | `false`              | Enable or disable dropbar behavior.                                                                          |
+| `dropbar-anchor`           | CSS selector          | `false`              | If set, dropbar will be inserted after the anchor element.                                                   |
+| `dropbar-transparent-mode` | Boolean, String       | `false`              | The dropbar transparent mode (`behind`, `remove`).                                                           |
+| `stretch`                  | Boolean, String       | `false`              | Stretch dropdown on both (true) or given axis (`x`, `y`).                                                    |
+| `mode`                     | String                | `click, hover`       | Comma-separated list of dropdown trigger behavior modes (`click`, `hover`).                                  |
+| `delay-show`               | Number                | `0`                  | Delay time in hover mode before a dropdown is shown in ms.                                                   |
+| `delay-hide`               | Number                | `800`                | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
+| `boundary`                 | CSS selector          | `true`               | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
+| `target`                   | Boolean, CSS selector | `false`              | The element the dropdown is positioned to (`true` for window).                                               |
+| `target-x`                 | Boolean, CSS selector | `false`              | The element's X axis the dropdown is positioned to (`true` for window).                                      |
+| `target-y`                 | Boolean, CSS selector | `false`              | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
+| `offset`                   | Number                | `0`                  | The dropdown offset.                                                                                         |
 | `animation`                | String                | `gls-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                      |
-| `animate-out`              | Boolean               | `false`             | Use animation when closing the dropdown.                                                                     |
-| `bg-scroll`                | Boolean               | `true`              | Allow background scrolling while dropdown is opened.                                                         |
-| `close-on-scroll`          | Boolean               | `false`             | Close the dropdown on scrolling a parent scroll container.                                                   |
-| `duration`                 | Number                | `200`               | The animation duration.                                                                                      |
-| `container`                | Boolean               | `false`             | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
+| `animate-out`              | Boolean               | `false`              | Use animation when closing the dropdown.                                                                     |
+| `bg-scroll`                | Boolean               | `true`               | Allow background scrolling while dropdown is opened.                                                         |
+| `close-on-scroll`          | Boolean               | `false`              | Close the dropdown on scrolling a parent scroll container.                                                   |
+| `duration`                 | Number                | `200`                | The animation duration.                                                                                      |
+| `container`                | Boolean               | `false`              | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
 
-***
+---
 
 ## JavaScript
 
@@ -3013,14 +3080,14 @@ The following events will be triggered on elements with this component attached:
 | `hide`       | Fires after an item's hide animation has started.                                              |
 | `hidden`     | Fires after an item is hidden.                                                                 |
 
-***
+---
 
 ## Accessibility
 
 The Navbar component adheres to the [Disclosure Navigation Menu WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/examples/disclosure-navigation-hybrid/) and automatically sets the appropriate WAI-ARIA states and properties.
 
-- The *nav items* and *toggle items* have the `aria-expanded` state and the `aria-haspopup` property.
-- The *toggle items* also have the `aria-label` property.
+- The _nav items_ and _toggle items_ have the `aria-expanded` state and the `aria-haspopup` property.
+- The _toggle items_ also have the `aria-label` property.
 
 ### Keyboard interaction
 

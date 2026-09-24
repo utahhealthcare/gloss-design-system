@@ -14,7 +14,7 @@ To have an image cover its parent element, add the `.gls-cover-container` class 
 
 ```html
 <div class="gls-cover-container">
-    <img src="" alt="" gls-cover>
+    <img src="" alt="" gls-cover />
 </div>
 ```
 
@@ -28,11 +28,11 @@ To have an image cover its parent element, add the `.gls-cover-container` class 
 
 ```html
 <div class="gls-cover-container gls-height-medium">
-    <img src="images/dark.jpg" alt="" gls-cover>
+    <img src="images/dark.jpg" alt="" gls-cover />
 </div>
 ```
 
-***
+---
 
 ## Video
 
@@ -54,11 +54,18 @@ The Cover component inherits all properties from the [Video component](https://g
 
 ```html
 <div class="gls-cover-container gls-height-medium">
-    <video src="https://yootheme.com/media/videos/yootheme-pro.mp4" autoplay loop muted playsinline gls-cover></video>
+    <video
+        src="https://yootheme.com/media/videos/yootheme-pro.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        gls-cover
+    ></video>
 </div>
 ```
 
-***
+---
 
 ## Iframe
 
@@ -78,11 +85,17 @@ To apply the Cover component to an iframe, you need to add the `gls-cover` attri
 
 ```html
 <div class="gls-cover-container gls-height-medium">
-    <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?playsinline=1&amp;rel=0&amp;controls=0&amp;loop=1" width="1920" height="1080" allowfullscreen gls-cover></iframe>
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?playsinline=1&amp;rel=0&amp;controls=0&amp;loop=1"
+        width="1920"
+        height="1080"
+        allowfullscreen
+        gls-cover
+    ></iframe>
 </div>
 ```
 
-***
+---
 
 ## Responsive height
 
@@ -91,7 +104,7 @@ To add responsive behavior to your cover image, you need to create an invisible 
 ```html
 <div class="gls-cover-container">
     <canvas width="" height=""></canvas>
-    <img src="" alt="" gls-cover>
+    <img src="" alt="" gls-cover />
 </div>
 ```
 
@@ -105,11 +118,11 @@ To add responsive behavior to your cover image, you need to create an invisible 
 ```html
 <div class="gls-cover-container">
     <canvas width="400" height="200"></canvas>
-    <img src="images/dark.jpg" alt="" gls-cover>
+    <img src="images/dark.jpg" alt="" gls-cover />
 </div>
 ```
 
-***
+---
 
 ## Viewport height
 
@@ -117,23 +130,23 @@ Adding the `gls-height-viewport` attribute from the [Height component](https://g
 
 ```html
 <div class="gls-cover-container" gls-height-viewport>
-    <img src="" alt="" gls-cover>
+    <img src="" alt="" gls-cover />
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option     | Value   | Default | Description                           |
-|------------|---------|---------|---------------------------------------|
+| ---------- | ------- | ------- | ------------------------------------- |
 | `automute` | Boolean | true    | Tries to automute the iframe's video. |
 | `width`    | Number  |         | The element's width.                  |
 | `height`   | Number  |         | The element's height.                 |
 
-***
+---
 
 ## JavaScript
 

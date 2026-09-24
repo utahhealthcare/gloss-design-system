@@ -14,8 +14,8 @@ To apply this component, add one of the `.gls-position-*` classes to a block ele
 
 **Note** This is often used to position an overlay from the [Overlay component](https://getuikit.com/docs/overlay). Use the `.gls-light` or `.gls-dark` class from the [Inverse component](https://getuikit.com/docs/inverse) to apply a light or dark color for better visibility.
 
-| Class                 | Description                          |
-| --------------------- | ------------------------------------ |
+| Class                  | Description                          |
+| ---------------------- | ------------------------------------ |
 | `.gls-position-top`    | Positions the element at the top.    |
 | `.gls-position-left`   | Positions the element at the left.   |
 | `.gls-position-right`  | Positions the element at the right.  |
@@ -23,11 +23,9 @@ To apply this component, add one of the `.gls-position-*` classes to a block ele
 
 ```html
 <div class="gls-inline">
-
     <!-- Place any content, like an image, here -->
 
     <div class="gls-position-center"></div>
-
 </div>
 ```
 
@@ -46,25 +44,27 @@ To apply this component, add one of the `.gls-position-*` classes to a block ele
 
 ```html
 <div class="gls-inline gls-margin">
-
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
     <div class="gls-position-top gls-overlay gls-overlay-default gls-text-center">Top</div>
     <div class="gls-position-bottom gls-overlay gls-overlay-default gls-text-center">Bottom</div>
-    <div class="gls-position-left gls-overlay gls-overlay-default gls-flex gls-flex-middle">Left</div>
-    <div class="gls-position-right gls-overlay gls-overlay-default gls-flex gls-flex-middle">Right</div>
-
+    <div class="gls-position-left gls-overlay gls-overlay-default gls-flex gls-flex-middle">
+        Left
+    </div>
+    <div class="gls-position-right gls-overlay gls-overlay-default gls-flex gls-flex-middle">
+        Right
+    </div>
 </div>
 ```
 
-***
+---
 
 ### X and Y directions
 
 You can also apply more specific positions that won't spread over one side of the parent container by adding one of the following classes.
 
-| Class                        | Description                                              |
-| ---------------------------- | -------------------------------------------------------- |
+| Class                         | Description                                              |
+| ----------------------------- | -------------------------------------------------------- |
 | `.gls-position-top-left`      | Positions the element at the top left.                   |
 | `.gls-position-top-center`    | Positions the element at the top center.                 |
 | `.gls-position-top-right`     | Positions the element at the top right.                  |
@@ -74,7 +74,6 @@ You can also apply more specific positions that won't spread over one side of th
 | `.gls-position-bottom-left`   | Positions the element at the bottom left.                |
 | `.gls-position-bottom-center` | Positions the element at the bottom center.              |
 | `.gls-position-bottom-right`  | Positions the element at the bottom right.               |
-
 
 ```html
 <div class="gls-position-top-right"></div>
@@ -100,8 +99,7 @@ You can also apply more specific positions that won't spread over one side of th
 
 ```html
 <div class="gls-inline">
-
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
     <div class="gls-position-top-left gls-overlay gls-overlay-default">Top Left</div>
     <div class="gls-position-top-center gls-overlay gls-overlay-default">Top Center</div>
@@ -112,7 +110,6 @@ You can also apply more specific positions that won't spread over one side of th
     <div class="gls-position-bottom-left gls-overlay gls-overlay-default">Bottom Left</div>
     <div class="gls-position-bottom-center gls-overlay gls-overlay-default">Bottom Center</div>
     <div class="gls-position-bottom-right gls-overlay gls-overlay-default">Bottom Right</div>
-
 </div>
 ```
 
@@ -120,8 +117,8 @@ You can also apply more specific positions that won't spread over one side of th
 
 You can also apply more specific positions that won't spread over one side of the parent container by adding one of the following classes.
 
-| Class                            | Description                                             |
-| -------------------------------- | ------------------------------------------------------- |
+| Class                             | Description                                             |
+| --------------------------------- | ------------------------------------------------------- |
 | `.gls-position-center-horizontal` | Positions the element at the center from top to bottom. |
 | `.gls-position-center-vertical`   | Positions the element at the center from left to right. |
 
@@ -142,21 +139,18 @@ You can also apply more specific positions that won't spread over one side of th
 
 ```html
 <div class="gls-inline">
-
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
     <div class="gls-position-center-horizontal gls-overlay gls-overlay-default">Horizontal</div>
     <div class="gls-position-center-vertical gls-overlay gls-overlay-default">Vertical</div>
-
 </div>
 ```
 
-***
+---
 
 ### Cover
 
 If you want a position element to cover its container, just add the `.gls-position-cover` class.
-
 
 ```html
 <div class="gls-position-cover"></div>
@@ -174,22 +168,24 @@ If you want a position element to cover its container, just add the `.gls-positi
 
 ```html
 <div class="gls-inline">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-cover gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle">Cover</div>
-
+    <div
+        class="gls-position-cover gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle"
+    >
+        Cover
+    </div>
 </div>
 ```
 
-***
+---
 
 ### Outside
 
 There are two classes to center elements outside on the left and right of the parent container. This is useful to position the [Slidenav component](https://getuikit.com/docs/slidenav) outside of a [Slideshow](https://getuikit.com/docs/slideshow) or [Slider](https://getuikit.com/docs/slider) component.
 
-| Class                           | Description                                                     |
-| ------------------------------- | --------------------------------------------------------------- |
+| Class                            | Description                                                     |
+| -------------------------------- | --------------------------------------------------------------- |
 | `.gls-position-center-left-out`  | Positions the element vertically centered outside on the left.  |
 | `.gls-position-center-right-out` | Positions the element vertically centered outside on the right. |
 
@@ -212,16 +208,18 @@ There are two classes to center elements outside on the left and right of the pa
 
 ```html
 <div class="gls-inline">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-center-left-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
-    <div class="gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
-
+    <div class="gls-position-center-left-out gls-overlay gls-overlay-primary gls-visible@s">
+        Out
+    </div>
+    <div class="gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s">
+        Out
+    </div>
 </div>
 ```
 
-***
+---
 
 ## Small modifier
 
@@ -276,58 +274,95 @@ To apply a small margin to positioned elements, add the `.gls-position-small` cl
         <div class="gls-position-small gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-inline gls-margin">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-small gls-position-top-left gls-overlay gls-overlay-default">Top Left</div>
-    <div class="gls-position-small gls-position-top-center gls-overlay gls-overlay-default">Top Center</div>
-    <div class="gls-position-small gls-position-top-right gls-overlay gls-overlay-default">Top Right</div>
-    <div class="gls-position-small gls-position-center-left gls-overlay gls-overlay-default">Center Left</div>
+    <div class="gls-position-small gls-position-top-left gls-overlay gls-overlay-default">
+        Top Left
+    </div>
+    <div class="gls-position-small gls-position-top-center gls-overlay gls-overlay-default">
+        Top Center
+    </div>
+    <div class="gls-position-small gls-position-top-right gls-overlay gls-overlay-default">
+        Top Right
+    </div>
+    <div class="gls-position-small gls-position-center-left gls-overlay gls-overlay-default">
+        Center Left
+    </div>
     <div class="gls-position-small gls-position-center gls-overlay gls-overlay-default">Center</div>
-    <div class="gls-position-small gls-position-center-right gls-overlay gls-overlay-default">Center Right</div>
-    <div class="gls-position-small gls-position-bottom-left gls-overlay gls-overlay-default">Bottom Left</div>
-    <div class="gls-position-small gls-position-bottom-center gls-overlay gls-overlay-default">Bottom Center</div>
-    <div class="gls-position-small gls-position-bottom-right gls-overlay gls-overlay-default">Bottom Right</div>
-
+    <div class="gls-position-small gls-position-center-right gls-overlay gls-overlay-default">
+        Center Right
+    </div>
+    <div class="gls-position-small gls-position-bottom-left gls-overlay gls-overlay-default">
+        Bottom Left
+    </div>
+    <div class="gls-position-small gls-position-bottom-center gls-overlay gls-overlay-default">
+        Bottom Center
+    </div>
+    <div class="gls-position-small gls-position-bottom-right gls-overlay gls-overlay-default">
+        Bottom Right
+    </div>
 </div>
 
 <div class="gls-inline gls-margin">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-small gls-position-top gls-overlay gls-overlay-default gls-text-center">Top</div>
-    <div class="gls-position-small gls-position-bottom gls-overlay gls-overlay-default gls-text-center">Bottom</div>
-    <div class="gls-position-small gls-position-left gls-overlay gls-overlay-default gls-flex gls-flex-middle">Left</div>
-    <div class="gls-position-small gls-position-right gls-overlay gls-overlay-default gls-flex gls-flex-middle">Right</div>
-
+    <div
+        class="gls-position-small gls-position-top gls-overlay gls-overlay-default gls-text-center"
+    >
+        Top
+    </div>
+    <div
+        class="gls-position-small gls-position-bottom gls-overlay gls-overlay-default gls-text-center"
+    >
+        Bottom
+    </div>
+    <div
+        class="gls-position-small gls-position-left gls-overlay gls-overlay-default gls-flex gls-flex-middle"
+    >
+        Left
+    </div>
+    <div
+        class="gls-position-small gls-position-right gls-overlay gls-overlay-default gls-flex gls-flex-middle"
+    >
+        Right
+    </div>
 </div>
 
 <div class="gls-inline gls-margin">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-small gls-position-cover gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle">Cover</div>
-
+    <div
+        class="gls-position-small gls-position-cover gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle"
+    >
+        Cover
+    </div>
 </div>
 
 <div class="gls-margin gls-text-center">
     <div class="gls-inline-block gls-width-large">
+        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-        <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-        <div class="gls-position-small gls-position-center-left-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
-        <div class="gls-position-small gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
-
+        <div
+            class="gls-position-small gls-position-center-left-out gls-overlay gls-overlay-primary gls-visible@s"
+        >
+            Out
+        </div>
+        <div
+            class="gls-position-small gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s"
+        >
+            Out
+        </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Medium modifier
 
@@ -382,58 +417,97 @@ To apply a medium margin to positioned elements, add the `.gls-position-medium` 
         <div class="gls-position-medium gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-inline gls-margin">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-medium gls-position-top-left gls-overlay gls-overlay-default">Top Left</div>
-    <div class="gls-position-medium gls-position-top-center gls-overlay gls-overlay-default">Top Center</div>
-    <div class="gls-position-medium gls-position-top-right gls-overlay gls-overlay-default">Top Right</div>
-    <div class="gls-position-medium gls-position-center-left gls-overlay gls-overlay-default">Center Left</div>
-    <div class="gls-position-medium gls-position-center gls-overlay gls-overlay-default">Center</div>
-    <div class="gls-position-medium gls-position-center-right gls-overlay gls-overlay-default">Center Right</div>
-    <div class="gls-position-medium gls-position-bottom-left gls-overlay gls-overlay-default">Bottom Left</div>
-    <div class="gls-position-medium gls-position-bottom-center gls-overlay gls-overlay-default">Bottom Center</div>
-    <div class="gls-position-medium gls-position-bottom-right gls-overlay gls-overlay-default">Bottom Right</div>
-
+    <div class="gls-position-medium gls-position-top-left gls-overlay gls-overlay-default">
+        Top Left
+    </div>
+    <div class="gls-position-medium gls-position-top-center gls-overlay gls-overlay-default">
+        Top Center
+    </div>
+    <div class="gls-position-medium gls-position-top-right gls-overlay gls-overlay-default">
+        Top Right
+    </div>
+    <div class="gls-position-medium gls-position-center-left gls-overlay gls-overlay-default">
+        Center Left
+    </div>
+    <div class="gls-position-medium gls-position-center gls-overlay gls-overlay-default">
+        Center
+    </div>
+    <div class="gls-position-medium gls-position-center-right gls-overlay gls-overlay-default">
+        Center Right
+    </div>
+    <div class="gls-position-medium gls-position-bottom-left gls-overlay gls-overlay-default">
+        Bottom Left
+    </div>
+    <div class="gls-position-medium gls-position-bottom-center gls-overlay gls-overlay-default">
+        Bottom Center
+    </div>
+    <div class="gls-position-medium gls-position-bottom-right gls-overlay gls-overlay-default">
+        Bottom Right
+    </div>
 </div>
 
 <div class="gls-inline gls-margin">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-medium gls-position-top gls-overlay gls-overlay-default gls-text-center">Top</div>
-    <div class="gls-position-medium gls-position-bottom gls-overlay gls-overlay-default gls-text-center">Bottom</div>
-    <div class="gls-position-medium gls-position-left gls-overlay gls-overlay-default gls-flex gls-flex-middle">Left</div>
-    <div class="gls-position-medium gls-position-right gls-overlay gls-overlay-default gls-flex gls-flex-middle">Right</div>
-
+    <div
+        class="gls-position-medium gls-position-top gls-overlay gls-overlay-default gls-text-center"
+    >
+        Top
+    </div>
+    <div
+        class="gls-position-medium gls-position-bottom gls-overlay gls-overlay-default gls-text-center"
+    >
+        Bottom
+    </div>
+    <div
+        class="gls-position-medium gls-position-left gls-overlay gls-overlay-default gls-flex gls-flex-middle"
+    >
+        Left
+    </div>
+    <div
+        class="gls-position-medium gls-position-right gls-overlay gls-overlay-default gls-flex gls-flex-middle"
+    >
+        Right
+    </div>
 </div>
 
 <div class="gls-inline gls-margin">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-medium gls-position-cover gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle">Cover</div>
-
+    <div
+        class="gls-position-medium gls-position-cover gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle"
+    >
+        Cover
+    </div>
 </div>
 
 <div class="gls-margin gls-text-center">
     <div class="gls-inline-block gls-width-large">
+        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-        <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-        <div class="gls-position-medium gls-position-center-left-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
-        <div class="gls-position-medium gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
-
+        <div
+            class="gls-position-medium gls-position-center-left-out gls-overlay gls-overlay-primary gls-visible@s"
+        >
+            Out
+        </div>
+        <div
+            class="gls-position-medium gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s"
+        >
+            Out
+        </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Large modifier
 
@@ -488,65 +562,102 @@ To apply a large margin to positioned elements, add the `.gls-position-large` cl
         <div class="gls-position-large gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-inline gls-margin">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-large gls-position-top-left gls-overlay gls-overlay-default">Top Left</div>
-    <div class="gls-position-large gls-position-top-center gls-overlay gls-overlay-default">Top Center</div>
-    <div class="gls-position-large gls-position-top-right gls-overlay gls-overlay-default">Top Right</div>
-    <div class="gls-position-large gls-position-center-left gls-overlay gls-overlay-default">Center Left</div>
+    <div class="gls-position-large gls-position-top-left gls-overlay gls-overlay-default">
+        Top Left
+    </div>
+    <div class="gls-position-large gls-position-top-center gls-overlay gls-overlay-default">
+        Top Center
+    </div>
+    <div class="gls-position-large gls-position-top-right gls-overlay gls-overlay-default">
+        Top Right
+    </div>
+    <div class="gls-position-large gls-position-center-left gls-overlay gls-overlay-default">
+        Center Left
+    </div>
     <div class="gls-position-large gls-position-center gls-overlay gls-overlay-default">Center</div>
-    <div class="gls-position-large gls-position-center-right gls-overlay gls-overlay-default">Center Right</div>
-    <div class="gls-position-large gls-position-bottom-left gls-overlay gls-overlay-default">Bottom Left</div>
-    <div class="gls-position-large gls-position-bottom-center gls-overlay gls-overlay-default">Bottom Center</div>
-    <div class="gls-position-large gls-position-bottom-right gls-overlay gls-overlay-default">Bottom Right</div>
-
+    <div class="gls-position-large gls-position-center-right gls-overlay gls-overlay-default">
+        Center Right
+    </div>
+    <div class="gls-position-large gls-position-bottom-left gls-overlay gls-overlay-default">
+        Bottom Left
+    </div>
+    <div class="gls-position-large gls-position-bottom-center gls-overlay gls-overlay-default">
+        Bottom Center
+    </div>
+    <div class="gls-position-large gls-position-bottom-right gls-overlay gls-overlay-default">
+        Bottom Right
+    </div>
 </div>
 
 <div class="gls-inline gls-margin">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-large gls-position-top gls-overlay gls-overlay-default gls-text-center">Top</div>
-    <div class="gls-position-large gls-position-bottom gls-overlay gls-overlay-default gls-text-center">Bottom</div>
-    <div class="gls-position-large gls-position-left gls-overlay gls-overlay-default gls-flex gls-flex-middle">Left</div>
-    <div class="gls-position-large gls-position-right gls-overlay gls-overlay-default gls-flex gls-flex-middle">Right</div>
-
+    <div
+        class="gls-position-large gls-position-top gls-overlay gls-overlay-default gls-text-center"
+    >
+        Top
+    </div>
+    <div
+        class="gls-position-large gls-position-bottom gls-overlay gls-overlay-default gls-text-center"
+    >
+        Bottom
+    </div>
+    <div
+        class="gls-position-large gls-position-left gls-overlay gls-overlay-default gls-flex gls-flex-middle"
+    >
+        Left
+    </div>
+    <div
+        class="gls-position-large gls-position-right gls-overlay gls-overlay-default gls-flex gls-flex-middle"
+    >
+        Right
+    </div>
 </div>
 
 <div class="gls-inline gls-margin">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-    <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-    <div class="gls-position-large gls-position-cover gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle">Cover</div>
-
+    <div
+        class="gls-position-large gls-position-cover gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle"
+    >
+        Cover
+    </div>
 </div>
 
 <div class="gls-margin gls-text-center">
     <div class="gls-inline-block gls-width-large">
+        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
 
-        <img src="images/photo.jpg" width="1800" height="1200" alt="">
-
-        <div class="gls-position-large gls-position-center-left-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
-        <div class="gls-position-large gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s">Out</div>
-
+        <div
+            class="gls-position-large gls-position-center-left-out gls-overlay gls-overlay-primary gls-visible@s"
+        >
+            Out
+        </div>
+        <div
+            class="gls-position-large gls-position-center-right-out gls-overlay gls-overlay-primary gls-visible@s"
+        >
+            Out
+        </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Utility classes
 
 This component features a number of general position utility classes:
 
-| Class                           | Description                                                                          |
-| ------------------------------- | ------------------------------------------------------------------------------------ |
+| Class                            | Description                                                                          |
+| -------------------------------- | ------------------------------------------------------------------------------------ |
 | `.gls-position-relative`         | Add this class to apply relative positioning.                                        |
 | `.gls-position-absolute`         | Add this class to apply absolute positioning.                                        |
 | `.gls-position-fixed`            | Add this class to apply fixed positioning.                                           |

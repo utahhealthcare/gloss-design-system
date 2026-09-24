@@ -67,7 +67,9 @@ To apply this component, add the `.gls-table` class to a `<table>` element.
 
 ```html
 <table class="gls-table">
-    <caption>Table Caption</caption>
+    <caption>
+        Table Caption
+    </caption>
     <thead>
         <tr>
             <th>Table Heading</th>
@@ -97,14 +99,16 @@ To apply this component, add the `.gls-table` class to a `<table>` element.
 </table>
 ```
 
-***
+---
 
 ## Divider modifier
 
 Add the `.gls-table-divider` class to display a divider between table rows.
 
 ```html
-<table class="gls-table gls-table-divider">…</table>
+<table class="gls-table gls-table-divider">
+    …
+</table>
 ```
 
 <div class="gls-docs-example">
@@ -165,14 +169,16 @@ Add the `.gls-table-divider` class to display a divider between table rows.
 </table>
 ```
 
-***
+---
 
 ## Striped modifier
 
 Add zebra-striping to a table by adding the `.gls-table-striped` class.
 
 ```html
-<table class="gls-table gls-table-striped">…</table>
+<table class="gls-table gls-table-striped">
+    …
+</table>
 ```
 
 <div class="gls-docs-example">
@@ -233,14 +239,16 @@ Add zebra-striping to a table by adding the `.gls-table-striped` class.
 </table>
 ```
 
-***
+---
 
 ## Hover modifier
 
 Add the `.gls-table-hover` class to display a hover state on table rows.
 
 ```html
-<table class="gls-table gls-table-hover">…</table>
+<table class="gls-table gls-table-hover">
+    …
+</table>
 ```
 
 <div class="gls-docs-example">
@@ -301,14 +309,16 @@ Add the `.gls-table-hover` class to display a hover state on table rows.
 </table>
 ```
 
-***
+---
 
 ## Size modifiers
 
 Add the `.gls-table-small` or `.gls-table-large` class to a table to make it smaller or larger.
 
 ```html
-<table class="gls-table gls-table-small">…</table>
+<table class="gls-table gls-table-small">
+    …
+</table>
 ```
 
 <div class="gls-docs-example">
@@ -369,14 +379,16 @@ Add the `.gls-table-small` or `.gls-table-large` class to a table to make it sma
 </table>
 ```
 
-***
+---
 
 ## Justify modifier
 
 To remove the outer padding of the first and last columns so that they are flush with the table, add the `.gls-table-justify` class.
 
 ```html
-<table class="gls-table gls-table-justify">…</table>
+<table class="gls-table gls-table-justify">
+    …
+</table>
 ```
 
 <div class="gls-docs-example">
@@ -415,27 +427,34 @@ To remove the outer padding of the first and last columns so that they are flush
     <tbody>
         <tr>
             <td>Table Data</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </td>
             <td><button class="gls-button gls-button-default" type="button">Button</button></td>
         </tr>
         <tr>
             <td>Table Data</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </td>
             <td><button class="gls-button gls-button-default" type="button">Button</button></td>
         </tr>
     </tbody>
 </table>
 ```
 
-***
-
+---
 
 ## Alignment modifier
 
 To vertically center table content, just add the `.gls-table-middle` class. You can also apply the class to `<tr>` or `<td>` elements for a more specific selection.
 
 ```html
-<table class="gls-table gls-table-middle">…</table>
+<table class="gls-table gls-table-middle">
+    …
+</table>
 ```
 
 <div class="gls-docs-example">
@@ -474,27 +493,35 @@ To vertically center table content, just add the `.gls-table-middle` class. You 
     <tbody>
         <tr>
             <td>Table Data</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </td>
             <td><button class="gls-button gls-button-default" type="button">Button</button></td>
         </tr>
         <tr>
             <td>Table Data</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </td>
             <td><button class="gls-button gls-button-default" type="button">Button</button></td>
         </tr>
     </tbody>
 </table>
 ```
 
-***
+---
 
 ## Responsive table
 
-If your table happens to be wider than its container element or would eventually get too big on a specific viewport width, just  wrap it inside a `<div>` element and add the `.gls-overflow-auto` class from the [Utility component](https://getuikit.com/docs/utility#overflow). This creates a container that provides a horizontal scrollbar whenever the elements inside it are wider than the container itself.
+If your table happens to be wider than its container element or would eventually get too big on a specific viewport width, just wrap it inside a `<div>` element and add the `.gls-overflow-auto` class from the [Utility component](https://getuikit.com/docs/utility#overflow). This creates a container that provides a horizontal scrollbar whenever the elements inside it are wider than the container itself.
 
 ```html
 <div class="gls-overflow-auto">
-    <table class="gls-table">…</table>
+    <table class="gls-table">
+        …
+    </table>
 </div>
 ```
 
@@ -632,14 +659,16 @@ If your table happens to be wider than its container element or would eventually
 </div>
 ```
 
-***
+---
 
 ### Stack on small viewports
 
 If you want table columns to stack on small screens, add the `.gls-table-responsive` class.
 
 ```html
-<table class="gls-table gls-table-responsive">…</table>
+<table class="gls-table gls-table-responsive">
+    …
+</table>
 ```
 
 <div class="gls-docs-example">
@@ -702,17 +731,17 @@ If you want table columns to stack on small screens, add the `.gls-table-respons
 
 **Note** Resize the browser window to see the columns stack.
 
-***
+---
 
 ## Column width modifier
 
 To modify the column width or content, you can use one of the following classes. You just need to add this class to one of the column cells. It's recommended on the header cell.
 
-| Class               | Description                                                                                                                |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `.gls-table-shrink ` | Add this class to a `<th>` or `<td>` element to reduce the column width to fit its content.                                |
-| `.gls-table-expand`  | Add this class to a `<th>` or `<td>` element to expand the column width to fill the remaining space and apply a min-width. |
-| `.gls-width-*`       | Add one of these classes from the [Width component](https://getuikit.com/docs/width) to a `<th>` or `<td>` element to modify the column width.    |
+| Class                | Description                                                                                                                                    |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `.gls-table-shrink ` | Add this class to a `<th>` or `<td>` element to reduce the column width to fit its content.                                                    |
+| `.gls-table-expand`  | Add this class to a `<th>` or `<td>` element to expand the column width to fill the remaining space and apply a min-width.                     |
+| `.gls-width-*`       | Add one of these classes from the [Width component](https://getuikit.com/docs/width) to a `<th>` or `<td>` element to modify the column width. |
 
 ```html
 <th class="gls-table-shrink"></th>
@@ -766,18 +795,18 @@ To modify the column width or content, you can use one of the following classes.
 </table>
 ```
 
-***
+---
 
 ## Utilities
 
 To optimize the display of table cells and their specific content, you can add one of the following classes.
 
-| Class                 | Description                                                                                                                                                                                                                                                                      |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Class                  | Description                                                                                                                                                                                                                                                                                               |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `.gls-table-link`      | To link an entire cell, add this class to a `<th>`or `<td>` element and insert an `<a>` element. Add the `.gls-link-reset`class from the [Link component](https://getuikit.com/docs/link) to reset the default link styling.                                                                              |
 | `.gls-preserve-width ` | Since images are responsive by default in UIkit, using an image inside a table cell with the `.gls-table-shrink` class would reduce the image width to 0. To prevent this behavior, add the `.gls-preserve-width` class from the [Base component](https://getuikit.com/docs/base) to the `<img>` element. |
-| `.gls-text-truncate`   | When applying a fixed width to a table cell, you might want to add this class from the [Text component](https://getuikit.com/docs/text) to the `<td>` element to truncate the text.                                                                                                                     |
-| `.gls-text-nowrap`     | Add this class from the [Text component](https://getuikit.com/docs/text) to keep text from wrapping, for example when using the `.gls-table-shrink` class.                                                                                                                                               |
+| `.gls-text-truncate`   | When applying a fixed width to a table cell, you might want to add this class from the [Text component](https://getuikit.com/docs/text) to the `<td>` element to truncate the text.                                                                                                                       |
+| `.gls-text-nowrap`     | Add this class from the [Text component](https://getuikit.com/docs/text) to keep text from wrapping, for example when using the `.gls-table-shrink` class.                                                                                                                                                |
 
 ```html
 <!-- Table link -->
@@ -787,7 +816,7 @@ To optimize the display of table cells and their specific content, you can add o
 
 <!-- Preserve width -->
 <td>
-    <img class="gls-preserve-width" src="" width="" height="" alt="">
+    <img class="gls-preserve-width" src="" width="" height="" alt="" />
 </td>
 
 <!-- Text truncate -->
@@ -865,39 +894,91 @@ To optimize the display of table cells and their specific content, you can add o
         </thead>
         <tbody>
             <tr>
-                <td><input class="gls-checkbox" type="checkbox" aria-label="Checkbox"></td>
-                <td><img class="gls-preserve-width gls-border-circle" src="images/avatar.jpg" width="40" height="40" alt=""></td>
-                <td class="gls-table-link">
-                    <a class="gls-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                <td><input class="gls-checkbox" type="checkbox" aria-label="Checkbox" /></td>
+                <td>
+                    <img
+                        class="gls-preserve-width gls-border-circle"
+                        src="images/avatar.jpg"
+                        width="40"
+                        height="40"
+                        alt=""
+                    />
                 </td>
-                <td class="gls-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                <td class="gls-table-link">
+                    <a class="gls-link-reset" href=""
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.</a
+                    >
+                </td>
+                <td class="gls-text-truncate">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </td>
                 <td class="gls-text-nowrap">Lorem ipsum dolor</td>
             </tr>
             <tr>
-                <td><input class="gls-checkbox" type="checkbox" aria-label="Checkbox"></td>
-                <td><img class="gls-preserve-width gls-border-circle" src="images/avatar.jpg" width="40" height="40" alt=""></td>
-                <td class="gls-table-link">
-                    <a class="gls-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                <td><input class="gls-checkbox" type="checkbox" aria-label="Checkbox" /></td>
+                <td>
+                    <img
+                        class="gls-preserve-width gls-border-circle"
+                        src="images/avatar.jpg"
+                        width="40"
+                        height="40"
+                        alt=""
+                    />
                 </td>
-                <td class="gls-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                <td class="gls-table-link">
+                    <a class="gls-link-reset" href=""
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.</a
+                    >
+                </td>
+                <td class="gls-text-truncate">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </td>
                 <td class="gls-text-nowrap">Lorem ipsum dolor</td>
             </tr>
             <tr>
-                <td><input class="gls-checkbox" type="checkbox" aria-label="Checkbox"></td>
-                <td><img class="gls-preserve-width gls-border-circle" src="images/avatar.jpg" width="40" height="40" alt=""></td>
-                <td class="gls-table-link">
-                    <a class="gls-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                <td><input class="gls-checkbox" type="checkbox" aria-label="Checkbox" /></td>
+                <td>
+                    <img
+                        class="gls-preserve-width gls-border-circle"
+                        src="images/avatar.jpg"
+                        width="40"
+                        height="40"
+                        alt=""
+                    />
                 </td>
-                <td class="gls-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                <td class="gls-table-link">
+                    <a class="gls-link-reset" href=""
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.</a
+                    >
+                </td>
+                <td class="gls-text-truncate">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </td>
                 <td class="gls-text-nowrap">Lorem ipsum dolor</td>
             </tr>
             <tr>
-                <td><input class="gls-checkbox" type="checkbox" aria-label="Checkbox"></td>
-                <td><img class="gls-preserve-width gls-border-circle" src="images/avatar.jpg" width="40" height="40" alt=""></td>
-                <td class="gls-table-link">
-                    <a class="gls-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                <td><input class="gls-checkbox" type="checkbox" aria-label="Checkbox" /></td>
+                <td>
+                    <img
+                        class="gls-preserve-width gls-border-circle"
+                        src="images/avatar.jpg"
+                        width="40"
+                        height="40"
+                        alt=""
+                    />
                 </td>
-                <td class="gls-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                <td class="gls-table-link">
+                    <a class="gls-link-reset" href=""
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.</a
+                    >
+                </td>
+                <td class="gls-text-truncate">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </td>
                 <td class="gls-text-nowrap">Lorem ipsum dolor</td>
             </tr>
         </tbody>

@@ -46,21 +46,27 @@ Since there is already a default text color, for light styles it is dark, and fo
     <div>
         <div class="gls-light gls-background-secondary gls-padding">
             <h3>Light</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
             <button class="gls-button gls-button-default">Button</button>
         </div>
     </div>
     <div>
         <div class="gls-dark gls-background-muted gls-padding">
             <h3>Dark</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
             <button class="gls-button gls-button-default">Button</button>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Extending components
 
@@ -96,6 +102,7 @@ The [Section](https://getuikit.com/docs/section) and [Tile](https://getuikit.com
         </div>
 
     </div>
+
 </div>
 <div class="gls-child-width-1-2@s gls-grid-collapse gls-grid-match gls-text-center" gls-grid>
     <div>
@@ -124,13 +131,13 @@ The [Section](https://getuikit.com/docs/section) and [Tile](https://getuikit.com
 
         </div>
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-section gls-section-primary gls-preserve-color">
     <div class="gls-container">
-
         <div class="gls-panel gls-light gls-margin-medium">
             <h3>Section Primary with cards</h3>
         </div>
@@ -147,13 +154,11 @@ The [Section](https://getuikit.com/docs/section) and [Tile](https://getuikit.com
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 <div class="gls-child-width-1-2@s gls-grid-collapse gls-grid-match gls-text-center" gls-grid>
     <div>
         <div class="gls-tile gls-tile-primary">
-
             <div class="gls-panel gls-light gls-margin-medium">
                 <h3>Tile Primary with card</h3>
             </div>
@@ -161,12 +166,10 @@ The [Section](https://getuikit.com/docs/section) and [Tile](https://getuikit.com
             <div class="gls-card gls-card-default gls-card-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-
         </div>
     </div>
     <div>
         <div class="gls-tile gls-tile-secondary">
-
             <div class="gls-panel gls-light gls-margin-medium">
                 <h3>Tile Secondary with card</h3>
             </div>
@@ -174,13 +177,12 @@ The [Section](https://getuikit.com/docs/section) and [Tile](https://getuikit.com
             <div class="gls-card gls-card-default gls-card-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Overlapping content
 
@@ -188,7 +190,6 @@ The `.gls-light` and `.gls-dark` classes are set on container elements and color
 
 ```html
 <div class="gls-position-relative">
-
     <div class="gls-position-top">
         <div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky">
             <nav class="gls-navbar-container gls-navbar-transparent" gls-inverse gls-navbar>…</nav>
@@ -202,7 +203,6 @@ The `.gls-light` and `.gls-dark` classes are set on container elements and color
     <div class="gls-section gls-section-muted">…</div>
 
     <div class="gls-section gls-section-secondary">…</div>
-
 </div>
 ```
 
@@ -324,15 +324,14 @@ The `.gls-light` and `.gls-dark` classes are set on container elements and color
 
 ```html
 <div class="gls-position-relative">
-
     <div class="gls-position-top">
-
-        <div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: !.gls-position-relative; offset: 80">
+        <div
+            gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: !.gls-position-relative; offset: 80"
+        >
             <nav class="gls-navbar-container gls-navbar-transparent" gls-inverse>
                 <div class="gls-container">
                     <div gls-navbar>
                         <div class="gls-navbar-left">
-
                             <ul class="gls-navbar-nav">
                                 <li class="gls-active"><a href="#">Active</a></li>
                                 <li>
@@ -355,7 +354,9 @@ The `.gls-light` and `.gls-dark` classes are set on container elements and color
                                         <div class="gls-drop-grid gls-child-width-1-2" gls-grid>
                                             <div>
                                                 <ul class="gls-nav gls-navbar-dropdown-nav">
-                                                    <li class="gls-active"><a href="#">Active</a></li>
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
                                                     <li><a href="#">Item</a></li>
                                                     <li class="gls-nav-header">Header</li>
                                                     <li><a href="#">Item</a></li>
@@ -366,7 +367,9 @@ The `.gls-light` and `.gls-dark` classes are set on container elements and color
                                             </div>
                                             <div>
                                                 <ul class="gls-nav gls-navbar-dropdown-nav">
-                                                    <li class="gls-active"><a href="#">Active</a></li>
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
                                                     <li><a href="#">Item</a></li>
                                                     <li class="gls-nav-header">Header</li>
                                                     <li><a href="#">Item</a></li>
@@ -379,7 +382,6 @@ The `.gls-light` and `.gls-dark` classes are set on container elements and color
                                     </div>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -389,52 +391,103 @@ The `.gls-light` and `.gls-dark` classes are set on container elements and color
 
     <div class="gls-section gls-section-default">
         <div class="gls-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris.
+            </p>
 
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
         </div>
     </div>
 
     <div class="gls-section gls-section-primary">
         <div class="gls-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris.
+            </p>
 
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
         </div>
     </div>
 
     <div class="gls-section gls-section-muted">
         <div class="gls-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris.
+            </p>
 
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
         </div>
     </div>
 
     <div class="gls-section gls-section-secondary">
         <div class="gls-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris.
+            </p>
 
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
         </div>
     </div>
-
 </div>
 ```
 
@@ -446,10 +499,15 @@ To color different parts inside the container separately, just add the `target: 
 
 ```html
 <div class="gls-position-relative">
-
     <div class="gls-position-top">
         <div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky">
-            <nav class="gls-navbar-container gls-navbar-transparent" gls-inverse="target: .gls-navbar-left, .gls-navbar-center, .gls-navbar-right" gls-navbar>…</nav>
+            <nav
+                class="gls-navbar-container gls-navbar-transparent"
+                gls-inverse="target: .gls-navbar-left, .gls-navbar-center, .gls-navbar-right"
+                gls-navbar
+            >
+                …
+            </nav>
         </div>
     </div>
 
@@ -464,7 +522,6 @@ To color different parts inside the container separately, just add the `target: 
             <div class="gls-tile gls-tile-secondary">…</div>
         </div>
     </div>
-
 </div>
 ```
 
@@ -584,36 +641,33 @@ To color different parts inside the container separately, just add the `target: 
 
 ```html
 <div class="gls-position-relative">
-
     <div class="gls-position-top">
-
-        <div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: !.gls-position-relative; offset: 80">
-            <nav class="gls-navbar-container gls-navbar-transparent" gls-inverse="target: .gls-navbar-left, .gls-navbar-center, .gls-navbar-right">
+        <div
+            gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: !.gls-position-relative; offset: 80"
+        >
+            <nav
+                class="gls-navbar-container gls-navbar-transparent"
+                gls-inverse="target: .gls-navbar-left, .gls-navbar-center, .gls-navbar-right"
+            >
                 <div class="gls-container">
                     <div gls-navbar>
                         <div class="gls-navbar-left">
-
                             <ul class="gls-navbar-nav">
                                 <li class="gls-active"><a href="#">Active</a></li>
                                 <li><a href="#">Item</a></li>
                             </ul>
-
                         </div>
                         <div class="gls-navbar-center">
-
                             <ul class="gls-navbar-nav">
                                 <li class="gls-active"><a href="">Active</a></li>
                                 <li><a href="#">Item</a></li>
                             </ul>
-
                         </div>
                         <div class="gls-navbar-right">
-
                             <ul class="gls-navbar-nav">
                                 <li class="gls-active"><a href="">Active</a></li>
                                 <li><a href="#">Item</a></li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -623,76 +677,57 @@ To color different parts inside the container separately, just add the `target: 
 
     <div class="gls-child-width-1-3@s gls-grid-collapse gls-grid-match" gls-grid>
         <div>
-
             <div class="gls-tile gls-tile-default">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-primary">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-secondary">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
     </div>
 
     <div class="gls-child-width-1-3@s gls-grid-collapse gls-grid-match" gls-grid>
         <div>
-
             <div class="gls-tile gls-tile-primary">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-muted">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-default">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
     </div>
 
     <div class="gls-child-width-1-3@s gls-grid-collapse gls-grid-match" gls-grid>
         <div>
-
             <div class="gls-tile gls-tile-default">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-secondary">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
         <div>
-
             <div class="gls-tile gls-tile-muted">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-
         </div>
     </div>
-
 </div>
 ```
 
@@ -701,8 +736,12 @@ To color different parts inside the container separately, just add the `target: 
 To prevent the element from changing its color automatically when it stops being transparent, just add the `sel-active: SELECTOR` option to the `gls-inverse` attribute.
 
 ```html
-<div gls-sticky="start: 200; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent">
-    <nav class="gls-navbar-container" gls-inverse="sel-active: .gls-navbar-transparent" gls-navbar>…</nav>
+<div
+    gls-sticky="start: 200; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent"
+>
+    <nav class="gls-navbar-container" gls-inverse="sel-active: .gls-navbar-transparent" gls-navbar>
+        …
+    </nav>
 </div>
 ```
 
@@ -788,15 +827,14 @@ To prevent the element from changing its color automatically when it stops being
 
 ```html
 <div class="gls-position-relative">
-
     <div class="gls-position-top">
-
-        <div gls-sticky="start: 170; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent; end: !.gls-position-relative; offset: 80">
+        <div
+            gls-sticky="start: 170; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent; end: !.gls-position-relative; offset: 80"
+        >
             <nav class="gls-navbar-container" gls-inverse="sel-active: .gls-navbar-transparent">
                 <div class="gls-container">
                     <div gls-navbar>
                         <div class="gls-navbar-left">
-
                             <ul class="gls-navbar-nav">
                                 <li class="gls-active"><a href="#">Active</a></li>
                                 <li>
@@ -819,7 +857,9 @@ To prevent the element from changing its color automatically when it stops being
                                         <div class="gls-drop-grid gls-child-width-1-2" gls-grid>
                                             <div>
                                                 <ul class="gls-nav gls-navbar-dropdown-nav">
-                                                    <li class="gls-active"><a href="#">Active</a></li>
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
                                                     <li><a href="#">Item</a></li>
                                                     <li class="gls-nav-header">Header</li>
                                                     <li><a href="#">Item</a></li>
@@ -830,7 +870,9 @@ To prevent the element from changing its color automatically when it stops being
                                             </div>
                                             <div>
                                                 <ul class="gls-nav gls-navbar-dropdown-nav">
-                                                    <li class="gls-active"><a href="#">Active</a></li>
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
                                                     <li><a href="#">Item</a></li>
                                                     <li class="gls-nav-header">Header</li>
                                                     <li><a href="#">Item</a></li>
@@ -843,7 +885,6 @@ To prevent the element from changing its color automatically when it stops being
                                     </div>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -853,16 +894,28 @@ To prevent the element from changing its color automatically when it stops being
 
     <div class="gls-section gls-section-secondary">
         <div class="gls-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris.
+            </p>
 
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum.
+            </p>
         </div>
     </div>
-
 </div>
 ```
 
@@ -875,7 +928,7 @@ If containing content should keep its text color, and only the overlapping conte
     <nav class="gls-navbar-container" gls-navbar>…</nav>
 </div>
 
-<div class="gls-section gls-section-primary gls-preserve-color gls-inverse-light">
+<div class="gls-section gls-section-primary gls-preserve-color gls-inverse-light"></div>
 ```
 
 <div class="gls-docs-example">
@@ -971,15 +1024,14 @@ If containing content should keep its text color, and only the overlapping conte
 
 ```html
 <div class="gls-position-relative">
-
     <div class="gls-position-top">
-
-        <div gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: !.gls-position-relative; offset: 80">
+        <div
+            gls-sticky="sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; end: !.gls-position-relative; offset: 80"
+        >
             <nav class="gls-navbar-container gls-navbar-transparent" gls-inverse>
                 <div class="gls-container">
                     <div gls-navbar>
                         <div class="gls-navbar-left">
-
                             <ul class="gls-navbar-nav">
                                 <li class="gls-active"><a href="#">Active</a></li>
                                 <li>
@@ -1002,7 +1054,9 @@ If containing content should keep its text color, and only the overlapping conte
                                         <div class="gls-drop-grid gls-child-width-1-2" gls-grid>
                                             <div>
                                                 <ul class="gls-nav gls-navbar-dropdown-nav">
-                                                    <li class="gls-active"><a href="#">Active</a></li>
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
                                                     <li><a href="#">Item</a></li>
                                                     <li class="gls-nav-header">Header</li>
                                                     <li><a href="#">Item</a></li>
@@ -1013,7 +1067,9 @@ If containing content should keep its text color, and only the overlapping conte
                                             </div>
                                             <div>
                                                 <ul class="gls-nav gls-navbar-dropdown-nav">
-                                                    <li class="gls-active"><a href="#">Active</a></li>
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
                                                     <li><a href="#">Item</a></li>
                                                     <li class="gls-nav-header">Header</li>
                                                     <li><a href="#">Item</a></li>
@@ -1026,7 +1082,6 @@ If containing content should keep its text color, and only the overlapping conte
                                     </div>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -1036,7 +1091,6 @@ If containing content should keep its text color, and only the overlapping conte
 
     <div class="gls-section gls-section-primary gls-preserve-color gls-inverse-light">
         <div class="gls-container">
-
             <div class="gls-panel gls-light gls-margin-medium">
                 <h3>Section Primary with cards</h3>
             </div>
@@ -1053,14 +1107,12 @@ If containing content should keep its text color, and only the overlapping conte
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
 </div>
 ```
 
-***
+---
 
 ## Component options
 
@@ -1071,7 +1123,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `target`     | CSS selector | `false` | A list of targets that will be checked.                                                                                     |
 | `sel-active` | CSS selector | `false` | A selector that needs to match for a color to be set, otherwise the color is removed. If omitted, color will always be set. |
 
-***
+---
 
 ## JavaScript
 
@@ -1083,7 +1135,7 @@ Learn more about [JavaScript components](https://getuikit.com/docs/javascript#pr
 UIkit.inverse(element, options);
 ```
 
-***
+---
 
 ## Disable inverse component
 

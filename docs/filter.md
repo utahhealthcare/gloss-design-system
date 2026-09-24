@@ -10,7 +10,7 @@ title: Filter
 
 The Filter component is often used together with the [Grid component](https://getuikit.com/docs/grid), especially the masonry grid, but it's not bound to it. Any layout can be filtered or sorted no matter how the items are positioned. Items fade and move with smooth transitions between the different filtering and sorting states.
 
-***
+---
 
 ## Usage
 
@@ -18,7 +18,6 @@ To apply this component, you need a container element with the `gls-filter="targ
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <!-- Filter controls -->
     <ul>
         <li><a href="#"></a></li>
@@ -28,7 +27,6 @@ To apply this component, you need a container element with the `gls-filter="targ
     <ul class="js-filter">
         <li></li>
     </ul>
-
 </div>
 ```
 
@@ -38,7 +36,6 @@ To apply a filter control, add the `gls-filter-control` attribute. To define the
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <ul>
         <li gls-filter-control="filter: .tag-blue"><a href="#"></a></li>
     </ul>
@@ -46,7 +43,6 @@ To apply a filter control, add the `gls-filter-control` attribute. To define the
     <ul class="js-filter">
         <li class="tag-blue"></li>
     </ul>
-
 </div>
 ```
 
@@ -54,7 +50,6 @@ If `target` is the only option in the `gls-filter` attribute value, you can also
 
 ```html
 <div gls-filter=".js-filter">
-
     <ul>
         <li gls-filter-control=".tag-blue"><a href="#"></a></li>
     </ul>
@@ -62,7 +57,6 @@ If `target` is the only option in the `gls-filter` attribute value, you can also
     <ul class="js-filter">
         <li class="tag-blue"></li>
     </ul>
-
 </div>
 ```
 
@@ -119,7 +113,6 @@ If `target` is the only option in the `gls-filter` attribute value, you can also
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <ul class="gls-subnav gls-subnav-pill">
         <li gls-filter-control=".tag-white"><a href="#">White</a></li>
         <li gls-filter-control=".tag-blue"><a href="#">Blue</a></li>
@@ -164,14 +157,12 @@ If `target` is the only option in the `gls-filter` attribute value, you can also
             <div class="gls-card gls-card-secondary gls-card-body">Item</div>
         </li>
     </ul>
-
 </div>
 ```
 
 The Filter component comes unstyled, which allows you to use any of the other UIkit components to create the filter controls and layout items. For example, the [Nav](https://getuikit.com/docs/nav), [Subnav](https://getuikit.com/docs/subnav) and [Tab](https://getuikit.com/docs/tab) components can be used to style the filter controls. Usually, the [Grid component](https://getuikit.com/docs/grid) is used to create the item layout.
 
-
-***
+---
 
 ## Animations
 
@@ -240,7 +231,6 @@ By default, the filter uses a `slide` animation for the items between the differ
 
 ```html
 <div gls-filter="target: .js-filter; animation: fade">
-
     <ul class="gls-subnav gls-subnav-pill">
         <li gls-filter-control=".tag-white"><a href="#">White</a></li>
         <li gls-filter-control=".tag-blue"><a href="#">Blue</a></li>
@@ -285,11 +275,10 @@ By default, the filter uses a `slide` animation for the items between the differ
             <div class="gls-card gls-card-secondary gls-card-body">Item</div>
         </li>
     </ul>
-
 </div>
 ```
 
-***
+---
 
 ## Active state
 
@@ -352,7 +341,6 @@ Add the `.gls-active` class to a filter control, and the filter will be applied 
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <ul class="gls-subnav gls-subnav-pill">
         <li class="gls-active" gls-filter-control="[data-color='white']"><a href="#">White</a></li>
         <li gls-filter-control="[data-color='blue']"><a href="#">Blue</a></li>
@@ -397,11 +385,10 @@ Add the `.gls-active` class to a filter control, and the filter will be applied 
             <div class="gls-card gls-card-secondary gls-card-body">Item</div>
         </li>
     </ul>
-
 </div>
 ```
 
-***
+---
 
 ## Reset filter
 
@@ -465,7 +452,6 @@ To reset the filter and target all items, use the `gls-filter-control` attribute
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <ul class="gls-subnav gls-subnav-pill">
         <li class="gls-active" gls-filter-control><a href="#">All</a></li>
         <li gls-filter-control="[data-color='white']"><a href="#">White</a></li>
@@ -511,11 +497,10 @@ To reset the filter and target all items, use the `gls-filter-control` attribute
             <div class="gls-card gls-card-secondary gls-card-body">Item</div>
         </li>
     </ul>
-
 </div>
 ```
 
-***
+---
 
 ## Metadata
 
@@ -523,7 +508,6 @@ Items can have different metadata for filtering. You just need to define the HTM
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <ul>
         <li gls-filter-control="[data-tags*='blue']"><a href="#"></a></li>
     </ul>
@@ -531,7 +515,6 @@ Items can have different metadata for filtering. You just need to define the HTM
     <ul class="js-filter">
         <li data-tags="blue dark"></li>
     </ul>
-
 </div>
 ```
 
@@ -589,7 +572,6 @@ Items can have different metadata for filtering. You just need to define the HTM
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <ul class="gls-subnav gls-subnav-pill">
         <li gls-filter-control="[data-tags*='white']"><a href="#">White</a></li>
         <li gls-filter-control="[data-tags*='blue']"><a href="#">Blue</a></li>
@@ -635,11 +617,10 @@ Items can have different metadata for filtering. You just need to define the HTM
             <div class="gls-card gls-card-secondary gls-card-body">Item</div>
         </li>
     </ul>
-
 </div>
 ```
 
-***
+---
 
 ## Multiple Filters
 
@@ -647,7 +628,6 @@ Define different types of metadata and add any number of controls to filter them
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <ul>
         <li gls-filter-control="[data-color='blue']"><a href="#"></a></li>
     </ul>
@@ -659,7 +639,6 @@ Define different types of metadata and add any number of controls to filter them
     <ul class="js-filter">
         <li data-color="blue" data-size="small"></li>
     </ul>
-
 </div>
 ```
 
@@ -768,7 +747,6 @@ Define different types of metadata and add any number of controls to filter them
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <div class="gls-grid-small gls-grid-divider gls-child-width-auto" gls-grid>
         <div>
             <ul class="gls-subnav gls-subnav-pill" gls-margin>
@@ -791,7 +769,10 @@ Define different types of metadata and add any number of controls to filter them
         </div>
     </div>
 
-    <ul class="js-filter gls-child-width-1-2 gls-child-width-1-3@m gls-text-center" gls-grid="masonry: true">
+    <ul
+        class="js-filter gls-child-width-1-2 gls-child-width-1-3@m gls-text-center"
+        gls-grid="masonry: true"
+    >
         <li data-color="white" data-size="large">
             <div class="gls-card gls-card-default gls-card-body">
                 <canvas width="600" height="800"></canvas>
@@ -865,11 +846,10 @@ Define different types of metadata and add any number of controls to filter them
             </div>
         </li>
     </ul>
-
 </div>
 ```
 
-***
+---
 
 ## Groups
 
@@ -877,7 +857,6 @@ To filter items by multiple criteria at the same time, the filter controls need 
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <ul>
         <li gls-filter-control="filter: [data-color='blue']; group: color"><a href="#"></a></li>
         <li gls-filter-control="filter: [data-color='white']; group: color"><a href="#"></a></li>
@@ -891,7 +870,6 @@ To filter items by multiple criteria at the same time, the filter controls need 
     <ul class="js-filter">
         <li data-color="blue" data-size="small"></li>
     </ul>
-
 </div>
 ```
 
@@ -1000,7 +978,6 @@ To filter items by multiple criteria at the same time, the filter controls need 
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <div class="gls-grid-small gls-grid-divider gls-child-width-auto" gls-grid>
         <div>
             <ul class="gls-subnav gls-subnav-pill" gls-margin>
@@ -1009,21 +986,36 @@ To filter items by multiple criteria at the same time, the filter controls need 
         </div>
         <div>
             <ul class="gls-subnav gls-subnav-pill" gls-margin>
-                <li gls-filter-control="filter: [data-color='white']; group: data-color"><a href="#">White</a></li>
-                <li gls-filter-control="filter: [data-color='blue']; group: data-color"><a href="#">Blue</a></li>
-                <li gls-filter-control="filter: [data-color='black']; group: data-color"><a href="#">Black</a></li>
+                <li gls-filter-control="filter: [data-color='white']; group: data-color">
+                    <a href="#">White</a>
+                </li>
+                <li gls-filter-control="filter: [data-color='blue']; group: data-color">
+                    <a href="#">Blue</a>
+                </li>
+                <li gls-filter-control="filter: [data-color='black']; group: data-color">
+                    <a href="#">Black</a>
+                </li>
             </ul>
         </div>
         <div>
             <ul class="gls-subnav gls-subnav-pill" gls-margin>
-                <li gls-filter-control="filter: [data-size='small']; group: size"><a href="#">Small</a></li>
-                <li gls-filter-control="filter: [data-size='medium']; group: size"><a href="#">Medium</a></li>
-                <li gls-filter-control="filter: [data-size='large']; group: size"><a href="#">Large</a></li>
+                <li gls-filter-control="filter: [data-size='small']; group: size">
+                    <a href="#">Small</a>
+                </li>
+                <li gls-filter-control="filter: [data-size='medium']; group: size">
+                    <a href="#">Medium</a>
+                </li>
+                <li gls-filter-control="filter: [data-size='large']; group: size">
+                    <a href="#">Large</a>
+                </li>
             </ul>
         </div>
     </div>
 
-    <ul class="js-filter gls-child-width-1-2 gls-child-width-1-3@m gls-text-center" gls-grid="masonry: true">
+    <ul
+        class="js-filter gls-child-width-1-2 gls-child-width-1-3@m gls-text-center"
+        gls-grid="masonry: true"
+    >
         <li data-color="white" data-size="large">
             <div class="gls-card gls-card-default gls-card-body">
                 <canvas width="600" height="800"></canvas>
@@ -1097,11 +1089,10 @@ To filter items by multiple criteria at the same time, the filter controls need 
             </div>
         </li>
     </ul>
-
 </div>
 ```
 
-***
+---
 
 ## Sorting
 
@@ -1109,7 +1100,6 @@ To sort items alphanumerically, just add the `sort: ATTRIBUTE` option to the `gl
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <ul>
         <li gls-filter-control="sort: data-color"><a href="#"></a></li>
         <li gls-filter-control="sort: data-color; order: desc"><a href="#"></a></li>
@@ -1118,7 +1108,6 @@ To sort items alphanumerically, just add the `sort: ATTRIBUTE` option to the `gl
     <ul class="js-filter">
         <li data-color="blue"></li>
     </ul>
-
 </div>
 ```
 
@@ -1174,7 +1163,6 @@ To sort items alphanumerically, just add the `sort: ATTRIBUTE` option to the `gl
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <ul class="gls-subnav gls-subnav-pill">
         <li class="gls-active" gls-filter-control="sort: data-date"><a href="#">Ascending</a></li>
         <li gls-filter-control="sort: data-date; order: desc"><a href="#">Descending</a></li>
@@ -1218,11 +1206,10 @@ To sort items alphanumerically, just add the `sort: ATTRIBUTE` option to the `gl
             <div class="gls-card gls-card-secondary gls-card-body">2018-12-02</div>
         </li>
     </ul>
-
 </div>
 ```
 
-***
+---
 
 ## Masonry Grid
 
@@ -1348,10 +1335,8 @@ Here is a comprehensive example with a masonry grid:
 
 ```html
 <div gls-filter="target: .js-filter">
-
     <div class="gls-grid-small gls-flex-middle" gls-grid>
         <div class="gls-width-expand">
-
             <div class="gls-grid-small gls-grid-divider gls-child-width-auto" gls-grid>
                 <div>
                     <ul class="gls-subnav gls-subnav-pill" gls-margin>
@@ -1373,18 +1358,31 @@ Here is a comprehensive example with a masonry grid:
                     </ul>
                 </div>
             </div>
-
         </div>
         <div class="gls-width-auto gls-text-nowrap">
-
-
-            <span class="gls-active" gls-filter-control="sort: data-name"><a class="gls-icon-link" href="#" gls-icon="icon: arrow-down" aria-label="Sort ascending"></a></span>
-            <span gls-filter-control="sort: data-name; order: desc"><a class="gls-icon-link" href="#" gls-icon="icon: arrow-up" aria-label="Sort descending"></a></span>
-
+            <span class="gls-active" gls-filter-control="sort: data-name"
+                ><a
+                    class="gls-icon-link"
+                    href="#"
+                    gls-icon="icon: arrow-down"
+                    aria-label="Sort ascending"
+                ></a
+            ></span>
+            <span gls-filter-control="sort: data-name; order: desc"
+                ><a
+                    class="gls-icon-link"
+                    href="#"
+                    gls-icon="icon: arrow-up"
+                    aria-label="Sort descending"
+                ></a
+            ></span>
         </div>
     </div>
 
-    <ul class="js-filter gls-child-width-1-2 gls-child-width-1-3@m gls-text-center" gls-grid="masonry: true">
+    <ul
+        class="js-filter gls-child-width-1-2 gls-child-width-1-3@m gls-text-center"
+        gls-grid="masonry: true"
+    >
         <li data-color="white" data-size="large" data-name="A">
             <div class="gls-card gls-card-default gls-card-body">
                 <canvas width="600" height="800"></canvas>
@@ -1458,11 +1456,10 @@ Here is a comprehensive example with a masonry grid:
             </div>
         </li>
     </ul>
-
 </div>
 ```
 
-***
+---
 
 ## Component options
 
@@ -1477,7 +1474,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 `target` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
-***
+---
 
 ## JavaScript
 
@@ -1498,10 +1495,10 @@ The following events will be triggered on elements with this component attached:
 | `beforeFilter` | Fires before the filter is applied.      |
 | `afterFilter`  | Fires after the filter has been applied. |
 
-***
+---
 
 ## Accessibility
 
 The Filter component automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *filter controls* have the `aria-selected` state.
+- The _filter controls_ have the `aria-selected` state.

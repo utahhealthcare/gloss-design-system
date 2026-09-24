@@ -39,12 +39,17 @@ To add list items without a link, use a `<span>` element instead of an `<a>`. Al
         <li><a href="#">Home</a></li>
         <li><a href="#">Linked Category</a></li>
         <li class="gls-disabled"><a>Disabled Category</a></li>
-        <li><span aria-current="page">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></li>
+        <li>
+            <span aria-current="page"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</span
+            >
+        </li>
     </ul>
 </nav>
 ```
 
-***
+---
 
 ## Accessibility
 
@@ -55,6 +60,8 @@ In order for the Breadcrumb component to adhere to the [Breadcrumb design patter
 
 ```html
 <nav aria-label="Breadcrumb">
-    <ul class="gls-breadcrumb">…</ul>
+    <ul class="gls-breadcrumb">
+        …
+    </ul>
 </nav>
 ```

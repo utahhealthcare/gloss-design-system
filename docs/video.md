@@ -10,7 +10,7 @@ title: Video
 
 The Video component allows you to seamlessly display videos as animated images with a consistent autoplay behavior across all browsers. Videos automatically pause when they become hidden, for example inside a slideshow, and seamlessly resume from the same position once visible again. It also ensures the muted attribute is correctly applied even when videos are inserted into the DOM dynamically with JavaScript.
 
-***
+---
 
 ## Usage
 
@@ -27,12 +27,23 @@ To apply this component, add the `gls-video` attribute to a `<video>` element. A
 </div>
 
 ```html
-<button class="gls-button gls-button-default gls-margin" type="button" gls-toggle="target: +">Toggle Video</button>
+<button class="gls-button gls-button-default gls-margin" type="button" gls-toggle="target: +">
+    Toggle Video
+</button>
 
-<video src="https://yootheme.com/media/videos/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted hidden gls-video></video>
+<video
+    src="https://yootheme.com/media/videos/yootheme-pro.mp4"
+    width="1920"
+    height="1080"
+    playsinline
+    loop
+    muted
+    hidden
+    gls-video
+></video>
 ```
 
-***
+---
 
 ## Autoplay
 
@@ -60,20 +71,33 @@ There are two autoplay modes. Just add the `autoplay` option to the `gls-video` 
         <video src="https://yootheme.com/media/videos/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted gls-video="autoplay: hover"></video>
 
     </div>
+
 </div>
 </div>
 
 ```html
 <div class="gls-child-width-1-2@m" gls-grid>
     <div>
-
-        <video src="https://yootheme.com/media/videos/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted gls-video="autoplay: inview"></video>
-
+        <video
+            src="https://yootheme.com/media/videos/yootheme-pro.mp4"
+            width="1920"
+            height="1080"
+            playsinline
+            loop
+            muted
+            gls-video="autoplay: inview"
+        ></video>
     </div>
     <div>
-
-        <video src="https://yootheme.com/media/videos/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted gls-video="autoplay: hover"></video>
-
+        <video
+            src="https://yootheme.com/media/videos/yootheme-pro.mp4"
+            width="1920"
+            height="1080"
+            playsinline
+            loop
+            muted
+            gls-video="autoplay: hover"
+        ></video>
     </div>
 </div>
 ```
@@ -82,14 +106,23 @@ To restart the video from the very beginning after pausing it, add the `restart`
 
 To toggle autoplay on hover using an element other than the video itself, just add `hover-target: SELECTOR` option to the `gls-video` attribute.
 
-***
+---
 
 ## Lazy Loading
 
 To load a video lazy, add the `preload="none"` attribute to the video. The Video component removes the attribute once the video enters the viewport, ensuring it loads lazily.
 
 ```html
-<video src="" width="" height="" playsinline loop muted preload="none" gls-video="autoplay: hover"></video>
+<video
+    src=""
+    width=""
+    height=""
+    playsinline
+    loop
+    muted
+    preload="none"
+    gls-video="autoplay: hover"
+></video>
 ```
 
 <div class="gls-docs-example">
@@ -97,17 +130,34 @@ To load a video lazy, add the `preload="none"` attribute to the video. The Video
 </div>
 
 ```html
-<video src="https://yootheme.com/media/videos/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted preload="none" gls-video></video>
+<video
+    src="https://yootheme.com/media/videos/yootheme-pro.mp4"
+    width="1920"
+    height="1080"
+    playsinline
+    loop
+    muted
+    preload="none"
+    gls-video
+></video>
 ```
 
-***
+---
 
 ## On-Click Loading
 
 To load a video with a poster image not before pressing play, add the `gls-video="autoplay: false"` and `preload="none"` attributes to the video.
 
 ```html
-<video src="" width="" height="" poster="" controls preload="none" gls-video="autoplay: false"></video>
+<video
+    src=""
+    width=""
+    height=""
+    poster=""
+    controls
+    preload="none"
+    gls-video="autoplay: false"
+></video>
 ```
 
 <div class="gls-docs-example">
@@ -115,7 +165,15 @@ To load a video with a poster image not before pressing play, add the `gls-video
 </div>
 
 ```html
-<video src="https://yootheme.com/media/videos/yootheme-pro.mp4" poster="images/photo.jpg" width="1920" height="1080" controls preload="none" gls-video="autoplay: false"></video>
+<video
+    src="https://yootheme.com/media/videos/yootheme-pro.mp4"
+    poster="images/photo.jpg"
+    width="1920"
+    height="1080"
+    controls
+    preload="none"
+    gls-video="autoplay: false"
+></video>
 ```
 
 Alternatively display a placeholder image that is replaced by the video element. Just place the hidden video and the linked image side by side within a container element, and add the `gls-toggle` attribute from the [Toggle component](https://getuikit.com/docs/toggle) to the image link. Then, target both the hidden video and the linked image to toggle their visibility.
@@ -124,7 +182,7 @@ Alternatively display a placeholder image that is replaced by the video element.
 <div class="gls-inline">
     <video src="" width="" height="" controls preload="none" hidden gls-video></video>
     <a href gls-toggle="target: ! > *">
-        <img src="" width="" height="" alt="">
+        <img src="" width="" height="" alt="" />
     </a>
 </div>
 ```
@@ -141,10 +199,21 @@ Alternatively display a placeholder image that is replaced by the video element.
 
 ```html
 <div class="gls-inline gls-light">
-    <video src="https://yootheme.com/media/videos/yootheme-pro.mp4" width="1920" height="1080" controls preload="none" hidden gls-video></video>
+    <video
+        src="https://yootheme.com/media/videos/yootheme-pro.mp4"
+        width="1920"
+        height="1080"
+        controls
+        preload="none"
+        hidden
+        gls-video
+    ></video>
     <a href gls-toggle="target: ! > *">
-        <img src="images/photo.jpg" width="1800" height="1200" alt="">
-        <span class="gls-position-center gls-icon-overlay" gls-icon="icon: youtube; ratio: 3"></span>
+        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+        <span
+            class="gls-position-center gls-icon-overlay"
+            gls-icon="icon: youtube; ratio: 3"
+        ></span>
     </a>
 </div>
 ```
@@ -153,9 +222,18 @@ This also works for embedded iframe videos from YouTube or Vimeo too. Here, no e
 
 ```html
 <div class="gls-inline">
-    <iframe src="" width="" height="" allowfullscreen loading="lazy" hidden gls-responsive gls-video></iframe>
+    <iframe
+        src=""
+        width=""
+        height=""
+        allowfullscreen
+        loading="lazy"
+        hidden
+        gls-responsive
+        gls-video
+    ></iframe>
     <a href gls-toggle="target: ! > *">
-        <img src="" width="" height="" alt="">
+        <img src="" width="" height="" alt="" />
     </a>
 </div>
 ```
@@ -172,29 +250,40 @@ This also works for embedded iframe videos from YouTube or Vimeo too. Here, no e
 
 ```html
 <div class="gls-inline gls-light">
-    <video src="https://yootheme.com/media/videos/yootheme-pro.mp4" width="1920" height="1080" controls preload="none" hidden gls-video></video>
+    <video
+        src="https://yootheme.com/media/videos/yootheme-pro.mp4"
+        width="1920"
+        height="1080"
+        controls
+        preload="none"
+        hidden
+        gls-video
+    ></video>
     <a href gls-toggle="target: ! > *">
-        <img src="images/photo.jpg" width="1800" height="1200" alt="">
-        <span class="gls-position-center gls-icon-overlay" gls-icon="icon: youtube; ratio: 3"></span>
+        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+        <span
+            class="gls-position-center gls-icon-overlay"
+            gls-icon="icon: youtube; ratio: 3"
+        ></span>
     </a>
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option         | Value                 | Default | Description                                                                                                                                                                       |
-|----------------|-----------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------- | --------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `autoplay`     | Boolean, String       | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. Additionally, the video can play when its in the viewport or hovered with the mouse (`inview`, `hover`). |
 | `restart`      | Boolean               | `false` | Video will seek to the beginning whenever video element's autoplay option pauses the video.                                                                                       |
 | `hover-target` | Boolean, CSS Selector | `false` | The element that functions as hover toggle when autoplay option is set to `hover`. Defaults to the element itself.                                                                |
 
 `autoplay` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
-***
+---
 
 ## JavaScript
 

@@ -13,8 +13,7 @@ title: Slidenav
 To create navigation with previous and next buttons, just add the `gls-slidenav` attribute to `<a>` elements. Add the `previous` or `next` parameter to the attribute to style the nav items as previous or next buttons.
 
 ```html
-<a href="" gls-slidenav-next></a>
-<a href="" gls-slidenav-previous></a>
+<a href="" gls-slidenav-next></a> <a href="" gls-slidenav-previous></a>
 ```
 
 <div class="gls-docs-example">
@@ -23,11 +22,10 @@ To create navigation with previous and next buttons, just add the `gls-slidenav`
 </div>
 
 ```html
-<a href="#" gls-slidenav-previous></a>
-<a href="#" gls-slidenav-next></a>
+<a href="#" gls-slidenav-previous></a> <a href="#" gls-slidenav-next></a>
 ```
 
-***
+---
 
 ## Large modifier
 
@@ -48,7 +46,7 @@ To increase the size of the slidenav icons, add the `.gls-slidenav-large` class.
 <a href="#" class="gls-slidenav-large" gls-slidenav-next></a>
 ```
 
-***
+---
 
 ## Slidenav container
 
@@ -75,7 +73,7 @@ To display a conjoint slidenav, wrap the slidenav items inside a `<div>` element
 </div>
 ```
 
-***
+---
 
 ## Position as overlay
 
@@ -85,12 +83,10 @@ Use the `.gls-light` or `.gls-dark` class from the [Inverse component](https://g
 
 ```html
 <div class="gls-position-relative gls-light">
-
     <!-- The element which is wrapped goes here -->
 
     <a class="gls-position-center-left" href="" gls-slidenav-previous></a>
     <a class="gls-position-center-right" href="" gls-slidenav-next></a>
-
 </div>
 ```
 
@@ -119,21 +115,29 @@ Use the `.gls-light` or `.gls-dark` class from the [Inverse component](https://g
 
 ```html
 <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1" gls-slideshow>
-
     <div class="gls-slideshow-items">
         <div>
-            <img src="images/photo.jpg" alt="" gls-cover>
+            <img src="images/photo.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/dark.jpg" alt="" gls-cover>
+            <img src="images/dark.jpg" alt="" gls-cover />
         </div>
         <div>
-            <img src="images/light.jpg" alt="" gls-cover>
+            <img src="images/light.jpg" alt="" gls-cover />
         </div>
     </div>
 
-    <a class="gls-slidenav-large gls-position-center-left gls-position-small gls-hidden-hover" href="#" gls-slidenav-previous gls-slideshow-item="previous"></a>
-    <a class="gls-slidenav-large gls-position-center-right gls-position-small gls-hidden-hover" href="#" gls-slidenav-next gls-slideshow-item="next"></a>
-
+    <a
+        class="gls-slidenav-large gls-position-center-left gls-position-small gls-hidden-hover"
+        href="#"
+        gls-slidenav-previous
+        gls-slideshow-item="previous"
+    ></a>
+    <a
+        class="gls-slidenav-large gls-position-center-right gls-position-small gls-hidden-hover"
+        href="#"
+        gls-slidenav-next
+        gls-slideshow-item="next"
+    ></a>
 </div>
 ```

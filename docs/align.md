@@ -12,14 +12,14 @@ title: Align
 
 To align images or other elements with spacing between the text and the element, add one of these classes.
 
-| Class              | Description                                                              |
-|--------------------|--------------------------------------------------------------------------|
+| Class               | Description                                                              |
+| ------------------- | ------------------------------------------------------------------------ |
 | `.gls-align-left`   | Floats the element to the left and creates the right and bottom margins. |
 | `.gls-align-right`  | Floats the element to the right and creates left and bottom margins.     |
 | `.gls-align-center` | Centers the element and creates a bottom margin.                         |
 
 ```html
-<img class="gls-align-left" src="" width="" height="" alt="">
+<img class="gls-align-left" src="" width="" height="" alt="" />
 ```
 
 <div class="gls-docs-example">
@@ -32,27 +32,42 @@ To align images or other elements with spacing between the text and the element,
 
 ```html
 <div class="gls-panel">
-    <img class="gls-align-left gls-margin-remove-adjacent" src="images/light.jpg" width="225" height="150" alt="Example image">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <img
+        class="gls-align-left gls-margin-remove-adjacent"
+        src="images/light.jpg"
+        width="225"
+        height="150"
+        alt="Example image"
+    />
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
 </div>
 ```
 
-***
+---
 
 ## Responsive
 
 UIkit provides a number of responsive alignment classes. Basically, they work just like the usual alignment classes, except that they have suffixes that represent the breakpoint from which they come into effect.
 
-| Class                                        | Description                                        |
-|----------------------------------------------|----------------------------------------------------|
+| Class                                          | Description                                        |
+| ---------------------------------------------- | -------------------------------------------------- |
 | `.gls-align-left@s`<br> `.gls-align-right@s`   | Only affects device widths of _640px_ and higher.  |
 | `.gls-align-left@m`<br> `.gls-align-right@m`   | Only affects device widths of _960px_ and higher.  |
 | `.gls-align-left@l`<br> `.gls-align-right@l`   | Only affects device widths of _1200px_ and higher. |
 | `.gls-align-left@xl`<br> `.gls-align-right@xl` | Only affects device widths of _1600px_ and higher. |
 
 ```html
-<img class="gls-align-center gls-align-right@m" src="" width="" height="" alt="">
+<img class="gls-align-center gls-align-right@m" src="" width="" height="" alt="" />
 ```
 
 <div class="gls-docs-example">
@@ -65,8 +80,23 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
 
 ```html
 <div class="gls-panel">
-    <img class="gls-align-center gls-align-right@m gls-margin-remove-adjacent" src="images/light.jpg" width="225" height="150" alt="Example image">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <img
+        class="gls-align-center gls-align-right@m gls-margin-remove-adjacent"
+        src="images/light.jpg"
+        width="225"
+        height="150"
+        alt="Example image"
+    />
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
 </div>
 ```

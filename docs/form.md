@@ -12,8 +12,8 @@ title: Form
 
 Add one of the following classes to form controls inside a `<form>` element to define them.
 
-| Class          | Description                                                                |
-|----------------|----------------------------------------------------------------------------|
+| Class           | Description                                                                |
+| --------------- | -------------------------------------------------------------------------- |
 | `.gls-input`    | Add this class to `<input>` elements.                                      |
 | `.gls-select`   | Add this class to `<select>` elements.                                     |
 | `.gls-textarea` | Add this class to `<textarea>` elements.                                   |
@@ -23,15 +23,15 @@ Add one of the following classes to form controls inside a `<form>` element to d
 
 ```html
 <form>
-    <input class="gls-input" type="text">
+    <input class="gls-input" type="text" />
     <select class="gls-select">
         <option></option>
         <option></option>
     </select>
     <textarea class="gls-textarea"></textarea>
-    <input class="gls-radio" type="radio">
-    <input class="gls-checkbox" type="checkbox">
-    <input class="gls-range" type="range">
+    <input class="gls-radio" type="radio" />
+    <input class="gls-checkbox" type="checkbox" />
+    <input class="gls-range" type="range" />
 </form>
 ```
 
@@ -73,17 +73,17 @@ Add the `.gls-fieldset` class to a `<fieldset>` element and the `.gls-legend` cl
         </div>
 
     </fieldset>
+
 </form>
 </div>
 
 ```html
 <form>
     <fieldset class="gls-fieldset">
-
         <legend class="gls-legend">Legend</legend>
 
         <div class="gls-margin">
-            <input class="gls-input" type="text" placeholder="Input" aria-label="Input">
+            <input class="gls-input" type="text" placeholder="Input" aria-label="Input" />
         </div>
 
         <div class="gls-margin">
@@ -94,35 +94,47 @@ Add the `.gls-fieldset` class to a `<fieldset>` element and the `.gls-legend` cl
         </div>
 
         <div class="gls-margin">
-            <textarea class="gls-textarea" rows="5" placeholder="Textarea" aria-label="Textarea"></textarea>
+            <textarea
+                class="gls-textarea"
+                rows="5"
+                placeholder="Textarea"
+                aria-label="Textarea"
+            ></textarea>
         </div>
 
         <div class="gls-margin gls-grid-small gls-child-width-auto gls-grid">
-            <label><input class="gls-radio" type="radio" name="radio2" checked> A</label>
-            <label><input class="gls-radio" type="radio" name="radio2"> B</label>
+            <label><input class="gls-radio" type="radio" name="radio2" checked /> A</label>
+            <label><input class="gls-radio" type="radio" name="radio2" /> B</label>
         </div>
 
         <div class="gls-margin gls-grid-small gls-child-width-auto gls-grid">
-            <label><input class="gls-checkbox" type="checkbox" checked> A</label>
-            <label><input class="gls-checkbox" type="checkbox"> B</label>
+            <label><input class="gls-checkbox" type="checkbox" checked /> A</label>
+            <label><input class="gls-checkbox" type="checkbox" /> B</label>
         </div>
 
         <div class="gls-margin">
-            <input class="gls-range" type="range" value="2" min="0" max="10" step="0.1" aria-label="Range">
+            <input
+                class="gls-range"
+                type="range"
+                value="2"
+                min="0"
+                max="10"
+                step="0.1"
+                aria-label="Range"
+            />
         </div>
-
     </fieldset>
 </form>
 ```
 
-***
+---
 
 ## States modifiers
 
 Provide the user with basic information through feedback states on form controls by using one of the following classes.
 
-| Class              | Description                                                        |
-|--------------------|--------------------------------------------------------------------|
+| Class               | Description                                                        |
+| ------------------- | ------------------------------------------------------------------ |
 | `.gls-form-danger`  | Add this class to notify the user that the value is not validated. |
 | `.gls-form-success` | Add this class to notify the user that the value is validated.     |
 
@@ -144,26 +156,45 @@ Add the `disabled` attribute to a form control. It will appear muted.
 
 ```html
 <div class="gls-margin">
-    <input class="gls-input gls-form-danger gls-form-width-medium" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger">
+    <input
+        class="gls-input gls-form-danger gls-form-width-medium"
+        type="text"
+        placeholder="form-danger"
+        aria-label="form-danger"
+        value="form-danger"
+    />
 </div>
 
 <div class="gls-margin">
-    <input class="gls-input gls-form-success gls-form-width-medium" type="text" placeholder="form-success" aria-label="form-success" value="form-success">
+    <input
+        class="gls-input gls-form-success gls-form-width-medium"
+        type="text"
+        placeholder="form-success"
+        aria-label="form-success"
+        value="form-success"
+    />
 </div>
 
 <div class="gls-margin">
-    <input class="gls-input gls-form-width-medium" type="text" placeholder="disabled" aria-label="disabled" value="disabled" disabled>
+    <input
+        class="gls-input gls-form-width-medium"
+        type="text"
+        placeholder="disabled"
+        aria-label="disabled"
+        value="disabled"
+        disabled
+    />
 </div>
 ```
 
-***
+---
 
 ## Size modifiers
 
 Add one of the classes to an `<input>`, `<select>`, `<textarea>`, `<checkbox>` or `<radio>` element to modify its size.
 
-| Class            | Description                                 |
-|------------------|---------------------------------------------|
+| Class             | Description                                 |
+| ----------------- | ------------------------------------------- |
 | `.gls-form-large` | Add this class to make the element larger.  |
 | `.gls-form-small` | Add this class to make the element smaller. |
 
@@ -214,18 +245,17 @@ Add one of the classes to an `<input>`, `<select>`, `<textarea>`, `<checkbox>` o
 
 </form>
 
-
-
-
-
-
 </div>
 
 ```html
 <form>
-
     <div class="gls-margin">
-        <input class="gls-input gls-form-width-medium gls-form-large" type="text" placeholder="Large" aria-label="Large">
+        <input
+            class="gls-input gls-form-width-medium gls-form-large"
+            type="text"
+            placeholder="Large"
+            aria-label="Large"
+        />
         <select class="gls-select gls-form-width-small gls-form-large" aria-label="Large">
             <option>Option 01</option>
             <option>Option 02</option>
@@ -234,12 +264,17 @@ Add one of the classes to an `<input>`, `<select>`, `<textarea>`, `<checkbox>` o
                 <option>Option B</option>
             </optgroup>
         </select>
-        <input class="gls-checkbox gls-form-large" type="checkbox">
-        <input class="gls-radio gls-form-large" type="radio">
+        <input class="gls-checkbox gls-form-large" type="checkbox" />
+        <input class="gls-radio gls-form-large" type="radio" />
     </div>
 
     <div class="gls-margin">
-        <input class="gls-input gls-form-width-medium" type="text" placeholder="Default" aria-label="Default">
+        <input
+            class="gls-input gls-form-width-medium"
+            type="text"
+            placeholder="Default"
+            aria-label="Default"
+        />
         <select class="gls-select gls-form-width-small" aria-label="Default">
             <option>Option 01</option>
             <option>Option 02</option>
@@ -248,12 +283,17 @@ Add one of the classes to an `<input>`, `<select>`, `<textarea>`, `<checkbox>` o
                 <option>Option B</option>
             </optgroup>
         </select>
-        <input class="gls-checkbox" type="checkbox">
-        <input class="gls-radio" type="radio">
+        <input class="gls-checkbox" type="checkbox" />
+        <input class="gls-radio" type="radio" />
     </div>
 
     <div class="gls-margin">
-        <input class="gls-input gls-form-width-medium gls-form-small" type="text" placeholder="Small" aria-label="Small">
+        <input
+            class="gls-input gls-form-width-medium gls-form-small"
+            type="text"
+            placeholder="Small"
+            aria-label="Small"
+        />
         <select class="gls-select gls-form-width-small gls-form-small" aria-label="Small">
             <option>Option 01</option>
             <option>Option 02</option>
@@ -262,27 +302,20 @@ Add one of the classes to an `<input>`, `<select>`, `<textarea>`, `<checkbox>` o
                 <option>Option B</option>
             </optgroup>
         </select>
-        <input class="gls-checkbox gls-form-small" type="checkbox">
-        <input class="gls-radio gls-form-small" type="radio">
+        <input class="gls-checkbox gls-form-small" type="checkbox" />
+        <input class="gls-radio gls-form-small" type="radio" />
     </div>
-
 </form>
-
-
-
-
-
-
 ```
 
-***
+---
 
 ## Width modifiers
 
 Add one of the following classes to an `<input>`, `<select>` or `<textarea>` element to adjust its width.
 
-| Class                   | Description                 |
-|-------------------------|-----------------------------|
+| Class                    | Description                 |
+| ------------------------ | --------------------------- |
 | `.gls-form-width-large`  | Applies a width of _500px_. |
 | `.gls-form-width-medium` | Applies a width of _200px_. |
 | `.gls-form-width-small`  | Applies a width of _130px_. |
@@ -312,23 +345,41 @@ Add one of the following classes to an `<input>`, `<select>` or `<textarea>` ele
 
 ```html
 <form>
-
     <div class="gls-margin">
-        <input class="gls-input gls-form-width-large" type="text" placeholder="Large" aria-label="Large">
+        <input
+            class="gls-input gls-form-width-large"
+            type="text"
+            placeholder="Large"
+            aria-label="Large"
+        />
     </div>
 
     <div class="gls-margin">
-        <input class="gls-input gls-form-width-medium" type="text" placeholder="Medium" aria-label="Medium">
+        <input
+            class="gls-input gls-form-width-medium"
+            type="text"
+            placeholder="Medium"
+            aria-label="Medium"
+        />
     </div>
 
     <div class="gls-margin">
-        <input class="gls-input gls-form-width-small" type="text" placeholder="Small" aria-label="Small">
+        <input
+            class="gls-input gls-form-width-small"
+            type="text"
+            placeholder="Small"
+            aria-label="Small"
+        />
     </div>
 
     <div class="gls-margin">
-        <input class="gls-input gls-form-width-xsmall" type="text" placeholder="X-Small" aria-label="X-Small">
+        <input
+            class="gls-input gls-form-width-xsmall"
+            type="text"
+            placeholder="X-Small"
+            aria-label="X-Small"
+        />
     </div>
-
 </form>
 ```
 
@@ -342,11 +393,16 @@ You can also apply the `.gls-width-*` classes from the [Width component](https:/
 
 ```html
 <form>
-    <input class="gls-input gls-width-1-2" type="text" placeholder="gls-width-1-2" aria-label="gls-width-1-2">
+    <input
+        class="gls-input gls-width-1-2"
+        type="text"
+        placeholder="gls-width-1-2"
+        aria-label="gls-width-1-2"
+    />
 </form>
 ```
 
-***
+---
 
 ## Blank modifier
 
@@ -360,18 +416,22 @@ Add the `.gls-form-blank` class to minimize the styling of form controls.
 
 ```html
 <form>
-    <input class="gls-input gls-form-blank gls-form-width-medium" type="text" placeholder="Form blank">
+    <input
+        class="gls-input gls-form-blank gls-form-width-medium"
+        type="text"
+        placeholder="Form blank"
+    />
 </form>
 ```
 
-***
+---
 
 ## Layout
 
 Define labels and controls and apply a stacked or horizontal layout to form elements. Layout modifiers can be added to any parent element like the `<fieldset>` element. This makes it possible to have different form layouts for each fieldset.
 
-| Class                 | Description                                                 |
-|-----------------------|-------------------------------------------------------------|
+| Class                  | Description                                                 |
+| ---------------------- | ----------------------------------------------------------- |
 | `.gls-form-stacked`    | Add this class to display labels on top of controls.        |
 | `.gls-form-horizontal` | Add this class to display labels and controls side by side. |
 | `.gls-form-label`      | Add this class to define form labels.                       |
@@ -423,11 +483,15 @@ Define labels and controls and apply a stacked or horizontal layout to form elem
 
 ```html
 <form class="gls-form-stacked">
-
     <div class="gls-margin">
         <label class="gls-form-label" for="form-stacked-text">Text</label>
         <div class="gls-form-controls">
-            <input class="gls-input" id="form-stacked-text" type="text" placeholder="Some text...">
+            <input
+                class="gls-input"
+                id="form-stacked-text"
+                type="text"
+                placeholder="Some text..."
+            />
         </div>
     </div>
 
@@ -444,15 +508,14 @@ Define labels and controls and apply a stacked or horizontal layout to form elem
     <div class="gls-margin">
         <div class="gls-form-label">Radio</div>
         <div class="gls-form-controls">
-            <label><input class="gls-radio" type="radio" name="radio1"> Option 01</label><br>
-            <label><input class="gls-radio" type="radio" name="radio1"> Option 02</label>
+            <label><input class="gls-radio" type="radio" name="radio1" /> Option 01</label><br />
+            <label><input class="gls-radio" type="radio" name="radio1" /> Option 02</label>
         </div>
     </div>
-
 </form>
 ```
 
-***
+---
 
 ### Horizontal form
 
@@ -504,11 +567,15 @@ Use the `.gls-form-controls-text` class to better align checkboxes and radio but
 
 ```html
 <form class="gls-form-horizontal gls-margin-large">
-
     <div class="gls-margin">
         <label class="gls-form-label" for="form-horizontal-text">Text</label>
         <div class="gls-form-controls">
-            <input class="gls-input" id="form-horizontal-text" type="text" placeholder="Some text...">
+            <input
+                class="gls-input"
+                id="form-horizontal-text"
+                type="text"
+                placeholder="Some text..."
+            />
         </div>
     </div>
 
@@ -525,15 +592,14 @@ Use the `.gls-form-controls-text` class to better align checkboxes and radio but
     <div class="gls-margin">
         <div class="gls-form-label">Radio</div>
         <div class="gls-form-controls gls-form-controls-text">
-            <label><input class="gls-radio" type="radio" name="radio1"> Option 01</label><br>
-            <label><input class="gls-radio" type="radio" name="radio1"> Option 02</label>
+            <label><input class="gls-radio" type="radio" name="radio1" /> Option 01</label><br />
+            <label><input class="gls-radio" type="radio" name="radio1" /> Option 02</label>
         </div>
     </div>
-
 </form>
 ```
 
-***
+---
 
 ## Form and icons
 
@@ -542,7 +608,7 @@ You use an icon from the [Icon component](https://getuikit.com/docs/icon) inside
 ```html
 <div class="gls-inline">
     <span class="gls-form-icon" gls-icon="icon: user"></span>
-    <input class="gls-input">
+    <input class="gls-input" />
 </div>
 ```
 
@@ -568,25 +634,23 @@ You use an icon from the [Icon component](https://getuikit.com/docs/icon) inside
 
 ```html
 <form>
-
     <div class="gls-margin">
         <div class="gls-inline">
             <span class="gls-form-icon" gls-icon="icon: user"></span>
-            <input class="gls-input" type="text" aria-label="Not clickable icon">
+            <input class="gls-input" type="text" aria-label="Not clickable icon" />
         </div>
     </div>
 
     <div class="gls-margin">
         <div class="gls-inline">
             <span class="gls-form-icon gls-form-icon-flip" gls-icon="icon: lock"></span>
-            <input class="gls-input" type="text" aria-label="Not clickable icon">
+            <input class="gls-input" type="text" aria-label="Not clickable icon" />
         </div>
     </div>
-
 </form>
 ```
 
-***
+---
 
 ### Clickable icons
 
@@ -595,7 +659,7 @@ To enable an action, for example opening a modal to pick an image or link, use a
 ```html
 <div class="gls-inline">
     <a class="gls-form-icon gls-form-icon-flip" href="" gls-icon="icon: user"></a>
-    <input class="gls-input">
+    <input class="gls-input" />
 </div>
 ```
 
@@ -621,25 +685,23 @@ To enable an action, for example opening a modal to pick an image or link, use a
 
 ```html
 <form>
-
     <div class="gls-margin">
         <div class="gls-inline">
             <a class="gls-form-icon" href="#" gls-icon="icon: pencil"></a>
-            <input class="gls-input" type="text" aria-label="Clickable icon">
+            <input class="gls-input" type="text" aria-label="Clickable icon" />
         </div>
     </div>
 
     <div class="gls-margin">
         <div class="gls-inline">
             <a class="gls-form-icon gls-form-icon-flip" href="#" gls-icon="icon: link"></a>
-            <input class="gls-input" type="text" aria-label="Clickable icon">
+            <input class="gls-input" type="text" aria-label="Clickable icon" />
         </div>
     </div>
-
 </form>
 ```
 
-***
+---
 
 ## Form and grid
 
@@ -671,27 +733,27 @@ You can also use the [Grid](https://getuikit.com/docs/grid) and [Width](https://
 ```html
 <form class="gls-grid-small" gls-grid>
     <div class="gls-width-1-1">
-        <input class="gls-input" type="text" placeholder="100" aria-label="100">
+        <input class="gls-input" type="text" placeholder="100" aria-label="100" />
     </div>
     <div class="gls-width-1-2@s">
-        <input class="gls-input" type="text" placeholder="50" aria-label="50">
+        <input class="gls-input" type="text" placeholder="50" aria-label="50" />
     </div>
     <div class="gls-width-1-4@s">
-        <input class="gls-input" type="text" placeholder="25" aria-label="25">
+        <input class="gls-input" type="text" placeholder="25" aria-label="25" />
     </div>
     <div class="gls-width-1-4@s">
-        <input class="gls-input" type="text" placeholder="25" aria-label="25">
+        <input class="gls-input" type="text" placeholder="25" aria-label="25" />
     </div>
     <div class="gls-width-1-2@s">
-        <input class="gls-input" type="text" placeholder="50" aria-label="50">
+        <input class="gls-input" type="text" placeholder="50" aria-label="50" />
     </div>
     <div class="gls-width-1-2@s">
-        <input class="gls-input" type="text" placeholder="50" aria-label="50">
+        <input class="gls-input" type="text" placeholder="50" aria-label="50" />
     </div>
 </form>
 ```
 
-***
+---
 
 ## Custom controls
 
@@ -703,7 +765,7 @@ Use a button or text as a file input.
 
 ```html
 <div gls-form-custom>
-    <input type="file">
+    <input type="file" />
     <button type="button"></button>
 </div>
 ```
@@ -739,36 +801,42 @@ Use a button or text as a file input.
 
 ```html
 <form>
-
     <div class="gls-margin">
         <div gls-form-custom>
-            <input type="file" aria-label="Custom controls">
-            <button class="gls-button gls-button-default" type="button" tabindex="-1">Select</button>
+            <input type="file" aria-label="Custom controls" />
+            <button class="gls-button gls-button-default" type="button" tabindex="-1">
+                Select
+            </button>
         </div>
     </div>
 
     <div class="gls-margin">
         <span class="gls-text-middle">Here is a text</span>
         <div gls-form-custom>
-            <input type="file" aria-label="Custom controls">
+            <input type="file" aria-label="Custom controls" />
             <span class="gls-link">upload</span>
         </div>
     </div>
 
     <div class="gls-margin" gls-margin>
         <div gls-form-custom="target: true">
-            <input type="file" aria-label="Custom controls">
-            <input class="gls-input gls-form-width-medium" type="text" placeholder="Select file" aria-label="Custom controls" disabled>
+            <input type="file" aria-label="Custom controls" />
+            <input
+                class="gls-input gls-form-width-medium"
+                type="text"
+                placeholder="Select file"
+                aria-label="Custom controls"
+                disabled
+            />
         </div>
         <button class="gls-button gls-button-default">Submit</button>
     </div>
-
 </form>
 ```
 
 **Note** The hover and focus state for `gls-form-custom` are not styled by default, but you could use the adjacent sibling selector to do so.
 
-***
+---
 
 ### Select
 
@@ -835,7 +903,6 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
 
 ```html
 <form>
-
     <div class="gls-margin">
         <div gls-form-custom="target: true">
             <select aria-label="Custom controls">
@@ -878,21 +945,20 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
             </button>
         </div>
     </div>
-
 </form>
 ```
 
-***
+---
 
 ## Component option
 
 You can add this option to the `gls-form-custom` attribute. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option   | Value                 | Default | Description           |
-|----------|-----------------------|---------|-----------------------|
+| -------- | --------------------- | ------- | --------------------- |
 | `target` | CSS selector, Boolean | `false` | Value display target. |
 
-***
+---
 
 ## JavaScript
 
@@ -904,7 +970,7 @@ Learn more about [JavaScript components](https://getuikit.com/docs/javascript#pr
 UIkit.formCustom(element, options);
 ```
 
-***
+---
 
 ## Accessibility
 
@@ -913,5 +979,5 @@ Set the appropriate WAI-ARIA roles, states and properties to the Form component.
 - If no `<label>` element is associated with the form control, set the `aria-label` property to the form control to describe its meaning.
 
 ```html
-<input class="gls-input" type="text" aria-label="…">
+<input class="gls-input" type="text" aria-label="…" />
 ```

@@ -43,35 +43,65 @@ To apply this component, add the `gls-marker` attribute to any element. You can 
 <div class="gls-child-width-1-2" gls-grid>
     <div>
         <div class="gls-inline gls-dark">
-            <img src="images/light.jpg" width="1800" height="1200" alt="">
-            <a class="gls-position-absolute gls-transform-center" style="left: 20%; top: 30%" href="#" gls-marker></a>
-            <a class="gls-position-absolute gls-transform-center" style="left: 60%; top: 40%" href="#" gls-marker></a>
-            <a class="gls-position-absolute gls-transform-center" style="left: 80%; top: 70%" href="#" gls-marker></a>
+            <img src="images/light.jpg" width="1800" height="1200" alt="" />
+            <a
+                class="gls-position-absolute gls-transform-center"
+                style="left: 20%; top: 30%"
+                href="#"
+                gls-marker
+            ></a>
+            <a
+                class="gls-position-absolute gls-transform-center"
+                style="left: 60%; top: 40%"
+                href="#"
+                gls-marker
+            ></a>
+            <a
+                class="gls-position-absolute gls-transform-center"
+                style="left: 80%; top: 70%"
+                href="#"
+                gls-marker
+            ></a>
         </div>
     </div>
     <div>
         <div class="gls-inline gls-light">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
-            <a class="gls-position-absolute gls-transform-center" style="left: 20%; top: 30%" href="#" gls-marker></a>
-            <a class="gls-position-absolute gls-transform-center" style="left: 60%; top: 40%" href="#" gls-marker></a>
-            <a class="gls-position-absolute gls-transform-center" style="left: 80%; top: 70%" href="#" gls-marker></a>
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
+            <a
+                class="gls-position-absolute gls-transform-center"
+                style="left: 20%; top: 30%"
+                href="#"
+                gls-marker
+            ></a>
+            <a
+                class="gls-position-absolute gls-transform-center"
+                style="left: 60%; top: 40%"
+                href="#"
+                gls-marker
+            ></a>
+            <a
+                class="gls-position-absolute gls-transform-center"
+                style="left: 80%; top: 70%"
+                href="#"
+                gls-marker
+            ></a>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Accessibility
 
 The Marker component automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *marker* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
+- The _marker_ has the `aria-label` property, and if an `<a>` element is used, the `button` role.
 
 ### Internationalization
 
 The Marker component uses the following translation strings. Learn more about [translating components](https://getuikit.com/docs/accessibility#internationalization).
 
 | Key     | Default | Description             |
-|---------|---------|-------------------------|
+| ------- | ------- | ----------------------- |
 | `label` | `Open`  | `aria-label` attribute. |

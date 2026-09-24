@@ -32,7 +32,7 @@ To apply this component, add the `gls-lightbox` attribute to a container to turn
 </div>
 ```
 
-***
+---
 
 ## Alt attribute
 
@@ -52,11 +52,13 @@ To add an `alt` attribute to the image in the lightbox, set the `data-alt` attri
 
 ```html
 <div gls-lightbox>
-    <a class="gls-button gls-button-default" href="images/photo.jpg" data-alt="Image">Open Lightbox</a>
+    <a class="gls-button gls-button-default" href="images/photo.jpg" data-alt="Image"
+        >Open Lightbox</a
+    >
 </div>
 ```
 
-***
+---
 
 ## Caption
 
@@ -76,13 +78,15 @@ To display a caption at the bottom of the lightbox, set the `data-caption` attri
 
 ```html
 <div gls-lightbox>
-    <a class="gls-button gls-button-default" href="images/photo.jpg" data-caption="Caption">Open Lightbox</a>
+    <a class="gls-button gls-button-default" href="images/photo.jpg" data-caption="Caption"
+        >Open Lightbox</a
+    >
 </div>
 ```
 
 **Note** The caption is rendered as HTML. Sanitization is the developer's responsibility.
 
-***
+---
 
 ## Animations
 
@@ -158,17 +162,17 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 <div class="gls-child-width-1-3@m" gls-grid gls-lightbox="animation: slide">
     <div>
         <a class="gls-inline" href="images/photo.jpg" data-caption="Caption 1">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/dark.jpg" data-caption="Caption 2">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/light.jpg" data-caption="Caption 3">
-            <img src="images/light.jpg" width="1800" height="1200" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
 </div>
@@ -177,17 +181,17 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 <div class="gls-child-width-1-3@m" gls-grid gls-lightbox="animation: fade">
     <div>
         <a class="gls-inline" href="images/photo.jpg" data-caption="Caption 1">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/dark.jpg" data-caption="Caption 2">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/light.jpg" data-caption="Caption 3">
-            <img src="images/light.jpg" width="1800" height="1200" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
 </div>
@@ -196,23 +200,23 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 <div class="gls-child-width-1-3@m" gls-grid gls-lightbox="animation: scale">
     <div>
         <a class="gls-inline" href="images/photo.jpg" data-caption="Caption 1">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/dark.jpg" data-caption="Caption 2">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/light.jpg" data-caption="Caption 3">
-            <img src="images/light.jpg" width="1800" height="1200" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Navigations
 
@@ -269,17 +273,17 @@ By default, the lightbox shows a slidenav from the [Slidenav component](https://
 <div class="gls-child-width-1-3@m" gls-grid gls-lightbox="nav: thumbnav; slidenav: false">
     <div>
         <a class="gls-inline" href="images/photo.jpg" data-caption="Caption 1">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/dark.jpg" data-caption="Caption 2">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/light.jpg" data-caption="Caption 3">
-            <img src="images/light.jpg" width="1800" height="1200" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
 </div>
@@ -288,23 +292,23 @@ By default, the lightbox shows a slidenav from the [Slidenav component](https://
 <div class="gls-child-width-1-3@m" gls-grid gls-lightbox="nav: dotnav; slidenav: false">
     <div>
         <a class="gls-inline" href="images/photo.jpg" data-caption="Caption 1">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/dark.jpg" data-caption="Caption 2">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/light.jpg" data-caption="Caption 3">
-            <img src="images/light.jpg" width="1800" height="1200" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Counter
 
@@ -340,23 +344,23 @@ To show a counter with the current item number and the total number of items, ad
 <div class="gls-child-width-1-3@m" gls-grid gls-lightbox="counter: true">
     <div>
         <a class="gls-inline" href="images/photo.jpg" data-caption="Caption 1">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/dark.jpg" data-caption="Caption 2">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/light.jpg" data-caption="Caption 3">
-            <img src="images/light.jpg" width="1800" height="1200" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Color mode
 
@@ -386,19 +390,29 @@ To adapt the color of the overlaying controls for better visibility depending on
 ```html
 <div class="gls-child-width-1-3@m" gls-grid gls-lightbox="nav: thumbnav; slidenav: false">
     <div>
-        <a class="gls-inline" href="images/dark.jpg" data-caption="Caption 2" data-attrs="class: gls-inverse-light">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+        <a
+            class="gls-inline"
+            href="images/dark.jpg"
+            data-caption="Caption 2"
+            data-attrs="class: gls-inverse-light"
+        >
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
-        <a class="gls-inline" href="images/light.jpg" data-caption="Caption 3" data-attrs="class: gls-inverse-dark">
-            <img src="images/light.jpg" width="1800" height="1200" alt="">
+        <a
+            class="gls-inline"
+            href="images/light.jpg"
+            data-caption="Caption 3"
+            data-attrs="class: gls-inverse-dark"
+        >
+            <img src="images/light.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Content sources
 
@@ -426,18 +440,36 @@ A lightbox is not restricted to images. Other media, like videos, can be display
 ```html
 <div gls-lightbox>
     <a class="gls-button gls-button-default" href="images/photo.jpg" data-caption="Image">Image</a>
-    <a class="gls-button gls-button-default" href="https://yootheme.com/media/videos/yootheme-pro.mp4" data-caption="Video">Video</a>
-    <a class="gls-button gls-button-default" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube">YouTube</a>
-    <a class="gls-button gls-button-default" href="https://vimeo.com/1084537" data-caption="Vimeo">Vimeo</a>
-    <a class="gls-button gls-button-default" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4740.819266853735!2d9.99008871708242!3d53.550454675412404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f9d24afe84a0263!2sRathaus!5e0!3m2!1sde!2sde!4v1499675200938" data-caption="Google Maps" data-type="iframe">Google Maps</a>
+    <a
+        class="gls-button gls-button-default"
+        href="https://yootheme.com/media/videos/yootheme-pro.mp4"
+        data-caption="Video"
+        >Video</a
+    >
+    <a
+        class="gls-button gls-button-default"
+        href="https://www.youtube.com/watch?v=c2pz2mlSfXA"
+        data-caption="YouTube"
+        >YouTube</a
+    >
+    <a class="gls-button gls-button-default" href="https://vimeo.com/1084537" data-caption="Vimeo"
+        >Vimeo</a
+    >
+    <a
+        class="gls-button gls-button-default"
+        href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4740.819266853735!2d9.99008871708242!3d53.550454675412404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f9d24afe84a0263!2sRathaus!5e0!3m2!1sde!2sde!4v1499675200938"
+        data-caption="Google Maps"
+        data-type="iframe"
+        >Google Maps</a
+    >
 </div>
 ```
 
 **Note** Use `youtube-nocookie.com` within the YouTube link and the lightbox will use the domain to embed the YouTube video.
 
-***
+---
 
-###  Manual content type
+### Manual content type
 
 The Lightbox uses the `href` attribute to figure out the type of the linked content. If no filename extension is defined in the path, just add the `data-type` attribute to the `<a>` tag.
 
@@ -449,7 +481,7 @@ The Lightbox uses the `href` attribute to figure out the type of the linked cont
 | `data-type="video"`  | The content type is a video.           |
 | `data-type="iframe"` | The content type is a regular website. |
 
-***
+---
 
 ## Delay controls
 
@@ -469,11 +501,13 @@ By default, the controls are hidden after a short time if the mouse doesn't move
 
 ```html
 <div gls-lightbox="delay-controls: 0">
-    <a class="gls-button gls-button-default" href="images/photo.jpg" data-caption="Caption">Open Lightbox</a>
+    <a class="gls-button gls-button-default" href="images/photo.jpg" data-caption="Caption"
+        >Open Lightbox</a
+    >
 </div>
 ```
 
-***
+---
 
 ## BG close
 
@@ -493,11 +527,13 @@ By default, the lightbox closes if the background is clicked. To prevent this be
 
 ```html
 <div gls-lightbox="bg-close: false">
-    <a class="gls-button gls-button-default" href="images/photo.jpg" data-caption="Caption">Open Lightbox</a>
+    <a class="gls-button gls-button-default" href="images/photo.jpg" data-caption="Caption"
+        >Open Lightbox</a
+    >
 </div>
 ```
 
-***
+---
 
 ## Custom attributes
 
@@ -505,7 +541,11 @@ You can add custom attributes to lightbox content items by using the `data-attrs
 
 ```html
 <div gls-lightbox>
-    <a class="gls-button" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-attrs="width: 1280; height: 720;"></a>
+    <a
+        class="gls-button"
+        href="https://www.youtube.com/watch?v=c2pz2mlSfXA"
+        data-attrs="width: 1280; height: 720;"
+    ></a>
 </div>
 ```
 
@@ -517,11 +557,17 @@ You can add custom attributes to lightbox content items by using the `data-attrs
 
 ```html
 <div gls-lightbox>
-    <a class="gls-button gls-button-default" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube" data-attrs="width: 1280; height: 720;">YouTube</a>
+    <a
+        class="gls-button gls-button-default"
+        href="https://www.youtube.com/watch?v=c2pz2mlSfXA"
+        data-caption="YouTube"
+        data-attrs="width: 1280; height: 720;"
+        >YouTube</a
+    >
 </div>
 ```
 
-***
+---
 
 ## Custom template
 
@@ -534,17 +580,37 @@ This is the default lightbox template.
         <button class="gls-lightbox-close gls-close-large" type="button" gls-close></button>
     </div>
     <div class="gls-position-center-left gls-position-medium gls-transition-fade" gls-inverse>
-        <a class="gls-lightbox-slidenav" href gls-slidenav-previous gls-lightbox-item="previous"></a>
+        <a
+            class="gls-lightbox-slidenav"
+            href
+            gls-slidenav-previous
+            gls-lightbox-item="previous"
+        ></a>
     </div>
     <div class="gls-position-center-right gls-position-medium gls-transition-fade" gls-inverse>
         <a class="gls-lightbox-slidenav" href gls-slidenav-next gls-lightbox-item="next"></a>
     </div>
-    <div class="gls-position-center-right gls-position-medium" gls-inverse gls-toggle="cls: gls-position-center-right gls-position-bottom-center; mode: media; media: @s">
-        <ul class="gls-lightbox-thumbnav gls-thumbnav gls-thumbnav-vertical" gls-toggle="cls: gls-thumbnav-vertical; mode: media; media: @s"></ul>
-        <ul class="gls-lightbox-dotnav gls-dotnav gls-dotnav-vertical" gls-toggle="cls: gls-dotnav-vertical; mode: media; media: @s"></ul>
+    <div
+        class="gls-position-center-right gls-position-medium"
+        gls-inverse
+        gls-toggle="cls: gls-position-center-right gls-position-bottom-center; mode: media; media: @s"
+    >
+        <ul
+            class="gls-lightbox-thumbnav gls-thumbnav gls-thumbnav-vertical"
+            gls-toggle="cls: gls-thumbnav-vertical; mode: media; media: @s"
+        ></ul>
+        <ul
+            class="gls-lightbox-dotnav gls-dotnav gls-dotnav-vertical"
+            gls-toggle="cls: gls-dotnav-vertical; mode: media; media: @s"
+        ></ul>
     </div>
-    <div class="gls-lightbox-counter gls-text-large gls-position-top-left gls-position-small gls-transition-fade" gls-inverse></div>
-    <div class="gls-lightbox-caption gls-position-bottom gls-text-center gls-transition-slide-bottom gls-transition-opaque"></div>
+    <div
+        class="gls-lightbox-counter gls-text-large gls-position-top-left gls-position-small gls-transition-fade"
+        gls-inverse
+    ></div>
+    <div
+        class="gls-lightbox-caption gls-position-bottom gls-text-center gls-transition-slide-bottom gls-transition-opaque"
+    ></div>
 </div>
 ```
 
@@ -599,43 +665,64 @@ To override the default lightbox template, add the `template: #ID` option to lin
         <div class="gls-position-top-right gls-position-small gls-transition-fade" gls-inverse>
             <button class="gls-lightbox-close gls-close-large" type="button" gls-close></button>
         </div>
-        <div class="gls-position-bottom gls-position-medium gls-text-center gls-transition-fade" gls-inverse>
+        <div
+            class="gls-position-bottom gls-position-medium gls-text-center gls-transition-fade"
+            gls-inverse
+        >
             <div class="gls-grid-small gls-width-auto gls-flex-inline gls-flex-middle" gls-grid>
-                <div><a class="gls-lightbox-slidenav" href gls-slidenav-previous gls-lightbox-item="previous"></a></div>
+                <div>
+                    <a
+                        class="gls-lightbox-slidenav"
+                        href
+                        gls-slidenav-previous
+                        gls-lightbox-item="previous"
+                    ></a>
+                </div>
                 <div><div class="gls-lightbox-counter"></div></div>
-                <div><a class="gls-lightbox-slidenav" href gls-slidenav-next gls-lightbox-item="next"></a></div>
+                <div>
+                    <a
+                        class="gls-lightbox-slidenav"
+                        href
+                        gls-slidenav-next
+                        gls-lightbox-item="next"
+                    ></a>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
-<div class="gls-child-width-1-3@m" gls-grid gls-lightbox="template: #js-lightbox-template; counter: true">
+<div
+    class="gls-child-width-1-3@m"
+    gls-grid
+    gls-lightbox="template: #js-lightbox-template; counter: true"
+>
     <div>
         <a class="gls-inline" href="images/photo.jpg" data-caption="Caption 1">
-            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/dark.jpg" data-caption="Caption 2">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
     <div>
         <a class="gls-inline" href="images/light.jpg" data-caption="Caption 3">
-            <img src="images/light.jpg" width="1800" height="1200" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="" />
         </a>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](https://getuikit.com/docs/javascript#component-configuration)
 
 | Option              | Value           | Default | Description                                                                                                |
-|---------------------|-----------------|---------|------------------------------------------------------------------------------------------------------------|
+| ------------------- | --------------- | ------- | ---------------------------------------------------------------------------------------------------------- |
 | `animation`         | String          | `slide` | Lightbox animation mode (`slide`, `fade` or `scale`).                                                      |
 | `autoplay`          | Boolean         | `false` | Lightbox autoplays.                                                                                        |
 | `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                                                       |
@@ -648,7 +735,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `delay-controls`    | Number          | `3000`  | Delay time before controls fade out in ms. Setting `0` will prevent hiding controls.                       |
 | `toggle`            | CSS selector    | `a`     | Toggle selector - opens the Lightbox Panel upon click.                                                     |
 
-***
+---
 
 ## JavaScript
 
@@ -766,23 +853,23 @@ UIkit.lightboxPanel(element).stopAutoplay();
 
 Stops the Lightbox's autoplay.
 
-***
+---
 
 ## Accessibility
 
 The Lightbox component adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/) and the [Carousel WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *lightbox* has the `dialog` role, the `aria-modal` property and the `aria-roledescription` property set to `carousel`.
-- The *slide list* has an ID, the `presentation` role and the `aria-live` property.
-- The *slides* have an ID, the `group` role, the `aria-roledescription` property set to `slide` and an `aria-label` property.
+- The _lightbox_ has the `dialog` role, the `aria-modal` property and the `aria-roledescription` property set to `carousel`.
+- The _slide list_ has an ID, the `presentation` role and the `aria-live` property.
+- The _slides_ have an ID, the `group` role, the `aria-roledescription` property set to `slide` and an `aria-label` property.
 
 The previous/next navigation adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
 
-- The *prev/next navigation items* have the `button` role, the `aria-controls` property set to the ID of the slide list, and an `aria-label` property.
+- The _prev/next navigation items_ have the `button` role, the `aria-controls` property set to the ID of the slide list, and an `aria-label` property.
 
 The Close component automatically sets the appropriate WAI-ARIA roles and properties.
 
-- The *close icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
+- The _close icon_ has the `aria-label` property, and if an `<a>` element is used, the `button` role.
 
 ### Keyboard interaction
 

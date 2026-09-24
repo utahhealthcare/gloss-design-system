@@ -12,16 +12,16 @@ title: Animation
 
 Add one of the `.gls-animation-*` classes to any element. The animation is shown when the class is added, so usually immediately on page load. To show the animation at another point, for example when the element enters the viewport, you would add the class using JavaScript — with the [Scrollspy component](https://getuikit.com/docs/scrollspy) for instance. This is what happens in many of UIkit's components that make use of animations. All animations themselves are implemented with CSS, so they do not require JavaScript to play.
 
-| Class                                                                                                                                              | Description                                                                                                                            |
-|----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `.gls-animation-fade`                                                                                                                               | The element fades in.                                                                                                                  |
-| `.gls-animation-scale-up`<br> `.gls-animation-scale-down`                                                                                            | The element fades in and scales up or down.                                                                                            |
-| `.gls-animation-slide-top`<br> `.gls-animation-slide-bottom`  `.gls-animation-slide-left`<br> `.gls-animation-slide-right`                             | The element fades and slides in from the top, bottom, left or right by its own height or width.                                        |
-| `.gls-animation-slide-top-small`<br> `.gls-animation-slide-bottom-small`   `.gls-animation-slide-left-small`<br> `.gls-animation-slide-right-small`    | The element fades and slides in from the top, bottom, left or right with a smaller distance which is specified by a fixed pixel value. |
-| `.gls-animation-slide-top-medium`<br> `.gls-animation-slide-bottom-medium`  `.gls-animation-slide-left-medium`<br> `.gls-animation-slide-right-medium` | The element fades and slides in from the top, bottom, left or right with a medium distance which is specified by a fixed pixel value.  |
-| `.gls-animation-kenburns`                                                                                                                           | The element scales very slowly up without fading in.                                                                                   |
-| `.gls-animation-shake`                                                                                                                              | The element shakes.                                                                                                                    |
-| `.gls-animation-stroke`                                                                                                                             | The SVG element strokes are drawn.                                                                                                     |
+| Class                                                                                                                                                 | Description                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `.gls-animation-fade`                                                                                                                                 | The element fades in.                                                                                                                  |
+| `.gls-animation-scale-up`<br> `.gls-animation-scale-down`                                                                                             | The element fades in and scales up or down.                                                                                            |
+| `.gls-animation-slide-top`<br> `.gls-animation-slide-bottom` `.gls-animation-slide-left`<br> `.gls-animation-slide-right`                             | The element fades and slides in from the top, bottom, left or right by its own height or width.                                        |
+| `.gls-animation-slide-top-small`<br> `.gls-animation-slide-bottom-small` `.gls-animation-slide-left-small`<br> `.gls-animation-slide-right-small`     | The element fades and slides in from the top, bottom, left or right with a smaller distance which is specified by a fixed pixel value. |
+| `.gls-animation-slide-top-medium`<br> `.gls-animation-slide-bottom-medium` `.gls-animation-slide-left-medium`<br> `.gls-animation-slide-right-medium` | The element fades and slides in from the top, bottom, left or right with a medium distance which is specified by a fixed pixel value.  |
+| `.gls-animation-kenburns`                                                                                                                             | The element scales very slowly up without fading in.                                                                                   |
+| `.gls-animation-shake`                                                                                                                                | The element shakes.                                                                                                                    |
+| `.gls-animation-stroke`                                                                                                                               | The SVG element strokes are drawn.                                                                                                     |
 
 To toggle animation on hover or focus, add the `.gls-animation-toggle` class to a parent element. Also add `tabindex="0"` to make the animation focusable through keyboard navigation and on touch devices.
 
@@ -201,7 +201,7 @@ To toggle animation on hover or focus, add the `.gls-animation-toggle` class to 
 </div>
 ```
 
-***
+---
 
 ## Reverse modifier
 
@@ -299,89 +299,121 @@ By default, all animations are incoming. To reverse any animation, add the `.gls
 ```html
 <div class="gls-child-width-1-2 gls-child-width-1-4@s gls-grid-match" gls-grid>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-fade gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-fade gls-animation-reverse"
+        >
             <p class="gls-text-center">Fade</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-scale-up gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-scale-up gls-animation-reverse"
+        >
             <p class="gls-text-center">Scale Up</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-scale-down gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-scale-down gls-animation-reverse"
+        >
             <p class="gls-text-center">Scale Down</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-shake gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-shake gls-animation-reverse"
+        >
             <p class="gls-text-center">Shake</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-left gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-left gls-animation-reverse"
+        >
             <p class="gls-text-center">Left</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-top gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-top gls-animation-reverse"
+        >
             <p class="gls-text-center">Top</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-bottom gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-bottom gls-animation-reverse"
+        >
             <p class="gls-text-center">Bottom</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-right gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-right gls-animation-reverse"
+        >
             <p class="gls-text-center">Right</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-left-small gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-left-small gls-animation-reverse"
+        >
             <p class="gls-text-center">Left Small</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-top-small gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-top-small gls-animation-reverse"
+        >
             <p class="gls-text-center">Top Small</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-bottom-small gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-bottom-small gls-animation-reverse"
+        >
             <p class="gls-text-center">Bottom Small</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-right-small gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-right-small gls-animation-reverse"
+        >
             <p class="gls-text-center">Right Small</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-left-medium gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-left-medium gls-animation-reverse"
+        >
             <p class="gls-text-center">Left Medium</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-top-medium gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-top-medium gls-animation-reverse"
+        >
             <p class="gls-text-center">Top Medium</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-bottom-medium gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-bottom-medium gls-animation-reverse"
+        >
             <p class="gls-text-center">Bottom Medium</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-slide-right-medium gls-animation-reverse">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-slide-right-medium gls-animation-reverse"
+        >
             <p class="gls-text-center">Right Medium</p>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Fast modifier
 
@@ -390,7 +422,6 @@ To play animations at a faster speed, add the `.gls-animation-fast` class to the
 ```html
 <div class="gls-animation-fade gls-animation-fast"></div>
 ```
-
 
 <div class="gls-docs-example">
 <div class="gls-width-1-3@s">
@@ -412,7 +443,7 @@ To play animations at a faster speed, add the `.gls-animation-fast` class to the
 </div>
 ```
 
-***
+---
 
 ## Origin modifiers
 
@@ -445,31 +476,37 @@ By default, scaling animations originate from the center. To modify this behavio
 ```html
 <div class="gls-child-width-1-3@s" gls-grid>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-scale-up gls-transform-origin-bottom-right">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-scale-up gls-transform-origin-bottom-right"
+        >
             <p class="gls-text-center">Bottom Right</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-scale-up gls-transform-origin-top-center">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-scale-up gls-transform-origin-top-center"
+        >
             <p class="gls-text-center">Top Center</p>
         </div>
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <div class="gls-card gls-card-default gls-card-body gls-animation-scale-up gls-transform-origin-bottom-center">
+        <div
+            class="gls-card gls-card-default gls-card-body gls-animation-scale-up gls-transform-origin-bottom-center"
+        >
             <p class="gls-text-center">Bottom Center</p>
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## Ken Burns
 
 To add a simple Ken Burns effect, add the `.gls-animation-kenburns` class to any image. You can also apply the `.gls-animation-reverse` or one of the `.gls-transform-origin-*` classes from the [Utility component](https://getuikit.com/docs/utility#transform-origin) to modify the effect.
 
 ```html
-<img class="gls-animation-kenburns" src="" width="" height="" alt="">
+<img class="gls-animation-kenburns" src="" width="" height="" alt="" />
 ```
 
 By default, the animation starts on page load. In this example we used the [Scrollspy](https://getuikit.com/docs/scrollspy) component, to toggle the effect when the image enters the view.
@@ -493,18 +530,31 @@ By default, the animation starts on page load. In this example we used the [Scro
 <div class="gls-child-width-1-2@s gls-grid-small" gls-grid>
     <div>
         <div class="gls-overflow-hidden">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="Example image" gls-scrollspy="cls: gls-animation-kenburns; repeat: true">
+            <img
+                src="images/dark.jpg"
+                width="1800"
+                height="1200"
+                alt="Example image"
+                gls-scrollspy="cls: gls-animation-kenburns; repeat: true"
+            />
         </div>
     </div>
     <div>
         <div class="gls-overflow-hidden">
-            <img src="images/dark.jpg" width="1800" height="1200" alt="Example image" class="gls-animation-reverse gls-transform-origin-top-right" gls-scrollspy="cls: gls-animation-kenburns; repeat: true">
+            <img
+                src="images/dark.jpg"
+                width="1800"
+                height="1200"
+                alt="Example image"
+                class="gls-animation-reverse gls-transform-origin-top-right"
+                gls-scrollspy="cls: gls-animation-kenburns; repeat: true"
+            />
         </div>
     </div>
 </div>
 ```
 
-***
+---
 
 ## SVG Strokes
 
@@ -513,15 +563,20 @@ The Animation component can be used to animate SVG strokes. The effect looks lik
 The following example shows how to add the inline SVG manually. Since you have to know the exact length of the stroke, UIkit requires you to set the length in the custom property `--gls-animation-stroke`. In this example the stroke length is `46`.
 
 ```html
-<svg class="gls-animation-stroke" style="--gls-animation-stroke: 46;" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-    <path fill="none" stroke="#000" stroke-width="1" d=""/>
+<svg
+    class="gls-animation-stroke"
+    style="--gls-animation-stroke: 46;"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <path fill="none" stroke="#000" stroke-width="1" d="" />
 </svg>
 ```
 
 A much easier way is to use the [SVG component](https://getuikit.com/docs/svg) by adding `gls-svg="stroke-animation: true"` to the image element. It will calculate the stroke length and add the `--gls-animation-stroke` custom property automatically.
 
 ```html
-<img src="" width="" height="" alt="" gls-svg="stroke-animation: true">
+<img src="" width="" height="" alt="" gls-svg="stroke-animation: true" />
 ```
 
 <div class="gls-docs-example">
@@ -538,10 +593,24 @@ A much easier way is to use the [SVG component](https://getuikit.com/docs/svg) b
 ```html
 <div class="gls-child-width-1-2@m gls-text-center" gls-grid>
     <div class="gls-animation-toggle" tabindex="0">
-        <img class="gls-animation-stroke" src="images/strokes.svg" width="400" height="400" alt="" gls-svg="stroke-animation: true">
+        <img
+            class="gls-animation-stroke"
+            src="images/strokes.svg"
+            width="400"
+            height="400"
+            alt=""
+            gls-svg="stroke-animation: true"
+        />
     </div>
     <div class="gls-animation-toggle" tabindex="0">
-        <img class="gls-animation-stroke gls-animation-reverse" src="images/strokes.svg" width="400" height="400" alt="" gls-svg="stroke-animation: true">
+        <img
+            class="gls-animation-stroke gls-animation-reverse"
+            src="images/strokes.svg"
+            width="400"
+            height="400"
+            alt=""
+            gls-svg="stroke-animation: true"
+        />
     </div>
 </div>
 ```
