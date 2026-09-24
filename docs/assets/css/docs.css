@@ -1,4 +1,7 @@
 :root {
+    --docs-sidebar-left-width: 240px;
+    --docs-sidebar-right-width: 200px;
+    --docs-sidebar-right-left: 0px;
     color: #21252e;
     background: #ffffff;
     font-family:
@@ -37,10 +40,51 @@ body {
     color: inherit;
 }
 
-.docs-sidebar {
-    max-height: calc(100vh - 4rem);
-    overflow-y: auto;
-    padding-right: 1rem;
+.docs-sidebar-left {
+    position: fixed;
+    z-index: 10;
+    top: var(--navbar-nav-item-height, 80px);
+    bottom: 0;
+    box-sizing: border-box;
+    width: var(--docs-sidebar-left-width) !important;
+    overflow: auto;
+    padding: 40px 40px 60px;
+    border-inline-end: 1px solid #e5e5e5;
+}
+
+.docs-main {
+    position: relative;
+}
+
+.docs-sidebar-left + .docs-main {
+    padding-inline-start: var(--docs-sidebar-left-width);
+}
+
+.docs-sidebar-right {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: calc(100% + var(--docs-sidebar-right-left));
+    width: var(--docs-sidebar-right-width);
+}
+
+@media (min-width: 1200px) {
+    .docs-sidebar-left + .docs-main {
+        padding-inline-start: calc(
+            var(--docs-sidebar-left-width) -
+                (var(--docs-sidebar-right-width) + var(--docs-sidebar-right-left))
+        );
+    }
+}
+
+@media (min-width: 1600px) {
+    :root {
+        --docs-sidebar-left-width: 300px;
+        --docs-sidebar-right-left: 60px;
+    }
+
+    .docs-sidebar-left {
+        padding: 45px 45px 60px;
+    }
 }
 
 .docs-nav-title {
@@ -54,7 +98,7 @@ body {
     text-transform: uppercase;
 }
 
-.docs-sidebar .gls-nav > .docs-nav__item--current > a {
+.docs-sidebar-left .gls-nav > .docs-nav__item--current > a {
     border-left: 2px solid #7c0000;
     padding-left: calc(1em - 2px);
     color: #21252e;

@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="{{ '/assets/css/docs.css' | relative_url }}" />
     </head>
     <body class="gls-background-default">
-        <header class="docs-header gls-navbar-container gls-navbar-transparent gls-background-primary">
+        <header class="docs-header gls-navbar-container gls-navbar-transparent gls-background-primary" gls-sticky="media: 960; target-offset: 0;">
             <div class="gls-container gls-container-expand">
                 <nav class="gls-navbar" aria-label="Primary navigation">
                     <div class="gls-navbar-left">
@@ -26,37 +26,35 @@
             </div>
         </header>
 
-        <main class="gls-section gls-section-small">
-            <div class="gls-container gls-container-expand">
-                <div class="gls-grid-large" gls-grid>
-                    <aside class="gls-width-1-5@l gls-visible@l">
-                        <div class="docs-sidebar" gls-sticky="offset: 32; media: @l">
-                            <p class="docs-nav-title">Components</p>
-                            <nav aria-label="Components">
-                                <ul class="gls-nav gls-nav-default">
-                                    {% for component in site.data.components %}
-                                        {% assign component_path = component.slug | prepend: '/' | append: '/' %}
-                                        {% if page.url == component_path %}
-                                            <li class="docs-nav__item--current">
-                                        {% else %}
-                                            <li>
-                                        {% endif %}
-                                            <a href="{{ component_path | relative_url }}">
-                                                {{ component.title }}
-                                            </a>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            </nav>
-                        </div>
-                    </aside>
+        <main id="main-content">
+            <aside class="docs-sidebar-left gls-visible@m" aria-label="Components">
+                <p class="docs-nav-title gls-width-5-6">Components</p>
+                <nav>
+                    <ul class="gls-nav gls-nav-default">
+                        {% for component in site.data.components %}
+                            {% assign component_path = component.slug | prepend: '/' | append: '/' %}
+                            {% if page.url == component_path %}
+                                <li class="docs-nav__item--current">
+                            {% else %}
+                                <li>
+                            {% endif %}
+                                <a href="{{ component_path | relative_url }}">
+                                    {{ component.title }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </aside>
 
-                    <article class="gls-width-expand@l docs-content" data-docs-content>
+            <div class="docs-main gls-section gls-section-small">
+                <div class="docs-content gls-container gls-container-xsmall gls-position-relative">
+                    <article data-docs-content>
                         {{ content }}
                     </article>
 
-                    <aside class="gls-width-1-5@l gls-visible@l" data-docs-toc-column>
-                        <div class="docs-toc" gls-sticky="offset: 32; media: @l">
+                    <aside class="docs-sidebar-right gls-visible@l" data-docs-toc-column>
+                        <div gls-sticky="offset: 160; media: @l">
                             <p class="docs-nav-title">On this page</p>
                             <nav aria-label="On this page">
                                 <ul
