@@ -11,6 +11,7 @@ const shouldCheck = process.argv.includes('--check');
 
 const config = JSON.parse(await readFile(configPath, 'utf8'));
 const sourceRoot = path.resolve(projectDirectory, config.sourceRoot);
+const navigationPath = path.resolve(sourceRoot, config.navigation);
 
 async function revision() {
     try {
@@ -125,13 +126,19 @@ async function renderPage(page, sourceRevision) {
 }
 
 const sourceRevision = await revision();
+const navigation = JSON.parse(await readFile(navigationPath, 'utf8'));
+const componentSlugs = Object.values(navigation[config.section] ?? {});
+const pages = componentSlugs.map((slug) => ({
+    source: `docs/pages/${slug}.md`,
+    destination: path.posix.join(config.destinationRoot, `${slug}.md`),
+}));
 
-for (const page of config.pages) {
+for (const page of pages) {
     await renderPage(page, sourceRevision);
 }
 
 if (shouldCheck) {
     console.log(`UIkit documentation is up to date at ${sourceRevision}.`);
 } else {
-    console.log(`Synced ${config.pages.length} UIkit documentation page(s) at ${sourceRevision}.`);
+    console.log(`Synced ${pages.length} UIkit documentation page(s) at ${sourceRevision}.`);
 }
