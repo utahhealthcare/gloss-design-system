@@ -96,19 +96,19 @@ To create an accordion icon, just add a `span` element with the `gls-accordion-i
 <div class="gls-docs-example">
 <ul class="gls-accordion-default" gls-accordion>
     <li class="gls-open">
-        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
         </div>
@@ -119,21 +119,30 @@ To create an accordion icon, just add a `span` element with the `gls-accordion-i
 ```html
 <ul class="gls-accordion-default" gls-accordion>
     <li class="gls-open">
-        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+            <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor reprehenderit.
+            </p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.
+            </p>
         </div>
     </li>
 </ul>
@@ -154,19 +163,19 @@ By default, all accordion items can be collapsed. To prevent this behavior and a
 <div class="gls-docs-example">
 <ul class="gls-accordion-default" gls-accordion="collapsible: false">
     <li>
-        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
         </div>
@@ -177,21 +186,30 @@ By default, all accordion items can be collapsed. To prevent this behavior and a
 ```html
 <ul class="gls-accordion-default" gls-accordion="collapsible: false">
     <li>
-        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+            <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor reprehenderit.
+            </p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.
+            </p>
         </div>
     </li>
 </ul>
@@ -212,19 +230,19 @@ To display multiple content sections at the same time without one collapsing whe
 <div class="gls-docs-example">
 <ul class="gls-accordion-default" gls-accordion="multiple: true">
     <li class="gls-open">
-        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
         </div>
@@ -235,21 +253,30 @@ To display multiple content sections at the same time without one collapsing whe
 ```html
 <ul class="gls-accordion-default" gls-accordion="multiple: true">
     <li class="gls-open">
-        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+            <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor reprehenderit.
+            </p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.
+            </p>
         </div>
     </li>
 </ul>
@@ -274,19 +301,19 @@ To specify which items should be opened initially, add the `.gls-open` class to 
 <div class="gls-docs-example">
 <ul class="gls-accordion-default" gls-accordion>
     <li>
-        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </li>
     <li class="gls-open">
-        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
         </div>
@@ -297,21 +324,30 @@ To specify which items should be opened initially, add the `.gls-open` class to 
 ```html
 <ul class="gls-accordion-default" gls-accordion>
     <li>
-        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 1 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
         </div>
     </li>
     <li class="gls-open">
-        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 2 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+            <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor reprehenderit.
+            </p>
         </div>
     </li>
     <li>
-        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></a>
+        <a class="gls-accordion-title" href>Item 3 <span gls-accordion-icon></span></a>
         <div class="gls-accordion-content">
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.
+            </p>
         </div>
     </li>
 </ul>

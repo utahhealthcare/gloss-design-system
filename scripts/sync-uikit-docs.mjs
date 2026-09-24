@@ -27,6 +27,13 @@ function replaceGlossClasses(source) {
     return source.replaceAll('uk-', 'gls-');
 }
 
+function repairMalformedMarkup(source) {
+    // A couple of UIkit live examples close an icon span with </a> directly.
+    // Browsers then nest the rest of the demo inside the span and display the
+    // remaining Markdown as visible text. Repair the source while importing it.
+    return source.replace(/(<span\b[^>\n]*\bgls-[^>\n]*)(><\/a>)/g, '$1></span></a>');
+}
+
 function convertExampleFences(source) {
     const lines = source.split(/\r?\n/);
     const output = [];
@@ -97,7 +104,9 @@ async function renderPage(page, sourceRevision) {
     const destinationPath = path.resolve(projectDirectory, page.destination);
     const source = await readFile(sourcePath, 'utf8');
     const transformed = rewriteDocumentationLinks(
-        convertExampleFences(replaceUiKitLiquidTags(replaceGlossClasses(source))),
+        convertExampleFences(
+            repairMalformedMarkup(replaceUiKitLiquidTags(replaceGlossClasses(source))),
+        ),
     );
     const rendered = addFrontMatter(
         transformed,

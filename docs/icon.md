@@ -393,7 +393,7 @@ Use the modifier `.gls-icon-button` class on an `<a>` element to create an icon 
 Use the modifier `.gls-icon-overlay` class to make the icon work best on background images.
 
 ```html
-<span class="gls-icon-overlay" gls-icon="play-circle"></a>
+<span class="gls-icon-overlay" gls-icon="play-circle"></span></a>
 ```
 
 <div class="gls-docs-example">
