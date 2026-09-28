@@ -1,0 +1,77 @@
+// ========================================================================
+// Overrides: Tile
+// ========================================================================
+
+@mixin hook-tile-misc() {
+    // Custom Primary Light Modifier
+    .uk-tile-primary-light {
+        --gls-inverse: dark;
+        background-color: $tile-primary-light-background;
+        color: $global-color;
+    }
+
+    // Custom Secondary Light Modifier
+    .uk-tile-secondary-light {
+        --gls-inverse: dark;
+        background-color: $tile-secondary-light-background;
+        color: $global-color;
+    }
+
+    // Custom Tertiary Modifier
+    .uk-tile-tertiary {
+        --gls-inverse: light;
+        background-color: $tile-tertiary-background;
+        color: $global-inverse-color;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .uk-h1,
+        .uk-h2,
+        .uk-h3,
+        .uk-h4,
+        .uk-h5,
+        .uk-h6 {
+            color: $global-inverse-color;
+        }
+    }
+
+    // Custom Gradient Modifier
+    .uk-tile-gradient {
+        --gls-inverse: dark;
+        background: $tile-gradient-background;
+        color: $global-color;
+    }
+
+    // Enforce correct dark/black text color mode on Secondary Tiles (WCAG contrast)
+    .uk-tile-secondary {
+        --gls-inverse: dark;
+        background-color: $tile-secondary-background;
+        color: $global-color;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .uk-h1,
+        .uk-h2,
+        .uk-h3,
+        .uk-h4,
+        .uk-h5,
+        .uk-h6 {
+            color: $global-emphasis-color;
+        }
+
+        a {
+            color: $global-link-color;
+            &:hover {
+                color: $global-link-hover-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Search - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Search</h1>
+
+            <h2>Default</h2>
+
+            <div class="gls-margin">
+                <form class="gls-search gls-search-default">
+                    <input class="gls-search-input" type="search" placeholder="Search" autofocus />
+                </form>
+            </div>
+
+            <div class="gls-margin" gls-margin>
+                <form class="gls-search gls-search-default">
+                    <span gls-search-icon></span>
+                    <input class="gls-search-input" type="search" placeholder="Icon..." />
+                </form>
+
+                <form class="gls-search gls-search-default">
+                    <span class="gls-search-icon-flip" gls-search-icon></span>
+                    <input class="gls-search-input" type="search" placeholder="Flip..." />
+                </form>
+            </div>
+
+            <div class="gls-margin" gls-margin>
+                <form class="gls-search gls-search-default">
+                    <a href="#" gls-search-icon></a>
+                    <input class="gls-search-input" type="search" placeholder="Link..." />
+                </form>
+
+                <form class="gls-search gls-search-default">
+                    <button class="gls-search-icon-flip" gls-search-icon></button>
+                    <input class="gls-search-input" type="search" placeholder="Button..." />
+                </form>
+            </div>
+
+            <h2>Navbar</h2>
+
+            <div class="gls-margin gls-navbar-container gls-navbar">
+                <div class="gls-navbar-left">
+                    <div class="gls-navbar-item">
+                        <form class="gls-search gls-search-navbar">
+                            <input class="gls-search-input" type="search" placeholder="Search" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gls-margin gls-navbar-container gls-navbar">
+                <div class="gls-navbar-left">
+                    <div class="gls-navbar-item">
+                        <form class="gls-search gls-search-navbar">
+                            <span gls-search-icon></span>
+                            <input class="gls-search-input" type="search" placeholder="Icon..." />
+                        </form>
+                    </div>
+                </div>
+                <div class="gls-navbar-right">
+                    <div class="gls-navbar-item">
+                        <form class="gls-search gls-search-navbar">
+                            <span class="gls-search-icon-flip" gls-search-icon></span>
+                            <input class="gls-search-input" type="search" placeholder="Flip..." />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gls-margin gls-navbar-container gls-navbar">
+                <div class="gls-navbar-left">
+                    <div class="gls-navbar-item">
+                        <form class="gls-search gls-search-navbar">
+                            <a href="#" gls-search-icon></a>
+                            <input class="gls-search-input" type="search" placeholder="Link..." />
+                        </form>
+                    </div>
+                </div>
+                <div class="gls-navbar-right">
+                    <div class="gls-navbar-item">
+                        <form class="gls-search gls-search-navbar">
+                            <button class="gls-search-icon-flip" gls-search-icon></button>
+                            <input class="gls-search-input" type="search" placeholder="Button..." />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Large</h2>
+
+            <div class="gls-margin">
+                <form class="gls-search gls-search-large">
+                    <input class="gls-search-input" type="search" placeholder="Search" />
+                </form>
+            </div>
+
+            <div class="gls-margin" gls-margin>
+                <form class="gls-search gls-search-large">
+                    <span gls-search-icon></span>
+                    <input class="gls-search-input" type="search" placeholder="Icon..." />
+                </form>
+
+                <form class="gls-search gls-search-large">
+                    <span class="gls-search-icon-flip" gls-search-icon></span>
+                    <input class="gls-search-input" type="search" placeholder="Flip..." />
+                </form>
+            </div>
+
+            <div class="gls-margin" gls-margin>
+                <form class="gls-search gls-search-large">
+                    <a href="#" gls-search-icon></a>
+                    <input class="gls-search-input" type="search" placeholder="Link..." />
+                </form>
+
+                <form class="gls-search gls-search-large">
+                    <button class="gls-search-icon-flip" gls-search-icon></button>
+                    <input class="gls-search-input" type="search" placeholder="Button..." />
+                </form>
+            </div>
+
+            <h2>Toggle</h2>
+
+            <a class="gls-search-toggle" href="#" gls-search-icon></a>
+
+            <h2>Navbar Toggle + Layouts</h2>
+
+            <nav class="gls-navbar-container gls-margin" gls-navbar>
+                <div class="test-overlay gls-navbar-left">
+                    <a class="gls-navbar-item gls-logo" href="#">Overlay</a>
+
+                    <ul class="gls-navbar-nav">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li><a href="#">Parent</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+
+                <div class="test-overlay gls-navbar-right">
+                    <ul class="gls-navbar-nav">
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <a
+                        class="gls-navbar-toggle"
+                        gls-search-icon
+                        gls-toggle="target: .test-overlay; animation: gls-animation-fade"
+                        href="#"
+                    ></a>
+                </div>
+
+                <div class="gls-navbar-left gls-flex-1 test-overlay" hidden>
+                    <div class="gls-navbar-item gls-width-expand">
+                        <form class="gls-search gls-search-navbar gls-width-1-1">
+                            <input
+                                class="gls-search-input"
+                                type="search"
+                                placeholder="Search"
+                                autofocus
+                            />
+                        </form>
+                    </div>
+
+                    <a
+                        class="gls-navbar-toggle"
+                        gls-close
+                        gls-toggle="target: .test-overlay; animation: gls-animation-fade"
+                        href="#"
+                    ></a>
+                </div>
+            </nav>
+
+            <nav class="gls-navbar-container gls-margin" gls-navbar>
+                <div class="gls-navbar-left">
+                    <a class="gls-navbar-item gls-logo" href="#">Drop</a>
+
+                    <ul class="gls-navbar-nav">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li><a href="#">Parent</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div class="gls-navbar-right">
+                    <ul class="gls-navbar-nav">
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <a class="gls-navbar-toggle" gls-search-icon href="#"></a>
+                        <div gls-drop="mode: click; pos: left-center; offset: 0">
+                            <form class="gls-search gls-search-navbar gls-width-1-1">
+                                <input
+                                    class="gls-search-input"
+                                    type="search"
+                                    placeholder="Search"
+                                    autofocus
+                                />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="gls-navbar-container gls-margin" gls-navbar>
+                <div class="gls-navbar-left">
+                    <a class="gls-navbar-item gls-logo" href="#">Dropdown</a>
+
+                    <ul class="gls-navbar-nav">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li><a href="#">Parent</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div class="gls-navbar-right">
+                    <ul class="gls-navbar-nav">
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <a class="gls-navbar-toggle" href="#" gls-search-icon></a>
+                        <div
+                            class="gls-navbar-dropdown"
+                            gls-drop="mode: click; cls-drop: gls-navbar-dropdown; boundary: !.gls-navbar; flip: false"
+                        >
+                            <div class="gls-grid-small gls-flex-middle" gls-grid>
+                                <div class="gls-width-expand">
+                                    <form class="gls-search gls-search-navbar gls-width-1-1">
+                                        <input
+                                            class="gls-search-input"
+                                            type="search"
+                                            placeholder="Search"
+                                            autofocus
+                                        />
+                                    </form>
+                                </div>
+                                <div class="gls-width-auto">
+                                    <a class="gls-navbar-dropdown-close" href="#" gls-close></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="gls-navbar-container gls-margin" gls-navbar>
+                <div class="gls-navbar-left">
+                    <a class="gls-navbar-item gls-logo" href="#">Stretch</a>
+
+                    <ul class="gls-navbar-nav">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li><a href="#">Parent</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div class="gls-navbar-right">
+                    <ul class="gls-navbar-nav">
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <a class="gls-navbar-toggle" href="#" gls-search-icon></a>
+                        <div
+                            class="gls-navbar-dropdown"
+                            gls-drop="mode: click; cls-drop: gls-navbar-dropdown; boundary: !.gls-navbar; stretch: x; flip: false"
+                        >
+                            <div class="gls-grid-small gls-flex-middle" gls-grid>
+                                <div class="gls-width-expand">
+                                    <form class="gls-search gls-search-navbar gls-width-1-1">
+                                        <input
+                                            class="gls-search-input"
+                                            type="search"
+                                            placeholder="Search"
+                                            autofocus
+                                        />
+                                    </form>
+                                </div>
+                                <div class="gls-width-auto">
+                                    <a class="gls-navbar-dropdown-close" href="#" gls-close></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <nav
+                class="gls-navbar-container gls-margin"
+                gls-navbar="target-y: !.gls-navbar-container; dropbar: +.gls-navbar-dropbar"
+            >
+                <div class="gls-navbar-left">
+                    <a class="gls-navbar-item gls-logo" href="#">Dropbar</a>
+
+                    <ul class="gls-navbar-nav">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li><a href="#">Parent</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div class="gls-navbar-right">
+                    <ul class="gls-navbar-nav">
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <a class="gls-navbar-toggle" href="#" gls-search-icon></a>
+                        <div
+                            class="gls-dropbar gls-dropbar-top"
+                            gls-drop="mode: click; cls-drop: gls-dropbar; boundary: !.gls-navbar; stretch: x; flip: false; target-y: !.gls-navbar-container"
+                        >
+                            <div class="gls-grid-small gls-flex-middle" gls-grid>
+                                <div class="gls-width-expand">
+                                    <form class="gls-search gls-search-navbar gls-width-1-1">
+                                        <input
+                                            class="gls-search-input"
+                                            type="search"
+                                            placeholder="Search"
+                                            autofocus
+                                        />
+                                    </form>
+                                </div>
+                                <div class="gls-width-auto">
+                                    <a class="gls-dropbar-close" href="#" gls-close></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="gls-navbar-dropbar"></div>
+
+            <nav class="gls-navbar gls-navbar-container gls-margin">
+                <div class="gls-navbar-left">
+                    <a class="gls-navbar-item gls-logo" href="#">Modal</a>
+
+                    <ul class="gls-navbar-nav">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li><a href="#">Parent</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div class="gls-navbar-right">
+                    <ul class="gls-navbar-nav">
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <a class="gls-navbar-toggle" href="#modal-full" gls-search-icon gls-toggle></a>
+                </div>
+            </nav>
+
+            <div id="modal-full" class="gls-modal-full" gls-modal>
+                <div
+                    class="gls-modal-dialog gls-flex gls-flex-center gls-flex-middle"
+                    gls-height-viewport
+                >
+                    <button class="gls-modal-close-full" type="button" gls-close></button>
+                    <form class="gls-search gls-search-large">
+                        <input
+                            class="gls-search-input gls-text-center"
+                            type="search"
+                            placeholder="Search"
+                            autofocus
+                        />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

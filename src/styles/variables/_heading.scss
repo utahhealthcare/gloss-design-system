@@ -1,0 +1,53 @@
+// ========================================================================
+// Component Variables: Heading
+// ========================================================================
+
+$heading-small-font-size: 2rem !default;
+$heading-medium-font-size: 2.125rem !default;
+$heading-large-font-size: 2.5rem !default;
+$heading-xlarge-font-size: 3rem !default;
+$heading-2xlarge-font-size: 4.5rem !default;
+
+// Responsive overrides mapping from legacy heading.css
+$heading-small-font-size-m: 3.25rem !default;
+$heading-medium-font-size-m: 3.5rem !default;
+$heading-large-font-size-m: 4rem !default;
+$heading-xlarge-font-size-m: 6rem !default;
+$heading-2xlarge-font-size-m: 8rem !default;
+
+$heading-medium-font-size-l: 4rem !default;
+$heading-large-font-size-l: 6rem !default;
+$heading-xlarge-font-size-l: 8rem !default;
+$heading-2xlarge-font-size-l: 11rem !default;
+
+$heading-small-line-height: 1.2 !default;
+$heading-medium-line-height: 1.1 !default;
+$heading-large-line-height: 1.1 !default;
+$heading-xlarge-line-height: 1 !default;
+$heading-2xlarge-line-height: 1 !default;
+$heading-divider-padding-bottom: calc(5px + 0.1em) !default;
+$heading-divider-border-width: calc(0.2px + 0.05em) !default;
+$heading-divider-border: $global-border !default;
+$heading-bullet-top: calc(-0.1 * 1em) !default;
+$heading-bullet-height: calc(4px + 0.7em) !default;
+$heading-bullet-margin-right: calc(5px + 0.2em) !default;
+$heading-bullet-border-width: calc(5px + 0.1em) !default;
+$heading-bullet-border: $global-border !default;
+$heading-line-top: 50% !default;
+$heading-line-border: $global-border !default;
+$heading-line-margin-horizontal: calc(5px + 0.3em) !default;
+$heading-line-border-width: calc(0.2px + 0.05em) !default;
+$heading-line-height: $heading-line-border-width !default;
+
+/* UofU Cohesion Overrides
+ ========================================================================== */
+
+.coh-heading-component div + h2, /* legacy */
+.gls-pre-heading + h1,
+.gls-pre-heading + h2,
+.gls-pre-heading + h3,
+.gls-pre-heading + h4,
+.gls-pre-heading + h5,
+.gls-pre-heading + h6 {
+    margin-top: 0;
+}

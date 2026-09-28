@@ -1,0 +1,17 @@
+// ========================================================================
+// Component Variables: Border
+// ========================================================================
+
+$border-default-width: $global-border-width !default;
+$border-thick-width: calc($border-default-width * 2) !default;
+$border-thicker-width: calc($border-default-width * 4) !default;
+$border-default-color: $global-border !default;
+$border-primary-color: $global-primary-background !default;
+$border-secondary-color: $global-secondary-background !default;
+$border-tertiary-color: $global-tertiary-background !default;
+$border-transparent-color: $global-transparent-background !default;
+$border-solid-style: solid !default;
+$border-dashed-style: dashed !default;
+$border-dotted-style: dotted !default;
+$border-rounded-radius: $global-border-radius !default;
+$border-full-radius: 9999px !default;

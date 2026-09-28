@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Dropdown - Gloss tests</title>
+        <script src="js/test.js"></script>
+        <style>
+            .test {
+                display: block;
+                position: relative;
+                width: 100%;
+            }
+
+            .scroll-container {
+                padding: 15px;
+                border: 1px dashed rgba(0, 0, 0, 0.2);
+                overflow: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Dropdown</h1>
+
+            <div class="gls-margin">
+                <select id="js-size-switcher" class="gls-select gls-form-width-small">
+                    <option value="">Default</option>
+                    <option value="gls-dropdown-large">Large</option>
+                </select>
+            </div>
+
+            <div gls-grid>
+                <div class="gls-width-1-4@m">
+                    <div class="gls-dropdown test">
+                        <ul class="gls-nav gls-dropdown-nav">
+                            <li class="gls-active"><a href="#">Active</a></li>
+                            <li class="gls-parent">
+                                <a href="#">Parent</a>
+                                <ul class="gls-nav-sub">
+                                    <li><a href="#">Sub item</a></li>
+                                    <li>
+                                        <a href="#">Sub item</a>
+                                        <ul>
+                                            <li><a href="#">Sub item</a></li>
+                                            <li><a href="#">Sub item</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gls-parent">
+                                <a href="#">Parent</a>
+                                <ul class="gls-nav-sub">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Sub item</a></li>
+                                </ul>
+                            </li>
+                            <li class="gls-nav-header">Header</li>
+                            <li>
+                                <a href="#"
+                                    ><span
+                                        class="gls-margin-small-right"
+                                        gls-icon="icon: table"
+                                    ></span>
+                                    Item</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span
+                                        class="gls-margin-small-right"
+                                        gls-icon="icon: thumbnails"
+                                    ></span>
+                                    Item</a
+                                >
+                            </li>
+                            <li class="gls-nav-divider"></li>
+                            <li>
+                                <a href="#"
+                                    ><span
+                                        class="gls-margin-small-right"
+                                        gls-icon="icon: trash"
+                                    ></span>
+                                    Item</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gls-width-1-4@m">
+                    <div class="gls-dropdown test">
+                        <ul class="gls-nav gls-nav-secondary">
+                            <li class="gls-active">
+                                <a href="#"
+                                    ><div>
+                                        Active
+                                        <div class="gls-nav-subtitle">
+                                            Subtitle lorem ipsum dolor sit amet, consectetur
+                                            adipiscing.
+                                        </div>
+                                    </div></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><div>
+                                        Item
+                                        <div class="gls-nav-subtitle">
+                                            Subtitle lorem ipsum dolor sit amet, consectetur
+                                            adipiscing.
+                                        </div>
+                                    </div></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><div>
+                                        Item
+                                        <div class="gls-nav-subtitle">
+                                            Subtitle lorem ipsum dolor sit amet, consectetur
+                                            adipiscing.
+                                        </div>
+                                    </div></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><div>
+                                        Item
+                                        <div class="gls-nav-subtitle">
+                                            Subtitle lorem ipsum dolor sit amet, consectetur
+                                            adipiscing.
+                                        </div>
+                                    </div></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gls-width-1-2@m">
+                    <div class="gls-margin" gls-margin>
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Scrollable
+                            </button>
+                            <div class="gls-overflow-auto gls-height-medium" gls-dropdown>
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li class="gls-parent">
+                                        <a href="#">Parent</a>
+                                        <ul class="gls-nav-sub">
+                                            <li><a href="#">Sub item</a></li>
+                                            <li><a href="#">Sub item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="gls-nav-header">Header</li>
+                                    <li>
+                                        <a href="#"
+                                            ><span
+                                                class="gls-margin-small-right"
+                                                gls-icon="icon: table"
+                                            ></span>
+                                            Item</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><span
+                                                class="gls-margin-small-right"
+                                                gls-icon="icon: thumbnails"
+                                            ></span>
+                                            Item</a
+                                        >
+                                    </li>
+                                    <li class="gls-nav-divider"></li>
+                                    <li>
+                                        <a href="#"
+                                            ><span
+                                                class="gls-margin-small-right"
+                                                gls-icon="icon: trash"
+                                            ></span>
+                                            Item</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Position</h2>
+
+                    <div class="gls-margin" gls-margin>
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Bottom Left
+                            </button>
+                            <div gls-dropdown>
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Bottom Center
+                            </button>
+                            <div gls-dropdown="pos: bottom-center">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Bottom Right
+                            </button>
+                            <div gls-dropdown="pos: bottom-right">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gls-margin" gls-margin>
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Top Left
+                            </button>
+                            <div gls-dropdown="pos: top-left">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Top Center
+                            </button>
+                            <div gls-dropdown="pos: top-center">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Top Right
+                            </button>
+                            <div gls-dropdown="pos: top-right">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gls-margin" gls-margin>
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Left Top
+                            </button>
+                            <div gls-dropdown="pos: left-top">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Left Center
+                            </button>
+                            <div gls-dropdown="pos: left-center">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Left Bottom
+                            </button>
+                            <div gls-dropdown="pos: left-bottom">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gls-margin" gls-margin>
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Right Top
+                            </button>
+                            <div gls-dropdown="pos: right-top">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Right Center
+                            </button>
+                            <div gls-dropdown="pos: right-center">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gls-inline">
+                            <button class="gls-button gls-button-default" type="button">
+                                Right Bottom
+                            </button>
+                            <div gls-dropdown="pos: right-bottom">
+                                <ul class="gls-nav gls-dropdown-nav">
+                                    <li class="gls-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const { $$, addClass, on, removeClass } = Gloss.util;
+
+            on('#js-size-switcher', 'change', (e) => {
+                const options = $$('option', e.target).map(({ value }) => value);
+                for (const dropdown of $$('.gls-dropdown')) {
+                    removeClass(dropdown, options);
+                    addClass(dropdown, e.target.value);
+                }
+            });
+        </script>
+    </body>
+</html>

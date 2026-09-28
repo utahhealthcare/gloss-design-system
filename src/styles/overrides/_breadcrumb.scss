@@ -1,0 +1,46 @@
+// ========================================================================
+// Overrides: breadcrumb
+// ========================================================================
+
+@mixin hook-breadcrumb-misc() {
+    .uk-breadcrumb > :nth-child(n + 2):not(.uk-first-column)::before {
+        font-weight: $breadcrumb-divider-font-weight; /* UofU */
+        transform: scaleX(0.6) scaleY(1.2); /* UofU */
+    }
+
+    /* Primary */
+    .uk-breadcrumb-primary > * > * {
+        color: $breadcrumb-primary-item-color;
+    }
+    .uk-breadcrumb-primary > * > :hover,
+    .uk-breadcrumb-primary > * > :focus {
+        color: $breadcrumb-primary-item-hover-color;
+    }
+    .uk-breadcrumb-primary > :nth-child(n + 2):not(.uk-first-column)::before {
+        color: $breadcrumb-primary-divider-color;
+    }
+
+    /* Secondary */
+    .uk-breadcrumb-secondary > * > * {
+        color: $breadcrumb-secondary-item-color;
+    }
+    .uk-breadcrumb-secondary > * > :hover,
+    .uk-breadcrumb-secondary > * > :focus {
+        color: $breadcrumb-secondary-item-hover-color;
+    }
+    .uk-breadcrumb-secondary > :nth-child(n + 2):not(.uk-first-column)::before {
+        color: $breadcrumb-secondary-divider-color;
+    }
+
+    /* Tertiary */
+    .uk-breadcrumb-tertiary > * > * {
+        color: $breadcrumb-tertiary-item-color;
+    }
+    .uk-breadcrumb-tertiary > * > :hover,
+    .uk-breadcrumb-tertiary > * > :focus {
+        color: $breadcrumb-tertiary-item-hover-color;
+    }
+    .uk-breadcrumb-tertiary > :nth-child(n + 2):not(.uk-first-column)::before {
+        color: $breadcrumb-tertiary-divider-color;
+    }
+}

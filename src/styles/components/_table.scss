@@ -1,0 +1,37 @@
+/**
+ * Name:            Table
+ * Description:     Styles for tables
+ *
+ * Component:       `gls-table`
+ *
+ * Modifiers:       `gls-table-middle`
+ *                  `gls-table-divider`
+ *                  `gls-table-striped`
+ *                  `gls-table-hover`
+ *                  `gls-table-small`
+ *                  `gls-table-justify`
+ *                  `gls-table-shrink`
+ *                  `gls-table-expand`
+ *                  `gls-table-link`
+ *                  `gls-table-responsive`
+ *                  `gls-table-sticky-headers`
+ *
+ * States:          `gls-active`
+ *
+ * ======================================================================== */
+
+// ========================================================================
+// Component: Table Bespoke Modifiers
+// ========================================================================
+
+.gls-table-sticky-headers {
+    th {
+        position: sticky;
+        top: 0;
+        background-color: var(--global-background);
+        z-index: 10;
+
+        // Ensure borders don't collapse weirdly on sticky headers
+        box-shadow: inset 0 -1px 0 var(--global-border);
+    }
+}

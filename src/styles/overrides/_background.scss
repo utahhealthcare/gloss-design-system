@@ -1,0 +1,15 @@
+// ========================================================================
+// Overrides: Background
+// ========================================================================
+
+@mixin hook-background-misc() {
+    .uk-background-primary-light {
+        background-color: $background-primary-light-background;
+    }
+    .uk-background-secondary-light {
+        background-color: $background-secondary-light-background;
+    }
+    .uk-background-tertiary {
+        background-color: $background-tertiary-background;
+    }
+}

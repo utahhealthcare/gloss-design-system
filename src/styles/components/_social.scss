@@ -1,0 +1,221 @@
+/**
+ * Name:            Social
+ * Description:     Modify button and icon components with social media colors
+ *
+ * Component:       `gls-social-*`
+ *
+ * ======================================================================== */
+
+/* ========================================================================
+   Component: Social
+ ========================================================================== */
+
+a.gls-social-bluesky,
+a.gls-social-bluesky:hover,
+a.gls-social-bluesky:active {
+    border-color: $social-bluesky-color;
+    background-color: $social-bluesky-color;
+    color: $social-bluesky-color;
+}
+
+a.gls-social-facebook,
+a.gls-social-facebook:hover,
+a.gls-social-facebook:active {
+    border-color: $social-facebook-color;
+    background-color: $social-facebook-color;
+    color: $social-facebook-color;
+}
+
+a.gls-social-flickr,
+a.gls-social-flickr:hover,
+a.gls-social-flickr:active {
+    border-color: $social-flickr-color;
+    background-color: $social-flickr-color;
+    color: $social-flickr-color;
+}
+
+a.gls-social-github,
+a.gls-social-github:hover,
+a.gls-social-github:active {
+    border-color: $social-github-color;
+    background-color: $social-github-color;
+    color: $social-github-color;
+}
+
+a.gls-social-google,
+a.gls-social-google:hover,
+a.gls-social-google:active {
+    border-color: $social-google-color;
+    background-color: $social-google-color;
+    color: $social-google-color;
+}
+
+a.gls-social-instagram,
+a.gls-social-instagram:hover,
+a.gls-social-instagram:active {
+    border-color: $social-instagram-color;
+    background-color: $social-instagram-color;
+    color: $social-instagram-color;
+}
+
+a.gls-social-linkedin,
+a.gls-social-linkedin:hover,
+a.gls-social-linkedin:active {
+    border-color: $social-linkedin-color;
+    background-color: $social-linkedin-color;
+    color: $social-linkedin-color;
+}
+
+a.gls-social-moran,
+a.gls-social-moran:hover,
+a.gls-social-moran:active {
+    border-color: $social-moran-color;
+    background-color: $social-moran-color;
+    color: $social-moran-color;
+}
+
+a.gls-social-pinterest,
+a.gls-social-pinterest:hover,
+a.gls-social-pinterest:active {
+    border-color: $social-pinterest-color;
+    background-color: $social-pinterest-color;
+    color: $social-pinterest-color;
+}
+
+a.gls-social-reddit,
+a.gls-social-reddit:hover,
+a.gls-social-reddit:active {
+    border-color: $social-reddit-color;
+    background-color: $social-reddit-color;
+    color: $social-reddit-color;
+}
+
+a.gls-social-skype,
+a.gls-social-skype:hover,
+a.gls-social-skype:active {
+    border-color: $social-skype-color;
+    background-color: $social-skype-color;
+    color: $social-skype-color;
+}
+
+a.gls-social-tumblr,
+a.gls-social-tumblr:hover,
+a.gls-social-tumblr:active {
+    border-color: $social-tumblr-color;
+    background-color: $social-tumblr-color;
+    color: $social-tumblr-color;
+}
+
+a.gls-social-twitter,
+a.gls-social-twitter:hover,
+a.gls-social-twitter:active {
+    border-color: $social-twitter-color;
+    background-color: $social-twitter-color;
+    color: $social-twitter-color;
+}
+
+a.gls-social-vimeo,
+a.gls-social-vimeo:hover,
+a.gls-social-vimeo:active {
+    border-color: $social-vimeo-color;
+    background-color: $social-vimeo-color;
+    color: $social-vimeo-color;
+}
+
+a.gls-social-wordpress,
+a.gls-social-wordpress:hover,
+a.gls-social-wordpress:active {
+    border-color: $social-wordpress-color;
+    background-color: $social-wordpress-color;
+    color: $social-wordpress-color;
+}
+
+a.gls-social-x,
+a.gls-social-x:hover,
+a.gls-social-x:active {
+    border-color: $social-x-color;
+    background-color: $social-x-color;
+    color: $social-x-color;
+}
+
+a.gls-social-youtube,
+a.gls-social-youtube:hover,
+a.gls-social-youtube:active {
+    border-color: $social-youtube-color;
+    background-color: $social-youtube-color;
+    color: $social-youtube-color;
+}
+
+/* Hover + Focus */
+.gls-social:hover:not(:disabled),
+[class*='gls-social-']:hover,
+[class*='gls-social-']:focus {
+    filter: $social-hover-filter;
+}
+
+/* Button
+ ========================================================================== */
+
+.gls-button[class*='gls-social-']:not(.gls-button-outline),
+.gls-button[class*='gls-social-']:not(.gls-button-outline):hover,
+.gls-button[class*='gls-social-']:not(.gls-button-outline):focus {
+    color: $social-text-color;
+
+    &.gls-social-bluesky,
+    &.gls-social-facebook,
+    &.gls-social-flickr,
+    &.gls-social-google,
+    &.gls-social-reddit,
+    &.gls-social-vimeo,
+    &.gls-social-youtube {
+        color: black;
+    }
+}
+
+.gls-button-outline[class*='gls-social-'],
+.gls-button-outline[class*='gls-social-']:hover,
+.gls-button-outline[class*='gls-social-']:focus {
+    background-color: transparent;
+
+    &.gls-social-bluesky {
+        color: hsl(from $social-bluesky-color h s calc(l - 10));
+    }
+    &.gls-social-facebook {
+        color: hsl(from $social-facebook-color h s calc(l - 10));
+    }
+    &.gls-social-flickr {
+        color: hsl(from $social-flickr-color h s calc(l - 10));
+    }
+    &.gls-social-google {
+        color: hsl(from $social-google-color h s calc(l - 10));
+    }
+    &.gls-social-reddit {
+        color: hsl(from $social-reddit-color h s calc(l - 10));
+    }
+    &.gls-social-vimeo {
+        color: hsl(from $social-vimeo-color h s calc(l - 18));
+    }
+    &.gls-social-youtube {
+        color: hsl(from $social-youtube-color h s calc(l - 10));
+    }
+}
+
+/* Iconnav item
+ ========================================================================== */
+
+.gls-iconnav [class*='gls-social-'],
+.gls-iconnav [class*='gls-social-']:hover,
+.gls-iconnav [class*='gls-social-']:focus {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+/* Icon button
+ ========================================================================== */
+
+.gls-icon-button[class*='gls-social-'],
+.gls-icon-button[class*='gls-social-']:hover,
+.gls-icon-button[class*='gls-social-']:focus {
+    border-color: transparent;
+    color: $social-text-color;
+}

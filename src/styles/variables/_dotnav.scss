@@ -1,0 +1,19 @@
+// ========================================================================
+// Component Variables: Dotnav
+// ========================================================================
+
+$dotnav-margin-horizontal: 12px !default;
+$dotnav-margin-vertical: $dotnav-margin-horizontal !default;
+$dotnav-item-color: black !default;
+$dotnav-item-width: 12px !default;
+$dotnav-item-height: $dotnav-item-width !default;
+$dotnav-item-border-radius: 50% !default;
+$dotnav-item-border-width: 2px !default;
+$dotnav-item-border: var(--color-trans-black-3) !default;
+$dotnav-item-hover-border: transparent !default;
+$dotnav-item-onclick-border: transparent !default;
+$dotnav-item-active-border: transparent !default;
+$dotnav-item-background: transparent !default;
+$dotnav-item-hover-background: var(--color-trans-black-5) !default;
+$dotnav-item-onclick-background: var(--color-trans-black-1) !default;
+$dotnav-item-active-background: var(--color-trans-black-5) !default;

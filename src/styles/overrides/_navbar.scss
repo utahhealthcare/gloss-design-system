@@ -1,0 +1,78 @@
+// ========================================================================
+// Overrides: Navbar
+// ========================================================================
+
+@mixin hook-navbar-misc() {
+    .uk-navbar-left,
+    .uk-navbar-right,
+    [class*='uk-navbar-center'] {
+        align-items: var(--navbar-align-items, stretch);
+    }
+
+    .uk-navbar-nav {
+        gap: 0;
+    }
+
+    .uk-navbar-container:not(.uk-navbar-transparent) {
+        background: var(--navbar-background, var(--global-background));
+    }
+
+    .uk-container > :not(.uk-navbar-justified) > .uk-navbar-left .uk-navbar-nav:first-child,
+    .uk-container > :not(.uk-navbar-justified) > .uk-navbar-left .uk-navbar-item:first-child,
+    .uk-container > :not(.uk-navbar-justified) > .uk-navbar-left .uk-navbar-toggle:first-child {
+        margin-left: calc(var(--navbar-nav-item-padding-horizontal, 16px) * -1);
+    }
+
+    .uk-container > :not(.uk-navbar-justified) > .uk-navbar-right .uk-navbar-nav:last-child,
+    .uk-container > :not(.uk-navbar-justified) > .uk-navbar-right .uk-navbar-item:last-child,
+    .uk-container > :not(.uk-navbar-justified) > .uk-navbar-right .uk-navbar-toggle:last-child {
+        margin-right: calc(var(--navbar-nav-item-padding-horizontal, 16px) * -1);
+    }
+
+    /*
+   * Custom Sticky Navbar
+   */
+    .uk-navbar-sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    /*
+   * Secondary Navbar (Gloss bespoke extension)
+   */
+    .uk-navbar-secondary .uk-navbar-nav > li > a,
+    .uk-navbar-secondary .uk-navbar-item,
+    .uk-navbar-secondary .uk-navbar-toggle {
+        height: var(--navbar-secondary-nav-item-height, 64px);
+    }
+
+    .uk-navbar-secondary .uk-navbar-nav > li > a {
+        text-transform: var(--navbar-secondary-nav-item-text-transform, none);
+    }
+
+    .uk-navbar-secondary .uk-navbar-nav > li > a.uk-open,
+    .uk-navbar-secondary .uk-navbar-nav > li > a[aria-expanded='true'] {
+        background-color: var(
+            --navbar-secondary-nav-item-open-background,
+            var(--global-background)
+        );
+    }
+
+    /*
+   * Custom Navbar Dropdown Nav border and padding overrides (UofU design guidelines)
+   */
+    .uk-navbar-dropdown-nav {
+        border-left: 1px solid var(--color-primary);
+        padding-left: var(--global-small-space, 16px);
+    }
+
+    /*
+   * Custom Dropbar Dropdown Background fallback override (prevents transparency when no physical dropbar is rendered)
+   */
+    .uk-navbar-dropdown-dropbar {
+        background: var(--navbar-dropdown-background, var(--global-background, #ffffff));
+        box-shadow: var(--navbar-dropdown-box-shadow, var(--global-medium-box-shadow));
+    }
+}

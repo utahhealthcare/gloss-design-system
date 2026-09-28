@@ -1,0 +1,19 @@
+// ========================================================================
+// Component Variables: Section
+// ========================================================================
+
+$section-padding-vertical: var(--section-padding-vertical, $global-medium-space) !default;
+$section-padding-vertical-m: var(--section-padding-vertical, $global-large-space) !default;
+$section-xsmall-padding-vertical: $global-small-space !default;
+$section-small-padding-vertical: $global-medium-space !default;
+$section-large-padding-vertical: $global-xlarge-space !default;
+$section-xlarge-padding-vertical: $global-2xlarge-space !default;
+$section-default-background: $global-background !default;
+$section-muted-background: $global-muted-background !default;
+$section-gradient-background: $global-gradient-background !default;
+$section-primary-background: $global-primary-background !default;
+$section-primary-light-background: var(--color-primary-light) !default;
+$section-secondary-background: $global-secondary-background !default;
+$section-secondary-light-background: var(--color-secondary-light) !default;
+$section-tertiary-background: $global-tertiary-background !default;
+$section-secondary-color-mode: dark !default;

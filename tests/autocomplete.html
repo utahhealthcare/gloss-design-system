@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Autocomplete - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Autocomplete</h1>
+
+            <form class="gls-form-stacked">
+                <div class="gls-margin">
+                    <label class="gls-form-label" for="form-stacked-text"
+                        >Autocomplete Multi-Select</label
+                    >
+                    <div gls-autocomplete class="gls-autocomplete" multi-select>
+                        <div class="gls-autocomplete-fields gls-width-1-1">
+                            <span
+                                class="gls-form-icon gls-form-icon-flip"
+                                gls-icon="icon: chevron-down"
+                            ></span>
+                            <input
+                                type="text"
+                                placeholder="Select multiple options..."
+                                class="gls-autocomplete-input"
+                            />
+                            <div class="gls-autocomplete-badges"></div>
+                        </div>
+                        <ul class="gls-autocomplete-list">
+                            <li class="gls-autocomplete-option" data-value="option1">Option 1</li>
+                            <li class="gls-autocomplete-option" data-value="option2">Option 2</li>
+                            <li class="gls-autocomplete-option" data-value="option3">Option 3</li>
+                            <li class="gls-autocomplete-option" data-value="option4">Option 4</li>
+                            <li class="gls-autocomplete-option" data-value="option5">Option 5</li>
+                            <li class="gls-autocomplete-option" data-value="option6">Option 6</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gls-margin">
+                    <label class="gls-form-label" for="form-stacked-text"
+                        >Autocomplete Single-Select</label
+                    >
+                    <div gls-autocomplete class="gls-autocomplete">
+                        <div class="gls-autocomplete-fields gls-width-1-1">
+                            <span
+                                class="gls-form-icon gls-form-icon-flip"
+                                gls-icon="icon: chevron-down"
+                            ></span>
+                            <input
+                                type="text"
+                                placeholder="Select one option..."
+                                class="gls-autocomplete-input"
+                            />
+                        </div>
+                        <ul class="gls-autocomplete-list">
+                            <li class="gls-autocomplete-option" data-value="option1">Option 1</li>
+                            <li class="gls-autocomplete-option" data-value="option2">Option 2</li>
+                            <li class="gls-autocomplete-option" data-value="option3">Option 3</li>
+                            <li class="gls-autocomplete-option" data-value="option4">Option 4</li>
+                            <li class="gls-autocomplete-option" data-value="option5">Option 5</li>
+                            <li class="gls-autocomplete-option" data-value="option6">Option 6</li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -5,6 +5,21 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .sass-cache/
+.cache/
+
+# NOTE: If consumers pull this repo directly via git and require compiled assets,
+# replace "dist/" above with the selective whitelist below:
+# /dist/*
+# !/dist/css/
+# /dist/css/*
+# !/dist/css/gloss.css
+# !/dist/css/gloss.min.css
+# !/dist/css/gloss-rtl.css
+# !/dist/css/gloss-rtl.min.css
+# !/dist/js/
+# /dist/js/*
+# !/dist/js/gloss.js
+# !/dist/js/gloss.min.js
 
 # Test and coverage output
 coverage/
@@ -19,7 +34,8 @@ test-results/
 # Licensed assets supplied outside the open-source repository
 assets-private/
 
-# npm, Yarn, and pnpm logs
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -27,6 +43,7 @@ pnpm-debug.log*
 
 # macOS and Linux filesystem/editor artifacts
 .DS_Store
+.DS_Store?
 .AppleDouble
 ._*
 *~
@@ -35,4 +52,6 @@ pnpm-debug.log*
 
 # Local IDE settings
 .idea/
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

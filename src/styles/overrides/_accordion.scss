@@ -1,0 +1,126 @@
+// ========================================================================
+// Overrides: Accordion
+// ========================================================================
+
+@mixin hook-accordion-misc() {
+    .uk-accordion {
+        overflow: hidden; /* UofU */
+    }
+
+    /* Item Border */
+    .coh-accordion-tabs-content-wrapper > .coh-accordion-title:not(:first-child),  /* TEMP */
+  .uk-accordion > :nth-child(n+2) {
+        margin-top: $accordion-item-margin-top;
+        padding-top: $accordion-item-padding-top;
+        border-top: $accordion-item-border-width solid $accordion-item-border;
+    }
+
+    /* TEMP: Cohesion hack */
+    .coh-accordion-tabs .coh-accordion-tabs-content-wrapper {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+    }
+
+    /* Primary */
+    .uk-accordion-primary > :nth-child(n + 2) {
+        border-top: $accordion-primary-item-border-width solid $accordion-primary-item-border;
+    }
+
+    /* Title */
+    .coh-accordion-title > a,
+    a.uk-accordion-title,
+    .uk-accordion-title {
+        display: block;
+        font-size: $accordion-title-font-size;
+        line-height: $accordion-title-line-height;
+        color: $accordion-title-color;
+        text-decoration: $accordion-title-text-decoration;
+    }
+
+    /* Hover + Focus States */
+    .coh-accordion-title > a:hover, /* TEMP */
+  .coh-accordion-title > a:focus, /* TEMP */
+  a.uk-accordion-title:hover,
+  a.uk-accordion-title:focus,
+  .uk-accordion-title:hover,
+  .uk-accordion-title:focus {
+        color: $accordion-title-hover-color;
+        text-decoration: none;
+    }
+
+    /* Custom Accordion Close/Open SVG Icons */
+    .coh-accordion-title > a::before, /* TEMP */
+  .uk-accordion-title::before {
+        content: '';
+        width: calc(#{$accordion-title-line-height} * 1em);
+        height: calc(#{$accordion-title-line-height} * 1em);
+        margin-left: $accordion-icon-margin-left;
+        float: right;
+        background-image: svg-load('../images/backgrounds/accordion-close.svg', fill=#666);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .is-active.coh-accordion-title > a::before, /* TEMP */
+  .uk-open > .uk-accordion-title::before {
+        background-image: svg-load('../images/backgrounds/accordion-open.svg', fill=#666);
+    }
+
+    /* Content */
+    .coh-accordion-tabs-content, /* TEMP */
+  .uk-accordion-content {
+        display: flow-root;
+        margin-top: $accordion-content-margin-top;
+    }
+
+    /* Remove margin from the last-child */
+    .coh-accordion-tabs-content > :last-child, /* TEMP */
+  .uk-accordion-content > :last-child {
+        margin-bottom: 0;
+    }
+
+    /* Size modifier (Large Accordions) */
+    .uk-accordion-large .coh-accordion-title:not(:first-child), /* TEMP */
+  .uk-accordion-large > :nth-child(n+2) {
+        margin-top: $accordion-large-item-margin-top;
+        padding-top: $accordion-large-item-padding-top;
+    }
+
+    /* Title */
+    .uk-accordion-large .coh-accordion-title,  /* TEMP */
+  .uk-accordion-large .uk-accordion-title {
+        font-size: $accordion-large-title-font-size;
+    }
+
+    /* Content */
+    .uk-accordion-large .coh-accordion-tabs-content, /* TEMP */
+  .uk-accordion-large .uk-accordion-content {
+        margin-top: $accordion-large-content-margin-top;
+        padding-bottom: $accordion-large-content-padding-bottom;
+    }
+
+    /* Nesting Nav components inside Accordions */
+    .uk-accordion .uk-nav > li:not(.uk-nav-header):not(.uk-nav-divider) {
+        border-left: $global-border-width solid $global-border;
+    }
+
+    .uk-accordion .uk-nav > li.uk-active:not(.uk-nav-header) {
+        border-left-color: var(--color-primary);
+    }
+
+    .uk-accordion .uk-nav > li > a,
+    .uk-accordion .uk-nav .uk-nav-header,
+    .uk-accordion .uk-nav .uk-nav-divider {
+        padding-left: $global-small-space;
+        padding-right: $global-small-space;
+    }
+
+    .uk-accordion .uk-nav .uk-nav-sub {
+        padding-left: calc(#{$global-small-space} + #{$global-small-space});
+    }
+
+    .uk-accordion .uk-nav .uk-nav-sub > li {
+        border-left: none;
+    }
+}

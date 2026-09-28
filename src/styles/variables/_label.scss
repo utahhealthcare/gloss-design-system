@@ -1,0 +1,26 @@
+// ========================================================================
+// Component Variables: Label
+// ========================================================================
+
+$label-padding-vertical: 2px !default;
+$label-padding-horizontal: 10px !default;
+$label-border-radius: $global-medium-border-radius !default;
+$label-background: var(--color-gray-1) !default;
+$label-line-height: $global-line-height !default;
+$label-font-size: $global-small-font-size !default;
+$label-color: $global-emphasis-color !default;
+$label-text-transform: uppercase !default;
+$label-primary-background: var(--color-primary) !default;
+$label-primary-color: $global-inverse-color !default;
+$label-secondary-background: var(--color-secondary) !default;
+$label-secondary-color: $global-emphasis-color !default;
+$label-tertiary-background: var(--color-gray-8) !default;
+$label-tertiary-color: $global-inverse-color !default;
+$label-info-background: var(--color-info) !default;
+$label-info-color: $global-emphasis-color !default;
+$label-success-background: var(--color-success) !default;
+$label-success-color: $global-emphasis-color !default;
+$label-warning-background: var(--color-warning) !default;
+$label-warning-color: $global-emphasis-color !default;
+$label-danger-background: var(--color-danger) !default;
+$label-danger-color: $global-inverse-color !default;

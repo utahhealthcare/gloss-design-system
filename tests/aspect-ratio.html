@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Aspect Ratio - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Aspect Ratio</h1>
+
+            <div class="gls-section">
+                <div style="--aspect-ratio: 640/360" data-aspect-ratio="16/9">
+                    <iframe
+                        src="https://player.vimeo.com/video/1084537"
+                        width="640"
+                        height="360"
+                        allow="autoplay; fullscreen"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+
+            <div class="gls-section">
+                <div class="gls-child-width-1-3" gls-grid>
+                    <div>
+                        <div style="--aspect-ratio: 1" data-aspect-ratio="1">
+                            <div class="gls-cover-container">
+                                <img src="images/light.jpg" alt="" gls-cover />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="--aspect-ratio: 1" data-aspect-ratio="1/1">
+                            <div class="gls-cover-container">
+                                <img src="images/size-h.jpg" alt="" gls-cover />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="--aspect-ratio: 1" data-aspect-ratio="1">
+                            <div class="gls-cover-container">
+                                <img src="images/slider1.jpg" alt="" gls-cover />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gls-section">
+                <div style="--aspect-ratio: 3/1" data-aspect-ratio="3/1">
+                    <div
+                        class="gls-background-cover gls-margin-medium gls-flex gls-flex-center gls-flex-middle gls-light"
+                        data-src="images/size-v.jpg"
+                        gls-img
+                    >
+                        <h1>Background Image</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

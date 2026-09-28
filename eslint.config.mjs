@@ -13,6 +13,7 @@ export default [
             'coverage/**',
             'playwright-report/**',
             'test-results/**',
+            'tests/**',
         ],
     },
     eslint.configs.recommended,

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Height - Gloss tests</title>
+        <script src="js/test.js"></script>
+        <style>
+            [gls-height-match] > * > .gls-panel {
+                padding: 10px;
+                text-align: center;
+            }
+
+            [gls-height-match] > :nth-child(10n-9) > .gls-panel {
+                background: rgba(0, 0, 0, 0.1);
+            }
+            [gls-height-match] > :nth-child(10n-8) > .gls-panel {
+                background: rgba(0, 0, 0, 0.15);
+            }
+            [gls-height-match] > :nth-child(10n-7) > .gls-panel {
+                background: rgba(0, 0, 0, 0.2);
+            }
+            [gls-height-match] > :nth-child(10n-6) > .gls-panel {
+                background: rgba(0, 0, 0, 0.25);
+            }
+            [gls-height-match] > :nth-child(10n-5) > .gls-panel {
+                background: rgba(0, 0, 0, 0.3);
+            }
+            [gls-height-match] > :nth-child(10n-4) > .gls-panel {
+                background: rgba(0, 0, 0, 0.35);
+            }
+            [gls-height-match] > :nth-child(10n-3) > .gls-panel {
+                background: rgba(0, 0, 0, 0.4);
+            }
+            [gls-height-match] > :nth-child(10n-2) > .gls-panel {
+                background: rgba(0, 0, 0, 0.45);
+            }
+            [gls-height-match] > :nth-child(10n-1) > .gls-panel {
+                background: rgba(0, 0, 0, 0.5);
+            }
+            [gls-height-match] > :nth-child(10n) > .gls-panel {
+                background: rgba(0, 0, 0, 0.55);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h2>Height Match</h2>
+
+            <div class="gls-grid gls-child-width-1-2@s">
+                <div>
+                    <h3>Each Row</h3>
+
+                    <div
+                        class="gls-child-width-1-2@m"
+                        gls-grid
+                        gls-height-match="target: > div > .gls-panel"
+                    >
+                        <div>
+                            <div class="gls-panel">1-2-M<br />…<br />…</div>
+                        </div>
+                        <div><div class="gls-panel">1-2-M</div></div>
+                        <div>
+                            <div class="gls-panel">1-2-M<br />…</div>
+                        </div>
+                        <div><div class="gls-panel">1-2-M</div></div>
+                    </div>
+                </div>
+                <div>
+                    <h3>All Rows</h3>
+
+                    <div
+                        class="gls-child-width-1-2@m"
+                        gls-grid
+                        gls-height-match="target: > div > .gls-panel; row: false"
+                    >
+                        <div>
+                            <div class="gls-panel">1-2-M<br />…<br />…</div>
+                        </div>
+                        <div><div class="gls-panel">1-2-M</div></div>
+                        <div>
+                            <div class="gls-panel">1-2-M<br />…</div>
+                        </div>
+                        <div><div class="gls-panel">1-2-M</div></div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Hidden Panels</h3>
+
+                    <div
+                        class="gls-child-width-1-2@m"
+                        gls-grid
+                        gls-height-match="target: > div > .gls-panel; row: false"
+                    >
+                        <div>
+                            <div class="gls-panel" style="display: none">1-2-M<br />…<br />…</div>
+                        </div>
+                        <div>
+                            <div class="gls-panel">1-2-M<br />…</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>JavaScript Options</h2>
+
+            <table class="gls-table gls-table-striped">
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Value</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>target</code></td>
+                        <td>CSS selector</td>
+                        <td><code>> *</code></td>
+                        <td>Elements that should match. By default, the children will match.</td>
+                    </tr>
+                    <tr>
+                        <td><code>row</code></td>
+                        <td>Boolean</td>
+                        <td><code>true</code></td>
+                        <td>
+                            By default only items in the same row will be matched. For example, once
+                            grid columns extend to a width of 100%, their heights will no longer be
+                            matched. This makes sense, for example, if they stack vertically in
+                            narrower viewports.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

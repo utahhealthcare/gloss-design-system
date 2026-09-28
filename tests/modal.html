@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Modal - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Modal</h1>
+
+            <div class="gls-margin">
+                <button
+                    class="gls-button gls-button-default"
+                    type="button"
+                    gls-toggle="target: #scrollbar"
+                >
+                    Toggle scrollbar
+                </button>
+            </div>
+
+            <div class="gls-child-width-1-4@m" gls-grid>
+                <div>
+                    <h2>Objects</h2>
+
+                    <p gls-margin>
+                        <a class="gls-button gls-button-default" href="#modal" gls-toggle
+                            >Default</a
+                        >
+                        <a class="gls-button gls-button-default" href="#modal-sections" gls-toggle
+                            >Sections</a
+                        >
+                        <a
+                            class="gls-button gls-button-default"
+                            href="#modal-close-outside"
+                            gls-toggle
+                            >Close Outside</a
+                        >
+                    </p>
+                </div>
+                <div>
+                    <h2>Scrollbar</h2>
+
+                    <p gls-margin>
+                        <a class="gls-button gls-button-default" href="#modal-scrollbar" gls-toggle
+                            >Scrollbar</a
+                        >
+                        <a class="gls-button gls-button-default" href="#modal-overflow" gls-toggle
+                            >Overflow Auto</a
+                        >
+                    </p>
+                </div>
+                <div>
+                    <h2>Sizes</h2>
+
+                    <p gls-margin>
+                        <a class="gls-button gls-button-default" href="#modal-container" gls-toggle
+                            >Container</a
+                        >
+                        <a class="gls-button gls-button-default" href="#modal-expand" gls-toggle
+                            >Expand</a
+                        >
+                        <a class="gls-button gls-button-default" href="#modal-widths" gls-toggle
+                            >Widths</a
+                        >
+                        <a class="gls-button gls-button-default" href="#modal-full" gls-toggle
+                            >Full</a
+                        >
+                        <a class="gls-button gls-button-default" href="#modal-full-split" gls-toggle
+                            >Full Split</a
+                        >
+                    </p>
+                </div>
+                <div>
+                    <h2>Center</h2>
+
+                    <p gls-margin>
+                        <a class="gls-button gls-button-default" href="#modal-center" gls-toggle
+                            >Center</a
+                        >
+                        <a
+                            class="gls-button gls-button-default"
+                            href="#modal-center-scrollbar"
+                            gls-toggle
+                            >With scrollbar</a
+                        >
+                    </p>
+                </div>
+                <div>
+                    <h2>Media</h2>
+
+                    <p gls-margin>
+                        <a
+                            class="gls-button gls-button-default"
+                            href="#modal-media-image"
+                            gls-toggle
+                            >Image</a
+                        >
+                        <a
+                            class="gls-button gls-button-default"
+                            href="#modal-media-video"
+                            gls-toggle
+                            >Video</a
+                        >
+                        <a
+                            class="gls-button gls-button-default"
+                            href="#modal-media-youtube"
+                            gls-toggle
+                            >YouTube</a
+                        >
+                        <a
+                            class="gls-button gls-button-default"
+                            href="#modal-media-vimeo"
+                            gls-toggle
+                            >Vimeo</a
+                        >
+                    </p>
+                </div>
+                <div>
+                    <h2>Dialogs</h2>
+
+                    <p gls-margin>
+                        <a
+                            id="js-modal-dialog"
+                            class="gls-button gls-button-default"
+                            href
+                            role="button"
+                            >Dialog</a
+                        >
+                        <a
+                            id="js-modal-alert"
+                            class="gls-button gls-button-default"
+                            href
+                            role="button"
+                            >Alert</a
+                        >
+                        <a
+                            id="js-modal-confirm"
+                            class="gls-button gls-button-default"
+                            href
+                            role="button"
+                            >Confirm</a
+                        >
+                        <a
+                            id="js-modal-prompt"
+                            class="gls-button gls-button-default"
+                            href
+                            role="button"
+                            >Prompt</a
+                        >
+                    </p>
+                </div>
+                <div>
+                    <h2>Group</h2>
+
+                    <p gls-margin>
+                        <a class="gls-button gls-button-default" href="#modal-group-1" gls-toggle
+                            >Modal 1</a
+                        >
+                        <a class="gls-button gls-button-default" href="#modal-group-2" gls-toggle
+                            >Modal 2</a
+                        >
+                    </p>
+                </div>
+                <div>
+                    <h2>Stack</h2>
+
+                    <p gls-margin>
+                        <a class="gls-button gls-button-default" href="#modal-stack-1" gls-toggle
+                            >Modal 1</a
+                        >
+                        <a class="gls-button gls-button-default" href="#modal-stack-2" gls-toggle
+                            >Modal 2</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-muted gls-section-small gls-margin">
+            <div class="gls-float-left">Left</div>
+            <div class="gls-float-right">Right</div>
+            <div class="gls-container">Container</div>
+        </div>
+
+        <div id="scrollbar" class="gls-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <h2>JavaScript Options</h2>
+
+            <div class="gls-overflow-auto">
+                <table class="gls-table gls-table-striped">
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Value</th>
+                            <th>Default</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>container</code></td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                            <td>
+                                Define a target container via a selector to specify where the modal
+                                should be appended in the DOM.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>esc-close</code></td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                            <td>Close the modal when <em>Esc</em> key is pressed.</td>
+                        </tr>
+                        <tr>
+                            <td><code>bg-close</code></td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                            <td>Close the modal when background is clicked.</td>
+                        </tr>
+                        <tr>
+                            <td><code>stack</code></td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                            <td>
+                                Stack modals, when more than one is open? By default, the previous
+                                modal will be hidden.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="modal" gls-modal>
+            <div class="gls-modal-dialog gls-modal-body">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+                <h2 class="gls-modal-title">Headline</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="gls-text-right">
+                    <button class="gls-button gls-button-default gls-modal-close" type="button">
+                        Cancel
+                    </button>
+                    <button class="gls-button gls-button-primary" type="button">Save</button>
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-sections" gls-modal>
+            <div class="gls-modal-dialog">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+                <div class="gls-modal-header">
+                    <h2 class="gls-modal-title">Headline</h2>
+                </div>
+                <div class="gls-modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="gls-modal-footer gls-text-right">
+                    <button class="gls-button gls-button-default gls-modal-close" type="button">
+                        Cancel
+                    </button>
+                    <button class="gls-button gls-button-primary" type="button">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-close-outside" gls-modal>
+            <div class="gls-modal-dialog gls-modal-body">
+                <button class="gls-modal-close-outside" type="button" gls-close></button>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-scrollbar" gls-modal>
+            <div class="gls-modal-dialog gls-modal-body">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-overflow" class="gls-modal-container" gls-modal>
+            <div class="gls-modal-dialog">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+
+                <div class="gls-modal-header">
+                    <h2 class="gls-modal-title">Headline</h2>
+                </div>
+
+                <div class="gls-modal-body" gls-overflow-auto>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="gls-modal-footer gls-text-right">
+                    <button class="gls-button gls-button-default gls-modal-close" type="button">
+                        Cancel
+                    </button>
+                    <button class="gls-button gls-button-primary" type="button">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-container" class="gls-modal-container" gls-modal>
+            <div class="gls-modal-dialog gls-modal-body">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-expand" gls-modal>
+            <div class="gls-modal-dialog gls-modal-body gls-width-1-1">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-widths" gls-modal>
+            <div
+                class="gls-modal-dialog gls-modal-body gls-width-3-4@m gls-width-2-3@l gls-width-1-2@xl"
+            >
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-full" class="gls-modal-full" gls-modal>
+            <div
+                class="gls-modal-dialog gls-flex gls-flex-center gls-flex-middle"
+                gls-height-viewport
+            >
+                <button
+                    class="gls-modal-close-full gls-close-large"
+                    type="button"
+                    gls-close
+                ></button>
+                <div class="gls-width-2xlarge gls-padding-large">
+                    <h1>Headline</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-full-split" class="gls-modal-full" gls-modal>
+            <div class="gls-modal-dialog">
+                <button class="gls-modal-close-full" type="button" gls-close></button>
+                <div class="gls-grid-collapse gls-child-width-1-2@s gls-flex-middle" gls-grid>
+                    <div
+                        class="gls-background-cover"
+                        style="background-image: url('images/photo.jpg')"
+                        gls-height-viewport
+                    ></div>
+                    <div class="gls-padding-large">
+                        <h1>Headline</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-center" gls-modal>
+            <div class="gls-modal-dialog gls-modal-body gls-margin-auto-vertical">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-center-scrollbar" gls-modal>
+            <div class="gls-modal-dialog gls-modal-body gls-margin-auto-vertical">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-media-image" gls-modal>
+            <div class="gls-modal-dialog gls-width-auto gls-margin-auto-vertical">
+                <button class="gls-modal-close-outside" type="button" gls-close></button>
+                <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+            </div>
+        </div>
+
+        <div id="modal-media-video" gls-modal>
+            <div class="gls-modal-dialog gls-width-auto gls-margin-auto-vertical">
+                <button class="gls-modal-close-outside" type="button" gls-close></button>
+                <video
+                    src="https://yootheme.com/site/images/media/yootheme-pro.mp4"
+                    width="1920"
+                    height="1080"
+                    controls
+                    playsinline
+                    gls-video
+                ></video>
+            </div>
+        </div>
+
+        <div id="modal-media-youtube" gls-modal>
+            <div class="gls-modal-dialog gls-width-auto gls-margin-auto-vertical">
+                <button class="gls-modal-close-outside" type="button" gls-close></button>
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA"
+                    width="1920"
+                    height="1080"
+                    loading="lazy"
+                    gls-responsive
+                    gls-video
+                ></iframe>
+            </div>
+        </div>
+
+        <div id="modal-media-vimeo" gls-modal>
+            <div class="gls-modal-dialog gls-width-auto gls-margin-auto-vertical">
+                <button class="gls-modal-close-outside" type="button" gls-close></button>
+                <iframe
+                    src="https://player.vimeo.com/video/1084537"
+                    width="500"
+                    height="281"
+                    loading="lazy"
+                    gls-responsive
+                    gls-video
+                ></iframe>
+            </div>
+        </div>
+
+        <div id="modal-group-1" gls-modal>
+            <div class="gls-modal-dialog">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+                <div class="gls-modal-header">
+                    <h2 class="gls-modal-title">Headline 1</h2>
+                </div>
+                <div class="gls-modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="gls-modal-footer gls-text-right">
+                    <button class="gls-button gls-button-default gls-modal-close" type="button">
+                        Cancel
+                    </button>
+                    <a href="#modal-group-2" class="gls-button gls-button-primary" gls-toggle
+                        >Next</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-group-2" gls-modal>
+            <div class="gls-modal-dialog">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+                <div class="gls-modal-header">
+                    <h2 class="gls-modal-title">Headline 2</h2>
+                </div>
+                <div class="gls-modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="gls-modal-footer gls-text-right">
+                    <button class="gls-button gls-button-default gls-modal-close" type="button">
+                        Cancel
+                    </button>
+                    <a href="#modal-group-1" class="gls-button gls-button-primary" gls-toggle
+                        >Previous</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-stack-1" gls-modal>
+            <div class="gls-modal-dialog">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+                <div class="gls-modal-header">
+                    <h2 class="gls-modal-title">Headline 1</h2>
+                </div>
+                <div class="gls-modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="gls-modal-footer gls-text-right">
+                    <button class="gls-button gls-button-default gls-modal-close" type="button">
+                        Cancel
+                    </button>
+                    <a href="#modal-stack-2" class="gls-button gls-button-primary" gls-toggle
+                        >Next</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-stack-2" gls-modal="stack: true">
+            <div class="gls-modal-dialog">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+                <div class="gls-modal-header">
+                    <h2 class="gls-modal-title">Headline 2</h2>
+                </div>
+                <div class="gls-modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="gls-modal-footer gls-text-right">
+                    <button class="gls-button gls-button-default gls-modal-close" type="button">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const {
+                modal,
+                util: { on },
+            } = Gloss;
+
+            on('#js-modal-dialog', 'click', (e) => {
+                e.preventDefault();
+                e.target.blur();
+                modal.dialog('<p class="gls-modal-body">Gloss dialog!</p>');
+            });
+
+            on('#js-modal-alert', 'click', async (e) => {
+                e.preventDefault();
+                e.target.blur();
+                await modal.alert('Gloss alert!');
+                console.log('Alert closed.');
+            });
+
+            on('#js-modal-confirm', 'click', async (e) => {
+                e.preventDefault();
+                e.target.blur();
+
+                try {
+                    await modal.confirm('Gloss confirm!');
+                    console.log('Confirmed.');
+                } catch (e) {
+                    console.log('Rejected.');
+                }
+            });
+
+            on('#js-modal-prompt', 'click', async (e) => {
+                e.preventDefault();
+                e.target.blur();
+                const name = await modal.prompt('Name:', 'Your name');
+                console.log('Prompted:', name);
+            });
+        </script>
+    </body>
+</html>

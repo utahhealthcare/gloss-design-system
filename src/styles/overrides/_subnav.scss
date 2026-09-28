@@ -1,0 +1,13 @@
+// ========================================================================
+// Overrides: Subnav
+// ========================================================================
+
+@mixin hook-subnav-misc() {
+    .uk-subnav-pill > .uk-active > a {
+        border-radius: $subnav-pill-item-active-border-radius;
+    }
+    .uk-subnav > * > :first-child {
+        text-transform: $subnav-item-text-transform;
+        text-decoration: none;
+    }
+}

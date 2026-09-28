@@ -1,0 +1,20 @@
+// ========================================================================
+// Component Variables: Player
+// ========================================================================
+
+$vjs-color-primary: $global-primary-background !default;
+$vjs-color-secondary: white !default;
+$vjs-font-family: $global-font-family !default;
+$vjs-font-weight: $global-semibold-font-weight !default;
+$vjs-control-bar-background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+) !default;
+$vjs-control-bar-height: 4.75em !default;
+$vjs-control-bar-padding: 1em !default;
+$vjs-control-height: 3em !default;
+$vjs-big-play-size: 88px !default;
+$vjs-progress-height: 0.5em !default;
+$vjs-border-radius: 0.25em !default;
+$vjs-transition-speed: 0.1s !default;

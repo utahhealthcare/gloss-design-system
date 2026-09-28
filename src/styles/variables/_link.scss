@@ -1,0 +1,13 @@
+// ========================================================================
+// Component Variables: Link
+// ========================================================================
+
+$link-muted-color: $global-muted-color !default;
+$link-muted-hover-color: $global-color !default;
+$link-secondary-color: var(--color-secondary-text) !default;
+$link-secondary-hover-color: hsl(
+    from var(--breadcrumb-secondary-item-color) h s calc(l + 10)
+) !default;
+$link-text-hover-color: $global-muted-color !default;
+$link-heading-hover-color: $global-primary-background !default;
+$link-heading-hover-text-decoration: none !default;

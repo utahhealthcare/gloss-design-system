@@ -1,0 +1,22 @@
+/**
+ * Name:            Hack
+ * Description:     Various hacks and workarounds
+ *
+ * Component:       `gls-hack-*`
+ *
+ * ======================================================================== */
+
+/* ========================================================================
+   Component: Hack
+ ========================================================================== */
+
+/* Disable parallax scrolling on iOS
+   Source: https://stackoverflow.com/questions/20443574/fixed-background-image-with-ios7
+ ========================================================================== */
+
+@supports (-webkit-touch-callout: none) {
+    .gls-hack-ios-disable-parallax {
+        background-attachment: initial !important;
+        background-size: contain !important;
+    }
+}

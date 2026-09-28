@@ -1,0 +1,157 @@
+// ========================================================================
+// Overrides: List
+// ========================================================================
+
+@mixin hook-list-misc() {
+    .block-system-main-block [class='uk-list'] > *,
+    .uk-list-bullet > * {
+        position: relative;
+        padding-left: var(--list-padding-left, 30px);
+    }
+
+    // Support Drupal Cohesion general list rendering fallback
+    .block-system-main-block [class='uk-list'] > ::before,
+    .uk-list-bullet > ::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: var(--list-padding-left, 30px);
+        height: calc(#{$global-line-height} * 1em);
+        background-image: svg-load('../images/backgrounds/list-bullet.svg', fill=#c41919);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    // Huntsman Theme Bullet Color Override
+    .gls-theme-huntsman .block-system-main-block [class='uk-list'] > ::before,
+    .gls-theme-huntsman .uk-list-bullet > ::before {
+        background-image: svg-load('../images/backgrounds/list-bullet.svg', fill=#1c7ed6);
+    }
+
+    // SafeUT Theme Bullet Color Override
+    .gls-theme-safeut .block-system-main-block [class='uk-list'] > ::before,
+    .gls-theme-safeut .uk-list-bullet > ::before {
+        background-image: svg-load('../images/backgrounds/list-bullet.svg', fill=#6ba4b8);
+    }
+
+    /*
+   * Backwards Compatibility for Old Gloss CSS Custom Properties (e.g. UofU clinical design tokens)
+   */
+
+    // Nested lists
+    .uk-list > * > ul {
+        margin-top: var(--list-margin-top, var(--global-xsmall-space, 8px));
+    }
+
+    // Large modifier
+    .uk-list-large > :nth-child(n + 2),
+    .uk-list-large > * > ul {
+        margin-top: var(--list-large-margin-top, var(--global-small-space, 16px));
+    }
+
+    // Divider modifier
+    .uk-list-divider > :nth-child(n + 2) {
+        margin-top: var(--list-divider-margin-top, var(--global-xsmall-space, 8px));
+        padding-top: var(--list-divider-margin-top, var(--global-xsmall-space, 8px));
+        border-top: var(--list-divider-border-width, var(--global-border-width, 1px)) solid
+            var(--list-divider-border, var(--global-border));
+    }
+
+    // Large list with divider
+    .uk-list-large.uk-list-divider > :nth-child(n + 2) {
+        margin-top: var(--list-large-divider-margin-top, var(--global-small-space, 16px));
+        padding-top: var(--list-large-divider-margin-top, var(--global-small-space, 16px));
+    }
+
+    // Striped list
+    .uk-list-striped > * {
+        padding: var(--list-striped-padding-vertical, var(--global-xsmall-space, 8px))
+            var(--list-striped-padding-horizontal, var(--global-xsmall-space, 8px));
+    }
+    .uk-list-striped > :nth-of-type(odd) {
+        background: var(--list-striped-background, var(--global-muted-background));
+    }
+
+    // Large list with striped pattern
+    .uk-list-large.uk-list-striped > * {
+        padding: var(--list-large-striped-padding-vertical, var(--global-small-space, 16px))
+            var(--list-large-striped-padding-horizontal, var(--global-xsmall-space, 8px));
+    }
+
+    // Inline list
+    .uk-list-inline > * {
+        padding-right: var(--list-inline-padding-horizontal, var(--global-xsmall-space, 8px));
+    }
+
+    /*
+   * Support list rendering fallback for Drupal Cohesion / Site Studio & CKEditor WYSIWYG contents
+   */
+    .block-system-main-block ul:not([class]),
+    .coh-component ul:not([class]) {
+        list-style: initial;
+    }
+
+    .block-system-main-block ul:not([class]) > :nth-child(n + 2),
+    .block-system-main-block ul:not([class]) > * > ul,
+    .block-system-main-block ul:not([class]) > * > ol,
+    .coh-component ul:not([class]) > :nth-child(n + 2),
+    .coh-component ul:not([class]) > * > ul,
+    .coh-component ul:not([class]) > * > ol,
+    .block-system-main-block ol:not([class]) > :nth-child(n + 2),
+    .block-system-main-block ol:not([class]) > * > ul,
+    .block-system-main-block ol:not([class]) > * > ol,
+    .coh-component ol:not([class]) > :nth-child(n + 2),
+    .coh-component ol:not([class]) > * > ul,
+    .coh-component ol:not([class]) > * > ol {
+        margin-top: var(--list-margin-top, var(--global-xsmall-space, 8px));
+    }
+
+    :where(.coh-wysiwyg ol:not([class], [style])) {
+        list-style-type: decimal;
+    }
+    :where(.coh-wysiwyg ol:not([class], [style]) ol:not([class], [style])) {
+        list-style-type: lower-latin;
+    }
+    :where(
+        .coh-wysiwyg ol:not([class], [style]) ol:not([class], [style]) ol:not([class], [style])
+    ) {
+        list-style-type: lower-roman;
+    }
+    :where(
+        .coh-wysiwyg
+            ol:not([class], [style])
+            ol:not([class], [style])
+            ol:not([class], [style])
+            ol:not([class], [style])
+    ) {
+        list-style-type: upper-latin;
+    }
+    :where(
+        .coh-wysiwyg
+            ol:not([class], [style])
+            ol:not([class], [style])
+            ol:not([class], [style])
+            ol:not([class], [style])
+            ol:not([class], [style])
+    ) {
+        list-style-type: upper-roman;
+    }
+
+    :where(.coh-wysiwyg ul:not([class], [style])) {
+        list-style-type: disc;
+    }
+    :where(.coh-wysiwyg ul:not([class], [style]) ul:not([class], [style])) {
+        list-style-type: circle;
+    }
+    :where(.coh-wysiwyg ul:not([class], [style]) ul:not([class], [style]) ul:not([class], [style])),
+    :where(
+        .coh-wysiwyg
+            ul:not([class], [style])
+            ul:not([class], [style])
+            ul:not([class], [style])
+            ul:not([class], [style])
+    ) {
+        list-style-type: square;
+    }
+}

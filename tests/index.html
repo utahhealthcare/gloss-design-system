@@ -1,0 +1,1336 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Overview - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <nav class="gls-navbar-container">
+            <div class="gls-container">
+                <div gls-navbar>
+                    <div class="gls-navbar-left">
+                        <a class="gls-navbar-item gls-logo" href="#">Logo</a>
+
+                        <ul class="gls-navbar-nav">
+                            <li class="gls-active"><a href="#">Active</a></li>
+                            <li>
+                                <a href="#">Dropdown <span gls-navbar-parent-icon></span></a>
+                                <div class="gls-navbar-dropdown">
+                                    <ul class="gls-nav gls-navbar-dropdown-nav">
+                                        <li class="gls-active"><a href="#">Active</a></li>
+                                        <li class="gls-parent">
+                                            <a href="#">Parent</a>
+                                            <ul class="gls-nav-sub">
+                                                <li><a href="#">Sub item</a></li>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="gls-nav-header">Header</li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: table"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: thumbnails"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li class="gls-nav-divider"></li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: trash"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Dropbar <span gls-navbar-parent-icon></span></a>
+                                <div
+                                    class="gls-dropbar gls-dropbar-top"
+                                    gls-drop="pos: bottom-left; stretch: x; target-y: !.gls-navbar-container; animation: slide-top; animate-out: true"
+                                >
+                                    <ul class="gls-nav gls-navbar-dropdown-nav">
+                                        <li class="gls-active"><a href="#">Active</a></li>
+                                        <li class="gls-parent">
+                                            <a href="#">Parent</a>
+                                            <ul class="gls-nav-sub">
+                                                <li><a href="#">Sub item</a></li>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="gls-nav-header">Header</li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: table"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: thumbnails"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li class="gls-nav-divider"></li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: trash"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                    <div class="gls-navbar-right">
+                        <a
+                            class="gls-navbar-toggle"
+                            href="#modal"
+                            gls-icon="icon: more-vertical"
+                            gls-toggle
+                        ></a>
+                        <a
+                            class="gls-navbar-toggle"
+                            href="#modal-search"
+                            gls-search-icon
+                            gls-toggle
+                        ></a>
+                        <a
+                            class="gls-navbar-toggle"
+                            href="#offcanvas"
+                            gls-navbar-toggle-icon
+                            gls-toggle
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="gls-section gls-section-default">
+            <div class="gls-container">
+                <div gls-grid>
+                    <div class="gls-width-2-3@m">
+                        <ul class="gls-breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li class="gls-disabled"><a>Category</a></li>
+                            <li><span>Post</span></li>
+                        </ul>
+
+                        <article class="gls-article">
+                            <h1 class="gls-article-title">
+                                <a class="gls-link-reset" href="#">Article Title</a>
+                            </h1>
+
+                            <hr class="gls-divider-small" />
+
+                            <p class="gls-text-lead">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+
+                            <p class="gls-column-1-2@s gls-dropcap">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+
+                            <p class="gls-article-meta">
+                                Written by <a href="#">Super User</a> on 12 April 2012. Posted in
+                                <a href="#">Blog</a>
+                            </p>
+
+                            <hr class="gls-divider-icon gls-margin-medium" />
+
+                            <div
+                                class="gls-grid-small gls-child-width-auto gls-flex-middle gls-margin-medium"
+                                gls-grid
+                            >
+                                <div>
+                                    <button class="gls-button gls-button-default">Default</button>
+                                    <div gls-dropdown="mode: click">
+                                        <ul class="gls-nav gls-dropdown-nav">
+                                            <li class="gls-active"><a href="#">Active</a></li>
+                                            <li class="gls-parent">
+                                                <a href="#">Parent</a>
+                                                <ul class="gls-nav-sub">
+                                                    <li><a href="#">Sub item</a></li>
+                                                    <li><a href="#">Sub item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gls-nav-header">Header</li>
+                                            <li>
+                                                <a href="#"
+                                                    ><span
+                                                        class="gls-margin-small-right"
+                                                        gls-icon="icon: table"
+                                                    ></span>
+                                                    Item</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    ><span
+                                                        class="gls-margin-small-right"
+                                                        gls-icon="icon: thumbnails"
+                                                    ></span>
+                                                    Item</a
+                                                >
+                                            </li>
+                                            <li class="gls-nav-divider"></li>
+                                            <li>
+                                                <a href="#"
+                                                    ><span
+                                                        class="gls-margin-small-right"
+                                                        gls-icon="icon: trash"
+                                                    ></span>
+                                                    Item</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="gls-button gls-button-outline">Outline</button>
+                                </div>
+                                <div>
+                                    <button class="gls-button gls-button-primary">Primary</button>
+                                </div>
+                                <div>
+                                    <button class="gls-button gls-button-secondary">
+                                        Secondary
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="gls-button gls-button-tertiary">Tertiary</button>
+                                </div>
+                                <div>
+                                    <button class="gls-button gls-button-danger">Danger</button>
+                                </div>
+                                <div>
+                                    <button class="gls-button gls-button-default" disabled>
+                                        Disabled
+                                    </button>
+                                </div>
+                            </div>
+
+                            <hr class="gls-margin-medium" />
+
+                            <div
+                                class="gls-child-width-1-2 gls-child-width-1-4@s gls-margin"
+                                gls-grid
+                            >
+                                <div>
+                                    <ul class="gls-list">
+                                        <li><a href="#">a element</a></li>
+                                        <li><abbr title="Title text">abbr element</abbr></li>
+                                        <li><code>code element</code></li>
+                                        <li><del>del element</del></li>
+                                        <li><dfn title="Title text">dfn element</dfn></li>
+                                        <li><a href="#" class="gls-link-muted">Link Muted</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="gls-list">
+                                        <li><em>em element</em></li>
+                                        <li><ins>ins element</ins></li>
+                                        <li><mark>mark element</mark></li>
+                                        <li>
+                                            <q>q <q>inside</q> a q</q>
+                                        </li>
+                                        <li><strong>strong element</strong></li>
+                                        <li><a href="#" class="gls-link-reset">Link Reset</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="gls-list">
+                                        <li class="gls-text-muted">Text Muted</li>
+                                        <li class="gls-text-emphasis">Text Emphasis</li>
+                                        <li class="gls-text-primary">Text Primary</li>
+                                        <li class="gls-text-secondary">Text Secondary</li>
+                                        <li class="gls-text-tertiary">Text Tertiary</li>
+                                        <li class="gls-text-info">Text Info</li>
+                                        <li class="gls-text-success">Text Success</li>
+                                        <li class="gls-text-warning">Text Warning</li>
+                                        <li class="gls-text-danger">Text Danger</li>
+                                        <li class="gls-text-meta">Text Meta</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="gls-list">
+                                        <li><span class="gls-label">Default</span></li>
+                                        <li>
+                                            <span class="gls-label gls-label-primary">Primary</span>
+                                        </li>
+                                        <li><span class="gls-label gls-label-info">Info</span></li>
+                                        <li>
+                                            <span class="gls-label gls-label-success">Success</span>
+                                        </li>
+                                        <li>
+                                            <span class="gls-label gls-label-warning">Warning</span>
+                                        </li>
+                                        <li>
+                                            <span class="gls-label gls-label-danger">Danger</span>
+                                        </li>
+                                        <li><a class="gls-badge" href="#">1</a></li>
+                                        <li>
+                                            <a
+                                                class="gls-icon-button"
+                                                href="#"
+                                                gls-icon="icon: home"
+                                            ></a>
+                                            <a
+                                                class="gls-icon-button"
+                                                href="#"
+                                                gls-icon="icon: github"
+                                            ></a>
+                                            <a
+                                                class="gls-icon-link"
+                                                href="#"
+                                                gls-icon="icon: trash"
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <pre
+                                class="gls-pre gls-margin-medium"
+                            ><code>&lt;div class="myclass"&gt;…&lt;div&gt;</code></pre>
+
+                            <blockquote class="gls-margin-medium" cite="#">
+                                <p>
+                                    The blockquote element represents content that is quoted from
+                                    another source, optionally with a citation which must be within
+                                    a footer or cite element.
+                                </p>
+                                <footer>
+                                    Someone famous in <cite><a href="#">Source Title</a></cite>
+                                </footer>
+                            </blockquote>
+
+                            <div class="gls-grid-small" gls-grid>
+                                <div>
+                                    <a class="gls-button gls-button-text" href="#">Read more</a>
+                                </div>
+                                <div>
+                                    <a class="gls-button gls-button-text" href="#">5 Comments</a>
+                                </div>
+                                <div>
+                                    <a class="gls-button gls-button-link" href="#">Button Link</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <hr class="gls-margin-medium" />
+
+                        <ul class="gls-comment-list gls-margin-medium">
+                            <li>
+                                <article class="gls-comment gls-visible-toggle" tabindex="-1">
+                                    <header class="gls-comment-header gls-position-relative">
+                                        <div class="gls-grid-medium gls-flex-middle" gls-grid>
+                                            <div class="gls-width-auto">
+                                                <img
+                                                    class="gls-comment-avatar"
+                                                    src="images/avatar.jpg"
+                                                    width="50"
+                                                    height="50"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div class="gls-width-expand">
+                                                <h4 class="gls-comment-title gls-margin-remove">
+                                                    <a class="gls-link-reset" href="#">Author</a>
+                                                </h4>
+                                                <p class="gls-comment-meta gls-margin-remove-top">
+                                                    <a class="gls-link-reset" href="#"
+                                                        >12 days ago</a
+                                                    >
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="gls-position-top-right gls-position-small gls-hidden-hover"
+                                        >
+                                            <a class="gls-button gls-button-text" href="#">Reply</a>
+                                        </div>
+                                    </header>
+                                    <div class="gls-comment-body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et
+                                            dolore magna aliquyam erat, sed diam voluptua.
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+
+                        <ul class="gls-pagination gls-flex-center" gls-margin>
+                            <li>
+                                <a href="#"><span gls-pagination-previous></span></a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li class="gls-disabled"><span>…</span></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li class="gls-active"><span>7</span></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li class="gls-disabled"><span>…</span></li>
+                            <li><a href="#">20</a></li>
+                            <li>
+                                <a href="#"><span gls-pagination-next></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gls-width-expand@m">
+                        <div class="gls-margin-medium-bottom">
+                            <form class="gls-search gls-search-default gls-width-1-1">
+                                <span gls-search-icon></span>
+                                <input
+                                    class="gls-search-input"
+                                    type="search"
+                                    placeholder="Search"
+                                />
+                            </form>
+                        </div>
+
+                        <ul class="gls-nav-default gls-nav-parent-icon gls-margin-medium" gls-nav>
+                            <li class="gls-active"><a href="#">Active</a></li>
+                            <li class="gls-parent">
+                                <a href="#">Parent</a>
+                                <ul class="gls-nav-sub">
+                                    <li><a href="#">Sub item</a></li>
+                                    <li>
+                                        <a href="#">Sub item</a>
+                                        <ul>
+                                            <li><a href="#">Sub item</a></li>
+                                            <li><a href="#">Sub item</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gls-parent">
+                                <a href="#">Parent</a>
+                                <ul class="gls-nav-sub">
+                                    <li><a href="#">Sub item</a></li>
+                                    <li><a href="#">Sub item</a></li>
+                                </ul>
+                            </li>
+                            <li class="gls-nav-header">Header</li>
+                            <li>
+                                <a href="#"
+                                    ><span
+                                        class="gls-margin-small-right"
+                                        gls-icon="icon: table"
+                                    ></span>
+                                    Item</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span
+                                        class="gls-margin-small-right"
+                                        gls-icon="icon: thumbnails"
+                                    ></span>
+                                    Item</a
+                                >
+                            </li>
+                            <li class="gls-nav-divider"></li>
+                            <li>
+                                <a href="#"
+                                    ><span
+                                        class="gls-margin-small-right"
+                                        gls-icon="icon: trash"
+                                    ></span>
+                                    Item</a
+                                >
+                            </li>
+                        </ul>
+
+                        <div
+                            class="gls-card gls-card-body gls-card-default gls-card-hover gls-card-shadow"
+                        >
+                            <h3 class="gls-card-title">Default</h3>
+                            <p>
+                                Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                        </div>
+
+                        <div
+                            class="gls-margin gls-card gls-card-body gls-card-outline gls-card-hover gls-card-shadow"
+                        >
+                            <h3 class="gls-card-title">Outline</h3>
+                            <p>
+                                Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                        </div>
+
+                        <div
+                            class="gls-margin gls-card gls-card-body gls-card-primary gls-card-hover gls-card-shadow"
+                        >
+                            <h3 class="gls-card-title">Primary</h3>
+                            <p>
+                                Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                        </div>
+
+                        <div
+                            class="gls-margin gls-card gls-card-body gls-card-primary-light gls-card-hover gls-card-shadow"
+                        >
+                            <h3 class="gls-card-title">Primary Light</h3>
+                            <p>
+                                Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                        </div>
+
+                        <div
+                            class="gls-margin gls-card gls-card-body gls-card-secondary gls-card-hover gls-card-shadow"
+                        >
+                            <h3 class="gls-card-title">Secondary</h3>
+                            <p>
+                                Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                        </div>
+
+                        <div
+                            class="gls-margin gls-card gls-card-body gls-card-secondary-light gls-card-hover gls-card-shadow"
+                        >
+                            <h3 class="gls-card-title">Secondary Light</h3>
+                            <p>
+                                Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                        </div>
+
+                        <div
+                            class="gls-margin gls-card gls-card-body gls-card-tertiary gls-card-hover gls-card-shadow"
+                        >
+                            <h3 class="gls-card-title">Tertiary</h3>
+                            <p>
+                                Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                        </div>
+
+                        <div
+                            class="gls-margin gls-card gls-card-body gls-card-hover gls-card-shadow"
+                        >
+                            <h3 class="gls-card-title">Hover</h3>
+                            <p>
+                                Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="gls-margin-large" />
+
+                <div class="gls-grid-divider" gls-grid>
+                    <div class="gls-width-2-3@m">
+                        <h1 class="gls-heading-2xlarge gls-margin-small">2X-Large</h1>
+                        <h1 class="gls-heading-xlarge gls-margin-small">X-Large</h1>
+                        <h1 class="gls-heading-large gls-margin-small">Heading L</h1>
+                        <h1 class="gls-heading-medium gls-margin-small">Heading M</h1>
+                        <h1 class="gls-heading-small gls-margin-small">Heading S</h1>
+
+                        <h1 class="gls-margin-small">Heading H1</h1>
+                        <h2 class="gls-margin-small">Heading H2</h2>
+                        <h3 class="gls-margin-small">Heading H3</h3>
+                        <h4 class="gls-margin-small">Heading H4</h4>
+                        <h5 class="gls-margin-small">Heading H5</h5>
+                        <h6 class="gls-margin-small">Heading H6</h6>
+
+                        <h3 class="gls-heading-divider">Heading Divider</h3>
+                        <h3 class="gls-heading-bullet">Heading Bullet</h3>
+                        <h3 class="gls-heading-line"><span>Heading Line</span></h3>
+
+                        <div class="gls-overflow-auto gls-margin-medium-top">
+                            <table
+                                class="gls-table gls-table-divider gls-table-hover gls-table-small"
+                            >
+                                <thead>
+                                    <tr>
+                                        <th>Table Heading</th>
+                                        <th>Table Heading</th>
+                                        <th>Table Heading</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div
+                            class="gls-grid-small gls-child-width-auto gls-margin-medium-top"
+                            gls-grid
+                            js-countdown
+                        >
+                            <div>
+                                <div class="gls-countdown-number gls-countdown-days"></div>
+                            </div>
+                            <div class="gls-countdown-separator">:</div>
+                            <div>
+                                <div class="gls-countdown-number gls-countdown-hours"></div>
+                            </div>
+                            <div class="gls-countdown-separator">:</div>
+                            <div>
+                                <div class="gls-countdown-number gls-countdown-minutes"></div>
+                            </div>
+                            <div class="gls-countdown-separator">:</div>
+                            <div>
+                                <div class="gls-countdown-number gls-countdown-seconds"></div>
+                            </div>
+                        </div>
+
+                        <script>
+                            Gloss.countdown('[js-countdown]', {
+                                date: new Date(Date.now() + 864e5 * 7).toISOString(),
+                            });
+                        </script>
+                    </div>
+                    <div class="gls-width-1-3@m">
+                        <form class="gls-form-stacked">
+                            <div class="gls-margin-small">
+                                <label class="gls-form-label">Text</label>
+                                <input class="gls-input" type="text" placeholder="Some text..." />
+                            </div>
+
+                            <div class="gls-margin-small">
+                                <select class="gls-select">
+                                    <option>Option 01</option>
+                                    <option>Option 02</option>
+                                </select>
+                            </div>
+
+                            <div class="gls-margin-small">
+                                <textarea
+                                    class="gls-textarea"
+                                    rows="2"
+                                    placeholder="Some text..."
+                                ></textarea>
+                            </div>
+
+                            <div class="gls-grid-small gls-child-width-auto" gls-grid>
+                                <div>
+                                    <label
+                                        ><input class="gls-radio" type="radio" name="radio" />
+                                        Radio</label
+                                    >
+                                </div>
+                                <div>
+                                    <label
+                                        ><input class="gls-checkbox" type="checkbox" />
+                                        Checkbox</label
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="gls-margin-small">
+                                <input
+                                    class="gls-range"
+                                    type="range"
+                                    value="2"
+                                    min="0"
+                                    max="10"
+                                    step="0.1"
+                                />
+                            </div>
+
+                            <div class="gls-margin-small">
+                                <label class="gls-form-label">States</label>
+                                <input
+                                    class="gls-input"
+                                    type="text"
+                                    placeholder=":disabled"
+                                    disabled
+                                />
+                            </div>
+
+                            <div class="gls-margin-small">
+                                <input
+                                    class="gls-input gls-form-danger"
+                                    type="text"
+                                    placeholder="form-danger"
+                                    value="form-danger"
+                                />
+                            </div>
+                            <div class="gls-margin-small">
+                                <input
+                                    class="gls-input gls-form-success"
+                                    type="text"
+                                    placeholder="form-success"
+                                    value="form-success"
+                                />
+                            </div>
+                            <div class="gls-margin-small">
+                                <input
+                                    class="gls-input gls-form-blank"
+                                    type="text"
+                                    placeholder="form-blank"
+                                />
+                            </div>
+                        </form>
+
+                        <ul class="gls-nav gls-nav-primary gls-margin-medium">
+                            <li class="gls-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+
+                        <ul class="gls-nav gls-nav-secondary gls-margin-medium">
+                            <li class="gls-active">
+                                <a href="#"
+                                    ><div>
+                                        Active
+                                        <div class="gls-nav-subtitle">
+                                            Subtitle lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do.
+                                        </div>
+                                    </div></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><div>
+                                        Item
+                                        <div class="gls-nav-subtitle">
+                                            Subtitle lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do.
+                                        </div>
+                                    </div></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><div>
+                                        Item
+                                        <div class="gls-nav-subtitle">
+                                            Subtitle lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do.
+                                        </div>
+                                    </div></a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><div>
+                                        Item
+                                        <div class="gls-nav-subtitle">
+                                            Subtitle lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do.
+                                        </div>
+                                    </div></a
+                                >
+                            </li>
+                        </ul>
+
+                        <div class="gls-margin-medium-top" gls-alert>
+                            <a href="#" class="gls-alert-close" gls-close></a>
+                            <p>Default</p>
+                        </div>
+
+                        <div class="gls-alert-primary" gls-alert>
+                            <a href="#" class="gls-alert-close" gls-close></a>
+                            <p>Primary</p>
+                        </div>
+
+                        <div class="gls-alert-info" gls-alert>
+                            <a href="#" class="gls-alert-close" gls-close></a>
+                            <p>Info</p>
+                        </div>
+
+                        <div class="gls-alert-success" gls-alert>
+                            <a href="#" class="gls-alert-close" gls-close></a>
+                            <p>Success</p>
+                        </div>
+
+                        <div class="gls-alert-warning" gls-alert>
+                            <a href="#" class="gls-alert-close" gls-close></a>
+                            <p>Warning</p>
+                        </div>
+
+                        <div class="gls-alert-danger gls-margin-remove-bottom" gls-alert>
+                            <a href="#" class="gls-alert-close" gls-close></a>
+                            <p>Danger</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="gls-margin-medium" />
+
+                <div class="gls-child-width-1-2@s gls-child-width-expand@m" gls-grid>
+                    <div>
+                        <div class="gls-inline">
+                            <img src="images/light.jpg" width="1800" height="1200" alt="" />
+                            <a
+                                class="gls-position-absolute gls-transform-center"
+                                style="left: 20%; top: 30%"
+                                href="#"
+                                gls-marker
+                            ></a>
+                            <a
+                                class="gls-position-absolute gls-transform-center"
+                                style="left: 60%; top: 40%"
+                                href="#"
+                                gls-marker
+                            ></a>
+                            <a
+                                class="gls-position-absolute gls-transform-center"
+                                style="left: 80%; top: 70%"
+                                href="#"
+                                gls-marker
+                            ></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gls-inline-clip">
+                            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                            <div class="gls-overlay gls-overlay-default gls-position-bottom">
+                                <p>Default Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gls-inline-clip">
+                            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                            <div class="gls-overlay gls-overlay-primary gls-position-bottom">
+                                <p>Primary Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gls-inline gls-light">
+                            <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                            <div class="gls-position-center">
+                                <span gls-overlay-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="gls-margin-medium" />
+
+                <div class="gls-grid-divider gls-child-width-auto@m" gls-grid>
+                    <div>
+                        <ul class="gls-dotnav">
+                            <li class="gls-active"><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li>
+                            <li><a href="#">Item 6</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" gls-slidenav-previous></a>
+                        <a href="#" gls-slidenav-next></a>
+                    </div>
+                    <div>
+                        <ul class="gls-thumbnav">
+                            <li class="gls-active">
+                                <a href="#"
+                                    ><img src="images/photo.jpg" width="60" height="40" alt=""
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img src="images/dark.jpg" width="60" height="40" alt=""
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img src="images/light.jpg" width="60" height="40" alt=""
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div
+                            class="gls-tooltip gls-tooltip-top-center gls-display-inline-block gls-margin-remove gls-position-relative"
+                        >
+                            Tooltip
+                        </div>
+                    </div>
+                    <div class="gls-width-expand@m">
+                        <progress class="gls-progress" value="45" max="100">45%</progress>
+                    </div>
+                    <div>
+                        <button type="button" gls-close></button>
+                    </div>
+                    <div>
+                        <a href="#" gls-totop></a>
+                    </div>
+                </div>
+
+                <hr class="gls-margin-medium" />
+
+                <div class="gls-grid-divider gls-child-width-auto@m" gls-grid>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-divider" gls-margin>
+                            <li class="gls-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="gls-disabled"><a>Disabled</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li class="gls-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="gls-disabled"><a>Disabled</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul gls-tab>
+                            <li class="gls-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="gls-disabled"><a>Disabled</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-iconnav">
+                            <li class="gls-active"><a href="#" gls-icon="icon: plus"></a></li>
+                            <li><a href="#" gls-icon="icon: pencil"></a></li>
+                            <li>
+                                <a href="#"><span gls-icon="icon: trash"></span> (2)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="gls-margin-medium" />
+
+                <div class="gls-grid-divider gls-child-width-expand@m" gls-grid>
+                    <div>
+                        <ul class="gls-list gls-list-bullet gls-margin-medium">
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ul>
+
+                        <ul class="gls-list gls-list-striped">
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-list gls-list-divider gls-margin-medium">
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ul>
+
+                        <dl class="gls-description-list gls-description-list-divider">
+                            <dt>Description lists</dt>
+                            <dd>A description text</dd>
+                            <dt>Description lists</dt>
+                            <dd>A description text</dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <ul gls-accordion>
+                            <li class="gls-open">
+                                <a class="gls-accordion-title" href="#">Item 1</a>
+                                <div class="gls-accordion-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                        ullamco.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="gls-accordion-title" href="#">Item 2</a>
+                                <div class="gls-accordion-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                        ullamco.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="gls-accordion-title" href="#">Item 3</a>
+                                <div class="gls-accordion-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                        ullamco.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-padding-remove-vertical">
+            <div
+                class="gls-child-width-1-2@s gls-child-width-1-3@l gls-grid-collapse gls-grid-match"
+                gls-grid
+            >
+                <div>
+                    <div class="gls-tile gls-tile-default">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-tile gls-tile-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-tile gls-tile-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-tile gls-tile-secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-tile gls-tile-tertiary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-tile gls-tile-gradient">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default">
+            <div class="gls-container">
+                <div class="gls-grid-large gls-flex-middle" gls-grid>
+                    <div class="gls-width-expand@m">
+                        <p class="gls-text-large">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor.
+                        </p>
+                    </div>
+                    <div class="gls-width-auto@m">
+                        <a class="gls-button gls-button-default gls-button-large" href="#"
+                            >Button</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-muted">
+            <div class="gls-container">
+                <div class="gls-grid-large gls-flex-middle" gls-grid>
+                    <div class="gls-width-expand@m">
+                        <p class="gls-text-large">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor.
+                        </p>
+                    </div>
+                    <div class="gls-width-auto@m">
+                        <a class="gls-button gls-button-default gls-button-large" href="#"
+                            >Button</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-primary">
+            <div class="gls-container">
+                <div class="gls-grid-large gls-flex-middle" gls-grid>
+                    <div class="gls-width-expand@m">
+                        <p class="gls-text-large">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor.
+                        </p>
+                    </div>
+                    <div class="gls-width-auto@m">
+                        <a class="gls-button gls-button-default gls-button-large" href="#"
+                            >Button</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-primary-light">
+            <div class="gls-container">
+                <div class="gls-grid-large gls-flex-middle" gls-grid>
+                    <div class="gls-width-expand@m">
+                        <p class="gls-text-large">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor.
+                        </p>
+                    </div>
+                    <div class="gls-width-auto@m">
+                        <a class="gls-button gls-button-default gls-button-large" href="#"
+                            >Button</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-secondary">
+            <div class="gls-container">
+                <div class="gls-grid-large gls-flex-middle" gls-grid>
+                    <div class="gls-width-expand@m">
+                        <p class="gls-text-large">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor.
+                        </p>
+                    </div>
+                    <div class="gls-width-auto@m">
+                        <a class="gls-button gls-button-default gls-button-large" href="#"
+                            >Button</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-secondary-light">
+            <div class="gls-container">
+                <div class="gls-grid-large gls-flex-middle" gls-grid>
+                    <div class="gls-width-expand@m">
+                        <p class="gls-text-large">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor.
+                        </p>
+                    </div>
+                    <div class="gls-width-auto@m">
+                        <a class="gls-button gls-button-default gls-button-large" href="#"
+                            >Button</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-tertiary">
+            <div class="gls-container">
+                <div class="gls-grid-large gls-flex-middle" gls-grid>
+                    <div class="gls-width-expand@m">
+                        <p class="gls-text-large">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor.
+                        </p>
+                    </div>
+                    <div class="gls-width-auto@m">
+                        <a class="gls-button gls-button-default gls-button-large" href="#"
+                            >Button</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-gradient">
+            <div class="gls-container">
+                <div class="gls-grid-large gls-flex-middle" gls-grid>
+                    <div class="gls-width-expand@m">
+                        <p class="gls-text-large">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor.
+                        </p>
+                    </div>
+                    <div class="gls-width-auto@m">
+                        <a class="gls-button gls-button-default gls-button-large" href="#"
+                            >Button</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" gls-modal>
+            <div class="gls-modal-dialog">
+                <button class="gls-modal-close-default" type="button" gls-close></button>
+                <div class="gls-modal-header">
+                    <h2 class="gls-modal-title">Headline</h2>
+                </div>
+                <div class="gls-modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="gls-modal-footer gls-text-right">
+                    <button class="gls-button gls-button-default gls-modal-close" type="button">
+                        Cancel
+                    </button>
+                    <button class="gls-button gls-button-primary" type="button">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-search" class="gls-modal-full" gls-modal>
+            <div
+                class="gls-modal-dialog gls-flex gls-flex-center gls-flex-middle"
+                gls-height-viewport
+            >
+                <button
+                    class="gls-modal-close-full gls-close-large"
+                    type="button"
+                    gls-close
+                ></button>
+
+                <div>
+                    <ul class="gls-nav-primary gls-nav-center" gls-nav>
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div class="gls-margin">
+                        <form class="gls-search gls-search-large">
+                            <input
+                                class="gls-search-input gls-text-center"
+                                type="search"
+                                placeholder="Search"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="offcanvas" gls-offcanvas="flip: true; overlay: true">
+            <div class="gls-offcanvas-bar">
+                <button class="gls-offcanvas-close" type="button" gls-close></button>
+
+                <ul class="gls-nav gls-nav-default">
+                    <li class="gls-active"><a href="#">Active</a></li>
+                    <li class="gls-parent">
+                        <a href="#">Parent</a>
+                        <ul class="gls-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li class="gls-nav-header">Header</li>
+                    <li>
+                        <a href="#"
+                            ><span class="gls-margin-small-right" gls-icon="icon: table"></span>
+                            Item</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><span
+                                class="gls-margin-small-right"
+                                gls-icon="icon: thumbnails"
+                            ></span>
+                            Item</a
+                        >
+                    </li>
+                    <li class="gls-nav-divider"></li>
+                    <li>
+                        <a href="#"
+                            ><span class="gls-margin-small-right" gls-icon="icon: trash"></span>
+                            Item</a
+                        >
+                    </li>
+                </ul>
+
+                <h3>Title</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

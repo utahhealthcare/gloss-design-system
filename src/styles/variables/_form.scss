@@ -1,0 +1,72 @@
+// ========================================================================
+// Component Variables: Form
+// ========================================================================
+
+$form-border-width: 1px !default;
+$form-border: $global-border !default;
+$form-border-radius: $global-border-radius !default;
+
+$form-height: $global-control-height !default;
+$form-line-height: calc(
+    $form-height - (2 * 1px)
+) !default; // hardcode 1px to avoid calc math issues
+$form-padding-horizontal: 10px !default;
+$form-padding-vertical: 6px !default; // calc(10px * 0.6)
+$form-focus-background: $global-background !default;
+$form-focus-color: $global-color !default;
+$form-focus-border: $global-primary-background !default;
+$form-disabled-background: $global-muted-background !default;
+$form-disabled-color: $global-muted-color !default;
+$form-disabled-border: $global-border !default;
+$form-datalist-padding-right: 20px !default;
+$form-placeholder-color: $global-muted-color !default;
+$form-small-height: $global-control-small-height !default;
+$form-small-padding-horizontal: 8px !default;
+$form-small-padding-vertical: 4.8px !default; // calc(8px * 0.6)
+$form-small-line-height: $form-small-height !default;
+$form-small-font-size: $global-small-font-size !default;
+$form-large-height: $global-control-large-height !default;
+$form-large-padding-horizontal: 12px !default;
+$form-large-padding-vertical: 7.2px !default; // calc(12px * 0.6)
+$form-large-line-height: $form-large-height !default;
+$form-large-font-size: $global-medium-font-size !default;
+$form-danger-color: $global-danger-background !default;
+$form-danger-border: $global-danger-background !default;
+$form-success-color: hsl(from $global-success-background h s calc(l - 25)) !default;
+$form-success-border: hsl(from $global-success-background h s calc(l - 10)) !default;
+$form-blank-focus-border: $global-border !default;
+$form-blank-focus-border-style: dashed !default;
+$form-width-xsmall: 50px !default;
+$form-width-small: 130px !default;
+$form-width-medium: 200px !default;
+$form-width-large: 500px !default;
+$form-select-padding-right: 20px !default;
+$form-select-icon-color: $global-color !default;
+$form-select-option-color: $global-color !default;
+$form-select-disabled-icon-color: $global-muted-color !default;
+$form-radio-size: 16px !default;
+$form-radio-margin-top: -4px !default;
+$form-radio-background: transparent !default;
+$form-radio-border-width: $global-border-width !default;
+$form-radio-border: $global-border !default;
+$form-radio-focus-border: $global-primary-background !default;
+$form-radio-checked-border: transparent !default;
+$form-radio-disabled-border: $global-border !default;
+$form-radio-focus-background: $global-muted-background !default;
+$form-radio-checked-background: $global-primary-background !default;
+$form-radio-checked-icon-color: $global-inverse-color !default;
+$form-radio-checked-focus-background: var(--color-primary-6) !default;
+$form-radio-disabled-background: $global-muted-background !default;
+$form-radio-disabled-icon-color: $global-muted-color !default;
+$form-legend-font-size: $global-large-font-size !default;
+$form-legend-line-height: 1.4 !default;
+$form-stacked-margin-bottom: 5px !default;
+$form-label-color: $global-emphasis-color !default;
+$form-label-font-size: $global-small-font-size !default;
+$form-horizontal-label-width: 200px !default;
+$form-horizontal-label-margin-top: 7px !default;
+$form-horizontal-controls-margin-left: 215px !default;
+$form-horizontal-controls-text-padding-top: 7px !default;
+$form-icon-width: $form-height !default;
+$form-icon-color: $global-muted-color !default;
+$form-icon-hover-color: $global-color !default;

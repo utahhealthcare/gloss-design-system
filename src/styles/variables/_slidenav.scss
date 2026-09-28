@@ -1,0 +1,12 @@
+// ========================================================================
+// Component Variables: Slidenav
+// ========================================================================
+
+$slidenav-padding-vertical: 5px !default;
+$slidenav-padding-horizontal: 10px !default;
+$slidenav-color: var(--color-trans-black-4) !default;
+$slidenav-hover-color: var(--color-trans-black-8) !default;
+$slidenav-active-color: var(--color-trans-black-4) !default;
+$slidenav-transition: color 0.1s ease-in-out !default;
+$slidenav-large-padding-vertical: 10px !default;
+$slidenav-large-padding-horizontal: $slidenav-large-padding-vertical !default;

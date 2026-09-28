@@ -1,0 +1,18 @@
+// ========================================================================
+// Component Variables: Arrow
+// ========================================================================
+
+$arrow-size-small: 0.75em !default;
+$arrow-size-medium: 1em !default;
+$arrow-size-large: 1.5em !default;
+$arrow-size: $arrow-size-medium !default;
+$arrow-b-clip-path: polygon(
+    100% 0,
+    calc(100% - 1px) 0,
+    0 calc(100% - 1px),
+    0 100%,
+    100% 100%
+) !default;
+$arrow-l-clip-path: polygon(0 100%, 100% 100%, 100% calc(100% - 1px), 1px 0, 0 0) !default;
+$arrow-r-clip-path: polygon(100% 0, 100% 100%, calc(100% - 1px) 100%, 0 1px, 0 0) !default;
+$arrow-t-clip-path: polygon(100% 0, 100% 1px, 1px 100%, 0 100%, 0 0) !default;

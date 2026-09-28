@@ -1,0 +1,81 @@
+// ========================================================================
+// Component Variables: Navbar
+// ========================================================================
+
+$navbar-background: $global-background !default;
+$navbar-color-mode: none !default;
+
+$navbar-nav-item-height: 80px !default;
+$navbar-nav-item-padding-horizontal: $global-small-space !default;
+$navbar-nav-item-color: $global-emphasis-color !default;
+$navbar-nav-item-font-size: $global-font-size !default;
+$navbar-nav-item-font-family: $global-font-family !default;
+$navbar-nav-item-font-weight: 500 !default;
+$navbar-nav-item-line-height: 1.25 !default;
+$navbar-nav-item-hover-color: $global-emphasis-color !default;
+$navbar-nav-item-onclick-color: var(--color-primary) !default;
+$navbar-nav-item-active-color: var(--color-primary) !default;
+$navbar-nav-item-open-background: transparent !default;
+$navbar-nav-item-text-transform: none !default;
+
+$navbar-nav-item-divider-padding-horizontal: $global-small-space !default;
+$navbar-nav-item-divider-border-width: $global-border-width !default;
+$navbar-nav-item-divider-border: $global-border !default;
+
+$navbar-item-color: $global-color !default;
+
+$navbar-toggle-color: $global-muted-color !default;
+$navbar-toggle-hover-color: $global-color !default;
+
+$navbar-subtitle-font-size: $global-small-font-size !default;
+
+$navbar-parent-icon-width: calc($global-line-height * 1em) !default;
+$navbar-parent-icon-height: $navbar-parent-icon-width !default;
+$navbar-parent-icon-color: $global-color !default;
+$navbar-parent-icon-margin: $global-2xsmall-space !default;
+
+$navbar-dropdown-z-index: 1020 !default; // calc($global-z-index + 20)
+$navbar-dropdown-margin: 0px !default;
+$navbar-dropdown-width: 200px !default;
+$navbar-dropdown-padding: 25px !default;
+$navbar-dropdown-background: $global-background !default;
+$navbar-dropdown-color: $global-color !default;
+$navbar-dropdown-grid-gutter-horizontal: calc(
+    $navbar-dropdown-padding * 2
+); // 50px !default; // legacy was calc(padding * 2), padding is 25px
+$navbar-dropdown-grid-gutter-vertical: $navbar-dropdown-grid-gutter-horizontal !default;
+$navbar-dropdown-grid-divider-border-width: $global-border-width !default;
+$navbar-dropdown-grid-divider-border: $global-border !default;
+$navbar-dropdown-box-shadow: $global-medium-box-shadow !default;
+
+$navbar-dropdown-dropbar-margin-top: 0px !default;
+$navbar-dropdown-dropbar-margin-bottom: $navbar-dropdown-dropbar-margin-top !default;
+$navbar-dropdown-dropbar-padding-horizontal: $navbar-nav-item-padding-horizontal !default;
+
+$navbar-dropdown-nav-item-color: $global-emphasis-color !default;
+$navbar-dropdown-nav-item-hover-color: $global-muted-color !default;
+$navbar-dropdown-nav-item-active-color: $global-emphasis-color !default;
+$navbar-dropdown-nav-subtitle-font-size: $global-small-font-size !default;
+$navbar-dropdown-nav-header-color: $global-emphasis-color !default;
+$navbar-dropdown-nav-divider-border-width: $global-border-width !default;
+$navbar-dropdown-nav-divider-border: $global-border !default;
+$navbar-dropdown-nav-sublist-item-color: $global-color !default;
+$navbar-dropdown-nav-sublist-item-hover-color: $global-muted-color !default;
+$navbar-dropdown-nav-sublist-item-active-color: $global-emphasis-color !default;
+$navbar-dropdown-nav-font-size: $global-small-font-size !default;
+$navbar-dropdown-nav-border: var(--color-primary) !default;
+$navbar-dropdown-nav-padding: $global-small-space !default;
+
+$navbar-dropbar-background: $navbar-dropdown-background !default;
+$navbar-dropbar-z-index: 980 !default; // calc($global-z-index - 20)
+$navbar-dropbar-box-shadow: $global-small-box-shadow !default;
+
+$navbar-secondary-nav-item-height: 64px !default;
+$navbar-secondary-nav-item-font-size: $global-font-size !default;
+$navbar-secondary-nav-item-open-background: $global-background !default;
+$navbar-secondary-nav-item-text-transform: none !default;
+
+// Breakpoint Overrides
+// @media (min-width: $breakpoint-large) {
+//    $navbar-nav-item-divider-padding-horizontal: 24px !default;
+// }

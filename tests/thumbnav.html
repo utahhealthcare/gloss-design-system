@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Thumbnav - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Thumbnav</h1>
+
+            <h2>Horizontal</h2>
+
+            <ul class="gls-thumbnav">
+                <li class="gls-active">
+                    <a href="#"><img src="images/photo.jpg" width="100" height="67" alt="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/dark.jpg" width="100" height="67" alt="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/light.jpg" width="100" height="67" alt="" /></a>
+                </li>
+            </ul>
+
+            <h2>Vertical</h2>
+
+            <ul class="gls-thumbnav gls-thumbnav-vertical">
+                <li class="gls-active">
+                    <a href="#"><img src="images/photo.jpg" width="100" height="67" alt="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/dark.jpg" width="100" height="67" alt="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/light.jpg" width="100" height="67" alt="" /></a>
+                </li>
+            </ul>
+
+            <h2>Image</h2>
+
+            <div class="gls-position-relative" gls-slideshow="animation: fade">
+                <ul class="gls-slideshow-items">
+                    <li><img src="images/photo.jpg" alt="" gls-cover /></li>
+                    <li><img src="images/dark.jpg" alt="" gls-cover /></li>
+                    <li><img src="images/light.jpg" alt="" gls-cover /></li>
+                </ul>
+
+                <div class="gls-position-bottom-center gls-position-small">
+                    <ul class="gls-thumbnav">
+                        <li gls-slideshow-item="0">
+                            <a href="#"
+                                ><img src="images/photo.jpg" width="100" height="67" alt=""
+                            /></a>
+                        </li>
+                        <li gls-slideshow-item="1">
+                            <a href="#"
+                                ><img src="images/dark.jpg" width="100" height="67" alt=""
+                            /></a>
+                        </li>
+                        <li gls-slideshow-item="2">
+                            <a href="#"
+                                ><img src="images/light.jpg" width="100" height="67" alt=""
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="gls-position-center-right gls-position-small">
+                    <ul class="gls-thumbnav gls-thumbnav-vertical">
+                        <li gls-slideshow-item="0">
+                            <a href="#"
+                                ><img src="images/photo.jpg" width="100" height="67" alt=""
+                            /></a>
+                        </li>
+                        <li gls-slideshow-item="1">
+                            <a href="#"
+                                ><img src="images/dark.jpg" width="100" height="67" alt=""
+                            /></a>
+                        </li>
+                        <li gls-slideshow-item="2">
+                            <a href="#"
+                                ><img src="images/light.jpg" width="100" height="67" alt=""
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

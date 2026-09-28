@@ -1,0 +1,13 @@
+// ========================================================================
+// Component Variables: Rating
+// ========================================================================
+
+$rating: 2.5 !default;
+$rating-max: 5 !default;
+$rating-fill: var(--color-primary) !default;
+$rating-background: var(--color-gray-7) !default;
+$rating-icon-empty: '☆☆☆☆☆' !default;
+$rating-icon-filled: '★★★★★' !default;
+$rating-size: 2em !default;
+$rating-small: 1.25em !default;
+$rating-large: 3em !default;

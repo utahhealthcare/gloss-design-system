@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sticky Navbar - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body style="padding-bottom: 1100px">
+        <div class="gls-container gls-margin-bottom">
+            <h1>Sticky Navbar</h1>
+        </div>
+
+        <div class="tm-header">
+            <div
+                gls-sticky="end: #sticky-dropdown; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky"
+            >
+                <nav class="gls-navbar-container">
+                    <div class="gls-container">
+                        <div gls-navbar>
+                            <div class="gls-navbar-left">
+                                <a class="gls-navbar-item gls-logo" href="#">Sticky + Dropdown</a>
+
+                                <ul class="gls-navbar-nav">
+                                    <li class="gls-active"><a href="">Active</a></li>
+                                    <li>
+                                        <a href="">Parent</a>
+                                        <div class="gls-navbar-dropdown">
+                                            <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                <li class="gls-active"><a href="#">Active</a></li>
+                                                <li class="gls-parent">
+                                                    <a href="#">Parent</a>
+                                                    <ul class="gls-nav-sub">
+                                                        <li><a href="#">Sub item</a></li>
+                                                        <li><a href="#">Sub item</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="gls-nav-header">Header</li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: table"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: thumbnails"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li class="gls-nav-divider"></li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: trash"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">Parent</a>
+                                        <div class="gls-navbar-dropdown">
+                                            <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                <li class="gls-active"><a href="#">Active</a></li>
+                                                <li class="gls-parent">
+                                                    <a href="#">Parent</a>
+                                                    <ul class="gls-nav-sub">
+                                                        <li><a href="#">Sub item</a></li>
+                                                        <li><a href="#">Sub item</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="gls-nav-header">Header</li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: table"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: thumbnails"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li class="gls-nav-divider"></li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: trash"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="">Item</a></li>
+                                </ul>
+                            </div>
+                            <div class="gls-navbar-right">
+                                <a
+                                    class="gls-navbar-toggle gls-navbar-toggle-animate"
+                                    gls-navbar-toggle-icon
+                                    href="#"
+                                ></a>
+                                <div
+                                    class="gls-navbar-dropdown"
+                                    gls-drop="mode: click; cls-drop: gls-navbar-dropdown; boundary: !.gls-navbar; stretch: x; flip: false"
+                                >
+                                    <ul class="gls-nav gls-navbar-dropdown-nav">
+                                        <li class="gls-active"><a href="#">Active</a></li>
+                                        <li class="gls-parent">
+                                            <a href="#">Parent</a>
+                                            <ul class="gls-nav-sub">
+                                                <li><a href="#">Sub item</a></li>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="gls-nav-header">Header</li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: table"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: thumbnails"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li class="gls-nav-divider"></li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: trash"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default">
+            <div id="sticky-dropdown" class="gls-container">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+            </div>
+        </div>
+
+        <div class="tm-header">
+            <div
+                gls-sticky="end: #sticky-dropbar; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky"
+            >
+                <nav class="gls-navbar-container">
+                    <div class="gls-container">
+                        <div
+                            gls-navbar="target-y: !.gls-navbar-container; dropbar: true; dropbar-anchor: !.gls-navbar-container"
+                        >
+                            <div class="gls-navbar-left">
+                                <a class="gls-navbar-item gls-logo" href="#">Sticky + Dropbar</a>
+
+                                <ul class="gls-navbar-nav">
+                                    <li class="gls-active"><a href="">Active</a></li>
+                                    <li>
+                                        <a href="">Parent</a>
+                                        <div class="gls-navbar-dropdown">
+                                            <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                <li class="gls-active"><a href="#">Active</a></li>
+                                                <li class="gls-parent">
+                                                    <a href="#">Parent</a>
+                                                    <ul class="gls-nav-sub">
+                                                        <li><a href="#">Sub item</a></li>
+                                                        <li><a href="#">Sub item</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="gls-nav-header">Header</li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: table"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: thumbnails"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li class="gls-nav-divider"></li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: trash"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">Parent</a>
+                                        <div class="gls-navbar-dropdown">
+                                            <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                <li class="gls-active"><a href="#">Active</a></li>
+                                                <li class="gls-parent">
+                                                    <a href="#">Parent</a>
+                                                    <ul class="gls-nav-sub">
+                                                        <li><a href="#">Sub item</a></li>
+                                                        <li><a href="#">Sub item</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="gls-nav-header">Header</li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: table"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: thumbnails"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li class="gls-nav-divider"></li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: trash"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="">Item</a></li>
+                                </ul>
+                            </div>
+                            <div class="gls-navbar-right">
+                                <a
+                                    class="gls-navbar-toggle gls-navbar-toggle-animate"
+                                    gls-navbar-toggle-icon
+                                    href="#"
+                                ></a>
+                                <div
+                                    class="gls-navbar-dropdown"
+                                    gls-drop="mode: click; cls-drop: gls-navbar-dropdown; boundary: !.gls-navbar; stretch: x; flip: false; target-y: !.gls-navbar-container"
+                                >
+                                    <ul class="gls-nav gls-navbar-dropdown-nav">
+                                        <li class="gls-active"><a href="#">Active</a></li>
+                                        <li class="gls-parent">
+                                            <a href="#">Parent</a>
+                                            <ul class="gls-nav-sub">
+                                                <li><a href="#">Sub item</a></li>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="gls-nav-header">Header</li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: table"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: thumbnails"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li class="gls-nav-divider"></li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: trash"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default">
+            <div id="sticky-dropbar" class="gls-container">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+            </div>
+        </div>
+
+        <div class="tm-header">
+            <div
+                gls-sticky="end: #scrollup-dropdown; show-on-up: true; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky"
+            >
+                <nav class="gls-navbar-container">
+                    <div class="gls-container gls-container-expand">
+                        <div gls-navbar>
+                            <div class="gls-navbar-left">
+                                <a class="gls-navbar-item gls-logo" href="#"
+                                    >Scroll Up + Dropdown</a
+                                >
+
+                                <ul class="gls-navbar-nav">
+                                    <li class="gls-active"><a href="">Active</a></li>
+                                    <li>
+                                        <a href="">Parent</a>
+                                        <div class="gls-navbar-dropdown">
+                                            <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                <li class="gls-active"><a href="#">Active</a></li>
+                                                <li class="gls-parent">
+                                                    <a href="#">Parent</a>
+                                                    <ul class="gls-nav-sub">
+                                                        <li><a href="#">Sub item</a></li>
+                                                        <li><a href="#">Sub item</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="gls-nav-header">Header</li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: table"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: thumbnails"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li class="gls-nav-divider"></li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: trash"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">Parent</a>
+                                        <div class="gls-navbar-dropdown">
+                                            <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                <li class="gls-active"><a href="#">Active</a></li>
+                                                <li class="gls-parent">
+                                                    <a href="#">Parent</a>
+                                                    <ul class="gls-nav-sub">
+                                                        <li><a href="#">Sub item</a></li>
+                                                        <li><a href="#">Sub item</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="gls-nav-header">Header</li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: table"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: thumbnails"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li class="gls-nav-divider"></li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: trash"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="">Item</a></li>
+                                </ul>
+                            </div>
+                            <div class="gls-navbar-right">
+                                <a
+                                    class="gls-navbar-toggle gls-navbar-toggle-animate"
+                                    gls-navbar-toggle-icon
+                                    href="#"
+                                ></a>
+                                <div
+                                    class="gls-navbar-dropdown"
+                                    gls-drop="mode: click; cls-drop: gls-navbar-dropdown; boundary: !.gls-navbar; stretch: x; flip: false"
+                                >
+                                    <ul class="gls-nav gls-navbar-dropdown-nav">
+                                        <li class="gls-active"><a href="#">Active</a></li>
+                                        <li class="gls-parent">
+                                            <a href="#">Parent</a>
+                                            <ul class="gls-nav-sub">
+                                                <li><a href="#">Sub item</a></li>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="gls-nav-header">Header</li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: table"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: thumbnails"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li class="gls-nav-divider"></li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: trash"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default">
+            <div id="scrollup-dropdown" class="gls-container">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+            </div>
+        </div>
+
+        <div class="tm-header">
+            <div
+                gls-sticky="end: #scrollup-dropbar; show-on-up: true; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky"
+            >
+                <nav class="gls-navbar-container">
+                    <div class="gls-container gls-container-expand">
+                        <div
+                            gls-navbar="target-y: !.gls-navbar-container; dropbar: true; dropbar-anchor: !.gls-navbar-container"
+                        >
+                            <div class="gls-navbar-left">
+                                <a class="gls-navbar-item gls-logo" href="#">Scroll Up + Dropbar</a>
+
+                                <ul class="gls-navbar-nav">
+                                    <li class="gls-active"><a href="">Active</a></li>
+                                    <li>
+                                        <a href="">Parent</a>
+                                        <div class="gls-navbar-dropdown">
+                                            <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                <li class="gls-active"><a href="#">Active</a></li>
+                                                <li class="gls-parent">
+                                                    <a href="#">Parent</a>
+                                                    <ul class="gls-nav-sub">
+                                                        <li><a href="#">Sub item</a></li>
+                                                        <li><a href="#">Sub item</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="gls-nav-header">Header</li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: table"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: thumbnails"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li class="gls-nav-divider"></li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: trash"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">Parent</a>
+                                        <div class="gls-navbar-dropdown">
+                                            <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                <li class="gls-active"><a href="#">Active</a></li>
+                                                <li class="gls-parent">
+                                                    <a href="#">Parent</a>
+                                                    <ul class="gls-nav-sub">
+                                                        <li><a href="#">Sub item</a></li>
+                                                        <li><a href="#">Sub item</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="gls-nav-header">Header</li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: table"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: thumbnails"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                                <li class="gls-nav-divider"></li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><span
+                                                            class="gls-margin-small-right"
+                                                            gls-icon="icon: trash"
+                                                        ></span>
+                                                        Item</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="">Item</a></li>
+                                </ul>
+                            </div>
+                            <div class="gls-navbar-right">
+                                <a
+                                    class="gls-navbar-toggle gls-navbar-toggle-animate"
+                                    gls-navbar-toggle-icon
+                                    href="#"
+                                ></a>
+                                <div
+                                    class="gls-navbar-dropdown"
+                                    gls-drop="mode: click; cls-drop: gls-navbar-dropdown; boundary: !.gls-navbar; stretch: x; flip: false; target-y: !.gls-navbar-container"
+                                >
+                                    <ul class="gls-nav gls-navbar-dropdown-nav">
+                                        <li class="gls-active"><a href="#">Active</a></li>
+                                        <li class="gls-parent">
+                                            <a href="#">Parent</a>
+                                            <ul class="gls-nav-sub">
+                                                <li><a href="#">Sub item</a></li>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="gls-nav-header">Header</li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: table"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: thumbnails"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                        <li class="gls-nav-divider"></li>
+                                        <li>
+                                            <a href="#"
+                                                ><span
+                                                    class="gls-margin-small-right"
+                                                    gls-icon="icon: trash"
+                                                ></span>
+                                                Item</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default">
+            <div id="scrollup-dropbar" class="gls-container">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+            </div>
+        </div>
+
+        <div id="transparent-dropdown" class="gls-section-primary gls-preserve-color">
+            <div class="tm-header">
+                <div
+                    gls-sticky="start: 200; end: #transparent-dropdown; show-on-up: true; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent gls-light"
+                >
+                    <nav class="gls-navbar-container">
+                        <div class="gls-container gls-container-expand">
+                            <div gls-navbar>
+                                <div class="gls-navbar-left">
+                                    <a class="gls-navbar-item gls-logo" href="#"
+                                        >Transparent + Dropdown</a
+                                    >
+
+                                    <ul class="gls-navbar-nav">
+                                        <li class="gls-active"><a href="">Active</a></li>
+                                        <li>
+                                            <a href="">Parent</a>
+                                            <div class="gls-navbar-dropdown">
+                                                <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
+                                                    <li class="gls-parent">
+                                                        <a href="#">Parent</a>
+                                                        <ul class="gls-nav-sub">
+                                                            <li><a href="#">Sub item</a></li>
+                                                            <li><a href="#">Sub item</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="gls-nav-header">Header</li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: table"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: thumbnails"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                    <li class="gls-nav-divider"></li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: trash"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="">Parent</a>
+                                            <div class="gls-navbar-dropdown">
+                                                <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
+                                                    <li class="gls-parent">
+                                                        <a href="#">Parent</a>
+                                                        <ul class="gls-nav-sub">
+                                                            <li><a href="#">Sub item</a></li>
+                                                            <li><a href="#">Sub item</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="gls-nav-header">Header</li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: table"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: thumbnails"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                    <li class="gls-nav-divider"></li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: trash"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="">Item</a></li>
+                                    </ul>
+                                </div>
+                                <div class="gls-navbar-right">
+                                    <a
+                                        class="gls-navbar-toggle gls-navbar-toggle-animate"
+                                        gls-navbar-toggle-icon
+                                        href="#"
+                                    ></a>
+                                    <div
+                                        class="gls-navbar-dropdown"
+                                        gls-drop="mode: click; cls-drop: gls-navbar-dropdown; boundary: !.gls-navbar; stretch: x; flip: false"
+                                    >
+                                        <ul class="gls-nav gls-navbar-dropdown-nav">
+                                            <li class="gls-active"><a href="#">Active</a></li>
+                                            <li class="gls-parent">
+                                                <a href="#">Parent</a>
+                                                <ul class="gls-nav-sub">
+                                                    <li><a href="#">Sub item</a></li>
+                                                    <li><a href="#">Sub item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gls-nav-header">Header</li>
+                                            <li>
+                                                <a href="#"
+                                                    ><span
+                                                        class="gls-margin-small-right"
+                                                        gls-icon="icon: table"
+                                                    ></span>
+                                                    Item</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    ><span
+                                                        class="gls-margin-small-right"
+                                                        gls-icon="icon: thumbnails"
+                                                    ></span>
+                                                    Item</a
+                                                >
+                                            </li>
+                                            <li class="gls-nav-divider"></li>
+                                            <li>
+                                                <a href="#"
+                                                    ><span
+                                                        class="gls-margin-small-right"
+                                                        gls-icon="icon: trash"
+                                                    ></span>
+                                                    Item</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="gls-section gls-light">
+                <div class="gls-container">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum.
+                    </p>
+
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum.
+                    </p>
+
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum.
+                    </p>
+
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="transparent-dropbar" class="gls-section-secondary gls-preserve-color">
+            <div class="tm-header">
+                <div
+                    gls-sticky="start: 200; end: #transparent-dropbar; show-on-up: true; animation: gls-animation-slide-top; sel-target: .gls-navbar-container; cls-active: gls-navbar-sticky; cls-inactive: gls-navbar-transparent gls-light"
+                >
+                    <nav class="gls-navbar-container">
+                        <div class="gls-container gls-container-expand">
+                            <div
+                                gls-navbar="target-y: !.gls-navbar-container; dropbar: true; dropbar-anchor: !.gls-navbar-container"
+                            >
+                                <div class="gls-navbar-left">
+                                    <a class="gls-navbar-item gls-logo" href="#"
+                                        >Transparent + Dropbar</a
+                                    >
+
+                                    <ul class="gls-navbar-nav">
+                                        <li class="gls-active"><a href="">Active</a></li>
+                                        <li>
+                                            <a href="">Parent</a>
+                                            <div class="gls-navbar-dropdown">
+                                                <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
+                                                    <li class="gls-parent">
+                                                        <a href="#">Parent</a>
+                                                        <ul class="gls-nav-sub">
+                                                            <li><a href="#">Sub item</a></li>
+                                                            <li><a href="#">Sub item</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="gls-nav-header">Header</li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: table"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: thumbnails"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                    <li class="gls-nav-divider"></li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: trash"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="">Parent</a>
+                                            <div class="gls-navbar-dropdown">
+                                                <ul class="gls-nav gls-navbar-dropdown-nav">
+                                                    <li class="gls-active">
+                                                        <a href="#">Active</a>
+                                                    </li>
+                                                    <li class="gls-parent">
+                                                        <a href="#">Parent</a>
+                                                        <ul class="gls-nav-sub">
+                                                            <li><a href="#">Sub item</a></li>
+                                                            <li><a href="#">Sub item</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="gls-nav-header">Header</li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: table"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: thumbnails"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                    <li class="gls-nav-divider"></li>
+                                                    <li>
+                                                        <a href="#"
+                                                            ><span
+                                                                class="gls-margin-small-right"
+                                                                gls-icon="icon: trash"
+                                                            ></span>
+                                                            Item</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="">Item</a></li>
+                                    </ul>
+                                </div>
+                                <div class="gls-navbar-right">
+                                    <a
+                                        class="gls-navbar-toggle gls-navbar-toggle-animate"
+                                        gls-navbar-toggle-icon
+                                        href="#"
+                                    ></a>
+                                    <div
+                                        class="gls-navbar-dropdown"
+                                        gls-drop="mode: click; cls-drop: gls-navbar-dropdown; boundary: !.gls-navbar; stretch: x; flip: false; target-y: !.gls-navbar-container"
+                                    >
+                                        <ul class="gls-nav gls-navbar-dropdown-nav">
+                                            <li class="gls-active"><a href="#">Active</a></li>
+                                            <li class="gls-parent">
+                                                <a href="#">Parent</a>
+                                                <ul class="gls-nav-sub">
+                                                    <li><a href="#">Sub item</a></li>
+                                                    <li><a href="#">Sub item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gls-nav-header">Header</li>
+                                            <li>
+                                                <a href="#"
+                                                    ><span
+                                                        class="gls-margin-small-right"
+                                                        gls-icon="icon: table"
+                                                    ></span>
+                                                    Item</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    ><span
+                                                        class="gls-margin-small-right"
+                                                        gls-icon="icon: thumbnails"
+                                                    ></span>
+                                                    Item</a
+                                                >
+                                            </li>
+                                            <li class="gls-nav-divider"></li>
+                                            <li>
+                                                <a href="#"
+                                                    ><span
+                                                        class="gls-margin-small-right"
+                                                        gls-icon="icon: trash"
+                                                    ></span>
+                                                    Item</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="gls-section gls-light">
+                <div class="gls-container">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum.
+                    </p>
+
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum.
+                    </p>
+
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum.
+                    </p>
+
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

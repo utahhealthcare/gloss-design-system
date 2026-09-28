@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Width - Gloss tests</title>
+        <script src="js/test.js"></script>
+        <style>
+            .gls-panel {
+                padding: 10px;
+                text-align: center;
+            }
+
+            :nth-child(10n-9) > .gls-panel {
+                background: rgba(0, 0, 0, 0.1);
+            }
+            :nth-child(10n-8) > .gls-panel {
+                background: rgba(0, 0, 0, 0.15);
+            }
+            :nth-child(10n-7) > .gls-panel {
+                background: rgba(0, 0, 0, 0.2);
+            }
+            :nth-child(10n-6) > .gls-panel {
+                background: rgba(0, 0, 0, 0.25);
+            }
+            :nth-child(10n-5) > .gls-panel {
+                background: rgba(0, 0, 0, 0.3);
+            }
+            :nth-child(10n-4) > .gls-panel {
+                background: rgba(0, 0, 0, 0.35);
+            }
+            :nth-child(10n-3) > .gls-panel {
+                background: rgba(0, 0, 0, 0.4);
+            }
+            :nth-child(10n-2) > .gls-panel {
+                background: rgba(0, 0, 0, 0.45);
+            }
+            :nth-child(10n-1) > .gls-panel {
+                background: rgba(0, 0, 0, 0.5);
+            }
+            :nth-child(10n) > .gls-panel {
+                background: rgba(0, 0, 0, 0.55);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Width</h1>
+
+            <h2>Child Widths</h2>
+
+            <div
+                class="gls-grid-match gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m gls-child-width-1-5@l gls-child-width-1-6@xl"
+                gls-grid
+            >
+                <div>
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div>
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div>
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div>
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div>
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div>
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+            </div>
+
+            <h2>Single Widths</h2>
+
+            <div class="gls-grid-match" gls-grid>
+                <div
+                    class="gls-width-1-2 gls-width-1-3@s gls-width-1-4@m gls-width-1-5@l gls-width-1-6@xl"
+                >
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div
+                    class="gls-width-1-2 gls-width-1-3@s gls-width-1-4@m gls-width-1-5@l gls-width-1-6@xl"
+                >
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div
+                    class="gls-width-1-2 gls-width-1-3@s gls-width-1-4@m gls-width-1-5@l gls-width-1-6@xl"
+                >
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div
+                    class="gls-width-1-2 gls-width-1-3@s gls-width-1-4@m gls-width-1-5@l gls-width-1-6@xl"
+                >
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div
+                    class="gls-width-1-2 gls-width-1-3@s gls-width-1-4@m gls-width-1-5@l gls-width-1-6@xl"
+                >
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div
+                    class="gls-width-1-2 gls-width-1-3@s gls-width-1-4@m gls-width-1-5@l gls-width-1-6@xl"
+                >
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+            </div>
+
+            <h2>Mixed</h2>
+
+            <div
+                class="gls-grid-match gls-child-width-1-2 gls-child-width-1-3@s gls-child-width-1-4@m gls-child-width-1-5@l gls-child-width-1-6@xl"
+                gls-grid
+            >
+                <div class="gls-width-expand"><div class="gls-panel">Expand</div></div>
+                <div class="gls-width-1-4@m"><div class="gls-panel">1-4-M</div></div>
+                <div>
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div>
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+                <div>
+                    <div class="gls-panel">1-2<br />1-3-S<br />1-4-M<br />1-5-L<br />1-6-XL</div>
+                </div>
+            </div>
+
+            <h2>Expand</h2>
+
+            <div class="gls-grid-match gls-child-width-expand" gls-grid>
+                <div><div class="gls-panel">Expand with some more text</div></div>
+                <div><div class="gls-panel gls-width-large">Panel Width Large</div></div>
+                <div><div class="gls-panel">Expand</div></div>
+                <div><div class="gls-panel">Expand</div></div>
+                <div><div class="gls-panel">Expandwithnonebreakingspace</div></div>
+                <div>
+                    <div class="gls-panel">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="gls-grid-collapse gls-grid-match gls-child-width-expand gls-margin"
+                gls-grid
+            >
+                <div class="gls-width-1-1"><div class="gls-panel">1-1</div></div>
+                <div><div class="gls-panel">Expand</div></div>
+            </div>
+
+            <h2>Auto</h2>
+
+            <div class="gls-grid-match gls-child-width-auto" gls-grid>
+                <div><div class="gls-panel">Auto with some more text</div></div>
+                <div><div class="gls-panel">Auto</div></div>
+                <div><div class="gls-panel">Auto</div></div>
+                <div><div class="gls-panel">Auto</div></div>
+                <div><div class="gls-panel">Auto</div></div>
+                <div><div class="gls-panel">Auto</div></div>
+            </div>
+
+            <div class="gls-grid-match gls-child-width-auto gls-flex-between" gls-grid>
+                <div>
+                    <div class="gls-panel">
+                        Auto with some more text and space between the two items
+                    </div>
+                </div>
+                <div><div class="gls-panel">Auto with some more text</div></div>
+            </div>
+
+            <h2>Pixel</h2>
+
+            <ul class="gls-grid-small gls-grid-match gls-child-width-expand" gls-grid>
+                <li class="gls-width-small"><div class="gls-panel">Small</div></li>
+                <li><div class="gls-panel">Expand with some more text</div></li>
+            </ul>
+
+            <ul class="gls-grid-small gls-grid-match gls-child-width-expand" gls-grid>
+                <li class="gls-width-medium@s"><div class="gls-panel">Medium</div></li>
+                <li><div class="gls-panel">Expand with some more text</div></li>
+            </ul>
+
+            <ul class="gls-grid-small gls-grid-match gls-child-width-expand" gls-grid>
+                <li class="gls-width-large@s"><div class="gls-panel">Large</div></li>
+                <li><div class="gls-panel">Expand with some more text</div></li>
+            </ul>
+
+            <ul class="gls-grid-small gls-grid-match gls-child-width-expand" gls-grid>
+                <li class="gls-width-xlarge@m"><div class="gls-panel">X-Large</div></li>
+                <li><div class="gls-panel">Expand with some more text</div></li>
+            </ul>
+
+            <ul class="gls-grid-small gls-grid-match gls-child-width-expand" gls-grid>
+                <li class="gls-width-2xlarge@l"><div class="gls-panel">2X-Large</div></li>
+                <li><div class="gls-panel">Expand with some more text</div></li>
+            </ul>
+        </div>
+    </body>
+</html>

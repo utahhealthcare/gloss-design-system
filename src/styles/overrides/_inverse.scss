@@ -1,0 +1,68 @@
+// ========================================================================
+// Overrides: Inverse
+// ========================================================================
+
+:--inverse {
+    --base-body-color: #{$inverse-global-color};
+    --base-link-color: #{$inverse-global-emphasis-color};
+    --base-link-hover-color: #{$inverse-global-emphasis-color};
+    --base-code-color: #{$inverse-global-color};
+    --base-em-color: #{$inverse-global-emphasis-color};
+    --base-heading-color: #{$inverse-global-emphasis-color};
+    --base-list-marker-color: #{$inverse-global-color};
+    --base-hr-border: #{$inverse-global-border};
+    --base-blockquote-color: #{$inverse-global-emphasis-color};
+    --base-blockquote-footer-color: #{$inverse-global-color};
+    --base-pre-color: #{$inverse-global-color};
+    --base-pre-border: #{$inverse-global-border};
+
+    // Primary Button Inversion (WCAG Contrast on dark backgrounds)
+    .uk-button-primary {
+        background-color: var(--button-primary-background, $inverse-button-primary-background);
+        color: var(--button-primary-color, $inverse-button-primary-color);
+        border: var(--button-primary-border, $inverse-button-primary-border);
+
+        &:hover,
+        &:focus {
+            background-color: var(
+                --button-primary-hover-background,
+                $inverse-button-primary-hover-background
+            );
+            color: var(--button-primary-hover-color, $inverse-button-primary-hover-color);
+            border: var(--button-primary-hover-border, $inverse-button-primary-hover-border);
+        }
+
+        &:active,
+        &.uk-active {
+            background-color: var(
+                --button-primary-active-background,
+                $inverse-button-primary-active-background
+            );
+            color: var(--button-primary-active-color, $inverse-button-primary-active-color);
+            border: var(--button-primary-active-border, $inverse-button-primary-active-border);
+        }
+    }
+}
+
+// Custom Tertiary Inverse Button Overrides (WCAG contrast on custom dark tertiary containers)
+:is(.uk-section-tertiary, .uk-tile-tertiary, .uk-card-tertiary) {
+    .uk-button-default {
+        background-color: var(--color-trans-white-1);
+        color: #ffffff;
+        border-color: #ffffff;
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-trans-white-2);
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        &:active,
+        &.uk-active {
+            background-color: var(--color-trans-white-3);
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+    }
+}

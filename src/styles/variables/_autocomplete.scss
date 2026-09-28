@@ -1,0 +1,14 @@
+// ========================================================================
+// Component Variables: Autocomplete
+// ========================================================================
+
+$autocomplete-background: $global-background !default;
+$autocomplete-color: $global-color !default;
+$autocomplete-border-width: $global-border-width !default;
+$autocomplete-border: $global-border !default;
+$autocomplete-border-radius: $global-border-radius !default;
+$autocomplete-badge-background: $global-primary-background !default;
+$autocomplete-badge-color: $global-inverse-color !default;
+$autocomplete-option-hover-background: var(--color-trans-black-0) !default;
+$autocomplete-option-highlight-background: var(--color-trans-black-1) !default;
+$autocomplete-option-selected-background: var(--color-trans-black-0) !default;

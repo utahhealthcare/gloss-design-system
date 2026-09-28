@@ -1,0 +1,28 @@
+// ========================================================================
+// Component Variables: Subnav
+// ========================================================================
+
+$subnav-margin-horizontal: 20px !default;
+$subnav-item-font-size: $global-small-font-size !default;
+$subnav-item-text-transform: uppercase !default;
+$subnav-item-color: $global-muted-color !default;
+$subnav-item-hover-color: $global-color !default;
+$subnav-item-hover-text-decoration: none !default;
+$subnav-item-active-color: $global-emphasis-color !default;
+$subnav-item-text-decoration: none !default;
+$subnav-divider-margin-horizontal: $subnav-margin-horizontal !default;
+$subnav-divider-border-height: 1.5em !default;
+$subnav-divider-border-width: $global-border-width !default;
+$subnav-divider-border: $global-border !default;
+$subnav-pill-item-padding-vertical: 5px !default;
+$subnav-pill-item-padding-horizontal: 10px !default;
+$subnav-pill-item-background: transparent !default;
+$subnav-pill-item-color: $subnav-item-color !default;
+$subnav-pill-item-hover-background: $global-muted-background !default;
+$subnav-pill-item-hover-color: $global-color !default;
+$subnav-pill-item-onclick-background: $subnav-pill-item-hover-background !default;
+$subnav-pill-item-onclick-color: $subnav-pill-item-hover-color !default;
+$subnav-pill-item-active-background: $global-primary-background !default;
+$subnav-pill-item-active-color: $global-inverse-color !default;
+$subnav-pill-item-active-border-radius: $global-medium-border-radius !default;
+$subnav-item-disabled-color: $global-muted-color !default;

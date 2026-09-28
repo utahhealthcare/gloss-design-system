@@ -1,0 +1,39 @@
+// ========================================================================
+// Component: Icon / SVG Bespoke Modifiers
+// ========================================================================
+
+// Local Variable Overrides
+$icon-button-size-local: 48px;
+$icon-link-active-color-local: var(--color-gray-8);
+
+// Icon Button Core Variable Injection via Hook
+@mixin hook-icon-button() {
+    width: $icon-button-size-local;
+    height: $icon-button-size-local;
+    transition: 0.1s ease-in-out;
+    transition-property: color, background-color;
+}
+
+// Icon Link Overrides
+@mixin hook-icon-link-active() {
+    color: $icon-link-active-color-local;
+}
+
+// ========================================================================
+// SVG / Icon Color Preservation Hacks (UofU Specific)
+// ========================================================================
+
+// Legacy UIkit 2 logic used to forcefully rewrite SVG colors inside elements
+// unless .gls-preserve was applied. UIkit 3 does this natively in components/_icon.scss,
+// but Utah explicitly targeted [fill='none'] and [stroke='none'] to force them back
+// to 'none' even if they lacked .gls-preserve.
+
+.gls-icon:not(.gls-preserve)[fill='none'],
+.gls-svg:not(.gls-preserve)[fill='none'] {
+    fill: none;
+}
+
+.gls-icon:not(.gls-preserve)[stroke='none'],
+.gls-svg:not(.gls-preserve)[stroke='none'] {
+    stroke: none;
+}

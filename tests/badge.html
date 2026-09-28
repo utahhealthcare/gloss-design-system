@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Badge - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Badge</h1>
+
+            <p>
+                <a class="gls-badge" href="#">1</a>
+                <span class="gls-badge">2</span>
+                <span class="gls-badge">10</span>
+                <span class="gls-badge">100</span>
+                <span class="gls-badge"><span gls-icon="icon: trash"></span></span>
+                <span class="gls-badge">text</span>
+            </p>
+
+            <div class="gls-child-width-expand@m" gls-grid>
+                <div>
+                    <h2>Navbar</h2>
+
+                    <nav class="gls-navbar-container gls-margin" gls-navbar>
+                        <div class="gls-navbar-left">
+                            <ul class="gls-navbar-nav">
+                                <li class="gls-active">
+                                    <a href="#"
+                                        >Active
+                                        <span class="gls-badge gls-margin-small-left">2</span></a
+                                    >
+                                </li>
+                                <li><a href="#">Item</a></li>
+                                <li>
+                                    <a href="#"
+                                        >Item
+                                        <span class="gls-badge gls-margin-small-left">2</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div>
+                    <h2>Nav</h2>
+
+                    <ul class="gls-nav gls-nav-default">
+                        <li class="gls-active">
+                            <a href="#">Active <span class="gls-badge gls-text-top">2</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Item <span class="gls-badge gls-text-top">2</span></a>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Subnav</h2>
+
+                    <ul class="gls-subnav" gls-margin>
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li>
+                            <a href="#">Item <span class="gls-badge gls-text-top">2</span></a>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <ul class="gls-subnav" gls-margin>
+                        <li class="gls-active">
+                            <a href="#">Active <span class="gls-badge gls-text-top">2</span></a>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Tab</h2>
+
+                    <ul gls-tab>
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li>
+                            <a href="#">Item <span class="gls-badge gls-text-top">2</span></a>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <ul gls-tab>
+                        <li class="gls-active">
+                            <a href="#">Active <span class="gls-badge gls-text-top">2</span></a>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

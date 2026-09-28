@@ -2,27 +2,37 @@
     "name": "gloss-design-system",
     "version": "3.0.0-alpha.0",
     "private": true,
+    "description": "University of Utah Health design system for clinical and academic digital experiences",
+    "main": "dist/js/gloss.js",
+    "style": "dist/css/gloss.css",
     "engines": {
         "node": ">=24.0.0"
     },
     "scripts": {
         "build:tokens": "node scripts/build-tokens.mjs",
-        "build:css": "sass --load-path=node_modules --quiet-deps src/styles/gloss.scss dist/css/gloss.css",
+        "check:tokens": "node scripts/build-tokens.mjs --check",
+        "prebuild:css": "npm run check:tokens",
+        "build:assets": "node scripts/copy-assets.js",
+        "build:css": "sass src/styles/gloss.scss dist/css/gloss.css --load-path=node_modules --style=expanded --source-map --quiet-deps --silence-deprecation=import && postcss dist/css/gloss.css -o dist/css/gloss.css --map",
+        "build:css-min": "sass src/styles/gloss.scss dist/css/gloss.min.css --load-path=node_modules --style=compressed --no-source-map --quiet-deps --silence-deprecation=import && postcss dist/css/gloss.min.css -o dist/css/gloss.min.css",
+        "build:css-rtl": "rtlcss dist/css/gloss.css dist/css/gloss-rtl.css && rtlcss dist/css/gloss.min.css dist/css/gloss-rtl.min.css",
         "build:js": "node scripts/build-js.mjs",
+        "build:js-min": "esbuild dist/js/gloss.js --minify --outfile=dist/js/gloss.min.js && esbuild dist/js/gloss-icons.js --minify --outfile=dist/js/gloss-icons.min.js",
         "build:docs-assets": "node scripts/build-docs-assets.mjs",
         "build:docs": "npm run sync:uikit-docs && npm run build:css && npm run build:js && npm run build:docs-assets",
-        "prebuild:css": "npm run check:tokens",
-        "check:tokens": "node scripts/build-tokens.mjs --check",
+        "build": "npm run build:tokens && npm run build:assets && npm run build:css && npm run build:css-min && npm run build:css-rtl && npm run build:js && npm run build:js-min",
+        "watch": "node scripts/watch.js",
+        "serve": "browser-sync start --server --startPath '/tests/index.html' --files 'dist/*'",
+        "lint": "npm run lint:js && npm run lint:css",
+        "lint:js": "eslint . --no-error-on-unmatched-pattern",
+        "lint:css": "stylelint \"src/**/*.{css,scss}\" --allow-empty-input",
         "sync:uikit-docs": "node scripts/sync-uikit-docs.mjs",
         "check:uikit-docs": "node scripts/sync-uikit-docs.mjs --check",
         "format": "prettier --check .",
         "format:write": "prettier --write .",
-        "lint": "npm run lint:js && npm run lint:css",
-        "lint:js": "eslint . --no-error-on-unmatched-pattern",
-        "lint:css": "stylelint \"src/**/*.{css,scss}\" --allow-empty-input",
+        "test": "browser-sync start --server --startPath '/tests/index.html' --files 'dist/*'",
         "test:tokens": "node --test tests/tokens/build-tokens.test.mjs"
     },
-    "description": "University of Utah Health design system for clinical and academic digital experiences",
     "repository": {
         "type": "git",
         "url": "https://github.com/utahhealthcare/gloss-design-system.git"
@@ -38,19 +48,28 @@
     ],
     "author": "University of Utah Health",
     "license": "BSD-3-Clause",
+    "dependencies": {
+        "uikit": "^3.25.23"
+    },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
+        "browser-sync": "^3.0.4",
+        "esbuild": "^0.28.2",
         "eslint": "^10.11.0",
         "eslint-config-prettier": "^10.1.8",
         "globals": "^17.12.0",
+        "postcss": "^8.5.28",
+        "postcss-cli": "^11.0.1",
+        "postcss-import": "^17.0.0",
+        "postcss-inline-svg": "^6.0.0",
+        "postcss-preset-env": "^11.5.1",
+        "postcss-replace": "^2.0.1",
         "prettier": "^3.9.8",
         "prettier-plugin-organize-imports": "^4.3.0",
+        "rtlcss": "^4.3.0",
         "sass": "^1.104.1",
         "stylelint": "^16.26.1",
         "stylelint-config-standard": "^39.0.1",
         "stylelint-config-standard-scss": "^16.0.0"
-    },
-    "dependencies": {
-        "uikit": "^3.25.23"
     }
 }

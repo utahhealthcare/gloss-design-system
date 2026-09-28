@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Filter - Gloss tests</title>
+        <script src="js/test.js"></script>
+        <style>
+            [color='red'] > * {
+                background: #f0506e;
+            }
+            [color='green'] > * {
+                background: #32d296;
+            }
+            [color='blue'] > * {
+                background: #1e87f0;
+            }
+
+            [size='small'] > * {
+                height: 140px;
+            }
+            [size='medium'] > * {
+                height: 170px;
+            }
+            [size='large'] > * {
+                height: 190px;
+            }
+        </style>
+
+        <script>
+            const { $$, attr, on, ready } = Gloss.util;
+
+            ready(() => {
+                on(document.body, 'beforeFilter afterFilter', (e, filter, state) =>
+                    console.log(e.type, filter, state),
+                );
+                on('#js-animation-switcher', 'change', (e) =>
+                    attr($$('.js-filter-animation'), 'animation', e.target.value),
+                );
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Filter</h1>
+
+            <div class="gls-margin">
+                <select id="js-animation-switcher" class="gls-select gls-form-width-small">
+                    <option value="slide">Slide</option>
+                    <option value="fade">Fade</option>
+                    <option value="delayed-fade">Delayed Fade</option>
+                    <option value="false">None</option>
+                </select>
+            </div>
+
+            <div class="js-filter-animation" gls-filter="target: .js-filter; duration: 2000">
+                <div class="gls-grid-small gls-grid-divider gls-child-width-auto" gls-grid>
+                    <h3>Default</h3>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control><a href="#">All</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control="[color='red']"><a href="#">Red</a></li>
+                            <li gls-filter-control="[color='green']"><a href="#">Green</a></li>
+                            <li gls-filter-control="[color='blue']"><a href="#">Blue</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control="[size='small']"><a href="#">Small</a></li>
+                            <li gls-filter-control="[size='medium']"><a href="#">Medium</a></li>
+                            <li gls-filter-control="[size='large']"><a href="#">Large</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gls-grid-small gls-grid-divider gls-child-width-auto" gls-grid>
+                    <h3>Group</h3>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control><a href="#">All</a></li>
+                            <li gls-filter-control="group: color"><a href="#">All (Color)</a></li>
+                            <li gls-filter-control="group: size"><a href="#">All (Size)</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control="filter: [color='red']; group: color">
+                                <a href="#">Red</a>
+                            </li>
+                            <li gls-filter-control="filter: [color='green']; group: color">
+                                <a href="#">Green</a>
+                            </li>
+                            <li gls-filter-control="filter: [color='blue']; group: color">
+                                <a href="#">Blue</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control="filter: [size='small']; group: size">
+                                <a href="#">Small</a>
+                            </li>
+                            <li gls-filter-control="filter: [size='medium']; group: size">
+                                <a href="#">Medium</a>
+                            </li>
+                            <li gls-filter-control="filter: [size='large']; group: size">
+                                <a href="#">Large</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gls-grid-small gls-grid-divider gls-child-width-auto" gls-grid>
+                    <h3>Alphabetic Order</h3>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li class="gls-active" gls-filter-control="sort: date">
+                                <a href="#">Date Asc</a>
+                            </li>
+                            <li gls-filter-control="sort: date; order: desc">
+                                <a href="#">Date Desc</a>
+                            </li>
+                            <li gls-filter-control="sort: color"><a href="#">Color Asc</a></li>
+                            <li gls-filter-control="sort: color; order: desc">
+                                <a href="#">Color Desc</a>
+                            </li>
+                            <li gls-filter-control="sort: size"><a href="#">Size Asc</a></li>
+                            <li gls-filter-control="sort: size; order: desc">
+                                <a href="#">Size Desc</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul
+                    class="js-filter gls-child-width-1-2 gls-child-width-1-4@m gls-light"
+                    gls-grid="masonry: true"
+                >
+                    <li color="blue" size="large" date="2016-06-01">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            1
+                        </div>
+                    </li>
+                    <li color="red" size="small" date="2016-12-13">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            2
+                        </div>
+                    </li>
+                    <li color="blue" size="medium" date="2017-05-20">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            3
+                        </div>
+                    </li>
+                    <li color="blue" size="small" date="2017-09-17">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            4
+                        </div>
+                    </li>
+                    <li color="green" size="medium" date="2017-11-03">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            5
+                        </div>
+                    </li>
+                    <li color="green" size="small" date="2017-12-25">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            6
+                        </div>
+                    </li>
+                    <li color="red" size="medium" date="2018-01-30">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            7
+                        </div>
+                    </li>
+                    <li color="green" size="large" date="2018-02-01">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            8
+                        </div>
+                    </li>
+                    <li color="red" size="large" date="2018-03-11">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            9
+                        </div>
+                    </li>
+                    <li color="blue" size="large" date="2018-06-13">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            10
+                        </div>
+                    </li>
+                    <li color="red" size="medium" date="2018-10-27">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            11
+                        </div>
+                    </li>
+                    <li color="green" size="small" date="2018-12-02">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            12
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>With Parallax</h2>
+
+            <div class="js-filter-animation" gls-filter="target: .js-filter">
+                <div class="gls-grid-small gls-grid-divider gls-child-width-auto" gls-grid>
+                    <h3>Default</h3>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control><a href="#">All</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control="[color='red']"><a href="#">Red</a></li>
+                            <li gls-filter-control="[color='green']"><a href="#">Green</a></li>
+                            <li gls-filter-control="[color='blue']"><a href="#">Blue</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control="[size='small']"><a href="#">Small</a></li>
+                            <li gls-filter-control="[size='medium']"><a href="#">Medium</a></li>
+                            <li gls-filter-control="[size='large']"><a href="#">Large</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gls-grid-small gls-grid-divider gls-child-width-auto" gls-grid>
+                    <h3>Group</h3>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control><a href="#">All</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control="filter: [color='red']; group: color">
+                                <a href="#">Red</a>
+                            </li>
+                            <li gls-filter-control="filter: [color='green']; group: color">
+                                <a href="#">Green</a>
+                            </li>
+                            <li gls-filter-control="filter: [color='blue']; group: color">
+                                <a href="#">Blue</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li gls-filter-control="filter: [size='small']; group: size">
+                                <a href="#">Small</a>
+                            </li>
+                            <li gls-filter-control="filter: [size='medium']; group: size">
+                                <a href="#">Medium</a>
+                            </li>
+                            <li gls-filter-control="filter: [size='large']; group: size">
+                                <a href="#">Large</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gls-grid-small gls-grid-divider gls-child-width-auto" gls-grid>
+                    <h3>Alphabetic Order</h3>
+                    <div>
+                        <ul class="gls-subnav gls-subnav-pill" gls-margin>
+                            <li class="gls-active" gls-filter-control="sort: date">
+                                <a href="#">Date Asc</a>
+                            </li>
+                            <li gls-filter-control="sort: date; order: desc">
+                                <a href="#">Date Desc</a>
+                            </li>
+                            <li gls-filter-control="sort: color"><a href="#">Color Asc</a></li>
+                            <li gls-filter-control="sort: color; order: desc">
+                                <a href="#">Color Desc</a>
+                            </li>
+                            <li gls-filter-control="sort: size"><a href="#">Size Asc</a></li>
+                            <li gls-filter-control="sort: size; order: desc">
+                                <a href="#">Size Desc</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul
+                    class="js-filter gls-child-width-1-2 gls-child-width-1-4@m gls-light"
+                    gls-grid="masonry: true; parallax: 200"
+                >
+                    <li color="blue" size="large" date="2016-06-01">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            1
+                        </div>
+                    </li>
+                    <li color="red" size="small" date="2016-12-13">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            2
+                        </div>
+                    </li>
+                    <li color="blue" size="medium" date="2017-05-20">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            3
+                        </div>
+                    </li>
+                    <li color="blue" size="small" date="2017-09-17">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            4
+                        </div>
+                    </li>
+                    <li color="green" size="medium" date="2017-11-03">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            5
+                        </div>
+                    </li>
+                    <li color="green" size="small" date="2017-12-25">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            6
+                        </div>
+                    </li>
+                    <li color="red" size="medium" date="2018-01-30">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            7
+                        </div>
+                    </li>
+                    <li color="green" size="large" date="2018-02-01">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            8
+                        </div>
+                    </li>
+                    <li color="red" size="large" date="2018-03-11">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            9
+                        </div>
+                    </li>
+                    <li color="blue" size="large" date="2018-06-13">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            10
+                        </div>
+                    </li>
+                    <li color="red" size="medium" date="2018-10-27">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            11
+                        </div>
+                    </li>
+                    <li color="green" size="small" date="2018-12-02">
+                        <div class="gls-panel gls-flex gls-flex-center gls-flex-middle gls-h2">
+                            12
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>Javascript Options</h2>
+
+            <div class="gls-overflow-auto">
+                <table class="gls-table gls-table-striped">
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Value</th>
+                            <th>Default</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>target</code></td>
+                            <td>String</td>
+                            <td>''</td>
+                            <td>The targeted list on which to apply the filter to.</td>
+                        </tr>
+                        <tr>
+                            <td><code>selActive</code></td>
+                            <td>String|Boolean</td>
+                            <td>false</td>
+                            <td>A selector for the initially active filter controls.</td>
+                        </tr>
+                        <tr>
+                            <td><code>animation</code></td>
+                            <td>String, Boolean</td>
+                            <td>slide</td>
+                            <td>Animation mode (slide, fade, delayed-fade, false).</td>
+                        </tr>
+                        <tr>
+                            <td><code>duration</code></td>
+                            <td>String|Boolean</td>
+                            <td>250</td>
+                            <td>Animation duration in milliseconds.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

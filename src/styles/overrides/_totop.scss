@@ -1,0 +1,9 @@
+// ========================================================================
+// Overrides: Totop
+// ========================================================================
+
+@mixin hook-totop() {
+    background: $totop-background;
+    border-radius: $totop-border-radius;
+    box-shadow: $totop-box-shadow;
+}

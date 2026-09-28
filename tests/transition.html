@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Transition - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Transition</h1>
+
+            <div class="gls-grid-small gls-child-width-1-3@s gls-child-width-1-6@m" gls-grid>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-fade gls-position-bottom gls-overlay gls-overlay-default"
+                        >
+                            <a href="#">Overlay</a>
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Fade</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-fade gls-position-cover gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Fade Cover</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-fade gls-position-cover gls-position-small gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Fade Cover Small</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle gls-light" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-fade gls-overlay-default gls-position-cover"
+                        ></div>
+                        <div class="gls-position-center">Headline</div>
+                    </div>
+                    <p class="gls-margin-small-top">Without Text</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle gls-light" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <span
+                            class="gls-position-center gls-transition-fade"
+                            gls-icon="icon: plus; ratio: 2"
+                        ></span>
+                    </div>
+                    <p class="gls-margin-small-top">Icon</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle gls-light" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <img
+                            class="gls-transition-fade gls-position-cover"
+                            src="images/dark.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <p class="gls-margin-small-top">Fade 2 Images</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle gls-light" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div class="gls-position-center gls-transition-scale-up">Headline</div>
+                    </div>
+                    <p class="gls-margin-small-top">Scale Up</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-scale-down gls-overlay gls-overlay-default gls-position-cover gls-position-small gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Scale Down Cover</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img
+                            class="gls-transition-scale-up gls-transition-opaque"
+                            src="images/photo.jpg"
+                            width="1800"
+                            height="1200"
+                            alt=""
+                        />
+                    </div>
+                    <p class="gls-margin-small-top">Scale Up Image</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img
+                            class="gls-transition-scale-down gls-transition-opaque"
+                            src="images/photo.jpg"
+                            width="1800"
+                            height="1200"
+                            alt=""
+                        />
+                    </div>
+                    <p class="gls-margin-small-top">Scale Down Image</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <img
+                            class="gls-transition-scale-up gls-position-cover"
+                            src="images/dark.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <p class="gls-margin-small-top">2 Images</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle gls-light" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <img
+                            class="gls-transition-scale-up gls-position-cover"
+                            src="images/dark.jpg"
+                            alt=""
+                        />
+                        <span
+                            class="gls-position-center gls-transition-fade"
+                            gls-icon="icon: plus; ratio: 2"
+                        ></span>
+                    </div>
+                    <p class="gls-margin-small-top">2 Images + Icon</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-top gls-position-top gls-overlay gls-overlay-default"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Top</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-bottom gls-position-bottom gls-overlay gls-overlay-default"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Bottom</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-left gls-position-left gls-overlay gls-overlay-default"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Left</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-right gls-position-right gls-overlay gls-overlay-default"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Right</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-top gls-position-cover gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Top Cover</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-bottom gls-position-cover gls-position-small gls-overlay gls-overlay-default gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Bottom Cover</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle gls-light" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div class="gls-position-center">
+                            <div class="gls-transition-slide-top-small">Headline</div>
+                            <div class="gls-transition-slide-bottom-small">Subheadline</div>
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Small Top + Bottom</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle gls-light" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div class="gls-position-center">
+                            <div class="gls-transition-slide-left-small">Headline</div>
+                            <div class="gls-transition-slide-right-small">Subheadline</div>
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Small Left + Right</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-top-small gls-overlay gls-overlay-default gls-position-cover gls-position-small gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Top Small</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-bottom-small gls-overlay gls-overlay-default gls-position-cover gls-position-small gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Bottom Small</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-left-small gls-overlay gls-overlay-default gls-position-cover gls-position-small gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Left Small</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-right-small gls-overlay gls-overlay-default gls-position-cover gls-position-small gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Right Small</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle gls-light" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div class="gls-position-center">
+                            <div class="gls-transition-slide-top-medium">Headline</div>
+                            <div class="gls-transition-slide-bottom-medium">Subheadline</div>
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Medium Top + Bottom</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle gls-light" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div class="gls-position-center">
+                            <div class="gls-transition-slide-left-medium">Headline</div>
+                            <div class="gls-transition-slide-right-medium">Subheadline</div>
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Medium Left + Right</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-top-medium gls-overlay gls-overlay-default gls-position-cover gls-position-small gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Top Medium</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-bottom-medium gls-overlay gls-overlay-default gls-position-cover gls-position-small gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Bottom Medium</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-left-medium gls-overlay gls-overlay-default gls-position-cover gls-position-small gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Left Medium</p>
+                </div>
+                <div class="gls-text-center">
+                    <div class="gls-inline-clip gls-transition-toggle" tabindex="0">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                        <div
+                            class="gls-transition-slide-right-medium gls-overlay gls-overlay-default gls-position-cover gls-position-small gls-flex gls-flex-center gls-flex-middle"
+                        >
+                            Overlay
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Right Medium</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

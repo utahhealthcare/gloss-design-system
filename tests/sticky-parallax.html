@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sticky Parallax - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <!-- position relative and z-index are needed for sticky cover and reveal sections -->
+    <body style="padding-bottom: 100vh" class="gls-position-relative gls-position-z-index-zero">
+        <div
+            class="gls-section gls-section-primary gls-position-z-index-negative gls-flex gls-flex-center gls-flex-middle gls-text-center"
+            gls-sticky="overflow-flip: true; end: 100%"
+            gls-height-viewport
+        >
+            <div class="gls-container">
+                <h1
+                    class="gls-heading-2xlarge"
+                    gls-parallax="target: !.gls-section +* +*; end: 100%; y: -400; easing: 0;"
+                >
+                    Sticky Section
+                </h1>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default">
+            <div class="gls-container">
+                <div
+                    id="js-sticky-parallax-container"
+                    class="gls-position-relative gls-background-muted gls-text-center gls-height-viewport-3"
+                >
+                    <div
+                        class="gls-flex gls-flex-center gls-flex-middle gls-height-viewport"
+                        gls-sticky="end: #js-sticky-parallax-container"
+                    >
+                        <div>
+                            <img
+                                class="gls-position-relative gls-position-z-index"
+                                src="images/size-v.jpg"
+                                width="400"
+                                height="800"
+                                alt=""
+                                style="max-width: 50vw"
+                                gls-parallax="target: #js-sticky-parallax-container; y: 0,-250; easing: -1; start: 100vh; end: 100vh;"
+                            />
+
+                            <div style="margin-top: -200px">
+                                <h1 class="gls-heading-2xlarge">
+                                    <span
+                                        class="gls-display-inline-block"
+                                        gls-parallax="target: #js-sticky-parallax-container; x: 0,-15vw,-7vw,0; easing: -1; start: 60vh; end: 100vh;"
+                                        >Sticky</span
+                                    >
+                                    <br /><span
+                                        class="gls-display-inline-block"
+                                        gls-parallax="target: #js-sticky-parallax-container; x: 0,10vw,5vw,0; easing: -1; start: 60vh; end: 100vh;"
+                                        >Parallax</span
+                                    >
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default gls-text-center">
+            <div
+                class="gls-transform-origin-bottom-center gls-margin-bottom"
+                gls-parallax="scale: 1,.2; start: 100%; end: 40vh"
+            >
+                <img src="images/photo2.jpg" width="1800" height="1200" alt="" />
+            </div>
+
+            <div class="gls-container">
+                <h1 class="gls-heading-xlarge">Parallax Bottom</h1>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default gls-text-center">
+            <div
+                class="gls-cover-container gls-transform-origin-bottom-center gls-margin-bottom"
+                gls-parallax="scale: 1,.2; start: 100%; end: 40vh"
+                gls-height-viewport
+            >
+                <img src="images/photo3.jpg" width="1800" height="1200" alt="" gls-cover />
+            </div>
+
+            <div class="gls-container">
+                <h1 class="gls-heading-xlarge">Parallax Bottom Cover</h1>
+            </div>
+        </div>
+
+        <div
+            class="gls-section gls-section-default gls-text-center gls-position-relative gls-position-z-index"
+        >
+            <div
+                class="gls-cover-container gls-position-z-index-negative"
+                gls-sticky="end: true"
+                gls-height-viewport
+            >
+                <img src="images/photo.jpg" width="1800" height="1200" alt="" gls-cover />
+            </div>
+
+            <div class="gls-light" style="margin-top: -100vh; padding: 30vh 0">
+                <div
+                    gls-parallax="start: 100%; end: 100%; opacity: 0,1 10%,1 30%,0; y: 2vh, 0 10%, 0 30%, -10vh"
+                >
+                    <h1 class="gls-heading-xlarge gls-margin-xlarge">Sticky Background</h1>
+                </div>
+
+                <div
+                    gls-parallax="start: 100%; end: 100%; opacity: 0,1 10%,1 30%,0; y: 2vh, 0 10%, 0 30%, -10vh"
+                >
+                    <h1 class="gls-heading-xlarge gls-margin-xlarge">Sticky Background</h1>
+                </div>
+
+                <div
+                    gls-parallax="start: 100%; end: 100%; opacity: 0,1 10%,1 30%,0; y: 2vh, 0 10%, 0 30%, -10vh"
+                >
+                    <h1 class="gls-heading-xlarge gls-margin-xlarge">Sticky Background</h1>
+                </div>
+
+                <div
+                    gls-parallax="start: 100%; end: 100%; opacity: 0,1 10%,1 30%,0; y: 2vh, 0 10%, 0 30%, -10vh"
+                >
+                    <h1 class="gls-heading-xlarge gls-margin-xlarge">Sticky Background</h1>
+                </div>
+
+                <div
+                    gls-parallax="start: 100%; end: 100%; opacity: 0,1 10%,1 30%,0; y: 2vh, 0 10%, 0 30%, -10vh"
+                >
+                    <h1 class="gls-heading-xlarge gls-margin-xlarge">Sticky Background</h1>
+                </div>
+
+                <div
+                    gls-parallax="start: 100%; end: 100%; opacity: 0,1 10%,1 30%,0; y: 2vh, 0 10%, 0 30%, -10vh"
+                >
+                    <h1 class="gls-heading-xlarge gls-margin-xlarge-top gls-margin-remove-bottom">
+                        Sticky Background
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default">
+            <div
+                id="js-sticky-parallax-viewport"
+                class="gls-child-width-1-2 gls-child-width-1-3@s gls-text-center"
+                gls-grid
+            >
+                <div>
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo3.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo2.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo3.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo2.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <div
+                        class="gls-background-muted gls-text-center gls-height-viewport"
+                        gls-sticky="end: #js-sticky-parallax-viewport"
+                    >
+                        <div
+                            gls-parallax="target: #js-sticky-parallax-viewport; start: 100vh; end: 100vh; y: 10vh, 80vh; easing: 0"
+                        >
+                            <h1 class="gls-margin-remove">Sticky Parallax Viewport</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="gls-visible@s">
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo2.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo3.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo2.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo3.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                    <img
+                        class="gls-margin-large"
+                        src="images/photo2.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default">
+            <div id="js-sticky-parallax-images" style="min-height: 250vh" gls-grid>
+                <div class="gls-width-expand">
+                    <div
+                        class="gls-background-muted gls-height-viewport"
+                        gls-sticky="end: #js-sticky-parallax-images"
+                    >
+                        <div gls-parallax="target: #js-sticky-parallax-images; y: 55vh, 45vh;">
+                            <img
+                                class="gls-position-center-left"
+                                src="images/photo.jpg"
+                                width="1800"
+                                height="1200"
+                                alt=""
+                                gls-parallax="target: #js-sticky-parallax-images; start: 125vh; end: 100% + 100vh - 185vh; opacity: 1,1,0; easing: 0"
+                            />
+                            <img
+                                class="gls-position-center-left"
+                                src="images/photo2.jpg"
+                                width="1800"
+                                height="1200"
+                                alt=""
+                                gls-parallax="target: #js-sticky-parallax-images; start: 175vh; end: 100% + 100vh - 235vh; opacity: 0,1 16.666%,1 99%,0; easing: 0"
+                            />
+                            <img
+                                class="gls-position-center-left"
+                                src="images/photo3.jpg"
+                                width="1800"
+                                height="1200"
+                                alt=""
+                                gls-parallax="target: #js-sticky-parallax-images; start: 225vh; end: 100% + 100vh - 275vh; opacity: 0,1 20%,1; easing: 0"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="gls-width-auto gls-text-small">
+                    <div
+                        class="gls-flex gls-flex-center gls-flex-bottom gls-background-muted"
+                        style="height: 75vh"
+                    >
+                        75vh
+                    </div>
+                    <div
+                        class="gls-flex gls-flex-center gls-flex-bottom gls-background-primary gls-light"
+                        style="height: 50vh"
+                    >
+                        125vh
+                    </div>
+                    <div
+                        class="gls-flex gls-flex-center gls-flex-bottom gls-background-secondary gls-light"
+                        style="height: 50vh"
+                    >
+                        175vh
+                    </div>
+                    <div
+                        class="gls-flex gls-flex-center gls-flex-bottom gls-background-muted"
+                        style="height: 50vh"
+                    >
+                        225vh
+                    </div>
+                    <div
+                        class="gls-flex gls-flex-center gls-flex-bottom gls-background-primary gls-light"
+                        style="height: 25vh"
+                    >
+                        250vh
+                    </div>
+                </div>
+                <div class="gls-width-expand">
+                    <div style="height: 75vh"></div>
+
+                    <div class="gls-flex gls-flex-middle" style="height: 50vh">
+                        <div>
+                            <h1>Sticky Parallax Images 1</h1>
+
+                            <p class="gls-visible@s">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gls-flex gls-flex-middle" style="height: 50vh">
+                        <div>
+                            <h1>Sticky Parallax Images 2</h1>
+
+                            <p class="gls-visible@s">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gls-flex gls-flex-middle" style="height: 50vh">
+                        <div>
+                            <h1>Sticky Parallax Images 3</h1>
+
+                            <p class="gls-visible@s">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-section gls-section-default">
+            <div id="js-sticky-parallax-images-all" style="min-height: 250vh" gls-grid>
+                <div class="gls-width-expand">
+                    <div
+                        class="gls-background-muted gls-height-viewport"
+                        gls-sticky="end: #js-sticky-parallax-images-all"
+                    >
+                        <div gls-parallax="target: #js-sticky-parallax-images-all; y: 55vh, 45vh;">
+                            <img
+                                class="gls-position-center-left"
+                                src="images/photo.jpg"
+                                width="1800"
+                                height="1200"
+                                alt=""
+                                gls-parallax="target: #js-sticky-parallax-images-all; start: 100vh; end: 100% + 100vh - 160vh; opacity: 1,1 99%,0; easing: 0"
+                            />
+                            <img
+                                class="gls-position-center-left"
+                                src="images/photo2.jpg"
+                                width="1800"
+                                height="1200"
+                                alt=""
+                                gls-parallax="target: #js-sticky-parallax-images-all; start: 150vh; end: 100% + 100vh - 210vh; opacity: 0,1 16.666%,1 99%,0; easing: 0"
+                            />
+                            <img
+                                class="gls-position-center-left"
+                                src="images/photo3.jpg"
+                                width="1800"
+                                height="1200"
+                                alt=""
+                                gls-parallax="target: #js-sticky-parallax-images-all; start: 200vh; end: 100% + 100vh - 250vh; opacity: 0,1 20%,1; easing: 0"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="gls-width-auto gls-text-small">
+                    <div
+                        class="gls-flex gls-flex-center gls-flex-bottom gls-background-muted"
+                        style="height: 100vh"
+                    >
+                        100vh
+                    </div>
+                    <div
+                        class="gls-flex gls-flex-center gls-flex-bottom gls-background-primary gls-light"
+                        style="height: 50vh"
+                    >
+                        150vh
+                    </div>
+                    <div
+                        class="gls-flex gls-flex-center gls-flex-bottom gls-background-secondary gls-light"
+                        style="height: 50vh"
+                    >
+                        200vh
+                    </div>
+                    <div
+                        class="gls-flex gls-flex-center gls-flex-bottom gls-background-muted"
+                        style="height: 50vh"
+                    >
+                        250vh
+                    </div>
+                </div>
+                <div class="gls-width-expand">
+                    <div
+                        class="gls-height-viewport"
+                        gls-sticky="end: #js-sticky-parallax-images-all"
+                    >
+                        <div gls-parallax="target: #js-sticky-parallax-images-all; y: 55vh, 45vh;">
+                            <div
+                                class="gls-position-center-left"
+                                gls-parallax="target: #js-sticky-parallax-images-all; start: 100vh; end: 100% + 100vh - 150vh; opacity: 0,1 20%,1 80%,0"
+                            >
+                                <h1>Sticky Parallax Images All 1</h1>
+
+                                <p class="gls-visible@s">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div
+                                class="gls-position-center-left"
+                                gls-parallax="target: #js-sticky-parallax-images-all; start: 150vh; end: 100% + 100vh - 200vh; opacity: 0,1 20%,1 80%,0"
+                            >
+                                <h1>Sticky Parallax Images All 2</h1>
+
+                                <p class="gls-visible@s">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div
+                                class="gls-position-center-left"
+                                gls-parallax="target: #js-sticky-parallax-images-all; start: 200vh; end: 100% + 100vh - 250vh; opacity: 0,1 20%,1"
+                            >
+                                <h1>Sticky Parallax Images All 3</h1>
+
+                                <p class="gls-visible@s">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="gls-section gls-section-muted gls-section-xlarge gls-flex gls-flex-center gls-flex-middle gls-text-center"
+        >
+            <div class="gls-container">
+                <h1 class="gls-heading-2xlarge">Reveal Following Section</h1>
+            </div>
+        </div>
+
+        <div
+            class="gls-section gls-section-primary gls-section-xlarge gls-flex gls-flex-center gls-flex-middle gls-text-center gls-position-z-index-negative"
+            gls-sticky="position: bottom; overflow-flip: true; start: -100%; end: 0"
+        >
+            <div class="gls-container">
+                <h1 class="gls-heading-2xlarge">Sticky Section</h1>
+            </div>
+        </div>
+    </body>
+</html>

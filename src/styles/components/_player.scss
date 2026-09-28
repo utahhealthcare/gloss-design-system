@@ -1,0 +1,150 @@
+/**
+ * Name:            Player
+ * Description:     Component to skin Video.js
+ *
+ * Component:       `video-js`
+ *
+ * ======================================================================== */
+
+/* ========================================================================
+   Component: Player
+ ========================================================================== */
+
+.vjs-theme-gloss {
+    font-family: $vjs-font-family;
+    font-weight: $vjs-font-weight;
+}
+
+.vjs-theme-gloss .vjs-control-bar {
+    background: $vjs-control-bar-background;
+    height: $vjs-control-bar-height;
+    margin: 0;
+    padding: $vjs-control-bar-padding;
+}
+
+.vjs-theme-gloss .vjs-big-play-button {
+    font-size: 5em;
+    line-height: 1.6em;
+    height: 1.6em;
+    width: 1.6em;
+    margin-top: -0.8em;
+    margin-left: -0.8em;
+    border: none;
+    background-color: rgba(43, 51, 63, 0.7);
+    border-radius: 50%;
+}
+
+.vjs-theme-gloss:hover .vjs-big-play-button {
+    background-color: $vjs-color-primary;
+}
+
+.vjs-theme-gloss .vjs-button > .vjs-icon-placeholder:before {
+    line-height: 1.55;
+}
+
+.vjs-theme-gloss .vjs-control:not(.vjs-disabled):not(.vjs-time-control):hover {
+    color: $vjs-color-secondary;
+    text-shadow: $vjs-color-secondary 1px 0 10px;
+}
+
+.vjs-theme-gloss .vjs-play-control {
+    font-size: 1.2em;
+}
+
+.vjs-theme-gloss .vjs-play-control .vjs-icon-placeholder:before {
+    background-color: $vjs-color-secondary;
+    height: 1.5em;
+    width: 1.5em;
+    margin-top: -0.15em;
+    border-radius: 1em;
+    color: $vjs-color-primary;
+}
+
+.vjs-theme-gloss .vjs-play-control:hover .vjs-icon-placeholder:before {
+    background-color: $vjs-color-primary;
+    color: $vjs-color-secondary;
+}
+
+.vjs-theme-gloss .vjs-volume-panel:hover .vjs-volume-control.vjs-volume-horizontal {
+    height: 100%;
+}
+
+.vjs-theme-gloss .vjs-current-time {
+    display: block;
+}
+
+.vjs-theme-gloss .vjs-duration {
+    display: block;
+}
+
+.vjs-theme-gloss .vjs-progress-control:hover .vjs-progress-holder {
+    font-size: 1em;
+}
+
+.vjs-theme-gloss .vjs-play-progress:before {
+    display: none;
+}
+
+.vjs-theme-gloss .vjs-progress-holder {
+    border-radius: 0.2em;
+    height: 0.5em;
+    margin: 0;
+}
+
+.vjs-theme-gloss .vjs-load-progress,
+.vjs-theme-gloss .vjs-load-progress div,
+.vjs-theme-gloss .vjs-play-progress {
+    border-radius: 0.2em;
+}
+
+.vjs-theme-gloss .vjs-time-control {
+    font-size: 1.2em;
+    line-height: 2.1;
+}
+
+.vjs-theme-gloss .vjs-remaining-time {
+    display: none;
+}
+
+.vjs-theme-gloss .vjs-playback-rate .vjs-playback-rate-value {
+    line-height: 1.55;
+}
+
+/* Order
+ ========================================================================== */
+
+.vjs-theme-gloss .vjs-big-play-button {
+    order: -1;
+}
+
+.vjs-theme-gloss .vjs-volume-panel {
+    order: 20;
+}
+
+.vjs-theme-gloss .vjs-subs-caps-button {
+    order: 30;
+}
+
+.vjs-theme-gloss .vjs-current-time {
+    order: 50;
+}
+
+.vjs-theme-gloss .vjs-progress-control {
+    order: 60;
+}
+
+.vjs-theme-gloss .vjs-duration {
+    order: 70;
+}
+
+.vjs-theme-gloss .vjs-playback-rate {
+    order: 80;
+}
+
+.vjs-theme-gloss .vjs-picture-in-picture-control {
+    order: 90;
+}
+
+.vjs-theme-gloss .vjs-fullscreen-control {
+    order: 100;
+}

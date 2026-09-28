@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Slideshow - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Slideshow</h1>
+
+            <h2>Animations</h2>
+
+            <div class="gls-margin">
+                <select
+                    id="js-animation-switcher"
+                    class="gls-select gls-form-width-small"
+                    aria-label="Animation switcher"
+                >
+                    <option value="slide">Slide</option>
+                    <option value="fade">Fade</option>
+                    <option value="scale">Scale</option>
+                    <option value="pull">Pull</option>
+                    <option value="push">Push</option>
+                </select>
+                <select
+                    id="js-finite-switcher"
+                    class="gls-select gls-form-width-small"
+                    aria-label="Finite switcher"
+                >
+                    <option value="0">Infinite</option>
+                    <option value="1">Finite</option>
+                </select>
+            </div>
+
+            <div class="gls-child-width-1-2@m" gls-grid>
+                <div>
+                    <div class="js-slideshow-animation" gls-slideshow="ratio: 3:2; autoplay: true">
+                        <div
+                            class="gls-position-relative gls-visible-toggle gls-light"
+                            tabindex="-1"
+                        >
+                            <div class="gls-slideshow-items">
+                                <div>
+                                    <img src="images/photo.jpg" alt="" gls-cover />
+                                    <div
+                                        class="gls-position-center gls-position-small gls-text-center"
+                                    >
+                                        <h2 gls-slideshow-parallax="x: 100,-100">Heading</h2>
+                                        <p gls-slideshow-parallax="x: 200,-200">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/dark.jpg" alt="" gls-cover />
+                                    <div
+                                        class="gls-position-center gls-position-small gls-text-center"
+                                    >
+                                        <h2 gls-slideshow-parallax="x: 100,-100">Heading</h2>
+                                        <p gls-slideshow-parallax="x: 200,-200">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/light.jpg" alt="" gls-cover />
+                                    <div
+                                        class="gls-position-center gls-position-small gls-text-center"
+                                    >
+                                        <h2 gls-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">
+                                            Heading
+                                        </h2>
+                                        <p gls-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/photo2.jpg" alt="" gls-cover />
+                                    <div
+                                        class="gls-position-center gls-position-small gls-text-center"
+                                    >
+                                        <h2 gls-slideshow-parallax="x: 200,0,0">Heading</h2>
+                                        <p gls-slideshow-parallax="x: 0,0,-200">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a
+                                class="gls-position-center-left gls-position-small gls-hidden-hover"
+                                href
+                                gls-slidenav-previous
+                                gls-slideshow-item="previous"
+                            ></a>
+                            <a
+                                class="gls-position-center-right gls-position-small gls-hidden-hover"
+                                href
+                                gls-slidenav-next
+                                gls-slideshow-item="next"
+                            ></a>
+                        </div>
+
+                        <ul class="gls-slideshow-nav gls-dotnav gls-flex-center gls-margin">
+                            <li gls-slideshow-item="0"><a href>Item 1</a></li>
+                            <li gls-slideshow-item="1"><a href>Item 2</a></li>
+                            <li gls-slideshow-item="2"><a href>Item 3</a></li>
+                            <li gls-slideshow-item="3"><a href>Item 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="js-slideshow-animation" gls-slideshow="ratio: 3:2">
+                        <div
+                            class="gls-position-relative gls-visible-toggle gls-light"
+                            tabindex="-1"
+                        >
+                            <div class="gls-slideshow-items">
+                                <div>
+                                    <img src="images/photo.jpg" alt="" gls-cover />
+                                    <div
+                                        class="gls-position-center gls-position-small gls-text-center"
+                                    >
+                                        <h2 gls-slideshow-parallax="x: 100,-100">Image</h2>
+                                        <p gls-slideshow-parallax="x: 200,-200">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <video
+                                        src="https://yootheme.com/site/images/media/yootheme-pro.mp4"
+                                        autoplay
+                                        loop
+                                        muted
+                                        playsinline
+                                        gls-cover
+                                    ></video>
+                                    <div
+                                        class="gls-position-center gls-position-small gls-text-center"
+                                    >
+                                        <h2 gls-slideshow-parallax="x: 100,-100">Video</h2>
+                                        <p gls-slideshow-parallax="x: 200,-200">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <iframe
+                                        src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1"
+                                        width="1920"
+                                        height="1080"
+                                        allowfullscreen
+                                        loading="lazy"
+                                        gls-cover
+                                    ></iframe>
+                                    <div
+                                        class="gls-position-center gls-position-small gls-text-center"
+                                    >
+                                        <h2 gls-slideshow-parallax="x: 100,-100">YouTube</h2>
+                                        <p gls-slideshow-parallax="x: 200,-200">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <iframe
+                                        src="https://player.vimeo.com/video/1084537?title=0&amp;background=1&amp;keyboard=0"
+                                        width="500"
+                                        height="281"
+                                        allowfullscreen
+                                        loading="lazy"
+                                        gls-cover
+                                    ></iframe>
+                                    <div
+                                        class="gls-position-center gls-position-small gls-text-center"
+                                    >
+                                        <h2 gls-slideshow-parallax="x: 100,-100">Vimeo</h2>
+                                        <p gls-slideshow-parallax="x: 200,-200">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a
+                                class="gls-position-center-left gls-position-small gls-hidden-hover"
+                                href
+                                gls-slidenav-previous
+                                gls-slideshow-item="previous"
+                            ></a>
+                            <a
+                                class="gls-position-center-right gls-position-small gls-hidden-hover"
+                                href
+                                gls-slidenav-next
+                                gls-slideshow-item="next"
+                            ></a>
+                        </div>
+
+                        <ul class="gls-slideshow-nav gls-dotnav gls-flex-center gls-margin"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Modifing animation with parallax</h2>
+
+            <div gls-slideshow="animation: push">
+                <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1">
+                    <div class="gls-slideshow-items">
+                        <div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="scale: 1.2,1.2,1"
+                            >
+                                <img src="images/photo.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"
+                            ></div>
+                            <div class="gls-position-center gls-position-medium gls-text-center">
+                                <div gls-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1
+                                        class="gls-heading-medium"
+                                        gls-slideshow-parallax="x: 200,0,0"
+                                    >
+                                        Heading
+                                    </h1>
+                                    <p class="gls-text-lead" gls-slideshow-parallax="x: 400,0,0;">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="scale: 1.2,1.2,1"
+                            >
+                                <img src="images/dark.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"
+                            ></div>
+                            <div class="gls-position-center gls-position-medium gls-text-center">
+                                <div gls-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1
+                                        class="gls-heading-medium"
+                                        gls-slideshow-parallax="x: 200,0,0"
+                                    >
+                                        Heading
+                                    </h1>
+                                    <p class="gls-text-lead" gls-slideshow-parallax="x: 400,0,0;">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="scale: 1.2,1.2,1"
+                            >
+                                <img src="images/light.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"
+                            ></div>
+                            <div class="gls-position-center gls-position-medium gls-text-center">
+                                <div gls-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1
+                                        class="gls-heading-medium"
+                                        gls-slideshow-parallax="x: 200,0,0"
+                                    >
+                                        Heading
+                                    </h1>
+                                    <p class="gls-text-lead" gls-slideshow-parallax="x: 400,0,0;">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="scale: 1.2,1.2,1"
+                            >
+                                <img src="images/photo2.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"
+                            ></div>
+                            <div class="gls-position-center gls-position-medium gls-text-center">
+                                <div gls-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1
+                                        class="gls-heading-medium"
+                                        gls-slideshow-parallax="x: 200,0,0"
+                                    >
+                                        Heading
+                                    </h1>
+                                    <p class="gls-text-lead" gls-slideshow-parallax="x: 400,0,0;">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a
+                        class="gls-position-center-left gls-position-small gls-hidden-hover"
+                        href
+                        gls-slidenav-previous
+                        gls-slideshow-item="previous"
+                    ></a>
+                    <a
+                        class="gls-position-center-right gls-position-small gls-hidden-hover"
+                        href
+                        gls-slidenav-next
+                        gls-slideshow-item="next"
+                    ></a>
+                </div>
+
+                <ul class="gls-slideshow-nav gls-dotnav gls-flex-center gls-margin"></ul>
+            </div>
+
+            <h2>Toggle Transitions + Kenburns</h2>
+
+            <div class="js-slideshow-animation" gls-slideshow="ratio: 5:3">
+                <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1">
+                    <div class="gls-slideshow-items">
+                        <div>
+                            <div
+                                class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-center-left"
+                            >
+                                <img src="images/photo.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom"
+                            >
+                                <h3 class="gls-margin-remove">Bottom</h3>
+                                <p class="gls-margin-remove">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-top-right"
+                            >
+                                <img src="images/dark.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-overlay gls-overlay-primary gls-position-bottom gls-text-center gls-transition-slide-bottom"
+                            >
+                                <h3 class="gls-margin-remove">Bottom</h3>
+                                <p class="gls-margin-remove">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-bottom-left"
+                            >
+                                <img src="images/light.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-overlay gls-overlay-primary gls-position-right gls-text-center gls-transition-slide-right gls-width-medium"
+                            >
+                                <h3 class="gls-margin-remove">Right</h3>
+                                <p class="gls-margin-remove">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="gls-position-cover gls-animation-kenburns gls-animation-reverse gls-transform-origin-top-center"
+                            >
+                                <img src="images/photo2.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-overlay gls-overlay-primary gls-position-left gls-text-center gls-transition-slide-left gls-width-medium"
+                            >
+                                <h3 class="gls-margin-remove">Left</h3>
+                                <p class="gls-margin-remove">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a
+                        class="gls-position-center-left gls-position-small gls-hidden-hover"
+                        href
+                        gls-slidenav-previous
+                        gls-slideshow-item="previous"
+                    ></a>
+                    <a
+                        class="gls-position-center-right gls-position-small gls-hidden-hover"
+                        href
+                        gls-slidenav-next
+                        gls-slideshow-item="next"
+                    ></a>
+                </div>
+
+                <ul class="gls-slideshow-nav gls-dotnav gls-flex-center gls-margin"></ul>
+            </div>
+
+            <h2>Parallax Control</h2>
+
+            <div
+                gls-slideshow="parallax: true; parallax-start: 100%; parallax-end: 100%; animation: push"
+            >
+                <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1">
+                    <div class="gls-slideshow-items">
+                        <div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="scale: 1.2,1.2,1"
+                            >
+                                <img src="images/photo.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"
+                            ></div>
+                            <div class="gls-position-center gls-position-medium gls-text-center">
+                                <div gls-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1
+                                        class="gls-heading-medium"
+                                        gls-slideshow-parallax="x: 200,0,0"
+                                    >
+                                        Heading
+                                    </h1>
+                                    <p class="gls-text-lead" gls-slideshow-parallax="x: 400,0,0;">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="scale: 1.2,1.2,1"
+                            >
+                                <img src="images/dark.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"
+                            ></div>
+                            <div class="gls-position-center gls-position-medium gls-text-center">
+                                <div gls-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1
+                                        class="gls-heading-medium"
+                                        gls-slideshow-parallax="x: 200,0,0"
+                                    >
+                                        Heading
+                                    </h1>
+                                    <p class="gls-text-lead" gls-slideshow-parallax="x: 400,0,0;">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="scale: 1.2,1.2,1"
+                            >
+                                <img src="images/light.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"
+                            ></div>
+                            <div class="gls-position-center gls-position-medium gls-text-center">
+                                <div gls-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1
+                                        class="gls-heading-medium"
+                                        gls-slideshow-parallax="x: 200,0,0"
+                                    >
+                                        Heading
+                                    </h1>
+                                    <p class="gls-text-lead" gls-slideshow-parallax="x: 400,0,0;">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="scale: 1.2,1.2,1"
+                            >
+                                <img src="images/photo2.jpg" alt="" gls-cover />
+                            </div>
+                            <div
+                                class="gls-position-cover"
+                                gls-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"
+                            ></div>
+                            <div class="gls-position-center gls-position-medium gls-text-center">
+                                <div gls-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1
+                                        class="gls-heading-medium"
+                                        gls-slideshow-parallax="x: 200,0,0"
+                                    >
+                                        Heading
+                                    </h1>
+                                    <p class="gls-text-lead" gls-slideshow-parallax="x: 400,0,0;">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a
+                        class="gls-position-center-left gls-position-small gls-hidden-hover"
+                        href
+                        gls-slidenav-previous
+                        gls-slideshow-item="previous"
+                    ></a>
+                    <a
+                        class="gls-position-center-right gls-position-small gls-hidden-hover"
+                        href
+                        gls-slidenav-next
+                        gls-slideshow-item="next"
+                    ></a>
+                </div>
+
+                <ul class="gls-slideshow-nav gls-dotnav gls-flex-center gls-margin"></ul>
+            </div>
+
+            <h2>Min/Max Height</h2>
+        </div>
+
+        <div
+            class="gls-margin js-slideshow-animation"
+            gls-slideshow="ratio: 7:3; min-height: 300; max-height: 600"
+        >
+            <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1">
+                <div class="gls-slideshow-items">
+                    <div>
+                        <img src="images/photo.jpg" alt="" gls-cover />
+                        <div class="gls-position-center gls-position-medium gls-text-center">
+                            <h1 class="gls-heading-medium" gls-slideshow-parallax="x: 200,-200">
+                                Heading
+                            </h1>
+                            <p class="gls-text-lead" gls-slideshow-parallax="x: 400,-400">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/dark.jpg" alt="" gls-cover />
+                        <div class="gls-position-center gls-position-medium gls-text-center">
+                            <h1 class="gls-heading-medium" gls-slideshow-parallax="x: 200,-200">
+                                Heading
+                            </h1>
+                            <p class="gls-text-lead" gls-slideshow-parallax="x: 400,-400">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/light.jpg" alt="" gls-cover />
+                        <div class="gls-position-center gls-position-medium gls-text-center">
+                            <h1
+                                class="gls-heading-medium"
+                                gls-slideshow-parallax="y: -100,0,0; opacity: 1,1,0"
+                            >
+                                Heading
+                            </h1>
+                            <p
+                                class="gls-text-lead"
+                                gls-slideshow-parallax="y: 100,0,0; opacity: 1,1,0"
+                            >
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/photo2.jpg" alt="" gls-cover />
+                        <div class="gls-position-center gls-position-medium gls-text-center">
+                            <h1 class="gls-heading-medium" gls-slideshow-parallax="x: 200,-200">
+                                Heading
+                            </h1>
+                            <p class="gls-text-lead" gls-slideshow-parallax="x: 400,-400">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a
+                    class="gls-slidenav-large gls-position-center-left gls-position-small gls-hidden-hover"
+                    href
+                    gls-slidenav-previous
+                    gls-slideshow-item="previous"
+                ></a>
+                <a
+                    class="gls-slidenav-large gls-position-center-right gls-position-small gls-hidden-hover"
+                    href
+                    gls-slidenav-next
+                    gls-slideshow-item="next"
+                ></a>
+
+                <div class="gls-position-bottom-center gls-position-medium">
+                    <ul class="gls-slideshow-nav gls-dotnav"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-container">
+            <h2>Viewport Height</h2>
+        </div>
+
+        <div class="gls-margin js-slideshow-animation" gls-slideshow="ratio: false">
+            <div class="gls-position-relative gls-visible-toggle gls-light" tabindex="-1">
+                <div class="gls-slideshow-items" gls-height-viewport="min-height: 300">
+                    <div>
+                        <img src="images/photo.jpg" alt="" gls-cover />
+                        <div class="gls-position-center gls-position-medium gls-text-center">
+                            <h1 class="gls-heading-xlarge" gls-slideshow-parallax="x: 200,-200">
+                                Heading
+                            </h1>
+                            <p class="gls-h1" gls-slideshow-parallax="x: 400,-400">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/dark.jpg" alt="" gls-cover />
+                        <div class="gls-position-center gls-position-medium gls-text-center">
+                            <h1 class="gls-heading-xlarge" gls-slideshow-parallax="x: 200,-200">
+                                Heading
+                            </h1>
+                            <p class="gls-h1" gls-slideshow-parallax="x: 400,-400">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/light.jpg" alt="" gls-cover />
+                        <div class="gls-position-center gls-position-medium gls-text-center">
+                            <h1
+                                class="gls-heading-xlarge"
+                                gls-slideshow-parallax="y: -100,0,0; opacity: 1,1,0"
+                            >
+                                Heading
+                            </h1>
+                            <p class="gls-h1" gls-slideshow-parallax="y: 100,0,0; opacity: 1,1,0">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/photo2.jpg" alt="" gls-cover />
+                        <div class="gls-position-center gls-position-medium gls-text-center">
+                            <h1 class="gls-heading-xlarge" gls-slideshow-parallax="x: 200,-200">
+                                Heading
+                            </h1>
+                            <p class="gls-h1" gls-slideshow-parallax="x: 400,-400">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a
+                    class="gls-slidenav-large gls-position-center-left gls-position-small gls-hidden-hover"
+                    href
+                    gls-slidenav-previous
+                    gls-slideshow-item="previous"
+                ></a>
+                <a
+                    class="gls-slidenav-large gls-position-center-right gls-position-small gls-hidden-hover"
+                    href
+                    gls-slidenav-next
+                    gls-slideshow-item="next"
+                ></a>
+
+                <div class="gls-position-bottom-center gls-position-medium">
+                    <ul class="gls-slideshow-nav gls-dotnav gls-flex-center gls-margin"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="gls-container">
+            <h2>JavaScript Options</h2>
+
+            <div class="gls-overflow-auto">
+                <table class="gls-table gls-table-striped">
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Value</th>
+                            <th>Default</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>animation</code></td>
+                            <td>String</td>
+                            <td>slide</td>
+                            <td>The animation to use. (slide, fade, scale, pull, push)</td>
+                        </tr>
+                        <tr>
+                            <td><code>autoplay</code></td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                            <td>Starts autoplaying the slideshow.</td>
+                        </tr>
+                        <tr>
+                            <td><code>autoplay-interval</code></td>
+                            <td>Number</td>
+                            <td>7000</td>
+                            <td>The delay between switching slides in autoplay mode.</td>
+                        </tr>
+                        <tr>
+                            <td><code>draggable</code></td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                            <td>Enable pointer dragging.</td>
+                        </tr>
+                        <tr>
+                            <td><code>finite</code></td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                            <td>Disable infinite sliding.</td>
+                        </tr>
+                        <tr>
+                            <td><code>index</code></td>
+                            <td>Number</td>
+                            <td>0</td>
+                            <td>Slideshow item to show. 0 based index.</td>
+                        </tr>
+                        <tr>
+                            <td><code>pause-on-hover</code></td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                            <td>Pause autoplay mode on hover.</td>
+                        </tr>
+                        <tr>
+                            <td><code>velocity</code></td>
+                            <td>Number</td>
+                            <td>1</td>
+                            <td>The animation velocity (pixel/ms).</td>
+                        </tr>
+                        <tr>
+                            <td><code>ratio</code></td>
+                            <td>Boolean, String</td>
+                            <td>16:9</td>
+                            <td>The ratio. (`false` prevents height adjustment)</td>
+                        </tr>
+                        <tr>
+                            <td><code>min-height</code></td>
+                            <td>Boolean, Number</td>
+                            <td>false</td>
+                            <td>The minimum height.</td>
+                        </tr>
+                        <tr>
+                            <td><code>max-height</code></td>
+                            <td>Boolean, Number</td>
+                            <td>false</td>
+                            <td>The maximum height.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            const { attr, $$, on } = Gloss.util;
+            on('#js-animation-switcher', 'change', (e) =>
+                attr($$('.js-slideshow-animation'), 'animation', e.target.value),
+            );
+
+            on('#js-finite-switcher', 'change', (e) =>
+                attr($$('[gls-slideshow]'), 'finite', e.target.value),
+            );
+        </script>
+    </body>
+</html>

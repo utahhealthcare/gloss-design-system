@@ -1,0 +1,48 @@
+/**
+ * Name:            Z-Index
+ * Description:     Utilities to adjust z-axis ordering of content
+ *
+ * Component:       `gls-z-*`
+ *
+ * ======================================================================== */
+
+/* ========================================================================
+   Component: Z-Index
+ ========================================================================== */
+
+.gls-z-lowest {
+    z-index: $z-lowest;
+}
+.gls-z-0 {
+    z-index: $z-0;
+}
+.gls-z-100 {
+    z-index: $z-100;
+}
+.gls-z-200 {
+    z-index: $z-200;
+}
+.gls-z-300 {
+    z-index: $z-300;
+}
+.gls-z-400 {
+    z-index: $z-400;
+}
+.gls-z-500 {
+    z-index: $z-500;
+}
+.gls-z-600 {
+    z-index: $z-600;
+}
+.gls-z-700 {
+    z-index: $z-700;
+}
+.gls-z-800 {
+    z-index: $z-800;
+}
+.gls-z-900 {
+    z-index: $z-900;
+}
+.gls-z-highest {
+    z-index: $z-highest;
+}

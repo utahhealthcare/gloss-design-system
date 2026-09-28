@@ -1,0 +1,88 @@
+/**
+ * Name:            Rating
+ * Description:     Component to create star ratings
+ *
+ * Component:       `gls-rating`
+ *
+ * Modifiers:       `gls-rating-small`
+ *                  `gls-rating-large`
+ *
+ * ======================================================================== */
+
+/* ========================================================================
+   Component: Rating
+ ========================================================================== */
+
+.gls-rating {
+    display: inline-block;
+    font-size: $rating-size;
+    line-height: 1;
+    position: relative;
+}
+
+/*
+ * Hide star characters included in both legacy and updated markup.
+ * The rating wrapper should provide the accessible name with
+ * role="img" and aria-label.
+ */
+
+.gls-rating > [aria-hidden='true'] {
+    display: none;
+}
+
+/*
+ * Empty
+ */
+
+.gls-rating::before {
+    color: $rating-background;
+    content: $rating-icon-empty;
+    display: block;
+    white-space: nowrap;
+}
+
+/*
+ * Filled
+ */
+
+.gls-rating::after {
+    color: $rating-fill;
+    content: $rating-icon-filled;
+    inset: 0 auto 0 0;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: clamp(0%, calc($rating / $rating-max * 100%), 100%);
+}
+
+/* Size modifier
+ ========================================================================== */
+
+/*
+ * Small
+ */
+
+.gls-rating-small {
+    font-size: $rating-small;
+}
+
+/*
+ * Large
+ */
+
+.gls-rating-large {
+    font-size: $rating-large;
+}
+
+/* Forced colors
+ ========================================================================== */
+
+@media (forced-colors: active) {
+    .gls-rating::before {
+        color: GrayText;
+    }
+
+    .gls-rating::after {
+        color: CanvasText;
+    }
+}

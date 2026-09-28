@@ -1,0 +1,32 @@
+// ========================================================================
+// Component Variables: Divider
+// ========================================================================
+
+$divider-margin-vertical: $global-small-space !default;
+$divider-thin-width: $global-border-width !default;
+$divider-thick-width: calc($divider-thin-width * 2) !default;
+$divider-thicker-width: calc($divider-thin-width * 4) !default;
+$divider-width: $divider-thin-width !default;
+$divider-icon-width: 50px !default;
+$divider-icon-height: 30px !default;
+$divider-icon-color: $global-border !default;
+$divider-icon-line-top: 50% !default;
+$divider-icon-line-width: 100% !default;
+$divider-icon-line-border-width: $global-border-width !default;
+$divider-icon-line-border: $global-border !default;
+$divider-small-width: 100px !default;
+$divider-small-border-width: $global-border-width !default;
+$divider-small-border: $global-border !default;
+$divider-vertical-height: 100px !default;
+$divider-vertical-border-width: $divider-width !default;
+$divider-vertical-border: $global-border !default;
+$divider-expand-size: 100% !default;
+$divider-size: $divider-expand-size !default;
+$divider-small-size: 50px !default;
+$divider-medium-size: 75px !default;
+$divider-large-size: 100px !default;
+$divider-muted-color: $global-border !default;
+$divider-color: $divider-muted-color !default;
+$divider-primary-color: $global-primary-background !default;
+$divider-secondary-color: $global-secondary-background !default;
+$divider-tertiary-color: $global-tertiary-background !default;

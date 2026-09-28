@@ -1,0 +1,94 @@
+/**
+ * Name:            Border
+ * Description:     Utilities for borders
+ *
+ * Component:       `gls-border-*`
+ *
+ * ======================================================================== */
+
+/* ========================================================================
+   Component: Border
+ ========================================================================== */
+
+.gls-border {
+    border: $border-default-width $border-solid-style $border-default-color;
+}
+
+.gls-border-top {
+    border-top: $border-default-width $border-solid-style $border-default-color;
+}
+.gls-border-bottom {
+    border-bottom: $border-default-width $border-solid-style $border-default-color;
+}
+.gls-border-left {
+    border-left: $border-default-width $border-solid-style $border-default-color;
+}
+.gls-border-right {
+    border-right: $border-default-width $border-solid-style $border-default-color;
+}
+
+/* Color
+ ========================================================================== */
+
+.gls-border-default {
+    border-color: $border-default-color;
+}
+.gls-border-primary {
+    border-color: $border-primary-color;
+}
+.gls-border-secondary {
+    border-color: $border-secondary-color;
+}
+.gls-border-transparent {
+    border-color: $border-transparent-color;
+}
+
+/* Style
+ ========================================================================== */
+
+.gls-border-solid {
+    border-style: $border-solid-style;
+}
+.gls-border-dashed {
+    border-style: $border-dashed-style;
+}
+.gls-border-dotted {
+    border-style: $border-dotted-style;
+}
+
+/* Size
+ ========================================================================== */
+
+.gls-border-thick {
+    border-width: $border-thick-width;
+}
+.gls-border-thicker {
+    border-width: $border-thicker-width;
+}
+
+/* Radius
+ ========================================================================== */
+
+/* .gls-border-radius { border-radius: $border-rounded-radius; }
+.gls-border-round { border-radius: $border-full-radius; }
+.gls-border-square { border-radius: 0; } */
+
+/* Remove
+ ========================================================================== */
+
+.gls-border-remove {
+    border: none !important;
+}
+
+.gls-border-remove-top {
+    border-top: none !important;
+}
+.gls-border-remove-bottom {
+    border-bottom: none !important;
+}
+.gls-border-remove-left {
+    border-left: none !important;
+}
+.gls-border-remove-right {
+    border-right: none !important;
+}

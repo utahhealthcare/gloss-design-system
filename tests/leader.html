@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Leader - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Leader</h1>
+
+            <div class="gls-grid-small gls-width-1-2@m gls-flex-bottom" gls-grid>
+                <div class="gls-width-expand" gls-leader>Lorem ipsum dolor</div>
+                <div class="gls-width-auto">Price</div>
+            </div>
+
+            <div class="gls-grid-small gls-width-1-2@m gls-flex-bottom" gls-grid>
+                <div class="gls-width-expand" gls-leader fill="-">Lorem ipsum dolor sit amet</div>
+                <div class="gls-width-auto">Price</div>
+            </div>
+
+            <div class="gls-grid-small gls-width-1-2@m gls-flex-bottom" gls-grid>
+                <div class="gls-width-expand" gls-leader>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                </div>
+                <div class="gls-width-auto">Price</div>
+            </div>
+
+            <div class="gls-grid-small gls-width-1-2@m gls-flex-bottom" gls-grid>
+                <div class="gls-width-expand" gls-leader="media: @l">
+                    The leader dots are hidden before @l
+                </div>
+                <div class="gls-width-auto">Price</div>
+            </div>
+
+            <h2>JavaScript Options</h2>
+
+            <table class="gls-table gls-table-striped">
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Value</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>fill</code></td>
+                        <td>String</td>
+                        <td>undefined</td>
+                        <td>Optional fill character.</td>
+                    </tr>
+                    <tr>
+                        <td><code>media</code></td>
+                        <td>String</td>
+                        <td>false</td>
+                        <td>
+                            Condition for the space filling - a width as integer (e.g. 640) or a
+                            breakpoint (e.g. @s, @m, @l, @xl).
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

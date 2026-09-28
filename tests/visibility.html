@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Visibility - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Visibility</h1>
+
+            <h2>Hidden</h2>
+
+            <div class="gls-child-width-1-2@s gls-child-width-1-4@m gls-text-center" gls-grid>
+                <div>
+                    <div class="gls-panel">
+                        <div class="gls-alert gls-margin-remove gls-alert-success">
+                            ✔ Small<br />(Phone Landscape)
+                        </div>
+                        <div class="gls-alert gls-position-cover gls-margin-remove gls-hidden@s">
+                            Small<br />(Phone Landscape)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-panel">
+                        <div class="gls-alert gls-margin-remove gls-alert-success">
+                            ✔ Medium<br />(Tablet Landscape)
+                        </div>
+                        <div class="gls-alert gls-position-cover gls-margin-remove gls-hidden@m">
+                            Medium<br />(Tablet Landscape)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-panel">
+                        <div class="gls-alert gls-margin-remove gls-alert-success">
+                            ✔ Large<br />(Desktop)
+                        </div>
+                        <div class="gls-alert gls-position-cover gls-margin-remove gls-hidden@l">
+                            Large<br />(Desktop)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-panel">
+                        <div class="gls-alert gls-margin-remove gls-alert-success">
+                            ✔ X-Large<br />(Large Screens)
+                        </div>
+                        <div class="gls-alert gls-position-cover gls-margin-remove gls-hidden@xl">
+                            X-Large<br />(Large Screens)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Visible</h2>
+
+            <div class="gls-child-width-1-2@s gls-child-width-1-4@m gls-text-center" gls-grid>
+                <div>
+                    <div class="gls-panel">
+                        <div class="gls-alert gls-margin-remove">Small<br />(Phone Landscape)</div>
+                        <div
+                            class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@s"
+                        >
+                            ✔ Small<br />(Phone Landscape)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-panel">
+                        <div class="gls-alert gls-margin-remove">
+                            Medium<br />(Tablet Landscape)
+                        </div>
+                        <div
+                            class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@m"
+                        >
+                            ✔ Medium<br />(Tablet Landscape)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-panel">
+                        <div class="gls-alert gls-margin-remove">Large<br />(Desktop)</div>
+                        <div
+                            class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@l"
+                        >
+                            ✔ Large<br />(Desktop)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-panel">
+                        <div class="gls-alert gls-margin-remove">X-Large<br />(Large Screens)</div>
+                        <div
+                            class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-visible@xl"
+                        >
+                            ✔ X-Large<br />(Large Screens)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Toggle (Hover + Focus)</h2>
+
+            <div class="gls-child-width-1-2@s gls-child-width-1-4@m gls-text-center" gls-grid>
+                <div>
+                    <div class="gls-panel gls-visible-toggle" tabindex="0">
+                        <div class="gls-alert gls-margin-remove">Hidden Hover<br /><br /></div>
+                        <div
+                            class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-hidden-hover"
+                        >
+                            ✔ Hidden Hover<br /><a href>Focus Test</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-panel gls-visible-toggle" tabindex="0">
+                        <div class="gls-alert gls-margin-remove">Invisible Hover<br /><br /></div>
+                        <div
+                            class="gls-alert gls-alert-success gls-position-cover gls-margin-remove gls-invisible-hover"
+                        >
+                            ✔ Invisible Hover<br /><a href>Focus Test</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Touch</h2>
+
+            <div class="gls-child-width-1-2@s gls-child-width-1-4@m gls-text-center" gls-grid>
+                <div>
+                    <div class="gls-panel">
+                        <div class="gls-alert gls-margin-remove gls-alert-success">
+                            ✔ Hidden Touch
+                        </div>
+                        <div
+                            class="gls-alert gls-position-cover gls-margin-remove gls-hidden-touch"
+                        >
+                            Hidden Touch
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-panel">
+                        <div class="gls-alert gls-margin-remove gls-alert-success">
+                            ✔ Hidden No-Touch
+                        </div>
+                        <div
+                            class="gls-alert gls-position-cover gls-margin-remove gls-hidden-notouch"
+                        >
+                            Hidden No-Touch
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

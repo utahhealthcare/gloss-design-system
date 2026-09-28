@@ -1,0 +1,188 @@
+// ========================================================================
+// Overrides: Divider
+// ========================================================================
+
+@mixin hook-divider-misc() {
+    :root {
+        --divider-margin-vertical: #{$divider-margin-vertical};
+
+        --divider-icon-width: #{$divider-icon-width};
+        --divider-icon-height: #{$divider-icon-height};
+        --divider-icon-color: #{$divider-icon-color};
+        --divider-icon-line-top: #{$divider-icon-line-top};
+        --divider-icon-line-width: #{$divider-icon-line-width};
+        --divider-icon-line-border-width: #{$divider-icon-line-border-width};
+        --divider-icon-line-border: #{$divider-icon-line-border};
+
+        --divider-vertical-height: #{$divider-vertical-height};
+        --divider-vertical-border-width: var(--divider-width);
+        --divider-vertical-border: #{$divider-vertical-border};
+
+        --divider-size: var(--divider-expand-size);
+        --divider-small-size: #{$divider-small-size};
+        --divider-medium-size: #{$divider-medium-size};
+        --divider-large-size: #{$divider-large-size};
+        --divider-expand-size: #{$divider-expand-size};
+
+        --divider-color: var(--divider-muted-color);
+        --divider-muted-color: #{$divider-muted-color};
+        --divider-primary-color: #{$divider-primary-color};
+        --divider-secondary-color: #{$divider-secondary-color};
+        --divider-tertiary-color: #{$divider-tertiary-color};
+
+        --divider-width: var(--divider-thin-width);
+        --divider-thin-width: #{$divider-thin-width};
+        --divider-thick-width: #{$divider-thick-width};
+        --divider-thicker-width: #{$divider-thicker-width};
+    }
+
+    /* ========================================================================
+     Component: Divider Overrides
+   ========================================================================== */
+
+    /*
+   * 1. Reset default `hr`
+   * 2. Fix height because of `inline-block`
+   * 3. Set margin if a `div` is used for semantical reason
+   */
+
+    [class*='uk-divider'] {
+        /* 1 */
+        border: none;
+        /* 2 */
+        line-height: 0;
+        /* 3 */
+        margin-block-end: var(--divider-margin-vertical);
+    }
+
+    /* Add margin if adjacent element */
+    * + [class*='uk-divider'] {
+        margin-block-start: var(--divider-margin-vertical);
+    }
+
+    /* Default
+   ========================================================================== */
+
+    /*
+   * Using ::after and inline-block to make `text-align` work
+   */
+
+    .uk-divider::after {
+        border-block-start: var(--divider-width) solid var(--divider-color);
+        content: '';
+        display: inline-block;
+        inline-size: var(--divider-size);
+        max-inline-size: 100%;
+        vertical-align: top;
+    }
+
+    /* Icon
+   ========================================================================== */
+
+    .uk-divider-icon {
+        background-image: svg-load(
+            '../images/backgrounds/divider-icon-dna.svg',
+            stroke=#ced4da,
+            fill=none
+        );
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        block-size: var(--divider-icon-height);
+        position: relative;
+    }
+
+    .uk-divider-icon::before,
+    .uk-divider-icon::after {
+        border-block-end: var(--divider-width) solid var(--divider-color);
+        content: '';
+        inset-block-start: var(--divider-icon-line-top);
+        max-inline-size: calc(50% - (var(--divider-icon-width) / 2));
+        position: absolute;
+    }
+
+    .uk-divider-icon::before {
+        inline-size: var(--divider-icon-line-width);
+        inset-inline-end: calc(50% + (var(--divider-icon-width) / 2));
+    }
+
+    .uk-divider-icon::after {
+        inline-size: var(--divider-icon-line-width);
+        inset-inline-start: calc(50% + (var(--divider-icon-width) / 2));
+    }
+
+    /* Dotted
+   ========================================================================== */
+
+    .uk-divider-dotted::after {
+        background-image: radial-gradient(
+            circle,
+            var(--divider-color) var(--divider-width),
+            transparent var(--divider-width)
+        );
+        background-size: calc(var(--divider-width) * 8) calc(var(--divider-width) * 2);
+        background-repeat: repeat-x;
+        background-position: left bottom;
+        content: '';
+        display: inline-block;
+        inline-size: #{'round( min( var(--divider-size), 100% ), calc( var(--divider-width) * 8 ) )'};
+        padding-block-end: calc(var(--divider-width) * 2);
+    }
+
+    /* Vertical
+   ========================================================================== */
+
+    .uk-divider-vertical::after {
+        block-size: var(--divider-vertical-height);
+        border-inline-start: var(--divider-width) solid var(--divider-color);
+        content: '';
+        display: inline-block;
+        inline-size: max-content;
+        margin-inline: auto;
+        max-block-size: var(--divider-size);
+    }
+
+    /* Size
+   ========================================================================== */
+
+    .uk-divider-small {
+        --divider-size: var(--divider-small-size);
+    }
+    .uk-divider-medium {
+        --divider-size: var(--divider-medium-size);
+    }
+    .uk-divider-large {
+        --divider-size: var(--divider-large-size);
+    }
+    .uk-divider-expand {
+        --divider-size: var(--divider-expand-size);
+    }
+
+    /* Color
+   ========================================================================== */
+
+    .uk-divider-muted {
+        --divider-color: var(--divider-muted-color);
+    }
+    .uk-divider-primary {
+        --divider-color: var(--divider-primary-color);
+    }
+    .uk-divider-secondary {
+        --divider-color: var(--divider-secondary-color);
+    }
+    .uk-divider-tertiary {
+        --divider-color: var(--divider-tertiary-color);
+    }
+
+    /* Thickness
+   ========================================================================== */
+
+    .uk-divider-thin {
+        --divider-width: var(--divider-thin-width);
+    }
+    .uk-divider-thick {
+        --divider-width: var(--divider-thick-width);
+    }
+    .uk-divider-thicker {
+        --divider-width: var(--divider-thicker-width);
+    }
+}

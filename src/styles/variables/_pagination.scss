@@ -1,0 +1,12 @@
+// ========================================================================
+// Component Variables: Pagination
+// ========================================================================
+
+$pagination-margin-horizontal: 20px !default;
+$pagination-item-color: $global-muted-color !default;
+$pagination-item-hover-color: $global-color !default;
+$pagination-item-hover-text-decoration: none !default;
+$pagination-item-active-color: $global-color !default;
+$pagination-item-disabled-color: $global-muted-color !default;
+$pagination-item-transition: color 0.1s ease-in-out !default;
+$pagination-item-text-decoration: none !default;

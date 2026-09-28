@@ -1,0 +1,70 @@
+// ========================================================================
+// Overrides: Section
+// ========================================================================
+
+@mixin hook-section-misc() {
+    // Custom Primary Light Modifier
+    .uk-section-primary-light {
+        --gls-inverse: dark;
+        background: $section-primary-light-background;
+        color: $global-color;
+    }
+
+    // Custom Secondary Light Modifier
+    .uk-section-secondary-light {
+        --gls-inverse: dark;
+        background: $section-secondary-light-background;
+        color: $global-color;
+    }
+
+    // Custom Tertiary Modifier
+    .uk-section-tertiary {
+        --gls-inverse: light;
+        background: $section-tertiary-background;
+        color: $global-inverse-color;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .uk-h1,
+        .uk-h2,
+        .uk-h3,
+        .uk-h4,
+        .uk-h5,
+        .uk-h6 {
+            color: $global-inverse-color;
+        }
+    }
+
+    // Custom Gradient Modifier
+    .uk-section-gradient {
+        --gls-inverse: dark;
+        background: $section-gradient-background;
+        color: $global-color;
+    }
+
+    // Enforce correct dark/black text color mode on Secondary Sections (WCAG contrast)
+    .uk-section-secondary {
+        --gls-inverse: dark;
+        background: $section-secondary-background;
+        color: $global-color;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .uk-h1,
+        .uk-h2,
+        .uk-h3,
+        .uk-h4,
+        .uk-h5,
+        .uk-h6 {
+            color: $global-emphasis-color;
+        }
+    }
+}

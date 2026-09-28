@@ -1,20 +1,37 @@
-// Gloss stylesheet entrypoint.
-
-// This will become generated CSS custom property declarations from src/tokens.
+// Load generated design tokens
 @use 'tokens';
 
-// Keep Gloss variable overrides above the UIkit imports. UIkit uses Sass
-// defaults, so values declared here can replace them without copying UIkit's
-// source files.
+// Import Gloss Variables & UIkit Overrides
+@import 'variables';
 
-@import 'uikit/src/scss/variables-theme';
-@import 'uikit/src/scss/mixins-theme';
+// Load UIkit default variables & mixins
+@import 'uikit/src/scss/variables-theme.scss';
+@import 'uikit/src/scss/mixins-theme.scss';
 
-// Import only the UIkit foundation and components that Gloss explicitly
-// supports. Do not replace this list with uikit-theme.scss: that entrypoint
-// imports UIkit's entire component catalog.
-@import 'uikit/src/scss/components/base';
-@import 'uikit/src/scss/components/button';
+// Load Gloss UIkit mixin hooks
+@import 'overrides';
 
-// Gloss components layer on top of UIkit's compiled foundation.
-@import '../components/button/button';
+// Load full UIkit stylesheet & custom Gloss components
+@import 'uikit/src/scss/uikit-theme.scss';
+
+/**
+ * Base
+ */
+@import './base';
+
+/**
+ * Components
+ */
+@import 'components/arrow';
+@import 'components/border';
+@import 'components/context';
+@import 'components/hack';
+@import 'components/icon';
+@import 'components/line';
+@import 'components/offcanvas';
+@import 'components/player';
+@import 'components/rating';
+@import 'components/social';
+@import 'components/switcher';
+@import 'components/table';
+@import 'components/z-index';

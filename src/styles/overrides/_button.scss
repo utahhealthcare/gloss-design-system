@@ -1,0 +1,103 @@
+// ========================================================================
+// Overrides: Button
+// ========================================================================
+
+@mixin hook-button() {
+    font-family: inherit; // Use the global font family
+    font-weight: 500;
+    text-transform: none; // UIkit defaults to uppercase, Gloss legacy disables this
+    border-radius: var(--gls-medium-border-radius, 10px);
+    border: 1px solid transparent; // Default border for base button
+    transition: 0.1s ease-in-out;
+    transition-property: color, background-color, border-color, box-shadow;
+
+    // Dimensional overrides matching legacy padding instead of using UIkit line-heights
+    padding: 12px 32px;
+    line-height: 1.25;
+
+    // Legacy button vertical alignment on children
+    > * {
+        vertical-align: middle;
+    }
+}
+
+@mixin hook-button-small() {
+    padding: 8px 16px;
+    line-height: 1.125;
+}
+
+@mixin hook-button-large() {
+    padding: 16px 32px;
+    line-height: 1.25;
+}
+
+// Button Status Modifiers (Primary, Secondary, etc.)
+// We apply the specific borders and hover states that were in the legacy files.
+@mixin hook-button-primary() {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    &:hover,
+    &:focus {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@mixin hook-button-secondary() {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    &:hover,
+    &:focus {
+        border-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@mixin hook-button-danger() {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    &:hover,
+    &:focus {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+// Button Variants
+// Add completely custom modifiers that don't exist in UIkit to the misc hook.
+// Because these are custom, we use the .uk- prefix here (PostCSS changes it to .gls- later).
+@mixin hook-button-misc() {
+    .uk-button-outline {
+        background-color: #ffffff;
+        color: var(--gls-color-emphasis);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        &:hover,
+        &:focus {
+            background-color: var(--gls-color-muted-background, #f4f4f5);
+            border-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    .uk-button-tertiary {
+        background-color: #ffffff;
+        color: var(--gls-color-primary);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        &:hover,
+        &:focus {
+            background-color: var(--gls-color-muted-background, #f4f4f5);
+            border-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    .uk-button-shadow {
+        box-shadow:
+            0 1px 1px rgba(0, 0, 0, 0.08),
+            0 2px 2px rgba(0, 0, 0, 0.09),
+            0 4px 4px rgba(0, 0, 0, 0.1);
+
+        &:active {
+            box-shadow: none;
+        }
+    }
+
+    // Clear base borders on link buttons natively
+    .uk-button-link {
+        border: none;
+    }
+}

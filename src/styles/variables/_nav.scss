@@ -1,0 +1,66 @@
+// ========================================================================
+// Component Variables: Nav
+// ========================================================================
+
+// Padding
+$nav-item-padding-vertical: 8px !default;
+$nav-item-padding-horizontal: 0 !default;
+
+$nav-sublist-padding-vertical: 8px !default;
+$nav-sublist-padding-left: $global-small-space !default;
+$nav-sublist-deeper-padding-left: $global-small-space !default;
+$nav-sublist-item-padding-vertical: 4px !default;
+
+// Icon
+$nav-parent-icon-width: calc($global-line-height * 1em) !default;
+$nav-parent-icon-height: var(--nav-parent-icon-width) !default;
+$nav-parent-icon-color: $global-color !default;
+
+// Header
+$nav-header-padding-vertical: $nav-item-padding-vertical !default;
+$nav-header-padding-horizontal: $nav-item-padding-horizontal !default;
+$nav-header-font-size: $global-small-font-size !default;
+$nav-header-font-weight: 500 !default;
+$nav-header-text-transform: uppercase !default;
+$nav-header-margin-top: $global-small-space !default;
+
+// Divider
+$nav-divider-margin-vertical: 5px !default;
+$nav-divider-margin-horizontal: 0 !default;
+
+// Nav Default
+$nav-default-font-size: $global-font-size !default;
+$nav-default-item-color: $global-color !default;
+$nav-default-item-hover-color: var(--nav-default-item-hover-color, $global-muted-color) !default;
+$nav-default-item-active-color: var(--nav-default-item-active-color, var(--color-primary)) !default;
+$nav-default-subtitle-font-size: $global-small-font-size !default;
+$nav-default-header-color: $global-muted-color !default;
+$nav-default-divider-border-width: $global-border-width !default;
+$nav-default-divider-border: $global-border !default;
+$nav-default-sublist-item-color: $global-color !default;
+$nav-default-sublist-item-hover-color: $global-muted-color !default;
+$nav-default-sublist-item-active-color: var(--color-primary) !default;
+$nav-default-sublist-border-width: $global-border-width !default;
+$nav-default-sublist-border: $global-border !default;
+
+// Nav Primary
+$nav-primary-item-font-size: $global-large-font-size !default;
+$nav-primary-item-line-height: $global-line-height !default;
+$nav-primary-item-color: $global-color !default;
+$nav-primary-item-hover-color: $global-muted-color !default;
+$nav-primary-item-active-color: var(--color-primary) !default;
+$nav-primary-subtitle-font-size: $global-medium-font-size !default;
+$nav-primary-header-font-size: $global-font-size !default;
+$nav-primary-header-color: $global-muted-color !default;
+$nav-primary-divider-border-width: $global-border-width !default;
+$nav-primary-divider-border: $global-border !default;
+$nav-primary-sublist-item-color: $global-color !default;
+$nav-primary-sublist-item-hover-color: $global-muted-color !default;
+$nav-primary-sublist-item-active-color: var(--color-primary) !default;
+$nav-primary-sublist-border-width: $global-border-width !default;
+$nav-primary-sublist-border: var(--color-primary) !default;
+
+// Dividers
+$nav-dividers-margin-top: 0 !default;
+$nav-dividers-border-width: $global-border-width !default;
+$nav-dividers-border: $global-border !default;

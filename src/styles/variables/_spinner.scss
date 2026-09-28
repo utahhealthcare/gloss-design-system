@@ -1,0 +1,9 @@
+// ========================================================================
+// Component Variables: Spinner
+// ========================================================================
+
+$spinner-size: 30px !default;
+$spinner-stroke-width: 1px !default;
+$spinner-radius: calc(($spinner-size - $spinner-stroke-width) / 2) !default;
+$spinner-circumference: 88px !default;
+$spinner-duration: 1.4s !default;

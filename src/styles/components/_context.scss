@@ -1,0 +1,19 @@
+/**
+ * Name:            Context
+ * Description:     Namespaced overrides for specific content types
+ *
+ * Component:       `gls-context-*`
+ *
+ * ======================================================================== */
+
+/* ========================================================================
+   Component: Context
+ ========================================================================== */
+
+/* Blog articles
+ ========================================================================== */
+
+.gls-context-blog-article article h2 {
+    color: var(--color-secondary);
+    text-transform: uppercase;
+}

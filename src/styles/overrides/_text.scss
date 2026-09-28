@@ -1,0 +1,114 @@
+// ========================================================================
+// Overrides: Text
+// ========================================================================
+
+@mixin hook-text-misc() {
+    /* Size modifiers (Bespoke)
+   ========================================================================== */
+    .uk-text-xsmall {
+        font-size: $text-xsmall-font-size;
+        line-height: $text-xsmall-line-height;
+    }
+    .uk-text-xlarge {
+        font-size: $text-xlarge-font-size;
+        line-height: $text-xlarge-line-height;
+    }
+    .uk-text-default {
+        font-size: var(--global-font-size);
+        line-height: var(--global-line-height);
+    }
+
+    /* Weight modifier (Bespoke)
+   ========================================================================== */
+    .uk-text-hairline {
+        font-weight: $text-hairline-font-weight !important;
+    }
+    .uk-text-thin {
+        font-weight: $text-thin-font-weight !important;
+    }
+    .uk-text-light {
+        font-weight: $text-light-font-weight !important;
+    }
+    .uk-text-regular {
+        font-weight: $text-regular-font-weight !important;
+    }
+    .uk-text-medium {
+        font-weight: $text-medium-font-weight !important;
+    }
+    .uk-text-semibold {
+        font-weight: $text-semibold-font-weight !important;
+    }
+    .uk-text-extrabold {
+        font-weight: $text-extrabold-font-weight !important;
+    }
+    .uk-text-black {
+        font-weight: $text-black-font-weight !important;
+    }
+
+    /* Letter Spacing (Bespoke)
+   ========================================================================== */
+    .uk-text-tighter {
+        letter-spacing: $text-tighter-tracking;
+    }
+    .uk-text-tight {
+        letter-spacing: $text-tight-tracking;
+    }
+    .uk-text-normal {
+        letter-spacing: $text-normal-tracking;
+    }
+    .uk-text-wide {
+        letter-spacing: $text-wide-tracking;
+    }
+    .uk-text-wider {
+        letter-spacing: $text-wider-tracking;
+    }
+    .uk-text-widest {
+        letter-spacing: $text-widest-tracking;
+    }
+
+    /* Transform modifier (Bespoke)
+   ========================================================================== */
+    .uk-text-remove-transform {
+        text-transform: initial !important;
+    }
+
+    /* Decoration modifier (Bespoke)
+   ========================================================================== */
+    .uk-text-underline {
+        text-decoration: underline !important;
+    }
+    .uk-text-decoration-none {
+        text-decoration: none !important;
+    }
+
+    /* Color modifiers (Bespoke)
+   ========================================================================== */
+    .uk-text-default-color {
+        color: $text-default-color !important;
+    }
+    .uk-text-tertiary {
+        color: $text-tertiary-color !important;
+    }
+    .uk-text-info {
+        background-color: $text-info-color !important;
+        color: $text-default-color !important;
+    }
+    .uk-text-success {
+        background-color: $text-success-color !important;
+        color: $text-default-color !important;
+    }
+    .uk-text-warning {
+        background-color: $text-warning-color !important;
+        color: $text-default-color !important;
+    }
+    .uk-text-danger {
+        background-color: $text-danger-color !important;
+        color: $text-default-color !important;
+    }
+
+    /* Shadows (Bespoke)
+   ========================================================================== */
+    .uk-text-shadow {
+        text-shadow: $text-shadow;
+    }
+}

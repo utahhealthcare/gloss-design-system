@@ -1,0 +1,727 @@
+:root {
+    /* Breakpoints */
+    --gls-breakpoint-s: 640px;
+    --gls-breakpoint-m: 960px;
+    --gls-breakpoint-l: 1200px;
+    --gls-breakpoint-xl: 1600px;
+
+    /* Typography */
+    --global-font-family:
+        'Sofia Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
+    --global-font-size: 16px;
+    --global-line-height: 1.5;
+
+    --global-xsmall-font-size: 0.75rem;
+    --global-small-font-size: 0.875rem;
+    --global-medium-font-size: 1.25rem;
+    --global-large-font-size: 1.5rem;
+    --global-xlarge-font-size: 2rem;
+    --global-2xlarge-font-size: 2.625rem;
+
+    --global-regular-font-weight: 400;
+    --global-semibold-font-weight: 600;
+    --global-bold-font-weight: 700;
+
+    /* Base Colors & Variables */
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    /* Primary Colors */
+    --color-utah-red: #be0000;
+    --color-zion-cinder-cone: #707271;
+
+    /* Accent Colors */
+    --color-granite-peak: #708e99;
+    --color-wasatch-sunrise: #ffb81d;
+    --color-red-rocks: #890000;
+    --color-mountain-green: #6cc24a;
+    --color-great-salt-lake: #3abfc0;
+    --color-salt-flat-grey: #e2e6e6;
+
+    /* UofU Health Colors */
+    --color-blue-topaz: #9dd8d7;
+    --color-coral-pink-sand-dunes: #e4937b;
+
+    /* Coral */
+    --color-coral-0: #fcf4f2;
+    --color-coral-1: #fae9e5;
+    --color-coral-2: #f7ded7;
+    --color-coral-3: #f4d4ca;
+    --color-coral-4: #f1c9bd;
+    --color-coral-5: #efbeb0;
+    --color-coral-6: #ecb3a2;
+    --color-coral-7: #e9a995;
+    --color-coral-8: #e79e88;
+    --color-coral-9: #e4937b;
+    --color-coral: var(--color-coral-9);
+    --color-coral-hover: var(--color-coral-7);
+    --color-coral-active: var(--color-coral-7);
+
+    /* Grayscale */
+    --color-gray-0: #f4f4f5;
+    --color-gray-1: #e9eaea;
+    --color-gray-2: #c5c5c6;
+    --color-gray-3: #b3b2b3;
+    --color-gray-4: #a8aaac;
+    --color-gray-5: #9f9fa0;
+    --color-gray-6: #79797a;
+    --color-gray-7: #535254;
+    --color-gray-8: #414042;
+    --color-gray-9: #212529;
+
+    /* Transparency Maps */
+    --color-trans-white-0: rgba(255, 255, 255, 0.05);
+    --color-trans-white-1: rgba(255, 255, 255, 0.1);
+    --color-trans-white-2: rgba(255, 255, 255, 0.2);
+    --color-trans-white-3: rgba(255, 255, 255, 0.3);
+    --color-trans-white-4: rgba(255, 255, 255, 0.4);
+    --color-trans-white-5: rgba(255, 255, 255, 0.5);
+    --color-trans-white-6: rgba(255, 255, 255, 0.6);
+    --color-trans-white-7: rgba(255, 255, 255, 0.7);
+    --color-trans-white-8: rgba(255, 255, 255, 0.8);
+    --color-trans-white-9: rgba(255, 255, 255, 0.9);
+
+    --color-trans-black-0: rgba(0, 0, 0, 0.05);
+    --color-trans-black-1: rgba(0, 0, 0, 0.1);
+    --color-trans-black-2: rgba(0, 0, 0, 0.2);
+    --color-trans-black-3: rgba(0, 0, 0, 0.3);
+    --color-trans-black-4: rgba(0, 0, 0, 0.4);
+    --color-trans-black-5: rgba(0, 0, 0, 0.5);
+    --color-trans-black-6: rgba(0, 0, 0, 0.6);
+    --color-trans-black-7: rgba(0, 0, 0, 0.7);
+    --color-trans-black-8: rgba(0, 0, 0, 0.8);
+    --color-trans-black-9: rgba(0, 0, 0, 0.9);
+
+    /* Primary Mapping (UofU Health) */
+    --color-primary-0: #f8e5e5;
+    --color-primary-1: #f2cccc;
+    --color-primary-2: #ebb2b2;
+    --color-primary-3: #e59999;
+    --color-primary-4: #de7f7f;
+    --color-primary-5: #d86666;
+    --color-primary-6: #d14c4c;
+    --color-primary-7: #cb3333;
+    --color-primary-8: #c41919;
+    --color-primary-9: #be0000;
+    --color-primary: var(--color-utah-red);
+    --color-primary-hover: hsl(from var(--color-primary) h s calc(l + 8));
+    --color-primary-active: hsl(from var(--color-primary) h s calc(l - 8));
+    --color-primary-text: var(--color-primary);
+    --color-primary-light: color-mix(in oklab, var(--color-primary), white 80%);
+
+    /* Secondary Mapping (UofU Health) */
+    --color-secondary-0: #edf3f3;
+    --color-secondary-1: #dce7e8;
+    --color-secondary-2: #cadadd;
+    --color-secondary-3: #b9cfd2;
+    --color-secondary-4: #a7c2c6;
+    --color-secondary-5: #95b6bb;
+    --color-secondary-6: #83aab0;
+    --color-secondary-7: #729ea5;
+    --color-secondary-8: #609299;
+    --color-secondary-9: #4f868e;
+    --color-secondary: var(--color-blue-topaz);
+    --color-secondary-hover: hsl(from var(--color-secondary) h s calc(l - 8));
+    --color-secondary-active: hsl(from var(--color-secondary) h s calc(l + 5));
+    --color-secondary-text: hsl(from var(--color-granite-peak) h s calc(l - 10));
+    --color-secondary-light: color-mix(in oklab, var(--color-secondary), white 80%);
+
+    /* Tertiary Mapping (UofU Health) */
+    --color-tertiary: var(--color-gray-8);
+    --color-tertiary-hover: var(--color-gray-9);
+    --color-tertiary-active: var(--color-gray-9);
+
+    /* Gradient */
+    --color-gradient: linear-gradient(180deg, #f2f2f2 0, #d9d9d9 100%);
+
+    /**
+  * Indicators
+  */
+
+    /* Info */
+    --color-info-0: #ebf8f9;
+    --color-info-1: #d8f2f2;
+    --color-info-2: #c4ecec;
+    --color-info-3: #b0e5e6;
+    --color-info-4: #9cdfdf;
+    --color-info-5: #89d9d9;
+    --color-info-6: #75d2d3;
+    --color-info-7: #61cccd;
+    --color-info-8: #4dc5c6;
+    --color-info-9: #3abfc0;
+    --color-info: var(--color-info-9);
+    --color-info-hover: var(--color-info-7);
+    --color-info-active: var(--color-info-7);
+    --color-info-text: var(--color-info-9);
+
+    /* Success */
+    --color-success-0: #f0f9ed;
+    --color-success-1: #e2f3db;
+    --color-success-2: #d3edc8;
+    --color-success-3: #c4e7b7;
+    --color-success-4: #b5e0a4;
+    --color-success-5: #a7da92;
+    --color-success-6: #98d480;
+    --color-success-7: #89ce6e;
+    --color-success-8: #7ac85c;
+    --color-success-9: #6cc24a;
+    --color-success: var(--color-success-9);
+    --color-success-hover: var(--color-success-7);
+    --color-success-active: var(--color-success-7);
+    --color-success-text: var(--color-success-9);
+
+    /* Warning */
+    --color-warning-0: #fff8e8;
+    --color-warning-1: #fff1d2;
+    --color-warning-2: #ffeabb;
+    --color-warning-3: #ffe3a5;
+    --color-warning-4: #ffdb8e;
+    --color-warning-5: #ffd477;
+    --color-warning-6: #ffcd60;
+    --color-warning-7: #ffc64a;
+    --color-warning-8: #ffbf33;
+    --color-warning-9: #ffb81d;
+    --color-warning: var(--color-warning-9);
+    --color-warning-hover: var(--color-warning-7);
+    --color-warning-active: var(--color-warning-7);
+    --color-warning-text: var(--color-warning-9);
+
+    /* Danger */
+    --color-danger-0: #f3e5e5;
+    --color-danger-1: #e7cccc;
+    --color-danger-2: #dbb2b2;
+    --color-danger-3: #d09999;
+    --color-danger-4: #c47f7f;
+    --color-danger-5: #b86666;
+    --color-danger-6: #ac4c4c;
+    --color-danger-7: #a13333;
+    --color-danger-8: #951919;
+    --color-danger-9: #890000;
+    --color-danger: var(--color-danger-9);
+    --color-danger-hover: var(--color-danger-7);
+    --color-danger-active: var(--color-danger-7);
+    --color-danger-text: var(--color-danger-9);
+
+    /* Global Settings */
+
+    /* Colors */
+    --global-color: var(--color-trans-black-8);
+    --global-emphasis-color: var(--color-trans-black-9);
+    --global-muted-color: var(--color-trans-black-6);
+
+    --global-link-color: var(--color-primary);
+    --global-link-hover-color: var(--color-primary-hover);
+
+    --global-inverse-color: var(--color-white);
+
+    --button-default-color: var(--color-primary);
+    --button-default-hover-color: var(--color-primary);
+    --button-default-active-color: var(--color-primary-active);
+
+    --button-font-size: var(--global-medium-font-size);
+    --button-small-font-size: var(--global-font-size);
+    --button-large-font-size: var(--global-large-font-size);
+
+    /* Backgrounds */
+    --global-background: var(--color-white);
+
+    --global-muted-background: var(--color-gray-0);
+    --global-primary-background: var(--color-primary);
+    --global-secondary-background: var(--color-secondary);
+    --global-tertiary-background: var(--color-gray-7);
+
+    --global-info-background: var(--color-info);
+    --global-success-background: var(--color-success);
+    --global-warning-background: var(--color-warning);
+    --global-danger-background: var(--color-danger);
+
+    --global-gradient-background: linear-gradient(180deg, #f2f2f2 0, #d9d9d9 100%);
+
+    /* Border */
+    --global-border-width: 1px;
+    --global-border-style: solid;
+    --global-border: var(--color-trans-black-2);
+
+    --global-border-radius: 3px;
+    --global-small-border-radius: 1px;
+    --global-medium-border-radius: 10px;
+    --global-large-border-radius: 15px;
+
+    /* Box Shadows */
+    --global-small-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09), 0 2px 2px rgba(0, 0, 0, 0.1);
+    --global-medium-box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.09), 0 4px 4px rgba(0, 0, 0, 0.1);
+    --global-large-box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.07), 0 2px 2px rgba(0, 0, 0, 0.08), 0 4px 4px rgba(0, 0, 0, 0.09),
+        0 8px 8px rgba(0, 0, 0, 0.1);
+    --global-xlarge-box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.07), 0 4px 4px rgba(0, 0, 0, 0.08),
+        0 8px 8px rgba(0, 0, 0, 0.09), 0 16px 16px rgba(0, 0, 0, 0.1);
+
+    /* Spacing */
+    --global-2xsmall-space: 4px;
+    --global-xsmall-space: 8px;
+    --global-small-space: 16px;
+    --global-medium-space: 32px;
+    --global-large-space: 48px;
+    --global-xlarge-space: 64px;
+    --global-2xlarge-space: 128px;
+
+    /* Sizing */
+    --global-small-size: 150px;
+    --global-medium-size: 300px;
+    --global-large-size: 450px;
+    --global-xlarge-size: 600px;
+    --global-2xlarge-size: 750px;
+
+    /* Controls */
+    --global-control-height: 52px;
+    --global-control-small-height: 38px;
+    --global-control-large-height: 68px;
+
+    /* Z-index */
+    --global-z-index: 1000;
+
+    /* Custom prefixes used by PostCSS */
+    --gls-color-primary: var(--color-primary);
+    --gls-color-primary-hover: var(--color-primary-hover);
+    --gls-color-secondary: var(--color-secondary);
+    --gls-color-tertiary: var(--color-gray-7);
+    --gls-border-radius: var(--global-border-radius);
+    --gls-small-border-radius: var(--global-small-border-radius);
+    --gls-medium-border-radius: var(--global-medium-border-radius);
+    --gls-large-border-radius: var(--global-large-border-radius);
+
+    /* List variables (backwards compatibility) */
+    --list-margin-top: var(--global-xsmall-space);
+    --list-padding-left: 30px;
+    --list-marker-height: calc(var(--global-line-height) * 1em);
+    --list-text-color: var(--global-color);
+    --list-muted-color: var(--global-muted-color);
+    --list-emphasis-color: var(--global-emphasis-color);
+    --list-primary-color: var(--global-primary-background);
+    --list-secondary-color: var(--global-secondary-background);
+    --list-bullet-icon-color: var(--global-color);
+    --list-divider-margin-top: var(--global-xsmall-space);
+    --list-divider-border-width: var(--global-border-width);
+    --list-divider-border: var(--global-border);
+    --list-striped-padding-vertical: var(--global-xsmall-space);
+    --list-striped-padding-horizontal: var(--global-xsmall-space);
+    --list-striped-background: var(--global-muted-background);
+    --list-inline-padding-horizontal: var(--global-xsmall-space);
+    --list-large-margin-top: var(--global-small-space);
+    --list-large-divider-margin-top: var(--global-small-space);
+    --list-large-striped-padding-vertical: var(--global-small-space);
+    --list-large-striped-padding-horizontal: var(--global-xsmall-space);
+
+    /* Navbar variables UiKit's default is 'stretch'. Changing it to center. */
+    --navbar-align-items: center;
+
+    /* Offcanvas variables */
+    --offcanvas-bar-color: var(--global-color);
+    --offcanvas-bar-link-color: var(--global-color);
+    --offcanvas-bar-link-hover-color: var(--global-link-hover-color);
+    --offcanvas-bar-title-color: var(--global-emphasis-color);
+    --offcanvas-close-color: var(--global-muted-color);
+
+    /* Nav variables */
+    --nav-default-item-hover-color: var(--global-muted-color);
+    --nav-default-item-active-color: var(--color-primary);
+
+    /* Section variables */
+    --section-padding-vertical: var(--global-medium-space);
+}
+
+@media (min-width: 960px) {
+    :root {
+        --section-padding-vertical: var(--global-xlarge-space);
+    }
+}
+
+/* Theme: Huntsman Cancer Institute */
+.gls-theme-huntsman {
+    /* Primary */
+    --color-primary-0: #d4dce7;
+    --color-primary-1: #bfcbdb;
+    --color-primary-2: #a9b9cf;
+    --color-primary-3: #94a8c3;
+    --color-primary-4: #7e96b7;
+    --color-primary-5: #6985ab;
+    --color-primary-6: #53739f;
+    --color-primary-7: #3e6293;
+    --color-primary-8: #285087;
+    --color-primary-9: #1c385f;
+    --color-primary: var(--color-primary-7);
+    --color-primary-hover: var(--color-primary-5);
+    --color-primary-active: var(--color-primary-9);
+    --color-primary-text: var(--color-primary-9);
+
+    /* Secondary */
+    --color-secondary-0: #fdeeeb;
+    --color-secondary-1: #f8cbc2;
+    --color-secondary-2: #f5b9ad;
+    --color-secondary-3: #f3a899;
+    --color-secondary-4: #f09684;
+    --color-secondary-5: #ee8570;
+    --color-secondary-6: #eb735b;
+    --color-secondary-7: #e96247;
+    --color-secondary-8: #e65032;
+    --color-secondary-9: #b84028;
+    --color-secondary: var(--color-secondary-8);
+    --color-secondary-hover: var(--color-secondary-6);
+    --color-secondary-active: var(--color-secondary-9);
+    --color-secondary-text: var(--color-secondary-9);
+
+    --card-secondary-header-background: hsl(
+        from var(--card-secondary-background) h calc(s + 20) calc(l + 23)
+    ) !important;
+    --card-secondary-light-header-background: hsl(
+        from var(--card-secondary-light-background) h calc(s + 5) calc(l - 5)
+    ) !important;
+}
+
+/* Theme: Huntsman Mental Health Institute */
+.gls-theme-hmhi {
+    /* Tertiary */
+    --color-tertiary-0: #e6eaee;
+    --color-tertiary-1: #b3bfcc;
+    --color-tertiary-2: #8094aa;
+    --color-tertiary-3: #667e99;
+    --color-tertiary-4: #4d6988;
+    --color-tertiary-5: #335377;
+    --color-tertiary-6: #1a3e66;
+    --color-tertiary-7: #002855;
+    --color-tertiary-8: #002044;
+    --color-tertiary-9: #001833;
+    --color-tertiary: var(--color-tertiary-8);
+    --color-tertiary-hover: var(--color-tertiary-6);
+    --color-tertiary-active: var(--color-tertiary-6);
+    --color-tertiary-text: var(--color-tertiary-9);
+
+    --global-tertiary-background: var(--color-tertiary);
+    --card-tertiary-header-background: var(--color-tertiary-6);
+}
+
+/* Theme: Safe UT */
+.gls-theme-safeut {
+    /* Primary */
+    --color-primary-0: #eef2f4;
+    --color-primary-1: #dce5e8;
+    --color-primary-2: #cbd8dd;
+    --color-primary-3: #b9cbd1;
+    --color-primary-4: #a8bec6;
+    --color-primary-5: #96b0ba;
+    --color-primary-6: #85a3af;
+    --color-primary-7: #7396a3;
+    --color-primary-8: #628998;
+    --color-primary-9: #507c8c;
+    --color-primary: var(--color-primary-9);
+    --color-primary-hover: hsl(from var(--color-primary) h s calc(l - 6));
+    --color-primary-active: var(--color-primary-7);
+    --color-primary-text: hsl(from var(--color-primary) h s calc(l - 5));
+
+    /* Secondary */
+    --color-secondary-0: #fdf1f0;
+    --color-secondary-1: #fbe2e1;
+    --color-secondary-2: #fad4d2;
+    --color-secondary-3: #f8c5c3;
+    --color-secondary-4: #f6b7b4;
+    --color-secondary-5: #f4a8a4;
+    --color-secondary-6: #f29a95;
+    --color-secondary-7: #f18b86;
+    --color-secondary-8: #ef7d77;
+    --color-secondary-9: #ed6e68;
+    --color-secondary: var(--color-secondary-9);
+    --color-secondary-hover: var(--color-secondary-7);
+    --color-secondary-active: hsl(from var(--color-secondary) h s calc(l - 6));
+    --color-secondary-text: hsl(from var(--color-secondary) h s calc(l - 16));
+
+    /* Tertiary */
+    --color-tertiary-0: #e9ebec;
+    --color-tertiary-1: #d3d6da;
+    --color-tertiary-2: #bdc2c7;
+    --color-tertiary-3: #a7adb5;
+    --color-tertiary-4: #9199a2;
+    --color-tertiary-5: #7b848f;
+    --color-tertiary-6: #65707d;
+    --color-tertiary-7: #4f5b6a;
+    --color-tertiary-8: #394758;
+    --color-tertiary-9: #233245;
+    --color-tertiary: var(--color-tertiary-9);
+    --color-tertiary-hover: var(--color-tertiary-7);
+    --color-tertiary-active: var(--color-tertiary-9);
+    --color-tertiary-text: var(--color-tertiary-9);
+
+    /* Theme overrides */
+    --global-tertiary-background: var(--color-tertiary-9);
+
+    --global-link-color: hsl(from var(--color-primary) h s calc(l - 5));
+    --global-link-hover-color: hsl(from var(--color-primary) h s calc(l - 7));
+
+    --button-default-color: var(--color-tertiary);
+    --button-default-hover-color: var(--color-tertiary-hover);
+    --button-default-active-color: var(--color-tertiary-active);
+}
+
+/* Custom selectors
+ ========================================================================== */
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+@custom-selector :--link a, a:focus, a:visited, a:hover, a:active;
+@custom-selector :--button button, .gls-button;
+@custom-selector :--enter :hover, :focus;
+@custom-selector :--around ::before, ::after;
+
+@custom-selector :--inverse
+.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+/* .gls-section-secondary:not(.gls-preserve-color), */
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+/* .gls-tile-secondary:not(.gls-preserve-color), */
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+/* .gls-card-secondary.gls-card-body, */
+/* .gls-card-secondary > :not([class*='gls-card-media']), */
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary;
+
+/* ========================================================================
+   UIkit SCSS Variable Configuration
+   ======================================================================== */
+
+// Breakpoints
+$breakpoint-small: 640px;
+$breakpoint-medium: 960px;
+$breakpoint-large: 1200px;
+$breakpoint-xlarge: 1600px;
+
+// Typography
+$global-font-family:
+    'Sofia Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
+$global-font-size: 16px;
+$global-xsmall-font-size: 0.75rem;
+$global-small-font-size: 0.875rem;
+$global-medium-font-size: 1.25rem;
+$global-large-font-size: 1.5rem;
+$global-xlarge-font-size: 2rem;
+$global-2xlarge-font-size: 2.625rem;
+$global-line-height: 1.5;
+
+$global-regular-font-weight: 400;
+$global-semibold-font-weight: 600;
+$global-bold-font-weight: 700;
+
+$base-h1-font-size: 2.625rem; // var(--global-2xlarge-font-size)
+$base-h2-font-size: 2rem; // var(--global-xlarge-font-size)
+$base-h3-font-size: 1.5rem; // var(--global-large-font-size)
+$base-h4-font-size: 1.25rem; // var(--global-medium-font-size)
+$base-h5-font-size: 16px; // var(--global-font-size)
+$base-h6-font-size: 0.875rem; // var(--global-small-font-size)
+
+// Colors
+$global-color: rgba(0, 0, 0, 0.8);
+$global-emphasis-color: rgba(0, 0, 0, 0.9);
+$global-muted-color: rgba(0, 0, 0, 0.6);
+$global-inverse-color: #ffffff;
+
+$global-link-color: var(--global-link-color);
+$global-link-hover-color: var(--global-link-hover-color);
+
+// Backgrounds
+$global-background: #ffffff;
+$global-muted-background: #f4f4f5;
+$global-primary-background: var(--global-primary-background);
+$global-secondary-background: var(--global-secondary-background);
+$global-tertiary-background: var(--global-tertiary-background);
+$global-info-background: var(--global-info-background);
+$global-success-background: var(--global-success-background);
+$global-warning-background: var(--global-warning-background);
+$global-danger-background: var(--global-danger-background);
+$global-gradient-background: var(--global-gradient-background);
+$global-transparent-background: transparent;
+
+// Inverse Globals
+$inverse-global-color: #ffffff;
+$inverse-global-emphasis-color: #ffffff;
+$inverse-global-muted-color: rgba(255, 255, 255, 0.9); // var(--color-trans-white-9)
+$inverse-global-muted-background: rgba(255, 255, 255, 0.1); // var(--color-trans-white-1)
+$inverse-global-primary-background: #be0000;
+$inverse-global-border: rgba(255, 255, 255, 0.2); // var(--color-trans-white-2)
+
+// Borders
+$global-border-width: 1px;
+$global-border: rgba(0, 0, 0, 0.2);
+
+$global-small-border-radius: 1px;
+$global-medium-border-radius: 10px;
+$global-large-border-radius: 15px;
+
+// Border Radii overrides specifically mapped from legacy
+$global-border-radius: 3px;
+$button-border-radius: 10px;
+$card-border-radius: 15px;
+
+// Shadows mapped from legacy Box-Shadows block
+$global-small-box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.09),
+    0 2px 2px rgba(0, 0, 0, 0.1);
+$global-medium-box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.09),
+    0 4px 4px rgba(0, 0, 0, 0.1);
+$global-large-box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.07),
+    0 2px 2px rgba(0, 0, 0, 0.08),
+    0 4px 4px rgba(0, 0, 0, 0.09),
+    0 8px 8px rgba(0, 0, 0, 0.1);
+$global-xlarge-box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.06),
+    0 2px 2px rgba(0, 0, 0, 0.07),
+    0 4px 4px rgba(0, 0, 0, 0.08),
+    0 8px 8px rgba(0, 0, 0, 0.09),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+
+// Global spacing values
+$global-2xsmall-space: 4px;
+$global-xsmall-space: 8px;
+$global-small-space: 16px;
+$global-medium-space: 32px;
+$global-large-space: 48px;
+$global-xlarge-space: 64px;
+$global-2xlarge-space: 128px;
+
+// Spacing maps to UIkit generic gutters
+$global-margin: 32px; // var(--global-medium-space)
+$global-gutter: 32px;
+$global-small-gutter: 16px;
+$global-medium-gutter: 48px; // var(--global-large-space)
+$global-large-gutter: 64px;
+
+// Margins (Mapped from legacy margin.css)
+$margin-margin: var(--global-small-space); // 16px
+$margin-small-margin: var(--global-xsmall-space); // 8px
+$margin-xsmall-margin: var(--global-2xsmall-space); // 4px
+$margin-medium-margin: var(--global-medium-space); // 32px
+$margin-large-margin: var(--global-medium-space); // 32px
+$margin-large-margin-l: var(--global-xlarge-space); // 64px
+$margin-xlarge-margin: var(--global-xlarge-space); // 64px
+$margin-xlarge-margin-l: var(--global-2xlarge-space); // 128px
+
+// Paddings (Mapped from legacy padding.css)
+$padding-padding: var(--global-medium-space); // 32px
+$padding-small-padding: var(--global-small-space); // 16px
+$padding-large-padding: var(--global-medium-space); // 32px
+$padding-large-padding-l: var(--global-xlarge-space); // 64px
+
+// Controls
+$global-control-height: 52px;
+$global-control-small-height: 38px;
+$global-control-large-height: 68px;
+
+// Sizing
+$global-small-size: 150px;
+$global-medium-size: 300px;
+$global-large-size: 450px;
+$global-xlarge-size: 600px;
+$global-2xlarge-size: 750px;
+
+// Z-index
+$global-z-index: 1000;
+
+// Override internal gradient to bypass Sass compile color.adjust crash on CSS variables
+$internal-text-background-color-gradient: linear-gradient(
+    90deg,
+    var(--global-primary-background) 0%,
+    hsl(from var(--global-primary-background) calc(h + 40) s l) 100%
+);
+
+@import 'variables/button';
+@import 'variables/card';
+@import 'variables/nav';
+@import 'variables/navbar';
+@import 'variables/arrow';
+@import 'variables/border';
+@import 'variables/line';
+@import 'variables/player';
+@import 'variables/rating';
+@import 'variables/social';
+@import 'variables/z-index';
+@import 'variables/text';
+
+@import 'variables/slidenav';
+@import 'variables/dotnav';
+@import 'variables/thumbnav';
+@import 'variables/iconnav';
+@import 'variables/breadcrumb';
+@import 'variables/pagination';
+@import 'variables/subnav';
+
+@import 'variables/accordion';
+@import 'variables/alert';
+@import 'variables/align';
+@import 'variables/animation';
+@import 'variables/article';
+@import 'variables/aspect-ratio';
+@import 'variables/autocomplete';
+@import 'variables/background';
+@import 'variables/badge';
+@import 'variables/base';
+@import 'variables/close';
+@import 'variables/column';
+@import 'variables/comment';
+@import 'variables/container';
+@import 'variables/countdown';
+@import 'variables/cover';
+@import 'variables/description-list';
+@import 'variables/divider';
+@import 'variables/drop';
+@import 'variables/dropdown';
+@import 'variables/form-range';
+@import 'variables/form';
+@import 'variables/grid';
+@import 'variables/heading';
+@import 'variables/icon';
+@import 'variables/inverse';
+@import 'variables/label';
+@import 'variables/leader';
+@import 'variables/lightbox';
+@import 'variables/link';
+@import 'variables/marker';
+@import 'variables/modal';
+@import 'variables/notification';
+@import 'variables/offcanvas';
+@import 'variables/overlay';
+@import 'variables/placeholder';
+@import 'variables/position';
+@import 'variables/progress';
+@import 'variables/search';
+@import 'variables/section';
+@import 'variables/slider';
+@import 'variables/sortable';
+@import 'variables/spinner';
+@import 'variables/stepper';
+@import 'variables/sticky';
+@import 'variables/tab';
+@import 'variables/table';
+@import 'variables/tile';
+@import 'variables/tooltip';
+@import 'variables/totop';
+@import 'variables/transition';
+@import 'variables/utility';

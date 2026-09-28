@@ -1,0 +1,22 @@
+// ========================================================================
+// Component Variables: Offcanvas
+// ========================================================================
+
+$offcanvas-z-index: $global-z-index !default;
+$offcanvas-bar-width: $global-medium-size !default;
+$offcanvas-bar-padding-vertical: $global-small-space !default;
+$offcanvas-bar-padding-horizontal: $global-small-space !default;
+$offcanvas-bar-background: $global-muted-background !default;
+$offcanvas-bar-color: var(--offcanvas-bar-color, var(--global-color)) !default;
+
+$offcanvas-bar-link-color: var(--offcanvas-bar-link-color, var(--global-color)) !default;
+$offcanvas-bar-link-hover-color: var(
+    --offcanvas-bar-link-hover-color,
+    var(--global-link-hover-color)
+) !default;
+$offcanvas-bar-title-color: var(--offcanvas-bar-title-color, var(--global-emphasis-color)) !default;
+$offcanvas-close-color: var(--offcanvas-close-color, var(--global-muted-color)) !default;
+
+$offcanvas-close-position: 5px !default;
+$offcanvas-close-padding: 5px !default;
+$offcanvas-overlay-background: var(--color-trans-black-5) !default;

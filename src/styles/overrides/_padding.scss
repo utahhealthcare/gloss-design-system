@@ -1,0 +1,66 @@
+// ========================================================================
+// Overrides: Padding
+// ========================================================================
+
+@mixin hook-padding-misc() {
+    $padding-xsmall-padding: var(--global-xsmall-space, 8px) !default;
+
+    // Directional Default Padding (UIkit doesn't have these natively)
+    .uk-padding-top {
+        padding-top: $padding-padding !important;
+    }
+    .uk-padding-bottom {
+        padding-bottom: $padding-padding !important;
+    }
+    .uk-padding-left {
+        padding-left: $padding-padding !important;
+    }
+    .uk-padding-right {
+        padding-right: $padding-padding !important;
+    }
+
+    // Custom XSmall Padding (UIkit doesn't have xsmall padding at all)
+    .uk-padding-xsmall {
+        padding: $padding-xsmall-padding;
+    }
+    .uk-padding-xsmall-top {
+        padding-top: $padding-xsmall-padding !important;
+    }
+    .uk-padding-xsmall-bottom {
+        padding-bottom: $padding-xsmall-padding !important;
+    }
+    .uk-padding-xsmall-left {
+        padding-left: $padding-xsmall-padding !important;
+    }
+    .uk-padding-xsmall-right {
+        padding-right: $padding-xsmall-padding !important;
+    }
+
+    // Directional Small Padding
+    .uk-padding-small-top {
+        padding-top: $padding-small-padding !important;
+    }
+    .uk-padding-small-bottom {
+        padding-bottom: $padding-small-padding !important;
+    }
+    .uk-padding-small-left {
+        padding-left: $padding-small-padding !important;
+    }
+    .uk-padding-small-right {
+        padding-right: $padding-small-padding !important;
+    }
+
+    // Directional Large Padding
+    .uk-padding-large-top {
+        padding-top: $padding-large-padding !important;
+    }
+    .uk-padding-large-bottom {
+        padding-bottom: $padding-large-padding !important;
+    }
+    .uk-padding-large-left {
+        padding-left: $padding-large-padding !important;
+    }
+    .uk-padding-large-right {
+        padding-right: $padding-large-padding !important;
+    }
+}

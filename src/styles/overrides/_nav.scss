@@ -1,0 +1,258 @@
+/**
+ * Name:            Nav
+ * Description:     Defines styles for list navigations
+ *
+ * Component:       `gls-nav`
+ *
+ * Sub-objects:     `gls-nav-header`
+ *                  `gls-nav-divider`
+ *                  `gls-nav-subtitle`
+ *                  `gls-nav-sub`
+ *
+ * Modifiers:       `gls-nav-parent-icon`
+ *                  `gls-nav-default`
+ *                  `gls-nav-primary`
+ *                  `gls-nav-center`
+ *
+ * States:          `gls-active`
+ *                  `gls-parent`
+ *                  `gls-open`
+ *                  `gls-touch`
+ *
+ * ======================================================================== */
+
+// ========================================================================
+// Overrides: Nav
+// ========================================================================
+
+@mixin hook-nav-misc() {
+    /*
+  * Level 2 sub nav overrides
+  */
+    ul.uk-nav-sub {
+        padding: var(--nav-sublist-padding-vertical, 8px) 0 var(--nav-sublist-padding-vertical, 8px)
+            var(--nav-sublist-padding-left, 16px);
+    }
+
+    /*
+  * Level 3 and deeper
+  */
+    .uk-nav-sub ul {
+        padding-left: var(--nav-sublist-deeper-padding-left, 16px);
+    }
+    .uk-nav-sub a {
+        padding: var(--nav-sublist-item-padding-vertical, 4px) 0;
+    }
+
+    /*
+  * Neutralize standard UIkit secondary nav styles to match legacy plain nav behavior
+  */
+    .uk-nav-secondary {
+        line-height: $global-line-height;
+
+        > li > a {
+            color: var(--base-link-color, var(--global-link-color));
+            padding: $nav-item-padding-vertical $nav-item-padding-horizontal;
+            background: none;
+
+            &:hover,
+            &:focus {
+                color: var(--base-link-hover-color);
+                background-color: transparent;
+
+                .uk-nav-subtitle {
+                    color: var(--base-link-hover-color);
+                }
+            }
+        }
+
+        > li.uk-active > a {
+            color: var(--base-link-color, var(--global-link-color));
+            background-color: transparent;
+
+            &:hover,
+            &:focus {
+                color: var(--base-link-hover-color);
+
+                .uk-nav-subtitle {
+                    color: var(--base-link-hover-color);
+                }
+            }
+
+            .uk-nav-subtitle {
+                color: var(--base-link-color, var(--global-link-color));
+            }
+        }
+
+        // Clear subtitle overrides if present
+        .uk-nav-subtitle {
+            font-size: $global-font-size;
+            color: var(--base-link-color, var(--global-link-color));
+        }
+    }
+
+    /*
+   * Custom Nav Parent Icon Fallback (backwards compatibility for non-JS / Drupal list structures)
+   */
+    .uk-nav-parent-icon > .uk-parent > a {
+        display: flex;
+        align-items: center;
+    }
+
+    .uk-nav-parent-icon > .uk-parent > a::after {
+        content: '';
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: auto;
+        background-image: svg-load(
+            '../images/backgrounds/nav-parent-close.svg',
+            stroke=#666666,
+            fill=none
+        );
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .uk-nav-parent-icon > .uk-parent.uk-open > a::after {
+        background-image: svg-load(
+            '../images/backgrounds/nav-parent-open.svg',
+            stroke=#666666,
+            fill=none
+        );
+    }
+
+    /*
+   * Neutralize UIkit's dark-theme inverse styles inside the offcanvas-bar to allow light offcanvas drawer layouts
+   */
+    body .uk-offcanvas-bar {
+        color: var(--offcanvas-bar-color, var(--global-color));
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        & h1,
+        & h2,
+        & h3,
+        & h4,
+        & h5,
+        & h6 {
+            color: var(--offcanvas-bar-title-color, var(--global-emphasis-color));
+        }
+
+        a,
+        & a {
+            color: var(--offcanvas-bar-link-color, var(--global-color));
+
+            &:hover,
+            &:focus {
+                color: var(--offcanvas-bar-link-hover-color, var(--global-link-hover-color));
+            }
+        }
+
+        .uk-nav-default {
+            & > li.uk-active > a {
+                color: var(--nav-default-item-active-color);
+            }
+
+            /*
+      * Legacy Submenu Item Borders
+      */
+            .uk-nav-sub > li {
+                margin-left: calc(var(--nav-sublist-padding-left, 16px) * -1);
+                padding-left: var(--nav-sublist-padding-left, 16px);
+                border-left: var(--nav-default-sublist-border-width, var(--global-border-width))
+                    solid var(--nav-default-sublist-border, var(--global-border));
+            }
+        }
+
+        & :is(.uk-nav-default, .uk-nav-primary, .uk-nav-secondary) {
+            .uk-nav-sub li.uk-active > a {
+                color: var(--nav-default-item-active-color);
+            }
+        }
+
+        // & .uk-nav-default .uk-nav-sub li.uk-active > a,
+        // & .uk-nav-primary .uk-nav-sub li.uk-active > a,
+        // & .uk-nav-secondary .uk-nav-sub li.uk-active > a {
+        //   color: var(--nav-default-item-active-color);
+        // }
+
+        // Highly specific nesting (prepended with body) to block UIkit's inverse styling without requiring !important
+        // & .uk-nav-default > li > a,
+        // & .uk-nav-primary > li > a,
+        // & .uk-navbar-dropdown-nav > li > a,
+        // & .uk-nav > li > a,
+        // & .uk-nav-default li a,
+        // & .uk-nav-primary li a,
+        // & .uk-navbar-dropdown-nav li a,
+        // & .uk-nav li a,
+        // & .uk-nav-sub a,
+        // & .uk-nav-sub li a,
+        // & .uk-nav-default .uk-nav-sub a,
+        // & .uk-nav-primary .uk-nav-sub a,
+        // & .uk-nav-secondary .uk-nav-sub a,
+        // & .uk-nav-default .uk-nav-sub li a,
+        // & .uk-nav-primary .uk-nav-sub li a,
+        // & .uk-nav-secondary .uk-nav-sub li a {
+        &
+            :is(
+                .uk-nav,
+                .uk-nav-default,
+                .uk-nav-primary,
+                .uk-nav-secondary,
+                .uk-navbar-dropdown-nav,
+                .uk-nav-sub
+            ) {
+            & , // Intentional
+      .uk-nav-sub {
+                li a {
+                    color: var(--offcanvas-bar-link-color, var(--global-color));
+
+                    &:hover,
+                    &:focus {
+                        color: var(
+                            --offcanvas-bar-link-hover-color,
+                            var(--global-link-hover-color)
+                        );
+                    }
+                }
+            }
+        }
+
+        & .uk-nav-header {
+            color: var(--offcanvas-bar-title-color, var(--global-emphasis-color));
+        }
+
+        // Force parent toggle icons to render in visible dark-gray instead of inverse white
+        & .uk-nav-parent-icon > .uk-parent > a::after {
+            background-image: svg-load(
+                '../images/backgrounds/nav-parent-close.svg',
+                stroke=#666666,
+                fill=none
+            );
+        }
+        & .uk-nav-parent-icon > .uk-parent.uk-open > a::after {
+            background-image: svg-load(
+                '../images/backgrounds/nav-parent-open.svg',
+                stroke=#666666,
+                fill=none
+            );
+        }
+
+        // Neutralize offcanvas close button
+        .uk-close,
+        .uk-offcanvas-close,
+        & .uk-close,
+        & .uk-offcanvas-close {
+            color: var(--offcanvas-close-color, var(--global-muted-color));
+
+            &:hover,
+            &:focus {
+                color: var(--global-color);
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+// ========================================================================
+// Component Variables: Inverse
+// ========================================================================
+
+$inverse-global-color: var(--color-white) !default;
+$inverse-global-emphasis-color: var(--color-white) !default;
+$inverse-global-muted-color: var(--color-trans-white-9) !default;
+$inverse-global-inverse-color: $global-color !default;
+$inverse-global-primary-background: $global-inverse-color !default;
+$inverse-global-secondary-background: $global-inverse-color !default;
+$inverse-global-tertiary-background: $global-inverse-color !default;
+$inverse-global-muted-background: var(--color-trans-white-1) !default;
+$inverse-global-gradient-background: linear-gradient(
+    180deg,
+    var(--color-gray-8) 0,
+    var(--color-gray-9) 100%
+) !default;
+$inverse-global-border: var(--color-trans-white-2) !default;
+
+// Default Button Inverse Overrides (WCAG contrast on dark backgrounds)
+$inverse-button-default-background: var(--color-trans-white-1) !default;
+$inverse-button-default-color: $inverse-global-emphasis-color !default;
+$inverse-button-default-border: var(--color-trans-white-4) !default;
+$inverse-button-default-hover-background: var(--color-trans-white-2) !default;
+$inverse-button-default-hover-color: $inverse-global-emphasis-color !default;
+$inverse-button-default-hover-border: var(--color-trans-white-7) !default;
+$inverse-button-default-active-background: var(--color-trans-white-3) !default;
+$inverse-button-default-active-color: $inverse-global-emphasis-color !default;
+$inverse-button-default-active-border: var(--color-trans-white-8) !default;
+
+// Primary Button Inverse Overrides (WCAG contrast on dark backgrounds)
+$inverse-button-primary-background: $global-inverse-color !default;
+$inverse-button-primary-color: var(--color-primary) !default;
+$inverse-button-primary-border: var(--button-border-width) solid var(--color-trans-black-4) !default;
+$inverse-button-primary-hover-background: var(--color-trans-white-9) !default;
+$inverse-button-primary-hover-color: var(--color-primary) !default;
+$inverse-button-primary-hover-border: var(--button-border-width) solid var(--color-trans-black-7) !default;
+$inverse-button-primary-active-background: var(--color-trans-white-8) !default;
+$inverse-button-primary-active-color: var(--color-primary-active) !default;
+$inverse-button-primary-active-border: var(--button-border-width) solid var(--color-trans-black-8) !default;

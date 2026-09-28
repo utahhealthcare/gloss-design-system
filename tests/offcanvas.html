@@ -1,0 +1,1154 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Off-canvas - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Off-canvas</h1>
+
+            <div class="gls-grid-small gls-child-width-auto gls-flex-between" gls-grid>
+                <div gls-margin>
+                    <a class="gls-button gls-button-default" href="#offcanvas-slide" gls-toggle
+                        >Slide</a
+                    >
+                    <a class="gls-button gls-button-default" href="#offcanvas-reveal" gls-toggle
+                        >Reveal</a
+                    >
+                    <a class="gls-button gls-button-default" href="#offcanvas-push" gls-toggle
+                        >Push</a
+                    >
+                    <a class="gls-button gls-button-default" href="#offcanvas-none" gls-toggle
+                        >None</a
+                    >
+                </div>
+                <div gls-margin>
+                    <a class="gls-button gls-button-default" href="#offcanvas-flip-slide" gls-toggle
+                        >Slide</a
+                    >
+                    <a
+                        class="gls-button gls-button-default"
+                        href="#offcanvas-flip-reveal"
+                        gls-toggle
+                        >Reveal</a
+                    >
+                    <a class="gls-button gls-button-default" href="#offcanvas-flip-push" gls-toggle
+                        >Push</a
+                    >
+                    <a class="gls-button gls-button-default" href="#offcanvas-flip-none" gls-toggle
+                        >None</a
+                    >
+                </div>
+            </div>
+
+            <h2>Overlay</h2>
+
+            <div class="gls-grid-small gls-child-width-auto gls-flex-between" gls-grid>
+                <div gls-margin>
+                    <a
+                        class="gls-button gls-button-default"
+                        href="#offcanvas-overlay-slide"
+                        gls-toggle
+                        >Slide</a
+                    >
+                    <a
+                        class="gls-button gls-button-default"
+                        href="#offcanvas-overlay-reveal"
+                        gls-toggle
+                        >Reveal</a
+                    >
+                    <a
+                        class="gls-button gls-button-default"
+                        href="#offcanvas-overlay-push"
+                        gls-toggle
+                        >Push</a
+                    >
+                    <a
+                        class="gls-button gls-button-default"
+                        href="#offcanvas-overlay-none"
+                        gls-toggle
+                        >None</a
+                    >
+                </div>
+                <div gls-margin>
+                    <a
+                        class="gls-button gls-button-default"
+                        href="#offcanvas-overlay-flip-slide"
+                        gls-toggle
+                        >Slide</a
+                    >
+                    <a
+                        class="gls-button gls-button-default"
+                        href="#offcanvas-overlay-flip-reveal"
+                        gls-toggle
+                        >Reveal</a
+                    >
+                    <a
+                        class="gls-button gls-button-default"
+                        href="#offcanvas-overlay-flip-push"
+                        gls-toggle
+                        >Push</a
+                    >
+                    <a
+                        class="gls-button gls-button-default"
+                        href="#offcanvas-overlay-flip-none"
+                        gls-toggle
+                        >None</a
+                    >
+                </div>
+            </div>
+
+            <h2>More</h2>
+
+            <p gls-margin>
+                <button
+                    class="gls-button gls-button-default"
+                    type="button"
+                    gls-toggle="target: #scrollbar"
+                >
+                    Toggle scrollbar
+                </button>
+                <button
+                    class="gls-button gls-button-primary"
+                    type="button"
+                    gls-toggle="target: #offcanvas-slide"
+                >
+                    Button Test
+                </button>
+                <a id="js-toggle" class="gls-button gls-button-tertiary">Via Code</a>
+            </p>
+
+            <div id="scrollbar">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <h2 id="js-options">JavaScript Options</h2>
+
+            <div class="gls-overflow-auto">
+                <table class="gls-table gls-table-striped">
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Value</th>
+                            <th>Default</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>mode</code></td>
+                            <td>slide|reveal|push|none</td>
+                            <td>slide</td>
+                            <td>Offcanvas open mode.</td>
+                        </tr>
+                        <tr>
+                            <td><code>flip</code></td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                            <td>Flip Offcanvas to right side.</td>
+                        </tr>
+                        <tr>
+                            <td><code>overlay</code></td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                            <td>Show Offcanvas together with an overlay.</td>
+                        </tr>
+                        <tr>
+                            <td><code>container</code></td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                            <td>
+                                Define a target container via a selector to specify where the
+                                Offcanvas should be appended in the DOM.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>esc-close</code></td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                            <td>Close the Offcanvas when <em>Esc</em> key is pressed.</td>
+                        </tr>
+                        <tr>
+                            <td><code>bg-close</code></td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                            <td>Close the Offcanvas when background is clicked.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="offcanvas-slide" gls-offcanvas>
+                <div class="gls-offcanvas-bar gls-flex gls-flex-column gls-text-center">
+                    <button
+                        class="gls-offcanvas-close gls-close-large"
+                        type="button"
+                        gls-close
+                        gls-toggle="cls: gls-close-large; mode: media; media: @s"
+                    ></button>
+
+                    <ul
+                        class="gls-nav gls-nav-primary gls-nav-center gls-margin-auto-vertical"
+                        gls-nav
+                    >
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li>
+                                    <a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#js-options">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <div class="gls-grid-small gls-child-width-auto gls-flex-inline" gls-grid>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: facebook"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: twitter"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: mail"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: receiver"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="offcanvas-reveal" gls-offcanvas="mode: reveal">
+                <div class="gls-offcanvas-bar gls-flex gls-flex-column gls-text-center">
+                    <button
+                        class="gls-offcanvas-close gls-close-large"
+                        type="button"
+                        gls-close
+                        gls-toggle="cls: gls-close-large; mode: media; media: @s"
+                    ></button>
+
+                    <ul
+                        class="gls-nav gls-nav-primary gls-nav-center gls-margin-auto-vertical"
+                        gls-nav
+                    >
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li>
+                                    <a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#js-options">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <div class="gls-grid-small gls-child-width-auto gls-flex-inline" gls-grid>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: facebook"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: twitter"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: mail"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: receiver"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="offcanvas-push" gls-offcanvas="mode: push">
+                <div class="gls-offcanvas-bar gls-flex gls-flex-column gls-text-center">
+                    <button
+                        class="gls-offcanvas-close gls-close-large"
+                        type="button"
+                        gls-close
+                        gls-toggle="cls: gls-close-large; mode: media; media: @s"
+                    ></button>
+
+                    <ul
+                        class="gls-nav gls-nav-primary gls-nav-center gls-margin-auto-vertical"
+                        gls-nav
+                    >
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li>
+                                    <a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#js-options">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <div class="gls-grid-small gls-child-width-auto gls-flex-inline" gls-grid>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: facebook"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: twitter"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: mail"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: receiver"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="offcanvas-none" gls-offcanvas="mode: none">
+                <div class="gls-offcanvas-bar gls-flex gls-flex-column gls-text-center">
+                    <button
+                        class="gls-offcanvas-close gls-close-large"
+                        type="button"
+                        gls-close
+                        gls-toggle="cls: gls-close-large; mode: media; media: @s"
+                    ></button>
+
+                    <ul
+                        class="gls-nav gls-nav-primary gls-nav-center gls-margin-auto-vertical"
+                        gls-nav
+                    >
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li>
+                                    <a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#js-options">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <div class="gls-grid-small gls-child-width-auto gls-flex-inline" gls-grid>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: facebook"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: twitter"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: mail"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: receiver"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="offcanvas-flip-slide" gls-offcanvas="flip: true">
+                <div class="gls-offcanvas-bar gls-flex gls-flex-column gls-text-center">
+                    <button
+                        class="gls-offcanvas-close gls-close-large"
+                        type="button"
+                        gls-close
+                        gls-toggle="cls: gls-close-large; mode: media; media: @s"
+                    ></button>
+
+                    <ul
+                        class="gls-nav gls-nav-primary gls-nav-center gls-margin-auto-vertical"
+                        gls-nav
+                    >
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li>
+                                    <a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#js-options">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <div class="gls-grid-small gls-child-width-auto gls-flex-inline" gls-grid>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: facebook"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: twitter"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: mail"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: receiver"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="offcanvas-flip-reveal" gls-offcanvas="mode: reveal; flip: true">
+                <div class="gls-offcanvas-bar gls-flex gls-flex-column gls-text-center">
+                    <button
+                        class="gls-offcanvas-close gls-close-large"
+                        type="button"
+                        gls-close
+                        gls-toggle="cls: gls-close-large; mode: media; media: @s"
+                    ></button>
+
+                    <ul
+                        class="gls-nav gls-nav-primary gls-nav-center gls-margin-auto-vertical"
+                        gls-nav
+                    >
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li>
+                                    <a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#js-options">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <div class="gls-grid-small gls-child-width-auto gls-flex-inline" gls-grid>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: facebook"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: twitter"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: mail"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: receiver"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="offcanvas-flip-push" gls-offcanvas="mode: push; flip: true">
+                <div class="gls-offcanvas-bar gls-flex gls-flex-column gls-text-center">
+                    <button
+                        class="gls-offcanvas-close gls-close-large"
+                        type="button"
+                        gls-close
+                        gls-toggle="cls: gls-close-large; mode: media; media: @s"
+                    ></button>
+
+                    <ul
+                        class="gls-nav gls-nav-primary gls-nav-center gls-margin-auto-vertical"
+                        gls-nav
+                    >
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li>
+                                    <a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#js-options">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <div class="gls-grid-small gls-child-width-auto gls-flex-inline" gls-grid>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: facebook"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: twitter"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: mail"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: receiver"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="offcanvas-flip-none" gls-offcanvas="mode: none; flip: true">
+                <div class="gls-offcanvas-bar gls-flex gls-flex-column gls-text-center">
+                    <button
+                        class="gls-offcanvas-close gls-close-large"
+                        type="button"
+                        gls-close
+                        gls-toggle="cls: gls-close-large; mode: media; media: @s"
+                    ></button>
+
+                    <ul
+                        class="gls-nav gls-nav-primary gls-nav-center gls-margin-auto-vertical"
+                        gls-nav
+                    >
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                                <li>
+                                    <a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#js-options">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <div>
+                        <div class="gls-grid-small gls-child-width-auto gls-flex-inline" gls-grid>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: facebook"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: twitter"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: mail"></a>
+                            </div>
+                            <div>
+                                <a class="gls-icon-button" href="#" gls-icon="icon: receiver"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="offcanvas-overlay-slide" gls-offcanvas="overlay: true">
+                <div class="gls-offcanvas-bar">
+                    <button class="gls-offcanvas-close" type="button" gls-close></button>
+
+                    <ul class="gls-nav gls-nav-default">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="gls-nav-header">Header</li>
+                        <li>
+                            <a href="#js-options"
+                                ><span class="gls-margin-small-right" gls-icon="icon: table"></span>
+                                Item</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span
+                                    class="gls-margin-small-right"
+                                    gls-icon="icon: thumbnails"
+                                ></span>
+                                Item</a
+                            >
+                        </li>
+                        <li class="gls-nav-divider"></li>
+                        <li>
+                            <a href="#"
+                                ><span class="gls-margin-small-right" gls-icon="icon: trash"></span>
+                                Item</a
+                            >
+                        </li>
+                    </ul>
+
+                    <h3>Title</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div id="offcanvas-overlay-reveal" gls-offcanvas="mode: reveal; overlay: true">
+                <div class="gls-offcanvas-bar">
+                    <button class="gls-offcanvas-close" type="button" gls-close></button>
+
+                    <ul class="gls-nav gls-nav-default">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="gls-nav-header">Header</li>
+                        <li>
+                            <a href="#js-options"
+                                ><span class="gls-margin-small-right" gls-icon="icon: table"></span>
+                                Item</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span
+                                    class="gls-margin-small-right"
+                                    gls-icon="icon: thumbnails"
+                                ></span>
+                                Item</a
+                            >
+                        </li>
+                        <li class="gls-nav-divider"></li>
+                        <li>
+                            <a href="#"
+                                ><span class="gls-margin-small-right" gls-icon="icon: trash"></span>
+                                Item</a
+                            >
+                        </li>
+                    </ul>
+
+                    <h3>Title</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div id="offcanvas-overlay-push" gls-offcanvas="mode: push; overlay: true">
+                <div class="gls-offcanvas-bar">
+                    <button class="gls-offcanvas-close" type="button" gls-close></button>
+
+                    <ul class="gls-nav gls-nav-default">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="gls-nav-header">Header</li>
+                        <li>
+                            <a href="#js-options"
+                                ><span class="gls-margin-small-right" gls-icon="icon: table"></span>
+                                Item</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span
+                                    class="gls-margin-small-right"
+                                    gls-icon="icon: thumbnails"
+                                ></span>
+                                Item</a
+                            >
+                        </li>
+                        <li class="gls-nav-divider"></li>
+                        <li>
+                            <a href="#"
+                                ><span class="gls-margin-small-right" gls-icon="icon: trash"></span>
+                                Item</a
+                            >
+                        </li>
+                    </ul>
+
+                    <h3>Title</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div id="offcanvas-overlay-none" gls-offcanvas="mode: none; overlay: true">
+                <div class="gls-offcanvas-bar">
+                    <button class="gls-offcanvas-close" type="button" gls-close></button>
+
+                    <ul class="gls-nav gls-nav-default">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="gls-nav-header">Header</li>
+                        <li>
+                            <a href="#js-options"
+                                ><span class="gls-margin-small-right" gls-icon="icon: table"></span>
+                                Item</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span
+                                    class="gls-margin-small-right"
+                                    gls-icon="icon: thumbnails"
+                                ></span>
+                                Item</a
+                            >
+                        </li>
+                        <li class="gls-nav-divider"></li>
+                        <li>
+                            <a href="#"
+                                ><span class="gls-margin-small-right" gls-icon="icon: trash"></span>
+                                Item</a
+                            >
+                        </li>
+                    </ul>
+
+                    <h3>Title</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div id="offcanvas-overlay-flip-slide" gls-offcanvas="flip: true; overlay: true">
+                <div class="gls-offcanvas-bar">
+                    <button class="gls-offcanvas-close" type="button" gls-close></button>
+
+                    <ul class="gls-nav gls-nav-default">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="gls-nav-header">Header</li>
+                        <li>
+                            <a href="#js-options"
+                                ><span class="gls-margin-small-right" gls-icon="icon: table"></span>
+                                Item</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span
+                                    class="gls-margin-small-right"
+                                    gls-icon="icon: thumbnails"
+                                ></span>
+                                Item</a
+                            >
+                        </li>
+                        <li class="gls-nav-divider"></li>
+                        <li>
+                            <a href="#"
+                                ><span class="gls-margin-small-right" gls-icon="icon: trash"></span>
+                                Item</a
+                            >
+                        </li>
+                    </ul>
+
+                    <h3>Title</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                id="offcanvas-overlay-flip-reveal"
+                gls-offcanvas="mode: reveal; flip: true; overlay: true"
+            >
+                <div class="gls-offcanvas-bar">
+                    <button class="gls-offcanvas-close" type="button" gls-close></button>
+
+                    <ul class="gls-nav gls-nav-default">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="gls-nav-header">Header</li>
+                        <li>
+                            <a href="#js-options"
+                                ><span class="gls-margin-small-right" gls-icon="icon: table"></span>
+                                Item</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span
+                                    class="gls-margin-small-right"
+                                    gls-icon="icon: thumbnails"
+                                ></span>
+                                Item</a
+                            >
+                        </li>
+                        <li class="gls-nav-divider"></li>
+                        <li>
+                            <a href="#"
+                                ><span class="gls-margin-small-right" gls-icon="icon: trash"></span>
+                                Item</a
+                            >
+                        </li>
+                    </ul>
+
+                    <h3>Title</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                id="offcanvas-overlay-flip-push"
+                gls-offcanvas="mode: push; flip: true; overlay: true"
+            >
+                <div class="gls-offcanvas-bar">
+                    <button class="gls-offcanvas-close" type="button" gls-close></button>
+
+                    <ul class="gls-nav gls-nav-default">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="gls-nav-header">Header</li>
+                        <li>
+                            <a href="#js-options"
+                                ><span class="gls-margin-small-right" gls-icon="icon: table"></span>
+                                Item</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span
+                                    class="gls-margin-small-right"
+                                    gls-icon="icon: thumbnails"
+                                ></span>
+                                Item</a
+                            >
+                        </li>
+                        <li class="gls-nav-divider"></li>
+                        <li>
+                            <a href="#"
+                                ><span class="gls-margin-small-right" gls-icon="icon: trash"></span>
+                                Item</a
+                            >
+                        </li>
+                    </ul>
+
+                    <h3>Title</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                id="offcanvas-overlay-flip-none"
+                gls-offcanvas="mode: none; flip: true; overlay: true"
+            >
+                <div class="gls-offcanvas-bar">
+                    <button class="gls-offcanvas-close" type="button" gls-close></button>
+
+                    <ul class="gls-nav gls-nav-default">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="gls-nav-header">Header</li>
+                        <li>
+                            <a href="#js-options"
+                                ><span class="gls-margin-small-right" gls-icon="icon: table"></span>
+                                Item</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span
+                                    class="gls-margin-small-right"
+                                    gls-icon="icon: thumbnails"
+                                ></span>
+                                Item</a
+                            >
+                        </li>
+                        <li class="gls-nav-divider"></li>
+                        <li>
+                            <a href="#"
+                                ><span class="gls-margin-small-right" gls-icon="icon: trash"></span>
+                                Item</a
+                            >
+                        </li>
+                    </ul>
+
+                    <h3>Title</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div id="js-offcanvas-toggle" class="gls-offcanvas">
+                <div class="gls-offcanvas-bar">
+                    <button class="gls-offcanvas-close" type="button" gls-close></button>
+
+                    <ul class="gls-nav gls-nav-default">
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li class="gls-parent">
+                            <a href="#">Parent</a>
+                            <ul class="gls-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="gls-nav-header">Header</li>
+                        <li>
+                            <a href="#js-options"
+                                ><span class="gls-margin-small-right" gls-icon="icon: table"></span>
+                                Item</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span
+                                    class="gls-margin-small-right"
+                                    gls-icon="icon: thumbnails"
+                                ></span>
+                                Item</a
+                            >
+                        </li>
+                        <li class="gls-nav-divider"></li>
+                        <li>
+                            <a href="#"
+                                ><span class="gls-margin-small-right" gls-icon="icon: trash"></span>
+                                Item</a
+                            >
+                        </li>
+                    </ul>
+
+                    <h3>Title</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            Gloss.util.on('#js-toggle', 'click', (e) => {
+                e.preventDefault();
+                Gloss.offcanvas('#js-offcanvas-toggle').toggle();
+            });
+        </script>
+    </body>
+</html>

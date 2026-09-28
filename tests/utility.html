@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Utility - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Utility</h1>
+
+            <div class="gls-child-width-1-2@m" gls-grid>
+                <div>
+                    <div class="gls-panel">
+                        <h2>Panel</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Panel Scrollable</h2>
+
+                    <div class="gls-panel gls-panel-scrollable">
+                        <ul class="gls-list">
+                            <li>
+                                <label
+                                    ><input class="gls-checkbox" type="checkbox" /> Category
+                                    1</label
+                                >
+                            </li>
+                            <li>
+                                <label
+                                    ><input class="gls-checkbox" type="checkbox" /> Category
+                                    2</label
+                                >
+                                <ul>
+                                    <li>
+                                        <label
+                                            ><input class="gls-checkbox" type="checkbox" /> Category
+                                            2.1</label
+                                        >
+                                    </li>
+                                    <li>
+                                        <label
+                                            ><input class="gls-checkbox" type="checkbox" /> Category
+                                            2.2</label
+                                        >
+                                    </li>
+                                    <li>
+                                        <label
+                                            ><input class="gls-checkbox" type="checkbox" /> Category
+                                            2.3</label
+                                        >
+                                        <ul>
+                                            <li>
+                                                <label
+                                                    ><input class="gls-checkbox" type="checkbox" />
+                                                    Category 2.3.1</label
+                                                >
+                                            </li>
+                                            <li>
+                                                <label
+                                                    ><input class="gls-checkbox" type="checkbox" />
+                                                    Category 2.3.2</label
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <label
+                                            ><input class="gls-checkbox" type="checkbox" /> Category
+                                            2.4</label
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label
+                                    ><input class="gls-checkbox" type="checkbox" /> Category
+                                    3</label
+                                >
+                            </li>
+                            <li>
+                                <label
+                                    ><input class="gls-checkbox" type="checkbox" /> Category
+                                    4</label
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2>Overflow Auto</h2>
+
+                    <div class="gls-overflow-auto">
+                        <table class="gls-table gls-table-striped gls-table-small gls-text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Table Heading</th>
+                                    <th>Table Heading</th>
+                                    <th>Table Heading</th>
+                                    <th>Table Heading</th>
+                                    <th>Table Heading</th>
+                                    <th>Table Heading</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <td>Table Footer</td>
+                                    <td>Table Footer</td>
+                                    <td>Table Footer</td>
+                                    <td>Table Footer</td>
+                                    <td>Table Footer</td>
+                                    <td>Table Footer</td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <h2>Pre scrollable</h2>
+
+                    <pre
+                        class="gls-overflow-auto gls-height-medium gls-resize"
+                    ><code>&lt;div gls-grid&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;&lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;&lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div gls-grid&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div gls-grid&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div gls-grid&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div gls-grid&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div gls-grid&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div gls-grid&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div gls-grid&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+    &lt;div class="gls-width-1-2"&gt;…&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+            <h2>Overflow Auto JS</h2>
+
+            <div class="gls-child-width-1-2@m" gls-grid>
+                <div>
+                    <div class="gls-height-medium">
+                        <div class="js-wrapper">
+                            <p>Some content before the overflow auto container.</p>
+
+                            <div
+                                gls-overflow-auto="selContainer: .gls-height-medium; selContent: .js-wrapper"
+                            >
+                                <div class="gls-grid-small" gls-grid>
+                                    <div class="gls-width-1-2">
+                                        <img
+                                            src="images/light.jpg"
+                                            width="1800"
+                                            height="1200"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="gls-width-1-2">
+                                        <img
+                                            src="images/dark.jpg"
+                                            width="1800"
+                                            height="1200"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Some content after the overflow auto container.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-height-medium">
+                        <div class="js-wrapper">
+                            <p>Some content before the overflow auto container.</p>
+
+                            <div
+                                gls-overflow-auto="selContainer: .gls-height-medium; selContent: .js-wrapper"
+                            >
+                                <div class="gls-grid-small" gls-grid>
+                                    <div class="gls-width-1-2">
+                                        <img
+                                            src="images/light.jpg"
+                                            width="1800"
+                                            height="1200"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="gls-width-1-2">
+                                        <img
+                                            src="images/dark.jpg"
+                                            width="1800"
+                                            height="1200"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="gls-width-1-2">
+                                        <img
+                                            src="images/photo.jpg"
+                                            width="1800"
+                                            height="1200"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="gls-width-1-2">
+                                        <img
+                                            src="images/photo2.jpg"
+                                            width="1800"
+                                            height="1200"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Some content after the overflow auto container.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>JavaScript Options</h3>
+
+            <table class="gls-table gls-table-striped">
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Value</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>selContainer</code></td>
+                        <td>CSS selector</td>
+                        <td><code>.gls-modal</code></td>
+                        <td>The container element which provides the height.</td>
+                    </tr>
+                    <tr>
+                        <td><code>selContent</code></td>
+                        <td>CSS selector</td>
+                        <td><code>.gls-modal-dialog</code></td>
+                        <td>The element which wraps the inner content to provide its height.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Responsive Objects</h2>
+
+            <div class="gls-child-width-1-3@s" gls-grid>
+                <div>
+                    <p>JS Responsive Width (Iframe)</p>
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1"
+                        width="1920"
+                        height="1080"
+                        allowfullscreen
+                        gls-responsive
+                    ></iframe>
+                </div>
+                <div>
+                    <p>Responsive Height (Image)</p>
+                    <p style="height: 100px">
+                        <img
+                            class="gls-responsive-height"
+                            src="images/photo.jpg"
+                            width="1800"
+                            height="1200"
+                            alt=""
+                        />
+                    </p>
+                </div>
+            </div>
+
+            <h2>Object Fit and Position</h2>
+
+            <div class="gls-child-width-1-3@s" gls-grid>
+                <div>
+                    <p>Object Fit Cover</p>
+                    <img
+                        class="gls-object-cover"
+                        src="images/photo.jpg"
+                        width="1000"
+                        height="1000"
+                        alt=""
+                        style="aspect-ratio: 1 / 1"
+                    />
+                </div>
+                <div>
+                    <p>Object Fit Contain</p>
+                    <img
+                        class="gls-object-contain"
+                        src="images/photo.jpg"
+                        width="1000"
+                        height="1000"
+                        alt=""
+                        style="aspect-ratio: 1 / 1"
+                    />
+                </div>
+                <div>
+                    <p>Object Fit Cover Left</p>
+                    <img
+                        class="gls-object-cover gls-object-top-left"
+                        src="images/photo.jpg"
+                        width="1000"
+                        height="1000"
+                        alt=""
+                        style="aspect-ratio: 1 / 1"
+                    />
+                </div>
+            </div>
+
+            <h2>Box-shadows</h2>
+
+            <div class="gls-child-width-1-5@m gls-grid-large" gls-grid>
+                <div>
+                    <div class="gls-inline gls-box-shadow-hover-small">
+                        <img
+                            class="gls-invisible"
+                            src="images/photo.jpg"
+                            width="1800"
+                            height="1200"
+                            alt=""
+                        />
+                        <div class="gls-position-center">Hover</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-inline gls-box-shadow-small">
+                        <img
+                            class="gls-invisible"
+                            src="images/photo.jpg"
+                            width="1800"
+                            height="1200"
+                            alt=""
+                        />
+                        <div class="gls-position-center">Small</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-inline gls-box-shadow-medium">
+                        <img
+                            class="gls-invisible"
+                            src="images/photo.jpg"
+                            width="1800"
+                            height="1200"
+                            alt=""
+                        />
+                        <div class="gls-position-center">Medium</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-inline gls-box-shadow-large">
+                        <img
+                            class="gls-invisible"
+                            src="images/photo.jpg"
+                            width="1800"
+                            height="1200"
+                            alt=""
+                        />
+                        <div class="gls-position-center">Large</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gls-inline gls-box-shadow-xlarge">
+                        <img
+                            class="gls-invisible"
+                            src="images/photo.jpg"
+                            width="1800"
+                            height="1200"
+                            alt=""
+                        />
+                        <div class="gls-position-center">X-Large</div>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-hover-xlarge"
+                        src="images/photo.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-small"
+                        src="images/photo.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-medium"
+                        src="images/photo.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-large"
+                        src="images/photo.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-xlarge"
+                        src="images/photo.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-hover-xlarge"
+                        src="images/light.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-small"
+                        src="images/light.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-medium"
+                        src="images/light.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-large"
+                        src="images/light.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-xlarge"
+                        src="images/light.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-hover-xlarge"
+                        src="images/dark.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-small"
+                        src="images/dark.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-medium"
+                        src="images/dark.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-large"
+                        src="images/dark.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <img
+                        class="gls-box-shadow-xlarge"
+                        src="images/dark.jpg"
+                        width="1800"
+                        height="1200"
+                        alt=""
+                    />
+                </div>
+            </div>
+
+            <h2>Box-shadow Bottom</h2>
+
+            <div class="gls-child-width-1-5@m gls-grid-large" gls-grid>
+                <div class="gls-width-1-6@m">
+                    <div class="gls-box-shadow-bottom">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                    </div>
+                </div>
+                <div class="gls-width-1-3@m">
+                    <div class="gls-box-shadow-bottom">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                    </div>
+                </div>
+                <div class="gls-width-1-2@m">
+                    <div class="gls-box-shadow-bottom">
+                        <img src="images/photo.jpg" width="1800" height="1200" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <h2>Drop Cap</h2>
+
+            <p class="gls-text-lead gls-dropcap">
+                Dorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="gls-dropcap">
+                <p>
+                    Torem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <h1>Logo</h1>
+
+            <p>
+                <a class="gls-logo" href="#">Text Logo</a>
+            </p>
+
+            <div class="gls-flex-inline gls-margin gls-grid-small" gls-grid>
+                <div>
+                    <p>Image</p>
+                    <a class="gls-logo" href="#">
+                        <img src="images/photo.jpg" width="200" height="133" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <p>+ Inverse Image</p>
+                    <a class="gls-logo" href="#">
+                        <img src="images/photo.jpg" width="200" height="133" alt="" />
+                        <img
+                            class="gls-logo-inverse"
+                            src="images/dark.jpg"
+                            width="200"
+                            height="133"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <div>
+                    <p>Picture</p>
+                    <a class="gls-logo" href="#">
+                        <picture>
+                            <img src="images/photo.jpg" width="200" height="133" alt="" />
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <p>+ Inverse Picture</p>
+                    <a class="gls-logo" href="#">
+                        <picture>
+                            <img src="images/photo.jpg" width="200" height="133" alt="" />
+                        </picture>
+                        <picture>
+                            <img
+                                class="gls-logo-inverse"
+                                src="images/dark.jpg"
+                                width="200"
+                                height="133"
+                                alt=""
+                            />
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+// ========================================================================
+// Component Variables: Tile
+// ========================================================================
+
+$tile-padding-horizontal: $global-small-space !default;
+$tile-padding-vertical: $global-medium-space !default;
+$tile-xsmall-padding-vertical: $global-small-space !default;
+$tile-small-padding-vertical: $global-medium-space !default;
+$tile-large-padding-vertical: $global-xlarge-space !default;
+$tile-xlarge-padding-vertical: $global-2xlarge-space !default;
+$tile-default-background: $global-background !default;
+$tile-muted-background: $global-muted-background !default;
+$tile-gradient-background: $global-gradient-background !default;
+$tile-primary-background: $global-primary-background !default;
+$tile-primary-light-background: var(--color-primary-light) !default;
+$tile-secondary-background: $global-secondary-background !default;
+$tile-secondary-light-background: var(--color-secondary-light) !default;
+$tile-tertiary-background: $global-tertiary-background !default;
+$tile-secondary-color-mode: dark !default;

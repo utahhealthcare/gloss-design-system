@@ -1,0 +1,25 @@
+// ========================================================================
+// Overrides: Label
+// ========================================================================
+
+@mixin hook-label-misc() {
+    .uk-label-primary {
+        background: $label-primary-background;
+        color: $label-primary-color;
+    }
+
+    .uk-label-secondary {
+        background: $label-secondary-background;
+        color: $label-secondary-color;
+    }
+
+    .uk-label-tertiary {
+        background: $label-tertiary-background;
+        color: $label-tertiary-color;
+    }
+
+    .uk-label-info {
+        background: $label-info-background;
+        color: $label-info-color;
+    }
+}

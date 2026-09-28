@@ -1,0 +1,33 @@
+// ========================================================================
+// Component Variables: Alert
+// ========================================================================
+
+$alert-margin-vertical: $global-small-space !default;
+$alert-padding: 15px !default;
+$alert-padding-right: calc($alert-padding + 14px) !default;
+$alert-background: $global-muted-background !default;
+$alert-color: $global-color !default;
+$alert-border-left: 6px solid $alert-color !default;
+$alert-close-top: calc($alert-padding + 5px) !default;
+$alert-close-right: $alert-padding !default;
+$alert-close-opacity: 0.6 !default;
+$alert-close-hover-opacity: 1 !default;
+
+// Override default status modifier text colors to use standard dark text
+$alert-primary-color: $global-color !default;
+$alert-success-color: $global-color !default;
+$alert-warning-color: $global-color !default;
+$alert-danger-color: $global-color !default;
+
+$alert-primary-background: $global-muted-background !default;
+$alert-primary-border-color: var(--color-primary) !default;
+$alert-info-background: $global-muted-background !default;
+$alert-info-border-color: var(--color-info) !default;
+$alert-success-background: $global-muted-background !default;
+$alert-success-border-color: var(
+    --color-success
+) !default; // hsl(from var(--color-success) h s calc(l - 25)) !default;
+$alert-warning-background: $global-muted-background !default;
+$alert-warning-border-color: var(--color-warning) !default;
+$alert-danger-background: $global-muted-background !default;
+$alert-danger-border-color: var(--color-danger) !default;

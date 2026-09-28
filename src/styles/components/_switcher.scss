@@ -1,0 +1,35 @@
+/**
+ * Name:            Switcher
+ * Description:     Component to navigate through different content panes
+ *
+ * Component:       `gls-switcher`
+ *
+ * States:          `gls-active`
+ *
+ * ======================================================================== */
+
+// ========================================================================
+// Component: Switcher
+// ========================================================================
+
+.gls-button-group[gls-switcher] > .gls-button-outline:not(.gls-active) {
+    background: transparent;
+    color: var(--global-color);
+}
+
+.gls-button-group[gls-switcher] > .gls-button-outline:not(.gls-active) .gls-icon {
+    color: var(--global-muted-color);
+}
+
+.gls-button-group > .gls-button-outline.gls-active {
+    background: var(--global-background);
+    border-bottom: 1px solid transparent; // var(--global-border-width)
+}
+
+.gls-button-group + .gls-switcher {
+    margin-top: -1px; // calc(var(--global-border-width) * -1)
+}
+
+.gls-button-group + .gls-switcher .gls-card.gls-active {
+    border-color: var(--color-gray-6);
+}

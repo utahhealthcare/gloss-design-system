@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cover - Gloss tests</title>
+        <script src="js/test.js"></script>
+        <style>
+            .test-height {
+                height: 300px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Cover</h1>
+
+            <h2>Fixed Height</h2>
+
+            <div class="gls-child-width-1-2@m" gls-grid>
+                <div>
+                    <h3>Image</h3>
+
+                    <div class="test-height gls-cover-container gls-light">
+                        <img src="images/photo.jpg" alt="" gls-cover />
+                        <div class="gls-position-cover gls-flex gls-flex-center gls-flex-middle">
+                            <h1>Heading</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Video</h3>
+
+                    <div class="test-height gls-cover-container gls-light">
+                        <video
+                            src="https://yootheme.com/site/images/media/yootheme-pro.mp4"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            gls-cover
+                        ></video>
+                        <div class="gls-position-cover gls-flex gls-flex-center gls-flex-middle">
+                            <h1>Heading</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Iframe (YouTube)</h3>
+
+                    <div class="test-height gls-cover-container gls-light">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1"
+                            width="1920"
+                            height="1080"
+                            allowfullscreen
+                            gls-cover
+                        ></iframe>
+                        <div class="gls-position-cover gls-flex gls-flex-center gls-flex-middle">
+                            <h1>Heading</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Iframe (Vimeo)</h3>
+
+                    <div class="test-height gls-cover-container gls-light">
+                        <iframe
+                            src="https://player.vimeo.com/video/1084537?title=0&amp;background=1&amp;keyboard=0"
+                            width="500"
+                            height="281"
+                            allowfullscreen
+                            gls-cover
+                        ></iframe>
+                        <div class="gls-position-cover gls-flex gls-flex-center gls-flex-middle">
+                            <h1>Heading</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Responsive Height</h2>
+
+            <div class="gls-child-width-1-2@m" gls-grid>
+                <div>
+                    <h3>Video (JS)</h3>
+
+                    <div class="gls-cover-container gls-light">
+                        <canvas width="600" height="400"></canvas>
+                        <video
+                            src="https://yootheme.com/site/images/media/yootheme-pro.mp4?test2"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            gls-cover
+                        ></video>
+                        <div class="gls-position-cover gls-flex gls-flex-center gls-flex-middle">
+                            <h1>Heading</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Iframe (YouTube)</h3>
+
+                    <div class="gls-cover-container gls-light">
+                        <canvas width="600" height="400"></canvas>
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1"
+                            width="1920"
+                            height="1080"
+                            allowfullscreen
+                            gls-cover
+                        ></iframe>
+                        <div class="gls-position-cover gls-flex gls-flex-center gls-flex-middle">
+                            <h1>Heading</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Viewport Height</h2>
+
+            <div class="gls-child-width-1-2@m" gls-grid>
+                <div>
+                    <h3>Video (JS)</h3>
+
+                    <div class="gls-cover-container gls-light" gls-height-viewport>
+                        <video
+                            src="https://yootheme.com/site/images/media/yootheme-pro.mp4?test3"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            gls-cover
+                        ></video>
+                        <div class="gls-position-cover gls-flex gls-flex-center gls-flex-middle">
+                            <h1>Heading</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Iframe (YouTube)</h3>
+
+                    <div class="gls-cover-container gls-light" gls-height-viewport>
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1"
+                            width="1920"
+                            height="1080"
+                            allowfullscreen
+                            gls-cover
+                        ></iframe>
+                        <div class="gls-position-cover gls-flex gls-flex-center gls-flex-middle">
+                            <h1>Heading</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>JavaScript Options</h2>
+
+            <div class="gls-overflow-auto">
+                <table class="gls-table gls-table-striped">
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Value</th>
+                            <th>Default</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>automute</code></td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                            <td>Automutes the video.</td>
+                        </tr>
+                        <tr>
+                            <td><code>width</code></td>
+                            <td>Number</td>
+                            <td></td>
+                            <td>The element's width.</td>
+                        </tr>
+                        <tr>
+                            <td><code>height</code></td>
+                            <td>Number</td>
+                            <td></td>
+                            <td>The element's height.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+// ========================================================================
+// Overrides: Link
+// ========================================================================
+
+@mixin hook-link-misc() {
+    // UofU dirty hack for WCAG compatibility
+    // Forces underlines on links in light backgrounds to ensure contrast ratio compliance
+    .uk-background-primary-light,
+    .uk-background-secondary,
+    .uk-background-secondary-light,
+    .uk-card-primary-light,
+    .uk-card-secondary,
+    .uk-card-secondary-light,
+    .uk-section-primary-light,
+    .uk-section-secondary,
+    .uk-section-secondary-light,
+    .uk-tile-primary-light,
+    .uk-tile-secondary,
+    .uk-tile-secondary-light {
+        a:not([class]) {
+            color: inherit;
+            text-decoration: underline;
+
+            &:hover {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+
+    // Secondary Link Variant (UofU Specific)
+    a.uk-link-secondary,
+    .uk-link-secondary a {
+        color: var(--color-secondary-text, hsl(from var(--gls-color-secondary) h s calc(l - 10)));
+    }
+
+    a.uk-link-secondary:hover,
+    .uk-link-secondary a:hover,
+    .uk-link-toggle:hover .uk-link-secondary,
+    .uk-link-toggle:focus .uk-link-secondary {
+        color: hsl(from var(--gls-color-secondary) h s calc(l - 20)); // Calculated hover color
+    }
+}

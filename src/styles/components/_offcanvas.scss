@@ -1,0 +1,80 @@
+/**
+ * Name:            Off-canvas
+ * Description:     Component to create an off-canvas sidebar
+ *
+ * Component:       `gls-offcanvas`
+ *
+ * Sub-objects:     `gls-offcanvas-bar`
+ *                  `gls-offcanvas-container`
+ *                  `gls-offcanvas-page`
+ *
+ * Adopted:         `gls-offcanvas-close`
+ *
+ * Modifiers:       `gls-offcanvas-flip`
+ *                  `gls-offcanvas-bar-animation`
+ *                  `gls-offcanvas-reveal`
+ *                  `gls-offcanvas-overlay`
+ *                  `gls-offcanvas-container-animation`
+ *
+ * States:          `gls-open`
+ *
+ * ======================================================================== */
+
+// ========================================================================
+// Component: Offcanvas Bespoke Modifiers
+// ========================================================================
+
+// Local Variables (Mapped directly from legacy offcanvas.css variables)
+$offcanvas-bar-padding-vertical-local: var(--global-small-space);
+$offcanvas-bar-padding-horizontal-local: var(--global-small-space);
+$offcanvas-close-position-local: 5px;
+$offcanvas-close-padding-local: 5px;
+
+$offcanvas-bar-padding-vertical-m-local: var(--global-medium-space);
+$offcanvas-bar-padding-horizontal-m-local: var(--global-medium-space);
+
+// Legacy hack to stretch sections to the edges of the offcanvas bar
+// by applying negative margins corresponding to the offcanvas padding.
+
+.gls-offcanvas-bar .gls-section {
+    margin-left: calc(#{$offcanvas-bar-padding-horizontal-local} * -1);
+    margin-right: calc(#{$offcanvas-bar-padding-horizontal-local} * -1);
+
+    @media (min-width: $breakpoint-small) {
+        margin-left: calc(#{$offcanvas-bar-padding-horizontal-m-local} * -1);
+        margin-right: calc(#{$offcanvas-bar-padding-horizontal-m-local} * -1);
+    }
+}
+
+.gls-offcanvas-bar .gls-section:first-child,
+.gls-offcanvas-close + .gls-section {
+    margin-top: calc(#{$offcanvas-bar-padding-vertical-local} * -1);
+    padding-top: calc(
+        #{$offcanvas-bar-padding-vertical-local} +
+            (#{$offcanvas-close-position-local} + #{$offcanvas-close-padding-local})
+    );
+
+    @media (min-width: $breakpoint-small) {
+        margin-top: calc(#{$offcanvas-bar-padding-vertical-m-local} * -1);
+        padding-top: calc(
+            #{$offcanvas-bar-padding-vertical-m-local} +
+                (#{$offcanvas-close-position-local} + #{$offcanvas-close-padding-local})
+        );
+    }
+}
+
+// Muted section override inside offcanvas
+.gls-offcanvas-bar .gls-section-muted {
+    background-color: var(--color-gray-1);
+}
+
+// Container padding reset inside offcanvas
+.gls-offcanvas-bar .gls-container {
+    padding-left: $offcanvas-bar-padding-horizontal-local;
+    padding-right: $offcanvas-bar-padding-horizontal-local;
+
+    @media (min-width: $breakpoint-small) {
+        padding-left: $offcanvas-bar-padding-horizontal-m-local;
+        padding-right: $offcanvas-bar-padding-horizontal-m-local;
+    }
+}

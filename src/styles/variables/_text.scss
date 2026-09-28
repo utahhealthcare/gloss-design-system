@@ -1,0 +1,47 @@
+// ========================================================================
+// Component Variables: Text
+// ========================================================================
+
+$text-lead-font-size: $global-medium-font-size !default;
+$text-lead-line-height: $global-line-height !default;
+$text-lead-color: $global-emphasis-color !default;
+$text-meta-font-size: $global-small-font-size !default;
+$text-meta-line-height: 1.4 !default;
+$text-meta-color: $global-muted-color !default;
+$text-meta-link-color: $text-meta-color !default;
+$text-meta-link-hover-color: $global-color !default;
+$text-xsmall-font-size: $global-xsmall-font-size !default;
+$text-xsmall-line-height: $global-line-height !default;
+$text-small-font-size: $global-small-font-size !default;
+$text-small-line-height: $global-line-height !default;
+$text-large-font-size: $global-medium-font-size !default;
+$text-large-line-height: $global-line-height !default;
+$text-xlarge-font-size: $global-large-font-size !default;
+$text-xlarge-line-height: $global-line-height !default;
+$text-hairline-font-weight: 100 !default;
+$text-thin-font-weight: 200 !default;
+$text-light-font-weight: 300 !default;
+$text-regular-font-weight: 400 !default;
+$text-medium-font-weight: 500 !default;
+$text-semibold-font-weight: 600 !default;
+$text-bold-font-weight: 700 !default;
+$text-extrabold-font-weight: 800 !default;
+$text-black-font-weight: 900 !default;
+$text-tighter-tracking: -0.05em !default;
+$text-tight-tracking: -0.025em !default;
+$text-normal-tracking: 0 !default;
+$text-wide-tracking: 0.025em !default;
+$text-wider-tracking: 0.05em !default;
+$text-widest-tracking: 0.1em !default;
+$text-default-color: $global-color !default;
+$text-muted-color: $global-muted-color !default;
+$text-emphasis-color: $global-emphasis-color !default;
+$text-primary-color: $global-primary-background !default;
+$text-secondary-color: var(--color-secondary-text) !default;
+$text-tertiary-color: $global-tertiary-background !default;
+$text-info-color: hsl(from $global-info-background h s l / 25%) !default;
+$text-success-color: hsl(from $global-success-background h s l / 25%) !default;
+$text-warning-color: hsl(from $global-warning-background h s l / 25%) !default;
+$text-danger-color: hsl(from $global-danger-background h s l / 25%) !default;
+$text-background-color: $global-primary-background !default;
+$text-shadow: 0px 2px 2px var(--color-trans-black-4) !default;

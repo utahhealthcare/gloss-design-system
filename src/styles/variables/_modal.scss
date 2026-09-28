@@ -1,0 +1,33 @@
+// ========================================================================
+// Component Variables: Modal
+// ========================================================================
+
+$modal-z-index: 1010 !default;
+$modal-background: rgba(0, 0, 0, 0.6) !default;
+$modal-padding-horizontal: 15px !default;
+$modal-padding-vertical: $modal-padding-horizontal !default;
+$modal-dialog-width: 600px !default;
+$modal-dialog-background: $global-background !default;
+$modal-container-width: 1200px !default;
+$modal-body-padding-horizontal: $global-medium-space !default;
+$modal-body-padding-vertical: $global-medium-space !default;
+$modal-header-padding-horizontal: $global-medium-space !default;
+$modal-header-padding-vertical: calc($modal-header-padding-horizontal / 2) !default;
+$modal-header-background: $modal-dialog-background !default;
+$modal-header-border-width: $global-border-width !default;
+$modal-header-border: $global-border !default;
+$modal-footer-padding-horizontal: $global-medium-space !default;
+$modal-footer-padding-vertical: calc($modal-footer-padding-horizontal / 2) !default;
+$modal-footer-background: $modal-dialog-background !default;
+$modal-footer-border-width: $global-border-width !default;
+$modal-footer-border: $global-border !default;
+$modal-title-font-size: $global-xlarge-font-size !default;
+$modal-title-line-height: 1.3 !default;
+$modal-close-position: $global-xsmall-space !default;
+$modal-close-padding: 5px !default;
+$modal-close-outside-position: 0 !default;
+$modal-close-outside-translate: 100% !default;
+$modal-close-outside-color: var(--color-trans-white-8) !default;
+$modal-close-outside-hover-color: $global-inverse-color !default;
+$modal-close-full-padding: $global-small-space !default;
+$modal-close-full-background: $modal-dialog-background !default;

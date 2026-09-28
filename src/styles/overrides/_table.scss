@@ -1,0 +1,33 @@
+// ========================================================================
+// Override: Table
+// ========================================================================
+
+@mixin hook-table-misc() {
+    // Legacy hack to force standard UIkit table styling onto Drupal core tables
+    // that lack the explicit .gls-table class.
+
+    .block-system-main-block table:not([class]) {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        margin-bottom: var(--global-margin);
+
+        th {
+            padding: 16px 12px;
+            text-align: left;
+            vertical-align: bottom;
+            font-size: var(--global-small-font-size);
+            font-weight: 600;
+            color: var(--gls-color-primary); // Legacy table header color
+        }
+
+        td {
+            padding: 16px 12px;
+            vertical-align: top;
+        }
+
+        tbody tr {
+            transition: background-color 0.1s linear;
+        }
+    }
+}

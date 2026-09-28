@@ -1,0 +1,227 @@
+// ========================================================================
+// Overrides: Card
+// ========================================================================
+
+@mixin hook-card() {
+    position: relative;
+    border-radius: var(--gls-large-border-radius, 15px);
+    transition:
+        box-shadow 0.1s ease-in-out,
+        top 0.1s ease-in-out;
+    top: 0; // Baseline for hover offset
+}
+
+@mixin hook-card-hover() {
+    box-shadow: var(--global-large-box-shadow);
+    top: -1px; // Legacy offset bump
+}
+
+@mixin hook-card-misc() {
+    // Custom Card Outline Variant
+    .uk-card-outline,
+    .uk-child-card-outline .uk-card {
+        background-color: var(--global-background);
+        color: var(--global-color);
+        border: 1px solid var(--global-border);
+        --card-hover-background: #{$card-outline-hover-background};
+
+        .uk-card-title {
+            color: var(--global-emphasis-color);
+        }
+
+        .uk-card-header {
+            background: var(--color-gray-1);
+        }
+
+        .uk-card-footer {
+            border-top: 1px solid var(--global-border);
+        }
+    }
+
+    // Custom Primary Light Variant
+    .uk-card-primary-light,
+    .uk-child-card-primary-light .uk-card {
+        background-color: color-mix(in oklab, var(--gls-color-primary), white 80%);
+        color: var(--global-color);
+        --card-hover-background: #{$card-primary-light-hover-background};
+
+        .uk-card-title {
+            color: var(--global-emphasis-color);
+        }
+
+        .uk-card-header {
+            background: hsl(
+                from var(--gls-color-primary) h calc(s + 5) calc(l + 30)
+            ); // Rough estimation of -10 lightness from mix
+        }
+
+        .uk-card-footer {
+            border-top: 1px solid hsl(from var(--gls-color-primary) h s calc(l + 35));
+        }
+    }
+
+    // Custom Secondary Light Variant
+    .uk-card-secondary-light,
+    .uk-child-card-secondary-light .uk-card {
+        background-color: color-mix(in oklab, var(--gls-color-secondary), white 80%);
+        color: var(--global-color);
+        --card-hover-background: #{$card-secondary-light-hover-background};
+
+        .uk-card-title {
+            color: var(--global-emphasis-color);
+        }
+
+        .uk-card-header {
+            background: hsl(from var(--gls-color-secondary) h calc(s + 5) calc(l + 30));
+        }
+
+        .uk-card-footer {
+            border-top: 1px solid hsl(from var(--gls-color-secondary) h s calc(l + 35));
+        }
+    }
+
+    // Custom Tertiary Variant
+    .uk-card-tertiary,
+    .uk-child-card-tertiary .uk-card {
+        background-color: var(--global-tertiary-background);
+        color: var(--global-inverse-color);
+        --card-hover-background: #{$card-tertiary-hover-background};
+
+        .uk-card-title {
+            color: var(--global-inverse-color);
+        }
+
+        .uk-card-header {
+            background: var(--color-gray-8);
+        }
+
+        .uk-card-footer {
+            border-top: 1px solid hsl(from var(--global-tertiary-background) h s calc(l + 12));
+        }
+    }
+
+    // Custom Border Color Overrides
+    .uk-card-primary.uk-border {
+        border-color: $card-primary-border-color;
+    }
+    .uk-card-secondary.uk-border {
+        border-color: $card-secondary-border-color;
+    }
+    .uk-card-tertiary.uk-border {
+        border-color: $card-tertiary-border-color;
+    }
+
+    // Define fallback CSS variable on base uk-card-hover so it resolves dynamically
+    .uk-card-hover {
+        --card-hover-background: #f4f4f5 !default; // default fallback matching $card-default-background
+    }
+
+    // Ensure ALL hovered cards elevate uniformly by -1.0px and share the same large shadow
+    // (Triggered both on direct hover of the card, and on hover of its cover-container parent)
+    .uk-card-hover:hover,
+    .uk-card-cover-container:hover .uk-card-hover {
+        top: -1px;
+        box-shadow: var(--global-large-box-shadow);
+    }
+
+    // Box shadow modifier
+    .gls-card-shadow {
+        box-shadow: $card-box-shadow;
+    }
+
+    // Custom Workarounds for Light Cards nested on Inverted Dark Backgrounds
+    :is(:--inverse) .uk-card-default,
+    :is(:--inverse) .uk-card-outline,
+    :is(:--inverse) .uk-card-primary-light,
+    :is(:--inverse) .uk-card-secondary-light {
+        --card-badge-background: var(--global-primary-background, initial);
+        --card-badge-color: var(--global-inverse-color, initial);
+
+        --card-default-color: var(--global-color, initial);
+        --card-default-title-color: var(--global-emphasis-color, initial);
+
+        --card-outline-color: var(--global-color, initial);
+        --card-outline-title-color: var(--global-emphasis-color, initial);
+
+        --base-body-color: var(--global-color, initial);
+        --base-link-color: var(--global-color-white, initial);
+        --base-link-hover-color: var(--global-link-hover-color, initial);
+        --base-heading-color: var(--global-emphasis-color, initial);
+        --base-list-marker-color: var(--color-primary, initial);
+        --base-hr-border: var(--global-border, initial);
+        --base-blockquote-color: var(--global-emphasis-color, initial);
+        --base-blockquote-footer-color: var(--global-muted-color, initial);
+        --base-pre-color: var(--global-color, initial);
+        --base-pre-border: var(--global-border, initial);
+        --base-code-color: var(--global-danger-background, initial);
+        --base-selection-color: initial;
+        --base-em-color: var(--global-emphasis-color, initial);
+        --base-ins-color: var(--global-color, initial);
+        --base-mark-color: var(--global-color, initial);
+
+        --divider-primary-color: var(--global-primary-background, initial);
+        --divider-secondary-color: var(--global-secondary-background, initial);
+        --divider-tertiary-color: var(--global-tertiary-background, initial);
+
+        --text-lead-color: var(--global-emphasis-color, initial);
+        --text-meta-color: var(--global-muted-color, initial);
+        --text-muted-color: var(--global-muted-color, initial);
+        --text-emphasis-color: var(--global-emphasis-color, initial);
+        --text-primary-color: var(--global-primary-background, initial);
+        --text-secondary-color: var(--global-secondary-background, initial);
+        --text-tertiary-color: var(--global-tertiary-background, initial);
+        --text-info-color: var(--global-info-background, initial);
+        --text-success-color: var(--global-success-background, initial);
+        --text-warning-color: var(--global-warning-background, initial);
+        --text-danger-color: var(--global-danger-background, initial);
+
+        --button-default-background: initial;
+        --button-default-color: initial;
+        --button-default-hover-background: initial;
+        --button-default-hover-color: initial;
+        --button-default-hover-border: initial;
+        --button-default-active-background: initial;
+        --button-default-active-color: initial;
+        --button-default-active-border: initial;
+
+        --button-outline-background: initial;
+        --button-outline-color: initial;
+        --button-outline-border: initial;
+        --button-outline-hover-background: initial;
+        --button-outline-hover-color: initial;
+        --button-outline-hover-border: initial;
+        --button-outline-active-background: initial;
+        --button-outline-active-color: initial;
+        --button-outline-active-border: initial;
+
+        --button-primary-background: initial;
+        --button-primary-color: initial;
+        --button-primary-border: initial;
+        --button-primary-hover-background: initial;
+        --button-primary-hover-color: initial;
+        --button-primary-hover-border: initial;
+        --button-primary-active-background: initial;
+        --button-primary-active-color: initial;
+        --button-primary-active-border: initial;
+
+        --button-secondary-background: initial;
+        --button-secondary-color: initial;
+        --button-secondary-border: initial;
+        --button-secondary-hover-background: initial;
+        --button-secondary-hover-color: initial;
+        --button-secondary-hover-border: initial;
+        --button-secondary-active-background: initial;
+        --button-secondary-active-color: initial;
+        --button-secondary-active-border: initial;
+
+        --button-tertiary-background: initial;
+        --button-tertiary-color: initial;
+        --button-tertiary-border: initial;
+        --button-tertiary-hover-background: initial;
+        --button-tertiary-hover-color: initial;
+        --button-tertiary-hover-border: initial;
+        --button-tertiary-active-background: initial;
+        --button-tertiary-active-color: initial;
+        --button-tertiary-active-border: initial;
+    }
+}

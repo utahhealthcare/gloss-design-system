@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Background - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Background</h1>
+
+            <h2>Color, Position, No Repeat, Image</h2>
+
+            <div class="gls-child-width-1-4" gls-grid>
+                <div>
+                    <div
+                        class="gls-background-norepeat gls-background-image@s gls-background-default gls-background-top-left gls-padding gls-flex gls-flex-center gls-flex-middle gls-text-center"
+                        style="
+                            background-image: url('images/photo.jpg');
+                            background-size: 60px 40px;
+                        "
+                    >
+                        Default<br />Top Left<br />S
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="gls-background-norepeat gls-background-image@m gls-background-muted gls-background-top-right gls-padding gls-flex gls-flex-center gls-flex-middle gls-text-center"
+                        style="
+                            background-image: url('images/photo.jpg');
+                            background-size: 60px 40px;
+                        "
+                    >
+                        Muted<br />Top Right<br />M
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="gls-background-norepeat gls-background-image@l gls-background-primary gls-background-bottom-left gls-padding gls-flex gls-flex-center gls-flex-middle gls-text-center"
+                        style="
+                            background-image: url('images/photo.jpg');
+                            background-size: 60px 40px;
+                        "
+                    >
+                        Primary<br />Bottom Left<br />L
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="gls-background-norepeat gls-background-image@xl gls-background-secondary gls-background-bottom-right gls-padding gls-flex gls-flex-center gls-flex-middle gls-text-center"
+                        style="
+                            background-image: url('images/photo.jpg');
+                            background-size: 60px 40px;
+                        "
+                    >
+                        Secondary<br />Bottom Right<br />XL
+                    </div>
+                </div>
+            </div>
+
+            <h2>Cover</h2>
+
+            <div class="gls-child-width-1-2@s" gls-grid>
+                <div>
+                    <div
+                        class="gls-background-cover gls-flex gls-flex-center gls-flex-middle gls-light"
+                        style="height: 300px; background-image: url('images/photo.jpg')"
+                    >
+                        <h1 class="gls-heading-large">Fixed Height</h1>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="gls-background-cover gls-position-relative gls-light"
+                        style="background-image: url('images/photo.jpg')"
+                    >
+                        <img class="gls-invisible" src="images/photo.jpg" alt="" />
+                        <div class="gls-position-cover gls-flex gls-flex-center gls-flex-middle">
+                            <h1>Responsive Height</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+// ========================================================================
+// Component Variables: Breadcrumb
+// ========================================================================
+
+$breadcrumb-item-font-size: $global-small-font-size !default;
+$breadcrumb-item-color: $global-muted-color !default;
+$breadcrumb-text-decoration: underline !default;
+$breadcrumb-item-hover-color: $global-color !default;
+$breadcrumb-item-hover-text-decoration: none !default;
+$breadcrumb-item-active-color: $global-color !default;
+$breadcrumb-item-active-text-decoration: none !default;
+$breadcrumb-divider: '>' !default;
+$breadcrumb-divider-margin-horizontal: 8px !default;
+$breadcrumb-divider-font-size: $breadcrumb-item-font-size !default;
+$breadcrumb-divider-font-weight: 300 !default;
+$breadcrumb-divider-color: $global-muted-color !default;
+$breadcrumb-primary-item-color: var(--color-primary-text) !default;
+$breadcrumb-primary-item-hover-color: var(--color-primary-hover) !default;
+$breadcrumb-primary-divider-color: $global-primary-background !default;
+$breadcrumb-primary-item-active-color: $global-emphasis-color !default;
+$breadcrumb-secondary-item-color: var(--color-secondary-text) !default;
+$breadcrumb-secondary-item-hover-color: hsl(
+    from $breadcrumb-secondary-item-color h s calc(l + 10)
+) !default;
+$breadcrumb-secondary-divider-color: $global-primary-background !default;
+$breadcrumb-secondary-item-active-color: $global-emphasis-color !default;
+$breadcrumb-tertiary-item-color: $global-color !default;
+$breadcrumb-tertiary-item-hover-color: $global-emphasis-color !default;
+$breadcrumb-tertiary-divider-color: $global-primary-background !default;
+$breadcrumb-tertiary-item-active-color: $global-emphasis-color !default;

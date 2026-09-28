@@ -1,0 +1,37 @@
+// ========================================================================
+// Overrides: Alert
+// ========================================================================
+
+// Base Alert Overrides
+// We use a quiet background and apply the custom thick left border.
+@mixin hook-alert() {
+    position: relative;
+    background-color: var(--gls-color-muted-background, #f4f4f5);
+    border-left: 6px solid currentColor; // The color inherits from the status modifier
+    padding: 15px 29px 15px 15px; // Matches legacy var(--alert-padding) logic
+}
+
+// Alert Status Modifiers
+// Adding even when empty so standard UIkit compiles cleanly without bloat
+@mixin hook-alert-modifier() {
+    /* no-op */
+}
+
+// Custom Standalone Alert Overrides (Clean & Specific)
+@mixin hook-alert-misc() {
+    .uk-alert-primary {
+        border-left-color: $alert-primary-border-color;
+    }
+    .uk-alert-success {
+        border-left-color: $alert-success-border-color;
+    }
+    .uk-alert-warning {
+        border-left-color: $alert-warning-border-color;
+    }
+    .uk-alert-danger {
+        border-left-color: $alert-danger-border-color;
+    }
+    .uk-alert-info {
+        border-left-color: $alert-info-border-color;
+    }
+}

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Tab - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Tab</h1>
+
+            <div class="gls-child-width-1-2@m" gls-grid>
+                <div>
+                    <h2>Top</h2>
+
+                    <ul gls-tab>
+                        <li class="gls-active"><a href="#">Left</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="gls-disabled"><a>Disabled</a></li>
+                    </ul>
+
+                    <ul class="gls-flex-right" gls-tab>
+                        <li class="gls-active"><a href="#">Right</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="gls-disabled"><a>Disabled</a></li>
+                    </ul>
+
+                    <ul class="gls-flex-center" gls-tab>
+                        <li class="gls-active"><a href="#">Center</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <ul class="gls-child-width-1-5" gls-tab>
+                        <li class="gls-active"><a href="#">Justify</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Bottom</h2>
+
+                    <ul class="gls-tab-bottom" gls-tab>
+                        <li class="gls-active"><a href="#">Left</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="gls-disabled"><a>Disabled</a></li>
+                    </ul>
+
+                    <ul class="gls-tab-bottom gls-flex-right" gls-tab>
+                        <li class="gls-active"><a href="#">Right</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="gls-disabled"><a>Disabled</a></li>
+                    </ul>
+
+                    <ul class="gls-tab-bottom gls-flex-center" gls-tab>
+                        <li class="gls-active"><a href="#">Center</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                    <ul class="gls-tab-bottom gls-child-width-1-5" gls-tab>
+                        <li class="gls-active"><a href="#">Justify</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Left/Right</h2>
+
+            <div class="gls-child-width-auto" gls-grid>
+                <div>
+                    <ul class="gls-tab-left" gls-tab>
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="gls-tab-right" gls-tab>
+                        <li class="gls-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Icon and Dropdown</h2>
+
+            <div class="gls-margin">
+                <ul class="gls-width-1-2@m" gls-tab>
+                    <li class="gls-active"><a href="#">Active</a></li>
+                    <li>
+                        <a href="#"><span gls-icon="icon: cart"></span> Icon</a>
+                    </li>
+                    <li><a href="#">Item</a></li>
+                    <li>
+                        <a href="#">More <span gls-icon="icon: triangle-down"></span></a>
+                        <div gls-dropdown="mode: click">
+                            <ul class="gls-nav gls-dropdown-nav">
+                                <li class="gls-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="gls-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="gls-nav-divider"></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>JavaScript Options</h2>
+
+            <div class="gls-overflow-auto">
+                <table class="gls-table gls-table-striped">
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Value</th>
+                            <th>Default</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>connect</code></td>
+                            <td>CSS selector</td>
+                            <td>false</td>
+                            <td>
+                                Related items container. By default, next element with class
+                                'gls-switcher'.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>toggle</code></td>
+                            <td>CSS selector</td>
+                            <td>> *</td>
+                            <td>Toggle selector - triggers content switching on click.</td>
+                        </tr>
+                        <tr>
+                            <td><code>active</code></td>
+                            <td>Number</td>
+                            <td>0</td>
+                            <td>
+                                Active index on init. (Providing a negative number indicates a
+                                position starting from the end of the set)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>animation</code></td>
+                            <td>String</td>
+                            <td>false</td>
+                            <td>
+                                Space-separated names of animations. Comma-separated for animation
+                                out.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>duration</code></td>
+                            <td>Number</td>
+                            <td>200</td>
+                            <td>The animation duration.</td>
+                        </tr>
+                        <tr>
+                            <td><code>swiping</code></td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                            <td>Use swiping.</td>
+                        </tr>
+                        <tr>
+                            <td><code>media</code></td>
+                            <td>Number|String</td>
+                            <td>960</td>
+                            <td>
+                                When to become horizontal - a width as integer (e.g. 640) or a
+                                breakpoint (e.g. @s, @m, @l, @xl).
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

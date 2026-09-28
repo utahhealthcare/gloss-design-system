@@ -1,0 +1,101 @@
+// ========================================================================
+// Component Variables: Card
+// ========================================================================
+
+$card-border-radius: $global-large-border-radius !default;
+$card-body-padding-horizontal: $global-medium-space !default;
+$card-body-padding-vertical: $global-medium-space !default;
+$card-header-padding-horizontal: $global-medium-space !default;
+$card-header-padding-vertical: calc($global-medium-space / 1.5) !default;
+$card-footer-padding-horizontal: $global-medium-space !default;
+$card-footer-padding-vertical: calc($global-medium-space / 1.5) !default;
+$card-title-font-size: $global-large-font-size !default;
+$card-title-line-height: 1.4 !default;
+$card-badge-top: $global-medium-space !default;
+$card-badge-right: $card-badge-top !default;
+$card-badge-top: 15px !default;
+$card-badge-right: 15px !default;
+$card-badge-height: 26px !default;
+$card-badge-padding-horizontal: 10px !default;
+$card-badge-background: $global-primary-background !default;
+$card-badge-color: $global-inverse-color !default;
+$card-badge-font-size: $global-small-font-size !default;
+$card-badge-border-radius: 2px !default;
+$card-box-shadow: $global-medium-box-shadow !default;
+$card-hover-box-shadow: $global-large-box-shadow !default;
+$card-hover-offset: -1px !default;
+$card-hover-background: var(--card-hover-background) !default;
+$card-default-background: $global-muted-background !default;
+$card-default-color: $global-color !default;
+$card-default-title-color: $global-emphasis-color !default;
+$card-default-hover-background: $card-default-background !default;
+$card-default-header-background: var(--color-gray-1) !default;
+$card-default-footer-border-width: $global-border-width !default;
+$card-default-footer-border: $global-border !default;
+$card-outline-background: $global-background !default;
+$card-outline-color: $global-color !default;
+$card-outline-title-color: $global-emphasis-color !default;
+$card-outline-hover-background: $card-outline-background !default;
+$card-outline-border: $global-border-width solid $global-border !default;
+$card-outline-header-background: var(--color-gray-1) !default;
+$card-outline-footer-border-width: $global-border-width !default;
+$card-outline-footer-border: $global-border !default;
+$card-primary-background: $global-primary-background !default;
+$card-primary-color: $global-inverse-color !default;
+$card-primary-title-color: $card-primary-color !default;
+$card-primary-hover-background: $card-primary-background !default;
+$card-primary-border-color: hsl(from $card-primary-background h s calc(l + 12)) !default;
+$card-primary-header-background: hsl(
+    from $card-primary-background h calc(s + 5) calc(l - 8)
+) !default;
+$card-primary-footer-border-width: $global-border-width !default;
+$card-primary-footer-border: hsl(from $card-primary-background h s calc(l + 12)) !default;
+$card-primary-light-background: var(--color-primary-light) !default;
+$card-primary-light-color: $global-color !default;
+$card-primary-light-title-color: $global-emphasis-color !default;
+$card-primary-light-hover-background: $card-primary-light-background !default;
+$card-primary-light-header-background: hsl(
+    from $card-primary-light-background h calc(s + 5) calc(l - 10)
+) !default;
+$card-primary-light-footer-border-width: $global-border-width !default;
+$card-primary-light-footer-border: hsl(
+    from $card-primary-light-background h s calc(l - 12)
+) !default;
+$card-secondary-background: $global-secondary-background !default;
+$card-secondary-color: $global-color !default;
+$card-secondary-title-color: $global-emphasis-color !default;
+$card-secondary-hover-background: $card-secondary-background !default;
+$card-secondary-border-color: hsl(from $card-secondary-background h s calc(l + 12)) !default;
+$card-secondary-header-background: hsl(
+    from $card-secondary-background h calc(s + 5) calc(l - 10)
+) !default;
+$card-secondary-footer-border-width: $global-border-width !default;
+$card-secondary-footer-border: hsl(from $card-secondary-background h s calc(l + 12)) !default;
+$card-secondary-color-mode: dark !default;
+$card-secondary-light-background: var(--color-secondary-light) !default;
+$card-secondary-light-color: $global-color !default;
+$card-secondary-light-title-color: $global-emphasis-color !default;
+$card-secondary-light-hover-background: $card-secondary-light-background !default;
+$card-secondary-light-header-background: hsl(
+    from $card-secondary-light-background h calc(s + 5) calc(l - 10)
+) !default;
+$card-secondary-light-footer-border-width: $global-border-width !default;
+$card-secondary-light-footer-border: hsl(
+    from $card-secondary-light-background h s calc(l - 12)
+) !default;
+$card-tertiary-background: $global-tertiary-background !default;
+$card-tertiary-color: $global-inverse-color !default;
+$card-tertiary-title-color: $card-tertiary-color !default;
+$card-tertiary-hover-background: $card-tertiary-background !default;
+$card-tertiary-border-color: hsl(
+    from $card-tertiary-background h calc(s + 5) calc(l - 10)
+) !default;
+$card-tertiary-header-background: var(--color-tertiary) !default;
+$card-tertiary-footer-border-width: $global-border-width !default;
+$card-tertiary-footer-border: hsl(from $card-tertiary-background h s calc(l + 12)) !default;
+$card-small-body-padding-horizontal: $global-small-space !default;
+$card-small-body-padding-vertical: $global-small-space !default;
+$card-small-header-padding-horizontal: $global-small-space !default;
+$card-small-header-padding-vertical: calc($global-small-space / 1.5) !default;
+$card-small-footer-padding-horizontal: $global-small-space !default;
+$card-small-footer-padding-vertical: calc($global-small-space / 1.5) !default;

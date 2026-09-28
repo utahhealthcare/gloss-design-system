@@ -1,0 +1,22 @@
+// ========================================================================
+// Component Variables: Accordion
+// ========================================================================
+
+$accordion-item-margin-top: $global-xsmall-space !default;
+$accordion-item-padding-top: $global-xsmall-space !default;
+$accordion-item-border-width: $global-border-width !default;
+$accordion-item-border: $global-border !default;
+$accordion-primary-item-border-width: $global-border-width !default;
+$accordion-primary-item-border: var(--color-primary) !default;
+$accordion-title-font-size: $global-medium-font-size !default;
+$accordion-title-line-height: 1.4 !default;
+$accordion-title-color: $global-emphasis-color !default;
+$accordion-title-hover-color: $global-color !default;
+$accordion-title-text-decoration: inherit !default;
+$accordion-content-margin-top: $global-xsmall-space !default;
+$accordion-icon-margin-left: 10px !default;
+$accordion-large-item-margin-top: $global-small-space !default;
+$accordion-large-item-padding-top: $global-small-space !default;
+$accordion-large-title-font-size: $global-large-font-size !default;
+$accordion-large-content-margin-top: $global-small-space !default;
+$accordion-large-content-padding-bottom: $global-xsmall-space !default;
