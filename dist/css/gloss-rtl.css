@@ -32,7 +32,9 @@
   --gls-breakpoint-l: 1200px;
   --gls-breakpoint-xl: 1600px;
   /* Typography */
-  --gls-font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --gls-font-family-system:
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --gls-font-family-base: 'Sofia Pro', var(--gls-font-family-system);
   --gls-font-family-heading: 'Archivo', var(--gls-font-family-system);
   --global-font-family: var(--gls-font-family-base);

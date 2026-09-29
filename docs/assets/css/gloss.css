@@ -32,10 +32,12 @@
   --gls-breakpoint-l: 1200px;
   --gls-breakpoint-xl: 1600px;
   /* Typography */
-  --global-font-family:
-      'Sofia Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-      'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji';
+  --gls-font-family-system:
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --gls-font-family-base: 'Sofia Pro', var(--gls-font-family-system);
+  --gls-font-family-heading: 'Archivo', var(--gls-font-family-system);
+  --global-font-family: var(--gls-font-family-base);
   --global-font-size: 16px;
   --global-line-height: 1.5;
   --global-xsmall-font-size: 0.75rem;
@@ -48,8 +50,8 @@
   --global-semibold-font-weight: 600;
   --global-bold-font-weight: 700;
   /* Base Colors & Variables */
-  --color-white: #ffffff;
-  --color-black: #000000;
+  --color-white: #fff;
+  --color-black: #000;
   /* Primary Colors */
   --color-utah-red: #be0000;
   --color-zion-cinder-cone: #707271;
@@ -120,7 +122,7 @@
   --color-primary-7: #cb3333;
   --color-primary-8: #c41919;
   --color-primary-9: #be0000;
-  --color-primary: var(--color-utah-red);
+  --color-primary: var(--color-primary-9);
   --color-primary-hover: hsl(from var(--color-primary) h s calc(l + 8));
   --color-primary-active: hsl(from var(--color-primary) h s calc(l - 8));
   --color-primary-text: var(--color-primary);
@@ -148,8 +150,8 @@
   /* Gradient */
   --color-gradient: linear-gradient(180deg, #f2f2f2 0, #d9d9d9 100%);
   /**
-  * Indicators
-  */
+   * Indicators
+   */
   /* Info */
   --color-info-0: #ebf8f9;
   --color-info-1: #d8f2f2;
@@ -440,6 +442,119 @@
   --button-default-active-color: var(--color-tertiary-active);
 }
 
+.gls-theme-rebrand {
+  /* Color lists */
+  --color-red-50: #f9f6f5;
+  --color-red-100: #f6e9e9;
+  --color-red-200: #f9cfcf;
+  --color-red-300: #fcb0af;
+  --color-red-400: #fc8483;
+  --color-red-500: #f65352;
+  --color-red-600: #e70c0b;
+  --color-red-700: #be0000;
+  --color-red-800: #890000;
+  --color-red-900: #611211;
+  --color-red-950: #3b100f;
+  --color-sand-50: #f8f6f4;
+  --color-sand-100: #f3efe8;
+  --color-sand-200: #dfdad1;
+  --color-sand-300: #cbc6bd;
+  --color-sand-400: #b1aca3;
+  --color-sand-500: #98938b;
+  --color-sand-600: #807b73;
+  --color-sand-700: #67645d;
+  --color-sand-800: #4a4742;
+  --color-sand-900: #363430;
+  --color-sand-950: #22201d;
+  --color-granite-50: #f3f8fa;
+  --color-granite-100: #e3eff4;
+  --color-granite-200: #ccdee5;
+  --color-granite-300: #b3ccd5;
+  --color-granite-400: #95b3be;
+  --color-granite-500: #7a9aa5;
+  --color-granite-600: #63818c;
+  --color-granite-700: #374b53;
+  --color-granite-800: #28373c;
+  --color-granite-900: #28373c;
+  --color-granite-950: #192226;
+  --color-lake-50: #f3f8f9;
+  --color-lake-100: #ddf1f6;
+  --color-lake-200: #9fe9f7;
+  --color-lake-300: #5bdbef;
+  --color-lake-400: #41c0d0;
+  --color-lake-500: #54a2ac;
+  --color-lake-600: #4f868e;
+  --color-lake-700: #366e75;
+  --color-lake-800: #145155;
+  --color-lake-900: #103b3c;
+  --color-lake-950: #0e2525;
+  --color-sunrise-50: #f9f6f2;
+  --color-sunrise-100: #f6ebdb;
+  --color-sunrise-200: #f5d6a3;
+  --color-sunrise-300: #eebe6c;
+  --color-sunrise-400: #dea01e;
+  --color-sunrise-500: #bf8915;
+  --color-sunrise-600: #a17207;
+  --color-sunrise-700: #835c04;
+  --color-sunrise-800: #5f4202;
+  --color-sunrise-900: #44300d;
+  --color-sunrise-950: #291e0c;
+  --color-green-50: #f3f9f1;
+  --color-green-100: #e3f2de;
+  --color-green-200: #c3e7b7;
+  --color-green-300: #a2d98f;
+  --color-green-400: #6cc24a;
+  --color-green-500: #4cae15;
+  --color-green-600: #3c9207;
+  --color-green-700: #307705;
+  --color-green-800: #205602;
+  --color-green-900: #1c3e0d;
+  --color-green-950: #13260c;
+  --color-orange-50: #f9f6f5;
+  --color-orange-100: #f6eae6;
+  --color-orange-200: #f9d0c3;
+  --color-orange-300: #fcb29b;
+  --color-orange-400: #fc8866;
+  --color-orange-500: #f5592c;
+  --color-orange-600: #d73e07;
+  --color-orange-700: #b12d04;
+  --color-orange-800: #821f02;
+  --color-orange-900: #5c1b0c;
+  --color-orange-950: #38140b;
+  /* Color Mapping (UofU Health) */
+  --color-web-blue: #0000ff;
+  --color-primary: var(--color-red-700);
+  /* Success */
+  --color-success-bg: var(--color-green-100);
+  --color-success-bg-dark: var(--color-green-700);
+  --color-success-border: var(--color-green-300);
+  --color-success-text-on-bg: var(--color-green-800);
+  --color-success-text-dark: var(--color-green-700);
+  --color-success-text-light: #fff;
+  /* Warning */
+  --color-warning-bg: var(--color-sunrise-100);
+  --color-warning-bg-dark: var(--color-sunrise-700);
+  --color-warning-border: var(--color-sunrise-300);
+  --color-warning-text-on-bg: var(--color-sunrise-800);
+  --color-warning-text-dark: var(--color-sunrise-700);
+  --color-warning-text-light: #fff;
+  /* Error */
+  --color-error-bg: var(--color-orange-100);
+  --color-error-bg-dark: var(--color-orange-800);
+  --color-error-border: var(--color-orange-300);
+  --color-error-text-on-bg: var(--color-orange-800);
+  --color-error-text-dark: var(--color-orange-700);
+  --color-error-text-light: #fff;
+  --color-error-field-border: var(--color-orange-700);
+  /* Neutral */
+  --color-neutral-bg: var(--color-lake-100);
+  --color-neutral-bg-dark: var(--color-lake-700);
+  --color-neutral-border: var(--color-lake-300);
+  --color-neutral-text-on-bg: var(--color-lake-800);
+  --color-neutral-text-dark: var(--color-lake-700);
+  --color-neutral-text-light: #fff;
+}
+
 /* Custom selectors
  ========================================================================== */
 /* ========================================================================
@@ -471,17 +586,17 @@
 .gls-card-tertiary.gls-card-body,
 .gls-card-tertiary > :not([class*='gls-card-media']),
 .gls-overlay-primary) {
-  --base-body-color: #ffffff;
-  --base-link-color: #ffffff;
-  --base-link-hover-color: #ffffff;
-  --base-code-color: #ffffff;
-  --base-em-color: #ffffff;
-  --base-heading-color: #ffffff;
-  --base-list-marker-color: #ffffff;
+  --base-body-color: #fff;
+  --base-link-color: #fff;
+  --base-link-hover-color: #fff;
+  --base-code-color: #fff;
+  --base-em-color: #fff;
+  --base-heading-color: #fff;
+  --base-list-marker-color: #fff;
   --base-hr-border: rgba(255, 255, 255, 0.2);
-  --base-blockquote-color: #ffffff;
-  --base-blockquote-footer-color: #ffffff;
-  --base-pre-color: #ffffff;
+  --base-blockquote-color: #fff;
+  --base-blockquote-footer-color: #fff;
+  --base-pre-color: #fff;
   --base-pre-border: rgba(255, 255, 255, 0.2);
 }
 :is(.gls-light,
@@ -498,7 +613,7 @@
 .gls-card-tertiary.gls-card-body,
 .gls-card-tertiary > :not([class*='gls-card-media']),
 .gls-overlay-primary) .gls-button-primary {
-  background-color: var(--button-primary-background, #ffffff);
+  background-color: var(--button-primary-background, #fff);
   color: var(--button-primary-color, var(--color-primary));
   border: var(--button-primary-border, var(--button-border-width) solid var(--color-trans-black-4));
 }
@@ -613,14 +728,14 @@
  */
 html {
   /* 1 */
-  font-family: "Sofia Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--gls-font-family-base);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 3 */
-  background: #ffffff;
+  background: #fff;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -858,7 +973,7 @@ h6, .gls-h6,
 .gls-heading-2xlarge,
 .gls-heading-3xlarge {
   margin: 0 0 16px 0;
-  font-family: "Sofia Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--gls-font-family-heading);
   font-weight: 400;
   color: rgba(0, 0, 0, 0.9);
   text-transform: none;
@@ -1025,7 +1140,7 @@ pre {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  background: #ffffff;
+  background: #fff;
 }
 
 pre code {
@@ -1046,7 +1161,7 @@ pre code {
  ========================================================================== */
 ::selection {
   background: #39f;
-  color: #ffffff;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -2361,7 +2476,7 @@ a:hover .gls-icon-overlay {
   height: 20px;
   width: 20px;
   border-radius: 500px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid var(--color-gray-4);
 }
 
@@ -2374,7 +2489,7 @@ a:hover .gls-icon-overlay {
   width: 20px;
   margin-top: -10px;
   border-radius: 500px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid var(--color-gray-4);
 }
 
@@ -2517,7 +2632,7 @@ a:hover .gls-icon-overlay {
   border: 0 none;
   /* 4 */
   padding: 0 10px;
-  background: #ffffff;
+  background: #fff;
   color: rgba(0, 0, 0, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.2);
   transition: 0.2s ease-in-out;
@@ -2570,7 +2685,7 @@ a:hover .gls-icon-overlay {
 .gls-select:focus,
 .gls-textarea:focus {
   outline: none;
-  background-color: #ffffff;
+  background-color: #fff;
   color: rgba(0, 0, 0, 0.8);
   border-color: var(--global-primary-background);
 }
@@ -2771,15 +2886,15 @@ select.gls-form-width-xsmall {
  * Icons
  */
 .gls-radio:checked {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23ffffff%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 
 .gls-checkbox:checked {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23ffffff%22%20points%3D%2213%203.5%206%2010%203%207.5%202%208%206%2012.5%2014%204%2013%203.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2213%203.5%206%2010%203%207.5%202%208%206%2012.5%2014%204%2013%203.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 
 .gls-checkbox:indeterminate {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23ffffff%22%20x%3D%223%22%20y%3D%228%22%20width%3D%2210%22%20height%3D%221%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23fff%22%20x%3D%223%22%20y%3D%228%22%20width%3D%2210%22%20height%3D%221%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 
 /*
@@ -3138,7 +3253,7 @@ select.gls-form-width-xsmall {
  */
 .gls-button-primary {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .gls-button-primary:hover, .gls-button-primary:focus {
@@ -3148,14 +3263,14 @@ select.gls-form-width-xsmall {
 /* Hover */
 .gls-button-primary:hover {
   background-color: var(--color-primary-hover);
-  color: #ffffff;
+  color: #fff;
 }
 
 /* OnClick + Active */
 .gls-button-primary:active,
 .gls-button-primary.gls-active {
   background-color: var(--color-primary-active);
-  color: #ffffff;
+  color: #fff;
 }
 
 /*
@@ -3188,7 +3303,7 @@ select.gls-form-width-xsmall {
  */
 .gls-button-danger {
   background-color: var(--global-danger-background);
-  color: #ffffff;
+  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .gls-button-danger:hover, .gls-button-danger:focus {
@@ -3198,14 +3313,14 @@ select.gls-form-width-xsmall {
 /* Hover */
 .gls-button-danger:hover {
   background-color: var(--color-danger-hover);
-  color: #ffffff;
+  color: #fff;
 }
 
 /* OnClick + Active */
 .gls-button-danger:active,
 .gls-button-danger.gls-active {
   background-color: var(--color-danger-active);
-  color: #ffffff;
+  color: #fff;
 }
 
 /*
@@ -3559,7 +3674,7 @@ select.gls-form-width-xsmall {
  */
 .gls-section-default {
   --gls-inverse: dark;
-  background: #ffffff;
+  background: #fff;
 }
 
 /*
@@ -3607,7 +3722,7 @@ select.gls-form-width-xsmall {
 .gls-section-tertiary {
   --gls-inverse: light;
   background: var(--global-tertiary-background);
-  color: #ffffff;
+  color: #fff;
 }
 .gls-section-tertiary h1,
 .gls-section-tertiary h2,
@@ -3621,7 +3736,7 @@ select.gls-form-width-xsmall {
 .gls-section-tertiary .gls-h4,
 .gls-section-tertiary .gls-h5,
 .gls-section-tertiary .gls-h6 {
-  color: #ffffff;
+  color: #fff;
 }
 
 .gls-section-gradient {
@@ -3902,7 +4017,7 @@ select.gls-form-width-xsmall {
  */
 .gls-tile-default {
   --gls-inverse: dark;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 /*
@@ -3944,7 +4059,7 @@ select.gls-form-width-xsmall {
 .gls-tile-tertiary {
   --gls-inverse: light;
   background-color: var(--global-tertiary-background);
-  color: #ffffff;
+  color: #fff;
 }
 .gls-tile-tertiary h1,
 .gls-tile-tertiary h2,
@@ -3958,7 +4073,7 @@ select.gls-form-width-xsmall {
 .gls-tile-tertiary .gls-h4,
 .gls-tile-tertiary .gls-h5,
 .gls-tile-tertiary .gls-h6 {
-  color: #ffffff;
+  color: #fff;
 }
 
 .gls-tile-gradient {
@@ -4075,7 +4190,7 @@ select.gls-form-width-xsmall {
   padding: 0 10px;
   /* 3 */
   background: var(--global-primary-background);
-  color: #ffffff;
+  color: #fff;
   font-size: 0.875rem;
   /* 4 */
   display: flex;
@@ -4137,12 +4252,12 @@ select.gls-form-width-xsmall {
 .gls-card-primary {
   --gls-inverse: light;
   background-color: var(--global-primary-background);
-  color: #ffffff;
+  color: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.09), 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .gls-card-primary .gls-card-title {
-  color: #ffffff;
+  color: #fff;
 }
 
 .gls-card-primary.gls-card-hover:hover {
@@ -4227,7 +4342,7 @@ select.gls-form-width-xsmall {
   background-color: var(--global-background);
   color: var(--global-color);
   border: 1px solid var(--global-border);
-  --card-hover-background: #ffffff;
+  --card-hover-background: #fff;
 }
 .gls-card-outline .gls-card-title,
 .gls-child-card-outline .gls-card .gls-card-title {
@@ -4557,13 +4672,13 @@ select.gls-form-width-xsmall {
 .gls-marker {
   padding: 5px;
   background: var(--global-tertiary-background);
-  color: #ffffff;
+  color: #fff;
   border-radius: 500px;
 }
 
 /* Hover */
 .gls-marker:hover {
-  color: #ffffff;
+  color: #fff;
 }
 
 /* ========================================================================
@@ -4711,7 +4826,7 @@ select.gls-form-width-xsmall {
   vertical-align: middle;
   /* 1 */
   background: var(--global-primary-background);
-  color: #ffffff !important;
+  color: #fff !important;
   font-size: 11px;
   /* 2 */
   display: inline-flex;
@@ -4771,12 +4886,12 @@ a.gls-badge {
  */
 .gls-label-danger {
   background-color: var(--color-danger);
-  color: #ffffff;
+  color: #fff;
 }
 
 .gls-label-primary {
   background: var(--color-primary);
-  color: #ffffff;
+  color: #fff;
 }
 
 .gls-label-secondary {
@@ -4786,7 +4901,7 @@ a.gls-badge {
 
 .gls-label-tertiary {
   background: var(--color-gray-8);
-  color: #ffffff;
+  color: #fff;
 }
 
 .gls-label-info {
@@ -5502,7 +5617,7 @@ a.gls-accordion-title:focus,
   width: auto;
   /* 2 */
   padding: 25px 15px 25px 15px;
-  background: #ffffff;
+  background: #fff;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -5655,7 +5770,7 @@ a.gls-accordion-title:focus,
   /* 3 */
   max-width: 100% !important;
   /* 4 */
-  background: #ffffff;
+  background: #fff;
   /* 5 */
   opacity: 0;
   transform: translateY(-100px);
@@ -5710,14 +5825,14 @@ a.gls-accordion-title:focus,
 .gls-modal-header {
   display: flow-root;
   padding: 16px 32px;
-  background: #ffffff;
+  background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .gls-modal-footer {
   display: flow-root;
   padding: 16px 32px;
-  background: #ffffff;
+  background: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -5786,7 +5901,7 @@ a.gls-accordion-title:focus,
 }
 
 .gls-modal-close-outside:hover {
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Tablet landscape and bigger */
@@ -5804,7 +5919,7 @@ a.gls-accordion-title:focus,
   top: 0;
   right: 0;
   padding: 16px;
-  background: #ffffff;
+  background: #fff;
 }
 
 /* Tablet landscape and bigger */
@@ -6469,7 +6584,7 @@ a.gls-accordion-title:focus,
   /* 5 */
   background: #666;
   border-radius: 2px;
-  color: #ffffff;
+  color: #fff;
   font-size: 12px;
 }
 
@@ -7734,7 +7849,7 @@ body .gls-offcanvas-bar .gls-offcanvas-close:focus, body .gls-offcanvas-bar .gls
 /* Container
  ========================================================================== */
 .gls-navbar-container:not(.gls-navbar-transparent) {
-  background: #ffffff;
+  background: #fff;
 }
 
 /* Groups
@@ -7857,7 +7972,7 @@ body .gls-offcanvas-bar .gls-offcanvas-close:focus, body .gls-offcanvas-bar .gls
   min-height: 80px;
   /* 4 */
   font-size: 16px;
-  font-family: "Sofia Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--gls-font-family-base);
   /* 5 */
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7977,7 +8092,7 @@ body .gls-offcanvas-bar .gls-offcanvas-close:focus, body .gls-offcanvas-bar .gls
   width: 200px;
   /* 2 */
   padding: 25px;
-  background: #ffffff;
+  background: #fff;
   color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.09), 0 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -8349,7 +8464,7 @@ body .gls-offcanvas-bar .gls-offcanvas-close:focus, body .gls-offcanvas-bar .gls
 /* Active */
 .gls-subnav-pill > .gls-active > a {
   background-color: var(--global-primary-background);
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Disabled
@@ -8857,7 +8972,7 @@ body .gls-offcanvas-bar .gls-offcanvas-close:focus, body .gls-offcanvas-bar .gls
   min-width: 200px;
   /* 3 */
   padding: 25px;
-  background: #ffffff;
+  background: #fff;
   color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.09), 0 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -10799,7 +10914,7 @@ iframe[data-gls-cover] {
 /* Color
  ========================================================================== */
 .gls-background-default {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .gls-background-muted {
@@ -11559,7 +11674,7 @@ iframe[data-gls-cover] {
 .gls-logo {
   /* 1 */
   font-size: 1.5rem;
-  font-family: "Sofia Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--gls-font-family-base);
   color: rgba(0, 0, 0, 0.9);
   /* 2 */
   -webkit-text-decoration: none;
@@ -13137,13 +13252,13 @@ iframe[data-gls-cover] {
  * `gls-dark` is or dark colors on light backgrounds
  */
 .gls-light .gls-accordion-default .gls-accordion-title, .gls-section-primary:not(.gls-preserve-color) .gls-accordion-default .gls-accordion-title, .gls-tile-primary:not(.gls-preserve-color) .gls-accordion-default .gls-accordion-title, .gls-card-primary.gls-card-body .gls-accordion-default .gls-accordion-title, .gls-card-primary > :not([class*=gls-card-media]) .gls-accordion-default .gls-accordion-title, .gls-overlay-primary .gls-accordion-default .gls-accordion-title, .gls-offcanvas-bar .gls-accordion-default .gls-accordion-title {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-accordion-default .gls-accordion-title:hover, .gls-section-primary:not(.gls-preserve-color) .gls-accordion-default .gls-accordion-title:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-accordion-default .gls-accordion-title:hover, .gls-card-primary.gls-card-body .gls-accordion-default .gls-accordion-title:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-accordion-default .gls-accordion-title:hover, .gls-overlay-primary .gls-accordion-default .gls-accordion-title:hover, .gls-offcanvas-bar .gls-accordion-default .gls-accordion-title:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-accordion-default .gls-accordion-icon, .gls-section-primary:not(.gls-preserve-color) .gls-accordion-default .gls-accordion-icon, .gls-tile-primary:not(.gls-preserve-color) .gls-accordion-default .gls-accordion-icon, .gls-card-primary.gls-card-body .gls-accordion-default .gls-accordion-icon, .gls-card-primary > :not([class*=gls-card-media]) .gls-accordion-default .gls-accordion-icon, .gls-overlay-primary .gls-accordion-default .gls-accordion-icon, .gls-offcanvas-bar .gls-accordion-default .gls-accordion-icon {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-article-meta, .gls-section-primary:not(.gls-preserve-color) .gls-article-meta, .gls-tile-primary:not(.gls-preserve-color) .gls-article-meta, .gls-card-primary.gls-card-body .gls-article-meta, .gls-card-primary > :not([class*=gls-card-media]) .gls-article-meta, .gls-overlay-primary .gls-article-meta, .gls-offcanvas-bar .gls-article-meta {
   color: rgba(255, 255, 255, 0.9);
@@ -13153,7 +13268,7 @@ iframe[data-gls-cover] {
   color: rgba(0, 0, 0, 0.8) !important;
 }
 .gls-light, .gls-section-primary:not(.gls-preserve-color), .gls-tile-primary:not(.gls-preserve-color), .gls-card-primary.gls-card-body, .gls-card-primary > :not([class*=gls-card-media]), .gls-overlay-primary, .gls-offcanvas-bar {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light a, .gls-section-primary:not(.gls-preserve-color) a, .gls-tile-primary:not(.gls-preserve-color) a, .gls-card-primary.gls-card-body a, .gls-card-primary > :not([class*=gls-card-media]) a, .gls-overlay-primary a, .gls-offcanvas-bar a,
 .gls-light .gls-link,
@@ -13163,7 +13278,7 @@ iframe[data-gls-cover] {
 .gls-card-primary > :not([class*=gls-card-media]) .gls-link,
 .gls-overlay-primary .gls-link,
 .gls-offcanvas-bar .gls-link {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light a:hover, .gls-section-primary:not(.gls-preserve-color) a:hover, .gls-tile-primary:not(.gls-preserve-color) a:hover, .gls-card-primary.gls-card-body a:hover, .gls-card-primary > :not([class*=gls-card-media]) a:hover, .gls-overlay-primary a:hover, .gls-offcanvas-bar a:hover,
 .gls-light .gls-link:hover,
@@ -13180,7 +13295,7 @@ iframe[data-gls-cover] {
 .gls-card-primary > :not([class*=gls-card-media]) .gls-link-toggle:hover .gls-link,
 .gls-overlay-primary .gls-link-toggle:hover .gls-link,
 .gls-offcanvas-bar .gls-link-toggle:hover .gls-link {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light :not(pre) > code, .gls-section-primary:not(.gls-preserve-color) :not(pre) > code, .gls-tile-primary:not(.gls-preserve-color) :not(pre) > code, .gls-card-primary.gls-card-body :not(pre) > code, .gls-card-primary > :not([class*=gls-card-media]) :not(pre) > code, .gls-overlay-primary :not(pre) > code, .gls-offcanvas-bar :not(pre) > code,
 .gls-light :not(pre) > kbd,
@@ -13197,11 +13312,11 @@ iframe[data-gls-cover] {
 .gls-card-primary > :not([class*=gls-card-media]) :not(pre) > samp,
 .gls-overlay-primary :not(pre) > samp,
 .gls-offcanvas-bar :not(pre) > samp {
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .gls-light em, .gls-section-primary:not(.gls-preserve-color) em, .gls-tile-primary:not(.gls-preserve-color) em, .gls-card-primary.gls-card-body em, .gls-card-primary > :not([class*=gls-card-media]) em, .gls-overlay-primary em, .gls-offcanvas-bar em {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light h1, .gls-section-primary:not(.gls-preserve-color) h1, .gls-tile-primary:not(.gls-preserve-color) h1, .gls-card-primary.gls-card-body h1, .gls-card-primary > :not([class*=gls-card-media]) h1, .gls-overlay-primary h1, .gls-offcanvas-bar h1, .gls-light .gls-h1, .gls-section-primary:not(.gls-preserve-color) .gls-h1, .gls-tile-primary:not(.gls-preserve-color) .gls-h1, .gls-card-primary.gls-card-body .gls-h1, .gls-card-primary > :not([class*=gls-card-media]) .gls-h1, .gls-overlay-primary .gls-h1, .gls-offcanvas-bar .gls-h1,
 .gls-light h2,
@@ -13281,41 +13396,41 @@ iframe[data-gls-cover] {
 .gls-card-primary > :not([class*=gls-card-media]) .gls-heading-3xlarge,
 .gls-overlay-primary .gls-heading-3xlarge,
 .gls-offcanvas-bar .gls-heading-3xlarge {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light blockquote, .gls-section-primary:not(.gls-preserve-color) blockquote, .gls-tile-primary:not(.gls-preserve-color) blockquote, .gls-card-primary.gls-card-body blockquote, .gls-card-primary > :not([class*=gls-card-media]) blockquote, .gls-overlay-primary blockquote, .gls-offcanvas-bar blockquote {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light blockquote footer, .gls-section-primary:not(.gls-preserve-color) blockquote footer, .gls-tile-primary:not(.gls-preserve-color) blockquote footer, .gls-card-primary.gls-card-body blockquote footer, .gls-card-primary > :not([class*=gls-card-media]) blockquote footer, .gls-overlay-primary blockquote footer, .gls-offcanvas-bar blockquote footer {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light hr, .gls-section-primary:not(.gls-preserve-color) hr, .gls-tile-primary:not(.gls-preserve-color) hr, .gls-card-primary.gls-card-body hr, .gls-card-primary > :not([class*=gls-card-media]) hr, .gls-overlay-primary hr, .gls-offcanvas-bar hr, .gls-light .gls-hr, .gls-section-primary:not(.gls-preserve-color) .gls-hr, .gls-tile-primary:not(.gls-preserve-color) .gls-hr, .gls-card-primary.gls-card-body .gls-hr, .gls-card-primary > :not([class*=gls-card-media]) .gls-hr, .gls-overlay-primary .gls-hr, .gls-offcanvas-bar .gls-hr {
   border-top-color: rgba(255, 255, 255, 0.2);
 }
 .gls-light :focus-visible, .gls-section-primary:not(.gls-preserve-color) :focus-visible, .gls-tile-primary:not(.gls-preserve-color) :focus-visible, .gls-card-primary.gls-card-body :focus-visible, .gls-card-primary > :not([class*=gls-card-media]) :focus-visible, .gls-overlay-primary :focus-visible, .gls-offcanvas-bar :focus-visible {
-  outline-color: #ffffff;
+  outline-color: #fff;
 }
 .gls-light .gls-breadcrumb > * > *, .gls-section-primary:not(.gls-preserve-color) .gls-breadcrumb > * > *, .gls-tile-primary:not(.gls-preserve-color) .gls-breadcrumb > * > *, .gls-card-primary.gls-card-body .gls-breadcrumb > * > *, .gls-card-primary > :not([class*=gls-card-media]) .gls-breadcrumb > * > *, .gls-overlay-primary .gls-breadcrumb > * > *, .gls-offcanvas-bar .gls-breadcrumb > * > * {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-breadcrumb > * > :hover, .gls-section-primary:not(.gls-preserve-color) .gls-breadcrumb > * > :hover, .gls-tile-primary:not(.gls-preserve-color) .gls-breadcrumb > * > :hover, .gls-card-primary.gls-card-body .gls-breadcrumb > * > :hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-breadcrumb > * > :hover, .gls-overlay-primary .gls-breadcrumb > * > :hover, .gls-offcanvas-bar .gls-breadcrumb > * > :hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-breadcrumb > :last-child > *, .gls-section-primary:not(.gls-preserve-color) .gls-breadcrumb > :last-child > *, .gls-tile-primary:not(.gls-preserve-color) .gls-breadcrumb > :last-child > *, .gls-card-primary.gls-card-body .gls-breadcrumb > :last-child > *, .gls-card-primary > :not([class*=gls-card-media]) .gls-breadcrumb > :last-child > *, .gls-overlay-primary .gls-breadcrumb > :last-child > *, .gls-offcanvas-bar .gls-breadcrumb > :last-child > * {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-breadcrumb > :nth-child(n+2):not(.gls-first-column)::before, .gls-section-primary:not(.gls-preserve-color) .gls-breadcrumb > :nth-child(n+2):not(.gls-first-column)::before, .gls-tile-primary:not(.gls-preserve-color) .gls-breadcrumb > :nth-child(n+2):not(.gls-first-column)::before, .gls-card-primary.gls-card-body .gls-breadcrumb > :nth-child(n+2):not(.gls-first-column)::before, .gls-card-primary > :not([class*=gls-card-media]) .gls-breadcrumb > :nth-child(n+2):not(.gls-first-column)::before, .gls-overlay-primary .gls-breadcrumb > :nth-child(n+2):not(.gls-first-column)::before, .gls-offcanvas-bar .gls-breadcrumb > :nth-child(n+2):not(.gls-first-column)::before {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-button-default, .gls-section-primary:not(.gls-preserve-color) .gls-button-default, .gls-tile-primary:not(.gls-preserve-color) .gls-button-default, .gls-card-primary.gls-card-body .gls-button-default, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-default, .gls-overlay-primary .gls-button-default, .gls-offcanvas-bar .gls-button-default {
   background-color: var(--color-trans-white-1);
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #fff;
+  border-color: #fff;
 }
 .gls-light .gls-button-default:hover, .gls-section-primary:not(.gls-preserve-color) .gls-button-default:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-button-default:hover, .gls-card-primary.gls-card-body .gls-button-default:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-default:hover, .gls-overlay-primary .gls-button-default:hover, .gls-offcanvas-bar .gls-button-default:hover {
   background-color: var(--color-trans-white-2);
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #fff;
+  border-color: #fff;
 }
 .gls-light .gls-button-default:active, .gls-section-primary:not(.gls-preserve-color) .gls-button-default:active, .gls-tile-primary:not(.gls-preserve-color) .gls-button-default:active, .gls-card-primary.gls-card-body .gls-button-default:active, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-default:active, .gls-overlay-primary .gls-button-default:active, .gls-offcanvas-bar .gls-button-default:active,
 .gls-light .gls-button-default.gls-active,
@@ -13326,11 +13441,11 @@ iframe[data-gls-cover] {
 .gls-overlay-primary .gls-button-default.gls-active,
 .gls-offcanvas-bar .gls-button-default.gls-active {
   background-color: var(--color-trans-white-3);
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #fff;
+  border-color: #fff;
 }
 .gls-light .gls-button-primary, .gls-section-primary:not(.gls-preserve-color) .gls-button-primary, .gls-tile-primary:not(.gls-preserve-color) .gls-button-primary, .gls-card-primary.gls-card-body .gls-button-primary, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-primary, .gls-overlay-primary .gls-button-primary, .gls-offcanvas-bar .gls-button-primary {
-  background-color: #ffffff;
+  background-color: #fff;
   color: var(--color-primary);
 }
 .gls-light .gls-button-primary:hover, .gls-section-primary:not(.gls-preserve-color) .gls-button-primary:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-button-primary:hover, .gls-card-primary.gls-card-body .gls-button-primary:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-primary:hover, .gls-overlay-primary .gls-button-primary:hover, .gls-offcanvas-bar .gls-button-primary:hover {
@@ -13368,19 +13483,19 @@ iframe[data-gls-cover] {
   color: rgba(0, 0, 0, 0.8);
 }
 .gls-light .gls-button-text, .gls-section-primary:not(.gls-preserve-color) .gls-button-text, .gls-tile-primary:not(.gls-preserve-color) .gls-button-text, .gls-card-primary.gls-card-body .gls-button-text, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-text, .gls-overlay-primary .gls-button-text, .gls-offcanvas-bar .gls-button-text {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-button-text::before, .gls-section-primary:not(.gls-preserve-color) .gls-button-text::before, .gls-tile-primary:not(.gls-preserve-color) .gls-button-text::before, .gls-card-primary.gls-card-body .gls-button-text::before, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-text::before, .gls-overlay-primary .gls-button-text::before, .gls-offcanvas-bar .gls-button-text::before {
-  border-bottom-color: #ffffff;
+  border-bottom-color: #fff;
 }
 .gls-light .gls-button-text:hover, .gls-section-primary:not(.gls-preserve-color) .gls-button-text:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-button-text:hover, .gls-card-primary.gls-card-body .gls-button-text:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-text:hover, .gls-overlay-primary .gls-button-text:hover, .gls-offcanvas-bar .gls-button-text:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-button-text:disabled, .gls-section-primary:not(.gls-preserve-color) .gls-button-text:disabled, .gls-tile-primary:not(.gls-preserve-color) .gls-button-text:disabled, .gls-card-primary.gls-card-body .gls-button-text:disabled, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-text:disabled, .gls-overlay-primary .gls-button-text:disabled, .gls-offcanvas-bar .gls-button-text:disabled {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-button-link, .gls-section-primary:not(.gls-preserve-color) .gls-button-link, .gls-tile-primary:not(.gls-preserve-color) .gls-button-link, .gls-card-primary.gls-card-body .gls-button-link, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-link, .gls-overlay-primary .gls-button-link, .gls-offcanvas-bar .gls-button-link {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-button-link:hover, .gls-section-primary:not(.gls-preserve-color) .gls-button-link:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-button-link:hover, .gls-card-primary.gls-card-body .gls-button-link:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-button-link:hover, .gls-overlay-primary .gls-button-link:hover, .gls-offcanvas-bar .gls-button-link:hover {
   color: rgba(255, 255, 255, 0.9);
@@ -13393,7 +13508,7 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-close:hover, .gls-section-primary:not(.gls-preserve-color) .gls-close:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-close:hover, .gls-card-primary.gls-card-body .gls-close:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-close:hover, .gls-overlay-primary .gls-close:hover, .gls-offcanvas-bar .gls-close:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-column-divider, .gls-section-primary:not(.gls-preserve-color) .gls-column-divider, .gls-tile-primary:not(.gls-preserve-color) .gls-column-divider, .gls-card-primary.gls-card-body .gls-column-divider, .gls-card-primary > :not([class*=gls-card-media]) .gls-column-divider, .gls-overlay-primary .gls-column-divider, .gls-offcanvas-bar .gls-column-divider {
   column-rule-color: rgba(255, 255, 255, 0.2);
@@ -13488,7 +13603,7 @@ iframe[data-gls-cover] {
 .gls-overlay-primary .gls-textarea,
 .gls-offcanvas-bar .gls-textarea {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: #fff;
   background-clip: padding-box;
   border-color: rgba(255, 255, 255, 0.2);
 }
@@ -13508,8 +13623,8 @@ iframe[data-gls-cover] {
 .gls-overlay-primary .gls-textarea:focus,
 .gls-offcanvas-bar .gls-textarea:focus {
   background-color: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #fff;
+  border-color: #fff;
 }
 .gls-light .gls-input::placeholder, .gls-section-primary:not(.gls-preserve-color) .gls-input::placeholder, .gls-tile-primary:not(.gls-preserve-color) .gls-input::placeholder, .gls-card-primary.gls-card-body .gls-input::placeholder, .gls-card-primary > :not([class*=gls-card-media]) .gls-input::placeholder, .gls-overlay-primary .gls-input::placeholder, .gls-offcanvas-bar .gls-input::placeholder {
   color: rgba(255, 255, 255, 0.9);
@@ -13518,7 +13633,7 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-select:not([multiple]):not([size]), .gls-section-primary:not(.gls-preserve-color) .gls-select:not([multiple]):not([size]), .gls-tile-primary:not(.gls-preserve-color) .gls-select:not([multiple]):not([size]), .gls-card-primary.gls-card-body .gls-select:not([multiple]):not([size]), .gls-card-primary > :not([class*=gls-card-media]) .gls-select:not([multiple]):not([size]), .gls-overlay-primary .gls-select:not([multiple]):not([size]), .gls-offcanvas-bar .gls-select:not([multiple]):not([size]) {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23ffffff%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23ffffff%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .gls-light .gls-input[list]:hover, .gls-section-primary:not(.gls-preserve-color) .gls-input[list]:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-input[list]:hover, .gls-card-primary.gls-card-body .gls-input[list]:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-input[list]:hover, .gls-overlay-primary .gls-input[list]:hover, .gls-offcanvas-bar .gls-input[list]:hover,
 .gls-light .gls-input[list]:focus,
@@ -13528,7 +13643,7 @@ iframe[data-gls-cover] {
 .gls-card-primary > :not([class*=gls-card-media]) .gls-input[list]:focus,
 .gls-overlay-primary .gls-input[list]:focus,
 .gls-offcanvas-bar .gls-input[list]:focus {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23ffffff%22%20points%3D%2212%2012%208%206%2016%206%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%2012%208%206%2016%206%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .gls-light .gls-radio, .gls-section-primary:not(.gls-preserve-color) .gls-radio, .gls-tile-primary:not(.gls-preserve-color) .gls-radio, .gls-card-primary.gls-card-body .gls-radio, .gls-card-primary > :not([class*=gls-card-media]) .gls-radio, .gls-overlay-primary .gls-radio, .gls-offcanvas-bar .gls-radio,
 .gls-light .gls-checkbox,
@@ -13550,7 +13665,7 @@ iframe[data-gls-cover] {
 .gls-overlay-primary .gls-checkbox:focus,
 .gls-offcanvas-bar .gls-checkbox:focus {
   background-color: rgba(255, 255, 255, 0.15);
-  border-color: #ffffff;
+  border-color: #fff;
 }
 .gls-light .gls-radio:checked, .gls-section-primary:not(.gls-preserve-color) .gls-radio:checked, .gls-tile-primary:not(.gls-preserve-color) .gls-radio:checked, .gls-card-primary.gls-card-body .gls-radio:checked, .gls-card-primary > :not([class*=gls-card-media]) .gls-radio:checked, .gls-overlay-primary .gls-radio:checked, .gls-offcanvas-bar .gls-radio:checked,
 .gls-light .gls-checkbox:checked,
@@ -13597,13 +13712,13 @@ iframe[data-gls-cover] {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22rgba(0, 0, 0, 0.8)%22%20x%3D%223%22%20y%3D%228%22%20width%3D%2210%22%20height%3D%221%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 .gls-light .gls-form-label, .gls-section-primary:not(.gls-preserve-color) .gls-form-label, .gls-tile-primary:not(.gls-preserve-color) .gls-form-label, .gls-card-primary.gls-card-body .gls-form-label, .gls-card-primary > :not([class*=gls-card-media]) .gls-form-label, .gls-overlay-primary .gls-form-label, .gls-offcanvas-bar .gls-form-label {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-form-icon, .gls-section-primary:not(.gls-preserve-color) .gls-form-icon, .gls-tile-primary:not(.gls-preserve-color) .gls-form-icon, .gls-card-primary.gls-card-body .gls-form-icon, .gls-card-primary > :not([class*=gls-card-media]) .gls-form-icon, .gls-overlay-primary .gls-form-icon, .gls-offcanvas-bar .gls-form-icon {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-form-icon:hover, .gls-section-primary:not(.gls-preserve-color) .gls-form-icon:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-form-icon:hover, .gls-card-primary.gls-card-body .gls-form-icon:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-form-icon:hover, .gls-overlay-primary .gls-form-icon:hover, .gls-offcanvas-bar .gls-form-icon:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-grid-divider > :not(.gls-first-column)::before, .gls-section-primary:not(.gls-preserve-color) .gls-grid-divider > :not(.gls-first-column)::before, .gls-tile-primary:not(.gls-preserve-color) .gls-grid-divider > :not(.gls-first-column)::before, .gls-card-primary.gls-card-body .gls-grid-divider > :not(.gls-first-column)::before, .gls-card-primary > :not([class*=gls-card-media]) .gls-grid-divider > :not(.gls-first-column)::before, .gls-overlay-primary .gls-grid-divider > :not(.gls-first-column)::before, .gls-offcanvas-bar .gls-grid-divider > :not(.gls-first-column)::before {
   border-left-color: rgba(255, 255, 255, 0.2);
@@ -13631,7 +13746,7 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-icon-link:hover, .gls-section-primary:not(.gls-preserve-color) .gls-icon-link:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-icon-link:hover, .gls-card-primary.gls-card-body .gls-icon-link:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-icon-link:hover, .gls-overlay-primary .gls-icon-link:hover, .gls-offcanvas-bar .gls-icon-link:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-icon-link:active, .gls-section-primary:not(.gls-preserve-color) .gls-icon-link:active, .gls-tile-primary:not(.gls-preserve-color) .gls-icon-link:active, .gls-card-primary.gls-card-body .gls-icon-link:active, .gls-card-primary > :not([class*=gls-card-media]) .gls-icon-link:active, .gls-overlay-primary .gls-icon-link:active, .gls-offcanvas-bar .gls-icon-link:active,
 .gls-light .gls-active > .gls-icon-link,
@@ -13641,7 +13756,7 @@ iframe[data-gls-cover] {
 .gls-card-primary > :not([class*=gls-card-media]) .gls-active > .gls-icon-link,
 .gls-overlay-primary .gls-active > .gls-icon-link,
 .gls-offcanvas-bar .gls-active > .gls-icon-link {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-icon-button, .gls-section-primary:not(.gls-preserve-color) .gls-icon-button, .gls-tile-primary:not(.gls-preserve-color) .gls-icon-button, .gls-card-primary.gls-card-body .gls-icon-button, .gls-card-primary > :not([class*=gls-card-media]) .gls-icon-button, .gls-overlay-primary .gls-icon-button, .gls-offcanvas-bar .gls-icon-button {
   background-color: rgba(255, 255, 255, 0.1);
@@ -13649,11 +13764,11 @@ iframe[data-gls-cover] {
 }
 .gls-light .gls-icon-button:hover, .gls-section-primary:not(.gls-preserve-color) .gls-icon-button:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-icon-button:hover, .gls-card-primary.gls-card-body .gls-icon-button:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-icon-button:hover, .gls-overlay-primary .gls-icon-button:hover, .gls-offcanvas-bar .gls-icon-button:hover {
   background-color: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-icon-button:active, .gls-section-primary:not(.gls-preserve-color) .gls-icon-button:active, .gls-tile-primary:not(.gls-preserve-color) .gls-icon-button:active, .gls-card-primary.gls-card-body .gls-icon-button:active, .gls-card-primary > :not([class*=gls-card-media]) .gls-icon-button:active, .gls-overlay-primary .gls-icon-button:active, .gls-offcanvas-bar .gls-icon-button:active {
   background-color: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-icon-overlay, .gls-section-primary:not(.gls-preserve-color) .gls-icon-overlay, .gls-tile-primary:not(.gls-preserve-color) .gls-icon-overlay, .gls-card-primary.gls-card-body .gls-icon-overlay, .gls-card-primary > :not([class*=gls-card-media]) .gls-icon-overlay, .gls-overlay-primary .gls-icon-overlay, .gls-offcanvas-bar .gls-icon-overlay,
 .gls-light a .gls-icon-overlay, .gls-light:is(a) .gls-icon-overlay {
@@ -13667,16 +13782,16 @@ iframe[data-gls-cover] {
 .gls-card-primary > :not([class*=gls-card-media]) a:hover .gls-icon-overlay,
 .gls-overlay-primary a:hover .gls-icon-overlay,
 .gls-offcanvas-bar a:hover .gls-icon-overlay, .gls-light:is(a):hover .gls-icon-overlay, .gls-section-primary:is(a):hover:not(.gls-preserve-color) .gls-icon-overlay, .gls-tile-primary:is(a):hover:not(.gls-preserve-color) .gls-icon-overlay, .gls-card-primary.gls-card-body:is(a):hover .gls-icon-overlay, .gls-card-primary > :is(a):hover:not([class*=gls-card-media]) .gls-icon-overlay, .gls-overlay-primary:is(a):hover .gls-icon-overlay, .gls-offcanvas-bar:is(a):hover .gls-icon-overlay {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-iconnav > * > a, .gls-section-primary:not(.gls-preserve-color) .gls-iconnav > * > a, .gls-tile-primary:not(.gls-preserve-color) .gls-iconnav > * > a, .gls-card-primary.gls-card-body .gls-iconnav > * > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-iconnav > * > a, .gls-overlay-primary .gls-iconnav > * > a, .gls-offcanvas-bar .gls-iconnav > * > a {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-iconnav > * > a:hover, .gls-section-primary:not(.gls-preserve-color) .gls-iconnav > * > a:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-iconnav > * > a:hover, .gls-card-primary.gls-card-body .gls-iconnav > * > a:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-iconnav > * > a:hover, .gls-overlay-primary .gls-iconnav > * > a:hover, .gls-offcanvas-bar .gls-iconnav > * > a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-iconnav > .gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-iconnav > .gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-iconnav > .gls-active > a, .gls-card-primary.gls-card-body .gls-iconnav > .gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-iconnav > .gls-active > a, .gls-overlay-primary .gls-iconnav > .gls-active > a, .gls-offcanvas-bar .gls-iconnav > .gls-active > a {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-label, .gls-section-primary:not(.gls-preserve-color) .gls-label, .gls-tile-primary:not(.gls-preserve-color) .gls-label, .gls-card-primary.gls-card-body .gls-label, .gls-card-primary > :not([class*=gls-card-media]) .gls-label, .gls-overlay-primary .gls-label, .gls-offcanvas-bar .gls-label {
   background-color: #be0000;
@@ -13707,7 +13822,7 @@ iframe[data-gls-cover] {
 .gls-card-primary > :not([class*=gls-card-media]) .gls-link-toggle:hover .gls-link-muted,
 .gls-overlay-primary .gls-link-toggle:hover .gls-link-muted,
 .gls-offcanvas-bar .gls-link-toggle:hover .gls-link-muted {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light a.gls-link-text:hover, .gls-section-primary:not(.gls-preserve-color) a.gls-link-text:hover, .gls-tile-primary:not(.gls-preserve-color) a.gls-link-text:hover, .gls-card-primary.gls-card-body a.gls-link-text:hover, .gls-card-primary > :not([class*=gls-card-media]) a.gls-link-text:hover, .gls-overlay-primary a.gls-link-text:hover, .gls-offcanvas-bar a.gls-link-text:hover,
 .gls-light .gls-link-text a:hover,
@@ -13747,7 +13862,7 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9) !important;
 }
 .gls-light .gls-list-emphasis > ::marker, .gls-section-primary:not(.gls-preserve-color) .gls-list-emphasis > ::marker, .gls-tile-primary:not(.gls-preserve-color) .gls-list-emphasis > ::marker, .gls-card-primary.gls-card-body .gls-list-emphasis > ::marker, .gls-card-primary > :not([class*=gls-card-media]) .gls-list-emphasis > ::marker, .gls-overlay-primary .gls-list-emphasis > ::marker, .gls-offcanvas-bar .gls-list-emphasis > ::marker {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 .gls-light .gls-list-primary > ::marker, .gls-section-primary:not(.gls-preserve-color) .gls-list-primary > ::marker, .gls-tile-primary:not(.gls-preserve-color) .gls-list-primary > ::marker, .gls-card-primary.gls-card-body .gls-list-primary > ::marker, .gls-card-primary > :not([class*=gls-card-media]) .gls-list-primary > ::marker, .gls-overlay-primary .gls-list-primary > ::marker, .gls-offcanvas-bar .gls-list-primary > ::marker {
   color: #be0000 !important;
@@ -13756,7 +13871,7 @@ iframe[data-gls-cover] {
   color: #be0000 !important;
 }
 .gls-light .gls-list-bullet > ::before, .gls-section-primary:not(.gls-preserve-color) .gls-list-bullet > ::before, .gls-tile-primary:not(.gls-preserve-color) .gls-list-bullet > ::before, .gls-card-primary.gls-card-body .gls-list-bullet > ::before, .gls-card-primary > :not([class*=gls-card-media]) .gls-list-bullet > ::before, .gls-overlay-primary .gls-list-bullet > ::before, .gls-offcanvas-bar .gls-list-bullet > ::before {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23ffffff%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 .gls-light .gls-list-divider > :nth-child(n+2), .gls-section-primary:not(.gls-preserve-color) .gls-list-divider > :nth-child(n+2), .gls-tile-primary:not(.gls-preserve-color) .gls-list-divider > :nth-child(n+2), .gls-card-primary.gls-card-body .gls-list-divider > :nth-child(n+2), .gls-card-primary > :not([class*=gls-card-media]) .gls-list-divider > :nth-child(n+2), .gls-overlay-primary .gls-list-divider > :nth-child(n+2), .gls-offcanvas-bar .gls-list-divider > :nth-child(n+2) {
   border-top-color: rgba(255, 255, 255, 0.2);
@@ -13779,13 +13894,13 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-nav-default > li > a:hover, .gls-section-primary:not(.gls-preserve-color) .gls-nav-default > li > a:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-default > li > a:hover, .gls-card-primary.gls-card-body .gls-nav-default > li > a:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-default > li > a:hover, .gls-overlay-primary .gls-nav-default > li > a:hover, .gls-offcanvas-bar .gls-nav-default > li > a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-default > li.gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-nav-default > li.gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-default > li.gls-active > a, .gls-card-primary.gls-card-body .gls-nav-default > li.gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-default > li.gls-active > a, .gls-overlay-primary .gls-nav-default > li.gls-active > a, .gls-offcanvas-bar .gls-nav-default > li.gls-active > a {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-default .gls-nav-header, .gls-section-primary:not(.gls-preserve-color) .gls-nav-default .gls-nav-header, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-default .gls-nav-header, .gls-card-primary.gls-card-body .gls-nav-default .gls-nav-header, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-default .gls-nav-header, .gls-overlay-primary .gls-nav-default .gls-nav-header, .gls-offcanvas-bar .gls-nav-default .gls-nav-header {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-default .gls-nav-divider, .gls-section-primary:not(.gls-preserve-color) .gls-nav-default .gls-nav-divider, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-default .gls-nav-divider, .gls-card-primary.gls-card-body .gls-nav-default .gls-nav-divider, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-default .gls-nav-divider, .gls-overlay-primary .gls-nav-default .gls-nav-divider, .gls-offcanvas-bar .gls-nav-default .gls-nav-divider {
   border-top-color: rgba(255, 255, 255, 0.2);
@@ -13794,22 +13909,22 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-nav-default .gls-nav-sub a:hover, .gls-section-primary:not(.gls-preserve-color) .gls-nav-default .gls-nav-sub a:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-default .gls-nav-sub a:hover, .gls-card-primary.gls-card-body .gls-nav-default .gls-nav-sub a:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-default .gls-nav-sub a:hover, .gls-overlay-primary .gls-nav-default .gls-nav-sub a:hover, .gls-offcanvas-bar .gls-nav-default .gls-nav-sub a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-default .gls-nav-sub li.gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-nav-default .gls-nav-sub li.gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-default .gls-nav-sub li.gls-active > a, .gls-card-primary.gls-card-body .gls-nav-default .gls-nav-sub li.gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-default .gls-nav-sub li.gls-active > a, .gls-overlay-primary .gls-nav-default .gls-nav-sub li.gls-active > a, .gls-offcanvas-bar .gls-nav-default .gls-nav-sub li.gls-active > a {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-primary > li > a, .gls-section-primary:not(.gls-preserve-color) .gls-nav-primary > li > a, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-primary > li > a, .gls-card-primary.gls-card-body .gls-nav-primary > li > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-primary > li > a, .gls-overlay-primary .gls-nav-primary > li > a, .gls-offcanvas-bar .gls-nav-primary > li > a {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-nav-primary > li > a:hover, .gls-section-primary:not(.gls-preserve-color) .gls-nav-primary > li > a:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-primary > li > a:hover, .gls-card-primary.gls-card-body .gls-nav-primary > li > a:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-primary > li > a:hover, .gls-overlay-primary .gls-nav-primary > li > a:hover, .gls-offcanvas-bar .gls-nav-primary > li > a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-primary > li.gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-nav-primary > li.gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-primary > li.gls-active > a, .gls-card-primary.gls-card-body .gls-nav-primary > li.gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-primary > li.gls-active > a, .gls-overlay-primary .gls-nav-primary > li.gls-active > a, .gls-offcanvas-bar .gls-nav-primary > li.gls-active > a {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-primary .gls-nav-header, .gls-section-primary:not(.gls-preserve-color) .gls-nav-primary .gls-nav-header, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-primary .gls-nav-header, .gls-card-primary.gls-card-body .gls-nav-primary .gls-nav-header, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-primary .gls-nav-header, .gls-overlay-primary .gls-nav-primary .gls-nav-header, .gls-offcanvas-bar .gls-nav-primary .gls-nav-header {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-primary .gls-nav-divider, .gls-section-primary:not(.gls-preserve-color) .gls-nav-primary .gls-nav-divider, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-primary .gls-nav-divider, .gls-card-primary.gls-card-body .gls-nav-primary .gls-nav-divider, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-primary .gls-nav-divider, .gls-overlay-primary .gls-nav-primary .gls-nav-divider, .gls-offcanvas-bar .gls-nav-primary .gls-nav-divider {
   border-top-color: rgba(255, 255, 255, 0.2);
@@ -13818,33 +13933,33 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-nav-primary .gls-nav-sub a:hover, .gls-section-primary:not(.gls-preserve-color) .gls-nav-primary .gls-nav-sub a:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-primary .gls-nav-sub a:hover, .gls-card-primary.gls-card-body .gls-nav-primary .gls-nav-sub a:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-primary .gls-nav-sub a:hover, .gls-overlay-primary .gls-nav-primary .gls-nav-sub a:hover, .gls-offcanvas-bar .gls-nav-primary .gls-nav-sub a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-primary .gls-nav-sub li.gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-nav-primary .gls-nav-sub li.gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-primary .gls-nav-sub li.gls-active > a, .gls-card-primary.gls-card-body .gls-nav-primary .gls-nav-sub li.gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-primary .gls-nav-sub li.gls-active > a, .gls-overlay-primary .gls-nav-primary .gls-nav-sub li.gls-active > a, .gls-offcanvas-bar .gls-nav-primary .gls-nav-sub li.gls-active > a {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-secondary > li > a, .gls-section-primary:not(.gls-preserve-color) .gls-nav-secondary > li > a, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-secondary > li > a, .gls-card-primary.gls-card-body .gls-nav-secondary > li > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-secondary > li > a, .gls-overlay-primary .gls-nav-secondary > li > a, .gls-offcanvas-bar .gls-nav-secondary > li > a {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-secondary > li > a:hover, .gls-section-primary:not(.gls-preserve-color) .gls-nav-secondary > li > a:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-secondary > li > a:hover, .gls-card-primary.gls-card-body .gls-nav-secondary > li > a:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-secondary > li > a:hover, .gls-overlay-primary .gls-nav-secondary > li > a:hover, .gls-offcanvas-bar .gls-nav-secondary > li > a:hover {
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .gls-light .gls-nav-secondary > li.gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-nav-secondary > li.gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-secondary > li.gls-active > a, .gls-card-primary.gls-card-body .gls-nav-secondary > li.gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-secondary > li.gls-active > a, .gls-overlay-primary .gls-nav-secondary > li.gls-active > a, .gls-offcanvas-bar .gls-nav-secondary > li.gls-active > a {
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .gls-light .gls-nav-secondary .gls-nav-subtitle, .gls-section-primary:not(.gls-preserve-color) .gls-nav-secondary .gls-nav-subtitle, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-secondary .gls-nav-subtitle, .gls-card-primary.gls-card-body .gls-nav-secondary .gls-nav-subtitle, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-secondary .gls-nav-subtitle, .gls-overlay-primary .gls-nav-secondary .gls-nav-subtitle, .gls-offcanvas-bar .gls-nav-secondary .gls-nav-subtitle {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-nav-secondary > li > a:hover .gls-nav-subtitle, .gls-section-primary:not(.gls-preserve-color) .gls-nav-secondary > li > a:hover .gls-nav-subtitle, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-secondary > li > a:hover .gls-nav-subtitle, .gls-card-primary.gls-card-body .gls-nav-secondary > li > a:hover .gls-nav-subtitle, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-secondary > li > a:hover .gls-nav-subtitle, .gls-overlay-primary .gls-nav-secondary > li > a:hover .gls-nav-subtitle, .gls-offcanvas-bar .gls-nav-secondary > li > a:hover .gls-nav-subtitle {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-secondary > li.gls-active > a .gls-nav-subtitle, .gls-section-primary:not(.gls-preserve-color) .gls-nav-secondary > li.gls-active > a .gls-nav-subtitle, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-secondary > li.gls-active > a .gls-nav-subtitle, .gls-card-primary.gls-card-body .gls-nav-secondary > li.gls-active > a .gls-nav-subtitle, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-secondary > li.gls-active > a .gls-nav-subtitle, .gls-overlay-primary .gls-nav-secondary > li.gls-active > a .gls-nav-subtitle, .gls-offcanvas-bar .gls-nav-secondary > li.gls-active > a .gls-nav-subtitle {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-secondary .gls-nav-header, .gls-section-primary:not(.gls-preserve-color) .gls-nav-secondary .gls-nav-header, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-secondary .gls-nav-header, .gls-card-primary.gls-card-body .gls-nav-secondary .gls-nav-header, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-secondary .gls-nav-header, .gls-overlay-primary .gls-nav-secondary .gls-nav-header, .gls-offcanvas-bar .gls-nav-secondary .gls-nav-header {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-secondary .gls-nav-divider, .gls-section-primary:not(.gls-preserve-color) .gls-nav-secondary .gls-nav-divider, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-secondary .gls-nav-divider, .gls-card-primary.gls-card-body .gls-nav-secondary .gls-nav-divider, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-secondary .gls-nav-divider, .gls-overlay-primary .gls-nav-secondary .gls-nav-divider, .gls-offcanvas-bar .gls-nav-secondary .gls-nav-divider {
   border-top-color: rgba(255, 255, 255, 0.2);
@@ -13853,10 +13968,10 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-nav-secondary .gls-nav-sub a:hover, .gls-section-primary:not(.gls-preserve-color) .gls-nav-secondary .gls-nav-sub a:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-secondary .gls-nav-sub a:hover, .gls-card-primary.gls-card-body .gls-nav-secondary .gls-nav-sub a:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-secondary .gls-nav-sub a:hover, .gls-overlay-primary .gls-nav-secondary .gls-nav-sub a:hover, .gls-offcanvas-bar .gls-nav-secondary .gls-nav-sub a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav-secondary .gls-nav-sub li.gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-nav-secondary .gls-nav-sub li.gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-nav-secondary .gls-nav-sub li.gls-active > a, .gls-card-primary.gls-card-body .gls-nav-secondary .gls-nav-sub li.gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-nav-secondary .gls-nav-sub li.gls-active > a, .gls-overlay-primary .gls-nav-secondary .gls-nav-sub li.gls-active > a, .gls-offcanvas-bar .gls-nav-secondary .gls-nav-sub li.gls-active > a {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-nav.gls-nav-divider > :not(.gls-nav-divider) + :not(.gls-nav-header):not(.gls-nav-divider), .gls-section-primary:not(.gls-preserve-color) .gls-nav.gls-nav-divider > :not(.gls-nav-divider) + :not(.gls-nav-header):not(.gls-nav-divider), .gls-tile-primary:not(.gls-preserve-color) .gls-nav.gls-nav-divider > :not(.gls-nav-divider) + :not(.gls-nav-header):not(.gls-nav-divider), .gls-card-primary.gls-card-body .gls-nav.gls-nav-divider > :not(.gls-nav-divider) + :not(.gls-nav-header):not(.gls-nav-divider), .gls-card-primary > :not([class*=gls-card-media]) .gls-nav.gls-nav-divider > :not(.gls-nav-divider) + :not(.gls-nav-header):not(.gls-nav-divider), .gls-overlay-primary .gls-nav.gls-nav-divider > :not(.gls-nav-divider) + :not(.gls-nav-header):not(.gls-nav-divider), .gls-offcanvas-bar .gls-nav.gls-nav-divider > :not(.gls-nav-divider) + :not(.gls-nav-header):not(.gls-nav-divider) {
   border-top-color: rgba(255, 255, 255, 0.2);
@@ -13872,16 +13987,16 @@ iframe[data-gls-cover] {
 .gls-card-primary > :not([class*=gls-card-media]) .gls-navbar-nav > li > a[aria-expanded=true],
 .gls-overlay-primary .gls-navbar-nav > li > a[aria-expanded=true],
 .gls-offcanvas-bar .gls-navbar-nav > li > a[aria-expanded=true] {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-navbar-nav > li > a:active, .gls-section-primary:not(.gls-preserve-color) .gls-navbar-nav > li > a:active, .gls-tile-primary:not(.gls-preserve-color) .gls-navbar-nav > li > a:active, .gls-card-primary.gls-card-body .gls-navbar-nav > li > a:active, .gls-card-primary > :not([class*=gls-card-media]) .gls-navbar-nav > li > a:active, .gls-overlay-primary .gls-navbar-nav > li > a:active, .gls-offcanvas-bar .gls-navbar-nav > li > a:active {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-navbar-nav > li.gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-navbar-nav > li.gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-navbar-nav > li.gls-active > a, .gls-card-primary.gls-card-body .gls-navbar-nav > li.gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-navbar-nav > li.gls-active > a, .gls-overlay-primary .gls-navbar-nav > li.gls-active > a, .gls-offcanvas-bar .gls-navbar-nav > li.gls-active > a {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-navbar-item, .gls-section-primary:not(.gls-preserve-color) .gls-navbar-item, .gls-tile-primary:not(.gls-preserve-color) .gls-navbar-item, .gls-card-primary.gls-card-body .gls-navbar-item, .gls-card-primary > :not([class*=gls-card-media]) .gls-navbar-item, .gls-overlay-primary .gls-navbar-item, .gls-offcanvas-bar .gls-navbar-item {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-navbar-toggle, .gls-section-primary:not(.gls-preserve-color) .gls-navbar-toggle, .gls-tile-primary:not(.gls-preserve-color) .gls-navbar-toggle, .gls-card-primary.gls-card-body .gls-navbar-toggle, .gls-card-primary > :not([class*=gls-card-media]) .gls-navbar-toggle, .gls-overlay-primary .gls-navbar-toggle, .gls-offcanvas-bar .gls-navbar-toggle {
   color: rgba(255, 255, 255, 0.9);
@@ -13894,22 +14009,22 @@ iframe[data-gls-cover] {
 .gls-card-primary > :not([class*=gls-card-media]) .gls-navbar-toggle[aria-expanded=true],
 .gls-overlay-primary .gls-navbar-toggle[aria-expanded=true],
 .gls-offcanvas-bar .gls-navbar-toggle[aria-expanded=true] {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-pagination > * > *, .gls-section-primary:not(.gls-preserve-color) .gls-pagination > * > *, .gls-tile-primary:not(.gls-preserve-color) .gls-pagination > * > *, .gls-card-primary.gls-card-body .gls-pagination > * > *, .gls-card-primary > :not([class*=gls-card-media]) .gls-pagination > * > *, .gls-overlay-primary .gls-pagination > * > *, .gls-offcanvas-bar .gls-pagination > * > * {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-pagination > * > :hover, .gls-section-primary:not(.gls-preserve-color) .gls-pagination > * > :hover, .gls-tile-primary:not(.gls-preserve-color) .gls-pagination > * > :hover, .gls-card-primary.gls-card-body .gls-pagination > * > :hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-pagination > * > :hover, .gls-overlay-primary .gls-pagination > * > :hover, .gls-offcanvas-bar .gls-pagination > * > :hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-pagination > .gls-active > *, .gls-section-primary:not(.gls-preserve-color) .gls-pagination > .gls-active > *, .gls-tile-primary:not(.gls-preserve-color) .gls-pagination > .gls-active > *, .gls-card-primary.gls-card-body .gls-pagination > .gls-active > *, .gls-card-primary > :not([class*=gls-card-media]) .gls-pagination > .gls-active > *, .gls-overlay-primary .gls-pagination > .gls-active > *, .gls-offcanvas-bar .gls-pagination > .gls-active > * {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-pagination > .gls-disabled > *, .gls-section-primary:not(.gls-preserve-color) .gls-pagination > .gls-disabled > *, .gls-tile-primary:not(.gls-preserve-color) .gls-pagination > .gls-disabled > *, .gls-card-primary.gls-card-body .gls-pagination > .gls-disabled > *, .gls-card-primary > :not([class*=gls-card-media]) .gls-pagination > .gls-disabled > *, .gls-overlay-primary .gls-pagination > .gls-disabled > *, .gls-offcanvas-bar .gls-pagination > .gls-disabled > * {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-search-input, .gls-section-primary:not(.gls-preserve-color) .gls-search-input, .gls-tile-primary:not(.gls-preserve-color) .gls-search-input, .gls-card-primary.gls-card-body .gls-search-input, .gls-card-primary > :not([class*=gls-card-media]) .gls-search-input, .gls-overlay-primary .gls-search-input, .gls-offcanvas-bar .gls-search-input {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-search-input::placeholder, .gls-section-primary:not(.gls-preserve-color) .gls-search-input::placeholder, .gls-tile-primary:not(.gls-preserve-color) .gls-search-input::placeholder, .gls-card-primary.gls-card-body .gls-search-input::placeholder, .gls-card-primary > :not([class*=gls-card-media]) .gls-search-input::placeholder, .gls-overlay-primary .gls-search-input::placeholder, .gls-offcanvas-bar .gls-search-input::placeholder {
   color: rgba(255, 255, 255, 0.9);
@@ -13952,7 +14067,7 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-search-toggle:hover, .gls-section-primary:not(.gls-preserve-color) .gls-search-toggle:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-search-toggle:hover, .gls-card-primary.gls-card-body .gls-search-toggle:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-search-toggle:hover, .gls-overlay-primary .gls-search-toggle:hover, .gls-offcanvas-bar .gls-search-toggle:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-slidenav, .gls-section-primary:not(.gls-preserve-color) .gls-slidenav, .gls-tile-primary:not(.gls-preserve-color) .gls-slidenav, .gls-card-primary.gls-card-body .gls-slidenav, .gls-card-primary > :not([class*=gls-card-media]) .gls-slidenav, .gls-overlay-primary .gls-slidenav, .gls-offcanvas-bar .gls-slidenav {
   color: rgba(255, 255, 255, 0.7);
@@ -13967,10 +14082,10 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-subnav > * > a:hover, .gls-section-primary:not(.gls-preserve-color) .gls-subnav > * > a:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-subnav > * > a:hover, .gls-card-primary.gls-card-body .gls-subnav > * > a:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-subnav > * > a:hover, .gls-overlay-primary .gls-subnav > * > a:hover, .gls-offcanvas-bar .gls-subnav > * > a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-subnav > .gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-subnav > .gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-subnav > .gls-active > a, .gls-card-primary.gls-card-body .gls-subnav > .gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-subnav > .gls-active > a, .gls-overlay-primary .gls-subnav > .gls-active > a, .gls-offcanvas-bar .gls-subnav > .gls-active > a {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-subnav-divider > :nth-child(n+2):not(.gls-first-column)::before, .gls-section-primary:not(.gls-preserve-color) .gls-subnav-divider > :nth-child(n+2):not(.gls-first-column)::before, .gls-tile-primary:not(.gls-preserve-color) .gls-subnav-divider > :nth-child(n+2):not(.gls-first-column)::before, .gls-card-primary.gls-card-body .gls-subnav-divider > :nth-child(n+2):not(.gls-first-column)::before, .gls-card-primary > :not([class*=gls-card-media]) .gls-subnav-divider > :nth-child(n+2):not(.gls-first-column)::before, .gls-overlay-primary .gls-subnav-divider > :nth-child(n+2):not(.gls-first-column)::before, .gls-offcanvas-bar .gls-subnav-divider > :nth-child(n+2):not(.gls-first-column)::before {
   border-left-color: rgba(255, 255, 255, 0.2);
@@ -13981,11 +14096,11 @@ iframe[data-gls-cover] {
 }
 .gls-light .gls-subnav-pill > * > a:hover, .gls-section-primary:not(.gls-preserve-color) .gls-subnav-pill > * > a:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-subnav-pill > * > a:hover, .gls-card-primary.gls-card-body .gls-subnav-pill > * > a:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-subnav-pill > * > a:hover, .gls-overlay-primary .gls-subnav-pill > * > a:hover, .gls-offcanvas-bar .gls-subnav-pill > * > a:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-subnav-pill > * > a:active, .gls-section-primary:not(.gls-preserve-color) .gls-subnav-pill > * > a:active, .gls-tile-primary:not(.gls-preserve-color) .gls-subnav-pill > * > a:active, .gls-card-primary.gls-card-body .gls-subnav-pill > * > a:active, .gls-card-primary > :not([class*=gls-card-media]) .gls-subnav-pill > * > a:active, .gls-overlay-primary .gls-subnav-pill > * > a:active, .gls-offcanvas-bar .gls-subnav-pill > * > a:active {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-subnav-pill > .gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-subnav-pill > .gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-subnav-pill > .gls-active > a, .gls-card-primary.gls-card-body .gls-subnav-pill > .gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-subnav-pill > .gls-active > a, .gls-overlay-primary .gls-subnav-pill > .gls-active > a, .gls-offcanvas-bar .gls-subnav-pill > .gls-active > a {
   background-color: #be0000;
@@ -14001,10 +14116,10 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-tab > * > a:hover, .gls-section-primary:not(.gls-preserve-color) .gls-tab > * > a:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-tab > * > a:hover, .gls-card-primary.gls-card-body .gls-tab > * > a:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-tab > * > a:hover, .gls-overlay-primary .gls-tab > * > a:hover, .gls-offcanvas-bar .gls-tab > * > a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-tab > .gls-active > a, .gls-section-primary:not(.gls-preserve-color) .gls-tab > .gls-active > a, .gls-tile-primary:not(.gls-preserve-color) .gls-tab > .gls-active > a, .gls-card-primary.gls-card-body .gls-tab > .gls-active > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-tab > .gls-active > a, .gls-overlay-primary .gls-tab > .gls-active > a, .gls-offcanvas-bar .gls-tab > .gls-active > a {
-  color: #ffffff;
+  color: #fff;
   border-color: #be0000;
 }
 .gls-light .gls-tab > .gls-disabled > a, .gls-section-primary:not(.gls-preserve-color) .gls-tab > .gls-disabled > a, .gls-tile-primary:not(.gls-preserve-color) .gls-tab > .gls-disabled > a, .gls-card-primary.gls-card-body .gls-tab > .gls-disabled > a, .gls-card-primary > :not([class*=gls-card-media]) .gls-tab > .gls-disabled > a, .gls-overlay-primary .gls-tab > .gls-disabled > a, .gls-offcanvas-bar .gls-tab > .gls-disabled > a {
@@ -14021,7 +14136,7 @@ iframe[data-gls-cover] {
   border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 .gls-light .gls-text-lead, .gls-section-primary:not(.gls-preserve-color) .gls-text-lead, .gls-tile-primary:not(.gls-preserve-color) .gls-text-lead, .gls-card-primary.gls-card-body .gls-text-lead, .gls-card-primary > :not([class*=gls-card-media]) .gls-text-lead, .gls-overlay-primary .gls-text-lead, .gls-offcanvas-bar .gls-text-lead {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-text-meta, .gls-section-primary:not(.gls-preserve-color) .gls-text-meta, .gls-tile-primary:not(.gls-preserve-color) .gls-text-meta, .gls-card-primary.gls-card-body .gls-text-meta, .gls-card-primary > :not([class*=gls-card-media]) .gls-text-meta, .gls-overlay-primary .gls-text-meta, .gls-offcanvas-bar .gls-text-meta {
   color: rgba(255, 255, 255, 0.9);
@@ -14030,7 +14145,7 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9) !important;
 }
 .gls-light .gls-text-emphasis, .gls-section-primary:not(.gls-preserve-color) .gls-text-emphasis, .gls-tile-primary:not(.gls-preserve-color) .gls-text-emphasis, .gls-card-primary.gls-card-body .gls-text-emphasis, .gls-card-primary > :not([class*=gls-card-media]) .gls-text-emphasis, .gls-overlay-primary .gls-text-emphasis, .gls-offcanvas-bar .gls-text-emphasis {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 .gls-light .gls-text-primary, .gls-section-primary:not(.gls-preserve-color) .gls-text-primary, .gls-tile-primary:not(.gls-preserve-color) .gls-text-primary, .gls-card-primary.gls-card-body .gls-text-primary, .gls-card-primary > :not([class*=gls-card-media]) .gls-text-primary, .gls-overlay-primary .gls-text-primary, .gls-offcanvas-bar .gls-text-primary {
   color: #be0000 !important;
@@ -14045,16 +14160,16 @@ iframe[data-gls-cover] {
   color: rgba(255, 255, 255, 0.9);
 }
 .gls-light .gls-totop:hover, .gls-section-primary:not(.gls-preserve-color) .gls-totop:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-totop:hover, .gls-card-primary.gls-card-body .gls-totop:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-totop:hover, .gls-overlay-primary .gls-totop:hover, .gls-offcanvas-bar .gls-totop:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-totop:active, .gls-section-primary:not(.gls-preserve-color) .gls-totop:active, .gls-tile-primary:not(.gls-preserve-color) .gls-totop:active, .gls-card-primary.gls-card-body .gls-totop:active, .gls-card-primary > :not([class*=gls-card-media]) .gls-totop:active, .gls-overlay-primary .gls-totop:active, .gls-offcanvas-bar .gls-totop:active {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-logo, .gls-section-primary:not(.gls-preserve-color) .gls-logo, .gls-tile-primary:not(.gls-preserve-color) .gls-logo, .gls-card-primary.gls-card-body .gls-logo, .gls-card-primary > :not([class*=gls-card-media]) .gls-logo, .gls-overlay-primary .gls-logo, .gls-offcanvas-bar .gls-logo {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-logo:hover, .gls-section-primary:not(.gls-preserve-color) .gls-logo:hover, .gls-tile-primary:not(.gls-preserve-color) .gls-logo:hover, .gls-card-primary.gls-card-body .gls-logo:hover, .gls-card-primary > :not([class*=gls-card-media]) .gls-logo:hover, .gls-overlay-primary .gls-logo:hover, .gls-offcanvas-bar .gls-logo:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .gls-light .gls-logo:has(.gls-logo-inverse) > :not(picture:has(.gls-logo-inverse)):not(.gls-logo-inverse), .gls-section-primary:not(.gls-preserve-color) .gls-logo:has(.gls-logo-inverse) > :not(picture:has(.gls-logo-inverse)):not(.gls-logo-inverse), .gls-tile-primary:not(.gls-preserve-color) .gls-logo:has(.gls-logo-inverse) > :not(picture:has(.gls-logo-inverse)):not(.gls-logo-inverse), .gls-card-primary.gls-card-body .gls-logo:has(.gls-logo-inverse) > :not(picture:has(.gls-logo-inverse)):not(.gls-logo-inverse), .gls-card-primary > :not([class*=gls-card-media]) .gls-logo:has(.gls-logo-inverse) > :not(picture:has(.gls-logo-inverse)):not(.gls-logo-inverse), .gls-overlay-primary .gls-logo:has(.gls-logo-inverse) > :not(picture:has(.gls-logo-inverse)):not(.gls-logo-inverse), .gls-offcanvas-bar .gls-logo:has(.gls-logo-inverse) > :not(picture:has(.gls-logo-inverse)):not(.gls-logo-inverse) {
   display: none;
@@ -14149,7 +14264,7 @@ iframe[data-gls-cover] {
 /* stylelint-disable */
 :root {
   --base-body-background: var(--global-background);
-  --base-body-font-family: var(--global-font-family);
+  --base-body-font-family: var(--gls-font-family-base);
   --base-body-font-weight: var(--global-regular-font-weight);
   --base-body-font-size: var(--global-font-size);
   --base-body-line-height: var(--global-line-height);
@@ -14167,7 +14282,7 @@ iframe[data-gls-cover] {
   --base-quote-font-style: italic;
   --base-small-font-size: 80%;
   --base-margin-vertical: var(--global-small-space);
-  --base-heading-font-family: var(--global-font-family);
+  --base-heading-font-family: var(--gls-font-family-heading);
   --base-heading-font-weight: var(--global-regular-font-weight);
   --base-heading-color: var(--global-emphasis-color, black);
   --base-heading-text-transform: none;
@@ -15054,6 +15169,41 @@ template {
 }
 
 /**
+ * Name:            Font
+ * Description:     Load custom fonts
+ *
+ * ======================================================================== */
+/* stylelint-disable */
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo/Archivo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo/Archivo-Bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo/Archivo-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo/Archivo-BoldItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+/* stylelint-enable */
+/**
  * Name:            Hack
  * Description:     Various hacks and workarounds
  *
@@ -15295,7 +15445,7 @@ template {
    Component: Player
  ========================================================================== */
 .vjs-theme-gloss {
-  font-family: "Sofia Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--gls-font-family-base);
   font-weight: 600;
 }
 
