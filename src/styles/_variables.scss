@@ -6,10 +6,10 @@
     --gls-breakpoint-xl: 1600px;
 
     /* Typography */
-    --global-font-family:
-        'Sofia Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
+    --gls-font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --gls-font-family-base: 'Sofia Pro', var(--gls-font-family-system);
+    --gls-font-family-heading: 'Archivo', var(--gls-font-family-system);
+    --global-font-family: var(--gls-font-family-base);
     --global-font-size: 16px;
     --global-line-height: 1.5;
 
@@ -25,8 +25,8 @@
     --global-bold-font-weight: 700;
 
     /* Base Colors & Variables */
-    --color-white: #ffffff;
-    --color-black: #000000;
+    --color-white: #fff;
+    --color-black: #000;
 
     /* Primary Colors */
     --color-utah-red: #be0000;
@@ -105,7 +105,7 @@
     --color-primary-7: #cb3333;
     --color-primary-8: #c41919;
     --color-primary-9: #be0000;
-    --color-primary: var(--color-utah-red);
+    --color-primary: var(--color-primary-9);
     --color-primary-hover: hsl(from var(--color-primary) h s calc(l + 8));
     --color-primary-active: hsl(from var(--color-primary) h s calc(l - 8));
     --color-primary-text: var(--color-primary);
@@ -137,8 +137,8 @@
     --color-gradient: linear-gradient(180deg, #f2f2f2 0, #d9d9d9 100%);
 
     /**
-  * Indicators
-  */
+     * Indicators
+     */
 
     /* Info */
     --color-info-0: #ebf8f9;
@@ -465,6 +465,134 @@
     --button-default-active-color: var(--color-tertiary-active);
 }
 
+// Placeholder for the transition. Eventually will move to :root as default
+.gls-theme-rebrand {
+    /* Color lists */
+    --color-red-50: #f9f6f5;
+    --color-red-100: #f6e9e9;
+    --color-red-200: #f9cfcf;
+    --color-red-300: #fcb0af;
+    --color-red-400: #fc8483;
+    --color-red-500: #f65352;
+    --color-red-600: #e70c0b;
+    --color-red-700: #be0000;
+    --color-red-800: #890000;
+    --color-red-900: #611211;
+    --color-red-950: #3b100f;
+    // --color-main-red: var(--color-red-700);
+
+    --color-sand-50: #f8f6f4;
+    --color-sand-100: #f3efe8;
+    --color-sand-200: #dfdad1;
+    --color-sand-300: #cbc6bd;
+    --color-sand-400: #b1aca3;
+    --color-sand-500: #98938b;
+    --color-sand-600: #807b73;
+    --color-sand-700: #67645d;
+    --color-sand-800: #4a4742;
+    --color-sand-900: #363430;
+    --color-sand-950: #22201d;
+    // --color-main-sand: var(--color-sand-100);
+
+    --color-granite-50: #f3f8fa;
+    --color-granite-100: #e3eff4;
+    --color-granite-200: #ccdee5;
+    --color-granite-300: #b3ccd5;
+    --color-granite-400: #95b3be;
+    --color-granite-500: #7a9aa5;
+    --color-granite-600: #63818c;
+    --color-granite-700: #374b53;
+    --color-granite-800: #28373c;
+    --color-granite-900: #28373c;
+    --color-granite-950: #192226;
+    // --color-main-granite: var(--color-sand-100);
+
+    --color-lake-50: #f3f8f9;
+    --color-lake-100: #ddf1f6;
+    --color-lake-200: #9fe9f7;
+    --color-lake-300: #5bdbef;
+    --color-lake-400: #41c0d0;
+    --color-lake-500: #54a2ac;
+    --color-lake-600: #4f868e;
+    --color-lake-700: #366e75;
+    --color-lake-800: #145155;
+    --color-lake-900: #103b3c;
+    --color-lake-950: #0e2525;
+
+    --color-sunrise-50: #f9f6f2;
+    --color-sunrise-100: #f6ebdb;
+    --color-sunrise-200: #f5d6a3;
+    --color-sunrise-300: #eebe6c;
+    --color-sunrise-400: #dea01e;
+    --color-sunrise-500: #bf8915;
+    --color-sunrise-600: #a17207;
+    --color-sunrise-700: #835c04;
+    --color-sunrise-800: #5f4202;
+    --color-sunrise-900: #44300d;
+    --color-sunrise-950: #291e0c;
+
+    --color-green-50: #f3f9f1;
+    --color-green-100: #e3f2de;
+    --color-green-200: #c3e7b7;
+    --color-green-300: #a2d98f;
+    --color-green-400: #6cc24a;
+    --color-green-500: #4cae15;
+    --color-green-600: #3c9207;
+    --color-green-700: #307705;
+    --color-green-800: #205602;
+    --color-green-900: #1c3e0d;
+    --color-green-950: #13260c;
+
+    --color-orange-50: #f9f6f5;
+    --color-orange-100: #f6eae6;
+    --color-orange-200: #f9d0c3;
+    --color-orange-300: #fcb29b;
+    --color-orange-400: #fc8866;
+    --color-orange-500: #f5592c;
+    --color-orange-600: #d73e07;
+    --color-orange-700: #b12d04;
+    --color-orange-800: #821f02;
+    --color-orange-900: #5c1b0c;
+    --color-orange-950: #38140b;
+
+    /* Color Mapping (UofU Health) */
+    --color-web-blue: #0000ff;
+    --color-primary: var(--color-red-700);
+
+    /* Success */
+    --color-success-bg: var(--color-green-100);
+    --color-success-bg-dark: var(--color-green-700);
+    --color-success-border: var(--color-green-300);
+    --color-success-text-on-bg: var(--color-green-800);
+    --color-success-text-dark: var(--color-green-700);
+    --color-success-text-light: #fff;
+
+    /* Warning */
+    --color-warning-bg: var(--color-sunrise-100);
+    --color-warning-bg-dark: var(--color-sunrise-700);
+    --color-warning-border: var(--color-sunrise-300);
+    --color-warning-text-on-bg: var(--color-sunrise-800);
+    --color-warning-text-dark: var(--color-sunrise-700);
+    --color-warning-text-light: #fff;
+
+    /* Error */
+    --color-error-bg: var(--color-orange-100);
+    --color-error-bg-dark: var(--color-orange-800);
+    --color-error-border: var(--color-orange-300);
+    --color-error-text-on-bg: var(--color-orange-800);
+    --color-error-text-dark: var(--color-orange-700);
+    --color-error-text-light: #fff;
+    --color-error-field-border: var(--color-orange-700);
+
+    /* Neutral */
+    --color-neutral-bg: var(--color-lake-100);
+    --color-neutral-bg-dark: var(--color-lake-700);
+    --color-neutral-border: var(--color-lake-300);
+    --color-neutral-text-on-bg: var(--color-lake-800);
+    --color-neutral-text-dark: var(--color-lake-700);
+    --color-neutral-text-light: #fff;
+}
+
 /* Custom selectors
  ========================================================================== */
 
@@ -501,20 +629,9 @@ $breakpoint-large: 1200px;
 $breakpoint-xlarge: 1600px;
 
 // Typography
-$global-font-family:
-    'Sofia Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    'Noto Sans',
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
-    'Noto Color Emoji';
+$global-font-family: var(--gls-font-family-base) !default;
+$base-body-font-family: var(--gls-font-family-base) !default;
+$base-heading-font-family: var(--gls-font-family-heading) !default;
 $global-font-size: 16px;
 $global-xsmall-font-size: 0.75rem;
 $global-small-font-size: 0.875rem;
@@ -539,13 +656,13 @@ $base-h6-font-size: 0.875rem; // var(--global-small-font-size)
 $global-color: rgba(0, 0, 0, 0.8);
 $global-emphasis-color: rgba(0, 0, 0, 0.9);
 $global-muted-color: rgba(0, 0, 0, 0.6);
-$global-inverse-color: #ffffff;
+$global-inverse-color: #fff;
 
 $global-link-color: var(--global-link-color);
 $global-link-hover-color: var(--global-link-hover-color);
 
 // Backgrounds
-$global-background: #ffffff;
+$global-background: #fff;
 $global-muted-background: #f4f4f5;
 $global-primary-background: var(--global-primary-background);
 $global-secondary-background: var(--global-secondary-background);
@@ -558,8 +675,8 @@ $global-gradient-background: var(--global-gradient-background);
 $global-transparent-background: transparent;
 
 // Inverse Globals
-$inverse-global-color: #ffffff;
-$inverse-global-emphasis-color: #ffffff;
+$inverse-global-color: #fff;
+$inverse-global-emphasis-color: #fff;
 $inverse-global-muted-color: rgba(255, 255, 255, 0.9); // var(--color-trans-white-9)
 $inverse-global-muted-background: rgba(255, 255, 255, 0.1); // var(--color-trans-white-1)
 $inverse-global-primary-background: #be0000;
