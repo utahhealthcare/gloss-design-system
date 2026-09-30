@@ -580,6 +580,19 @@
     storage[keyinverse] = storage[keyinverse] || '';
     const dir = storage._gloss_dir || 'ltr';
     docEl.dir = dir;
+
+    try {
+        if (!document.querySelector('link[href*="brand-fonts"]')) {
+            const brandFonts = '/test/brand-fonts/stylesheets/sofia-pro/v1/stylesheet.css';
+            const brandFontReq = new XMLHttpRequest();
+            brandFontReq.open('GET', brandFonts, false);
+            brandFontReq.send(null);
+            if (brandFontReq.status === 200) {
+                document.writeln(`<link rel="stylesheet" href="${brandFonts}">`);
+            }
+        }
+    } catch (e) {}
+
     document.writeln(`<link rel="stylesheet" href="../dist/css/gloss.css">`);
     document.writeln('<script src="../dist/js/gloss.js"><\/script>');
     // document.writeln('<script src="../dist/js/gloss-icons.js"><\/script>');

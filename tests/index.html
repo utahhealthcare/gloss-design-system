@@ -4,6 +4,20 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Overview - Gloss tests</title>
+        <script>
+            // Conditionally load opt-in brand fonts if installed
+            (function () {
+                try {
+                    const brandFonts = '/test/brand-fonts/stylesheets/sofia-pro/v1/stylesheet.css';
+                    const request = new XMLHttpRequest();
+                    request.open('GET', brandFonts, false);
+                    request.send(null);
+                    if (request.status === 200) {
+                        document.writeln(`<link rel="stylesheet" href="${brandFonts}">`);
+                    }
+                } catch (e) {}
+            })();
+        </script>
         <script src="js/test.js"></script>
     </head>
 

@@ -3,7 +3,7 @@
 // ========================================================================
 
 $base-body-background: $global-background !default;
-$base-body-font-family: $global-font-family !default;
+$base-body-font-family: var(--gls-font-family-base) !default;
 $base-body-font-weight: $global-regular-font-weight !default;
 $base-body-font-size: $global-font-size !default;
 $base-body-line-height: $global-line-height !default;
@@ -21,7 +21,7 @@ $base-mark-color: $global-color !default;
 $base-quote-font-style: italic !default;
 $base-small-font-size: 80% !default;
 $base-margin-vertical: $global-small-space !default;
-$base-heading-font-family: $global-font-family !default;
+$base-heading-font-family: var(--gls-font-family-heading) !default;
 $base-heading-font-weight: $global-regular-font-weight !default;
 $base-heading-color: $global-emphasis-color !default;
 $base-heading-text-transform: none !default;
