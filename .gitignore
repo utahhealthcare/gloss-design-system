@@ -33,6 +33,7 @@ test-results/
 
 # Licensed assets supplied outside the open-source repository
 assets-private/
+/test/brand-fonts/
 
 # Logs
 *.log

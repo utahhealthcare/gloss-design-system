@@ -45,6 +45,19 @@ docEl.dir = dir;
 
 const style = styles[storage[key]] || styles.theme;
 
+// Conditionally load opt-in brand fonts if installed
+try {
+    if (!document.querySelector('link[href*="brand-fonts"]')) {
+        const brandFonts = ['/test/brand-fonts/stylesheets/sofia-pro/v1/stylesheet.css'];
+        const brandFontReq = new XMLHttpRequest();
+        brandFontReq.open('GET', brandFonts, false);
+        brandFontReq.send(null);
+        if (brandFontReq.status === 200) {
+            document.writeln(`<link rel="stylesheet" href="${brandFonts}">`);
+        }
+    }
+} catch (e) {}
+
 // add style
 // document.writeln(`<link rel="stylesheet" href="${dir !== 'rtl' ? style.css : style.css.replace('.css', '-rtl.css')}">`);
 document.writeln(`<link rel="stylesheet" href="../dist/css/gloss.css">`);

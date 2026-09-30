@@ -1,0 +1,41 @@
+/**
+ * Name:            Font
+ * Description:     Load custom fonts
+ *
+ * ======================================================================== */
+
+/* stylelint-disable */
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/archivo/Archivo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/archivo/Archivo-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/archivo/Archivo-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/archivo/Archivo-BoldItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* stylelint-enable */

@@ -14,7 +14,7 @@
 /* stylelint-disable */
 :root {
     --base-body-background: var(--global-background);
-    --base-body-font-family: var(--global-font-family);
+    --base-body-font-family: var(--gls-font-family-base);
     --base-body-font-weight: var(--global-regular-font-weight);
     --base-body-font-size: var(--global-font-size);
     --base-body-line-height: var(--global-line-height);
@@ -36,7 +36,7 @@
 
     --base-margin-vertical: var(--global-small-space);
 
-    --base-heading-font-family: var(--global-font-family);
+    --base-heading-font-family: var(--gls-font-family-heading);
     --base-heading-font-weight: var(--global-regular-font-weight);
     --base-heading-color: var(--global-emphasis-color, black);
     --base-heading-text-transform: none;
