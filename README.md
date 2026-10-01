@@ -37,6 +37,7 @@ src/js/           Gloss JavaScript and component behavior
 dist/             Generated, versioned CSS and JavaScript distribution files
 docs/             Jekyll documentation and examples
 tests/            Unit, accessibility, interaction, and visual tests
+test/             Supplemental brand assets (font/icons) pulled by git repo for local dev
 assets-private/   Locally supplied licensed assets; not open-source code
 ```
 

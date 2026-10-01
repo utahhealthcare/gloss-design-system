@@ -34,7 +34,9 @@
         "format:write": "prettier --write .",
         "test": "browser-sync start --server --startPath '/tests/index.html' --files 'dist/*'",
         "test:tokens": "node --test tests/tokens/build-tokens.test.mjs",
-        "setup:fonts": "git clone git@github.com:utahhealthcare/gloss-fonts.git test/brand-fonts",
+        "setup:fonts": "./scripts/setup-fonts.sh",
+        "setup:icons": "./scripts/setup-icons.sh",
+        "setup": "npm run setup:fonts && npm run setup:icons",
         "ci": "./scripts/run-ci.sh"
     },
     "repository": {
