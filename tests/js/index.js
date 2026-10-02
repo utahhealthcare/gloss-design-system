@@ -48,7 +48,7 @@ const style = styles[storage[key]] || styles.theme;
 // Conditionally load opt-in brand fonts if installed
 try {
     if (!document.querySelector('link[href*="brand-fonts"]')) {
-        const brandFonts = '/test/brand-fonts/stylesheets/sofia-pro/v1/stylesheet.css';
+        const brandFonts = '/assets-private/brand-fonts/stylesheets/sofia-pro/v1/stylesheet.css';
         const brandFontReq = new XMLHttpRequest();
         brandFontReq.open('GET', brandFonts, false);
         brandFontReq.send(null);
@@ -68,7 +68,7 @@ document.writeln('<script src="../dist/js/gloss.js"></script>');
 
 // Conditionally load opt-in brand icons if installed
 try {
-    const brandIcons = '/test/brand-icons/dist/gloss-icons.js';
+    const brandIcons = '/assets-private/brand-icons/dist/gloss-icons.js';
     const brandIconReq = new XMLHttpRequest();
     brandIconReq.open('GET', brandIcons, false);
     brandIconReq.send(null);

@@ -14,7 +14,7 @@ export default [
             'playwright-report/**',
             'test-results/**',
             'tests/**',
-            'test/**',
+            'assets-private/**',
         ],
     },
     eslint.configs.recommended,

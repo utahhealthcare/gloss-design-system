@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 
 export GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-ssh}"
 
-TARGET_DIR="test/brand-icons"
+TARGET_DIR="assets-private/brand-icons"
 REPO_URL="${GLOSS_ICONS_REPO:-git@github.com:utahhealthcare/gloss-icons.git}"
 
 echo "=========================================="
@@ -19,6 +19,7 @@ if [ -d "$TARGET_DIR/.git" ]; then
         echo "==> Notice: git pull failed; continuing with existing clone in $TARGET_DIR."
     }
 else
+    mkdir -p "assets-private"
     echo "==> Cloning gloss-icons into $TARGET_DIR..."
     if ! git clone "$REPO_URL" "$TARGET_DIR"; then
         echo "==> SSH clone failed; attempting HTTPS clone..."
