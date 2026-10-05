@@ -8,7 +8,8 @@
             // Conditionally load opt-in brand fonts if installed
             (function () {
                 try {
-                    const brandFonts = '/test/brand-fonts/stylesheets/sofia-pro/v1/stylesheet.css';
+                    const brandFonts =
+                        '/assets-private/brand-fonts/stylesheets/sofia-pro/v1/stylesheet.css';
                     const request = new XMLHttpRequest();
                     request.open('GET', brandFonts, false);
                     request.send(null);

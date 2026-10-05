@@ -37,6 +37,7 @@
       sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --gls-font-family-base: 'Sofia Pro', var(--gls-font-family-system);
   --gls-font-family-heading: 'Archivo', var(--gls-font-family-system);
+  --gls-font-feature-settings-base: 'salt';
   --global-font-family: var(--gls-font-family-base);
   --global-font-size: 16px;
   --global-line-height: 1.5;
@@ -14265,6 +14266,7 @@ iframe[data-gls-cover] {
 :root {
   --base-body-background: var(--global-background);
   --base-body-font-family: var(--gls-font-family-base);
+  --base-body-font-feature-settings: var(--gls-font-feature-settings-base, 'salt');
   --base-body-font-weight: var(--global-regular-font-weight);
   --base-body-font-size: var(--global-font-size);
   --base-body-line-height: var(--global-line-height);
@@ -14353,6 +14355,7 @@ iframe[data-gls-cover] {
 html {
   /* 1 */
   font-family: var(--base-body-font-family);
+  font-feature-settings: var(--base-body-font-feature-settings);
   font-size: var(--base-body-font-size);
   font-weight: var(--base-body-font-weight);
   line-height: var(--base-body-line-height);
