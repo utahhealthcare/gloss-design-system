@@ -583,7 +583,8 @@
 
     try {
         if (!document.querySelector('link[href*="brand-fonts"]')) {
-            const brandFonts = '/test/brand-fonts/stylesheets/sofia-pro/v1/stylesheet.css';
+            const brandFonts =
+                '/assets-private/brand-fonts/stylesheets/sofia-pro/v1/stylesheet.css';
             const brandFontReq = new XMLHttpRequest();
             brandFontReq.open('GET', brandFonts, false);
             brandFontReq.send(null);
@@ -596,6 +597,17 @@
     document.writeln(`<link rel="stylesheet" href="../dist/css/gloss.css">`);
     document.writeln('<script src="../dist/js/gloss.js"><\/script>');
     // document.writeln('<script src="../dist/js/gloss-icons.js"><\/script>');
+
+    try {
+        const brandIcons = '/assets-private/brand-icons/dist/gloss-icons.js';
+        const brandIconReq = new XMLHttpRequest();
+        brandIconReq.open('GET', brandIcons, false);
+        brandIconReq.send(null);
+        if (brandIconReq.status === 200) {
+            document.writeln(`<script src="${brandIcons}"><\/script>`);
+        }
+    } catch (e) {}
+
     on(window, 'load', () =>
         setTimeout(
             () =>
