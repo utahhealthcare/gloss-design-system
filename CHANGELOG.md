@@ -30,7 +30,7 @@
 
 - Add missing `aria-hidden` attribute in Icon and SVG components
 
-## Fixed
+### Fixed
 
 - Fixed card media border radius at different screen sizes
 

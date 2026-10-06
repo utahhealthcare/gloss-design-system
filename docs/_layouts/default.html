@@ -20,6 +20,9 @@
                     <div class="gls-navbar-right">
                         <ul class="gls-navbar-nav">
                             <li><a href="{{ '/' | relative_url }}">Components</a></li>
+                            <li{% if page.changelog %} class="gls-active"{% endif %}>
+                                <a href="{{ '/changelog/' | relative_url }}"{% if page.changelog %} aria-current="page"{% endif %}>Changelog</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -27,6 +30,7 @@
         </header>
 
         <main id="main-content">
+            {% unless page.changelog %}
             <aside class="docs-sidebar-left gls-visible@m" aria-label="Components">
                 <p class="docs-nav-title gls-width-5-6">Components</p>
                 <nav>
@@ -46,13 +50,15 @@
                     </ul>
                 </nav>
             </aside>
+            {% endunless %}
 
             <div class="docs-main gls-section gls-section-small">
-                <div class="docs-content gls-container gls-container-xsmall gls-position-relative">
+                <div class="docs-content gls-container {% if page.changelog %}docs-content--changelog{% else %}gls-container-xsmall{% endif %} gls-position-relative">
                     <article data-docs-content>
                         {{ content }}
                     </article>
 
+                    {% unless page.changelog %}
                     <aside class="docs-sidebar-right gls-visible@l" data-docs-toc-column>
                         <div gls-sticky="offset: 160; media: @l">
                             <p class="docs-nav-title">On this page</p>
@@ -64,6 +70,7 @@
                             </nav>
                         </div>
                     </aside>
+                    {% endunless %}
                 </div>
             </div>
         </main>

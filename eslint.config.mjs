@@ -10,6 +10,7 @@ export default [
             'docs/assets/js/gloss.js',
             'docs/assets/js/gloss-icons.js',
             '_site/**',
+            'docs/_site/**',
             'coverage/**',
             'playwright-report/**',
             'test-results/**',

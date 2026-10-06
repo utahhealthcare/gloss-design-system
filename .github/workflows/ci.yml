@@ -48,6 +48,9 @@ jobs:
       - name: Check generated UIkit documentation
         run: npm run check:uikit-docs
 
+      - name: Check generated changelog
+        run: npm run check:changelog
+
       - name: Build documentation and distribution files
         run: npm run build:docs
 
