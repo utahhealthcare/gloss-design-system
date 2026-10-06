@@ -3,6 +3,7 @@ import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { fileURLToPath } from 'node:url';
+import prettier from 'prettier';
 
 const execFileAsync = promisify(execFile);
 const projectDirectory = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -11,6 +12,7 @@ const shouldCheck = process.argv.includes('--check');
 
 const config = JSON.parse(await readFile(configPath, 'utf8'));
 const sourceRoot = path.resolve(projectDirectory, config.sourceRoot);
+const navigationPath = path.resolve(sourceRoot, config.navigation);
 
 async function revision() {
     try {
@@ -23,6 +25,13 @@ async function revision() {
 
 function replaceGlossClasses(source) {
     return source.replaceAll('uk-', 'gls-');
+}
+
+function repairMalformedMarkup(source) {
+    // A couple of UIkit live examples close an icon span with </a> directly.
+    // Browsers then nest the rest of the demo inside the span and display the
+    // remaining Markdown as visible text. Repair the source while importing it.
+    return source.replace(/(<span\b[^>\n]*\bgls-[^>\n]*)(><\/a>)/g, '$1></span></a>');
 }
 
 function convertExampleFences(source) {
@@ -57,6 +66,12 @@ function convertExampleFences(source) {
     return output.join('\n');
 }
 
+function replaceUiKitLiquidTags(source) {
+    // UIkit's site defines this tag in a custom plugin. Use a stable,
+    // far-future value so the imported example works in plain Jekyll.
+    return source.replaceAll('{%isodate%}', '2099-12-31T23:59:59Z');
+}
+
 function rewriteDocumentationLinks(source) {
     return source.replace(/\]\(([^)\s]+\.md)(#[^)]*)?\)/g, (_match, file, hash = '') => {
         const slug = path.posix.basename(file, '.md');
@@ -89,7 +104,9 @@ async function renderPage(page, sourceRevision) {
     const destinationPath = path.resolve(projectDirectory, page.destination);
     const source = await readFile(sourcePath, 'utf8');
     const transformed = rewriteDocumentationLinks(
-        convertExampleFences(replaceGlossClasses(source)),
+        convertExampleFences(
+            repairMalformedMarkup(replaceUiKitLiquidTags(replaceGlossClasses(source))),
+        ),
     );
     const rendered = addFrontMatter(
         transformed,
@@ -97,6 +114,11 @@ async function renderPage(page, sourceRevision) {
         page.source,
         sourceRevision,
     );
+    const prettierOptions = (await prettier.resolveConfig(destinationPath)) ?? {};
+    const formatted = await prettier.format(rendered, {
+        ...prettierOptions,
+        filepath: destinationPath,
+    });
 
     if (shouldCheck) {
         let current;
@@ -113,7 +135,7 @@ async function renderPage(page, sourceRevision) {
             throw error;
         }
 
-        if (current !== rendered) {
+        if (current !== formatted) {
             throw new Error(`${page.destination} is stale. Run npm run sync:uikit-docs.`);
         }
 
@@ -121,17 +143,56 @@ async function renderPage(page, sourceRevision) {
     }
 
     await mkdir(path.dirname(destinationPath), { recursive: true });
-    await writeFile(destinationPath, rendered);
+    await writeFile(destinationPath, formatted);
 }
 
 const sourceRevision = await revision();
+const navigation = JSON.parse(await readFile(navigationPath, 'utf8'));
+const components = Object.entries(navigation[config.section] ?? {}).map(([title, slug]) => ({
+    title,
+    slug,
+}));
+const pages = components.map(({ slug }) => ({
+    source: `docs/pages/${slug}.md`,
+    destination: path.posix.join(config.destinationRoot, `${slug}.md`),
+}));
+const componentDataPath = path.resolve(
+    projectDirectory,
+    config.destinationRoot,
+    '_data',
+    'components.json',
+);
+const componentData = `${JSON.stringify(components, null, 4)}\n`;
 
-for (const page of config.pages) {
+for (const page of pages) {
     await renderPage(page, sourceRevision);
+}
+
+if (shouldCheck) {
+    let current;
+
+    try {
+        current = await readFile(componentDataPath, 'utf8');
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            throw new Error('docs/_data/components.json is missing. Run npm run sync:uikit-docs.', {
+                cause: error,
+            });
+        }
+
+        throw error;
+    }
+
+    if (current !== componentData) {
+        throw new Error('docs/_data/components.json is stale. Run npm run sync:uikit-docs.');
+    }
+} else {
+    await mkdir(path.dirname(componentDataPath), { recursive: true });
+    await writeFile(componentDataPath, componentData);
 }
 
 if (shouldCheck) {
     console.log(`UIkit documentation is up to date at ${sourceRevision}.`);
 } else {
-    console.log(`Synced ${config.pages.length} UIkit documentation page(s) at ${sourceRevision}.`);
+    console.log(`Synced ${pages.length} UIkit documentation page(s) at ${sourceRevision}.`);
 }

@@ -1,4 +1,7 @@
 :root {
+    --docs-sidebar-left-width: 240px;
+    --docs-sidebar-right-width: 200px;
+    --docs-sidebar-right-left: 0px;
     color: #21252e;
     background: #ffffff;
     font-family:
@@ -7,83 +10,128 @@
         blinkmacsystemfont,
         'Segoe UI',
         sans-serif;
-    line-height: 1.5;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 body {
     margin: 0;
 }
 
-a {
-    color: #7c0000;
+.docs-header {
+    border-bottom: 1px solid #e5e5e5;
 }
 
-a:hover {
-    color: #510000;
+.docs-header .gls-navbar-nav > li > a,
+.docs-header .gls-navbar-item {
+    color: #ffffff;
 }
 
-.site-header {
-    border-bottom: 1px solid #d5d9d9;
+.docs-header .gls-navbar-nav > li > a:hover,
+.docs-header .gls-navbar-item:hover {
+    color: #ffffff;
 }
 
-.site-header__content,
-.site-content,
-.site-footer {
-    width: min(100% - 2rem, 72rem);
-    margin-inline: auto;
-}
-
-.site-header__content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem 2rem;
-    align-items: center;
-    justify-content: space-between;
-    padding-block: 1rem;
-}
-
-.site-header__title {
-    color: inherit;
+.docs-wordmark {
     font-size: 1.125rem;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
 }
 
-.site-header nav {
-    display: flex;
-    gap: 1rem;
+.docs-wordmark span {
+    color: inherit;
 }
 
-.site-content {
-    padding-block: 3rem;
+.docs-sidebar-left {
+    position: fixed;
+    z-index: 10;
+    top: var(--navbar-nav-item-height, 80px);
+    bottom: 0;
+    box-sizing: border-box;
+    width: var(--docs-sidebar-left-width) !important;
+    overflow: auto;
+    padding: 40px 40px 60px;
+    border-inline-end: 1px solid #e5e5e5;
 }
 
-.site-content > :first-child {
+.docs-main {
+    position: relative;
+}
+
+.docs-sidebar-right {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: calc(100% + var(--docs-sidebar-right-left));
+    width: var(--docs-sidebar-right-width);
+}
+
+@media (min-width: 960px) {
+    .docs-sidebar-left + .docs-main {
+        padding-inline-start: var(--docs-sidebar-left-width);
+    }
+}
+
+@media (min-width: 1200px) {
+    .docs-sidebar-left + .docs-main {
+        padding-inline-start: calc(
+            var(--docs-sidebar-left-width) -
+                (var(--docs-sidebar-right-width) + var(--docs-sidebar-right-left))
+        );
+    }
+}
+
+@media (min-width: 1600px) {
+    :root {
+        --docs-sidebar-left-width: 300px;
+        --docs-sidebar-right-left: 60px;
+    }
+
+    .docs-sidebar-left {
+        padding: 45px 45px 60px;
+    }
+}
+
+.docs-nav-title {
+    margin: 0 0 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 0.75rem;
+    color: #5b6266;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.docs-sidebar-left .gls-nav > .docs-nav__item--current > a {
+    border-left: 2px solid #7c0000;
+    padding-left: calc(1em - 2px);
+    color: #21252e;
+    font-weight: 600;
+}
+
+.docs-content {
+    min-width: 0;
+}
+
+.docs-content > :first-child {
     margin-top: 0;
 }
 
-.site-content h1,
-.site-content h2,
-.site-content h3 {
-    color: #21252e;
-    line-height: 1.2;
+.docs-content h1,
+.docs-content h2,
+.docs-content h3 {
+    scroll-margin-top: 2rem;
 }
 
-.site-content h2 {
+.docs-content h2 {
     margin-top: 3rem;
 }
 
-.site-content code {
+.docs-content :not(pre) > code {
     padding: 0.125em 0.25em;
     background: #f4f4f5;
     border-radius: 0.125rem;
 }
 
-.site-content pre {
+.docs-content pre {
     overflow-x: auto;
     padding: 1rem;
     background: #21252e;
@@ -91,18 +139,18 @@ a:hover {
     color: #ffffff;
 }
 
-.site-content pre code {
+.docs-content pre code {
     padding: 0;
     background: transparent;
 }
 
-.site-content table {
+.docs-content table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.site-content th,
-.site-content td {
+.docs-content th,
+.docs-content td {
     padding: 0.75rem;
     border: 1px solid #d5d9d9;
     text-align: start;
@@ -115,9 +163,19 @@ a:hover {
     border-radius: 0.25rem;
 }
 
-.site-footer {
-    padding-block: 2rem;
-    border-top: 1px solid #d5d9d9;
-    color: #5b6266;
-    font-size: 0.875rem;
+.docs-heading-link {
+    margin-left: 0.375rem;
+    color: #7c0000;
+    font-size: 0.75em;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.docs-content h2:hover .docs-heading-link,
+.docs-content h2:focus-within .docs-heading-link {
+    opacity: 1;
+}
+
+.docs-toc[hidden] {
+    display: none;
 }

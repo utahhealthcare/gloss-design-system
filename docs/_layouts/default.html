@@ -8,22 +8,68 @@
         <link rel="stylesheet" href="{{ '/assets/css/gloss.css' | relative_url }}" />
         <link rel="stylesheet" href="{{ '/assets/css/docs.css' | relative_url }}" />
     </head>
-    <body>
-        <header class="site-header">
-            <div class="site-header__content">
-                <a class="site-header__title" href="{{ '/' | relative_url }}"> {{ site.title }} </a>
-                <nav aria-label="Primary navigation">
-                    <a href="{{ '/button/' | relative_url }}">Button</a>
+    <body class="gls-background-default">
+        <header class="docs-header gls-navbar-container gls-navbar-transparent gls-background-primary" gls-sticky="media: 960; target-offset: 0;">
+            <div class="gls-container gls-container-expand">
+                <nav class="gls-navbar" aria-label="Primary navigation">
+                    <div class="gls-navbar-left">
+                        <a class="docs-wordmark gls-navbar-item" href="{{ '/' | relative_url }}">
+                            <span>Gloss</span> Design System
+                        </a>
+                    </div>
+                    <div class="gls-navbar-right">
+                        <ul class="gls-navbar-nav">
+                            <li><a href="{{ '/' | relative_url }}">Components</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
 
-        <main class="site-content">{{ content }}</main>
+        <main id="main-content">
+            <aside class="docs-sidebar-left gls-visible@m" aria-label="Components">
+                <p class="docs-nav-title gls-width-5-6">Components</p>
+                <nav>
+                    <ul class="gls-nav gls-nav-default">
+                        {% for component in site.data.components %}
+                            {% assign component_path = component.slug | prepend: '/' | append: '/' %}
+                            {% if page.url == component_path %}
+                                <li class="docs-nav__item--current">
+                            {% else %}
+                                <li>
+                            {% endif %}
+                                <a href="{{ component_path | relative_url }}">
+                                    {{ component.title }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </aside>
 
-        <footer class="site-footer">
-            <p>Gloss Design System is maintained by University of Utah Health.</p>
-        </footer>
+            <div class="docs-main gls-section gls-section-small">
+                <div class="docs-content gls-container gls-container-xsmall gls-position-relative">
+                    <article data-docs-content>
+                        {{ content }}
+                    </article>
+
+                    <aside class="docs-sidebar-right gls-visible@l" data-docs-toc-column>
+                        <div gls-sticky="offset: 160; media: @l">
+                            <p class="docs-nav-title">On this page</p>
+                            <nav aria-label="On this page">
+                                <ul
+                                    class="gls-nav gls-nav-default gls-text-small"
+                                    data-docs-toc
+                                ></ul>
+                            </nav>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+
         <script src="{{ '/assets/js/gloss.js' | relative_url }}" defer></script>
         <script src="{{ '/assets/js/gloss-icons.js' | relative_url }}" defer></script>
+        <script src="{{ '/assets/js/docs.js' | relative_url }}" defer></script>
     </body>
 </html>

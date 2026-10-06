@@ -38,14 +38,14 @@ To apply this component, add the `.gls-button` class and a modifier such as `.gl
 
 **Note** If you are displaying a number of buttons in a row, you can add a top margin to them, when they stack on smaller viewports. Just add the `gls-margin` attribute from the [Margin component](https://getuikit.com/docs/margin) to their parent element.
 
-***
+---
 
 ## Style modifiers
 
 There are several style modifiers available. Just add one of the following classes to apply a different look.
 
-| Class                  | Description                               |
-|------------------------|-------------------------------------------|
+| Class                   | Description                               |
+| ----------------------- | ----------------------------------------- |
 | `.gls-button-default`   | Default button style.                     |
 | `.gls-button-primary`   | Indicates the primary action.             |
 | `.gls-button-secondary` | Indicates an important action.            |
@@ -79,12 +79,11 @@ There are several style modifiers available. Just add one of the following class
 </p>
 ```
 
-***
+---
 
 ## Size modifiers
 
 Add the `.gls-button-small` or `.gls-button-large` class to a button to make it smaller or larger.
-
 
 ```html
 <button class="gls-button gls-button-default gls-button-small"></button>
@@ -120,7 +119,7 @@ Add the `.gls-button-small` or `.gls-button-large` class to a button to make it 
 </p>
 ```
 
-***
+---
 
 ## Width modifiers
 
@@ -140,7 +139,7 @@ Add the `.gls-width-1-1` class from the [Width component](https://getuikit.com/d
 <button class="gls-button gls-button-secondary gls-width-1-1">Button</button>
 ```
 
-***
+---
 
 ## Group
 
@@ -206,7 +205,7 @@ To create a button group, add the `.gls-button-group` class to a `<div>` element
 </div>
 ```
 
-***
+---
 
 ## Button with dropdowns
 
@@ -252,7 +251,7 @@ A button can be used to trigger a dropdown menu from the [Dropdown component](ht
 </div>
 ```
 
-***
+---
 
 ### Button group with dropdowns
 
@@ -263,11 +262,9 @@ Use button groups to split buttons into a standard action on the left and a drop
 <div class="gls-button-group">
     <button class="gls-button gls-button-default"></button>
     <div class="gls-inline">
-
         <!-- The button toggling the dropdown -->
         <button class="gls-button gls-button-default" type="button"></button>
         <div gls-dropdown="mode: click; target: !.gls-button-group;"></div>
-
     </div>
 </div>
 ```
@@ -294,11 +291,12 @@ Use button groups to split buttons into a standard action on the left and a drop
 </div>
 
 ```html
-
 <div class="gls-button-group">
     <button class="gls-button gls-button-default">Dropdown</button>
     <div class="gls-inline">
-        <button class="gls-button gls-button-default" type="button" aria-label="Toggle Dropdown"><span gls-icon="icon:  triangle-down"></span></button>
+        <button class="gls-button gls-button-default" type="button" aria-label="Toggle Dropdown">
+            <span gls-icon="icon:  triangle-down"></span>
+        </button>
         <div gls-dropdown="mode: click; target: !.gls-button-group;">
             <ul class="gls-nav gls-dropdown-nav">
                 <li class="gls-active"><a href="#">Active</a></li>

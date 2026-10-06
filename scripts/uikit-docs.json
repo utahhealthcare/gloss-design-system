@@ -1,9 +1,6 @@
 {
     "sourceRoot": "vendor/uikit-site",
-    "pages": [
-        {
-            "source": "docs/pages/button.md",
-            "destination": "docs/button.md"
-        }
-    ]
+    "navigation": "docs/navigation.json",
+    "section": "Components",
+    "destinationRoot": "docs"
 }

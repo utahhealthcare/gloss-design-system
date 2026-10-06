@@ -5,9 +5,16 @@ description: University of Utah Health's design system for clinical and academic
 
 # Gloss Design System
 
-Gloss is the University of Utah Health design system for clinical and academic
-digital experiences.
+<p class="gls-text-lead">
+    Gloss is the University of Utah Health design system for clinical and academic
+    digital experiences.
+</p>
 
 ## Components
 
-- [Button]({{ '/button/' | relative_url }})
+<ul class="gls-list gls-list-divider">
+    {% for component in site.data.components %}
+        {% assign component_path = component.slug | prepend: '/' | append: '/' %}
+        <li><a href="{{ component_path | relative_url }}">{{ component.title }}</a></li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,326 @@
+[
+    {
+        "title": "Accordion",
+        "slug": "accordion"
+    },
+    {
+        "title": "Alert",
+        "slug": "alert"
+    },
+    {
+        "title": "Align",
+        "slug": "align"
+    },
+    {
+        "title": "Animation",
+        "slug": "animation"
+    },
+    {
+        "title": "Article",
+        "slug": "article"
+    },
+    {
+        "title": "Background",
+        "slug": "background"
+    },
+    {
+        "title": "Badge",
+        "slug": "badge"
+    },
+    {
+        "title": "Base",
+        "slug": "base"
+    },
+    {
+        "title": "Breadcrumb",
+        "slug": "breadcrumb"
+    },
+    {
+        "title": "Button",
+        "slug": "button"
+    },
+    {
+        "title": "Card",
+        "slug": "card"
+    },
+    {
+        "title": "Close",
+        "slug": "close"
+    },
+    {
+        "title": "Column",
+        "slug": "column"
+    },
+    {
+        "title": "Comment",
+        "slug": "comment"
+    },
+    {
+        "title": "Container",
+        "slug": "container"
+    },
+    {
+        "title": "Countdown",
+        "slug": "countdown"
+    },
+    {
+        "title": "Cover",
+        "slug": "cover"
+    },
+    {
+        "title": "Description List",
+        "slug": "description-list"
+    },
+    {
+        "title": "Divider",
+        "slug": "divider"
+    },
+    {
+        "title": "Dotnav",
+        "slug": "dotnav"
+    },
+    {
+        "title": "Drop",
+        "slug": "drop"
+    },
+    {
+        "title": "Dropbar",
+        "slug": "dropbar"
+    },
+    {
+        "title": "Dropdown",
+        "slug": "dropdown"
+    },
+    {
+        "title": "Dropnav",
+        "slug": "dropnav"
+    },
+    {
+        "title": "Filter",
+        "slug": "filter"
+    },
+    {
+        "title": "Flex",
+        "slug": "flex"
+    },
+    {
+        "title": "Form",
+        "slug": "form"
+    },
+    {
+        "title": "Grid",
+        "slug": "grid"
+    },
+    {
+        "title": "Heading",
+        "slug": "heading"
+    },
+    {
+        "title": "Height",
+        "slug": "height"
+    },
+    {
+        "title": "Icon",
+        "slug": "icon"
+    },
+    {
+        "title": "Iconnav",
+        "slug": "iconnav"
+    },
+    {
+        "title": "Image",
+        "slug": "image"
+    },
+    {
+        "title": "Inverse",
+        "slug": "inverse"
+    },
+    {
+        "title": "Label",
+        "slug": "label"
+    },
+    {
+        "title": "Leader",
+        "slug": "leader"
+    },
+    {
+        "title": "Lightbox",
+        "slug": "lightbox"
+    },
+    {
+        "title": "Link",
+        "slug": "link"
+    },
+    {
+        "title": "List",
+        "slug": "list"
+    },
+    {
+        "title": "Margin",
+        "slug": "margin"
+    },
+    {
+        "title": "Marker",
+        "slug": "marker"
+    },
+    {
+        "title": "Modal",
+        "slug": "modal"
+    },
+    {
+        "title": "Nav",
+        "slug": "nav"
+    },
+    {
+        "title": "Navbar",
+        "slug": "navbar"
+    },
+    {
+        "title": "Notification",
+        "slug": "notification"
+    },
+    {
+        "title": "Off-canvas",
+        "slug": "offcanvas"
+    },
+    {
+        "title": "Overlay",
+        "slug": "overlay"
+    },
+    {
+        "title": "Padding",
+        "slug": "padding"
+    },
+    {
+        "title": "Pagination",
+        "slug": "pagination"
+    },
+    {
+        "title": "Parallax",
+        "slug": "parallax"
+    },
+    {
+        "title": "Placeholder",
+        "slug": "placeholder"
+    },
+    {
+        "title": "Position",
+        "slug": "position"
+    },
+    {
+        "title": "Print",
+        "slug": "print"
+    },
+    {
+        "title": "Progress",
+        "slug": "progress"
+    },
+    {
+        "title": "Scroll",
+        "slug": "scroll"
+    },
+    {
+        "title": "Scrollspy",
+        "slug": "scrollspy"
+    },
+    {
+        "title": "Search",
+        "slug": "search"
+    },
+    {
+        "title": "Section",
+        "slug": "section"
+    },
+    {
+        "title": "Slidenav",
+        "slug": "slidenav"
+    },
+    {
+        "title": "Slider",
+        "slug": "slider"
+    },
+    {
+        "title": "Slideshow",
+        "slug": "slideshow"
+    },
+    {
+        "title": "Sortable",
+        "slug": "sortable"
+    },
+    {
+        "title": "Spinner",
+        "slug": "spinner"
+    },
+    {
+        "title": "Sticky",
+        "slug": "sticky"
+    },
+    {
+        "title": "Subnav",
+        "slug": "subnav"
+    },
+    {
+        "title": "SVG",
+        "slug": "svg"
+    },
+    {
+        "title": "Switcher",
+        "slug": "switcher"
+    },
+    {
+        "title": "Tab",
+        "slug": "tab"
+    },
+    {
+        "title": "Table",
+        "slug": "table"
+    },
+    {
+        "title": "Text",
+        "slug": "text"
+    },
+    {
+        "title": "Thumbnav",
+        "slug": "thumbnav"
+    },
+    {
+        "title": "Tile",
+        "slug": "tile"
+    },
+    {
+        "title": "Toggle",
+        "slug": "toggle"
+    },
+    {
+        "title": "Tooltip",
+        "slug": "tooltip"
+    },
+    {
+        "title": "Totop",
+        "slug": "totop"
+    },
+    {
+        "title": "Transition",
+        "slug": "transition"
+    },
+    {
+        "title": "Upload",
+        "slug": "upload"
+    },
+    {
+        "title": "Utility",
+        "slug": "utility"
+    },
+    {
+        "title": "Video",
+        "slug": "video"
+    },
+    {
+        "title": "Visibility",
+        "slug": "visibility"
+    },
+    {
+        "title": "Width",
+        "slug": "width"
+    }
+]
