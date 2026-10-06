@@ -67,4 +67,36 @@
             color: $global-emphasis-color;
         }
     }
+
+     // Custom Granite Modifier (High-contrast slate with white text)
+     .uk-section-granite {
+         --gls-inverse: light;
+         background: $section-granite-background;
+         color: $global-inverse-color;
+
+         h1, h2, h3, h4, h5, h6,
+         .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6 {
+             color: $global-inverse-color;
+         }
+     }
+
+     // Custom Gradient Modifiers
+     .uk-section-gradient-cool {
+         --gls-inverse: dark;
+         background: $section-gradient-cool-background;
+         color: $global-color;
+     }
+
+     .uk-section-gradient-grey {
+         --gls-inverse: dark;
+         background: $section-gradient-grey-background;
+         color: $global-color;
+     }
+
+     .uk-section-gradient-sand {
+         --gls-inverse: dark;
+         background: $section-gradient-sand-background;
+         color: $global-color;
+     }
+
 }
