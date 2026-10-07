@@ -75,12 +75,16 @@ By default, a section is blank. That is why it is important to add a modifier cl
 
 To apply different background colors and paddings, add one of the following classes.
 
-| Class                    | Description                                     |
-| ------------------------ | ----------------------------------------------- |
-| `.gls-section-default`   | Adds the default background color of your site. |
-| `.gls-section-muted`     | Adds a muted background color.                  |
-| `.gls-section-primary`   | Adds a primary background color.                |
-| `.gls-section-secondary` | Adds a secondary background color.              |
+| Class                        | Description                                                |
+| ---------------------------- | ---------------------------------------------------------- |
+| `.gls-section-default`       | Adds the default background color of your site.            |
+| `.gls-section-muted`         | Adds a muted background color.                             |
+| `.gls-section-primary`       | Adds a primary background color.                           |
+| `.gls-section-secondary`     | Adds a secondary background color.                         |
+| `.gls-section-granite`       | Adds a granite slate background with inverse (light) text. |
+| `.gls-section-gradient-cool` | Adds a cool blue gradient fading to white.                 |
+| `.gls-section-gradient-grey` | Adds a subtle grey gradient fading to white.               |
+| `.gls-section-gradient-sand` | Adds a sand gradient fading to white.                      |
 
 ```html
 <div class="gls-section gls-section-primary"></div>
@@ -154,6 +158,90 @@ To apply different background colors and paddings, add one of the following clas
     <div class="gls-container">
 
         <h3>Section Secondary</h3>
+
+        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="gls-section gls-section-granite">
+    <div class="gls-container">
+
+        <h3>Section Granite</h3>
+
+        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="gls-section gls-section-gradient-cool">
+    <div class="gls-container">
+
+        <h3>Section Gradient Cool</h3>
+
+        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="gls-section gls-section-gradient-grey">
+    <div class="gls-container">
+
+        <h3>Section Gradient Grey</h3>
+
+        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="gls-section gls-section-gradient-sand">
+    <div class="gls-container">
+
+        <h3>Section Gradient Sand</h3>
 
         <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
             <div>
@@ -271,6 +359,102 @@ To apply different background colors and paddings, add one of the following clas
 <div class="gls-section gls-section-secondary gls-light">
     <div class="gls-container">
         <h3>Section Secondary</h3>
+
+        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gls-section gls-section-granite">
+    <div class="gls-container">
+        <h3>Section Granite</h3>
+
+        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gls-section gls-section-gradient-cool">
+    <div class="gls-container">
+        <h3>Section Gradient Cool</h3>
+
+        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gls-section gls-section-gradient-grey">
+    <div class="gls-container">
+        <h3>Section Gradient Grey</h3>
+
+        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gls-section gls-section-gradient-sand">
+    <div class="gls-container">
+        <h3>Section Gradient Sand</h3>
 
         <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
             <div>
