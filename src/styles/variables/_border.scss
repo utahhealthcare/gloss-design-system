@@ -2,6 +2,39 @@
 // Component Variables: Border
 // ========================================================================
 
+:root {
+    --border-rounded-xs: 2px;
+    --border-rounded-sm: 4px;
+    --border-rounded-md: 6px;
+    --border-rounded-lg: 8px;
+    --border-rounded-xl: 12px;
+    --border-rounded-2xl: 16px;
+
+    /* Global aliases matching token conventions */
+    --global-rounded-xs: var(--border-rounded-xs);
+    --global-rounded-sm: var(--border-rounded-sm);
+    --global-rounded-md: var(--border-rounded-md);
+    --global-rounded-lg: var(--border-rounded-lg);
+    --global-rounded-xl: var(--border-rounded-xl);
+    --global-rounded-2xl: var(--border-rounded-2xl);
+
+    /* Stroke Width Scale */
+    --stroke-0: 0px;
+    --stroke-05: 0.5px;
+    --stroke-075: 0.75px;
+    --stroke-10: 1px;
+    --stroke-20: 2px;
+    --stroke-30: 3px;
+
+    /* Global aliases matching token conventions */
+    --global-stroke-0: var(--stroke-0);
+    --global-stroke-05: var(--stroke-05);
+    --global-stroke-075: var(--stroke-075);
+    --global-stroke-10: var(--stroke-10);
+    --global-stroke-20: var(--stroke-20);
+    --global-stroke-30: var(--stroke-30);
+}
+
 $border-default-width: $global-border-width !default;
 $border-thick-width: calc($border-default-width * 2) !default;
 $border-thicker-width: calc($border-default-width * 4) !default;
@@ -15,3 +48,33 @@ $border-dashed-style: dashed !default;
 $border-dotted-style: dotted !default;
 $border-rounded-radius: $global-border-radius !default;
 $border-full-radius: 9999px !default;
+
+// Rounded Modifiers (Gloss Extensions)
+$border-rounded-xs: var(--border-rounded-xs) !default;
+$border-rounded-sm: var(--border-rounded-sm) !default;
+$border-rounded-md: var(--border-rounded-md) !default;
+$border-rounded-lg: var(--border-rounded-lg) !default;
+$border-rounded-xl: var(--border-rounded-xl) !default;
+$border-rounded-2xl: var(--border-rounded-2xl) !default;
+
+$global-rounded-xs: var(--global-rounded-xs) !default;
+$global-rounded-sm: var(--global-rounded-sm) !default;
+$global-rounded-md: var(--global-rounded-md) !default;
+$global-rounded-lg: var(--global-rounded-lg) !default;
+$global-rounded-xl: var(--global-rounded-xl) !default;
+$global-rounded-2xl: var(--global-rounded-2xl) !default;
+
+// Stroke Width Scale (Gloss Extensions)
+$stroke-0: var(--stroke-0) !default;
+$stroke-05: var(--stroke-05) !default;
+$stroke-075: var(--stroke-075) !default;
+$stroke-10: var(--stroke-10) !default;
+$stroke-20: var(--stroke-20) !default;
+$stroke-30: var(--stroke-30) !default;
+
+$global-stroke-0: var(--global-stroke-0) !default;
+$global-stroke-05: var(--global-stroke-05) !default;
+$global-stroke-075: var(--global-stroke-075) !default;
+$global-stroke-10: var(--global-stroke-10) !default;
+$global-stroke-20: var(--global-stroke-20) !default;
+$global-stroke-30: var(--global-stroke-30) !default;

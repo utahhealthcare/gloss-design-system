@@ -1,0 +1,47 @@
+// ========================================================================
+// Component: Utility (Gloss Extensions)
+// ========================================================================
+
+/*
+ * Box-shadow custom extensions
+ */
+
+.gls-box-shadow-xsmall {
+    box-shadow: var(--global-xsmall-box-shadow);
+}
+
+.gls-box-shadow-2xlarge {
+    box-shadow: var(--global-2xlarge-box-shadow);
+}
+
+/*
+ * Hover
+ */
+
+.gls-box-shadow-hover-xsmall:hover {
+    box-shadow: var(--global-xsmall-box-shadow);
+}
+
+.gls-box-shadow-hover-2xlarge:hover {
+    box-shadow: var(--global-2xlarge-box-shadow);
+}
+
+/*
+ * Accessibility Focus Indicator (Dual-Outline Pattern)
+ * Follows concentric radii formula: Rring = Rcontainer + offset
+ */
+
+.gls-focus-ring,
+.gls-focus-ring-visible:focus-visible {
+    outline: 2px solid transparent !important;
+    outline-offset: var(--focus-ring-offset, 0) !important;
+    box-shadow: var(--focus-ring-box-shadow) !important;
+}
+
+.gls-focus-ring-inset {
+    --focus-ring-box-shadow:
+        inset 0 0 0 var(--focus-inner-stroke-width, 2px) var(--focus-inner-stroke-color, #ffffff),
+        inset 0 0 0
+            calc(var(--focus-inner-stroke-width, 2px) + var(--focus-outer-stroke-width, 2px))
+            var(--focus-outer-stroke-color, #0000ff);
+}

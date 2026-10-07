@@ -69,9 +69,35 @@
 /* Radius
  ========================================================================== */
 
-/* .gls-border-radius { border-radius: $border-rounded-radius; }
-.gls-border-round { border-radius: $border-full-radius; }
-.gls-border-square { border-radius: 0; } */
+.gls-rounded-xs,
+.gls-border-rounded-xs {
+    border-radius: var(--border-rounded-xs);
+}
+
+.gls-rounded-sm,
+.gls-border-rounded-sm {
+    border-radius: var(--border-rounded-sm);
+}
+
+.gls-rounded-md,
+.gls-border-rounded-md {
+    border-radius: var(--border-rounded-md);
+}
+
+.gls-rounded-lg,
+.gls-border-rounded-lg {
+    border-radius: var(--border-rounded-lg);
+}
+
+.gls-rounded-xl,
+.gls-border-rounded-xl {
+    border-radius: var(--border-rounded-xl);
+}
+
+.gls-rounded-2xl,
+.gls-border-rounded-2xl {
+    border-radius: var(--border-rounded-2xl);
+}
 
 /* Remove
  ========================================================================== */
