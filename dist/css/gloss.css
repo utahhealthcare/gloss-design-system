@@ -245,8 +245,17 @@
   --color-sand-50: #f8f6f4;
   --color-sand-100: #f3efe8;
   --gradient-cool-blue: linear-gradient(180deg, var(--color-lake-50) 0%, var(--color-white) 100%);
-  --gradient-subtle-grey: linear-gradient(180deg, var(--color-sand-50) 0%, var(--color-white) 100%);
-  --gradient-sand: linear-gradient(180deg, var(--color-sand-100) 0%, var(--color-sand-50) 45%, var(--color-white) 100%);
+  --gradient-subtle-grey: linear-gradient(
+      180deg,
+      var(--color-sand-50) 0%,
+      var(--color-white) 100%
+  );
+  --gradient-sand: linear-gradient(
+      180deg,
+      var(--color-sand-100) 0%,
+      var(--color-sand-50) 45%,
+      var(--color-white) 100%
+  );
   /* Border */
   --global-border-width: 1px;
   --global-border-style: solid;
@@ -483,8 +492,8 @@
   --color-granite-400: #95b3be;
   --color-granite-500: #7a9aa5;
   --color-granite-600: #63818c;
-  --color-granite-700: #4F6972;
-  --color-granite-800: #374B53;
+  --color-granite-700: #4f6972;
+  --color-granite-800: #374b53;
   --color-granite-900: #28373c;
   --color-granite-950: #192226;
   --color-lake-50: #f3f8f9;
@@ -3780,8 +3789,18 @@ select.gls-form-width-xsmall {
   background: var(--color-granite-700);
   color: #fff;
 }
-.gls-section-granite h1, .gls-section-granite h2, .gls-section-granite h3, .gls-section-granite h4, .gls-section-granite h5, .gls-section-granite h6,
-.gls-section-granite .gls-h1, .gls-section-granite .gls-h2, .gls-section-granite .gls-h3, .gls-section-granite .gls-h4, .gls-section-granite .gls-h5, .gls-section-granite .gls-h6 {
+.gls-section-granite h1,
+.gls-section-granite h2,
+.gls-section-granite h3,
+.gls-section-granite h4,
+.gls-section-granite h5,
+.gls-section-granite h6,
+.gls-section-granite .gls-h1,
+.gls-section-granite .gls-h2,
+.gls-section-granite .gls-h3,
+.gls-section-granite .gls-h4,
+.gls-section-granite .gls-h5,
+.gls-section-granite .gls-h6 {
   color: #fff;
 }
 
