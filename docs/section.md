@@ -75,16 +75,12 @@ By default, a section is blank. That is why it is important to add a modifier cl
 
 To apply different background colors and paddings, add one of the following classes.
 
-| Class                        | Description                                                |
-| ---------------------------- | ---------------------------------------------------------- |
-| `.gls-section-default`       | Adds the default background color of your site.            |
-| `.gls-section-muted`         | Adds a muted background color.                             |
-| `.gls-section-primary`       | Adds a primary background color.                           |
-| `.gls-section-secondary`     | Adds a secondary background color.                         |
-| `.gls-section-granite`       | Adds a granite slate background with inverse (light) text. |
-| `.gls-section-gradient-cool` | Adds a cool blue gradient fading to white.                 |
-| `.gls-section-gradient-grey` | Adds a subtle grey gradient fading to white.               |
-| `.gls-section-gradient-sand` | Adds a sand gradient fading to white.                      |
+| Class                    | Description                                     |
+| ------------------------ | ----------------------------------------------- |
+| `.gls-section-default`   | Adds the default background color of your site. |
+| `.gls-section-muted`     | Adds a muted background color.                  |
+| `.gls-section-primary`   | Adds a primary background color.                |
+| `.gls-section-secondary` | Adds a secondary background color.              |
 
 ```html
 <div class="gls-section gls-section-primary"></div>
@@ -158,90 +154,6 @@ To apply different background colors and paddings, add one of the following clas
     <div class="gls-container">
 
         <h3>Section Secondary</h3>
-
-        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="gls-section gls-section-granite">
-    <div class="gls-container">
-
-        <h3>Section Granite</h3>
-
-        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="gls-section gls-section-gradient-cool">
-    <div class="gls-container">
-
-        <h3>Section Gradient Cool</h3>
-
-        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="gls-section gls-section-gradient-grey">
-    <div class="gls-container">
-
-        <h3>Section Gradient Grey</h3>
-
-        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="gls-section gls-section-gradient-sand">
-    <div class="gls-container">
-
-        <h3>Section Gradient Sand</h3>
 
         <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
             <div>
@@ -359,102 +271,6 @@ To apply different background colors and paddings, add one of the following clas
 <div class="gls-section gls-section-secondary gls-light">
     <div class="gls-container">
         <h3>Section Secondary</h3>
-
-        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gls-section gls-section-granite">
-    <div class="gls-container">
-        <h3>Section Granite</h3>
-
-        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gls-section gls-section-gradient-cool">
-    <div class="gls-container">
-        <h3>Section Gradient Cool</h3>
-
-        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gls-section gls-section-gradient-grey">
-    <div class="gls-container">
-        <h3>Section Gradient Grey</h3>
-
-        <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gls-section gls-section-gradient-sand">
-    <div class="gls-container">
-        <h3>Section Gradient Sand</h3>
 
         <div class="gls-grid-match gls-child-width-1-3@m" gls-grid>
             <div>
@@ -651,4 +467,79 @@ Some UIkit themes use richer styles, including textured backgrounds and borders.
 
 ```html
 <div class="gls-section gls-section-overlap"></div>
+```
+
+---
+
+## Gloss background styles
+
+Gloss adds these background modifiers to the Section component:
+
+| Class                        | Description                                                |
+| ---------------------------- | ---------------------------------------------------------- |
+| `.gls-section-granite`       | Adds a granite slate background with inverse (light) text. |
+| `.gls-section-gradient-cool` | Adds a cool blue gradient fading to white.                 |
+| `.gls-section-gradient-grey` | Adds a subtle grey gradient fading to white.               |
+| `.gls-section-gradient-sand` | Adds a sand gradient fading to white.                      |
+
+Apply one modifier alongside `.gls-section`:
+
+<div class="gls-docs-example">
+<div class="gls-section gls-section-granite">
+    <div class="gls-container">
+        <h3>Granite section</h3>
+        <p>Content on a high-contrast slate background.</p>
+    </div>
+</div>
+
+<div class="gls-section gls-section-gradient-cool">
+    <div class="gls-container">
+        <h3>Cool gradient section</h3>
+        <p>Content on a cool blue gradient.</p>
+    </div>
+</div>
+
+<div class="gls-section gls-section-gradient-grey">
+    <div class="gls-container">
+        <h3>Grey gradient section</h3>
+        <p>Content on a subtle grey gradient.</p>
+    </div>
+</div>
+
+<div class="gls-section gls-section-gradient-sand">
+    <div class="gls-container">
+        <h3>Sand gradient section</h3>
+        <p>Content on a sand gradient.</p>
+    </div>
+</div>
+</div>
+
+```html
+<div class="gls-section gls-section-granite">
+    <div class="gls-container">
+        <h3>Granite section</h3>
+        <p>Content on a high-contrast slate background.</p>
+    </div>
+</div>
+
+<div class="gls-section gls-section-gradient-cool">
+    <div class="gls-container">
+        <h3>Cool gradient section</h3>
+        <p>Content on a cool blue gradient.</p>
+    </div>
+</div>
+
+<div class="gls-section gls-section-gradient-grey">
+    <div class="gls-container">
+        <h3>Grey gradient section</h3>
+        <p>Content on a subtle grey gradient.</p>
+    </div>
+</div>
+
+<div class="gls-section gls-section-gradient-sand">
+    <div class="gls-container">
+        <h3>Sand gradient section</h3>
+        <p>Content on a sand gradient.</p>
+    </div>
+</div>
 ```
