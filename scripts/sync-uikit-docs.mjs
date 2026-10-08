@@ -99,14 +99,23 @@ function titleFromSource(sourcePath) {
         .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
+async function appendGlossAddendum(source, page) {
+    const addendumPath = config.addenda?.[page.slug];
+    if (!addendumPath) return source;
+
+    const addendum = (await readFile(path.resolve(projectDirectory, addendumPath), 'utf8')).trim();
+    if (!addendum) throw new Error(`${addendumPath} is empty.`);
+
+    return `${source.trimEnd()}\n\n---\n\n${addendum}\n`;
+}
+
 async function renderPage(page, sourceRevision) {
     const sourcePath = path.resolve(sourceRoot, page.source);
     const destinationPath = path.resolve(projectDirectory, page.destination);
     const source = await readFile(sourcePath, 'utf8');
+    const glossSource = await appendGlossAddendum(replaceGlossClasses(source), page);
     const transformed = rewriteDocumentationLinks(
-        convertExampleFences(
-            repairMalformedMarkup(replaceUiKitLiquidTags(replaceGlossClasses(source))),
-        ),
+        convertExampleFences(repairMalformedMarkup(replaceUiKitLiquidTags(glossSource))),
     );
     const rendered = addFrontMatter(
         transformed,
@@ -153,9 +162,15 @@ const components = Object.entries(navigation[config.section] ?? {}).map(([title,
     slug,
 }));
 const pages = components.map(({ slug }) => ({
+    slug,
     source: `docs/pages/${slug}.md`,
     destination: path.posix.join(config.destinationRoot, `${slug}.md`),
 }));
+for (const slug of Object.keys(config.addenda ?? {})) {
+    if (!pages.some((page) => page.slug === slug)) {
+        throw new Error(`Gloss addendum for unknown UIkit page: ${slug}.`);
+    }
+}
 const componentDataPath = path.resolve(
     projectDirectory,
     config.destinationRoot,

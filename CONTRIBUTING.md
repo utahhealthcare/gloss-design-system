@@ -20,6 +20,12 @@ Small fixes, documentation improvements, and clearly scoped maintenance changes 
 
 Accessibility is part of the feature, not a later task. New components should use semantic HTML, support keyboard interaction, and include appropriate focus, naming, contrast, and reduced-motion behavior.
 
+## Component documentation
+
+The component pages in `docs/*.md` are generated from the pinned UIkit site submodule. Keep Gloss-specific documentation in `scripts/docs-addenda/` and register each addendum in `scripts/uikit-docs.json`. The sync script appends it before expanding example fences and formatting the page. Addenda stay separate from UIkit content, so upstream page updates flow through without conflicting with Gloss additions.
+
+Use `npm run sync:uikit-docs` to regenerate the pages, then review and commit the resulting `docs/` changes. `npm run check:uikit-docs` verifies that the committed output matches the pinned UIkit revision plus addenda. Do not edit the generated page directly.
+
 ## Assets and licensing
 
 Do not add fonts, University marks, icons, photography, or other restricted assets unless their redistribution rights have been confirmed. When in doubt, ask before committing the file. Keep licensed assets separate from the open-source codebase.

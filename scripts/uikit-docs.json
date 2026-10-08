@@ -2,5 +2,8 @@
     "sourceRoot": "vendor/uikit-site",
     "navigation": "docs/navigation.json",
     "section": "Components",
-    "destinationRoot": "docs"
+    "destinationRoot": "docs",
+    "addenda": {
+        "section": "scripts/docs-addenda/section.md"
+    }
 }
