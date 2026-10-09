@@ -3660,12 +3660,12 @@ select.gls-form-width-xsmall {
 .gls-button-outline:hover {
   background-color: var(--color-primary-hover);
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: var(--button-outline-hover-border, rgba(255, 255, 255, 0.5));
 }
 .gls-button-outline:active, .gls-button-outline.gls-active {
   background-color: var(--color-primary-active);
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: var(--button-outline-active-border, rgba(255, 255, 255, 0.5));
 }
 .gls-button-outline:disabled, .gls-button-outline.gls-disabled {
   background-color: var(--button-outline-disabled-background, #ffffff);
