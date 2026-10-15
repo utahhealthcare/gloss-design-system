@@ -2,10 +2,11 @@
 // Component Variables: Container
 // ========================================================================
 
-$container-max-width: 1200px !default;
+$container-max-width: 1312px !default;
 $container-xsmall-max-width: 750px !default;
 $container-small-max-width: 900px !default;
 $container-large-max-width: 1400px !default;
 $container-xlarge-max-width: 1600px !default;
 $container-padding-horizontal: $global-mobile-gutter !default;
 $container-padding-horizontal-s: $global-tablet-gutter !default;
+$container-padding-horizontal-m: $global-desktop-gutter !default;
