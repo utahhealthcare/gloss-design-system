@@ -402,6 +402,7 @@
     --global-xlarge-space: 64px;
     --global-2xlarge-space: 128px;
     --global-mobile-gutter: 24px;
+    --global-tablet-gutter: 40px;
 
     /* Sizing */
     --global-small-size: 150px;
@@ -758,6 +759,7 @@ $global-margin: 32px; // var(--global-medium-space)
 $global-gutter: 32px;
 $global-small-gutter: 16px;
 $global-mobile-gutter: 24px !default;
+$global-tablet-gutter: 40px !default;
 $global-medium-gutter: 48px; // var(--global-large-space)
 $global-large-gutter: 64px;
 
