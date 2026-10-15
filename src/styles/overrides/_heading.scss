@@ -1,0 +1,61 @@
+// ========================================================================
+// Overrides: Heading
+// ========================================================================
+
+@mixin hook-heading-misc() {
+    /* Heading Modifiers (UIkit & Gloss Mapped)
+     ========================================================================== */
+
+    .uk-heading-base {
+        font-size: var(--heading-base-font-size);
+        line-height: var(--heading-base-line-height);
+    }
+
+    .uk-heading-sm,
+    .uk-heading-small {
+        font-size: var(--heading-small-font-size);
+        line-height: var(--heading-small-line-height);
+    }
+
+    .uk-heading-md,
+    .uk-heading-medium {
+        font-size: var(--heading-medium-font-size);
+        line-height: var(--heading-medium-line-height);
+    }
+
+    .uk-heading-lg,
+    .uk-heading-large {
+        font-size: var(--heading-large-font-size);
+        line-height: var(--heading-large-line-height);
+    }
+
+    .uk-heading-xl,
+    .uk-heading-xlarge {
+        font-size: var(--heading-xlarge-font-size);
+        line-height: var(--heading-xlarge-line-height);
+    }
+
+    .uk-heading-2xl,
+    .uk-heading-2xlarge {
+        font-size: var(--heading-2xlarge-font-size);
+        line-height: var(--heading-2xlarge-line-height);
+    }
+
+    .uk-heading-3xl,
+    .uk-heading-3xlarge {
+        font-size: var(--heading-3xlarge-font-size);
+        line-height: var(--heading-3xlarge-line-height);
+    }
+
+    .uk-heading-4xl,
+    .uk-heading-4xlarge {
+        font-size: var(--heading-4xlarge-font-size);
+        line-height: var(--heading-4xlarge-line-height);
+    }
+
+    .uk-heading-5xl,
+    .uk-heading-5xlarge {
+        font-size: var(--heading-5xlarge-font-size);
+        line-height: var(--heading-5xlarge-line-height);
+    }
+}

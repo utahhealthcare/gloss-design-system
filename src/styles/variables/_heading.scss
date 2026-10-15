@@ -2,11 +2,86 @@
 // Component Variables: Heading
 // ========================================================================
 
-$heading-small-font-size: 2rem !default;
-$heading-medium-font-size: 2.125rem !default;
-$heading-large-font-size: 2.5rem !default;
-$heading-xlarge-font-size: 3rem !default;
-$heading-2xlarge-font-size: 4.5rem !default;
+:root {
+    --heading-base-font-size: 1rem;
+    --heading-small-font-size: 1.125rem;
+    --heading-medium-font-size: 1.25rem;
+    --heading-large-font-size: 1.5rem;
+    --heading-xlarge-font-size: 1.875rem;
+    --heading-2xlarge-font-size: 2.25rem;
+    --heading-3xlarge-font-size: 2.5rem;
+    --heading-4xlarge-font-size: 2.75rem;
+    --heading-5xlarge-font-size: 3.25rem;
+
+    --heading-base-line-height: 1.2;
+    --heading-small-line-height: 1.2;
+    --heading-medium-line-height: 1.2;
+    --heading-large-line-height: 1.15;
+    --heading-xlarge-line-height: 1.15;
+    --heading-2xlarge-line-height: 1.1;
+    --heading-3xlarge-line-height: 1.1;
+    --heading-4xlarge-line-height: 1;
+    --heading-5xlarge-line-height: 1;
+
+    /* Short aliases */
+    --heading-sm-font-size: var(--heading-small-font-size);
+    --heading-md-font-size: var(--heading-medium-font-size);
+    --heading-lg-font-size: var(--heading-large-font-size);
+    --heading-xl-font-size: var(--heading-xlarge-font-size);
+    --heading-2xl-font-size: var(--heading-2xlarge-font-size);
+    --heading-3xl-font-size: var(--heading-3xlarge-font-size);
+    --heading-4xl-font-size: var(--heading-4xlarge-font-size);
+    --heading-5xl-font-size: var(--heading-5xlarge-font-size);
+
+    --heading-sm-line-height: var(--heading-small-line-height);
+    --heading-md-line-height: var(--heading-medium-line-height);
+    --heading-lg-line-height: var(--heading-large-line-height);
+    --heading-xl-line-height: var(--heading-xlarge-line-height);
+    --heading-2xl-line-height: var(--heading-2xlarge-line-height);
+    --heading-3xl-line-height: var(--heading-3xlarge-line-height);
+    --heading-4xl-line-height: var(--heading-4xlarge-line-height);
+    --heading-5xl-line-height: var(--heading-5xlarge-line-height);
+}
+
+// Heading Modifiers (UIkit & Gloss Mapped)
+$heading-base-font-size: var(--heading-base-font-size) !default;
+$heading-small-font-size: var(--heading-small-font-size) !default;
+$heading-medium-font-size: var(--heading-medium-font-size) !default;
+$heading-large-font-size: var(--heading-large-font-size) !default;
+$heading-xlarge-font-size: var(--heading-xlarge-font-size) !default;
+$heading-2xlarge-font-size: var(--heading-2xlarge-font-size) !default;
+$heading-3xlarge-font-size: var(--heading-3xlarge-font-size) !default;
+$heading-4xlarge-font-size: var(--heading-4xlarge-font-size) !default;
+$heading-5xlarge-font-size: var(--heading-5xlarge-font-size) !default;
+
+$heading-base-line-height: var(--heading-base-line-height) !default;
+$heading-small-line-height: var(--heading-small-line-height) !default;
+$heading-medium-line-height: var(--heading-medium-line-height) !default;
+$heading-large-line-height: var(--heading-large-line-height) !default;
+$heading-xlarge-line-height: var(--heading-xlarge-line-height) !default;
+$heading-2xlarge-line-height: var(--heading-2xlarge-line-height) !default;
+$heading-3xlarge-line-height: var(--heading-3xlarge-line-height) !default;
+$heading-4xlarge-line-height: var(--heading-4xlarge-line-height) !default;
+$heading-5xlarge-line-height: var(--heading-5xlarge-line-height) !default;
+
+// Short aliases
+$heading-sm-font-size: $heading-small-font-size !default;
+$heading-md-font-size: $heading-medium-font-size !default;
+$heading-lg-font-size: $heading-large-font-size !default;
+$heading-xl-font-size: $heading-xlarge-font-size !default;
+$heading-2xl-font-size: $heading-2xlarge-font-size !default;
+$heading-3xl-font-size: $heading-3xlarge-font-size !default;
+$heading-4xl-font-size: $heading-4xlarge-font-size !default;
+$heading-5xl-font-size: $heading-5xlarge-font-size !default;
+
+$heading-sm-line-height: $heading-small-line-height !default;
+$heading-md-line-height: $heading-medium-line-height !default;
+$heading-lg-line-height: $heading-large-line-height !default;
+$heading-xl-line-height: $heading-xlarge-line-height !default;
+$heading-2xl-line-height: $heading-2xlarge-line-height !default;
+$heading-3xl-line-height: $heading-3xlarge-line-height !default;
+$heading-4xl-line-height: $heading-4xlarge-line-height !default;
+$heading-5xl-line-height: $heading-5xlarge-line-height !default;
 
 // Responsive overrides mapping from legacy heading.css
 $heading-small-font-size-m: 3.25rem !default;
@@ -20,11 +95,6 @@ $heading-large-font-size-l: 6rem !default;
 $heading-xlarge-font-size-l: 8rem !default;
 $heading-2xlarge-font-size-l: 11rem !default;
 
-$heading-small-line-height: 1.2 !default;
-$heading-medium-line-height: 1.1 !default;
-$heading-large-line-height: 1.1 !default;
-$heading-xlarge-line-height: 1 !default;
-$heading-2xlarge-line-height: 1 !default;
 $heading-divider-padding-bottom: calc(5px + 0.1em) !default;
 $heading-divider-border-width: calc(0.2px + 0.05em) !default;
 $heading-divider-border: $global-border !default;

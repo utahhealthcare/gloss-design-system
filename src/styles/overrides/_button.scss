@@ -19,6 +19,14 @@
     > * {
         vertical-align: middle;
     }
+
+    // Accessibility focus indicator for all non-disabled buttons
+    &:not(:disabled):focus,
+    &:not(:disabled):focus-visible {
+        outline: 2px solid transparent !important;
+        outline-offset: var(--focus-ring-offset, 0) !important;
+        box-shadow: var(--focus-ring-box-shadow) !important;
+    }
 }
 
 @mixin hook-button-small() {
@@ -57,30 +65,167 @@
     }
 }
 
+@mixin hook-button-text() {
+    position: relative;
+    color: $button-text-color;
+    text-decoration: none; // Remove base <a> underline so only the animated line appears
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: $button-text-border-offset;
+        left: 0;
+        right: 100%;
+        border-bottom: $button-text-border-width solid $button-text-border;
+        transition: right 0.3s ease-out;
+    }
+
+    &:not(:disabled):focus-visible {
+        outline: 2px solid transparent !important;
+        outline-offset: 2px !important;
+        box-shadow: var(--focus-ring-box-shadow) !important;
+        border-radius: var(--global-rounded-xs, 2px);
+    }
+}
+
+@mixin hook-button-text-hover() {
+    color: $button-text-hover-color;
+    text-decoration: none;
+
+    &::before {
+        right: 0;
+    }
+}
+
+@mixin hook-button-text-disabled() {
+    &::before {
+        display: none;
+    }
+}
+
 // Button Variants
 // Add completely custom modifiers that don't exist in UIkit to the misc hook.
 // Because these are custom, we use the .uk- prefix here (PostCSS changes it to .gls- later).
 @mixin hook-button-misc() {
-    .uk-button-outline {
-        background-color: #ffffff;
-        color: var(--gls-color-emphasis);
-        border: 1px solid rgba(0, 0, 0, 0.2);
+    // Button text active / pressed state decoration
+    .uk-button-text:active:not([disabled]),
+    .uk-button-text.uk-active:not([disabled]) {
+        color: $button-text-hover-color;
+        text-decoration: none;
 
-        &:hover,
-        &:focus {
-            background-color: var(--gls-color-muted-background, #f4f4f5);
-            border-color: rgba(0, 0, 0, 0.6);
+        &::before {
+            right: 0;
+        }
+    }
+
+    /* Button Groups (Horizontal & Vertical)
+     ========================================================================== */
+
+    // Horizontal button group border radius
+    .uk-button-group > .uk-button:not(:first-child),
+    .uk-button-group > div:not(:first-child) .uk-button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .uk-button-group > .uk-button:not(:last-child),
+    .uk-button-group > div:not(:last-child) .uk-button {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    // Collapse horizontal borders
+    .uk-button-group > .uk-button:nth-child(n + 2),
+    .uk-button-group > div:nth-child(n + 2) .uk-button {
+        margin-left: (-$button-border-width);
+    }
+
+    // Superimpose active/hover/focus buttons
+    .uk-button-group .uk-button:hover,
+    .uk-button-group .uk-button:focus,
+    .uk-button-group .uk-button:active,
+    .uk-button-group .uk-button.uk-active {
+        position: relative;
+        z-index: 1;
+    }
+
+    .uk-button-group .uk-button:focus-visible {
+        position: relative;
+        z-index: 2;
+    }
+
+    // Vertical button group
+    .uk-button-group-vertical {
+        flex-direction: column;
+
+        > .uk-button:nth-child(n + 2),
+        > div:nth-child(n + 2) .uk-button {
+            margin-left: 0;
+            margin-top: (-$button-border-width);
+        }
+
+        > .uk-button:first-child,
+        > div:first-child .uk-button {
+            border-radius: $button-border-radius $button-border-radius 0 0;
+        }
+
+        > .uk-button:last-child,
+        > div:last-child .uk-button {
+            border-radius: 0 0 $button-border-radius $button-border-radius;
+        }
+
+        > .uk-button:not(:first-child):not(:last-child),
+        > div:not(:first-child):not(:last-child) .uk-button {
+            border-radius: 0;
+        }
+
+        > .uk-button:first-child:last-child,
+        > div:first-child:last-child .uk-button {
+            border-radius: $button-border-radius;
+        }
+    }
+
+    .uk-button-outline {
+        background-color: $button-outline-background;
+        color: $button-outline-color;
+        border: 1px solid $button-outline-border;
+
+        &:hover {
+            background-color: $button-primary-hover-background;
+            color: $button-primary-hover-color;
+            border-color: $button-outline-hover-border;
+        }
+
+        &:active,
+        &.uk-active {
+            background-color: $button-primary-active-background;
+            color: $button-primary-active-color;
+            border-color: $button-outline-active-border;
+        }
+
+        &:disabled,
+        &.uk-disabled {
+            background-color: $button-outline-disabled-background;
+            color: $button-outline-disabled-color;
+            border-color: $button-outline-disabled-border;
+
+            &:hover {
+                background-color: $button-outline-disabled-background;
+                color: $button-outline-disabled-color;
+                border-color: $button-outline-disabled-border;
+            }
         }
     }
 
     .uk-button-tertiary {
         background-color: #ffffff;
-        color: var(--gls-color-primary);
+        color: var(--color-sand-950, #22201d);
         border: 1px solid rgba(0, 0, 0, 0.2);
 
         &:hover,
         &:focus {
             background-color: var(--gls-color-muted-background, #f4f4f5);
+            color: var(--color-sand-950, #22201d);
             border-color: rgba(0, 0, 0, 0.6);
         }
     }
@@ -99,5 +244,33 @@
     // Clear base borders on link buttons natively
     .uk-button-link {
         border: none;
+    }
+
+    // Primary disabled state
+    .uk-button-primary:disabled,
+    .uk-button-primary.uk-disabled {
+        background-color: $button-primary-disabled-background;
+        color: $button-primary-disabled-color;
+        border-color: $button-primary-disabled-border;
+
+        &:hover {
+            background-color: $button-primary-disabled-background;
+            color: $button-primary-disabled-color;
+            border-color: $button-primary-disabled-border;
+        }
+    }
+
+    // Secondary disabled state
+    .uk-button-secondary:disabled,
+    .uk-button-secondary.uk-disabled {
+        background-color: $button-secondary-disabled-background;
+        color: $button-secondary-disabled-color;
+        border-color: $button-secondary-disabled-border;
+
+        &:hover {
+            background-color: $button-secondary-disabled-background;
+            color: $button-secondary-disabled-color;
+            border-color: $button-secondary-disabled-border;
+        }
     }
 }
