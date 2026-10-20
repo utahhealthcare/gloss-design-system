@@ -115,6 +115,30 @@ body {
     margin-top: 0;
 }
 
+.docs-content--changelog {
+    max-width: 860px;
+}
+
+.docs-content--changelog h2 {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 2rem;
+}
+
+.docs-content--changelog h3 {
+    display: table;
+    margin-bottom: 0.75rem;
+    border-radius: 0.125rem;
+    padding: 0.25rem 0.5rem;
+    background: #f4f4f5;
+    color: #21252e;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.docs-content--changelog h3 + ul {
+    margin-top: 0;
+}
+
 .docs-content h1,
 .docs-content h2,
 .docs-content h3 {
