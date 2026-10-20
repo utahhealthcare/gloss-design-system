@@ -6,13 +6,17 @@ This directory is the source for the GitHub Pages Jekyll site.
 documentation directly; use `npm run sync:uikit-docs` after changing the
 selected pages in `scripts/uikit-docs.json`.
 
+Edit the project root `CHANGELOG.md` to add release notes. Run
+`npm run sync:changelog` and commit the generated `docs/changelog.md` with it.
+The Jekyll site publishes from `docs/`, so it needs that generated copy.
+
 To prepare the docs directory for local Jekyll development, run:
 
 ```sh
 npm run build:docs
 ```
 
-This synchronizes the selected documentation, compiles Gloss CSS, and copies
+This synchronizes the selected documentation and changelog, compiles Gloss CSS, and copies
 the generated stylesheet into the Jekyll asset directory. The copied CSS is a
 build artifact and should not be edited or committed.
 
