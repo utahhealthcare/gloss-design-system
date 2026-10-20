@@ -46,6 +46,7 @@
     --base-h1-line-height: var(--heading-2xlarge-line-height);
     --base-h2-font-size: var(--heading-xlarge-font-size);
     --base-h2-line-height: var(--heading-xlarge-line-height);
+    --base-h2-letter-spacing: -0.01em;
     --base-h3-font-size: var(--heading-large-font-size);
     --base-h3-line-height: var(--heading-large-line-height);
     --base-h4-font-size: var(--heading-medium-font-size);
@@ -97,12 +98,19 @@
     --base-selection-color: var(--global-inverse-color);
 }
 
+@media (min-width: $breakpoint-small) {
+    :root {
+        --base-h2-font-size: var(--heading-2xlarge-font-size);
+        --base-h2-line-height: var(--heading-2xlarge-line-height);
+    }
+}
+
 @media (min-width: $breakpoint-medium) {
     :root {
         --base-h1-font-size: var(--heading-4xlarge-font-size);
         --base-h1-line-height: var(--heading-4xlarge-line-height);
-        --base-h2-font-size: var(--heading-2xlarge-font-size);
-        --base-h2-line-height: var(--heading-2xlarge-line-height);
+        --base-h2-font-size: var(--heading-4xlarge-font-size);
+        --base-h2-line-height: var(--heading-4xlarge-line-height);
         --base-h3-font-size: var(--heading-xlarge-font-size);
         --base-h3-line-height: var(--heading-xlarge-line-height);
         --base-h4-font-size: var(--heading-large-font-size);
@@ -118,8 +126,6 @@
     :root {
         --base-h1-font-size: var(--heading-5xlarge-font-size);
         --base-h1-line-height: var(--heading-5xlarge-line-height);
-        --base-h2-font-size: var(--heading-3xlarge-font-size);
-        --base-h2-line-height: var(--heading-3xlarge-line-height);
     }
 }
 
@@ -451,8 +457,10 @@ h1,
 
 h2,
 .gls-h2 {
+    font-weight: 700;
     font-size: var(--base-h2-font-size);
     line-height: var(--base-h2-line-height);
+    letter-spacing: var(--base-h2-letter-spacing, -0.01em);
 }
 
 h3,
