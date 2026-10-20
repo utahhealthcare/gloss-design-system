@@ -1,4 +1,4 @@
-/*! UIkit 3.25.23 | https://www.getuikit.com | (c) 2014 - 2026 YOOtheme | MIT License */
+/*! UIkit 3.25.27 | https://www.getuikit.com | (c) 2014 - 2026 YOOtheme | MIT License */
 /*! Gloss build: generated from uikit-icons.js; do not edit. */
 
 (function (global, factory) {
