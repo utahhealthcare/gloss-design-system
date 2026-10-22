@@ -45,3 +45,11 @@
             calc(var(--focus-inner-stroke-width, 2px) + var(--focus-outer-stroke-width, 2px))
             var(--focus-outer-stroke-color, #0000ff);
 }
+
+/*
+ * Background token utilities
+ */
+
+.gls-background-granite-300 {
+    background-color: var(--color-granite-300, #b3ccd5);
+}

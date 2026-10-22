@@ -1,0 +1,49 @@
+// ========================================================================
+// Component: Quick Link
+// ========================================================================
+
+/*
+ * Clickable navigation action card with label and arrow
+ */
+
+.gls-quick-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 50px;
+    padding: 4px 12px 4px 16px;
+    background-color: var(--gls-color-reference-neutral-0, #ffffff);
+    border-radius: var(--border-rounded-lg, 8px);
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: box-shadow 200ms ease;
+
+    @media (hover: hover) {
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-decoration: none;
+        }
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--gls-color-reference-focus, #005fcc);
+        outline-offset: 2px;
+    }
+}
+
+/*
+ * Forward arrow indicator pinned to the right
+ * Adopts brand primary red (#BE0000) and ensures stroke fills currentColor
+ */
+.gls-quick-link-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--gls-color-reference-brand-primary, #be0000) !important;
+
+    svg {
+        stroke: var(--gls-color-reference-brand-primary, #be0000) !important;
+    }
+}
