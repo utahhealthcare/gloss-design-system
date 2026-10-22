@@ -15,12 +15,18 @@
     padding: 4px 12px 4px 16px;
     background-color: var(--gls-color-reference-neutral-0, #ffffff);
     border-radius: var(--border-rounded-lg, 8px);
+    color: var(--color-sand-950, #22201d);
     text-decoration: none;
     box-sizing: border-box;
     transition: box-shadow 200ms ease;
 
+    &:visited {
+        color: var(--color-sand-950, #22201d);
+    }
+
     @media (hover: hover) {
         &:hover {
+            color: var(--color-sand-950, #22201d);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             text-decoration: none;
         }

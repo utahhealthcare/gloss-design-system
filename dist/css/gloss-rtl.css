@@ -15996,13 +15996,18 @@ template {
   padding: 4px 16px 4px 12px;
   background-color: var(--gls-color-reference-neutral-0, #ffffff);
   border-radius: var(--border-rounded-lg, 8px);
+  color: var(--color-sand-950, #22201d);
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
   transition: box-shadow 200ms ease;
 }
+.gls-quick-link:visited {
+  color: var(--color-sand-950, #22201d);
+}
 @media (hover: hover) {
   .gls-quick-link:hover {
+    color: var(--color-sand-950, #22201d);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     -webkit-text-decoration: none;
     text-decoration: none;
