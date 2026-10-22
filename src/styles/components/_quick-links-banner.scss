@@ -28,11 +28,11 @@
     padding: var(--global-mobile-gutter) var(--global-mobile-gutter) 30px;
     box-sizing: border-box;
 
-    @media (min-width: 640px) {
+    @media (min-width: $breakpoint-small) {
         padding: var(--global-mobile-gutter) 30px 30px var(--global-mobile-gutter);
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: $breakpoint-medium) {
         padding: var(--global-mobile-gutter) 30px 30px var(--global-tablet-gutter);
     }
 }

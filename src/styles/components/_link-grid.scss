@@ -17,42 +17,42 @@
     align-items: stretch;
     width: 100%;
 
-    @media (min-width: 1280px) {
+    @media (min-width: $breakpoint-large) {
         gap: var(--global-mobile-gutter);
     }
 
-    // 2 links: 2 across from 640px and up
+    // 2 links: 2 across from small breakpoint and up
     &:has(> :nth-child(2):last-child) {
-        @media (min-width: 640px) {
+        @media (min-width: $breakpoint-small) {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    // 3 links: stacked below 1024px (avoids 2+1 orphan on tablet), 3 across at 1024px+
+    // 3 links: stacked below medium breakpoint (avoids 2+1 orphan on tablet), 3 across at medium+
     &:has(> :nth-child(3):last-child) {
-        @media (min-width: 1024px) {
+        @media (min-width: $breakpoint-medium) {
             grid-template-columns: repeat(3, 1fr);
         }
     }
 
-    // 4 links: 2x2 from 640px to 1279px, 4 across at 1280px+
+    // 4 links: 2x2 from small to large, 4 across at large+
     &:has(> :nth-child(4):last-child) {
-        @media (min-width: 640px) {
+        @media (min-width: $breakpoint-small) {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media (min-width: 1280px) {
+        @media (min-width: $breakpoint-large) {
             grid-template-columns: repeat(4, 1fr);
         }
     }
 
     // Fallback for > 4 items
     &:has(> :nth-child(5)) {
-        @media (min-width: 640px) {
+        @media (min-width: $breakpoint-small) {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media (min-width: 1280px) {
+        @media (min-width: $breakpoint-large) {
             grid-template-columns: repeat(4, 1fr);
         }
     }
