@@ -12,28 +12,28 @@
     justify-content: space-between;
     gap: 12px;
     min-height: 50px;
-    padding: 4px 12px 4px 16px;
-    background-color: var(--gls-color-reference-neutral-0, #ffffff);
-    border-radius: var(--border-rounded-lg, 8px);
-    color: var(--color-sand-950, #22201d);
+    padding: var(--global-2xsmall-space) 12px var(--global-2xsmall-space) var(--global-small-space);
+    background-color: var(--gls-color-reference-neutral-0);
+    border-radius: var(--border-rounded-lg);
+    color: var(--color-sand-950);
     text-decoration: none;
     box-sizing: border-box;
     transition: box-shadow 200ms ease;
 
     &:visited {
-        color: var(--color-sand-950, #22201d);
+        color: var(--color-sand-950);
     }
 
     @media (hover: hover) {
         &:hover {
-            color: var(--color-sand-950, #22201d);
+            color: var(--color-sand-950);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             text-decoration: none;
         }
     }
 
     &:focus-visible {
-        outline: 2px solid var(--gls-color-reference-focus, #005fcc);
+        outline: 2px solid var(--gls-color-reference-focus);
         outline-offset: 2px;
     }
 }
@@ -47,9 +47,9 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    color: var(--gls-color-reference-brand-primary, #be0000) !important;
+    color: var(--gls-color-reference-brand-primary) !important;
 
     svg {
-        stroke: var(--gls-color-reference-brand-primary, #be0000) !important;
+        stroke: var(--gls-color-reference-brand-primary) !important;
     }
 }

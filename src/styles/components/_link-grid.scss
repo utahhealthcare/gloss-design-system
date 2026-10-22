@@ -12,13 +12,13 @@
 
 .gls-link-grid-inner {
     display: grid;
-    gap: 16px;
+    gap: var(--global-small-space);
     grid-template-columns: 1fr;
     align-items: stretch;
     width: 100%;
 
     @media (min-width: 1280px) {
-        gap: 24px;
+        gap: var(--global-mobile-gutter);
     }
 
     // 2 links: 2 across from 640px and up
