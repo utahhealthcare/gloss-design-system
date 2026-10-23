@@ -1,0 +1,15 @@
+// ========================================================================
+// Component: Highlight Row / Single-Row Grid Constraint
+// Description: Constrains grid items strictly to a single row (1 to 6 items)
+//              and hides excess items via CSS attribute or class modifier.
+// ========================================================================
+
+.gls-highlight-row {
+  @for $i from 1 through 6 {
+    &[data-gls-max="#{$i}"] > :nth-child(n + #{$i + 1}),
+    &[data-max-cards="#{$i}"] > :nth-child(n + #{$i + 1}),
+    &.gls-max-#{$i} > :nth-child(n + #{$i + 1}) {
+      display: none;
+    }
+  }
+}

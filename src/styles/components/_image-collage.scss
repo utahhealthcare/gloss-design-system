@@ -1,0 +1,82 @@
+// ========================================================================
+// Component: Image Collage
+// Description: Multi-image responsive layouts (Single 3:2, Double 2:3)
+// ========================================================================
+
+.gls-image-collage {
+  display: block;
+  width: 100%;
+
+  // ----------------------------------------------------------------------
+  // Single Image: Full Width, 3:2 Aspect Ratio
+  // ----------------------------------------------------------------------
+  &--single {
+    .gls-image-collage__img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
+  }
+
+  // ----------------------------------------------------------------------
+  // Double Image: Overlapping Portrait (2:3) Collage
+  // Uses CSS Grid shared cell stacking (grid-area: 1 / 1)
+  // ----------------------------------------------------------------------
+  &--double {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .gls-image-collage__wrapper {
+      display: grid;
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      aspect-ratio: 1 / 1;
+    }
+
+    // Both images share grid cell 1 / 1
+    .gls-image-collage__image {
+      grid-area: 1 / 1;
+      max-width: 100%;
+      height: auto;
+
+      .gls-image-collage__img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+      }
+    }
+
+    // 1. Primary image: Anchored to lower-left, larger (~68-70%), in front
+    .gls-image-collage__primary-image {
+      width: 68%;
+      max-height: 80%;
+      align-self: end;
+      justify-self: start;
+      transform: translate(-4%, 4%);
+      z-index: 2;
+      border-radius: var(--border-rounded-border-radius, 4px);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.16);
+
+      .gls-image-collage__img {
+        border-radius: inherit;
+      }
+    }
+
+    // 2. Secondary image: Anchored to upper-right, smaller (~38%), behind
+    .gls-image-collage__secondary-image {
+      width: 50%;
+      max-height: 50%;
+      align-self: start;
+      justify-self: end;
+      transform: translate(6%, -4%);
+      z-index: 1;
+    }
+  }
+}
