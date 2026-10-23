@@ -238,6 +238,24 @@
   --global-warning-background: var(--color-warning);
   --global-danger-background: var(--color-danger);
   --global-gradient-background: linear-gradient(180deg, #f2f2f2 0, #d9d9d9 100%);
+  /* Rebrand Backgrounds for Section componeont */
+  --color-granite-700: #4f6972;
+  --color-lake-50: #f3f8f9;
+  --color-lake-100: #ddf1f6;
+  --color-sand-50: #f8f6f4;
+  --color-sand-100: #f3efe8;
+  --gradient-cool-blue: linear-gradient(180deg, var(--color-lake-50) 0%, var(--color-white) 100%);
+  --gradient-subtle-grey: linear-gradient(
+      180deg,
+      var(--color-sand-50) 0%,
+      var(--color-white) 100%
+  );
+  --gradient-sand: linear-gradient(
+      180deg,
+      var(--color-sand-100) 0%,
+      var(--color-sand-50) 45%,
+      var(--color-white) 100%
+  );
   /* Border */
   --global-border-width: 1px;
   --global-border-style: solid;
@@ -474,8 +492,8 @@
   --color-granite-400: #95b3be;
   --color-granite-500: #7a9aa5;
   --color-granite-600: #63818c;
-  --color-granite-700: #374b53;
-  --color-granite-800: #28373c;
+  --color-granite-700: #4f6972;
+  --color-granite-800: #374b53;
   --color-granite-900: #28373c;
   --color-granite-950: #192226;
   --color-lake-50: #f3f8f9;
@@ -3764,6 +3782,44 @@ select.gls-form-width-xsmall {
 .gls-section-secondary .gls-h5,
 .gls-section-secondary .gls-h6 {
   color: rgba(0, 0, 0, 0.9);
+}
+
+.gls-section-granite {
+  --gls-inverse: light;
+  background: var(--color-granite-700);
+  color: #fff;
+}
+.gls-section-granite h1,
+.gls-section-granite h2,
+.gls-section-granite h3,
+.gls-section-granite h4,
+.gls-section-granite h5,
+.gls-section-granite h6,
+.gls-section-granite .gls-h1,
+.gls-section-granite .gls-h2,
+.gls-section-granite .gls-h3,
+.gls-section-granite .gls-h4,
+.gls-section-granite .gls-h5,
+.gls-section-granite .gls-h6 {
+  color: #fff;
+}
+
+.gls-section-gradient-cool {
+  --gls-inverse: dark;
+  background: var(--gradient-cool-blue);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.gls-section-gradient-grey {
+  --gls-inverse: dark;
+  background: var(--gradient-subtle-grey);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.gls-section-gradient-sand {
+  --gls-inverse: dark;
+  background: var(--gradient-sand);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* ========================================================================
@@ -15225,6 +15281,25 @@ template {
     background-size: contain !important;
   }
 }
+.gls-highlight-row[data-gls-max="1"] > :nth-child(n+2), .gls-highlight-row[data-max-cards="1"] > :nth-child(n+2), .gls-highlight-row.gls-max-1 > :nth-child(n+2) {
+  display: none;
+}
+.gls-highlight-row[data-gls-max="2"] > :nth-child(n+3), .gls-highlight-row[data-max-cards="2"] > :nth-child(n+3), .gls-highlight-row.gls-max-2 > :nth-child(n+3) {
+  display: none;
+}
+.gls-highlight-row[data-gls-max="3"] > :nth-child(n+4), .gls-highlight-row[data-max-cards="3"] > :nth-child(n+4), .gls-highlight-row.gls-max-3 > :nth-child(n+4) {
+  display: none;
+}
+.gls-highlight-row[data-gls-max="4"] > :nth-child(n+5), .gls-highlight-row[data-max-cards="4"] > :nth-child(n+5), .gls-highlight-row.gls-max-4 > :nth-child(n+5) {
+  display: none;
+}
+.gls-highlight-row[data-gls-max="5"] > :nth-child(n+6), .gls-highlight-row[data-max-cards="5"] > :nth-child(n+6), .gls-highlight-row.gls-max-5 > :nth-child(n+6) {
+  display: none;
+}
+.gls-highlight-row[data-gls-max="6"] > :nth-child(n+7), .gls-highlight-row[data-max-cards="6"] > :nth-child(n+7), .gls-highlight-row.gls-max-6 > :nth-child(n+7) {
+  display: none;
+}
+
 .gls-icon:not(.gls-preserve)[fill=none],
 .gls-svg:not(.gls-preserve)[fill=none] {
   fill: none;
@@ -15233,6 +15308,64 @@ template {
 .gls-icon:not(.gls-preserve)[stroke=none],
 .gls-svg:not(.gls-preserve)[stroke=none] {
   stroke: none;
+}
+
+.gls-image-collage {
+  display: block;
+  width: 100%;
+}
+.gls-image-collage--single .gls-image-collage__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+.gls-image-collage--double {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.gls-image-collage--double .gls-image-collage__wrapper {
+  display: grid;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1/1;
+}
+.gls-image-collage--double .gls-image-collage__image {
+  grid-area: 1/1;
+  max-width: 100%;
+  height: auto;
+}
+.gls-image-collage--double .gls-image-collage__image .gls-image-collage__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+.gls-image-collage--double .gls-image-collage__primary-image {
+  width: 68%;
+  max-height: 80%;
+  align-self: end;
+  justify-self: start;
+  transform: translate(4%, 4%);
+  z-index: 2;
+  border-radius: var(--border-rounded-border-radius, 4px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.16);
+}
+.gls-image-collage--double .gls-image-collage__primary-image .gls-image-collage__img {
+  border-radius: inherit;
+}
+.gls-image-collage--double .gls-image-collage__secondary-image {
+  width: 50%;
+  max-height: 50%;
+  align-self: start;
+  justify-self: end;
+  transform: translate(-6%, -4%);
+  z-index: 1;
 }
 
 /**
@@ -15898,6 +16031,69 @@ a.gls-social-youtube:active {
 .gls-icon-button[class*=gls-social-]:focus {
   border-color: transparent;
   color: white;
+}
+
+.gls-stack {
+  display: block;
+  width: 100%;
+}
+.gls-stack > :first-child {
+  margin-top: 0;
+}
+.gls-stack > :last-child {
+  margin-bottom: 0;
+}
+.gls-stack.gls-stack-small > * + *, .gls-stack[data-gls-gap=small] > * + * {
+  margin-top: var(--global-small-space, 16px);
+}
+.gls-stack.gls-stack-small > [class*=gls-grid] + [class*=gls-grid],
+.gls-stack.gls-stack-small > * + [class*=gls-grid],
+.gls-stack.gls-stack-small > * + [class*=gls-grid-margin], .gls-stack[data-gls-gap=small] > [class*=gls-grid] + [class*=gls-grid],
+.gls-stack[data-gls-gap=small] > * + [class*=gls-grid],
+.gls-stack[data-gls-gap=small] > * + [class*=gls-grid-margin] {
+  margin-top: var(--global-small-space, 16px);
+}
+.gls-stack.gls-stack-medium > * + *, .gls-stack[data-gls-gap=medium] > * + * {
+  margin-top: var(--global-medium-space, 32px);
+}
+.gls-stack.gls-stack-medium > [class*=gls-grid] + [class*=gls-grid],
+.gls-stack.gls-stack-medium > * + [class*=gls-grid],
+.gls-stack.gls-stack-medium > * + [class*=gls-grid-margin], .gls-stack[data-gls-gap=medium] > [class*=gls-grid] + [class*=gls-grid],
+.gls-stack[data-gls-gap=medium] > * + [class*=gls-grid],
+.gls-stack[data-gls-gap=medium] > * + [class*=gls-grid-margin] {
+  margin-top: var(--global-medium-space, 32px);
+}
+.gls-stack.gls-stack-large > * + *, .gls-stack[data-gls-gap=large] > * + * {
+  margin-top: var(--global-large-space, 48px);
+}
+.gls-stack.gls-stack-large > [class*=gls-grid] + [class*=gls-grid],
+.gls-stack.gls-stack-large > * + [class*=gls-grid],
+.gls-stack.gls-stack-large > * + [class*=gls-grid-margin], .gls-stack[data-gls-gap=large] > [class*=gls-grid] + [class*=gls-grid],
+.gls-stack[data-gls-gap=large] > * + [class*=gls-grid],
+.gls-stack[data-gls-gap=large] > * + [class*=gls-grid-margin] {
+  margin-top: var(--global-large-space, 48px);
+}
+@media (min-width: 1200px) {
+  .gls-stack.gls-stack-large > * + *, .gls-stack[data-gls-gap=large] > * + * {
+    margin-top: var(--global-xlarge-space, 64px);
+  }
+  .gls-stack.gls-stack-large > [class*=gls-grid] + [class*=gls-grid],
+  .gls-stack.gls-stack-large > * + [class*=gls-grid],
+  .gls-stack.gls-stack-large > * + [class*=gls-grid-margin], .gls-stack[data-gls-gap=large] > [class*=gls-grid] + [class*=gls-grid],
+  .gls-stack[data-gls-gap=large] > * + [class*=gls-grid],
+  .gls-stack[data-gls-gap=large] > * + [class*=gls-grid-margin] {
+    margin-top: var(--global-xlarge-space, 64px);
+  }
+}
+.gls-stack.gls-stack-collapse > * + *, .gls-stack[data-gls-gap=none] > * + * {
+  margin-top: 0;
+}
+.gls-stack.gls-stack-collapse > [class*=gls-grid] + [class*=gls-grid],
+.gls-stack.gls-stack-collapse > * + [class*=gls-grid],
+.gls-stack.gls-stack-collapse > * + [class*=gls-grid-margin], .gls-stack[data-gls-gap=none] > [class*=gls-grid] + [class*=gls-grid],
+.gls-stack[data-gls-gap=none] > * + [class*=gls-grid],
+.gls-stack[data-gls-gap=none] > * + [class*=gls-grid-margin] {
+  margin-top: 0;
 }
 
 /**

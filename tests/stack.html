@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Stack - Gloss tests</title>
+        <script src="js/test.js"></script>
+        <style>
+            .demo-box {
+                padding: 15px;
+                background: rgba(0, 0, 0, 0.05);
+                border: 1px dashed rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Stack</h1>
+
+            <h2>Small Gap (16px)</h2>
+            <div class="gls-stack gls-stack-small">
+                <div class="demo-box">Item 1: Heading / Text block</div>
+                <div class="demo-box">Item 2: Sub-content separated by 16px</div>
+                <div class="demo-box">Item 3: Action or button area</div>
+            </div>
+
+            <h2>Medium Gap (32px)</h2>
+            <div class="gls-stack gls-stack-medium">
+                <div class="demo-box">Section Content A</div>
+                <div class="demo-box">Section Content B (Separated by 32px)</div>
+                <div class="demo-box">Section Content C</div>
+            </div>
+
+            <h2>Large Gap (48px / 64px)</h2>
+            <div class="gls-stack gls-stack-large">
+                <div class="demo-box">Macro Block 1</div>
+                <div class="demo-box">Macro Block 2 (Separated by 48px, 64px on desktop)</div>
+            </div>
+
+            <h2>Stacking Grids (Neutralizing UIkit Grid Margins)</h2>
+            <div class="gls-stack gls-stack-small">
+                <div class="gls-grid gls-child-width-1-3@m gls-grid-match" gls-grid>
+                    <div><div class="gls-card gls-card-default gls-card-body">Grid 1 - Card A</div></div>
+                    <div><div class="gls-card gls-card-default gls-card-body">Grid 1 - Card B</div></div>
+                    <div><div class="gls-card gls-card-default gls-card-body">Grid 1 - Card C</div></div>
+                </div>
+                <div class="gls-grid gls-child-width-1-3@m gls-grid-match" gls-grid>
+                    <div><div class="gls-card gls-card-default gls-card-body">Grid 2 - Card D (Strictly 16px below Grid 1)</div></div>
+                    <div><div class="gls-card gls-card-default gls-card-body">Grid 2 - Card E</div></div>
+                    <div><div class="gls-card gls-card-default gls-card-body">Grid 2 - Card F</div></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

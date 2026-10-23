@@ -19,6 +19,44 @@
                 <h1>Background Image Loading Eager</h1>
             </div>
 
+            <h2>Image Collage</h2>
+
+            <div class="gls-child-width-1-2@m gls-margin-medium-bottom" gls-grid>
+                <div>
+                    <h3>Single (3:2 Aspect Ratio)</h3>
+                    <div class="gls-image-collage gls-image-collage--single">
+                        <img
+                            class="gls-image-collage__img gls-border-rounded"
+                            src="images/photo.jpg"
+                            alt="Single landscape sample"
+                        />
+                    </div>
+                    <p class="gls-margin-small-top">Single 3:2 Banner (Full width)</p>
+                </div>
+                <div>
+                    <h3>Double (2:3 Overlapping Collage)</h3>
+                    <div class="gls-image-collage gls-image-collage--double">
+                        <div class="gls-image-collage__wrapper">
+                            <div class="gls-image-collage__primary-image gls-image-collage__image">
+                                <img
+                                    class="gls-image-collage__img gls-border-rounded"
+                                    src="images/size-v.jpg"
+                                    alt="Primary lower-left portrait"
+                                />
+                            </div>
+                            <div class="gls-image-collage__secondary-image gls-image-collage__image">
+                                <img
+                                    class="gls-image-collage__img gls-border-rounded"
+                                    src="images/photo2.jpg"
+                                    alt="Secondary upper-right portrait"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Primary lower-left (68% width, front), Secondary upper-right (50% width, behind)</p>
+                </div>
+            </div>
+
             <h2>Loading Lazy Attribute</h2>
 
             <div class="gls-child-width-1-2@m" gls-grid>
