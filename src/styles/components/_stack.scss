@@ -5,84 +5,84 @@
 // ========================================================================
 
 .gls-stack {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 
-  // Reset top margin on the first child and bottom margin on the last child
-  > :first-child {
-    margin-top: 0;
-  }
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-
-  // --- Gap: Small (16px) ---
-  &.gls-stack-small,
-  &[data-gls-gap='small'] {
-    > * + * {
-      margin-top: var(--global-small-space, 16px);
+    // Reset top margin on the first child and bottom margin on the last child
+    > :first-child {
+        margin-top: 0;
     }
 
-    // High specificity (0, 3, 0) overrides UIkit's (0, 2, 0) adjacent grid margins without !important.
-    > [class*='gls-grid'] + [class*='gls-grid'],
-    > * + [class*='gls-grid'],
-    > * + [class*='gls-grid-margin'] {
-      margin-top: var(--global-small-space, 16px);
-    }
-  }
-
-  // --- Gap: Medium (32px) ---
-  &.gls-stack-medium,
-  &[data-gls-gap='medium'] {
-    > * + * {
-      margin-top: var(--global-medium-space, 32px);
+    > :last-child {
+        margin-bottom: 0;
     }
 
-    > [class*='gls-grid'] + [class*='gls-grid'],
-    > * + [class*='gls-grid'],
-    > * + [class*='gls-grid-margin'] {
-      margin-top: var(--global-medium-space, 32px);
-    }
-  }
+    // --- Gap: Small (16px) ---
+    &.gls-stack-small,
+    &[data-gls-gap='small'] {
+        > * + * {
+            margin-top: var(--global-small-space, 16px);
+        }
 
-  // --- Gap: Large (48px / 64px) ---
-  &.gls-stack-large,
-  &[data-gls-gap='large'] {
-    > * + * {
-      margin-top: var(--global-large-space, 48px);
-    }
-
-    > [class*='gls-grid'] + [class*='gls-grid'],
-    > * + [class*='gls-grid'],
-    > * + [class*='gls-grid-margin'] {
-      margin-top: var(--global-large-space, 48px);
+        // High specificity (0, 3, 0) overrides UIkit's (0, 2, 0) adjacent grid margins without !important.
+        > [class*='gls-grid'] + [class*='gls-grid'],
+        > * + [class*='gls-grid'],
+        > * + [class*='gls-grid-margin'] {
+            margin-top: var(--global-small-space, 16px);
+        }
     }
 
-    @media (min-width: 1200px) {
-      > * + * {
-        margin-top: var(--global-xlarge-space, 64px);
-      }
+    // --- Gap: Medium (32px) ---
+    &.gls-stack-medium,
+    &[data-gls-gap='medium'] {
+        > * + * {
+            margin-top: var(--global-medium-space, 32px);
+        }
 
-      > [class*='gls-grid'] + [class*='gls-grid'],
-      > * + [class*='gls-grid'],
-      > * + [class*='gls-grid-margin'] {
-        margin-top: var(--global-xlarge-space, 64px);
-      }
-    }
-  }
-
-  // --- Gap: Collapse / None (0px) ---
-  &.gls-stack-collapse,
-  &[data-gls-gap='none'] {
-    > * + * {
-      margin-top: 0;
+        > [class*='gls-grid'] + [class*='gls-grid'],
+        > * + [class*='gls-grid'],
+        > * + [class*='gls-grid-margin'] {
+            margin-top: var(--global-medium-space, 32px);
+        }
     }
 
-    > [class*='gls-grid'] + [class*='gls-grid'],
-    > * + [class*='gls-grid'],
-    > * + [class*='gls-grid-margin'] {
-      margin-top: 0;
+    // --- Gap: Large (48px / 64px) ---
+    &.gls-stack-large,
+    &[data-gls-gap='large'] {
+        > * + * {
+            margin-top: var(--global-large-space, 48px);
+        }
+
+        > [class*='gls-grid'] + [class*='gls-grid'],
+        > * + [class*='gls-grid'],
+        > * + [class*='gls-grid-margin'] {
+            margin-top: var(--global-large-space, 48px);
+        }
+
+        @media (min-width: 1200px) {
+            > * + * {
+                margin-top: var(--global-xlarge-space, 64px);
+            }
+
+            > [class*='gls-grid'] + [class*='gls-grid'],
+            > * + [class*='gls-grid'],
+            > * + [class*='gls-grid-margin'] {
+                margin-top: var(--global-xlarge-space, 64px);
+            }
+        }
     }
-  }
+
+    // --- Gap: Collapse / None (0px) ---
+    &.gls-stack-collapse,
+    &[data-gls-gap='none'] {
+        > * + * {
+            margin-top: 0;
+        }
+
+        > [class*='gls-grid'] + [class*='gls-grid'],
+        > * + [class*='gls-grid'],
+        > * + [class*='gls-grid-margin'] {
+            margin-top: 0;
+        }
+    }
 }

@@ -5,11 +5,11 @@
 // ========================================================================
 
 .gls-highlight-row {
-  @for $i from 1 through 6 {
-    &[data-gls-max="#{$i}"] > :nth-child(n + #{$i + 1}),
-    &[data-max-cards="#{$i}"] > :nth-child(n + #{$i + 1}),
-    &.gls-max-#{$i} > :nth-child(n + #{$i + 1}) {
-      display: none;
+    @for $i from 1 through 6 {
+        &[data-gls-max='#{$i}'] > :nth-child(n + #{$i + 1}),
+        &[data-max-cards='#{$i}'] > :nth-child(n + #{$i + 1}),
+        &.gls-max-#{$i} > :nth-child(n + #{$i + 1}) {
+            display: none;
+        }
     }
-  }
 }
