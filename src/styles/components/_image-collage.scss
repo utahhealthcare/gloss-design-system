@@ -12,67 +12,67 @@
     // ----------------------------------------------------------------------
     &-single {
         .gls-image-collage-img {
-        display: block;
-        width: 100%;
-        aspect-ratio: 3 / 2;
-        object-fit: cover;
-        }
-    }
-
-  // ----------------------------------------------------------------------
-  // Double Image: Overlapping Portrait (2:3) Collage
-  // Uses CSS Grid shared cell stacking (grid-area: 1 / 1)
-  // ----------------------------------------------------------------------
-  &-double {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-
-    .gls-image-collage-wrapper {
-        display: grid;
-        position: relative;
-        width: 100%;
-        max-width: 500px;
-        aspect-ratio: 1 / 1;
-    }
-
-    // Both images share grid cell 1 / 1
-    .gls-image-collage-image {
-        grid-area: 1 / 1;
-        max-width: 100%;
-        height: auto;
-
-        .gls-image-collage-img {
             display: block;
             width: 100%;
-            aspect-ratio: 2 / 3;
+            aspect-ratio: 3 / 2;
             object-fit: cover;
         }
     }
 
-    // 1. Primary image: Anchored to lower-left, larger (~68-70%), in front
-    .gls-image-collage-primary {
-        width: 68%;
-        place-self: end start;
-        transform: translate(-4%, 4%);
-        z-index: 2;
-        border-radius: var(--border-rounded-border-radius, 4px);
-        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.16);
+    // ----------------------------------------------------------------------
+    // Double Image: Overlapping Portrait (2:3) Collage
+    // Uses CSS Grid shared cell stacking (grid-area: 1 / 1)
+    // ----------------------------------------------------------------------
+    &-double {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
 
-        .gls-image-collage-img {
-            border-radius: inherit;
+        .gls-image-collage-wrapper {
+            display: grid;
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 1 / 1;
+        }
+
+        // Both images share grid cell 1 / 1
+        .gls-image-collage-image {
+            grid-area: 1 / 1;
+            max-width: 100%;
+            height: auto;
+
+            .gls-image-collage-img {
+                display: block;
+                width: 100%;
+                aspect-ratio: 2 / 3;
+                object-fit: cover;
+            }
+        }
+
+        // 1. Primary image: Anchored to lower-left, larger (~68-70%), in front
+        .gls-image-collage-primary {
+            width: 68%;
+            place-self: end start;
+            transform: translate(-4%, 4%);
+            z-index: 2;
+            border-radius: var(--border-rounded-border-radius, 4px);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.16);
+
+            .gls-image-collage-img {
+                border-radius: inherit;
+            }
+        }
+
+        // 2. Secondary image: Anchored to upper-right, smaller (~38%), behind
+        .gls-image-collage-secondary {
+            width: 38%;
+            place-self: start end;
+            transform: translate(6%, -4%);
+            z-index: 1;
         }
     }
-
-    // 2. Secondary image: Anchored to upper-right, smaller (~38%), behind
-    .gls-image-collage-secondary {
-        width: 38%;
-        place-self: start end;
-        transform: translate(6%, -4%);
-        z-index: 1;
-    }
-  }
 }
