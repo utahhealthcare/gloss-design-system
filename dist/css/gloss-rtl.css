@@ -15641,6 +15641,7 @@ template {
 }
 .gls-image-collage-double .gls-image-collage-primary {
   width: 68%;
+  max-height: 80%;
   place-self: end start;
   transform: translate(4%, 4%);
   z-index: 2;
@@ -15651,7 +15652,8 @@ template {
   border-radius: inherit;
 }
 .gls-image-collage-double .gls-image-collage-secondary {
-  width: 38%;
+  width: 50%;
+  max-height: 50%;
   place-self: start end;
   transform: translate(-6%, -4%);
   z-index: 1;
