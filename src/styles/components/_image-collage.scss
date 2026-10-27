@@ -20,7 +20,7 @@
     }
 
     // ----------------------------------------------------------------------
-    // Double Image: Overlapping Portrait (2:3) Collage
+    // Double Image: Overlapping Portrait Collage
     // Uses CSS Grid shared cell stacking (grid-area: 1 / 1)
     // ----------------------------------------------------------------------
     &-double {
@@ -28,7 +28,6 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        overflow: hidden;
         position: relative;
 
         .gls-image-collage-wrapper {
@@ -43,37 +42,29 @@
         .gls-image-collage-image {
             grid-area: 1 / 1;
             max-width: 100%;
-            height: auto;
 
             .gls-image-collage-img {
                 display: block;
                 width: 100%;
-                aspect-ratio: 2 / 3;
+                height: 100%;
                 object-fit: cover;
+                border-radius: var(--border-rounded-border-radius, 4px);
             }
         }
 
-        // 1. Primary image: Anchored to lower-left, larger (~68-70%), in front
+        // 1. Primary image: Anchored to lower-left, 60% width, 80% height, in front
         .gls-image-collage-primary {
-            width: 68%;
-            max-height: 80%;
+            width: 60%;
+            height: 80%;
             place-self: end start;
-            transform: translate(-4%, 4%);
             z-index: 2;
-            border-radius: var(--border-rounded-border-radius, 4px);
-            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.16);
-
-            .gls-image-collage-img {
-                border-radius: inherit;
-            }
         }
 
-        // 2. Secondary image: Anchored to upper-right, smaller (~38%), behind
+        // 2. Secondary image: Anchored to upper-right, 48% width, 50% height, behind
         .gls-image-collage-secondary {
-            width: 50%;
-            max-height: 50%;
+            width: 48%;
+            height: 50%;
             place-self: start end;
-            transform: translate(6%, -4%);
             z-index: 1;
         }
     }

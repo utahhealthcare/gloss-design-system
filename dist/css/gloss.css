@@ -15618,7 +15618,6 @@ template {
   justify-content: center;
   align-items: center;
   width: 100%;
-  overflow: hidden;
   position: relative;
 }
 .gls-image-collage-double .gls-image-collage-wrapper {
@@ -15631,31 +15630,24 @@ template {
 .gls-image-collage-double .gls-image-collage-image {
   grid-area: 1/1;
   max-width: 100%;
-  height: auto;
 }
 .gls-image-collage-double .gls-image-collage-image .gls-image-collage-img {
   display: block;
   width: 100%;
-  aspect-ratio: 2/3;
+  height: 100%;
   object-fit: cover;
+  border-radius: var(--border-rounded-border-radius, 4px);
 }
 .gls-image-collage-double .gls-image-collage-primary {
-  width: 68%;
-  max-height: 80%;
+  width: 60%;
+  height: 80%;
   place-self: end start;
-  transform: translate(-4%, 4%);
   z-index: 2;
-  border-radius: var(--border-rounded-border-radius, 4px);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.16);
-}
-.gls-image-collage-double .gls-image-collage-primary .gls-image-collage-img {
-  border-radius: inherit;
 }
 .gls-image-collage-double .gls-image-collage-secondary {
-  width: 50%;
-  max-height: 50%;
+  width: 48%;
+  height: 50%;
   place-self: start end;
-  transform: translate(6%, -4%);
   z-index: 1;
 }
 
