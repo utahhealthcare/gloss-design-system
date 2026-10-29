@@ -216,6 +216,10 @@
         "slug": "progress"
     },
     {
+        "title": "Quick Links Banner",
+        "slug": "quick-links-banner"
+    },
+    {
         "title": "Scroll",
         "slug": "scroll"
     },

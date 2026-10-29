@@ -5,5 +5,11 @@
     "destinationRoot": "docs",
     "addenda": {
         "section": "scripts/docs-addenda/section.md"
-    }
+    },
+    "customComponents": [
+        {
+            "title": "Quick Links Banner",
+            "slug": "quick-links-banner"
+        }
+    ]
 }

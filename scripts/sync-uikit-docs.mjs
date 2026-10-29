@@ -157,11 +157,25 @@ async function renderPage(page, sourceRevision) {
 
 const sourceRevision = await revision();
 const navigation = JSON.parse(await readFile(navigationPath, 'utf8'));
-const components = Object.entries(navigation[config.section] ?? {}).map(([title, slug]) => ({
+const uikitComponents = Object.entries(navigation[config.section] ?? {}).map(([title, slug]) => ({
     title,
     slug,
 }));
-const pages = components.map(({ slug }) => ({
+const customComponents = config.customComponents ?? [];
+for (const { slug } of customComponents) {
+    const customDocPath = path.resolve(projectDirectory, config.destinationRoot, `${slug}.md`);
+    try {
+        await readFile(customDocPath, 'utf8');
+    } catch (error) {
+        throw new Error(`Custom component documentation missing: ${customDocPath}`, {
+            cause: error,
+        });
+    }
+}
+const components = [...uikitComponents, ...customComponents].sort((a, b) =>
+    a.title.localeCompare(b.title),
+);
+const pages = uikitComponents.map(({ slug }) => ({
     slug,
     source: `docs/pages/${slug}.md`,
     destination: path.posix.join(config.destinationRoot, `${slug}.md`),
