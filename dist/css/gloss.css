@@ -11409,6 +11409,10 @@ iframe[data-gls-cover] {
   background-color: var(--global-tertiary-background);
 }
 
+.gls-background-granite-300 {
+  background-color: var(--color-granite-300);
+}
+
 /* ========================================================================
    Component: Align
  ========================================================================== */
@@ -16512,13 +16516,6 @@ a.gls-social-youtube:active {
       inset 0 0 0
           calc(var(--focus-inner-stroke-width, 2px) + var(--focus-outer-stroke-width, 2px))
           var(--focus-outer-stroke-color, #0000ff);
-}
-
-/*
- * Background token utilities
- */
-.gls-background-granite-300 {
-  background-color: var(--color-granite-300);
 }
 
 /**
