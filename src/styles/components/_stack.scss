@@ -59,7 +59,7 @@
             margin-top: var(--global-large-space, 48px);
         }
 
-        @media (min-width: 1200px) {
+        @media (min-width: $breakpoint-large) {
             > * + * {
                 margin-top: var(--global-xlarge-space, 64px);
             }
