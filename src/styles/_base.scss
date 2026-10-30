@@ -507,6 +507,34 @@ ol > li > ul {
 }
 
 /*
+ * Ordered lists: alternate between numerical (1, 2, 3) and alphabetical (a, b, c) across nested levels
+ */
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: decimal;
+}
+
+ol ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol ol ol {
+    list-style-type: decimal;
+}
+
+ol ol ol ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+/*
  * Marker pseudo-element
  */
 

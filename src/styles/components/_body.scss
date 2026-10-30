@@ -1,0 +1,57 @@
+/**
+ * Name:            Body
+ * Description:     Component for responsive semantic body typography
+ *
+ * Component:       `gls-body`
+ *
+ * Modifiers:       `gls-body-feature`
+ *                  `gls-body-lead`
+ *                  `gls-body-default`
+ *                  `gls-body-secondary`
+ *                  `gls-body-caption`
+ *
+ * ======================================================================== */
+
+/* ========================================================================
+   Component: Body
+ ========================================================================== */
+
+.gls-body,
+[class*='gls-body-'] {
+    font-family: var(--gls-font-family-base);
+    font-feature-settings: var(--gls-font-feature-settings-base, 'salt');
+}
+
+/*
+ * Default role fallback when .gls-body is applied without a specific role modifier
+ */
+.gls-body,
+.gls-body-default {
+    font-size: var(--gls-body-default-font-size);
+    font-weight: var(--gls-body-default-font-weight);
+    line-height: var(--gls-body-default-line-height);
+}
+
+.gls-body-feature {
+    font-size: var(--gls-body-feature-font-size);
+    font-weight: var(--gls-body-feature-font-weight);
+    line-height: var(--gls-body-feature-line-height);
+}
+
+.gls-body-lead {
+    font-size: var(--gls-body-lead-font-size);
+    font-weight: var(--gls-body-lead-font-weight);
+    line-height: var(--gls-body-lead-line-height);
+}
+
+.gls-body-secondary {
+    font-size: var(--gls-body-secondary-font-size);
+    font-weight: var(--gls-body-secondary-font-weight);
+    line-height: var(--gls-body-secondary-line-height);
+}
+
+.gls-body-caption {
+    font-size: var(--gls-body-caption-font-size);
+    font-weight: var(--gls-body-caption-font-weight);
+    line-height: var(--gls-body-caption-line-height);
+}
