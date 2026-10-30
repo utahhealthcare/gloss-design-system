@@ -55,3 +55,26 @@
     font-weight: var(--gls-body-caption-font-weight);
     line-height: var(--gls-body-caption-line-height);
 }
+
+/*
+ * Hyperlinks within body copy
+ */
+.gls-body a:not([class*='gls-button']):not(.gls-link-reset),
+[class*='gls-body-'] a:not([class*='gls-button']):not(.gls-link-reset) {
+    color: var(--gls-body-link-color);
+    text-decoration: underline var(--gls-body-link-underline-color)
+        var(--gls-body-link-underline-thickness);
+    text-decoration-skip-ink: auto;
+    text-underline-position: from-font;
+    text-underline-offset: var(--gls-body-link-underline-offset);
+
+    &:hover,
+    &:focus {
+        color: var(--gls-body-link-hover-color);
+    }
+
+    &:active {
+        color: var(--gls-body-link-active-color);
+        text-decoration-color: var(--gls-body-link-active-underline-color);
+    }
+}

@@ -15,6 +15,7 @@
     --base-blockquote-footer-color: #{$inverse-global-color};
     --base-pre-color: #{$inverse-global-color};
     --base-pre-border: #{$inverse-global-border};
+    --gls-body-link-underline-color: currentColor;
 
     // Primary Button Inversion (WCAG Contrast on dark backgrounds)
     .uk-button-primary {

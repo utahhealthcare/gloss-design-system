@@ -138,6 +138,28 @@ When embedding body content in layout stacks, combine the semantic role class wi
 
 ---
 
+## Hyperlinks
+
+Hyperlinks within `.gls-body` and `.gls-body-*` render with a proportional brand underline (`text-decoration-thickness: 10%`, `text-underline-offset: 16%`, `text-underline-position: from-font`). On hover and focus, the text color shifts to the brand primary color while the underline height remains constant. On pressed (active), both the text and underline transition to the darker active brand color.
+
+<div class="gls-docs-example">
+    <div class="gls-body gls-body-default">
+        <p>
+            Explore our <a href="#">Primary Care Services</a>, read about our <a href="#">clinical trial outcomes</a>, or schedule an appointment online.
+        </p>
+    </div>
+</div>
+
+```html
+<div class="gls-body gls-body-default">
+    <p>
+        Explore our <a href="#">Primary Care Services</a>, read about our <a href="#">clinical trial outcomes</a>, or schedule an appointment online.
+    </p>
+</div>
+```
+
+---
+
 ## Kitchen sink
 
 The following sample illustrates rich HTML content rendered within `.gls-body.gls-body-default`, showcasing paragraphs, hyperlinks, inline formatting, ordered and unordered lists, nested hierarchies, blockquotes, and overflow handling.

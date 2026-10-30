@@ -23,6 +23,15 @@
     --gls-body-default-font-size: 1rem; /* 16px (base) */
     --gls-body-secondary-font-size: 0.875rem; /* 14px (sm) */
     --gls-body-caption-font-size: 0.875rem; /* 14px (sm) */
+
+    /* Semantic Body Roles - Hyperlinks */
+    --gls-body-link-color: inherit;
+    --gls-body-link-underline-color: var(--global-primary-background);
+    --gls-body-link-underline-offset: -0.5px;
+    --gls-body-link-underline-thickness: 10%;
+    --gls-body-link-hover-color: var(--global-primary-background);
+    --gls-body-link-active-color: var(--color-primary-active);
+    --gls-body-link-active-underline-color: var(--color-primary-active);
 }
 
 /* Tablet (640px–959px) */
