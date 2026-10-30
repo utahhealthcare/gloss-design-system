@@ -32,6 +32,10 @@
         "slug": "base"
     },
     {
+        "title": "Body",
+        "slug": "body"
+    },
+    {
         "title": "Breadcrumb",
         "slug": "breadcrumb"
     },

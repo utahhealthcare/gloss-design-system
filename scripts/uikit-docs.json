@@ -5,5 +5,11 @@
     "destinationRoot": "docs",
     "addenda": {
         "section": "scripts/docs-addenda/section.md"
-    }
+    },
+    "customComponents": [
+        {
+            "title": "Body",
+            "slug": "body"
+        }
+    ]
 }
