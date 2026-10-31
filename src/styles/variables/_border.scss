@@ -33,21 +33,39 @@
     --global-stroke-10: var(--stroke-10);
     --global-stroke-20: var(--stroke-20);
     --global-stroke-30: var(--stroke-30);
+
+    /* Legacy Border Variables (backwards compatibility) */
+    --border-default-width: var(--global-border-width);
+    --border-thick-width: calc(var(--border-default-width) * 2);
+    --border-thicker-width: calc(var(--border-default-width) * 4);
+
+    --border-default-color: var(--global-border);
+    --border-primary-color: var(--global-primary-background);
+    --border-secondary-color: var(--global-secondary-background);
+    --border-tertiary-color: var(--global-tertiary-background);
+    --border-transparent-color: var(--global-transparent-background);
+
+    --border-solid-style: solid;
+    --border-dashed-style: dashed;
+    --border-dotted-style: dotted;
+
+    --border-rounded-radius: var(--global-border-radius);
+    --border-full-radius: 9999px;
 }
 
-$border-default-width: $global-border-width !default;
-$border-thick-width: calc($border-default-width * 2) !default;
-$border-thicker-width: calc($border-default-width * 4) !default;
-$border-default-color: $global-border !default;
-$border-primary-color: $global-primary-background !default;
-$border-secondary-color: $global-secondary-background !default;
-$border-tertiary-color: $global-tertiary-background !default;
-$border-transparent-color: $global-transparent-background !default;
-$border-solid-style: solid !default;
-$border-dashed-style: dashed !default;
-$border-dotted-style: dotted !default;
-$border-rounded-radius: $global-border-radius !default;
-$border-full-radius: 9999px !default;
+$border-default-width: var(--border-default-width) !default;
+$border-thick-width: var(--border-thick-width) !default;
+$border-thicker-width: var(--border-thicker-width) !default;
+$border-default-color: var(--border-default-color) !default;
+$border-primary-color: var(--border-primary-color) !default;
+$border-secondary-color: var(--border-secondary-color) !default;
+$border-tertiary-color: var(--border-tertiary-color) !default;
+$border-transparent-color: var(--border-transparent-color) !default;
+$border-solid-style: var(--border-solid-style) !default;
+$border-dashed-style: var(--border-dashed-style) !default;
+$border-dotted-style: var(--border-dotted-style) !default;
+$border-rounded-radius: var(--border-rounded-radius) !default;
+$border-full-radius: var(--border-full-radius) !default;
 
 // Rounded Modifiers (Gloss Extensions)
 $border-rounded-xs: var(--border-rounded-xs) !default;

@@ -6,6 +6,10 @@
  * Box-shadow custom extensions
  */
 
+.gls-box-shadow-remove {
+    box-shadow: none;
+}
+
 .gls-box-shadow-xsmall {
     box-shadow: var(--global-xsmall-box-shadow);
 }

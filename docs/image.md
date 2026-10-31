@@ -255,3 +255,86 @@ UIkit.img(element, options);
 ```
 
 **Note** The Image component keeps records of already loaded images in the Session Storage. That's how it tries to determine if an image is already cached. A cached image is loaded immediately, without the lazy loading mechanism to prevent any rendering flashes. Prior to testing the Image component, make sure to clear these records from your browser's Session Storage.
+
+---
+
+## Gloss image collage
+
+Gloss adds responsive image collage layouts for single and dual image presentations:
+
+| Class                          | Description                                                                                |
+| ------------------------------ | ------------------------------------------------------------------------------------------ |
+| `.gls-image-collage`           | Container element for the image collage layout.                                            |
+| `.gls-image-collage-single`    | Single image layout constraining the image to a 3:2 landscape aspect ratio.                |
+| `.gls-image-collage-double`    | Overlapping dual image layout with 2:3 portrait aspect ratio.                              |
+| `.gls-image-collage-wrapper`   | Constrains the dual image layout within a 1:1 aspect ratio grid.                           |
+| `.gls-image-collage-image`     | Base wrapper for each image in the dual collage layout.                                    |
+| `.gls-image-collage-primary`   | Lower-left primary image container (~68% width), positioned in front with rounded corners. |
+| `.gls-image-collage-secondary` | Upper-right secondary image container (~50% width), positioned behind the primary image.   |
+| `.gls-image-collage-img`       | Image element applying aspect ratio and object-fit cover.                                  |
+
+### Single image (3:2)
+
+<div class="gls-docs-example">
+<div class="gls-image-collage gls-image-collage-single">
+    <img
+        class="gls-image-collage-img gls-border-rounded"
+        src="images/photo.jpg"
+        alt="Single image 3:2 aspect ratio"
+    />
+</div>
+</div>
+
+```html
+<div class="gls-image-collage gls-image-collage-single">
+    <img
+        class="gls-image-collage-img gls-border-rounded"
+        src="images/photo.jpg"
+        alt="Single image 3:2 aspect ratio"
+    />
+</div>
+```
+
+### Double image (overlapping portrait)
+
+<div class="gls-docs-example">
+<div class="gls-image-collage gls-image-collage-double">
+    <div class="gls-image-collage-wrapper">
+        <div class="gls-image-collage-primary gls-image-collage-image">
+            <img
+                class="gls-image-collage-img gls-border-rounded"
+                src="images/size-v.jpg"
+                alt="Primary lower-left portrait"
+            />
+        </div>
+        <div class="gls-image-collage-secondary gls-image-collage-image">
+            <img
+                class="gls-image-collage-img gls-border-rounded"
+                src="images/photo2.jpg"
+                alt="Secondary upper-right portrait"
+            />
+        </div>
+    </div>
+</div>
+</div>
+
+```html
+<div class="gls-image-collage gls-image-collage-double">
+    <div class="gls-image-collage-wrapper">
+        <div class="gls-image-collage-primary gls-image-collage-image">
+            <img
+                class="gls-image-collage-img gls-border-rounded"
+                src="images/size-v.jpg"
+                alt="Primary lower-left portrait"
+            />
+        </div>
+        <div class="gls-image-collage-secondary gls-image-collage-image">
+            <img
+                class="gls-image-collage-img gls-border-rounded"
+                src="images/photo2.jpg"
+                alt="Secondary upper-right portrait"
+            />
+        </div>
+    </div>
+</div>
+```
