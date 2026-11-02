@@ -27,6 +27,35 @@
             p {
                 color: #ffffff;
             }
+
+            .gls-button-text,
+            .gls-button-link,
+            .gls-link {
+                color: #ffffff;
+
+                .gls-button-label,
+                .gls-button-icon,
+                .gls-button-icon-leading,
+                .gls-button-icon-trailing {
+                    color: #ffffff;
+                }
+
+                &.gls-button-text .gls-button-label::before {
+                    border-bottom-color: #ffffff;
+                }
+
+                &:hover,
+                &:focus {
+                    color: #ffffff;
+
+                    .gls-button-label,
+                    .gls-button-icon,
+                    .gls-button-icon-leading,
+                    .gls-button-icon-trailing {
+                        color: #ffffff;
+                    }
+                }
+            }
         }
     }
 

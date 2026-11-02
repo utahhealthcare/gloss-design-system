@@ -17979,6 +17979,62 @@ a.gls-social-youtube:active {
 .gls-stat-card.gls-stat-card-granite .gls-card p {
   color: #ffffff;
 }
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link {
+  color: #ffffff;
+}
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text .gls-button-label,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text .gls-button-icon,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text .gls-button-icon-leading,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text .gls-button-icon-trailing,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link .gls-button-label,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link .gls-button-icon,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link .gls-button-icon-leading,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link .gls-button-icon-trailing,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link .gls-button-label,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link .gls-button-icon,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link .gls-button-icon-leading,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link .gls-button-icon-trailing {
+  color: #ffffff;
+}
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text.gls-button-text .gls-button-label::before,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link.gls-button-text .gls-button-label::before,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link.gls-button-text .gls-button-label::before {
+  border-bottom-color: #ffffff;
+}
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text:hover, .gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text:focus,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link:hover,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link:focus,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link:hover,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link:focus {
+  color: #ffffff;
+}
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text:hover .gls-button-label,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text:hover .gls-button-icon,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text:hover .gls-button-icon-leading,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text:hover .gls-button-icon-trailing, .gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text:focus .gls-button-label,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text:focus .gls-button-icon,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text:focus .gls-button-icon-leading,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-text:focus .gls-button-icon-trailing,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link:hover .gls-button-label,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link:hover .gls-button-icon,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link:hover .gls-button-icon-leading,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link:hover .gls-button-icon-trailing,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link:focus .gls-button-label,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link:focus .gls-button-icon,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link:focus .gls-button-icon-leading,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-button-link:focus .gls-button-icon-trailing,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link:hover .gls-button-label,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link:hover .gls-button-icon,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link:hover .gls-button-icon-leading,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link:hover .gls-button-icon-trailing,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link:focus .gls-button-label,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link:focus .gls-button-icon,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link:focus .gls-button-icon-leading,
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-link:focus .gls-button-icon-trailing {
+  color: #ffffff;
+}
 .gls-stat-card.gls-stat-card-sand .gls-card {
   background: var(--color-sand-100, #f3efe8);
 }
