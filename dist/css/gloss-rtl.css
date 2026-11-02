@@ -11444,6 +11444,10 @@ iframe[data-gls-cover] {
   background-color: var(--global-tertiary-background);
 }
 
+.gls-background-granite-300 {
+  background-color: var(--color-granite-300);
+}
+
 /* ========================================================================
    Component: Align
  ========================================================================== */
@@ -15832,6 +15836,56 @@ template {
   right: calc(85% - 0.5px);
 }
 
+/*
+ * Responsive grid container for quick links that prevents orphaned rows
+ */
+.gls-link-grid {
+  width: 100%;
+}
+
+.gls-link-grid-inner {
+  display: grid;
+  gap: var(--global-small-space);
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .gls-link-grid-inner {
+    gap: var(--global-mobile-gutter);
+  }
+}
+@media (min-width: 640px) {
+  .gls-link-grid-inner:has(> :nth-child(2):last-child) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .gls-link-grid-inner:has(> :nth-child(3):last-child) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 640px) {
+  .gls-link-grid-inner:has(> :nth-child(4):last-child) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .gls-link-grid-inner:has(> :nth-child(4):last-child) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 640px) {
+  .gls-link-grid-inner:has(> :nth-child(5)) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .gls-link-grid-inner:has(> :nth-child(5)) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 /**
  * Name:            Off-canvas
  * Description:     Component to create an off-canvas sidebar
@@ -16038,6 +16092,120 @@ template {
 
 .vjs-theme-gloss .vjs-fullscreen-control {
   order: 100;
+}
+
+/*
+ * Clickable navigation action card with label and arrow
+ */
+.gls-quick-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 50px;
+  padding: var(--global-2xsmall-space) var(--global-small-space) var(--global-2xsmall-space) 12px;
+  background-color: var(--gls-color-reference-neutral-0);
+  border-radius: var(--border-rounded-lg);
+  color: var(--color-sand-950);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: box-shadow 200ms ease;
+}
+.gls-quick-link:visited {
+  color: var(--color-sand-950);
+}
+@media (hover: hover) {
+  .gls-quick-link:hover {
+    color: var(--color-sand-950);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    -webkit-text-decoration: none;
+    text-decoration: none;
+  }
+}
+.gls-quick-link:focus-visible {
+  outline: 2px solid var(--gls-color-reference-focus);
+  outline-offset: 2px;
+}
+
+/*
+ * Forward arrow indicator pinned to the right
+ * Adopts brand primary red (#BE0000) and ensures stroke fills currentColor
+ */
+.gls-quick-link-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gls-color-reference-brand-primary) !important;
+}
+.gls-quick-link-arrow svg {
+  stroke: var(--gls-color-reference-brand-primary) !important;
+}
+
+/*
+ * Contained banner panel shell with rounded corners and overflow clipping
+ */
+.gls-quick-links-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border-rounded-lg);
+  box-sizing: border-box;
+}
+
+/*
+ * Content wrapper sitting above background illustrations
+ * Responsive inner padding per Figma spec (24px mobile, 30px tablet, 40px desktop)
+ */
+.gls-quick-links-banner-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-mobile-gutter);
+  padding: var(--global-mobile-gutter) var(--global-mobile-gutter) 30px;
+  box-sizing: border-box;
+}
+@media (min-width: 640px) {
+  .gls-quick-links-banner-content {
+    padding: var(--global-mobile-gutter) var(--global-mobile-gutter) 30px 30px;
+  }
+}
+@media (min-width: 960px) {
+  .gls-quick-links-banner-content {
+    padding: var(--global-mobile-gutter) var(--global-tablet-gutter) 30px 30px;
+  }
+}
+
+/*
+ * Decorative background illustration container anchored flush to bottom
+ */
+.gls-quick-links-banner-illustration {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -webkit-user-select: none;
+          user-select: none;
+  z-index: 0;
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/backgrounds/mountains.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+}
+.gls-quick-links-banner-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom center;
 }
 
 /**

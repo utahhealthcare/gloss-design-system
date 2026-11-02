@@ -8,5 +8,11 @@
         "grid": "scripts/docs-addenda/grid.md",
         "image": "scripts/docs-addenda/image.md",
         "section": "scripts/docs-addenda/section.md"
-    }
+    },
+    "customComponents": [
+        {
+            "title": "Quick Links Banner",
+            "slug": "quick-links-banner"
+        }
+    ]
 }

@@ -517,6 +517,7 @@
         'placeholder',
         'position',
         'progress',
+        'quick-links-banner',
         'rating',
         'scroll',
         'scrollspy',
