@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Stat Card - Gloss tests</title>
+        <script src="js/test.js"></script>
+        <style>
+            body {
+                padding-bottom: 500px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Stat Card</h1>
+            <p class="gls-text-lead">
+                Metric and impact callout cards designed for statistics, rankings, or sequential
+                numbers with custom theme backgrounds and compact border-radius.
+            </p>
+
+            <h2>Background Themes</h2>
+            <div class="gls-child-width-1-3@m" gls-grid>
+                <!-- Granite (Dark Radial Gradient) -->
+                <div>
+                    <div class="gls-stat-card gls-stat-card-granite">
+                        <div class="gls-card gls-card-body gls-light">
+                            <div class="gls-h1 gls-margin-remove">100%</div>
+                            <p class="gls-text-bold gls-margin-xsmall-top">
+                                of providers are faculty
+                            </p>
+                            <p class="gls-text-small">
+                                Doctors at the forefront of their fields, active in clinical
+                                instruction and patient care.
+                            </p>
+                            <div class="gls-margin-small-top">
+                                <a
+                                    class="gls-button gls-button-text gls-light gls-text-small"
+                                    href="#"
+                                >
+                                    <span class="gls-button-label">Meet our Doctors</span>
+                                    <span
+                                        class="gls-button-icon-trailing gls-margin-small-left"
+                                        gls-icon="icon: arrow-right; ratio: 0.8"
+                                    ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gls-text-meta gls-margin-small-top">
+                        Granite Radial Gradient (<code>gls-stat-card-granite</code>)
+                    </p>
+                </div>
+
+                <!-- Sand (Warm Neutral Beige) -->
+                <div>
+                    <div class="gls-stat-card gls-stat-card-sand">
+                        <div class="gls-card gls-card-body">
+                            <div class="gls-h1 gls-margin-remove">4.8</div>
+                            <p class="gls-text-bold gls-margin-xsmall-top">
+                                average provider rating
+                            </p>
+                            <p class="gls-text-small">
+                                Recognized nationally for exceptional patient satisfaction, clinical
+                                quality, and compassion.
+                            </p>
+                            <div class="gls-margin-small-top">
+                                <a class="gls-button gls-button-text gls-text-small" href="#">
+                                    <span class="gls-button-label">See all reviews</span>
+                                    <span
+                                        class="gls-button-icon-trailing gls-margin-small-left"
+                                        gls-icon="icon: arrow-right; ratio: 0.8"
+                                    ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gls-text-meta gls-margin-small-top">
+                        Sand (<code>gls-stat-card-sand</code>)
+                    </p>
+                </div>
+
+                <!-- Lake (Cool Light Blue) -->
+                <div>
+                    <div class="gls-stat-card gls-stat-card-lake">
+                        <div class="gls-card gls-card-body">
+                            <div class="gls-h1 gls-margin-remove">300+</div>
+                            <p class="gls-text-bold gls-margin-xsmall-top">
+                                active clinical trials
+                            </p>
+                            <p class="gls-text-small">
+                                Giving patients access to innovative therapeutics years before
+                                standard commercial availability.
+                            </p>
+                            <div class="gls-margin-small-top">
+                                <a class="gls-button gls-button-text gls-text-small" href="#">
+                                    <span class="gls-button-label">View trial reports</span>
+                                    <span
+                                        class="gls-button-icon-trailing gls-margin-small-left"
+                                        gls-icon="icon: arrow-right; ratio: 0.8"
+                                    ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gls-text-meta gls-margin-small-top">
+                        Lake (<code>gls-stat-card-lake</code>)
+                    </p>
+                </div>
+            </div>
+
+            <h2>Default Card Style</h2>
+            <div class="gls-child-width-1-3@m" gls-grid>
+                <div>
+                    <div class="gls-stat-card">
+                        <div class="gls-card gls-card-default gls-card-body">
+                            <div class="gls-h1 gls-margin-remove">Top 10</div>
+                            <p class="gls-text-bold gls-margin-xsmall-top">
+                                in Quality &amp; Safety
+                            </p>
+                            <p class="gls-text-small">
+                                Ranked among the nation's premier academic medical centers for 14
+                                consecutive years.
+                            </p>
+                            <div class="gls-margin-small-top">
+                                <a class="gls-button gls-button-text gls-text-small" href="#">
+                                    <span class="gls-button-label">Explore Rankings</span>
+                                    <span
+                                        class="gls-button-icon-trailing gls-margin-small-left"
+                                        gls-icon="icon: arrow-right; ratio: 0.8"
+                                    ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gls-text-meta gls-margin-small-top">
+                        Default Card (<code>gls-card-default</code>)
+                    </p>
+                </div>
+
+                <div>
+                    <div class="gls-stat-card">
+                        <div class="gls-card gls-card-default gls-card-body">
+                            <div class="gls-h1 gls-margin-remove">$0</div>
+                            <p class="gls-text-bold gls-margin-xsmall-top">preventive care copay</p>
+                            <p class="gls-text-small">
+                                Covered in full across all in-network primary care clinics
+                                throughout Utah.
+                            </p>
+                            <div class="gls-margin-small-top">
+                                <a class="gls-button gls-button-text gls-text-small" href="#">
+                                    <span class="gls-button-label">Check Coverage</span>
+                                    <span
+                                        class="gls-button-icon-trailing gls-margin-small-left"
+                                        gls-icon="icon: arrow-right; ratio: 0.8"
+                                    ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="gls-stat-card">
+                        <div class="gls-card gls-card-default gls-card-body">
+                            <div class="gls-h1 gls-margin-remove">24/7</div>
+                            <p class="gls-text-bold gls-margin-xsmall-top">virtual urgent care</p>
+                            <p class="gls-text-small">
+                                Connect with a clinician in minutes from your smartphone, tablet, or
+                                computer.
+                            </p>
+                            <div class="gls-margin-small-top">
+                                <a class="gls-button gls-button-text gls-text-small" href="#">
+                                    <span class="gls-button-label">Start Virtual Visit</span>
+                                    <span
+                                        class="gls-button-icon-trailing gls-margin-small-left"
+                                        gls-icon="icon: arrow-right; ratio: 0.8"
+                                    ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Inside Section Containers</h2>
+            <div class="gls-section-muted gls-padding gls-margin-medium-top">
+                <div class="gls-child-width-1-3@m" gls-grid>
+                    <div>
+                        <div class="gls-stat-card gls-stat-card-granite">
+                            <div class="gls-card gls-card-body gls-light">
+                                <div class="gls-h1 gls-margin-remove">99%</div>
+                                <p class="gls-text-bold gls-margin-xsmall-top">
+                                    Positive Patient Reviews
+                                </p>
+                                <p class="gls-text-small">
+                                    Based on independent annual patient experience feedback.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gls-stat-card gls-stat-card-sand">
+                            <div class="gls-card gls-card-body">
+                                <div class="gls-h1 gls-margin-remove">50+</div>
+                                <p class="gls-text-bold gls-margin-xsmall-top">Specialty Centers</p>
+                                <p class="gls-text-small">
+                                    Providing comprehensive diagnostics and interdisciplinary care.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="gls-stat-card gls-stat-card-lake">
+                            <div class="gls-card gls-card-body">
+                                <div class="gls-h1 gls-margin-remove">#1</div>
+                                <p class="gls-text-bold gls-margin-xsmall-top">
+                                    Hospital in the Region
+                                </p>
+                                <p class="gls-text-small">
+                                    Ranked best regional medical facility by U.S. News &amp; World
+                                    Report.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

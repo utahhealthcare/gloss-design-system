@@ -1,0 +1,44 @@
+// ========================================================================
+// Component: Stat Card
+// Description: Metric / impact callout card with custom background themes
+//              (Granite radial gradient, Sand, Lake) and compact radius.
+// ========================================================================
+
+.gls-stat-card {
+    display: block;
+    width: 100%;
+
+    .gls-card {
+        border-radius: var(--gls-border-rounded-lg, var(--border-rounded-lg, 8px));
+        border: none;
+    }
+
+    &.gls-stat-card-granite {
+        .gls-card {
+            background: radial-gradient(
+                120% 120% at 50% 0%,
+                var(--color-granite-700, #4f6972) 0%,
+                #435d68 100%
+            );
+            color: #ffffff;
+
+            .gls-h1,
+            [class*='gls-h'],
+            p {
+                color: #ffffff;
+            }
+        }
+    }
+
+    &.gls-stat-card-sand {
+        .gls-card {
+            background: var(--color-sand-100, #f3efe8);
+        }
+    }
+
+    &.gls-stat-card-lake {
+        .gls-card {
+            background: var(--color-lake-50, #f3f8f9);
+        }
+    }
+}

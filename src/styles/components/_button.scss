@@ -1,0 +1,256 @@
+// ========================================================================
+// Component: Button (Gloss Extensions)
+// Description: Multi-part button enhancements for icons, animated text underlines,
+//              and icon-only circular buttons.
+// ========================================================================
+
+.gls-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    .gls-button-icon-trailing {
+        display: inline-flex;
+        align-items: center;
+        transition: transform 160ms ease-in-out;
+        text-decoration: none;
+    }
+
+    .gls-button-icon-leading {
+        display: inline-flex;
+        align-items: center;
+        transition: transform 160ms ease-in-out;
+        text-decoration: none;
+    }
+
+    // Text variant: animated underline on the label only so it doesn't span under the icon
+    &.gls-button-text {
+        &::before {
+            content: none;
+        }
+
+        .gls-button-label {
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -0.16em;
+                left: 0;
+                right: 100%;
+                border-bottom: 0.1em solid var(--color-primary, currentColor);
+                transition: right 0.3s ease-out;
+            }
+        }
+
+        &:hover:not(:disabled):not([aria-disabled='true']) {
+            .gls-button-label::before {
+                right: 0;
+            }
+        }
+    }
+
+    // Link variant / standard text-decoration: underline label only, not the icon
+    &.gls-button-link,
+    &[class*='gls-link'] {
+        text-decoration: none;
+
+        &:hover:not(:disabled):not([aria-disabled='true']) {
+            text-decoration: none;
+
+            .gls-button-label {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // Outline button on light surfaces: icon defaults to brand red, white on hover
+    &.gls-button-outline {
+        .gls-button-icon,
+        .gls-button-icon-leading,
+        .gls-button-icon-trailing {
+            color: var(--color-primary);
+        }
+
+        &:hover,
+        &:focus {
+            .gls-button-icon,
+            .gls-button-icon-leading,
+            .gls-button-icon-trailing {
+                color: #ffffff;
+            }
+        }
+    }
+
+    // Icon-only button layout (circular, inherits variant colors)
+    &.gls-button-icon-only {
+        padding: 0;
+        width: 2.75rem;
+        height: 2.75rem;
+        min-width: 2.75rem;
+        border-radius: 500px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &.gls-button-small {
+            width: 2.25rem;
+            height: 2.25rem;
+            min-width: 2.25rem;
+        }
+
+        &.gls-button-large {
+            width: 3.25rem;
+            height: 3.25rem;
+            min-width: 3.25rem;
+        }
+
+        .gls-button-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+    }
+
+    // Inverted context (container :--inverse or explicit .gls-light on the button)
+    :--inverse &,
+    &.gls-light {
+        &.gls-button-outline {
+            background-color: transparent;
+            color: #ffffff;
+            border-color: #ffffff;
+
+            .gls-button-label,
+            .gls-button-icon,
+            .gls-button-icon-leading,
+            .gls-button-icon-trailing {
+                color: #ffffff;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(255, 255, 255, 0.2);
+                color: #ffffff;
+                border-color: #ffffff;
+
+                .gls-button-label,
+                .gls-button-icon,
+                .gls-button-icon-leading,
+                .gls-button-icon-trailing {
+                    color: #ffffff;
+                }
+            }
+
+            &:active,
+            &.gls-active {
+                background-color: rgba(255, 255, 255, 0.3);
+                color: #ffffff;
+                border-color: #ffffff;
+            }
+        }
+
+        &.gls-button-default {
+            background-color: var(--color-trans-white-1);
+            color: #ffffff;
+            border-color: #ffffff;
+
+            .gls-button-label,
+            .gls-button-icon,
+            .gls-button-icon-leading,
+            .gls-button-icon-trailing {
+                color: #ffffff;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: var(--color-trans-white-2);
+                color: #ffffff;
+                border-color: #ffffff;
+
+                .gls-button-label,
+                .gls-button-icon,
+                .gls-button-icon-leading,
+                .gls-button-icon-trailing {
+                    color: #ffffff;
+                }
+            }
+
+            &:active,
+            &.gls-active {
+                background-color: var(--color-trans-white-3);
+                color: #ffffff;
+                border-color: #ffffff;
+            }
+        }
+
+        &.gls-button-primary {
+            background-color: var(--button-primary-background, $inverse-button-primary-background);
+            color: var(--button-primary-color, $inverse-button-primary-color);
+            border: var(--button-primary-border, $inverse-button-primary-border);
+
+            .gls-button-label,
+            .gls-button-icon,
+            .gls-button-icon-leading,
+            .gls-button-icon-trailing {
+                color: var(--button-primary-color, $inverse-button-primary-color);
+            }
+
+            &:hover,
+            &:focus {
+                background-color: var(
+                    --button-primary-hover-background,
+                    $inverse-button-primary-hover-background
+                );
+                color: var(--button-primary-hover-color, $inverse-button-primary-hover-color);
+                border: var(--button-primary-hover-border, $inverse-button-primary-hover-border);
+
+                .gls-button-label,
+                .gls-button-icon,
+                .gls-button-icon-leading,
+                .gls-button-icon-trailing {
+                    color: var(--button-primary-hover-color, $inverse-button-primary-hover-color);
+                }
+            }
+
+            &:active,
+            &.gls-active {
+                background-color: var(
+                    --button-primary-active-background,
+                    $inverse-button-primary-active-background
+                );
+                color: var(--button-primary-active-color, $inverse-button-primary-active-color);
+                border: var(--button-primary-active-border, $inverse-button-primary-active-border);
+            }
+        }
+
+        &.gls-button-text,
+        &.gls-button-link {
+            color: #ffffff;
+
+            .gls-button-label,
+            .gls-button-icon,
+            .gls-button-icon-leading,
+            .gls-button-icon-trailing {
+                color: #ffffff;
+            }
+
+            &.gls-button-text .gls-button-label::before {
+                border-bottom-color: #ffffff;
+            }
+
+            &:hover,
+            &:focus {
+                color: #ffffff;
+
+                .gls-button-label,
+                .gls-button-icon,
+                .gls-button-icon-leading,
+                .gls-button-icon-trailing {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

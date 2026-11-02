@@ -722,10 +722,21 @@
 
 .gls-card-tertiary.gls-card-body,
 .gls-card-tertiary > :not([class*='gls-card-media']),
-.gls-overlay-primary) .gls-button-primary {
-  background-color: var(--button-primary-background, #fff);
-  color: var(--button-primary-color, var(--color-primary));
-  border: var(--button-primary-border, var(--button-border-width) solid var(--color-trans-black-4));
+.gls-overlay-primary) a,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-link {
+  color: #ffffff;
 }
 :is(.gls-light,
 .gls-section-primary:not(.gls-preserve-color),
@@ -740,7 +751,7 @@
 
 .gls-card-tertiary.gls-card-body,
 .gls-card-tertiary > :not([class*='gls-card-media']),
-.gls-overlay-primary) .gls-button-primary:hover,:is(.gls-light,
+.gls-overlay-primary) a [gls-icon],:is(.gls-light,
 .gls-section-primary:not(.gls-preserve-color),
 
 .gls-section-tertiary:not(.gls-preserve-color),
@@ -753,10 +764,60 @@
 
 .gls-card-tertiary.gls-card-body,
 .gls-card-tertiary > :not([class*='gls-card-media']),
-.gls-overlay-primary) .gls-button-primary:focus {
-  background-color: var(--button-primary-hover-background, var(--color-trans-white-9));
-  color: var(--button-primary-hover-color, var(--color-primary));
-  border: var(--button-primary-hover-border, var(--button-border-width) solid var(--color-trans-black-7));
+.gls-overlay-primary) a .gls-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) a svg,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-link [gls-icon],:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-link .gls-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-link svg {
+  color: inherit;
 }
 :is(.gls-light,
 .gls-section-primary:not(.gls-preserve-color),
@@ -771,7 +832,7 @@
 
 .gls-card-tertiary.gls-card-body,
 .gls-card-tertiary > :not([class*='gls-card-media']),
-.gls-overlay-primary) .gls-button-primary:active,:is(.gls-light,
+.gls-overlay-primary) a:hover,:is(.gls-light,
 .gls-section-primary:not(.gls-preserve-color),
 
 .gls-section-tertiary:not(.gls-preserve-color),
@@ -784,10 +845,34 @@
 
 .gls-card-tertiary.gls-card-body,
 .gls-card-tertiary > :not([class*='gls-card-media']),
-.gls-overlay-primary) .gls-button-primary.gls-active {
-  background-color: var(--button-primary-active-background, var(--color-trans-white-8));
-  color: var(--button-primary-active-color, var(--color-primary-active));
-  border: var(--button-primary-active-border, var(--button-border-width) solid var(--color-trans-black-8));
+.gls-overlay-primary) a:focus,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-link:hover,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-link:focus {
+  color: #ffffff;
 }
 
 :is(.gls-section-tertiary, .gls-tile-tertiary, .gls-card-tertiary) .gls-button-default {
@@ -15546,6 +15631,1297 @@ template {
   border-right: none !important;
 }
 
+.gls-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.gls-button .gls-button-icon-trailing {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 160ms ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.gls-button .gls-button-icon-leading {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 160ms ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.gls-button.gls-button-text::before {
+  content: none;
+}
+.gls-button.gls-button-text .gls-button-label {
+  position: relative;
+  display: inline-block;
+}
+.gls-button.gls-button-text .gls-button-label::before {
+  content: "";
+  position: absolute;
+  bottom: -0.16em;
+  left: 0;
+  right: 100%;
+  border-bottom: 0.1em solid var(--color-primary, currentColor);
+  transition: right 0.3s ease-out;
+}
+.gls-button.gls-button-text:hover:not(:disabled):not([aria-disabled=true]) .gls-button-label::before {
+  right: 0;
+}
+.gls-button.gls-button-link, .gls-button[class*=gls-link] {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.gls-button.gls-button-link:hover:not(:disabled):not([aria-disabled=true]), .gls-button[class*=gls-link]:hover:not(:disabled):not([aria-disabled=true]) {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.gls-button.gls-button-link:hover:not(:disabled):not([aria-disabled=true]) .gls-button-label, .gls-button[class*=gls-link]:hover:not(:disabled):not([aria-disabled=true]) .gls-button-label {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+.gls-button.gls-button-outline .gls-button-icon,
+.gls-button.gls-button-outline .gls-button-icon-leading,
+.gls-button.gls-button-outline .gls-button-icon-trailing {
+  color: var(--color-primary);
+}
+.gls-button.gls-button-outline:hover .gls-button-icon,
+.gls-button.gls-button-outline:hover .gls-button-icon-leading,
+.gls-button.gls-button-outline:hover .gls-button-icon-trailing, .gls-button.gls-button-outline:focus .gls-button-icon,
+.gls-button.gls-button-outline:focus .gls-button-icon-leading,
+.gls-button.gls-button-outline:focus .gls-button-icon-trailing {
+  color: #ffffff;
+}
+.gls-button.gls-button-icon-only {
+  padding: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  min-width: 2.75rem;
+  border-radius: 500px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.gls-button.gls-button-icon-only.gls-button-small {
+  width: 2.25rem;
+  height: 2.25rem;
+  min-width: 2.25rem;
+}
+.gls-button.gls-button-icon-only.gls-button-large {
+  width: 3.25rem;
+  height: 3.25rem;
+  min-width: 3.25rem;
+}
+.gls-button.gls-button-icon-only .gls-button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline, .gls-button.gls-light.gls-button-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline .gls-button-icon-trailing, .gls-button.gls-light.gls-button-outline .gls-button-label,
+.gls-button.gls-light.gls-button-outline .gls-button-icon,
+.gls-button.gls-light.gls-button-outline .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-outline .gls-button-icon-trailing {
+  color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:hover,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:focus, .gls-button.gls-light.gls-button-outline:hover, .gls-button.gls-light.gls-button-outline:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:hover .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:hover .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:hover .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:hover .gls-button-icon-trailing,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:focus .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:focus .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:focus .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:focus .gls-button-icon-trailing, .gls-button.gls-light.gls-button-outline:hover .gls-button-label,
+.gls-button.gls-light.gls-button-outline:hover .gls-button-icon,
+.gls-button.gls-light.gls-button-outline:hover .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-outline:hover .gls-button-icon-trailing, .gls-button.gls-light.gls-button-outline:focus .gls-button-label,
+.gls-button.gls-light.gls-button-outline:focus .gls-button-icon,
+.gls-button.gls-light.gls-button-outline:focus .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-outline:focus .gls-button-icon-trailing {
+  color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline:active,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-outline.gls-active, .gls-button.gls-light.gls-button-outline:active, .gls-button.gls-light.gls-button-outline.gls-active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default, .gls-button.gls-light.gls-button-default {
+  background-color: var(--color-trans-white-1);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default .gls-button-icon-trailing, .gls-button.gls-light.gls-button-default .gls-button-label,
+.gls-button.gls-light.gls-button-default .gls-button-icon,
+.gls-button.gls-light.gls-button-default .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-default .gls-button-icon-trailing {
+  color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:hover,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:focus, .gls-button.gls-light.gls-button-default:hover, .gls-button.gls-light.gls-button-default:focus {
+  background-color: var(--color-trans-white-2);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:hover .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:hover .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:hover .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:hover .gls-button-icon-trailing,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:focus .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:focus .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:focus .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:focus .gls-button-icon-trailing, .gls-button.gls-light.gls-button-default:hover .gls-button-label,
+.gls-button.gls-light.gls-button-default:hover .gls-button-icon,
+.gls-button.gls-light.gls-button-default:hover .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-default:hover .gls-button-icon-trailing, .gls-button.gls-light.gls-button-default:focus .gls-button-label,
+.gls-button.gls-light.gls-button-default:focus .gls-button-icon,
+.gls-button.gls-light.gls-button-default:focus .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-default:focus .gls-button-icon-trailing {
+  color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default:active,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-default.gls-active, .gls-button.gls-light.gls-button-default:active, .gls-button.gls-light.gls-button-default.gls-active {
+  background-color: var(--color-trans-white-3);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary, .gls-button.gls-light.gls-button-primary {
+  background-color: var(--button-primary-background, #fff);
+  color: var(--button-primary-color, var(--color-primary));
+  border: var(--button-primary-border, var(--button-border-width) solid var(--color-trans-black-4));
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary .gls-button-icon-trailing, .gls-button.gls-light.gls-button-primary .gls-button-label,
+.gls-button.gls-light.gls-button-primary .gls-button-icon,
+.gls-button.gls-light.gls-button-primary .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-primary .gls-button-icon-trailing {
+  color: var(--button-primary-color, var(--color-primary));
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:hover,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:focus, .gls-button.gls-light.gls-button-primary:hover, .gls-button.gls-light.gls-button-primary:focus {
+  background-color: var(--button-primary-hover-background, var(--color-trans-white-9));
+  color: var(--button-primary-hover-color, var(--color-primary));
+  border: var(--button-primary-hover-border, var(--button-border-width) solid var(--color-trans-black-7));
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:hover .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:hover .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:hover .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:hover .gls-button-icon-trailing,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:focus .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:focus .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:focus .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:focus .gls-button-icon-trailing, .gls-button.gls-light.gls-button-primary:hover .gls-button-label,
+.gls-button.gls-light.gls-button-primary:hover .gls-button-icon,
+.gls-button.gls-light.gls-button-primary:hover .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-primary:hover .gls-button-icon-trailing, .gls-button.gls-light.gls-button-primary:focus .gls-button-label,
+.gls-button.gls-light.gls-button-primary:focus .gls-button-icon,
+.gls-button.gls-light.gls-button-primary:focus .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-primary:focus .gls-button-icon-trailing {
+  color: var(--button-primary-hover-color, var(--color-primary));
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary:active,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-primary.gls-active, .gls-button.gls-light.gls-button-primary:active, .gls-button.gls-light.gls-button-primary.gls-active {
+  background-color: var(--button-primary-active-background, var(--color-trans-white-8));
+  color: var(--button-primary-active-color, var(--color-primary-active));
+  border: var(--button-primary-active-border, var(--button-border-width) solid var(--color-trans-black-8));
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link, .gls-button.gls-light.gls-button-text, .gls-button.gls-light.gls-button-link {
+  color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text .gls-button-icon-trailing,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link .gls-button-icon-trailing, .gls-button.gls-light.gls-button-text .gls-button-label,
+.gls-button.gls-light.gls-button-text .gls-button-icon,
+.gls-button.gls-light.gls-button-text .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-text .gls-button-icon-trailing, .gls-button.gls-light.gls-button-link .gls-button-label,
+.gls-button.gls-light.gls-button-link .gls-button-icon,
+.gls-button.gls-light.gls-button-link .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-link .gls-button-icon-trailing {
+  color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text.gls-button-text .gls-button-label::before,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link.gls-button-text .gls-button-label::before, .gls-button.gls-light.gls-button-text.gls-button-text .gls-button-label::before, .gls-button.gls-light.gls-button-link.gls-button-text .gls-button-label::before {
+  border-bottom-color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text:hover,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text:focus,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link:hover,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link:focus, .gls-button.gls-light.gls-button-text:hover, .gls-button.gls-light.gls-button-text:focus, .gls-button.gls-light.gls-button-link:hover, .gls-button.gls-light.gls-button-link:focus {
+  color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text:hover .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text:hover .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text:hover .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text:hover .gls-button-icon-trailing,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text:focus .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text:focus .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text:focus .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-text:focus .gls-button-icon-trailing,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link:hover .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link:hover .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link:hover .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link:hover .gls-button-icon-trailing,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link:focus .gls-button-label,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link:focus .gls-button-icon,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link:focus .gls-button-icon-leading,:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-overlay-primary) .gls-button.gls-button-link:focus .gls-button-icon-trailing, .gls-button.gls-light.gls-button-text:hover .gls-button-label,
+.gls-button.gls-light.gls-button-text:hover .gls-button-icon,
+.gls-button.gls-light.gls-button-text:hover .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-text:hover .gls-button-icon-trailing, .gls-button.gls-light.gls-button-text:focus .gls-button-label,
+.gls-button.gls-light.gls-button-text:focus .gls-button-icon,
+.gls-button.gls-light.gls-button-text:focus .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-text:focus .gls-button-icon-trailing, .gls-button.gls-light.gls-button-link:hover .gls-button-label,
+.gls-button.gls-light.gls-button-link:hover .gls-button-icon,
+.gls-button.gls-light.gls-button-link:hover .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-link:hover .gls-button-icon-trailing, .gls-button.gls-light.gls-button-link:focus .gls-button-label,
+.gls-button.gls-light.gls-button-link:focus .gls-button-icon,
+.gls-button.gls-light.gls-button-link:focus .gls-button-icon-leading,
+.gls-button.gls-light.gls-button-link:focus .gls-button-icon-trailing {
+  color: #ffffff;
+}
+
 /**
  * Name:            Context
  * Description:     Namespaced overrides for specific content types
@@ -16584,6 +17960,30 @@ a.gls-social-youtube:active {
 .gls-stack[data-gls-gap=none] > * + [class*=gls-grid],
 .gls-stack[data-gls-gap=none] > * + [class*=gls-grid-margin] {
   margin-top: 0;
+}
+
+.gls-stat-card {
+  display: block;
+  width: 100%;
+}
+.gls-stat-card .gls-card {
+  border-radius: var(--gls-border-rounded-lg, var(--border-rounded-lg, 8px));
+  border: none;
+}
+.gls-stat-card.gls-stat-card-granite .gls-card {
+  background: radial-gradient(120% 120% at 50% 0%, var(--color-granite-700, #4f6972) 0%, #435d68 100%);
+  color: #ffffff;
+}
+.gls-stat-card.gls-stat-card-granite .gls-card .gls-h1,
+.gls-stat-card.gls-stat-card-granite .gls-card [class*=gls-h],
+.gls-stat-card.gls-stat-card-granite .gls-card p {
+  color: #ffffff;
+}
+.gls-stat-card.gls-stat-card-sand .gls-card {
+  background: var(--color-sand-100, #f3efe8);
+}
+.gls-stat-card.gls-stat-card-lake .gls-card {
+  background: var(--color-lake-50, #f3f8f9);
 }
 
 /**

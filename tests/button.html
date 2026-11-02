@@ -534,6 +534,435 @@
                     </div>
                 </div>
             </div>
+
+            <h2>Buttons with Icons</h2>
+
+            <p gls-margin>
+                <a class="gls-button gls-button-primary" href="#">
+                    <span
+                        class="gls-button-icon-leading gls-margin-small-right"
+                        gls-icon="icon: search; ratio: 0.9"
+                    ></span>
+                    <span class="gls-button-label">Find a Doctor</span>
+                </a>
+                <a class="gls-button gls-button-default" href="#">
+                    <span
+                        class="gls-button-icon-leading gls-margin-small-right"
+                        gls-icon="icon: receiver; ratio: 0.9"
+                    ></span>
+                    <span class="gls-button-label">Call Support</span>
+                </a>
+                <a class="gls-button gls-button-outline" href="#">
+                    <span class="gls-button-label">View Locations</span>
+                    <span
+                        class="gls-button-icon-trailing gls-margin-small-left"
+                        gls-icon="icon: location; ratio: 0.9"
+                    ></span>
+                </a>
+                <a class="gls-button gls-button-secondary" href="#">
+                    <span class="gls-button-label">Download PDF</span>
+                    <span
+                        class="gls-button-icon-trailing gls-margin-small-left"
+                        gls-icon="icon: file-pdf; ratio: 0.9"
+                    ></span>
+                </a>
+            </p>
+
+            <h2>Action Presets</h2>
+            <p class="gls-text-muted">
+                Standardized action presets combining pre-configured icons, positions, and browser
+                behaviors (e.g. <code>target="_blank"</code>, safe protocol validation).
+            </p>
+
+            <table class="gls-table gls-table-divider gls-table-middle gls-table-responsive">
+                <thead>
+                    <tr>
+                        <th class="gls-table-shrink">Preset</th>
+                        <th>Icon &amp; Position</th>
+                        <th>Standard Button (Primary / Outline)</th>
+                        <th>Text Link Button</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>arrow-trailing</code></td>
+                        <td>Trailing <code>arrow-right</code></td>
+                        <td>
+                            <a
+                                class="gls-button gls-button-primary gls-button-arrow-trailing"
+                                href="#"
+                            >
+                                <span class="gls-button-label">Schedule Appointment</span>
+                                <span
+                                    class="gls-button-icon-trailing gls-margin-small-left"
+                                    gls-icon="icon: arrow-right; ratio: 0.9"
+                                ></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a
+                                class="gls-button gls-button-text gls-button-arrow-trailing"
+                                href="#"
+                            >
+                                <span class="gls-button-label">Explore Programs</span>
+                                <span
+                                    class="gls-button-icon-trailing gls-margin-small-left"
+                                    gls-icon="icon: arrow-right; ratio: 0.9"
+                                ></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>search</code></td>
+                        <td>Leading <code>search</code></td>
+                        <td>
+                            <a class="gls-button gls-button-primary gls-button-search" href="#">
+                                <span
+                                    class="gls-button-icon-leading gls-margin-small-right"
+                                    gls-icon="icon: search; ratio: 0.9"
+                                ></span>
+                                <span class="gls-button-label">Search Directory</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a class="gls-button gls-button-text gls-button-search" href="#">
+                                <span
+                                    class="gls-button-icon-leading gls-margin-small-right"
+                                    gls-icon="icon: search; ratio: 0.9"
+                                ></span>
+                                <span class="gls-button-label">Search all clinical trials</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>phone</code></td>
+                        <td>Leading <code>receiver</code></td>
+                        <td>
+                            <a
+                                class="gls-button gls-button-default gls-button-phone"
+                                href="tel:8015812121"
+                            >
+                                <span
+                                    class="gls-button-icon-leading gls-margin-small-right"
+                                    gls-icon="icon: receiver; ratio: 0.9"
+                                ></span>
+                                <span class="gls-button-label">(801) 581-2121</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a
+                                class="gls-button gls-button-text gls-button-phone"
+                                href="tel:8015812121"
+                            >
+                                <span
+                                    class="gls-button-icon-leading gls-margin-small-right"
+                                    gls-icon="icon: receiver; ratio: 0.9"
+                                ></span>
+                                <span class="gls-button-label">Call Clinic</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>directions</code></td>
+                        <td>Leading <code>location</code></td>
+                        <td>
+                            <a class="gls-button gls-button-outline gls-button-directions" href="#">
+                                <span
+                                    class="gls-button-icon-leading gls-margin-small-right"
+                                    gls-icon="icon: location; ratio: 0.9"
+                                ></span>
+                                <span class="gls-button-label">Get Directions</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a class="gls-button gls-button-text gls-button-directions" href="#">
+                                <span
+                                    class="gls-button-icon-leading gls-margin-small-right"
+                                    gls-icon="icon: location; ratio: 0.9"
+                                ></span>
+                                <span class="gls-button-label">Campus Map</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>external</code></td>
+                        <td>Trailing <code>link-external</code> (opens new tab)</td>
+                        <td>
+                            <a
+                                class="gls-button gls-button-outline gls-button-external"
+                                href="https://healthcare.utah.edu"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span class="gls-button-label">MyChart Login</span>
+                                <span
+                                    class="gls-button-icon-trailing gls-margin-small-left"
+                                    gls-icon="icon: link-external; ratio: 0.9"
+                                ></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a
+                                class="gls-button gls-button-text gls-button-external"
+                                href="https://healthcare.utah.edu"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span class="gls-button-label">Patient Portal</span>
+                                <span
+                                    class="gls-button-icon-trailing gls-margin-small-left"
+                                    gls-icon="icon: link-external; ratio: 0.9"
+                                ></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>pdf</code></td>
+                        <td>Trailing <code>file-pdf</code> (opens new tab)</td>
+                        <td>
+                            <a
+                                class="gls-button gls-button-secondary gls-button-pdf"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                type="application/pdf"
+                            >
+                                <span class="gls-button-label">Patient Guide (PDF)</span>
+                                <span
+                                    class="gls-button-icon-trailing gls-margin-small-left"
+                                    gls-icon="icon: file-pdf; ratio: 0.9"
+                                ></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a
+                                class="gls-button gls-button-text gls-button-pdf"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                type="application/pdf"
+                            >
+                                <span class="gls-button-label">Download Factsheet</span>
+                                <span
+                                    class="gls-button-icon-trailing gls-margin-small-left"
+                                    gls-icon="icon: file-pdf; ratio: 0.9"
+                                ></span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Text &amp; Link Buttons with Animated Labels</h2>
+            <p class="gls-text-muted">
+                Hover over text buttons to see animated underline scoped to the label without
+                underlining the trailing icon.
+            </p>
+
+            <p gls-margin>
+                <a class="gls-button gls-button-text" href="#">
+                    <span class="gls-button-label">Learn More</span>
+                    <span
+                        class="gls-button-icon-trailing gls-margin-small-left"
+                        gls-icon="icon: arrow-right; ratio: 0.9"
+                    ></span>
+                </a>
+                <a class="gls-button gls-button-text gls-button-large" href="#">
+                    <span class="gls-button-label">Large Text Action</span>
+                    <span
+                        class="gls-button-icon-trailing gls-margin-small-left"
+                        gls-icon="icon: arrow-right; ratio: 1.1"
+                    ></span>
+                </a>
+                <a class="gls-button gls-button-link" href="#">
+                    <span class="gls-button-label">Link Variant Action</span>
+                    <span
+                        class="gls-button-icon-trailing gls-margin-small-left"
+                        gls-icon="icon: arrow-right; ratio: 0.9"
+                    ></span>
+                </a>
+            </p>
+
+            <h2>Icon-Only Buttons (Circular)</h2>
+
+            <div
+                class="gls-flex gls-flex-middle gls-flex-wrap"
+                style="gap: var(--global-small-space, 16px)"
+            >
+                <!-- Small (2.25rem) -->
+                <div class="gls-flex gls-flex-middle" style="gap: var(--global-xsmall-space, 8px)">
+                    <button
+                        class="gls-button gls-button-primary gls-button-icon-only gls-button-small"
+                        aria-label="Search"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: search; ratio: 0.8"></span>
+                    </button>
+                    <button
+                        class="gls-button gls-button-default gls-button-icon-only gls-button-small"
+                        aria-label="Settings"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: settings; ratio: 0.8"></span>
+                    </button>
+                    <button
+                        class="gls-button gls-button-outline gls-button-icon-only gls-button-small"
+                        aria-label="Location"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: location; ratio: 0.8"></span>
+                    </button>
+                </div>
+
+                <!-- Default (2.75rem) -->
+                <div class="gls-flex gls-flex-middle" style="gap: var(--global-xsmall-space, 8px)">
+                    <button
+                        class="gls-button gls-button-primary gls-button-icon-only"
+                        aria-label="Search"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: search; ratio: 0.9"></span>
+                    </button>
+                    <button
+                        class="gls-button gls-button-default gls-button-icon-only"
+                        aria-label="Settings"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: settings; ratio: 0.9"></span>
+                    </button>
+                    <button
+                        class="gls-button gls-button-outline gls-button-icon-only"
+                        aria-label="Location"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: location; ratio: 0.9"></span>
+                    </button>
+                    <button
+                        class="gls-button gls-button-secondary gls-button-icon-only"
+                        aria-label="Phone"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: receiver; ratio: 0.9"></span>
+                    </button>
+                </div>
+
+                <!-- Large (3.25rem) -->
+                <div class="gls-flex gls-flex-middle" style="gap: var(--global-xsmall-space, 8px)">
+                    <button
+                        class="gls-button gls-button-primary gls-button-icon-only gls-button-large"
+                        aria-label="Search"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: search; ratio: 1.1"></span>
+                    </button>
+                    <button
+                        class="gls-button gls-button-outline gls-button-icon-only gls-button-large"
+                        aria-label="Location"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: location; ratio: 1.1"></span>
+                    </button>
+                </div>
+            </div>
+
+            <h2>Dark / High-Contrast Context</h2>
+
+            <div class="gls-card gls-card-body gls-card-primary gls-light gls-margin">
+                <h3 class="gls-h4">Primary Dark Surface (Auto-Inverted with gls-light)</h3>
+                <p gls-margin>
+                    <a class="gls-button gls-button-primary" href="#">
+                        <span class="gls-button-label">Primary Button</span>
+                        <span
+                            class="gls-button-icon-trailing gls-margin-small-left"
+                            gls-icon="icon: arrow-right; ratio: 0.9"
+                        ></span>
+                    </a>
+                    <a class="gls-button gls-button-outline" href="#">
+                        <span class="gls-button-label">Outline Button</span>
+                        <span
+                            class="gls-button-icon-trailing gls-margin-small-left"
+                            gls-icon="icon: location; ratio: 0.9"
+                        ></span>
+                    </a>
+                    <a class="gls-button gls-button-default" href="#">
+                        <span class="gls-button-label">Default Button</span>
+                        <span
+                            class="gls-button-icon-trailing gls-margin-small-left"
+                            gls-icon="icon: receiver; ratio: 0.9"
+                        ></span>
+                    </a>
+                    <a class="gls-button gls-button-text" href="#">
+                        <span class="gls-button-label">Text Action</span>
+                        <span
+                            class="gls-button-icon-trailing gls-margin-small-left"
+                            gls-icon="icon: arrow-right; ratio: 0.9"
+                        ></span>
+                    </a>
+                    <a class="gls-link" href="#">
+                        <span>Plain Link</span>
+                        <span
+                            class="gls-margin-xsmall-left"
+                            gls-icon="icon: arrow-right; ratio: 0.9"
+                        ></span>
+                    </a>
+                    <button
+                        class="gls-button gls-button-outline gls-button-icon-only"
+                        aria-label="Location"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: location; ratio: 0.9"></span>
+                    </button>
+                    <button
+                        class="gls-button gls-button-primary gls-button-icon-only"
+                        aria-label="Search"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: search; ratio: 0.9"></span>
+                    </button>
+                </p>
+            </div>
+
+            <div class="gls-card gls-card-body gls-card-secondary gls-light gls-margin">
+                <h3 class="gls-h4">Dark Surface with Explicit gls-light Inversion</h3>
+                <p gls-margin>
+                    <a class="gls-button gls-button-primary gls-light" href="#">
+                        <span class="gls-button-label">Primary Button</span>
+                        <span
+                            class="gls-button-icon-trailing gls-margin-small-left"
+                            gls-icon="icon: arrow-right; ratio: 0.9"
+                        ></span>
+                    </a>
+                    <a class="gls-button gls-button-outline gls-light" href="#">
+                        <span class="gls-button-label">Outline Button</span>
+                        <span
+                            class="gls-button-icon-trailing gls-margin-small-left"
+                            gls-icon="icon: location; ratio: 0.9"
+                        ></span>
+                    </a>
+                    <a class="gls-button gls-button-default gls-light" href="#">
+                        <span class="gls-button-label">Default Button</span>
+                        <span
+                            class="gls-button-icon-trailing gls-margin-small-left"
+                            gls-icon="icon: receiver; ratio: 0.9"
+                        ></span>
+                    </a>
+                    <a class="gls-button gls-button-text gls-light" href="#">
+                        <span class="gls-button-label">Text Action</span>
+                        <span
+                            class="gls-button-icon-trailing gls-margin-small-left"
+                            gls-icon="icon: arrow-right; ratio: 0.9"
+                        ></span>
+                    </a>
+                    <a class="gls-link" href="#">
+                        <span>Plain Link</span>
+                        <span
+                            class="gls-margin-xsmall-left"
+                            gls-icon="icon: arrow-right; ratio: 0.9"
+                        ></span>
+                    </a>
+                    <button
+                        class="gls-button gls-button-outline gls-light gls-button-icon-only"
+                        aria-label="Location"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: location; ratio: 0.9"></span>
+                    </button>
+                    <button
+                        class="gls-button gls-button-primary gls-light gls-button-icon-only"
+                        aria-label="Search"
+                    >
+                        <span class="gls-button-icon" gls-icon="icon: search; ratio: 0.9"></span>
+                    </button>
+                </p>
+            </div>
         </div>
     </body>
 </html>
