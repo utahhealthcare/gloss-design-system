@@ -48,6 +48,36 @@
         <div class="gls-container">
             <h1>Grid</h1>
 
+            <h2>Highlight Row (Max Items Constraint)</h2>
+
+            <h3>3 Items Limit (data-gls-max="3" with 5 items rendered)</h3>
+            <div
+                class="gls-grid gls-child-width-1-1 gls-child-width-expand@m gls-grid-match gls-highlight-row"
+                data-gls-max="3"
+                gls-grid
+            >
+                <div><div class="gls-panel">Card 1</div></div>
+                <div><div class="gls-panel">Card 2</div></div>
+                <div><div class="gls-panel">Card 3</div></div>
+                <div><div class="gls-panel">Card 4 (Hidden by CSS)</div></div>
+                <div><div class="gls-panel">Card 5 (Hidden by CSS)</div></div>
+            </div>
+
+            <h3>4 Items Limit (class="gls-max-4" with 6 items rendered)</h3>
+            <div
+                class="gls-grid gls-child-width-1-1 gls-child-width-expand@m gls-grid-match gls-highlight-row gls-max-4"
+                gls-grid
+            >
+                <div><div class="gls-panel">Card 1</div></div>
+                <div><div class="gls-panel">Card 2</div></div>
+                <div><div class="gls-panel">Card 3</div></div>
+                <div><div class="gls-panel">Card 4</div></div>
+                <div><div class="gls-panel">Card 5 (Hidden by CSS)</div></div>
+                <div><div class="gls-panel">Card 6 (Hidden by CSS)</div></div>
+            </div>
+
+            <h2>Standard Grid</h2>
+
             <div class="gls-child-width-1-2" gls-grid>
                 <div><div class="gls-panel">1-2</div></div>
                 <div><div class="gls-panel">1-2</div></div>
