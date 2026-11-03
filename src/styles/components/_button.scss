@@ -65,14 +65,21 @@
         }
     }
 
-    // Outline button on light surfaces: icon defaults to brand red, white on hover
-    &.gls-button-outline {
+    // Default, Outline, Text, and Link buttons on light surfaces: icon defaults to brand red
+    &.gls-button-default,
+    &.gls-button-outline,
+    &.gls-button-text,
+    &.gls-button-link,
+    &[class*='gls-link'] {
         .gls-button-icon,
         .gls-button-icon-leading,
         .gls-button-icon-trailing {
             color: var(--color-primary);
         }
+    }
 
+    // Outline button hover/focus fills with primary background and turns icon white
+    &.gls-button-outline {
         &:hover,
         &:focus {
             .gls-button-icon,
