@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Quick Links Banner - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container gls-margin-large-top gls-margin-large-bottom">
+            <h1>Quick Links Banner</h1>
+            <p class="gls-text-lead">
+                Banner container (<code>.gls-quick-links-banner</code>), responsive content layout
+                (<code>.gls-quick-links-banner-content</code>), orphan-free grid
+                (<code>.gls-link-grid</code>), action cards (<code>.gls-quick-link</code>), and
+                brand red right arrow (<code>.gls-quick-link-arrow</code>).
+            </p>
+
+            <h2>4 Links (Granite Background + Illustration)</h2>
+            <p class="gls-text-meta">
+                Responsive layout: 1 column (&lt; 640px) &rarr; 2&times;2 (640px&ndash;1199px)
+                &rarr; 4 across (1200px+).
+            </p>
+
+            <div class="gls-quick-links-banner gls-background-granite-300">
+                <div class="gls-quick-links-banner-content">
+                    <h3 class="gls-h2 gls-margin-remove-bottom">Ready to help?</h3>
+
+                    <div class="gls-link-grid">
+                        <div class="gls-link-grid-inner">
+                            <a class="gls-quick-link" href="#">
+                                <span class="gls-text-bold">Find a Doctor</span>
+                                <span class="gls-quick-link-arrow" aria-hidden="true">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line
+                                            x1="3.47"
+                                            y1="10"
+                                            x2="15.47"
+                                            y2="10"
+                                            stroke-width="1.5"
+                                        />
+                                        <polyline
+                                            points="11.98 13.84 15.82 10 11.98 6.16"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="gls-quick-link" href="#">
+                                <span class="gls-text-bold">Locations &amp; Directions</span>
+                                <span class="gls-quick-link-arrow" aria-hidden="true">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line
+                                            x1="3.47"
+                                            y1="10"
+                                            x2="15.47"
+                                            y2="10"
+                                            stroke-width="1.5"
+                                        />
+                                        <polyline
+                                            points="11.98 13.84 15.82 10 11.98 6.16"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="gls-quick-link" href="#">
+                                <span class="gls-text-bold">Patient Portal (MyChart)</span>
+                                <span class="gls-quick-link-arrow" aria-hidden="true">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line
+                                            x1="3.47"
+                                            y1="10"
+                                            x2="15.47"
+                                            y2="10"
+                                            stroke-width="1.5"
+                                        />
+                                        <polyline
+                                            points="11.98 13.84 15.82 10 11.98 6.16"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="gls-quick-link" href="#">
+                                <span class="gls-text-bold">Pay a Bill</span>
+                                <span class="gls-quick-link-arrow" aria-hidden="true">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line
+                                            x1="3.47"
+                                            y1="10"
+                                            x2="15.47"
+                                            y2="10"
+                                            stroke-width="1.5"
+                                        />
+                                        <polyline
+                                            points="11.98 13.84 15.82 10 11.98 6.16"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gls-quick-links-banner-illustration" aria-hidden="true">
+                    <img src="images/backgrounds/mountains.svg" alt="" />
+                </div>
+            </div>
+
+            <h2 class="gls-margin-large-top">3 Links (Orphan Prevention)</h2>
+            <p class="gls-text-meta">
+                Responsive layout: Stacked below 960px to prevent an awkward 2+1 orphan row on
+                tablet &rarr; 3 across at 960px+.
+            </p>
+
+            <div class="gls-quick-links-banner gls-background-granite-300">
+                <div class="gls-quick-links-banner-content">
+                    <h3 class="gls-h2 gls-margin-remove-bottom">Clinical Services</h3>
+
+                    <div class="gls-link-grid">
+                        <div class="gls-link-grid-inner">
+                            <a class="gls-quick-link" href="#">
+                                <span class="gls-text-bold">Primary Care</span>
+                                <span class="gls-quick-link-arrow" aria-hidden="true">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line
+                                            x1="3.47"
+                                            y1="10"
+                                            x2="15.47"
+                                            y2="10"
+                                            stroke-width="1.5"
+                                        />
+                                        <polyline
+                                            points="11.98 13.84 15.82 10 11.98 6.16"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="gls-quick-link" href="#">
+                                <span class="gls-text-bold">Cardiology &amp; Heart Health</span>
+                                <span class="gls-quick-link-arrow" aria-hidden="true">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line
+                                            x1="3.47"
+                                            y1="10"
+                                            x2="15.47"
+                                            y2="10"
+                                            stroke-width="1.5"
+                                        />
+                                        <polyline
+                                            points="11.98 13.84 15.82 10 11.98 6.16"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="gls-quick-link" href="#">
+                                <span class="gls-text-bold">Cancer Care (Huntsman)</span>
+                                <span class="gls-quick-link-arrow" aria-hidden="true">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line
+                                            x1="3.47"
+                                            y1="10"
+                                            x2="15.47"
+                                            y2="10"
+                                            stroke-width="1.5"
+                                        />
+                                        <polyline
+                                            points="11.98 13.84 15.82 10 11.98 6.16"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="gls-margin-large-top">2 Links</h2>
+            <p class="gls-text-meta">
+                Responsive layout: 1 column (&lt; 640px) &rarr; 2 across (640px+).
+            </p>
+
+            <div class="gls-quick-links-banner gls-background-granite-300">
+                <div class="gls-quick-links-banner-content">
+                    <h3 class="gls-h2 gls-margin-remove-bottom">Urgent &amp; Emergency</h3>
+
+                    <div class="gls-link-grid">
+                        <div class="gls-link-grid-inner">
+                            <a class="gls-quick-link" href="#">
+                                <span class="gls-text-bold">Urgent Care Wait Times</span>
+                                <span class="gls-quick-link-arrow" aria-hidden="true">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line
+                                            x1="3.47"
+                                            y1="10"
+                                            x2="15.47"
+                                            y2="10"
+                                            stroke-width="1.5"
+                                        />
+                                        <polyline
+                                            points="11.98 13.84 15.82 10 11.98 6.16"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="gls-quick-link" href="#">
+                                <span class="gls-text-bold">Emergency Department Locations</span>
+                                <span class="gls-quick-link-arrow" aria-hidden="true">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line
+                                            x1="3.47"
+                                            y1="10"
+                                            x2="15.47"
+                                            y2="10"
+                                            stroke-width="1.5"
+                                        />
+                                        <polyline
+                                            points="11.98 13.84 15.82 10 11.98 6.16"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="gls-margin-large-top">Individual Card Focus &amp; Keyboard Interaction</h2>
+            <p class="gls-text-meta">
+                Tab to these standalone cards to verify <code>:focus-visible</code> ring
+                (<code>--gls-color-reference-focus</code>), sand-950 text color, and hover
+                elevation.
+            </p>
+
+            <div class="gls-width-medium">
+                <a class="gls-quick-link gls-margin-small-bottom" href="#">
+                    <span>Schedule an Appointment</span>
+                    <span class="gls-quick-link-arrow" aria-hidden="true">
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <line x1="3.47" y1="10" x2="15.47" y2="10" stroke-width="1.5" />
+                            <polyline points="11.98 13.84 15.82 10 11.98 6.16" stroke-width="1.5" />
+                        </svg>
+                    </span>
+                </a>
+                <a class="gls-quick-link" href="#">
+                    <span
+                        >Longer label that wraps into multiple lines gracefully without breaking
+                        layout</span
+                    >
+                    <span class="gls-quick-link-arrow" aria-hidden="true">
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <line x1="3.47" y1="10" x2="15.47" y2="10" stroke-width="1.5" />
+                            <polyline points="11.98 13.84 15.82 10 11.98 6.16" stroke-width="1.5" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

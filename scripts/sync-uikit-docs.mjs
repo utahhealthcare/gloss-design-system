@@ -162,26 +162,19 @@ const uikitComponents = Object.entries(navigation[config.section] ?? {}).map(([t
     slug,
 }));
 const customComponents = config.customComponents ?? [];
-
-for (const custom of customComponents) {
-    const docPath = path.resolve(projectDirectory, config.destinationRoot, `${custom.slug}.md`);
+for (const { slug } of customComponents) {
+    const customDocPath = path.resolve(projectDirectory, config.destinationRoot, `${slug}.md`);
     try {
-        await readFile(docPath, 'utf8');
+        await readFile(customDocPath, 'utf8');
     } catch (error) {
-        if (error.code === 'ENOENT') {
-            throw new Error(
-                `Custom component documentation file ${config.destinationRoot}/${custom.slug}.md is missing.`,
-                { cause: error },
-            );
-        }
-        throw error;
+        throw new Error(`Custom component documentation missing: ${customDocPath}`, {
+            cause: error,
+        });
     }
 }
-
-const allComponents = [...uikitComponents, ...customComponents].sort((a, b) =>
+const components = [...uikitComponents, ...customComponents].sort((a, b) =>
     a.title.localeCompare(b.title),
 );
-
 const pages = uikitComponents.map(({ slug }) => ({
     slug,
     source: `docs/pages/${slug}.md`,
@@ -198,7 +191,7 @@ const componentDataPath = path.resolve(
     '_data',
     'components.json',
 );
-const componentData = `${JSON.stringify(allComponents, null, 4)}\n`;
+const componentData = `${JSON.stringify(components, null, 4)}\n`;
 
 for (const page of pages) {
     await renderPage(page, sourceRevision);

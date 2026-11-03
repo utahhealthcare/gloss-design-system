@@ -69,6 +69,10 @@
 /* Radius
  ========================================================================== */
 
+.gls-border-square {
+    border-radius: 0;
+}
+
 .gls-rounded-xs,
 .gls-border-rounded-xs {
     border-radius: var(--border-rounded-xs);

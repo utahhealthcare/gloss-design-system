@@ -57,7 +57,7 @@
     "author": "University of Utah Health",
     "license": "BSD-3-Clause",
     "dependencies": {
-        "uikit": "^3.25.23"
+        "uikit": "^3.25.27"
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",

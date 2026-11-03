@@ -4,9 +4,16 @@
     "section": "Components",
     "destinationRoot": "docs",
     "addenda": {
+        "container": "scripts/docs-addenda/container.md",
+        "grid": "scripts/docs-addenda/grid.md",
+        "image": "scripts/docs-addenda/image.md",
         "section": "scripts/docs-addenda/section.md"
     },
     "customComponents": [
+        {
+            "title": "Quick Links Banner",
+            "slug": "quick-links-banner"
+        },
         {
             "title": "Body",
             "slug": "body"

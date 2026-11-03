@@ -1,0 +1,71 @@
+// ========================================================================
+// Component: Image Collage
+// Description: Multi-image responsive layouts (Single 3:2, Double 2:3)
+// ========================================================================
+
+.gls-image-collage {
+    display: block;
+    width: 100%;
+
+    // ----------------------------------------------------------------------
+    // Single Image: Full Width, 3:2 Aspect Ratio
+    // ----------------------------------------------------------------------
+    &-single {
+        .gls-image-collage-img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
+        }
+    }
+
+    // ----------------------------------------------------------------------
+    // Double Image: Overlapping Portrait Collage
+    // Uses CSS Grid shared cell stacking (grid-area: 1 / 1)
+    // ----------------------------------------------------------------------
+    &-double {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+        .gls-image-collage-wrapper {
+            display: grid;
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 1 / 1;
+        }
+
+        // Both images share grid cell 1 / 1
+        .gls-image-collage-image {
+            grid-area: 1 / 1;
+            max-width: 100%;
+
+            .gls-image-collage-img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: var(--border-rounded-border-radius, 4px);
+            }
+        }
+
+        // 1. Primary image: Anchored to lower-left, 60% width, 80% height, in front
+        .gls-image-collage-primary {
+            width: 60%;
+            height: 80%;
+            place-self: end start;
+            z-index: 2;
+        }
+
+        // 2. Secondary image: Anchored to upper-right, 48% width, 50% height, behind
+        .gls-image-collage-secondary {
+            width: 48%;
+            height: 50%;
+            place-self: start end;
+            z-index: 1;
+        }
+    }
+}

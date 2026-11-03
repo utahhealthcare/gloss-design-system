@@ -1,4 +1,4 @@
-/*! UIkit 3.25.23 | https://www.getuikit.com | (c) 2014 - 2026 YOOtheme | MIT License */
+/*! UIkit 3.25.27 | https://www.getuikit.com | (c) 2014 - 2026 YOOtheme | MIT License */
 /*! Gloss build: generated from uikit.js; do not edit. */
 
 (function (global, factory) {
@@ -686,39 +686,52 @@
       }
     };
     const clsAnimation = "gls-animation";
-    const animationEnd = "animationend";
-    const animationCanceled = "animationcanceled";
+    const activeAnimations = /* @__PURE__ */ new WeakMap();
     function animate$2(element, animation, duration = 200, origin, out) {
-      return Promise.all(
-        toNodes(element).map(
-          (element2) => new Promise((resolve, reject) => {
-            if (hasClass(element2, clsAnimation)) {
-              trigger(element2, animationCanceled);
-            }
-            const classes = [
-              animation,
-              clsAnimation,
-              `${clsAnimation}-${out ? "leave" : "enter"}`,
-              origin && `gls-transform-origin-${origin}`,
-              out && `${clsAnimation}-reverse`
-            ];
-            const timer = setTimeout(() => trigger(element2, animationEnd), duration);
-            once(
-              element2,
-              [animationEnd, animationCanceled],
-              ({ type }) => {
-                clearTimeout(timer);
-                type === animationCanceled ? reject() : resolve(element2);
-                css(element2, "animationDuration", "");
-                removeClass(element2, classes);
-              },
-              { self: true }
-            );
-            css(element2, "animationDuration", `${duration}ms`);
-            addClass(element2, classes);
-          })
-        )
-      );
+      const animateFn = async (element2) => {
+        if (!Element.prototype.getAnimations) {
+          return element2;
+        }
+        cancel(element2);
+        const existingAnimations = element2.getAnimations();
+        const classes = [
+          animation,
+          clsAnimation,
+          `${clsAnimation}-${out ? "leave" : "enter"}`,
+          origin && `gls-transform-origin-${origin}`,
+          out && `${clsAnimation}-reverse`
+        ];
+        css(element2, "animationDuration", `${duration}ms`);
+        addClass(element2, classes);
+        const animations = element2.getAnimations().filter((animation2) => !existingAnimations.includes(animation2));
+        const data = { animations, classes };
+        activeAnimations.set(element2, data);
+        try {
+          await Promise.all(animations.map(({ finished }) => finished));
+          return element2;
+        } finally {
+          cleanup(element2, data);
+        }
+      };
+      return Promise.all(toNodes(element).map(animateFn));
+    }
+    function cleanup(element, data) {
+      if (activeAnimations.get(element) === data) {
+        activeAnimations.delete(element);
+        css(element, "animationDuration", "");
+        removeClass(element, data.classes);
+      }
+    }
+    function cancel(elements) {
+      for (const element of toNodes(elements)) {
+        const data = activeAnimations.get(element);
+        if (data) {
+          for (const animation of data.animations) {
+            animation.cancel();
+          }
+          cleanup(element, data);
+        }
+      }
     }
     const Animation = {
       in: animate$2,
@@ -726,11 +739,9 @@
         return animate$2(element, animation, duration, origin, true);
       },
       inProgress(element) {
-        return hasClass(element, clsAnimation);
+        return activeAnimations.has(element);
       },
-      cancel(element) {
-        trigger(element, animationCanceled);
-      }
+      cancel
     };
 
     function ready(fn) {
@@ -828,7 +839,7 @@
       height: ["top", "bottom"]
     };
     function dimensions$1(element) {
-      const rect = isElement(element) ? toNode(element).getBoundingClientRect() : { height: height(element), width: width(element), top: 0, left: 0 };
+      const rect = isElement(element) ? toNode(element).getBoundingClientRect() : { height: height$1(element), width: width(element), top: 0, left: 0 };
       return {
         height: rect.height,
         width: rect.width,
@@ -894,7 +905,7 @@
       }
       return offset2;
     }
-    const height = dimension("height");
+    const height$1 = dimension("height");
     const width = dimension("width");
     function dimension(prop) {
       const propName = ucfirst(prop);
@@ -1102,7 +1113,7 @@
         return observe$1(ResizeObserver, targets, cb, options);
       }
       const off = [on(window, "load resize", cb), on(document, "loadedmetadata load", cb, true)];
-      return { disconnect: () => off.map((cb2) => cb2()) };
+      return { disconnect: () => off.forEach((cb2) => cb2()) };
     }
     function observeViewportResize(cb) {
       return { disconnect: on([window, window.visualViewport], "resize", cb) };
@@ -1579,7 +1590,7 @@
         hasClass: hasClass,
         hasOwn: hasOwn,
         hasTouch: hasTouch,
-        height: height,
+        height: height$1,
         html: html,
         hyphenate: hyphenate,
         inBrowser: inBrowser,
@@ -2117,15 +2128,14 @@
       return sorted;
     }
     function getOffset(element, offset = false) {
-      let { offsetTop, offsetLeft, offsetHeight, offsetWidth } = element;
+      let { offsetTop, offsetLeft, offsetHeight } = element;
       if (offset) {
         [offsetTop, offsetLeft] = offsetPosition(element);
       }
       return {
         top: offsetTop,
         left: offsetLeft,
-        bottom: offsetTop + offsetHeight,
-        right: offsetLeft + offsetWidth
+        bottom: offsetTop + offsetHeight
       };
     }
 
@@ -2161,35 +2171,37 @@
         removeClass(target, clsLeave);
       });
       const enterFn = wrapIndexFn(async () => {
-        const oldHeight = height(target);
+        const oldHeight = height$1(target);
         addClass(target, clsEnter);
         action();
         css(stagger ? children(target) : target, propsOut);
-        height(target, oldHeight);
+        height$1(target, oldHeight);
         await awaitTimeout();
-        height(target, "");
-        const newHeight = height(target);
+        height$1(target, "");
+        const newHeight = height$1(target);
         css(target, "alignContent", "flex-start");
-        height(target, oldHeight);
-        let transitions = [];
+        height$1(target, oldHeight);
+        const transitions = [];
         let targetDuration = duration / 2;
         if (stagger) {
           const nodes = getTransitionNodes(target);
           css(children(target), propsOut);
-          transitions = nodes.reduce(async (promise, child, i, array) => {
-            await promise;
-            if (!isInView(child) || !isCurrentIndex()) {
-              resetProps(child, propsIn);
-              return;
-            }
-            await awaitTimeout(stagger);
-            const transition = Transition.start(child, propsIn, duration / 2, "ease").then(
-              () => isCurrentIndex() && resetProps(child, propsIn)
-            );
-            if (array.length - 1 === i) {
-              await transition;
-            }
-          }, Promise.resolve());
+          transitions.push(
+            nodes.reduce(async (promise, child, i, array) => {
+              await promise;
+              if (!isInView(child) || !isCurrentIndex()) {
+                resetProps(child, propsIn);
+                return;
+              }
+              await awaitTimeout(stagger);
+              const transition = Transition.start(child, propsIn, duration / 2, "ease").then(
+                () => isCurrentIndex() && resetProps(child, propsIn)
+              );
+              if (array.length - 1 === i) {
+                await transition;
+              }
+            }, Promise.resolve())
+          );
           targetDuration += nodes.length * stagger;
         }
         if (!stagger || oldHeight !== newHeight) {
@@ -2342,6 +2354,19 @@
       RIGHT: 39,
       DOWN: 40
     };
+    function getNavigationIndex(keyCode, previousKey = keyMap.LEFT, nextKey = keyMap.RIGHT) {
+      switch (keyCode) {
+        case keyMap.HOME:
+          return 0;
+        case keyMap.END:
+          return "last";
+        case previousKey:
+          return "previous";
+        case nextKey:
+          return "next";
+      }
+      return -1;
+    }
 
     function maybeDefaultPreventClick(e) {
       if (e.target.closest('a[href="#"],a[href=""]')) {
@@ -2871,15 +2896,14 @@
         }
       }
     }
-    function toggleAnimation(el, show, cmp) {
+    async function toggleAnimation(el, show, cmp) {
       const { animation, duration, _toggle } = cmp;
       if (show) {
         _toggle(el, true);
         return Animation.in(el, animation[0], duration, cmp.origin);
       }
-      return Animation.out(el, animation[1] || animation[0], duration, cmp.origin).then(
-        () => _toggle(el, false)
-      );
+      await Animation.out(el, animation[1] || animation[0], duration, cmp.origin);
+      _toggle(el, false);
     }
 
     const active$1 = [];
@@ -3041,38 +3065,20 @@
       let rejectAnimation;
       return new Promise(
         (resolve, reject) => once(el, "show hide", () => {
-          var _a;
+          var _a, _b, _c;
           (_a = pendingReject.get(el)) == null ? void 0 : _a();
           rejectAnimation = reject;
           pendingReject.set(el, reject);
           _toggle(el, show);
-          const off = once(
-            transitionElement,
-            "transitionstart",
-            () => {
-              once(transitionElement, "transitionend transitioncancel", resolve, {
-                self: true
-              });
-              clearTimeout(timer);
-            },
-            { self: true }
-          );
-          const timer = setTimeout(
-            () => {
-              off();
-              resolve();
-            },
-            toMs(css(transitionElement, "transitionDuration"))
-          );
+          Promise.all(
+            ((_c = (_b = transitionElement == null ? void 0 : transitionElement.getAnimations) == null ? void 0 : _b.call(transitionElement)) != null ? _c : []).map(({ finished }) => finished)
+          ).then(resolve, reject);
         })
       ).then(() => {
         if (pendingReject.get(el) === rejectAnimation) {
           pendingReject.delete(el);
         }
       });
-    }
-    function toMs(time) {
-      return toFloat(time) * (endsWith(time, "ms") ? 1 : 1e3);
     }
     function preventBackgroundFocus(modal) {
       return on(document, "focusin", (e) => {
@@ -3300,6 +3306,7 @@
         },
         {
           // iOS workaround for slider stopping if swiping fast
+          // https://bugs.webkit.org/show_bug.cgi?id=184251
           name: pointerMove,
           el: ({ list }) => list,
           handler: noop,
@@ -3349,7 +3356,7 @@
           const edge = prevIndex === nextIndex;
           let itemShown;
           for (const i of [this.index, this.prevIndex]) {
-            if (!includes([nextIndex, prevIndex], i)) {
+            if (i !== nextIndex && i !== prevIndex) {
               trigger(slides[i], "itemhidden", [this]);
               if (edge) {
                 itemShown = true;
@@ -3412,7 +3419,7 @@
       return Math.atan2(Math.abs(pos2.y - pos1.y), Math.abs(pos2.x - pos1.x)) * 180 / Math.PI;
     }
 
-    var VERSION = '3.25.23';
+    var VERSION = '3.25.27';
 
     function initWatches(instance) {
       instance._watches = [];
@@ -4021,7 +4028,7 @@
             if (!isNumeric(cmd)) {
               return;
             }
-            let i = keyCode === keyMap.HOME ? 0 : keyCode === keyMap.END ? "last" : keyCode === keyMap.LEFT ? "previous" : keyCode === keyMap.RIGHT ? "next" : -1;
+            const i = getNavigationIndex(keyCode);
             if (~i) {
               e.preventDefault();
               this.show(i);
@@ -4181,9 +4188,9 @@
           await this._show(prev, next, force);
           prev && trigger(prev, "itemhidden", [this]);
           trigger(next, "itemshown", [this]);
-          stack.shift();
           this._transitioner = null;
           await awaitFrame();
+          stack.shift();
           if (stack.length) {
             this.show(stack.shift(), true);
           }
@@ -4506,16 +4513,7 @@
             if (!this.isToggled() || !this.draggable) {
               return;
             }
-            let i = -1;
-            if (keyCode === keyMap.LEFT) {
-              i = "previous";
-            } else if (keyCode === keyMap.RIGHT) {
-              i = "next";
-            } else if (keyCode === keyMap.HOME) {
-              i = 0;
-            } else if (keyCode === keyMap.END) {
-              i = "last";
-            }
+            const i = getNavigationIndex(keyCode);
             if (~i) {
               this.show(i);
             }
@@ -5490,22 +5488,21 @@
           return this.show(duration, percent, true);
         },
         translate(percent) {
-          if (percent === this.percent()) {
-            return;
+          if (percent !== this.percent()) {
+            const distance = this.getDistance() * dir * (isRtl ? -1 : 1);
+            css(
+              list,
+              "transform",
+              translate(
+                clamp(
+                  -to + (distance - distance * percent),
+                  -getWidth(list),
+                  dimensions$1(list).width
+                ) * (isRtl ? -1 : 1),
+                "px"
+              )
+            );
           }
-          const distance = this.getDistance() * dir * (isRtl ? -1 : 1);
-          css(
-            list,
-            "transform",
-            translate(
-              clamp(
-                -to + (distance - distance * percent),
-                -getWidth(list),
-                dimensions$1(list).width
-              ) * (isRtl ? -1 : 1),
-              "px"
-            )
-          );
           const actives = this.getActives();
           const itemIn = this.getItemIn();
           const itemOut = this.getItemIn(true);
@@ -5929,6 +5926,7 @@
       }
     };
 
+    const pointerEnd = [pointerUp$1, pointerCancel];
     var sortable = {
       mixins: [Class, Animate],
       props: {
@@ -6051,7 +6049,7 @@
           this.placeholder = placeholder;
           this.origin = { target, index: index(placeholder), ...this.pos };
           on(document, pointerMove$1, this.move);
-          on(document, pointerUp$1, this.end);
+          on(document, pointerEnd, this.end);
           if (!this.threshold) {
             this.start(e);
           }
@@ -6077,7 +6075,7 @@
         }),
         end() {
           off(document, pointerMove$1, this.move);
-          off(document, pointerUp$1, this.end);
+          off(document, pointerEnd, this.end);
           if (!this.drag) {
             return;
           }
@@ -6172,7 +6170,7 @@
         height: element.offsetHeight,
         padding: css(element, "padding")
       });
-      height(clone.firstElementChild, height(element.firstElementChild));
+      height$1(clone.firstElementChild, height$1(element.firstElementChild));
       return clone;
     }
     function findTarget(items, point) {
@@ -6941,7 +6939,7 @@
       },
       methods: {
         async close() {
-          await this.toggleElement(this.$el, false, animate);
+          await this.toggleElement(this.$el, false, this.animation ? animate : false);
           this.$destroy(true);
         }
       }
@@ -7452,7 +7450,7 @@
         observeViewportResize(update),
         observeResize(overflowParents(drop.$el).concat(drop.target), update)
       ];
-      return () => off.map((observer) => observer.disconnect());
+      return () => off.forEach((observer) => observer.disconnect());
     }
     function listenForScroll(drop, fn = () => drop.$emit()) {
       return on([document, ...overflowParents(drop.$el)], "scroll", fn, {
@@ -7615,18 +7613,7 @@
               return;
             }
             const active2 = this.getActive();
-            let next = -1;
-            if (keyCode === keyMap.HOME) {
-              next = 0;
-            } else if (keyCode === keyMap.END) {
-              next = "last";
-            } else if (keyCode === keyMap.UP) {
-              next = "previous";
-            } else if (keyCode === keyMap.DOWN) {
-              next = "next";
-            } else if (keyCode === keyMap.ESC) {
-              (_a = active2.targetEl) == null ? void 0 : _a.focus();
-            }
+            const next = getNavigationIndex(keyCode, keyMap.UP, keyMap.DOWN);
             if (~next) {
               e.preventDefault();
               const elements = $$(selFocusable, current);
@@ -7636,6 +7623,9 @@
                 findIndex(elements, (el) => matches(el, ":focus"))
               )].focus();
               return;
+            }
+            if (keyCode === keyMap.ESC) {
+              (_a = active2.targetEl) == null ? void 0 : _a.focus();
             }
             handleNavItemNavigation(e, this.items, active2);
           }
@@ -7726,7 +7716,7 @@
         },
         async transitionTo(newHeight, el) {
           const { dropbar } = this;
-          const oldHeight = height(dropbar);
+          const oldHeight = height$1(dropbar);
           el = oldHeight < newHeight && el;
           await Transition.cancel([el, dropbar]);
           if (el) {
@@ -7736,7 +7726,7 @@
             }
           }
           css(el, "clipPath", `polygon(0 0,100% 0,100% ${oldHeight}px,0 ${oldHeight}px)`);
-          height(dropbar, oldHeight);
+          height$1(dropbar, oldHeight);
           await Promise.all([
             Transition.start(dropbar, { height: newHeight }, this.duration),
             Transition.start(
@@ -7776,23 +7766,14 @@
     function handleNavItemNavigation(e, toggles, active2) {
       var _a, _b, _c;
       const { current, keyCode } = e;
-      let next = -1;
-      if (keyCode === keyMap.HOME) {
-        next = 0;
-      } else if (keyCode === keyMap.END) {
-        next = "last";
-      } else if (keyCode === keyMap.LEFT) {
-        next = "previous";
-      } else if (keyCode === keyMap.RIGHT) {
-        next = "next";
-      } else if (keyCode === keyMap.TAB) {
-        (_a = active2.targetEl) == null ? void 0 : _a.focus();
-        (_b = active2.hide) == null ? void 0 : _b.call(active2, false);
-      }
+      const next = getNavigationIndex(keyCode);
       if (~next) {
         e.preventDefault();
-        (_c = active2.hide) == null ? void 0 : _c.call(active2, false);
+        (_a = active2.hide) == null ? void 0 : _a.call(active2, false);
         toggles[getIndex(next, toggles, toggles.indexOf(active2.targetEl || current))].focus();
+      } else if (keyCode === keyMap.TAB) {
+        (_b = active2.targetEl) == null ? void 0 : _b.focus();
+        (_c = active2.hide) == null ? void 0 : _c.call(active2, false);
       }
     }
     function preventInitialPointerEnter(el) {
@@ -8544,7 +8525,7 @@
               unobserve: observer.unobserve.bind(observer),
               disconnect() {
                 observer.disconnect();
-                listener.map((off) => off());
+                listener.forEach((off) => off());
               }
             };
           },
@@ -8674,7 +8655,7 @@
             } else {
               css(this.$el, "display", "block");
             }
-            height(this.$el);
+            height$1(this.$el);
           }
         },
         {
@@ -8911,7 +8892,7 @@
               this.clsSidebarAnimation,
               this.mode === "reveal" ? "" : this.clsMode
             );
-            height(body);
+            height$1(body);
             addClass(body, this.clsContainerAnimation);
             this.clsContainerAnimation && suppressUserScale();
           }
@@ -8997,6 +8978,9 @@
         events: ["resize"]
       }
     };
+    function height(el) {
+      return dimensions$1(el).height - boxModelAdjust(el, "height", css(el, "boxSizing"));
+    }
 
     var overflowFade = {
       data: {
@@ -9119,6 +9103,11 @@
           el = el && $(el) || document.body;
           if (trigger(this.$el, "beforescroll", [this, el])) {
             await scrollIntoView(el, { offset: this.offset });
+            if (!isFocusable(el)) {
+              attr(el, "tabindex", "-1");
+              once(el, "blur", () => attr(el, "tabindex", null));
+            }
+            el.focus({ preventScroll: true });
             trigger(this.$el, "scrolled", [this, el]);
           }
         }
@@ -9234,7 +9223,7 @@
       ],
       methods: {
         toggle(el, inview) {
-          var _a, _b;
+          var _a, _b, _c;
           const state = (_a = this.elementData) == null ? void 0 : _a.get(el);
           if (!state) {
             return;
@@ -9243,16 +9232,13 @@
           css(el, "opacity", !inview && this.hidden ? 0 : "");
           toggleClass(el, clsInView, inview);
           toggleClass(el, state.cls);
-          let match;
-          if (match = state.cls.match(/\bgls-animation-[\w-]+/g)) {
-            const removeAnimationClasses = () => removeClass(el, match);
-            if (inview) {
-              state.off = once(el, "animationcancel animationend", removeAnimationClasses, {
-                self: true
-              });
-            } else {
-              removeAnimationClasses();
-            }
+          const match = state.cls.match(/\bgls-animation-[\w-]+/g);
+          if (match) {
+            const animations = inview && ((_c = el.getAnimations) == null ? void 0 : _c.call(el)) || [];
+            let active = true;
+            state.off = () => active = false;
+            const cleanup = () => active && removeClass(el, match);
+            Promise.all(animations.map(({ finished }) => finished)).then(cleanup, cleanup);
           }
           trigger(el, inview ? "inview" : "outview");
           state.inview = inview;
@@ -9432,12 +9418,12 @@
       ],
       update: [
         {
-          read({ height: height$1, width, margin, sticky }, types) {
+          read({ height, width, margin, sticky }, types) {
             this.inactive = !this.matchMedia || !isVisible(this.$el) || !this.$el.offsetHeight;
             if (this.inactive) {
               return;
             }
-            const dynamicViewport = height(window);
+            const dynamicViewport = height$1(window);
             const maxScrollHeight = Math.max(
               0,
               document.scrollingElement.scrollHeight - dynamicViewport
@@ -9452,7 +9438,7 @@
               this.hide();
             }
             if (!this.active) {
-              ({ height: height$1, width } = dimensions$1(this.$el));
+              ({ height, width } = dimensions$1(this.$el));
               margin = css(this.$el, "margin");
             }
             if (hide) {
@@ -9460,17 +9446,17 @@
             }
             const viewport2 = toPx("100vh", "height");
             let position = this.position;
-            if (this.overflowFlip && height$1 > viewport2) {
+            if (this.overflowFlip && height > viewport2) {
               position = position === "top" ? "bottom" : "top";
             }
             const referenceElement = this.isFixed ? this.placeholder : this.$el;
             let [offset$1, offsetEnd] = [this.offset, this.offsetEnd].map(
               (value) => toPx(value, "height", sticky ? this.$el : referenceElement)
             );
-            if (position === "bottom" && (height$1 < dynamicViewport || this.overflowFlip)) {
-              offset$1 += dynamicViewport - height$1;
+            if (position === "bottom" && (height < dynamicViewport || this.overflowFlip)) {
+              offset$1 += dynamicViewport - height;
             }
-            const elementBox = height$1 + offset$1 + offsetEnd;
+            const elementBox = height + offset$1 + offsetEnd;
             const overflow = this.overflowFlip ? 0 : Math.max(0, elementBox - viewport2);
             const topOffset = offset(referenceElement).top - // offset possible `transform: translateY` animation 'gls-animation-slide-top' while hiding
             new DOMMatrix(css(referenceElement, "transform")).m42;
@@ -9478,7 +9464,7 @@
             const start = (this.start === false ? topOffset : parseProp(this.start, this.$el, topOffset)) - offset$1;
             const end = this.end === false ? maxScrollHeight : Math.min(
               maxScrollHeight,
-              parseProp(this.end, this.$el, topOffset + height$1, true) - elHeight - offset$1 + overflow
+              parseProp(this.end, this.$el, topOffset + height, true) - elHeight - offset$1 + overflow
             );
             sticky = !this.showOnUp && start + offset$1 === topOffset && end === Math.min(
               maxScrollHeight,
@@ -9489,7 +9475,7 @@
               end,
               offset: offset$1,
               overflow,
-              height: height$1,
+              height,
               elHeight,
               width,
               margin,
@@ -9861,7 +9847,11 @@
           handler(e) {
             const { current, keyCode } = e;
             const isVertical = matches(this.$el, this.selVertical);
-            let i = keyCode === keyMap.HOME ? 0 : keyCode === keyMap.END ? "last" : keyCode === keyMap.LEFT && !isVertical || keyCode === keyMap.UP && isVertical ? "previous" : keyCode === keyMap.RIGHT && !isVertical || keyCode === keyMap.DOWN && isVertical ? "next" : -1;
+            const i = getNavigationIndex(
+              keyCode,
+              isVertical ? keyMap.UP : keyMap.LEFT,
+              isVertical ? keyMap.DOWN : keyMap.RIGHT
+            );
             if (~i) {
               e.preventDefault();
               const next = this.toggles[this.next(i, this.toggles.indexOf(current))];

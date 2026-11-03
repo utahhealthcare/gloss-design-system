@@ -1,3 +1,13 @@
+// ========================================================================
+// Breakpoints
+// ========================================================================
+
+// Breakpoints
+$breakpoint-small: 640px;
+$breakpoint-medium: 960px;
+$breakpoint-large: 1200px;
+$breakpoint-xlarge: 1600px;
+
 :root {
     /* Breakpoints */
     --gls-breakpoint-s: 640px;
@@ -470,7 +480,7 @@
     --section-padding-vertical: var(--global-medium-space);
 }
 
-@media (min-width: 960px) {
+@media (min-width: $breakpoint-medium) {
     :root {
         --section-padding-vertical: var(--global-xlarge-space);
     }
@@ -644,12 +654,6 @@
 /* ========================================================================
    UIkit SCSS Variable Configuration
    ======================================================================== */
-
-// Breakpoints
-$breakpoint-small: 640px;
-$breakpoint-medium: 960px;
-$breakpoint-large: 1200px;
-$breakpoint-xlarge: 1600px;
 
 // Typography
 $global-font-family: var(--gls-font-family-base) !default;
