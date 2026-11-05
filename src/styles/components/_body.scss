@@ -193,6 +193,40 @@
     font-size: var(--gls-body-caption-font-size);
     font-weight: var(--gls-body-caption-font-weight);
     line-height: var(--gls-body-caption-line-height);
+
+    p {
+        margin-bottom: var(--gls-body-caption-paragraph-spacing);
+    }
+
+    * + p {
+        margin-top: var(--gls-body-caption-paragraph-spacing);
+    }
+
+    ul,
+    ol {
+        margin-bottom: var(--gls-body-caption-list-spacing);
+    }
+
+    * + ul,
+    * + ol {
+        margin-top: var(--gls-body-caption-list-spacing);
+    }
+
+    li + li {
+        margin-top: var(--gls-body-caption-list-spacing);
+    }
+
+    .gls-list > :nth-child(n + 2) {
+        margin-top: var(--gls-body-caption-list-spacing);
+    }
+
+    // Reset margin for nested lists
+    ul > li > ul,
+    ul > li > ol,
+    ol > li > ol,
+    ol > li > ul {
+        margin: 0;
+    }
 }
 
 /*
