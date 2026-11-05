@@ -635,6 +635,8 @@
   --gls-body-feature-list-spacing: 20px;
   --gls-body-lead-paragraph-spacing: 22px;
   --gls-body-lead-list-spacing: 16px;
+  --gls-body-default-paragraph-spacing: 18px;
+  --gls-body-default-list-spacing: 10px;
   /* Semantic Body Roles - Hyperlinks */
   --gls-body-link-color: inherit;
   --gls-body-link-underline-color: var(--global-primary-background);
@@ -662,6 +664,8 @@
     --gls-body-feature-list-spacing: 24px;
     --gls-body-lead-paragraph-spacing: 24px;
     --gls-body-lead-list-spacing: 16px;
+    --gls-body-default-paragraph-spacing: 20px;
+    --gls-body-default-list-spacing: 12px;
   }
 }
 /* Desktop (960px+) */
@@ -676,6 +680,8 @@
     --gls-body-feature-list-spacing: 28px;
     --gls-body-lead-paragraph-spacing: 28px;
     --gls-body-lead-list-spacing: 20px;
+    --gls-body-default-paragraph-spacing: 20px;
+    --gls-body-default-list-spacing: 12px;
   }
 }
 :root {
@@ -15576,6 +15582,45 @@ template {
   font-size: var(--gls-body-default-font-size);
   font-weight: var(--gls-body-default-font-weight);
   line-height: var(--gls-body-default-line-height);
+}
+
+.gls-body:not([class*=gls-body-]) p,
+.gls-body-default p {
+  margin-bottom: var(--gls-body-default-paragraph-spacing);
+}
+.gls-body:not([class*=gls-body-]) * + p,
+.gls-body-default * + p {
+  margin-top: var(--gls-body-default-paragraph-spacing);
+}
+.gls-body:not([class*=gls-body-]) ul,
+.gls-body:not([class*=gls-body-]) ol,
+.gls-body-default ul,
+.gls-body-default ol {
+  margin-bottom: var(--gls-body-default-list-spacing);
+}
+.gls-body:not([class*=gls-body-]) * + ul,
+.gls-body:not([class*=gls-body-]) * + ol,
+.gls-body-default * + ul,
+.gls-body-default * + ol {
+  margin-top: var(--gls-body-default-list-spacing);
+}
+.gls-body:not([class*=gls-body-]) li + li,
+.gls-body-default li + li {
+  margin-top: var(--gls-body-default-list-spacing);
+}
+.gls-body:not([class*=gls-body-]) .gls-list > :nth-child(n+2),
+.gls-body-default .gls-list > :nth-child(n+2) {
+  margin-top: var(--gls-body-default-list-spacing);
+}
+.gls-body:not([class*=gls-body-]) ul > li > ul,
+.gls-body:not([class*=gls-body-]) ul > li > ol,
+.gls-body:not([class*=gls-body-]) ol > li > ol,
+.gls-body:not([class*=gls-body-]) ol > li > ul,
+.gls-body-default ul > li > ul,
+.gls-body-default ul > li > ol,
+.gls-body-default ol > li > ol,
+.gls-body-default ol > li > ul {
+  margin: 0;
 }
 
 .gls-body-feature {

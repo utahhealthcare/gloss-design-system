@@ -32,6 +32,43 @@
     line-height: var(--gls-body-default-line-height);
 }
 
+.gls-body:not([class*='gls-body-']),
+.gls-body-default {
+    p {
+        margin-bottom: var(--gls-body-default-paragraph-spacing);
+    }
+
+    * + p {
+        margin-top: var(--gls-body-default-paragraph-spacing);
+    }
+
+    ul,
+    ol {
+        margin-bottom: var(--gls-body-default-list-spacing);
+    }
+
+    * + ul,
+    * + ol {
+        margin-top: var(--gls-body-default-list-spacing);
+    }
+
+    li + li {
+        margin-top: var(--gls-body-default-list-spacing);
+    }
+
+    .gls-list > :nth-child(n + 2) {
+        margin-top: var(--gls-body-default-list-spacing);
+    }
+
+    // Reset margin for nested lists
+    ul > li > ul,
+    ul > li > ol,
+    ol > li > ol,
+    ol > li > ul {
+        margin: 0;
+    }
+}
+
 .gls-body-feature {
     font-size: var(--gls-body-feature-font-size);
     font-weight: var(--gls-body-feature-font-weight);
