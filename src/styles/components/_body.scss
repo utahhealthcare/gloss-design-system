@@ -62,19 +62,20 @@
 .gls-body a:not([class*='gls-button']):not(.gls-link-reset),
 [class*='gls-body-'] a:not([class*='gls-button']):not(.gls-link-reset) {
     color: var(--gls-body-link-color);
-    text-decoration: underline var(--gls-body-link-underline-color)
-        var(--gls-body-link-underline-thickness);
+    text-decoration: underline var(--gls-body-link-underline-color);
+    text-decoration-thickness: var(--gls-body-link-underline-thickness);
     text-decoration-skip-ink: auto;
-    text-underline-position: from-font;
     text-underline-offset: var(--gls-body-link-underline-offset);
 
     &:hover,
     &:focus {
         color: var(--gls-body-link-hover-color);
+        text-decoration-thickness: var(--gls-body-link-hover-thickness);
     }
 
     &:active {
         color: var(--gls-body-link-active-color);
         text-decoration-color: var(--gls-body-link-active-underline-color);
+        text-decoration-thickness: var(--gls-body-link-active-thickness);
     }
 }

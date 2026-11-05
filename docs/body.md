@@ -140,21 +140,47 @@ When embedding body content in layout stacks, combine the semantic role class wi
 
 ## Hyperlinks
 
-Hyperlinks within `.gls-body` and `.gls-body-*` render with a proportional brand underline (`text-decoration-thickness: 10%`, `text-underline-offset: 16%`, `text-underline-position: from-font`). On hover and focus, the text color shifts to the brand primary color while the underline height remains constant. On pressed (active), both the text and underline transition to the darker active brand color.
+Hyperlinks within `.gls-body` and `.gls-body-*` automatically adapt based on their surface background:
+
+- **Light Backgrounds**: The text color inherits the dark body copy while the underline uses the brand primary color (`var(--global-primary-background)`). On hover and focus, the text color shifts to primary red while underline thickness remains constant. On pressed (active), both the text and underline transition to the active brand color.
+- **Dark Backgrounds** (`.gls-light` / `:--inverse`): Both the text and underline are white. On hover and pressed states, the text and underline colors remain white while the underline thickness increases to 16% for clear interactive feedback.
 
 <div class="gls-docs-example">
-    <div class="gls-body gls-body-default">
-        <p>
-            Explore our <a href="#">Primary Care Services</a>, read about our <a href="#">clinical trial outcomes</a>, or schedule an appointment online.
-        </p>
+    <div class="gls-child-width-1-2@s" gls-grid>
+        <div>
+            <div class="gls-card gls-card-default gls-card-body">
+                <span class="gls-label gls-margin-small-bottom">Light Surface</span>
+                <div class="gls-body gls-body-default">
+                    <p>
+                        Explore our <a href="#">Primary Care Services</a> or schedule an appointment online.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="gls-card gls-card-body gls-background-granite-900 gls-light">
+                <span class="gls-label gls-margin-small-bottom">Dark Surface</span>
+                <div class="gls-body gls-body-default">
+                    <p>
+                        Explore our <a href="#">Primary Care Services</a> or schedule an appointment online.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 ```html
+<!-- Light surface link -->
 <div class="gls-body gls-body-default">
-    <p>
-        Explore our <a href="#">Primary Care Services</a>, read about our <a href="#">clinical trial outcomes</a>, or schedule an appointment online.
-    </p>
+    <p>Explore our <a href="#">Primary Care Services</a> online.</p>
+</div>
+
+<!-- Dark surface link -->
+<div class="gls-card gls-card-body gls-background-granite-900 gls-light">
+    <div class="gls-body gls-body-default">
+        <p>Explore our <a href="#">Primary Care Services</a> online.</p>
+    </div>
 </div>
 ```
 

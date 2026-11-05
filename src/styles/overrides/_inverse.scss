@@ -15,7 +15,13 @@
     --base-blockquote-footer-color: #{$inverse-global-color};
     --base-pre-color: #{$inverse-global-color};
     --base-pre-border: #{$inverse-global-border};
-    --gls-body-link-underline-color: currentColor;
+    --gls-body-link-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-underline-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-hover-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-hover-thickness: 0.16em;
+    --gls-body-link-active-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-active-underline-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-active-thickness: 0.16em;
 
     // Primary Button Inversion (WCAG Contrast on dark backgrounds)
     .uk-button-primary {

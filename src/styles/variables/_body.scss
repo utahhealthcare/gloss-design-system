@@ -27,11 +27,13 @@
     /* Semantic Body Roles - Hyperlinks */
     --gls-body-link-color: inherit;
     --gls-body-link-underline-color: var(--global-primary-background);
-    --gls-body-link-underline-offset: -0.5px;
-    --gls-body-link-underline-thickness: 10%;
+    --gls-body-link-underline-offset: 0.16em;
+    --gls-body-link-underline-thickness: 0.1em;
     --gls-body-link-hover-color: var(--global-primary-background);
+    --gls-body-link-hover-thickness: 0.1em;
     --gls-body-link-active-color: var(--color-primary-active);
     --gls-body-link-active-underline-color: var(--color-primary-active);
+    --gls-body-link-active-thickness: 0.1em;
 }
 
 /* Tablet (640px–959px) */

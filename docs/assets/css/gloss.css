@@ -633,11 +633,13 @@
   /* Semantic Body Roles - Hyperlinks */
   --gls-body-link-color: inherit;
   --gls-body-link-underline-color: var(--global-primary-background);
-  --gls-body-link-underline-offset: -0.5px;
-  --gls-body-link-underline-thickness: 10%;
+  --gls-body-link-underline-offset: 0.16em;
+  --gls-body-link-underline-thickness: 0.1em;
   --gls-body-link-hover-color: var(--global-primary-background);
+  --gls-body-link-hover-thickness: 0.1em;
   --gls-body-link-active-color: var(--color-primary-active);
   --gls-body-link-active-underline-color: var(--color-primary-active);
+  --gls-body-link-active-thickness: 0.1em;
 }
 
 /* Tablet (640px–959px) */
@@ -757,7 +759,13 @@
   --base-blockquote-footer-color: #fff;
   --base-pre-color: #fff;
   --base-pre-border: rgba(255, 255, 255, 0.2);
-  --gls-body-link-underline-color: currentColor;
+  --gls-body-link-color: #fff;
+  --gls-body-link-underline-color: #fff;
+  --gls-body-link-hover-color: #fff;
+  --gls-body-link-hover-thickness: 0.16em;
+  --gls-body-link-active-color: #fff;
+  --gls-body-link-active-underline-color: #fff;
+  --gls-body-link-active-thickness: 0.16em;
 }
 :is(.gls-light,
 .gls-section-primary:not(.gls-preserve-color),
@@ -15581,22 +15589,24 @@ template {
 .gls-body a:not([class*=gls-button]):not(.gls-link-reset),
 [class*=gls-body-] a:not([class*=gls-button]):not(.gls-link-reset) {
   color: var(--gls-body-link-color);
-  -webkit-text-decoration: underline var(--gls-body-link-underline-color) var(--gls-body-link-underline-thickness);
-          text-decoration: underline var(--gls-body-link-underline-color) var(--gls-body-link-underline-thickness);
+  -webkit-text-decoration: underline var(--gls-body-link-underline-color);
+          text-decoration: underline var(--gls-body-link-underline-color);
+  text-decoration-thickness: var(--gls-body-link-underline-thickness);
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
-  text-underline-position: from-font;
   text-underline-offset: var(--gls-body-link-underline-offset);
 }
 .gls-body a:not([class*=gls-button]):not(.gls-link-reset):hover, .gls-body a:not([class*=gls-button]):not(.gls-link-reset):focus,
 [class*=gls-body-] a:not([class*=gls-button]):not(.gls-link-reset):hover,
 [class*=gls-body-] a:not([class*=gls-button]):not(.gls-link-reset):focus {
   color: var(--gls-body-link-hover-color);
+  text-decoration-thickness: var(--gls-body-link-hover-thickness);
 }
 .gls-body a:not([class*=gls-button]):not(.gls-link-reset):active,
 [class*=gls-body-] a:not([class*=gls-button]):not(.gls-link-reset):active {
   color: var(--gls-body-link-active-color);
   text-decoration-color: var(--gls-body-link-active-underline-color);
+  text-decoration-thickness: var(--gls-body-link-active-thickness);
 }
 
 /**
