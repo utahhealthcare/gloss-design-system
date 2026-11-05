@@ -27,6 +27,8 @@
     /* Semantic Body Roles - Paragraph & List Spacing (Mobile base: <640px) */
     --gls-body-feature-paragraph-spacing: 28px;
     --gls-body-feature-list-spacing: 20px;
+    --gls-body-lead-paragraph-spacing: 22px;
+    --gls-body-lead-list-spacing: 16px;
 
     /* Semantic Body Roles - Hyperlinks */
     --gls-body-link-color: inherit;
@@ -53,6 +55,8 @@
         --gls-body-caption-font-size: 0.875rem; /* 14px (sm) */
         --gls-body-feature-paragraph-spacing: 34px;
         --gls-body-feature-list-spacing: 24px;
+        --gls-body-lead-paragraph-spacing: 24px;
+        --gls-body-lead-list-spacing: 16px;
     }
 }
 
@@ -66,6 +70,8 @@
         --gls-body-caption-font-size: 0.875rem; /* 14px (sm) */
         --gls-body-feature-paragraph-spacing: 38px;
         --gls-body-feature-list-spacing: 28px;
+        --gls-body-lead-paragraph-spacing: 28px;
+        --gls-body-lead-list-spacing: 20px;
     }
 }
 
