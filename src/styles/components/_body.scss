@@ -67,6 +67,12 @@
     text-decoration-skip-ink: auto;
     text-underline-offset: var(--gls-body-link-underline-offset);
 
+    &:visited {
+        color: var(--gls-body-link-visited-color);
+        text-decoration-color: var(--gls-body-link-visited-underline-color);
+        text-decoration-thickness: var(--gls-body-link-visited-thickness);
+    }
+
     &:hover,
     &:focus {
         color: var(--gls-body-link-hover-color);

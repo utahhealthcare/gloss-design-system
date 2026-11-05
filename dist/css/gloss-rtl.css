@@ -633,13 +633,16 @@
   /* Semantic Body Roles - Hyperlinks */
   --gls-body-link-color: inherit;
   --gls-body-link-underline-color: var(--global-primary-background);
-  --gls-body-link-underline-offset: 0.16em;
-  --gls-body-link-underline-thickness: 0.1em;
+  --gls-body-link-underline-offset: 2px;
+  --gls-body-link-underline-thickness: 1px;
   --gls-body-link-hover-color: var(--global-primary-background);
-  --gls-body-link-hover-thickness: 0.1em;
+  --gls-body-link-hover-thickness: 1px;
   --gls-body-link-active-color: var(--color-primary-active);
   --gls-body-link-active-underline-color: var(--color-primary-active);
-  --gls-body-link-active-thickness: 0.1em;
+  --gls-body-link-active-thickness: 1px;
+  --gls-body-link-visited-color: inherit;
+  --gls-body-link-visited-underline-color: var(--global-primary-background);
+  --gls-body-link-visited-thickness: 1px;
 }
 
 /* Tablet (640px–959px) */
@@ -762,10 +765,13 @@
   --gls-body-link-color: #fff;
   --gls-body-link-underline-color: #fff;
   --gls-body-link-hover-color: #fff;
-  --gls-body-link-hover-thickness: 0.16em;
+  --gls-body-link-hover-thickness: 2px;
   --gls-body-link-active-color: #fff;
   --gls-body-link-active-underline-color: #fff;
-  --gls-body-link-active-thickness: 0.16em;
+  --gls-body-link-active-thickness: 2px;
+  --gls-body-link-visited-color: #fff;
+  --gls-body-link-visited-underline-color: #fff;
+  --gls-body-link-visited-thickness: 2px;
 }
 :is(.gls-light,
 .gls-section-primary:not(.gls-preserve-color),
@@ -15595,6 +15601,12 @@ template {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
   text-underline-offset: var(--gls-body-link-underline-offset);
+}
+.gls-body a:not([class*=gls-button]):not(.gls-link-reset):visited,
+[class*=gls-body-] a:not([class*=gls-button]):not(.gls-link-reset):visited {
+  color: var(--gls-body-link-visited-color);
+  text-decoration-color: var(--gls-body-link-visited-underline-color);
+  text-decoration-thickness: var(--gls-body-link-visited-thickness);
 }
 .gls-body a:not([class*=gls-button]):not(.gls-link-reset):hover, .gls-body a:not([class*=gls-button]):not(.gls-link-reset):focus,
 [class*=gls-body-] a:not([class*=gls-button]):not(.gls-link-reset):hover,
