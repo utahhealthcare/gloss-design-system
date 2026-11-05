@@ -11516,6 +11516,14 @@ iframe[data-gls-cover] {
   background-color: var(--color-granite-300);
 }
 
+.gls-background-granite-700 {
+  background-color: var(--color-granite-700);
+}
+
+.gls-background-granite-900 {
+  background-color: var(--color-granite-900);
+}
+
 /* ========================================================================
    Component: Align
  ========================================================================== */
