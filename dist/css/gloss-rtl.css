@@ -630,6 +630,8 @@
   --gls-body-default-font-size: 1rem; /* 16px (base) */
   --gls-body-secondary-font-size: 0.875rem; /* 14px (sm) */
   --gls-body-caption-font-size: 0.875rem; /* 14px (sm) */
+  /* Semantic Body Roles - Paragraph Spacing (Mobile base: <640px) */
+  --gls-body-feature-paragraph-spacing: 28px;
   /* Semantic Body Roles - Hyperlinks */
   --gls-body-link-color: inherit;
   --gls-body-link-underline-color: var(--global-primary-background);
@@ -653,6 +655,7 @@
     --gls-body-default-font-size: 1.125rem; /* 18px (lg) */
     --gls-body-secondary-font-size: 1rem; /* 16px (base) */
     --gls-body-caption-font-size: 0.875rem; /* 14px (sm) */
+    --gls-body-feature-paragraph-spacing: 34px;
   }
 }
 /* Desktop (960px+) */
@@ -663,6 +666,7 @@
     --gls-body-default-font-size: 1.125rem; /* 18px (lg) */
     --gls-body-secondary-font-size: 1rem; /* 16px (base) */
     --gls-body-caption-font-size: 0.875rem; /* 14px (sm) */
+    --gls-body-feature-paragraph-spacing: 38px;
   }
 }
 :root {
@@ -15569,6 +15573,12 @@ template {
   font-size: var(--gls-body-feature-font-size);
   font-weight: var(--gls-body-feature-font-weight);
   line-height: var(--gls-body-feature-line-height);
+}
+.gls-body-feature p {
+  margin-bottom: var(--gls-body-feature-paragraph-spacing);
+}
+.gls-body-feature * + p {
+  margin-top: var(--gls-body-feature-paragraph-spacing);
 }
 
 .gls-body-lead {

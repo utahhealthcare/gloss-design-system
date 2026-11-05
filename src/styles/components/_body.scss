@@ -36,6 +36,14 @@
     font-size: var(--gls-body-feature-font-size);
     font-weight: var(--gls-body-feature-font-weight);
     line-height: var(--gls-body-feature-line-height);
+
+    p {
+        margin-bottom: var(--gls-body-feature-paragraph-spacing);
+    }
+
+    * + p {
+        margin-top: var(--gls-body-feature-paragraph-spacing);
+    }
 }
 
 .gls-body-lead {
