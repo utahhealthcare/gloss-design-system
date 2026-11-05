@@ -637,6 +637,8 @@
   --gls-body-lead-list-spacing: 16px;
   --gls-body-default-paragraph-spacing: 18px;
   --gls-body-default-list-spacing: 10px;
+  --gls-body-secondary-paragraph-spacing: 14px;
+  --gls-body-secondary-list-spacing: 8px;
   /* Semantic Body Roles - Hyperlinks */
   --gls-body-link-color: inherit;
   --gls-body-link-underline-color: var(--global-primary-background);
@@ -666,6 +668,8 @@
     --gls-body-lead-list-spacing: 16px;
     --gls-body-default-paragraph-spacing: 20px;
     --gls-body-default-list-spacing: 12px;
+    --gls-body-secondary-paragraph-spacing: 16px;
+    --gls-body-secondary-list-spacing: 8px;
   }
 }
 /* Desktop (960px+) */
@@ -682,6 +686,8 @@
     --gls-body-lead-list-spacing: 20px;
     --gls-body-default-paragraph-spacing: 20px;
     --gls-body-default-list-spacing: 12px;
+    --gls-body-secondary-paragraph-spacing: 16px;
+    --gls-body-secondary-list-spacing: 8px;
   }
 }
 :root {
@@ -15691,6 +15697,32 @@ template {
   font-size: var(--gls-body-secondary-font-size);
   font-weight: var(--gls-body-secondary-font-weight);
   line-height: var(--gls-body-secondary-line-height);
+}
+.gls-body-secondary p {
+  margin-bottom: var(--gls-body-secondary-paragraph-spacing);
+}
+.gls-body-secondary * + p {
+  margin-top: var(--gls-body-secondary-paragraph-spacing);
+}
+.gls-body-secondary ul,
+.gls-body-secondary ol {
+  margin-bottom: var(--gls-body-secondary-list-spacing);
+}
+.gls-body-secondary * + ul,
+.gls-body-secondary * + ol {
+  margin-top: var(--gls-body-secondary-list-spacing);
+}
+.gls-body-secondary li + li {
+  margin-top: var(--gls-body-secondary-list-spacing);
+}
+.gls-body-secondary .gls-list > :nth-child(n+2) {
+  margin-top: var(--gls-body-secondary-list-spacing);
+}
+.gls-body-secondary ul > li > ul,
+.gls-body-secondary ul > li > ol,
+.gls-body-secondary ol > li > ol,
+.gls-body-secondary ol > li > ul {
+  margin: 0;
 }
 
 .gls-body-caption {
