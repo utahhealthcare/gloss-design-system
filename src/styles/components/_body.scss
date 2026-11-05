@@ -66,6 +66,7 @@
     text-decoration-thickness: var(--gls-body-link-underline-thickness);
     text-decoration-skip-ink: auto;
     text-underline-offset: var(--gls-body-link-underline-offset);
+    border-radius: var(--global-rounded-sm);
 
     &:visited {
         color: var(--gls-body-link-visited-color);

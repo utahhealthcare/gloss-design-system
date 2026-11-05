@@ -15601,6 +15601,7 @@ template {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
   text-underline-offset: var(--gls-body-link-underline-offset);
+  border-radius: var(--global-rounded-sm);
 }
 .gls-body a:not([class*=gls-button]):not(.gls-link-reset):visited,
 [class*=gls-body-] a:not([class*=gls-button]):not(.gls-link-reset):visited {
