@@ -71,12 +71,12 @@
         margin-top: var(--gls-body-default-list-spacing);
     }
 
-    // Reset margin for nested lists
+    // Nested lists use list spacing for top margin
     ul > li > ul,
     ul > li > ol,
     ol > li > ol,
     ol > li > ul {
-        margin: 0;
+        margin: var(--gls-body-default-list-spacing) 0 0 0;
     }
 }
 
@@ -105,12 +105,12 @@
         margin-top: var(--gls-body-feature-list-spacing);
     }
 
-    // Reset margin for nested lists
+    // Nested lists use list spacing for top margin
     ul > li > ul,
     ul > li > ol,
     ol > li > ol,
     ol > li > ul {
-        margin: 0;
+        margin: var(--gls-body-feature-list-spacing) 0 0 0;
     }
 }
 
@@ -139,12 +139,12 @@
         margin-top: var(--gls-body-lead-list-spacing);
     }
 
-    // Reset margin for nested lists
+    // Nested lists use list spacing for top margin
     ul > li > ul,
     ul > li > ol,
     ol > li > ol,
     ol > li > ul {
-        margin: 0;
+        margin: var(--gls-body-lead-list-spacing) 0 0 0;
     }
 }
 
@@ -173,12 +173,12 @@
         margin-top: var(--gls-body-secondary-list-spacing);
     }
 
-    // Reset margin for nested lists
+    // Nested lists use list spacing for top margin
     ul > li > ul,
     ul > li > ol,
     ol > li > ol,
     ol > li > ul {
-        margin: 0;
+        margin: var(--gls-body-secondary-list-spacing) 0 0 0;
     }
 }
 
@@ -207,12 +207,12 @@
         margin-top: var(--gls-body-caption-list-spacing);
     }
 
-    // Reset margin for nested lists
+    // Nested lists use list spacing for top margin
     ul > li > ul,
     ul > li > ol,
     ol > li > ol,
     ol > li > ul {
-        margin: 0;
+        margin: var(--gls-body-caption-list-spacing) 0 0 0;
     }
 }
 

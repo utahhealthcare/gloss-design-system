@@ -645,15 +645,15 @@
   --gls-body-link-color: inherit;
   --gls-body-link-underline-color: var(--global-primary-background);
   --gls-body-link-underline-offset: 2px;
-  --gls-body-link-underline-thickness: 1px;
+  --gls-body-link-underline-thickness: 2px;
   --gls-body-link-hover-color: var(--global-primary-background);
-  --gls-body-link-hover-thickness: 1px;
+  --gls-body-link-hover-thickness: 2px;
   --gls-body-link-active-color: var(--color-primary-active);
   --gls-body-link-active-underline-color: var(--color-primary-active);
-  --gls-body-link-active-thickness: 1px;
+  --gls-body-link-active-thickness: 2px;
   --gls-body-link-visited-color: inherit;
   --gls-body-link-visited-underline-color: var(--global-primary-background);
-  --gls-body-link-visited-thickness: 1px;
+  --gls-body-link-visited-thickness: 2px;
 }
 
 /* Tablet (640px–959px) */
@@ -802,10 +802,10 @@
   --gls-body-link-color: #fff;
   --gls-body-link-underline-color: #fff;
   --gls-body-link-hover-color: #fff;
-  --gls-body-link-hover-thickness: 2px;
+  --gls-body-link-hover-thickness: 3px;
   --gls-body-link-active-color: #fff;
   --gls-body-link-active-underline-color: #fff;
-  --gls-body-link-active-thickness: 2px;
+  --gls-body-link-active-thickness: 3px;
   --gls-body-link-visited-color: #fff;
   --gls-body-link-visited-underline-color: #fff;
   --gls-body-link-visited-thickness: 2px;
@@ -15705,7 +15705,7 @@ template {
 .gls-body-default ul > li > ol,
 .gls-body-default ol > li > ol,
 .gls-body-default ol > li > ul {
-  margin: 0;
+  margin: var(--gls-body-default-list-spacing) 0 0 0;
 }
 
 .gls-body-feature {
@@ -15733,7 +15733,7 @@ template {
 .gls-body-feature ul > li > ol,
 .gls-body-feature ol > li > ol,
 .gls-body-feature ol > li > ul {
-  margin: 0;
+  margin: var(--gls-body-feature-list-spacing) 0 0 0;
 }
 
 .gls-body-lead {
@@ -15761,7 +15761,7 @@ template {
 .gls-body-lead ul > li > ol,
 .gls-body-lead ol > li > ol,
 .gls-body-lead ol > li > ul {
-  margin: 0;
+  margin: var(--gls-body-lead-list-spacing) 0 0 0;
 }
 
 .gls-body-secondary {
@@ -15789,7 +15789,7 @@ template {
 .gls-body-secondary ul > li > ol,
 .gls-body-secondary ol > li > ol,
 .gls-body-secondary ol > li > ul {
-  margin: 0;
+  margin: var(--gls-body-secondary-list-spacing) 0 0 0;
 }
 
 .gls-body-caption {
@@ -15817,7 +15817,7 @@ template {
 .gls-body-caption ul > li > ol,
 .gls-body-caption ol > li > ol,
 .gls-body-caption ol > li > ul {
-  margin: 0;
+  margin: var(--gls-body-caption-list-spacing) 0 0 0;
 }
 
 /*
