@@ -34,22 +34,16 @@
 
 .gls-body:not([class*='gls-body-']),
 .gls-body-default {
-    p {
+    p,
+    ul,
+    ol {
         margin-bottom: var(--gls-body-default-paragraph-spacing);
     }
 
-    * + p {
-        margin-top: var(--gls-body-default-paragraph-spacing);
-    }
-
-    ul,
-    ol {
-        margin-bottom: var(--gls-body-default-list-spacing);
-    }
-
+    * + p,
     * + ul,
     * + ol {
-        margin-top: var(--gls-body-default-list-spacing);
+        margin-top: var(--gls-body-default-paragraph-spacing);
     }
 
     li + li {
@@ -74,22 +68,16 @@
     font-weight: var(--gls-body-feature-font-weight);
     line-height: var(--gls-body-feature-line-height);
 
-    p {
+    p,
+    ul,
+    ol {
         margin-bottom: var(--gls-body-feature-paragraph-spacing);
     }
 
-    * + p {
-        margin-top: var(--gls-body-feature-paragraph-spacing);
-    }
-
-    ul,
-    ol {
-        margin-bottom: var(--gls-body-feature-list-spacing);
-    }
-
+    * + p,
     * + ul,
     * + ol {
-        margin-top: var(--gls-body-feature-list-spacing);
+        margin-top: var(--gls-body-feature-paragraph-spacing);
     }
 
     li + li {
@@ -114,22 +102,16 @@
     font-weight: var(--gls-body-lead-font-weight);
     line-height: var(--gls-body-lead-line-height);
 
-    p {
+    p,
+    ul,
+    ol {
         margin-bottom: var(--gls-body-lead-paragraph-spacing);
     }
 
-    * + p {
-        margin-top: var(--gls-body-lead-paragraph-spacing);
-    }
-
-    ul,
-    ol {
-        margin-bottom: var(--gls-body-lead-list-spacing);
-    }
-
+    * + p,
     * + ul,
     * + ol {
-        margin-top: var(--gls-body-lead-list-spacing);
+        margin-top: var(--gls-body-lead-paragraph-spacing);
     }
 
     li + li {
@@ -154,22 +136,16 @@
     font-weight: var(--gls-body-secondary-font-weight);
     line-height: var(--gls-body-secondary-line-height);
 
-    p {
+    p,
+    ul,
+    ol {
         margin-bottom: var(--gls-body-secondary-paragraph-spacing);
     }
 
-    * + p {
-        margin-top: var(--gls-body-secondary-paragraph-spacing);
-    }
-
-    ul,
-    ol {
-        margin-bottom: var(--gls-body-secondary-list-spacing);
-    }
-
+    * + p,
     * + ul,
     * + ol {
-        margin-top: var(--gls-body-secondary-list-spacing);
+        margin-top: var(--gls-body-secondary-paragraph-spacing);
     }
 
     li + li {
@@ -194,22 +170,16 @@
     font-weight: var(--gls-body-caption-font-weight);
     line-height: var(--gls-body-caption-line-height);
 
-    p {
+    p,
+    ul,
+    ol {
         margin-bottom: var(--gls-body-caption-paragraph-spacing);
     }
 
-    * + p {
-        margin-top: var(--gls-body-caption-paragraph-spacing);
-    }
-
-    ul,
-    ol {
-        margin-bottom: var(--gls-body-caption-list-spacing);
-    }
-
+    * + p,
     * + ul,
     * + ol {
-        margin-top: var(--gls-body-caption-list-spacing);
+        margin-top: var(--gls-body-caption-paragraph-spacing);
     }
 
     li + li {

@@ -15597,24 +15597,20 @@ template {
 }
 
 .gls-body:not([class*=gls-body-]) p,
-.gls-body-default p {
+.gls-body:not([class*=gls-body-]) ul,
+.gls-body:not([class*=gls-body-]) ol,
+.gls-body-default p,
+.gls-body-default ul,
+.gls-body-default ol {
   margin-bottom: var(--gls-body-default-paragraph-spacing);
 }
 .gls-body:not([class*=gls-body-]) * + p,
-.gls-body-default * + p {
-  margin-top: var(--gls-body-default-paragraph-spacing);
-}
-.gls-body:not([class*=gls-body-]) ul,
-.gls-body:not([class*=gls-body-]) ol,
-.gls-body-default ul,
-.gls-body-default ol {
-  margin-bottom: var(--gls-body-default-list-spacing);
-}
 .gls-body:not([class*=gls-body-]) * + ul,
 .gls-body:not([class*=gls-body-]) * + ol,
+.gls-body-default * + p,
 .gls-body-default * + ul,
 .gls-body-default * + ol {
-  margin-top: var(--gls-body-default-list-spacing);
+  margin-top: var(--gls-body-default-paragraph-spacing);
 }
 .gls-body:not([class*=gls-body-]) li + li,
 .gls-body-default li + li {
@@ -15640,19 +15636,15 @@ template {
   font-weight: var(--gls-body-feature-font-weight);
   line-height: var(--gls-body-feature-line-height);
 }
-.gls-body-feature p {
-  margin-bottom: var(--gls-body-feature-paragraph-spacing);
-}
-.gls-body-feature * + p {
-  margin-top: var(--gls-body-feature-paragraph-spacing);
-}
+.gls-body-feature p,
 .gls-body-feature ul,
 .gls-body-feature ol {
-  margin-bottom: var(--gls-body-feature-list-spacing);
+  margin-bottom: var(--gls-body-feature-paragraph-spacing);
 }
+.gls-body-feature * + p,
 .gls-body-feature * + ul,
 .gls-body-feature * + ol {
-  margin-top: var(--gls-body-feature-list-spacing);
+  margin-top: var(--gls-body-feature-paragraph-spacing);
 }
 .gls-body-feature li + li {
   margin-top: var(--gls-body-feature-list-spacing);
@@ -15672,19 +15664,15 @@ template {
   font-weight: var(--gls-body-lead-font-weight);
   line-height: var(--gls-body-lead-line-height);
 }
-.gls-body-lead p {
-  margin-bottom: var(--gls-body-lead-paragraph-spacing);
-}
-.gls-body-lead * + p {
-  margin-top: var(--gls-body-lead-paragraph-spacing);
-}
+.gls-body-lead p,
 .gls-body-lead ul,
 .gls-body-lead ol {
-  margin-bottom: var(--gls-body-lead-list-spacing);
+  margin-bottom: var(--gls-body-lead-paragraph-spacing);
 }
+.gls-body-lead * + p,
 .gls-body-lead * + ul,
 .gls-body-lead * + ol {
-  margin-top: var(--gls-body-lead-list-spacing);
+  margin-top: var(--gls-body-lead-paragraph-spacing);
 }
 .gls-body-lead li + li {
   margin-top: var(--gls-body-lead-list-spacing);
@@ -15704,19 +15692,15 @@ template {
   font-weight: var(--gls-body-secondary-font-weight);
   line-height: var(--gls-body-secondary-line-height);
 }
-.gls-body-secondary p {
-  margin-bottom: var(--gls-body-secondary-paragraph-spacing);
-}
-.gls-body-secondary * + p {
-  margin-top: var(--gls-body-secondary-paragraph-spacing);
-}
+.gls-body-secondary p,
 .gls-body-secondary ul,
 .gls-body-secondary ol {
-  margin-bottom: var(--gls-body-secondary-list-spacing);
+  margin-bottom: var(--gls-body-secondary-paragraph-spacing);
 }
+.gls-body-secondary * + p,
 .gls-body-secondary * + ul,
 .gls-body-secondary * + ol {
-  margin-top: var(--gls-body-secondary-list-spacing);
+  margin-top: var(--gls-body-secondary-paragraph-spacing);
 }
 .gls-body-secondary li + li {
   margin-top: var(--gls-body-secondary-list-spacing);
@@ -15736,19 +15720,15 @@ template {
   font-weight: var(--gls-body-caption-font-weight);
   line-height: var(--gls-body-caption-line-height);
 }
-.gls-body-caption p {
-  margin-bottom: var(--gls-body-caption-paragraph-spacing);
-}
-.gls-body-caption * + p {
-  margin-top: var(--gls-body-caption-paragraph-spacing);
-}
+.gls-body-caption p,
 .gls-body-caption ul,
 .gls-body-caption ol {
-  margin-bottom: var(--gls-body-caption-list-spacing);
+  margin-bottom: var(--gls-body-caption-paragraph-spacing);
 }
+.gls-body-caption * + p,
 .gls-body-caption * + ul,
 .gls-body-caption * + ol {
-  margin-top: var(--gls-body-caption-list-spacing);
+  margin-top: var(--gls-body-caption-paragraph-spacing);
 }
 .gls-body-caption li + li {
   margin-top: var(--gls-body-caption-list-spacing);
