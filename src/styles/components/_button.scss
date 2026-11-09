@@ -80,8 +80,7 @@
 
     // Outline button hover/focus fills with primary background and turns icon white
     &.gls-button-outline {
-        &:hover,
-        &:focus {
+        &:hover {
             .gls-button-icon,
             .gls-button-icon-leading,
             .gls-button-icon-trailing {

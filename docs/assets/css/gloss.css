@@ -15696,9 +15696,7 @@ template {
 }
 .gls-button.gls-button-outline:hover .gls-button-icon,
 .gls-button.gls-button-outline:hover .gls-button-icon-leading,
-.gls-button.gls-button-outline:hover .gls-button-icon-trailing, .gls-button.gls-button-outline:focus .gls-button-icon,
-.gls-button.gls-button-outline:focus .gls-button-icon-leading,
-.gls-button.gls-button-outline:focus .gls-button-icon-trailing {
+.gls-button.gls-button-outline:hover .gls-button-icon-trailing {
   color: #ffffff;
 }
 .gls-button.gls-button-icon-only {
