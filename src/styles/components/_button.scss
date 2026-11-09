@@ -29,6 +29,8 @@
             content: none;
         }
 
+        // Animated sliding underline: requires <span class="gls-button-label"> to scope
+        // the underline strictly to the text without running under trailing icons.
         .gls-button-label {
             position: relative;
             display: inline-block;
