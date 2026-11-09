@@ -15585,6 +15585,23 @@ template {
   font-family: var(--gls-font-family-base);
   font-feature-settings: var(--gls-font-feature-settings-base, "salt");
 }
+.gls-body ul:not([class]),
+[class*=gls-body-] ul:not([class]) {
+  list-style-type: disc;
+  padding-right: var(--base-list-padding-left, 1.5rem);
+}
+.gls-body ul:not([class]) ul,
+[class*=gls-body-] ul:not([class]) ul {
+  list-style-type: circle;
+}
+.gls-body ul:not([class]) ul ul,
+[class*=gls-body-] ul:not([class]) ul ul {
+  list-style-type: square;
+}
+.gls-body ol:not([class]),
+[class*=gls-body-] ol:not([class]) {
+  padding-right: var(--base-list-padding-left, 1.5rem);
+}
 
 /*
  * Default role fallback when .gls-body is applied without a specific role modifier

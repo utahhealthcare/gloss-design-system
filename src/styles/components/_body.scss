@@ -20,6 +20,23 @@
 [class*='gls-body-'] {
     font-family: var(--gls-font-family-base);
     font-feature-settings: var(--gls-font-feature-settings-base, 'salt');
+
+    ul:not([class]) {
+        list-style-type: disc;
+        padding-left: var(--base-list-padding-left, 1.5rem);
+
+        ul {
+            list-style-type: circle;
+        }
+
+        ul ul {
+            list-style-type: square;
+        }
+    }
+
+    ol:not([class]) {
+        padding-left: var(--base-list-padding-left, 1.5rem);
+    }
 }
 
 /*
