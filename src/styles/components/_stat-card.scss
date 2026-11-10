@@ -1,0 +1,98 @@
+// ========================================================================
+// Component: Stat Card
+// Description: Metric / impact callout card with custom background themes
+//              (Granite radial gradient, Sand, Lake) and compact radius.
+// ========================================================================
+
+.gls-stat-card {
+    display: block;
+    width: 100%;
+
+    .gls-card {
+        border-radius: var(--gls-border-rounded-lg, var(--border-rounded-lg, 8px));
+        border: none;
+    }
+
+    &.gls-stat-card-granite {
+        .gls-card {
+            background: radial-gradient(
+                120% 120% at 50% 0%,
+                var(--color-granite-700, #4f6972) 0%,
+                #435d68 100%
+            );
+            color: #ffffff;
+
+            .gls-h1,
+            [class*='gls-h'],
+            p {
+                color: #ffffff;
+            }
+
+            .gls-button-text,
+            .gls-button-link,
+            .gls-link {
+                color: #ffffff;
+
+                .gls-button-label,
+                .gls-button-icon,
+                .gls-button-icon-leading,
+                .gls-button-icon-trailing {
+                    color: #ffffff;
+                }
+
+                &.gls-button-text .gls-button-label::before {
+                    border-bottom-color: #ffffff;
+                }
+
+                &:hover,
+                &:focus {
+                    color: #ffffff;
+
+                    .gls-button-label,
+                    .gls-button-icon,
+                    .gls-button-icon-leading,
+                    .gls-button-icon-trailing {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    &.gls-stat-card-sand {
+        .gls-card {
+            background: var(--color-sand-100, #f3efe8);
+        }
+    }
+
+    &.gls-stat-card-lake {
+        .gls-card {
+            background: var(--color-lake-50, #f3f8f9);
+        }
+    }
+}
+
+// Match height: only active when inside a .gls-grid-match container
+.gls-grid-match {
+    height: 100%;
+    display: flex;
+    flex: 1 1 auto;
+
+    .gls-card {
+        height: 100%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+
+        // Push body text and subsequent CTA to the bottom, creating a flexible gap
+        .gls-text-small,
+        > :last-child {
+            margin-top: auto;
+        }
+
+        .gls-text-small + * {
+            margin-top: var(--global-margin, 16px);
+        }
+    }
+}

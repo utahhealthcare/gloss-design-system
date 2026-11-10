@@ -45,7 +45,57 @@ Generated files are clearly identified, must not be edited by hand, and are veri
 The files in `dist/` are generated distribution artifacts and are intentionally
 tracked. They are part of Gloss's public release surface so downstream teams
 can consume a specific Git tag through a CDN. Regenerate them with
-`npm run build:css`; never edit them directly.
+`npm run build`; never edit them directly.
+
+## Getting started & local testing
+
+### 1. Prerequisites & asset setup
+
+Per the [architectural boundary between open-source code and proprietary assets](#license-and-assets), licensed brand typography (**Sofia Pro**) and proprietary brand icons reside in private repositories. The test suite gracefully falls back to open-source system stacks if they are absent, but to test with full brand fidelity:
+
+```bash
+# Install root development dependencies
+npm install
+
+# Pull & build proprietary brand assets (requires GitHub org access)
+npm run setup:icons  # Clones & builds utahhealthcare/gloss-icons into assets-private/
+npm run setup:fonts  # Clones utahhealthcare/gloss-fonts into assets-private/
+
+# Or run both setup tasks at once:
+npm run setup
+```
+
+### 2. Building distribution assets
+
+The test pages and downstream consumers rely on compiled artifacts in `dist/`. Build all design tokens, stylesheets, JavaScript bundles, and icon transforms:
+
+```bash
+npm run build
+```
+
+Key build tasks:
+
+- `npm run build:css`: Compiles Sass to expanded and minified CSS (`dist/css/gloss.css`).
+- `npm run build:js`: Transforms UIkit JavaScript and public icons into `dist/js/gloss.js` and `dist/js/gloss-icons.js`.
+- `npm run build:tokens`: Generates CSS custom properties from design tokens.
+
+### 3. Running `/tests`
+
+To launch the interactive test suite with live reload:
+
+```bash
+npm test
+# or:
+npm run serve
+```
+
+This starts a BrowserSync server on port 3000 at `/tests/index.html`. The test suite automatically detects and injects:
+
+- Core compiled styles from `dist/css/gloss.css`
+- UIkit/Gloss behaviors from `dist/js/gloss.js`
+- Brand typography from `assets-private/brand-fonts/` (if present)
+- Brand icons from `assets-private/brand-icons/` (if present)
+- A component navigation dropdown to preview individual test pages (`stat-card.html`, `button.html`, `grid.html`, etc.)
 
 ## Development principles
 
