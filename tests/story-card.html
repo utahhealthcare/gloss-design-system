@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Story Card - Gloss tests</title>
+        <script src="js/test.js"></script>
+        <style>
+            body {
+                padding-bottom: 500px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Story Card</h1>
+            <p class="gls-text-lead">
+                Editorial narrative cards designed for carousels and highlight grids, featuring a
+                portrait media panel with a legibility scrim, an H3 headline, and an animated Text
+                Button link.
+            </p>
+
+            <h2>Image-Only Story Card (3-Column Layout)</h2>
+            <div class="gls-child-width-1-1 gls-child-width-1-3@m gls-grid" gls-grid>
+                <div>
+                    <article
+                        class="gls-story-card gls-story-card--image"
+                        aria-labelledby="story-card-1-title"
+                    >
+                        <div class="gls-story-card-media">
+                            <a
+                                href="#story-1"
+                                class="gls-story-card-media-link"
+                                tabindex="-1"
+                                aria-hidden="true"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=720&h=1120&q=80"
+                                    alt="Physician consulting with a patient in outpatient clinic"
+                                    width="720"
+                                    height="1120"
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="gls-story-card-image"
+                                />
+                                <div class="gls-story-card-scrim" aria-hidden="true"></div>
+                            </a>
+                        </div>
+                        <div class="gls-story-card-content">
+                            <h3 id="story-card-1-title" class="gls-story-card-title">
+                                Compassionate Heart Care When Every Second Counts
+                            </h3>
+                            <div class="gls-story-card-action">
+                                <a
+                                    class="gls-button gls-button-text gls-button-arrow-trailing"
+                                    href="#story-1"
+                                >
+                                    <span class="gls-button-label">Read Eliza's Story</span>
+                                    <span
+                                        class="gls-button-icon-trailing"
+                                        gls-icon="icon: arrow-right"
+                                    ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="gls-text-meta gls-margin-small-top">
+                        Card 1 (Standard 70-char headline)
+                    </p>
+                </div>
+
+                <div>
+                    <article
+                        class="gls-story-card gls-story-card--image"
+                        aria-labelledby="story-card-2-title"
+                    >
+                        <div class="gls-story-card-media">
+                            <a
+                                href="#story-2"
+                                class="gls-story-card-media-link"
+                                tabindex="-1"
+                                aria-hidden="true"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=720&h=1120&q=80"
+                                    alt="Surgical team performing advanced procedure in operating suite"
+                                    width="720"
+                                    height="1120"
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="gls-story-card-image"
+                                />
+                                <div class="gls-story-card-scrim" aria-hidden="true"></div>
+                            </a>
+                        </div>
+                        <div class="gls-story-card-content">
+                            <h3 id="story-card-2-title" class="gls-story-card-title">
+                                Pioneering Robotic Surgery: Returning to Marathon Running in Months
+                            </h3>
+                            <div class="gls-story-card-action">
+                                <a
+                                    class="gls-button gls-button-text gls-button-arrow-trailing"
+                                    href="#story-2"
+                                >
+                                    <span class="gls-button-label">Watch Marcus's Journey</span>
+                                    <span
+                                        class="gls-button-icon-trailing"
+                                        gls-icon="icon: arrow-right"
+                                    ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="gls-text-meta gls-margin-small-top">
+                        Card 2 (3-line wrap clamping test)
+                    </p>
+                </div>
+
+                <div>
+                    <article
+                        class="gls-story-card gls-story-card--image"
+                        aria-labelledby="story-card-3-title"
+                    >
+                        <div class="gls-story-card-media">
+                            <a
+                                href="#story-3"
+                                class="gls-story-card-media-link"
+                                tabindex="-1"
+                                aria-hidden="true"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=720&h=1120&q=80"
+                                    alt="Pediatric specialist holding infant patient hand"
+                                    width="720"
+                                    height="1120"
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="gls-story-card-image"
+                                />
+                                <div class="gls-story-card-scrim" aria-hidden="true"></div>
+                            </a>
+                        </div>
+                        <div class="gls-story-card-content">
+                            <h3 id="story-card-3-title" class="gls-story-card-title">
+                                Specialized Pediatric Care That Treats the Whole Family
+                            </h3>
+                            <div class="gls-story-card-action">
+                                <a
+                                    class="gls-button gls-button-text gls-button-arrow-trailing"
+                                    href="#story-3"
+                                >
+                                    <span class="gls-button-label">Explore Pediatric Care</span>
+                                    <span
+                                        class="gls-button-icon-trailing"
+                                        gls-icon="icon: arrow-right"
+                                    ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="gls-text-meta gls-margin-small-top">
+                        Card 3 (2-line headline with custom link)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

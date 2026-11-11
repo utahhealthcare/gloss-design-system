@@ -18074,6 +18074,89 @@ a.gls-social-youtube:active {
   margin-top: var(--global-margin, 16px);
 }
 
+.gls-story-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+  transform: none;
+  transition: none;
+  background: transparent;
+  width: 100%;
+}
+.gls-story-card .gls-story-card-media, .gls-story-card__media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/16;
+  border-radius: var(--border-rounded-lg, 8px);
+  overflow: hidden;
+  background-color: var(--color-gray-100, var(--color-gray-1, #f4f4f4));
+}
+@media (min-width: 640px) {
+  .gls-story-card .gls-story-card-media, .gls-story-card__media {
+    aspect-ratio: auto;
+    height: 520px;
+  }
+}
+@media (min-width: 1200px) {
+  .gls-story-card .gls-story-card-media, .gls-story-card__media {
+    height: 560px;
+  }
+}
+.gls-story-card .gls-story-card-media-link,
+.gls-story-card .gls-story-card-media-wrapper, .gls-story-card__media-link, .gls-story-card__media-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.gls-story-card .gls-story-card-media-link, .gls-story-card__media-link {
+  cursor: pointer;
+}
+.gls-story-card .gls-story-card-image, .gls-story-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.gls-story-card .gls-story-card-scrim, .gls-story-card__scrim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.15) 30%, transparent 60%);
+}
+.gls-story-card .gls-story-card-content, .gls-story-card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 0 1rem;
+  gap: 0.75rem;
+  flex-grow: 1;
+}
+.gls-story-card .gls-story-card-title, .gls-story-card__title {
+  font-family: var(--gls-font-family-heading, "Sofia Pro", sans-serif);
+  font-feature-settings: var(--gls-font-feature-settings-heading, normal);
+  font-size: 1.5rem;
+  line-height: 1.56;
+  font-weight: 700;
+  color: var(--global-color, #1a1a1a);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.gls-story-card .gls-story-card-action, .gls-story-card__action {
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+.gls-story-card .gls-story-card-action .gls-button-label, .gls-story-card__action .gls-button-label {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
 /**
  * Name:            Switcher
  * Description:     Component to navigate through different content panes

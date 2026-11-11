@@ -14,6 +14,10 @@
         {
             "title": "Quick Links Banner",
             "slug": "quick-links-banner"
+        },
+        {
+            "title": "Story Card",
+            "slug": "story-card"
         }
     ]
 }

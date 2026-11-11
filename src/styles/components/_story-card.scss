@@ -1,0 +1,122 @@
+// ========================================================================
+// Component: Story Card
+// Description: Editorial narrative card with portrait media panel,
+//              legibility scrim, headline, and animated text button link.
+// ========================================================================
+
+// 1. Variables
+$story-card-border-radius: var(--border-rounded-lg, 8px) !default;
+$story-card-media-bg: var(--color-gray-100, var(--color-gray-1, #f4f4f4)) !default;
+$story-card-title-font-family: var(--gls-font-family-heading, 'Sofia Pro', sans-serif) !default;
+$story-card-title-font-feature-settings: var(--gls-font-feature-settings-heading, normal) !default;
+$story-card-title-font-weight: 700 !default;
+$story-card-title-font-size: 1.5rem !default;
+$story-card-title-line-height: 1.56 !default;
+$story-card-title-color: var(--global-color, #1a1a1a) !default;
+
+.gls-story-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    background: transparent;
+    width: 100%;
+
+    // Media Panel
+    .gls-story-card-media,
+    &__media {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 9 / 16;
+        border-radius: $story-card-border-radius;
+        overflow: hidden;
+        background-color: $story-card-media-bg;
+
+        @media (min-width: 640px) {
+            aspect-ratio: auto;
+            height: 520px;
+        }
+
+        @media (min-width: 1200px) {
+            height: 560px;
+        }
+    }
+
+    .gls-story-card-media-link,
+    .gls-story-card-media-wrapper,
+    &__media-link,
+    &__media-wrapper {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .gls-story-card-media-link,
+    &__media-link {
+        cursor: pointer;
+    }
+
+    .gls-story-card-image,
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    // Bottom-up dark legibility gradient
+    .gls-story-card-scrim,
+    &__scrim {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.45) 0%,
+            rgba(0, 0, 0, 0.15) 30%,
+            transparent 60%
+        );
+    }
+
+    // Content Block Below Image
+    .gls-story-card-content,
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem 0 0;
+        gap: 0.75rem;
+        flex-grow: 1;
+    }
+
+    .gls-story-card-title,
+    &__title {
+        font-family: $story-card-title-font-family;
+        font-feature-settings: $story-card-title-font-feature-settings;
+        font-size: $story-card-title-font-size;
+        line-height: $story-card-title-line-height;
+        font-weight: $story-card-title-font-weight;
+        color: $story-card-title-color;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .gls-story-card-action,
+    &__action {
+        margin-top: auto;
+        padding-top: 0.25rem;
+
+        .gls-button-label {
+            // padding: 0;
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
+    }
+}
