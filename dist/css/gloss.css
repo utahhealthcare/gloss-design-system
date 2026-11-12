@@ -15776,7 +15776,7 @@ template {
 .gls-body,
 [class*=gls-body-] {
   font-family: var(--gls-font-family-base);
-  font-feature-settings: var(--gls-font-feature-settings-base, "salt");
+  font-feature-settings: var(--gls-font-feature-settings-base);
 }
 .gls-body ul:not([class]),
 [class*=gls-body-] ul:not([class]) {

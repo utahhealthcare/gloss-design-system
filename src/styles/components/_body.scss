@@ -19,7 +19,7 @@
 .gls-body,
 [class*='gls-body-'] {
     font-family: var(--gls-font-family-base);
-    font-feature-settings: var(--gls-font-feature-settings-base, 'salt');
+    font-feature-settings: var(--gls-font-feature-settings-base);
 
     ul:not([class]) {
         list-style-type: disc;
