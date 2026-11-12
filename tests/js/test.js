@@ -531,6 +531,7 @@
         'sortable',
         'spinner',
         'stack',
+        'stat-card',
         'stepper',
         'sticky-navbar',
         'sticky-parallax',

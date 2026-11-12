@@ -4,7 +4,7 @@
 
 $base-body-background: $global-background !default;
 $base-body-font-family: var(--gls-font-family-base) !default;
-$base-body-font-feature-settings: var(--gls-font-feature-settings-base, 'salt') !default;
+$base-body-font-feature-settings: var(--gls-font-feature-settings-base, normal) !default;
 $base-body-font-weight: $global-regular-font-weight !default;
 $base-body-font-size: $global-font-size !default;
 $base-body-line-height: $global-line-height !default;

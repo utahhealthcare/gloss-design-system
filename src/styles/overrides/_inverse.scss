@@ -26,30 +26,20 @@
     --gls-body-link-visited-underline-color: #{$inverse-global-emphasis-color};
     --gls-body-link-visited-thickness: 2px;
 
-    // Primary Button Inversion (WCAG Contrast on dark backgrounds)
-    .uk-button-primary {
-        background-color: var(--button-primary-background, $inverse-button-primary-background);
-        color: var(--button-primary-color, $inverse-button-primary-color);
-        border: var(--button-primary-border, $inverse-button-primary-border);
+    // Plain Link Inversion: Ensure icons inside inverted links inherit pure white
+    a,
+    .gls-link {
+        color: #ffffff;
+
+        [gls-icon],
+        .gls-icon,
+        svg {
+            color: inherit;
+        }
 
         &:hover,
         &:focus {
-            background-color: var(
-                --button-primary-hover-background,
-                $inverse-button-primary-hover-background
-            );
-            color: var(--button-primary-hover-color, $inverse-button-primary-hover-color);
-            border: var(--button-primary-hover-border, $inverse-button-primary-hover-border);
-        }
-
-        &:active,
-        &.uk-active {
-            background-color: var(
-                --button-primary-active-background,
-                $inverse-button-primary-active-background
-            );
-            color: var(--button-primary-active-color, $inverse-button-primary-active-color);
-            border: var(--button-primary-active-border, $inverse-button-primary-active-border);
+            color: #ffffff;
         }
     }
 }

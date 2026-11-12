@@ -4,6 +4,7 @@
     "section": "Components",
     "destinationRoot": "docs",
     "addenda": {
+        "button": "scripts/docs-addenda/button.md",
         "container": "scripts/docs-addenda/container.md",
         "grid": "scripts/docs-addenda/grid.md",
         "image": "scripts/docs-addenda/image.md",
