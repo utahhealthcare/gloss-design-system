@@ -22,6 +22,39 @@ The Story Card component combines an upper media panel with a lower content area
 | `.gls-story-card-title`, `.__title`       | Headline rendered as `<h3>` with clamp to 3 lines (≤ 70 characters recommended).                          |
 | `.gls-story-card-action`, `.__action`     | Action wrapper containing the design-system Text Button Special (`.gls-button-text.gls-button-arrow-trailing`). |
 
+<div class="gls-docs-example">
+    <div class="gls-width-1-3@m">
+        <article class="gls-story-card gls-story-card--image" aria-labelledby="story-card-title">
+            <div class="gls-story-card-media">
+                <a href="#story-demo" class="gls-story-card-media-link" tabindex="-1" aria-hidden="true">
+                    <img
+                        src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=720&h=1120&q=80"
+                        alt="Physician consulting with a patient in outpatient clinic"
+                        width="720"
+                        height="1120"
+                        loading="lazy"
+                        decoding="async"
+                        class="gls-story-card-image"
+                    />
+                    <div class="gls-story-card-scrim" aria-hidden="true"></div>
+                </a>
+            </div>
+
+            <div class="gls-story-card-content">
+                <h3 id="story-card-title" class="gls-story-card-title">
+                    Compassionate Heart Care When Every Second Counts
+                </h3>
+                <div class="gls-story-card-action">
+                    <a class="gls-button gls-button-text gls-button-arrow-trailing" href="#story-demo">
+                        <span class="gls-button-label">Read Eliza's Story</span>
+                        <span class="gls-button-icon-trailing gls-margin-small-left" gls-icon="icon: arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+
 ```html
 <article class="gls-story-card gls-story-card--image" aria-labelledby="story-card-title">
     <div class="gls-story-card-media">
@@ -46,7 +79,7 @@ The Story Card component combines an upper media panel with a lower content area
         <div class="gls-story-card-action">
             <a class="gls-button gls-button-text gls-button-arrow-trailing" href="/stories/eliza-heart-care">
                 <span class="gls-button-label">Read Eliza's Story</span>
-                <span class="gls-button-icon-trailing" gls-icon="icon: arrow-right"></span>
+                <span class="gls-button-icon-trailing gls-margin-small-left" gls-icon="icon: arrow-right"></span>
             </a>
         </div>
     </div>

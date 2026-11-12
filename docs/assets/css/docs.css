@@ -4,12 +4,7 @@
     --docs-sidebar-right-left: 0px;
     color: #21252e;
     background: #ffffff;
-    font-family:
-        system-ui,
-        -apple-system,
-        blinkmacsystemfont,
-        'Segoe UI',
-        sans-serif;
+    font-family: var(--gls-font-family-base);
 }
 
 body {

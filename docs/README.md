@@ -24,15 +24,16 @@ The compiled CSS and JavaScript files in `dist/` are tracked because they are
 the versioned distribution consumed by downstream teams. Use the exact Git tag
 for CDN consumption; do not link to `main` for production sites.
 
-Then start the local Jekyll server with Docker Desktop running:
+Then start the local Jekyll server with Docker Desktop running (mounting `assets-private` if testing with proprietary brand assets):
 
 ```sh
 docker run --rm -it \
   --volume "$PWD/docs:/srv/jekyll" \
+  --volume "$PWD/assets-private:/srv/jekyll/assets-private" \
   --publish 4000:4000 \
   --publish 35729:35729 \
   jekyll/jekyll:pages \
-  jekyll serve --host 0.0.0.0 --baseurl="" --livereload
+  jekyll serve --host 0.0.0.0 --baseurl="" --livereload --force_polling
 ```
 
 Open <http://localhost:4000/> in a browser. Re-run `npm run build:docs` after
