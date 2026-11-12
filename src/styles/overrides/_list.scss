@@ -107,16 +107,35 @@
         margin-top: var(--list-margin-top, var(--global-xsmall-space, 8px));
     }
 
+    // Alternating nested ordered lists for .uk-list-decimal
+    .uk-list-decimal ol,
+    .uk-list-decimal .uk-list-decimal {
+        list-style-type: lower-alpha;
+    }
+
+    .uk-list-decimal ol ol,
+    .uk-list-decimal .uk-list-decimal ol,
+    .uk-list-decimal .uk-list-decimal .uk-list-decimal {
+        list-style-type: decimal;
+    }
+
+    .uk-list-decimal ol ol ol,
+    .uk-list-decimal .uk-list-decimal ol ol,
+    .uk-list-decimal .uk-list-decimal .uk-list-decimal ol,
+    .uk-list-decimal .uk-list-decimal .uk-list-decimal .uk-list-decimal {
+        list-style-type: lower-alpha;
+    }
+
     :where(.coh-wysiwyg ol:not([class], [style])) {
         list-style-type: decimal;
     }
     :where(.coh-wysiwyg ol:not([class], [style]) ol:not([class], [style])) {
-        list-style-type: lower-latin;
+        list-style-type: lower-alpha;
     }
     :where(
         .coh-wysiwyg ol:not([class], [style]) ol:not([class], [style]) ol:not([class], [style])
     ) {
-        list-style-type: lower-roman;
+        list-style-type: decimal;
     }
     :where(
         .coh-wysiwyg
@@ -125,7 +144,7 @@
             ol:not([class], [style])
             ol:not([class], [style])
     ) {
-        list-style-type: upper-latin;
+        list-style-type: lower-alpha;
     }
     :where(
         .coh-wysiwyg
@@ -135,7 +154,7 @@
             ol:not([class], [style])
             ol:not([class], [style])
     ) {
-        list-style-type: upper-roman;
+        list-style-type: decimal;
     }
 
     :where(.coh-wysiwyg ul:not([class], [style])) {

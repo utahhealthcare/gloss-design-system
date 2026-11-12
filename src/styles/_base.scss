@@ -62,7 +62,7 @@
     --base-h6-line-height: var(--heading-base-line-height);
 
     --base-list-padding-left: 30px;
-    --base-list-marker-color: var(--color-primary);
+    --base-list-marker-color: var(--color-red-800);
 
     --base-hr-margin-vertical: var(--global-small-space);
     --base-hr-border-width: var(--global-border-width);
@@ -509,6 +509,34 @@ ul > li > ol,
 ol > li > ol,
 ol > li > ul {
     margin: 0;
+}
+
+/*
+ * Ordered lists: alternate between numerical (1, 2, 3) and alphabetical (a, b, c) across nested levels
+ */
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: decimal;
+}
+
+ol ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol ol ol {
+    list-style-type: decimal;
+}
+
+ol ol ol ol ol ol {
+    list-style-type: lower-alpha;
 }
 
 /*

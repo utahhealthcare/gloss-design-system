@@ -15,6 +15,16 @@
     --base-blockquote-footer-color: #{$inverse-global-color};
     --base-pre-color: #{$inverse-global-color};
     --base-pre-border: #{$inverse-global-border};
+    --gls-body-link-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-underline-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-hover-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-hover-thickness: 3px;
+    --gls-body-link-active-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-active-underline-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-active-thickness: 3px;
+    --gls-body-link-visited-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-visited-underline-color: #{$inverse-global-emphasis-color};
+    --gls-body-link-visited-thickness: 2px;
 
     // Plain Link Inversion: Ensure icons inside inverted links inherit pure white
     a,
