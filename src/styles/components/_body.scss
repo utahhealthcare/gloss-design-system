@@ -1,0 +1,248 @@
+/**
+ * Name:            Body
+ * Description:     Component for responsive semantic body typography
+ *
+ * Component:       `gls-body`
+ *
+ * Modifiers:       `gls-body-feature`
+ *                  `gls-body-lead`
+ *                  `gls-body-default`
+ *                  `gls-body-secondary`
+ *                  `gls-body-caption`
+ *
+ * ======================================================================== */
+
+/* ========================================================================
+   Component: Body
+ ========================================================================== */
+
+.gls-body,
+[class*='gls-body-'] {
+    font-family: var(--gls-font-family-base);
+    font-feature-settings: var(--gls-font-feature-settings-base);
+
+    ul:not([class]) {
+        list-style-type: disc;
+        padding-left: var(--base-list-padding-left, 1.5rem);
+
+        ul {
+            list-style-type: circle;
+        }
+
+        ul ul {
+            list-style-type: square;
+        }
+    }
+
+    ol:not([class]) {
+        padding-left: var(--base-list-padding-left, 1.5rem);
+    }
+}
+
+/*
+ * Default role fallback when .gls-body is applied without a specific role modifier
+ */
+.gls-body,
+.gls-body-default {
+    font-size: var(--gls-body-default-font-size);
+    font-weight: var(--gls-body-default-font-weight);
+    line-height: var(--gls-body-default-line-height);
+}
+
+.gls-body:not([class*='gls-body-']),
+.gls-body-default {
+    p,
+    ul,
+    ol {
+        margin-bottom: var(--gls-body-default-paragraph-spacing);
+    }
+
+    * + p,
+    * + ul,
+    * + ol {
+        margin-top: var(--gls-body-default-paragraph-spacing);
+    }
+
+    li + li {
+        margin-top: var(--gls-body-default-list-spacing);
+    }
+
+    .gls-list > :nth-child(n + 2) {
+        margin-top: var(--gls-body-default-list-spacing);
+    }
+
+    // Nested lists use list spacing for top margin
+    ul > li > ul,
+    ul > li > ol,
+    ol > li > ol,
+    ol > li > ul {
+        margin: var(--gls-body-default-list-spacing) 0 0 0;
+    }
+}
+
+.gls-body-feature {
+    font-size: var(--gls-body-feature-font-size);
+    font-weight: var(--gls-body-feature-font-weight);
+    line-height: var(--gls-body-feature-line-height);
+
+    p,
+    ul,
+    ol {
+        margin-bottom: var(--gls-body-feature-paragraph-spacing);
+    }
+
+    * + p,
+    * + ul,
+    * + ol {
+        margin-top: var(--gls-body-feature-paragraph-spacing);
+    }
+
+    li + li {
+        margin-top: var(--gls-body-feature-list-spacing);
+    }
+
+    .gls-list > :nth-child(n + 2) {
+        margin-top: var(--gls-body-feature-list-spacing);
+    }
+
+    // Nested lists use list spacing for top margin
+    ul > li > ul,
+    ul > li > ol,
+    ol > li > ol,
+    ol > li > ul {
+        margin: var(--gls-body-feature-list-spacing) 0 0 0;
+    }
+}
+
+.gls-body-lead {
+    font-size: var(--gls-body-lead-font-size);
+    font-weight: var(--gls-body-lead-font-weight);
+    line-height: var(--gls-body-lead-line-height);
+
+    p,
+    ul,
+    ol {
+        margin-bottom: var(--gls-body-lead-paragraph-spacing);
+    }
+
+    * + p,
+    * + ul,
+    * + ol {
+        margin-top: var(--gls-body-lead-paragraph-spacing);
+    }
+
+    li + li {
+        margin-top: var(--gls-body-lead-list-spacing);
+    }
+
+    .gls-list > :nth-child(n + 2) {
+        margin-top: var(--gls-body-lead-list-spacing);
+    }
+
+    // Nested lists use list spacing for top margin
+    ul > li > ul,
+    ul > li > ol,
+    ol > li > ol,
+    ol > li > ul {
+        margin: var(--gls-body-lead-list-spacing) 0 0 0;
+    }
+}
+
+.gls-body-secondary {
+    font-size: var(--gls-body-secondary-font-size);
+    font-weight: var(--gls-body-secondary-font-weight);
+    line-height: var(--gls-body-secondary-line-height);
+
+    p,
+    ul,
+    ol {
+        margin-bottom: var(--gls-body-secondary-paragraph-spacing);
+    }
+
+    * + p,
+    * + ul,
+    * + ol {
+        margin-top: var(--gls-body-secondary-paragraph-spacing);
+    }
+
+    li + li {
+        margin-top: var(--gls-body-secondary-list-spacing);
+    }
+
+    .gls-list > :nth-child(n + 2) {
+        margin-top: var(--gls-body-secondary-list-spacing);
+    }
+
+    // Nested lists use list spacing for top margin
+    ul > li > ul,
+    ul > li > ol,
+    ol > li > ol,
+    ol > li > ul {
+        margin: var(--gls-body-secondary-list-spacing) 0 0 0;
+    }
+}
+
+.gls-body-caption {
+    font-size: var(--gls-body-caption-font-size);
+    font-weight: var(--gls-body-caption-font-weight);
+    line-height: var(--gls-body-caption-line-height);
+
+    p,
+    ul,
+    ol {
+        margin-bottom: var(--gls-body-caption-paragraph-spacing);
+    }
+
+    * + p,
+    * + ul,
+    * + ol {
+        margin-top: var(--gls-body-caption-paragraph-spacing);
+    }
+
+    li + li {
+        margin-top: var(--gls-body-caption-list-spacing);
+    }
+
+    .gls-list > :nth-child(n + 2) {
+        margin-top: var(--gls-body-caption-list-spacing);
+    }
+
+    // Nested lists use list spacing for top margin
+    ul > li > ul,
+    ul > li > ol,
+    ol > li > ol,
+    ol > li > ul {
+        margin: var(--gls-body-caption-list-spacing) 0 0 0;
+    }
+}
+
+/*
+ * Hyperlinks within body copy
+ */
+.gls-body a:not([class*='gls-button']):not(.gls-link-reset),
+[class*='gls-body-'] a:not([class*='gls-button']):not(.gls-link-reset) {
+    color: var(--gls-body-link-color);
+    text-decoration: underline var(--gls-body-link-underline-color);
+    text-decoration-thickness: var(--gls-body-link-underline-thickness);
+    text-decoration-skip-ink: auto;
+    text-underline-offset: var(--gls-body-link-underline-offset);
+    border-radius: var(--global-rounded-sm);
+
+    &:visited {
+        color: var(--gls-body-link-visited-color);
+        text-decoration-color: var(--gls-body-link-visited-underline-color);
+        text-decoration-thickness: var(--gls-body-link-visited-thickness);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--gls-body-link-hover-color);
+        text-decoration-thickness: var(--gls-body-link-hover-thickness);
+    }
+
+    &:active {
+        color: var(--gls-body-link-active-color);
+        text-decoration-color: var(--gls-body-link-active-underline-color);
+        text-decoration-thickness: var(--gls-body-link-active-thickness);
+    }
+}

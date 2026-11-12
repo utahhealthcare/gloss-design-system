@@ -467,6 +467,7 @@
         'background',
         'badge',
         'base',
+        'body',
         'border',
         'breadcrumb',
         'button',
