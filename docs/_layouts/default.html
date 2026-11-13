@@ -7,6 +7,20 @@
         <meta name="description" content="{{ page.description | default: site.description }}" />
         <link rel="stylesheet" href="{{ '/assets/css/gloss.css' | relative_url }}" />
         <link rel="stylesheet" href="{{ '/assets/css/docs.css' | relative_url }}" />
+        <script>
+            // Conditionally load opt-in brand fonts from local gloss-fonts clone if installed
+            (function () {
+                try {
+                    const brandFonts = '{{ "/assets-private/brand-fonts/stylesheets/sofia-pro/v1/stylesheet.css" | relative_url }}';
+                    const req = new XMLHttpRequest();
+                    req.open('GET', brandFonts, false);
+                    req.send(null);
+                    if (req.status === 200) {
+                        document.writeln('<link rel="stylesheet" href="' + brandFonts + '">');
+                    }
+                } catch (e) {}
+            })();
+        </script>
     </head>
     <body class="gls-background-default">
         <header class="docs-header gls-navbar-container gls-navbar-transparent gls-background-primary" gls-sticky="media: 960; target-offset: 0;">

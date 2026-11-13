@@ -264,6 +264,10 @@
         "slug": "sticky"
     },
     {
+        "title": "Story Card",
+        "slug": "story-card"
+    },
+    {
         "title": "Subnav",
         "slug": "subnav"
     },

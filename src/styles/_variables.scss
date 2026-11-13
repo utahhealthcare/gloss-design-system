@@ -19,10 +19,10 @@ $breakpoint-xlarge: 1600px;
     --gls-font-family-system:
         -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
         sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --gls-font-family-base: 'Archivo', var(--gls-font-family-system);
-    --gls-font-family-heading: 'Sofia Pro', var(--gls-font-family-system);
-    --gls-font-feature-settings-base: normal;
-    --gls-font-feature-settings-heading: 'ss01' 1, 'salt' 1;
+    --gls-font-family-base: 'Sofia Pro', var(--gls-font-family-system);
+    --gls-font-family-heading: 'Archivo', var(--gls-font-family-system);
+    --gls-font-feature-settings-base: 'ss01' 1, 'salt' 1;
+    --gls-font-feature-settings-heading: normal;
     --global-font-family: var(--gls-font-family-base);
     --global-line-height: 1.5;
 

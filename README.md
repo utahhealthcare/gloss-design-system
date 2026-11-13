@@ -97,6 +97,26 @@ This starts a BrowserSync server on port 3000 at `/tests/index.html`. The test s
 - Brand icons from `assets-private/brand-icons/` (if present)
 - A component navigation dropdown to preview individual test pages (`stat-card.html`, `button.html`, `grid.html`, etc.)
 
+### 4. Running documentation locally (`docs/`)
+
+To prepare assets and preview the Jekyll documentation site in Docker:
+
+```bash
+# Build documentation assets (synchronizes changelog, compiles styles)
+npm run build:docs
+
+# Launch Jekyll container (mounting assets-private for brand assets):
+docker run --rm -it \
+  --volume "$PWD/docs:/srv/jekyll" \
+  --volume "$PWD/assets-private:/srv/jekyll/assets-private" \
+  --publish 4000:4000 \
+  --publish 35729:35729 \
+  jekyll/jekyll:pages \
+  jekyll serve --host 0.0.0.0 --baseurl="" --livereload --force_polling
+```
+
+Open <http://localhost:4000/> to browse the documentation site.
+
 ## Development principles
 
 - Prefer standards-based HTML, CSS, and JavaScript.

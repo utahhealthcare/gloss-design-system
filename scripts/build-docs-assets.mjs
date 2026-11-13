@@ -1,4 +1,5 @@
-import { access, copyFile, mkdir } from 'node:fs/promises';
+import { access, copyFile, cp, mkdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -24,4 +25,16 @@ for (const asset of assets) {
     await copyFile(sourcePath, destinationPath);
 }
 
-console.log(`Copied ${assets.length} generated asset(s) into docs/.`);
+// Copy open-source fonts for docs preview
+const directories = [{ source: 'dist/fonts', destination: 'docs/assets/fonts' }];
+
+for (const dir of directories) {
+    const src = path.join(projectDirectory, dir.source);
+    const dest = path.join(projectDirectory, dir.destination);
+    if (existsSync(src)) {
+        await mkdir(dest, { recursive: true });
+        await cp(src, dest, { recursive: true });
+    }
+}
+
+console.log(`Copied ${assets.length} generated asset(s) and directories into docs/.`);

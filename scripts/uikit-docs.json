@@ -16,6 +16,10 @@
             "slug": "quick-links-banner"
         },
         {
+            "title": "Story Card",
+            "slug": "story-card"
+        },
+        {
             "title": "Body",
             "slug": "body"
         }

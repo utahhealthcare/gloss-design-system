@@ -532,6 +532,7 @@
         'spinner',
         'stack',
         'stat-card',
+        'story-card',
         'stepper',
         'sticky-navbar',
         'sticky-parallax',
