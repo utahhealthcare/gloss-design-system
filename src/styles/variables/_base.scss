@@ -23,6 +23,7 @@ $base-quote-font-style: italic !default;
 $base-small-font-size: 80% !default;
 $base-margin-vertical: $global-small-space !default;
 $base-heading-font-family: var(--gls-font-family-heading) !default;
+$base-heading-font-feature-settings: var(--gls-font-feature-settings-heading, normal) !default;
 $base-heading-font-weight: $global-regular-font-weight !default;
 $base-heading-color: $global-emphasis-color !default;
 $base-heading-text-transform: none !default;
