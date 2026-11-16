@@ -37,6 +37,11 @@
 
         // On mobile/tablet (< 960px), allow flow so the search box can sit beneath the photo
         @media (max-width: 959px) {
+            height: auto !important;
+            aspect-ratio: auto !important;
+            min-height: max-content;
+            overflow: visible;
+
             > * {
                 position: relative;
                 overflow: visible;
@@ -124,15 +129,14 @@
 
 // Caption Link: Text Button Special in 50% sand-950 pill
 .gls-hero-banner-caption {
-    position: relative;
+    position: absolute;
+    top: 16px;
+    left: 20px;
     z-index: 2;
-    margin-bottom: 16px;
 
     @media (min-width: 640px) {
-        position: absolute;
         top: 40px;
         left: 40px;
-        margin-bottom: 0;
     }
 
     @media (min-width: 1200px) {

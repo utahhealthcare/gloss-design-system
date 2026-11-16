@@ -18010,6 +18010,12 @@ template {
   display: flex;
 }
 @media (max-width: 959px) {
+  .gls-hero-banner .gls-slideshow-items {
+    height: auto !important;
+    aspect-ratio: auto !important;
+    min-height: max-content;
+    overflow: visible;
+  }
   .gls-hero-banner .gls-slideshow-items > * {
     position: relative;
     overflow: visible;
@@ -18081,16 +18087,15 @@ template {
 }
 
 .gls-hero-banner-caption {
-  position: relative;
+  position: absolute;
+  top: 16px;
+  left: 20px;
   z-index: 2;
-  margin-bottom: 16px;
 }
 @media (min-width: 640px) {
   .gls-hero-banner-caption {
-    position: absolute;
     top: 40px;
     left: 40px;
-    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {

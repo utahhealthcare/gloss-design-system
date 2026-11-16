@@ -18,7 +18,7 @@ The Hero Banner component is architected for top-of-page editorial landing exper
 | `.gls-hero-banner-media`             | Upper photo panel (fits content / min 350px on mobile, 50vh on tablet, full-bleed on desktop).           |
 | `.gls-hero-banner-image`             | Background image styled with `object-fit: cover` and lazy/fetchpriority support.                          |
 | `.gls-hero-banner-scrim`             | Multi-stop `uu-sand-950` gradient protecting white text contrast over imagery.                           |
-| `.gls-hero-banner-caption`           | Top caption pill container (in flow on mobile, absolute 40px top on tablet/desktop).                      |
+| `.gls-hero-banner-caption`           | Top caption pill container (absolute top: 16px mobile, 40px tablet/desktop, 80px large desktop).         |
 | `.gls-hero-banner-caption-link`      | Text Button Special on dark (50% sand-950 pill, 8px radius, 48px tap target, white arrow/underline).     |
 | `.gls-hero-banner-text-content`      | Anchored headline and supporting copy container.                                                          |
 | `.gls-hero-banner-title`             | Headline Line 1 (Archivo 700, never wraps, scales at 5.6vw up to 88px max, line-height 0.95).             |
