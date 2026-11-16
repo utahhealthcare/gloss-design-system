@@ -1,0 +1,370 @@
+// ========================================================================
+// Component: Hero Banner
+// Description: Specialized display hero with responsive photo panel,
+//              fluid headline typography, search box, and caption link.
+// ========================================================================
+
+.gls-hero-banner {
+    position: relative;
+    width: 100%;
+
+    // From 1760px, snaps to the 1600px column with 16px corners
+    @media (min-width: 1760px) {
+        max-width: 1600px;
+        margin: 0 auto;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    // Slideshow container sizing
+    .gls-slideshow-items {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        // Desktop (960px+): Screen height - nav - 20px, clamped 520px to 680px
+        @media (min-width: 960px) {
+            height: clamp(520px, calc(100vh - 100px), 680px);
+            overflow: hidden;
+        }
+
+        // Ensure static (single-slide) banners or active slides display properly
+        > *:first-child:last-child,
+        > .gls-active {
+            display: flex;
+        }
+
+        // On mobile/tablet (< 960px), allow flow so the search box can sit beneath the photo
+        @media (max-width: 959px) {
+            > * {
+                position: relative;
+                overflow: visible;
+            }
+        }
+    }
+}
+
+// Slide item layout
+.gls-hero-banner-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: 960px) {
+        height: 100%;
+        position: relative;
+    }
+}
+
+// Photo / Media Container
+.gls-hero-banner-media {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    // Mobile (0–639px): Fits content, min 350px
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px 20px 20px;
+
+    // Tablet (640–959px): 50% of the screen, min 360px
+    @media (min-width: 640px) {
+        height: 50vh;
+        min-height: 360px;
+        padding: 40px;
+    }
+
+    // Desktop (960px+): Fills entire slide item
+    @media (min-width: 960px) {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        min-height: 0;
+        padding: 40px;
+        z-index: 1;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 40px 80px;
+    }
+
+    // Background image
+    .gls-hero-banner-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
+
+// Scrim gradient (uu-sand-950 #22201d stops)
+.gls-hero-banner-scrim {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 28%,
+        rgb(34 32 29 / 0.4) 42%,
+        rgb(34 32 29 / 0.62) 55%,
+        rgb(34 32 29 / 0.82) 75%,
+        rgb(34 32 29 / 0.94) 100%
+    );
+}
+
+// Caption Link: Text Button Special in 50% sand-950 pill
+.gls-hero-banner-caption {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 16px;
+
+    @media (min-width: 640px) {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 1200px) {
+        left: 80px;
+    }
+
+    .gls-hero-banner-caption-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 48px;
+        padding: 0 12px 0 16px;
+        border-radius: 8px;
+        background: rgb(34 32 29 / 0.5);
+        color: var(--color-white, #ffffff);
+        text-decoration: none;
+        font-size: 16px;
+
+        // Override icon color to white on dark caption pill
+        .gls-button-icon,
+        .gls-button-icon-trailing,
+        .gls-button-icon-leading {
+            color: var(--color-white, #ffffff);
+        }
+
+        .gls-button-label::before {
+            border-bottom-color: var(--color-white, #ffffff);
+        }
+
+        &:hover,
+        &:focus {
+            color: var(--color-white, #ffffff);
+            background: rgb(34 32 29 / 0.7);
+
+            .gls-button-icon,
+            .gls-button-icon-trailing,
+            .gls-button-icon-leading {
+                color: var(--color-white, #ffffff);
+            }
+        }
+    }
+}
+
+// Foreground Text Content
+.gls-hero-banner-text-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: var(--color-white, #ffffff);
+    max-width: 100%;
+
+    @media (min-width: 960px) {
+        max-width: calc(100% - 460px - 32px);
+    }
+
+    @media (min-width: 1200px) {
+        max-width: calc(100% - 600px - 32px);
+    }
+}
+
+// Headline Line 1
+.gls-hero-banner-title {
+    margin: 0;
+    font-family: var(--gls-font-family-heading);
+    font-feature-settings: var(--gls-font-feature-settings-heading, normal);
+    font-weight: 700;
+    color: var(--color-white, #ffffff);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+
+    // Mobile (0–639px): up to 36px
+    font-size: var(--heading-2xlarge-font-size, 36px);
+
+    // Tablet (640–959px): up to 56px
+    @media (min-width: 640px) {
+        font-size: 56px;
+    }
+
+    // Desktop (960px+): scales at 5.6vw up to 88px max
+    @media (min-width: 960px) {
+        font-size: clamp(54px, 5.6vw, 88px);
+    }
+}
+
+// Headline Line 2 (Subtitle)
+.gls-hero-banner-subtitle {
+    margin: 0;
+    // font-family: var(--gls-font-family-heading);
+    // font-feature-settings: var(--gls-font-feature-settings-heading, normal);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-white, #ffffff);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+
+    // Mobile (0–639px): up to 36px
+    font-size: var(--heading-2xlarge-font-size, 36px);
+
+    // Tablet (640–959px): up to 56px
+    @media (min-width: 640px) {
+        font-size: 56px;
+    }
+
+    // Desktop (960px+): scales at 5.6vw up to 88px max
+    @media (min-width: 960px) {
+        font-size: clamp(54px, 5.6vw, 88px);
+    }
+}
+
+// Supporting Copy (Body Text)
+.gls-hero-banner-body {
+    font-family: var(--gls-font-family-base);
+    font-weight: 400;
+    color: var(--color-white, #ffffff);
+    line-height: 1.5;
+    margin: 12px 0 0;
+    font-size: var(--global-medium-font-size, 16px);
+
+    // Below 480px: two balanced lines (about 26 characters each)
+    @media (max-width: 479px) {
+        max-width: 26ch;
+        text-wrap: balance;
+    }
+
+    // 640px+: 18px body copy with 20px top gap
+    @media (min-width: 640px) {
+        margin-top: 20px;
+        font-size: var(--global-large-font-size, 18px);
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    * + p {
+        margin-top: 12px;
+    }
+}
+
+// Search Box Panel
+.gls-hero-banner-search-box {
+    box-sizing: border-box;
+    background: var(--color-sand-100, #f3efe8);
+    position: relative;
+    z-index: 2;
+
+    // Mobile (0–639px): full width beneath photo with 20px padding
+    width: 100%;
+    padding: 20px;
+
+    // Tablet (640–959px): full width beneath photo with 40px padding
+    @media (min-width: 640px) {
+        padding: 40px;
+    }
+
+    // Desktop (960px+): inside photo, bottom right, beside headline
+    @media (min-width: 960px) {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        border-radius: 16px;
+        padding: 30px 30px 32px;
+        height: 238px;
+
+        // 960–1199px: scales 460px to 520px (grows 1px per 4px of screen)
+        width: calc(460px + (100vw - 960px) * 0.25);
+    }
+
+    // 1200–1599px: scales 520px to 600px (reaches 600px at 1280px)
+    @media (min-width: 1200px) {
+        right: 80px;
+        bottom: 40px;
+        width: clamp(520px, calc(520px + (100vw - 1200px)), 600px);
+    }
+
+    // 1600px+: fixed 600px
+    @media (min-width: 1600px) {
+        width: 600px;
+    }
+
+    .gls-hero-search-box {
+        width: 100%;
+    }
+
+    .gls-hero-search-box-form {
+        margin: 0;
+        width: 100%;
+    }
+
+    .gls-hero-search-box-inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .gls-hero-search-box-input {
+        width: 100%;
+        height: 52px;
+        padding: 0 54px 0 16px;
+        border-radius: 8px;
+        background: var(--color-white, #ffffff);
+        border: 1px solid var(--color-sand-300, #d5cebe);
+        color: var(--color-sand-950, #22201d);
+        font-size: 16px;
+        line-height: normal;
+
+        &::placeholder {
+            color: var(--color-sand-600, #736b5e);
+        }
+
+        &:focus {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 1px;
+            border-color: var(--color-primary);
+        }
+    }
+
+    .gls-hero-search-box-button {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        bottom: 4px;
+        width: 44px;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+    }
+}

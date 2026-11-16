@@ -124,6 +124,10 @@
         "slug": "height"
     },
     {
+        "title": "Hero Banner",
+        "slug": "hero-banner"
+    },
+    {
         "title": "Icon",
         "slug": "icon"
     },

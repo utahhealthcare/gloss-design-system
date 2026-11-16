@@ -494,6 +494,7 @@
         'height-expand',
         'height-viewport',
         'height',
+        'hero-banner',
         'icon',
         'iconnav',
         'image',

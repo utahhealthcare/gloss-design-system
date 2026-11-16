@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Hero Banner - Gloss tests</title>
+        <script src="js/test.js"></script>
+        <style>
+            body {
+                padding-bottom: 500px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="gls-container gls-margin-top">
+            <h1>Hero Banner</h1>
+            <p class="gls-text-lead">
+                Specialized display hero with a full-bleed or column-snapped media panel, multi-stop
+                accessibility scrim, fluid headline typography (5.6vw up to 88px), a caption link
+                pill, and an integrated search box.
+            </p>
+        </div>
+
+        <!-- 1. Full Hero Banner Preview -->
+        <div class="gls-margin-large-top">
+            <div class="gls-hero-banner" gls-slideshow="animation: fade">
+                <ul class="gls-slideshow-items">
+                    <li class="gls-hero-banner-item gls-active">
+                        <div class="gls-hero-banner-media">
+                            <img
+                                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80"
+                                alt="Modern hospital building facade"
+                                data-gls-cover
+                                fetchpriority="high"
+                                class="gls-hero-banner-image"
+                            />
+                            <div class="gls-hero-banner-scrim" aria-hidden="true"></div>
+
+                            <div class="gls-hero-banner-caption">
+                                <a
+                                    href="#explore"
+                                    class="gls-button gls-button-text gls-button-arrow-trailing gls-hero-banner-caption-link"
+                                >
+                                    <span class="gls-button-label">Explore our care</span>
+                                    <span
+                                        class="gls-button-icon-trailing gls-margin-small-left"
+                                        gls-icon="icon: arrow-right; ratio: 0.8"
+                                    ></span>
+                                </a>
+                            </div>
+
+                            <div class="gls-hero-banner-text-content">
+                                <h1 class="gls-hero-banner-title">Healthcare</h1>
+                                <p class="gls-hero-banner-subtitle">Compassion</p>
+                                <div class="gls-hero-banner-body">
+                                    <p>
+                                        Leading the way in healthcare discovery, patient care, and
+                                        medical education across the Mountain West.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gls-hero-banner-search-box">
+                            <div class="gls-hero-search-box">
+                                <form
+                                    action="#search"
+                                    method="get"
+                                    role="search"
+                                    class="gls-hero-search-box-form"
+                                >
+                                    <div class="gls-hero-search-box-inner">
+                                        <label for="hero-search-1" class="gls-hidden-visually">
+                                            Find a doctor, service, or location...
+                                        </label>
+                                        <input
+                                            type="search"
+                                            id="hero-search-1"
+                                            name="q"
+                                            placeholder="Find a doctor, service, or location..."
+                                            autocomplete="off"
+                                            class="gls-input gls-hero-search-box-input"
+                                        />
+                                        <button
+                                            type="submit"
+                                            class="gls-button gls-button-primary gls-hero-search-box-button"
+                                            aria-label="Submit Search"
+                                        >
+                                            <span gls-icon="icon: search; ratio: 1.1"></span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2. Test Variation: Shorter headline with two-line body -->
+        <div class="gls-container gls-margin-large-top">
+            <h2>Variant: Concise Headline &amp; Balanced Copy</h2>
+        </div>
+
+        <div class="gls-margin-top">
+            <div class="gls-hero-banner" gls-slideshow="animation: fade">
+                <ul class="gls-slideshow-items">
+                    <li class="gls-hero-banner-item gls-active">
+                        <div class="gls-hero-banner-media">
+                            <img
+                                src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=80"
+                                alt="Physician listening attentively to a patient"
+                                data-gls-cover
+                                fetchpriority="high"
+                                class="gls-hero-banner-image"
+                            />
+                            <div class="gls-hero-banner-scrim" aria-hidden="true"></div>
+
+                            <div class="gls-hero-banner-caption">
+                                <a
+                                    href="#huntsman"
+                                    class="gls-button gls-button-text gls-button-arrow-trailing gls-hero-banner-caption-link"
+                                >
+                                    <span class="gls-button-label">Huntsman Cancer Institute</span>
+                                    <span
+                                        class="gls-button-icon-trailing gls-margin-small-left"
+                                        gls-icon="icon: arrow-right; ratio: 0.8"
+                                    ></span>
+                                </a>
+                            </div>
+
+                            <div class="gls-hero-banner-text-content">
+                                <h1 class="gls-hero-banner-title">World-Class Care</h1>
+                                <p class="gls-hero-banner-subtitle">Right Here in Utah</p>
+                                <div class="gls-hero-banner-body">
+                                    <p>
+                                        Advancing medical innovation through compassionate clinical
+                                        research and comprehensive community health.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gls-hero-banner-search-box">
+                            <div class="gls-hero-search-box">
+                                <form
+                                    action="#search"
+                                    method="get"
+                                    role="search"
+                                    class="gls-hero-search-box-form"
+                                >
+                                    <div class="gls-hero-search-box-inner">
+                                        <label for="hero-search-2" class="gls-hidden-visually">
+                                            Search conditions or services...
+                                        </label>
+                                        <input
+                                            type="search"
+                                            id="hero-search-2"
+                                            name="q"
+                                            placeholder="Search conditions or services..."
+                                            autocomplete="off"
+                                            class="gls-input gls-hero-search-box-input"
+                                        />
+                                        <button
+                                            type="submit"
+                                            class="gls-button gls-button-primary gls-hero-search-box-button"
+                                            aria-label="Submit Search"
+                                        >
+                                            <span gls-icon="icon: search; ratio: 1.1"></span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
