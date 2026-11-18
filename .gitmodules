@@ -1,4 +1,3 @@
 [submodule "vendor/uikit-site"]
 	path = vendor/uikit-site
 	url = https://github.com/uikit/uikit-site.git
-	branch = develop
