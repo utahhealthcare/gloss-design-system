@@ -209,6 +209,9 @@
     line-height: 0.95;
     letter-spacing: -0.03em;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 
     // Mobile (0–639px): up to 36px
     font-size: var(--heading-2xlarge-font-size, 36px);
@@ -235,6 +238,9 @@
     line-height: 0.95;
     letter-spacing: -0.03em;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 
     // Mobile (0–639px): up to 36px
     font-size: var(--heading-2xlarge-font-size, 36px);

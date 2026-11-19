@@ -18165,6 +18165,9 @@ template {
   line-height: 0.95;
   letter-spacing: -0.03em;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
   font-size: var(--heading-2xlarge-font-size, 36px);
 }
 @media (min-width: 640px) {
@@ -18186,6 +18189,9 @@ template {
   line-height: 0.95;
   letter-spacing: -0.03em;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
   font-size: var(--heading-2xlarge-font-size, 36px);
 }
 @media (min-width: 640px) {
