@@ -23,6 +23,25 @@
         text-decoration: none;
     }
 
+    // Trailing arrow: Scalable SVG animated chevron + extending shaft (via gls-trailing-arrow mixin)
+    &.gls-button-arrow-trailing,
+    &:has(.gls-button-icon-trailing[gls-icon*='arrow']),
+    &:has(.gls-button-icon-trailing[data-gls-icon*='arrow']) {
+        .gls-button-icon-trailing {
+            @include gls-trailing-arrow;
+        }
+
+        &:hover:not(:disabled):not(.gls-disabled):not([aria-disabled='true']),
+        &:focus-visible:not(:disabled):not(.gls-disabled):not([aria-disabled='true']),
+        &:active:not(:disabled):not(.gls-disabled):not([aria-disabled='true']),
+        &.gls-active:not(:disabled):not(.gls-disabled):not([aria-disabled='true']),
+        &[aria-pressed='true'] {
+            .gls-button-icon-trailing {
+                @include gls-trailing-arrow-active;
+            }
+        }
+    }
+
     // Text variant: animated underline on the label only so it doesn't span under the icon
     &.gls-button-text {
         &::before {
@@ -67,16 +86,19 @@
         }
     }
 
-    // Default, Outline, Text, and Link buttons on light surfaces: icon defaults to brand red
+    // Default, Outline, Text, Link, and Arrow-trailing buttons on light surfaces: icon defaults to brand red
     &.gls-button-default,
     &.gls-button-outline,
     &.gls-button-text,
     &.gls-button-link,
+    &.gls-button-arrow-trailing,
     &[class*='gls-link'] {
-        .gls-button-icon,
-        .gls-button-icon-leading,
-        .gls-button-icon-trailing {
-            color: var(--color-primary);
+        &:not(.gls-button-primary) {
+            .gls-button-icon,
+            .gls-button-icon-leading,
+            .gls-button-icon-trailing {
+                color: var(--color-primary);
+            }
         }
     }
 
@@ -194,47 +216,49 @@
         }
 
         &.gls-button-primary {
-            background-color: var(--button-primary-background, $inverse-button-primary-background);
-            color: var(--button-primary-color, $inverse-button-primary-color);
-            border: var(--button-primary-border, $inverse-button-primary-border);
+            background-color: #ffffff;
+            color: var(--color-primary);
+            border: 1px solid rgba(0, 0, 0, 0.1);
 
             .gls-button-label,
             .gls-button-icon,
             .gls-button-icon-leading,
             .gls-button-icon-trailing {
-                color: var(--button-primary-color, $inverse-button-primary-color);
+                color: var(--color-primary) !important;
             }
 
             &:hover,
             &:focus {
-                background-color: var(
-                    --button-primary-hover-background,
-                    $inverse-button-primary-hover-background
-                );
-                color: var(--button-primary-hover-color, $inverse-button-primary-hover-color);
-                border: var(--button-primary-hover-border, $inverse-button-primary-hover-border);
+                background-color: #ffffff;
+                color: var(--color-primary-hover);
+                border-color: rgba(0, 0, 0, 0.2);
 
                 .gls-button-label,
                 .gls-button-icon,
                 .gls-button-icon-leading,
                 .gls-button-icon-trailing {
-                    color: var(--button-primary-hover-color, $inverse-button-primary-hover-color);
+                    color: var(--color-primary-hover) !important;
                 }
             }
 
             &:active,
             &.gls-active {
-                background-color: var(
-                    --button-primary-active-background,
-                    $inverse-button-primary-active-background
-                );
-                color: var(--button-primary-active-color, $inverse-button-primary-active-color);
-                border: var(--button-primary-active-border, $inverse-button-primary-active-border);
+                background-color: #f3efe8;
+                color: var(--color-primary-active);
+                border-color: rgba(0, 0, 0, 0.3);
+
+                .gls-button-label,
+                .gls-button-icon,
+                .gls-button-icon-leading,
+                .gls-button-icon-trailing {
+                    color: var(--color-primary-active) !important;
+                }
             }
         }
 
         &.gls-button-text,
-        &.gls-button-link {
+        &.gls-button-link,
+        &.gls-button-arrow-trailing {
             color: #ffffff;
 
             .gls-button-label,
@@ -258,6 +282,123 @@
                 .gls-button-icon-trailing {
                     color: #ffffff;
                 }
+            }
+        }
+    }
+}
+
+// Reset buttons inside light cards/containers nested within an inverted dark parent
+:is(:--inverse)
+    :is(
+        .gls-card-default,
+        .gls-card-outline,
+        .gls-card-muted,
+        .gls-card-primary-light,
+        .gls-card-secondary-light,
+        .gls-stat-card:not(.gls-stat-card-granite)
+    ):not(.gls-stat-card-granite, .gls-stat-card-granite *) {
+    .gls-button.gls-button-primary {
+        background-color: var(--color-primary);
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        .gls-button-label,
+        .gls-button-icon,
+        .gls-button-icon-leading,
+        .gls-button-icon-trailing {
+            color: #ffffff !important;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-primary-hover);
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.5);
+
+            .gls-button-label,
+            .gls-button-icon,
+            .gls-button-icon-leading,
+            .gls-button-icon-trailing {
+                color: #ffffff !important;
+            }
+        }
+    }
+
+    .gls-button.gls-button-text,
+    .gls-button.gls-button-link,
+    .gls-button.gls-button-default,
+    .gls-button.gls-button-outline,
+    .gls-button.gls-button-arrow-trailing,
+    .gls-link {
+        color: var(--color-sand-950, #22201d);
+
+        .gls-button-label {
+            color: var(--color-sand-950, #22201d);
+        }
+
+        .gls-button-icon,
+        .gls-button-icon-leading,
+        .gls-button-icon-trailing,
+        .gls-trailing-arrow {
+            color: var(--color-primary) !important;
+
+            svg {
+                stroke: var(--color-primary) !important;
+            }
+        }
+
+        &.gls-button-text .gls-button-label::before {
+            border-bottom-color: var(--color-primary);
+        }
+    }
+}
+
+// When a story card, card, or link toggle is hovered/active, trigger trailing arrow animation
+.gls-card:hover,
+.gls-card:focus-within,
+.gls-card:active,
+.gls-card.gls-active,
+.gls-story-card:hover,
+.gls-story-card:focus-within,
+.gls-story-card:active,
+.gls-link-toggle:hover,
+.gls-link-toggle:focus-within,
+.gls-link-toggle:active {
+    .gls-button.gls-button-arrow-trailing,
+    .gls-button:has(.gls-button-icon-trailing[gls-icon*='arrow']),
+    .gls-button:has(.gls-button-icon-trailing[data-gls-icon*='arrow']) {
+        .gls-button-icon-trailing {
+            @include gls-trailing-arrow-active;
+        }
+    }
+}
+
+// Inverted context for standalone links and trailing arrows inside dark parents
+:--inverse a,
+:--inverse .gls-link,
+.gls-light a,
+.gls-light .gls-link {
+    .gls-trailing-arrow,
+    [gls-icon*='arrow'] {
+        color: #ffffff;
+
+        svg {
+            stroke: #ffffff;
+        }
+    }
+}
+
+// Respect user preference for reduced motion
+@media (prefers-reduced-motion: reduce) {
+    .gls-button.gls-button-arrow-trailing,
+    .gls-button:has(.gls-button-icon-trailing[gls-icon*='arrow']),
+    .gls-button:has(.gls-button-icon-trailing[data-gls-icon*='arrow']),
+    .gls-trailing-arrow {
+        .gls-button-icon-trailing svg,
+        svg {
+            polyline,
+            line {
+                transition: none;
             }
         }
     }

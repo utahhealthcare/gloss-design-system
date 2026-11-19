@@ -202,3 +202,131 @@
     right: $arrow-size;
     bottom: calc($arrow-size / -2);
 }
+
+// ========================================================================
+// Trailing Arrow Mixin (Scalable Vector SVG: Chevron + Extending Shaft)
+// Description: Fully scalable trailing arrow indicator in font-relative (1em)
+//              units. Both the chevron (polyline) and horizontal shaft (line)
+//              share the exact same vector coordinate space (anchored on y=10)
+//              guaranteeing zero vertical drift across all browser zoom levels.
+// ========================================================================
+
+/// Renders a scalable trailing arrow indicator that sizes with font-size.
+/// At rest, displays a centered chevron. On hover/active, the chevron slides
+/// right and a shorter, thicker horizontal shaft extends out to the left.
+///
+/// @param {Length} $size [1em] - Container box width and height.
+/// @param {Number} $stroke-width [1.8] - Thickness of arrow strokes (in SVG 20x20 units).
+/// @param {Number} $shaft-scale [0.5] - Length multiplier for the horizontal body (shorter).
+/// @param {Length} $shift-rest [-4px] - Horizontal shift to center the chevron at rest.
+@mixin gls-trailing-arrow(
+    $size: 1em,
+    $stroke-width: 1.8,
+    $shaft-scale: 0.5,
+    $chevron-scale: 0.9,
+    $shift-rest: -4px
+) {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: $size;
+    height: $size;
+    min-width: $size;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    svg {
+        display: inline-block;
+        width: $size;
+        height: $size;
+        overflow: visible;
+        vertical-align: middle;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: $stroke-width;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+
+        polyline {
+            transform-box: fill-box;
+            transform-origin: 50% 50%;
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateX($shift-rest) scale($chevron-scale);
+        }
+
+        line {
+            transform-box: fill-box;
+            transform-origin: 100% 50%;
+            transform: translateX($shift-rest) scaleX(0);
+            opacity: 0;
+            transition:
+                transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.15s ease-in-out;
+        }
+    }
+}
+
+/// Applies the extended/active state to an element with the trailing arrow mixin.
+///
+/// @param {Number} $shaft-scale [0.7] - Length multiplier for the horizontal body.
+/// @param {Number} $chevron-scale [0.9] - Scale multiplier for the chevron head.
+/// @param {Length} $shift-active [0] - Horizontal shift when hovered/active.
+@mixin gls-trailing-arrow-active($shaft-scale: 0.7, $chevron-scale: 0.9, $shift-active: 0) {
+    svg {
+        polyline {
+            transform: translateX($shift-active) scale($chevron-scale);
+        }
+
+        line {
+            transform: translateX($shift-active) scaleX($shaft-scale);
+            opacity: 1;
+        }
+    }
+}
+
+/// Standalone utility class for using the trailing arrow anywhere in HTML.
+.gls-trailing-arrow {
+    @include gls-trailing-arrow;
+
+    &:hover,
+    &:focus,
+    &:active {
+        @include gls-trailing-arrow-active;
+    }
+}
+
+// Any parent link or button containing a trailing arrow activates on hover/focus/active
+a:hover,
+a:focus-visible,
+a:active,
+button:hover,
+button:focus-visible,
+button:active {
+    .gls-trailing-arrow {
+        @include gls-trailing-arrow-active;
+    }
+}
+
+// Links with trailing arrows: scope underline strictly to text so it does not bleed under or past the icon
+.gls-link-arrow,
+a.gls-link:has(.gls-trailing-arrow),
+a:not([class*='gls-button']):has(.gls-trailing-arrow) {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+
+    > span:not(.gls-trailing-arrow):not([class*='icon']) {
+        text-decoration: underline;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+
+        > span:not(.gls-trailing-arrow):not([class*='icon']) {
+            text-decoration: none;
+        }
+    }
+}

@@ -130,10 +130,55 @@
     }
 
     // Custom Workarounds for Light Cards nested on Inverted Dark Backgrounds
+    :is(:--inverse) .gls-stat-card:not(.gls-stat-card-granite),
     :is(:--inverse) .uk-card-default,
     :is(:--inverse) .uk-card-outline,
+    :is(:--inverse) .uk-card-muted,
     :is(:--inverse) .uk-card-primary-light,
     :is(:--inverse) .uk-card-secondary-light {
+        // Explicit foreground property resets (defeats grandparent descendant rules)
+        color: var(--global-color);
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .uk-h1,
+        .uk-h2,
+        .uk-h3,
+        .uk-h4,
+        .uk-h5,
+        .uk-h6,
+        [class*='uk-heading-'],
+        .uk-card-title {
+            color: var(--global-emphasis-color);
+        }
+
+        p {
+            color: var(--global-color);
+        }
+
+        a:not(.uk-button),
+        .uk-link {
+            color: var(--global-link-color);
+
+            &:hover,
+            &:focus {
+                color: var(--global-link-hover-color);
+            }
+        }
+
+        hr,
+        .uk-hr {
+            border-top-color: var(--global-border);
+        }
+
+        .uk-list-bullet > ::before {
+            color: var(--color-red-800, #be0000);
+        }
+
         --card-badge-background: var(--global-primary-background, initial);
         --card-badge-color: var(--global-inverse-color, initial);
 
@@ -144,7 +189,7 @@
         --card-outline-title-color: var(--global-emphasis-color, initial);
 
         --base-body-color: var(--global-color, initial);
-        --base-link-color: var(--global-color-white, initial);
+        --base-link-color: var(--global-link-color, initial);
         --base-link-hover-color: var(--global-link-hover-color, initial);
         --base-heading-color: var(--global-emphasis-color, initial);
         --base-list-marker-color: var(--color-red-800, initial);

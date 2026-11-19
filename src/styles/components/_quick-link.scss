@@ -29,27 +29,48 @@
             color: var(--color-sand-950);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             text-decoration: none;
+
+            .gls-quick-link-arrow {
+                @include gls-trailing-arrow-active;
+            }
         }
     }
 
     &:focus-visible {
         outline: 2px solid var(--gls-color-reference-focus);
         outline-offset: 2px;
+
+        .gls-quick-link-arrow {
+            @include gls-trailing-arrow-active;
+        }
+    }
+
+    &:active {
+        .gls-quick-link-arrow {
+            @include gls-trailing-arrow-active;
+        }
     }
 }
 
 /*
  * Forward arrow indicator pinned to the right
- * Adopts brand primary red (#BE0000) and ensures stroke fills currentColor
+ * Adopts brand primary red (#BE0000) with animated extending arrow on hover
  */
 .gls-quick-link-arrow {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    @include gls-trailing-arrow($size: 1.25em);
     color: var(--gls-color-reference-brand-primary) !important;
+    flex-shrink: 0;
 
     svg {
         stroke: var(--gls-color-reference-brand-primary) !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gls-quick-link-arrow svg {
+        polyline,
+        line {
+            transition: none;
+        }
     }
 }

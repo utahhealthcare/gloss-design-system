@@ -154,27 +154,10 @@
         text-decoration: none;
         font-size: 16px;
 
-        // Override icon color to white on dark caption pill
-        .gls-button-icon,
-        .gls-button-icon-trailing,
-        .gls-button-icon-leading {
-            color: var(--color-white, #ffffff);
-        }
-
-        .gls-button-label::before {
-            border-bottom-color: var(--color-white, #ffffff);
-        }
-
         &:hover,
         &:focus {
             color: var(--color-white, #ffffff);
             background: rgb(34 32 29 / 0.7);
-
-            .gls-button-icon,
-            .gls-button-icon-trailing,
-            .gls-button-icon-leading {
-                color: var(--color-white, #ffffff);
-            }
         }
     }
 }
@@ -230,8 +213,6 @@
 // Headline Line 2 (Subtitle)
 .gls-hero-banner-subtitle {
     margin: 0;
-    // font-family: var(--gls-font-family-heading);
-    // font-feature-settings: var(--gls-font-feature-settings-heading, normal);
     font-style: italic;
     font-weight: 400;
     color: var(--color-white, #ffffff);

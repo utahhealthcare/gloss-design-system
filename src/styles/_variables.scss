@@ -627,11 +627,8 @@ $breakpoint-xlarge: 1600px;
 /* .gls-section-secondary:not(.gls-preserve-color), */
 .gls-section-tertiary:not(.gls-preserve-color),
 .gls-section-granite:not(.gls-preserve-color),
-.uk-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
-.uk-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
-.uk-background-granite-900:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 /* .gls-tile-secondary:not(.gls-preserve-color), */
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -641,6 +638,7 @@ $breakpoint-xlarge: 1600px;
 /* .gls-card-secondary > :not([class*='gls-card-media']), */
 .gls-card-tertiary.gls-card-body,
 .gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-stat-card-granite,
 .gls-overlay-primary;
 
 /* Custom media queries
