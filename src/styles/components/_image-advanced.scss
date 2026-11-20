@@ -1,17 +1,23 @@
 // ========================================================================
-// Component: Image Collage
-// Description: Multi-image responsive layouts (Single 3:2, Double 2:3)
+// Component: Advanced Image
+// Description: Rich editorial image presentations (3:2 ratio, fixed height, dual collage)
 // ========================================================================
 
-.gls-image-collage {
+:root {
+    --gls-image-height-mobile: 260px;
+    --gls-image-height-tablet: 380px;
+    --gls-image-height-desktop: 500px;
+}
+
+.gls-image-advanced {
     display: block;
     width: 100%;
 
     // ----------------------------------------------------------------------
     // Single Image: Full Width, 3:2 Aspect Ratio
     // ----------------------------------------------------------------------
-    &-single {
-        .gls-image-collage-img {
+    &-ratio-3-2 {
+        .gls-image-advanced-img {
             display: block;
             width: 100%;
             aspect-ratio: 3 / 2;
@@ -20,17 +26,37 @@
     }
 
     // ----------------------------------------------------------------------
-    // Double Image: Overlapping Portrait Collage
+    // Single Image: Responsive Fixed Height
+    // ----------------------------------------------------------------------
+    &-fixed-height {
+        .gls-image-advanced-img {
+            display: block;
+            width: 100%;
+            height: var(--gls-image-height-mobile);
+            object-fit: cover;
+
+            @media (min-width: $breakpoint-small) {
+                height: var(--gls-image-height-tablet);
+            }
+
+            @media (min-width: $breakpoint-medium) {
+                height: var(--gls-image-height-desktop);
+            }
+        }
+    }
+
+    // ----------------------------------------------------------------------
+    // Collage: Overlapping Portrait Dual Image Layout
     // Uses CSS Grid shared cell stacking (grid-area: 1 / 1)
     // ----------------------------------------------------------------------
-    &-double {
+    &-collage {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         position: relative;
 
-        .gls-image-collage-wrapper {
+        .gls-image-advanced-wrapper {
             display: grid;
             position: relative;
             width: 100%;
@@ -39,11 +65,11 @@
         }
 
         // Both images share grid cell 1 / 1
-        .gls-image-collage-image {
+        .gls-image-advanced-image {
             grid-area: 1 / 1;
             max-width: 100%;
 
-            .gls-image-collage-img {
+            .gls-image-advanced-img {
                 display: block;
                 width: 100%;
                 height: 100%;
@@ -53,7 +79,7 @@
         }
 
         // 1. Primary image: Anchored to lower-left, 60% width, 80% height, in front
-        .gls-image-collage-primary {
+        .gls-image-advanced-primary {
             width: 60%;
             height: 80%;
             place-self: end start;
@@ -61,7 +87,7 @@
         }
 
         // 2. Secondary image: Anchored to upper-right, 48% width, 50% height, behind
-        .gls-image-collage-secondary {
+        .gls-image-advanced-secondary {
             width: 48%;
             height: 50%;
             place-self: start end;

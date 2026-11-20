@@ -498,7 +498,7 @@
         'icon',
         'iconnav',
         'image',
-        'image-collage',
+        'image-advanced',
         'label',
         'leader',
         'lightbox',
