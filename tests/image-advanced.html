@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Advanced Image - Gloss tests</title>
+        <script src="js/test.js"></script>
+    </head>
+
+    <body>
+        <div class="gls-container">
+            <h1>Advanced Image</h1>
+
+            <h2>Single (3:2 Aspect Ratio)</h2>
+            <div class="gls-child-width-1-2@m" gls-grid>
+                <div>
+                    <div class="gls-image-advanced gls-image-advanced-ratio-3-2">
+                        <img
+                            class="gls-image-advanced-img gls-border-rounded"
+                            src="images/photo.jpg"
+                            alt="Single landscape sample"
+                        />
+                    </div>
+                    <p class="gls-margin-small-top">Single 3:2 Banner (Full width)</p>
+                </div>
+                <div>
+                    <div class="gls-image-advanced gls-image-advanced-ratio-3-2">
+                        <img
+                            class="gls-image-advanced-img gls-border-rounded"
+                            src="images/size-h.jpg"
+                            alt="Single landscape sample"
+                        />
+                    </div>
+                    <p class="gls-margin-small-top">Single 3:2 Banner (Alternate)</p>
+                </div>
+            </div>
+
+            <h2>Single (Fixed Responsive Height: 260px mobile / 380px tablet / 500px desktop)</h2>
+            <div class="gls-child-width-1-2@m" gls-grid>
+                <div>
+                    <div class="gls-image-advanced gls-image-advanced-fixed-height">
+                        <img
+                            class="gls-image-advanced-img gls-border-rounded"
+                            src="images/photo.jpg"
+                            alt="Fixed height sample"
+                        />
+                    </div>
+                    <p class="gls-margin-small-top">
+                        Fixed Height Banner (Cropped with object-fit: cover)
+                    </p>
+                </div>
+                <div>
+                    <div class="gls-image-advanced gls-image-advanced-fixed-height">
+                        <img
+                            class="gls-image-advanced-img gls-border-rounded"
+                            src="images/size-v.jpg"
+                            alt="Fixed height vertical portrait cropped into horizontal container"
+                        />
+                    </div>
+                    <p class="gls-margin-small-top">
+                        Portrait photo cropped to fixed height container
+                    </p>
+                </div>
+            </div>
+
+            <h2>Collage (2:3 Portrait Overlapping Collage)</h2>
+            <div class="gls-child-width-1-2@m" gls-grid>
+                <div>
+                    <div class="gls-image-advanced gls-image-advanced-collage">
+                        <div class="gls-image-advanced-wrapper">
+                            <div class="gls-image-advanced-primary gls-image-advanced-image">
+                                <img
+                                    class="gls-image-advanced-img gls-border-rounded"
+                                    src="images/size-v.jpg"
+                                    alt="Primary lower-left portrait"
+                                />
+                            </div>
+                            <div class="gls-image-advanced-secondary gls-image-advanced-image">
+                                <img
+                                    class="gls-image-advanced-img gls-border-rounded"
+                                    src="images/photo2.jpg"
+                                    alt="Secondary upper-right portrait"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">
+                        Primary lower-left (60% width, front), Secondary upper-right (48% width,
+                        behind)
+                    </p>
+                </div>
+                <div>
+                    <div class="gls-image-advanced gls-image-advanced-collage">
+                        <div class="gls-image-advanced-wrapper">
+                            <div class="gls-image-advanced-primary gls-image-advanced-image">
+                                <img
+                                    class="gls-image-advanced-img gls-border-rounded"
+                                    src="images/photo3.jpg"
+                                    alt="Primary lower-left portrait"
+                                />
+                            </div>
+                            <div class="gls-image-advanced-secondary gls-image-advanced-image">
+                                <img
+                                    class="gls-image-advanced-img gls-border-rounded"
+                                    src="images/avatar.jpg"
+                                    alt="Secondary upper-right portrait"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gls-margin-small-top">Alternate photo pair</p>
+                </div>
+            </div>
+
+            <h2>Hide on Mobile / Tablet (.gls-visible@m)</h2>
+            <div class="gls-alert gls-alert-primary">
+                Resize viewport below 960px to verify that the image below disappears on mobile and
+                tablet.
+            </div>
+            <div class="gls-child-width-1-2@m gls-flex-middle" gls-grid>
+                <div>
+                    <div class="gls-image-advanced gls-image-advanced-ratio-3-2 gls-visible@m">
+                        <img
+                            class="gls-image-advanced-img gls-border-rounded"
+                            src="images/photo.jpg"
+                            alt="Hidden on mobile"
+                        />
+                    </div>
+                    <p class="gls-margin-small-top gls-visible@m">
+                        Visible only on desktop (≥ 960px)
+                    </p>
+                </div>
+                <div>
+                    <span class="gls-text-primary gls-text-bold gls-text-uppercase"
+                        >Department of Healthcare</span
+                    >
+                    <h2 class="gls-margin-small-top">Care tailored to your unique journey</h2>
+                    <p>
+                        Our specialized physicians and compassionate staff work together across
+                        dozens of clinics to ensure personalized, state-of-the-art treatment for
+                        every patient.
+                    </p>
+                    <p class="gls-margin-medium-top">
+                        <a href="#" class="gls-button gls-button-primary">Learn More</a>
+                    </p>
+                </div>
+            </div>
+
+            <h2>Within Split Layout (Grid)</h2>
+            <div class="gls-child-width-1-2@m gls-flex-middle" gls-grid>
+                <div>
+                    <div class="gls-image-advanced gls-image-advanced-collage">
+                        <div class="gls-image-advanced-wrapper">
+                            <div class="gls-image-advanced-primary gls-image-advanced-image">
+                                <img
+                                    class="gls-image-advanced-img gls-border-rounded"
+                                    src="images/size-v.jpg"
+                                    alt="Primary portrait"
+                                />
+                            </div>
+                            <div class="gls-image-advanced-secondary gls-image-advanced-image">
+                                <img
+                                    class="gls-image-advanced-img gls-border-rounded"
+                                    src="images/photo2.jpg"
+                                    alt="Secondary portrait"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="gls-text-primary gls-text-bold gls-text-uppercase"
+                        >Department of Healthcare</span
+                    >
+                    <h2 class="gls-margin-small-top">Care tailored to your unique journey</h2>
+                    <p>
+                        Our specialized physicians and compassionate staff work together across
+                        dozens of clinics to ensure personalized, state-of-the-art treatment for
+                        every patient.
+                    </p>
+                    <p class="gls-margin-medium-top">
+                        <a href="#" class="gls-button gls-button-primary">Learn More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

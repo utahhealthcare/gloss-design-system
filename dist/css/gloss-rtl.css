@@ -23684,48 +23684,82 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
   stroke: none;
 }
 
-.gls-image-collage {
+.gls-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.gls-image.gls-image-3-2 {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  object-position: center;
+}
+
+:root {
+  --gls-image-height-mobile: 260px;
+  --gls-image-height-tablet: 380px;
+  --gls-image-height-desktop: 500px;
+}
+
+.gls-image-advanced {
   display: block;
   width: 100%;
 }
-.gls-image-collage-single .gls-image-collage-img {
+.gls-image-advanced-ratio-3-2 .gls-image-advanced-img {
   display: block;
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: cover;
 }
-.gls-image-collage-double {
+.gls-image-advanced-fixed-height .gls-image-advanced-img {
+  display: block;
+  width: 100%;
+  height: var(--gls-image-height-mobile);
+  object-fit: cover;
+}
+@media (min-width: 640px) {
+  .gls-image-advanced-fixed-height .gls-image-advanced-img {
+    height: var(--gls-image-height-tablet);
+  }
+}
+@media (min-width: 960px) {
+  .gls-image-advanced-fixed-height .gls-image-advanced-img {
+    height: var(--gls-image-height-desktop);
+  }
+}
+.gls-image-advanced-collage {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   position: relative;
 }
-.gls-image-collage-double .gls-image-collage-wrapper {
+.gls-image-advanced-collage .gls-image-advanced-wrapper {
   display: grid;
   position: relative;
   width: 100%;
   max-width: 500px;
   aspect-ratio: 1/1;
 }
-.gls-image-collage-double .gls-image-collage-image {
+.gls-image-advanced-collage .gls-image-advanced-image {
   grid-area: 1/1;
   max-width: 100%;
 }
-.gls-image-collage-double .gls-image-collage-image .gls-image-collage-img {
+.gls-image-advanced-collage .gls-image-advanced-image .gls-image-advanced-img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: var(--border-rounded-border-radius, 4px);
 }
-.gls-image-collage-double .gls-image-collage-primary {
+.gls-image-advanced-collage .gls-image-advanced-primary {
   width: 60%;
   height: 80%;
   place-self: end start;
   z-index: 2;
 }
-.gls-image-collage-double .gls-image-collage-secondary {
+.gls-image-advanced-collage .gls-image-advanced-secondary {
   width: 48%;
   height: 50%;
   place-self: start end;

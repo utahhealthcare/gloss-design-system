@@ -1,0 +1,18 @@
+// ========================================================================
+// Component: Image
+// Description: Responsive image styles and aspect ratio modifiers
+// ========================================================================
+
+.gls-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    // 3:2 Landscape Aspect Ratio Constraint
+    &.gls-image-3-2 {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+        object-position: center;
+    }
+}

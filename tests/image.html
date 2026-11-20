@@ -19,14 +19,43 @@
                 <h1>Background Image Loading Eager</h1>
             </div>
 
-            <h2>Image Collage</h2>
+            <h2>Atomic Image Component</h2>
+
+            <div class="gls-child-width-1-2@m gls-margin-medium-bottom" gls-grid>
+                <div>
+                    <h3>Original / Natural Ratio</h3>
+                    <img
+                        class="gls-image gls-border-rounded"
+                        src="images/photo.jpg"
+                        alt="Original natural ratio sample"
+                    />
+                    <p class="gls-margin-small-top">
+                        Default (<code>gls-image</code>) preserves natural dimensions without
+                        cropping.
+                    </p>
+                </div>
+                <div>
+                    <h3>Constrained 3:2 Aspect Ratio</h3>
+                    <img
+                        class="gls-image gls-image-3-2 gls-border-rounded"
+                        src="images/size-v.jpg"
+                        alt="3:2 aspect ratio sample"
+                    />
+                    <p class="gls-margin-small-top">
+                        Constrained (<code>gls-image-3-2</code>) with
+                        <code>object-fit: cover</code> fills 3:2 frame cleanly.
+                    </p>
+                </div>
+            </div>
+
+            <h2>Advanced Image</h2>
 
             <div class="gls-child-width-1-2@m gls-margin-medium-bottom" gls-grid>
                 <div>
                     <h3>Single (3:2 Aspect Ratio)</h3>
-                    <div class="gls-image-collage gls-image-collage-single">
+                    <div class="gls-image-advanced gls-image-advanced-ratio-3-2">
                         <img
-                            class="gls-image-collage-img gls-border-rounded"
+                            class="gls-image-advanced-img gls-border-rounded"
                             src="images/photo.jpg"
                             alt="Single landscape sample"
                         />
@@ -35,18 +64,18 @@
                 </div>
                 <div>
                     <h3>Double (2:3 Overlapping Collage)</h3>
-                    <div class="gls-image-collage gls-image-collage-double">
-                        <div class="gls-image-collage-wrapper">
-                            <div class="gls-image-collage-primary gls-image-collage-image">
+                    <div class="gls-image-advanced gls-image-advanced-collage">
+                        <div class="gls-image-advanced-wrapper">
+                            <div class="gls-image-advanced-primary gls-image-advanced-image">
                                 <img
-                                    class="gls-image-collage-img gls-border-rounded"
+                                    class="gls-image-advanced-img gls-border-rounded"
                                     src="images/size-v.jpg"
                                     alt="Primary lower-left portrait"
                                 />
                             </div>
-                            <div class="gls-image-collage-secondary gls-image-collage-image">
+                            <div class="gls-image-advanced-secondary gls-image-advanced-image">
                                 <img
-                                    class="gls-image-collage-img gls-border-rounded"
+                                    class="gls-image-advanced-img gls-border-rounded"
                                     src="images/photo2.jpg"
                                     alt="Secondary upper-right portrait"
                                 />
@@ -54,7 +83,7 @@
                         </div>
                     </div>
                     <p class="gls-margin-small-top">
-                        Primary lower-left (68% width, front), Secondary upper-right (50% width,
+                        Primary lower-left (60% width, front), Secondary upper-right (48% width,
                         behind)
                     </p>
                 </div>

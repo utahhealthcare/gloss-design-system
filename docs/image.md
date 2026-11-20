@@ -258,27 +258,28 @@ UIkit.img(element, options);
 
 ---
 
-## Gloss image collage
+## Gloss advanced image
 
-Gloss adds responsive image collage layouts for single and dual image presentations:
+Gloss adds responsive layout options for editorial single and dual image presentations:
 
-| Class                          | Description                                                                                |
-| ------------------------------ | ------------------------------------------------------------------------------------------ |
-| `.gls-image-collage`           | Container element for the image collage layout.                                            |
-| `.gls-image-collage-single`    | Single image layout constraining the image to a 3:2 landscape aspect ratio.                |
-| `.gls-image-collage-double`    | Overlapping dual image layout with 2:3 portrait aspect ratio.                              |
-| `.gls-image-collage-wrapper`   | Constrains the dual image layout within a 1:1 aspect ratio grid.                           |
-| `.gls-image-collage-image`     | Base wrapper for each image in the dual collage layout.                                    |
-| `.gls-image-collage-primary`   | Lower-left primary image container (~68% width), positioned in front with rounded corners. |
-| `.gls-image-collage-secondary` | Upper-right secondary image container (~50% width), positioned behind the primary image.   |
-| `.gls-image-collage-img`       | Image element applying aspect ratio and object-fit cover.                                  |
+| Class                              | Description                                                                                      |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `.gls-image-advanced`              | Container element for advanced image presentation layouts.                                       |
+| `.gls-image-advanced-ratio-3-2`    | Single image layout constraining the image to a 3:2 landscape aspect ratio.                      |
+| `.gls-image-advanced-fixed-height` | Single image layout with responsive fixed heights (260px mobile / 380px tablet / 500px desktop). |
+| `.gls-image-advanced-collage`      | Overlapping dual image layout with 2:3 portrait aspect ratio.                                    |
+| `.gls-image-advanced-wrapper`      | Constrains the dual image layout within a 1:1 aspect ratio grid.                                 |
+| `.gls-image-advanced-image`        | Base wrapper for each image in the dual collage layout.                                          |
+| `.gls-image-advanced-primary`      | Lower-left primary image container (60% width, 80% height), positioned in front.                 |
+| `.gls-image-advanced-secondary`    | Upper-right secondary image container (48% width, 50% height), positioned behind.                |
+| `.gls-image-advanced-img`          | Image element applying aspect ratio or height with programmatic `object-fit: cover`.             |
 
 ### Single image (3:2)
 
 <div class="gls-docs-example">
-<div class="gls-image-collage gls-image-collage-single">
+<div class="gls-image-advanced gls-image-advanced-ratio-3-2">
     <img
-        class="gls-image-collage-img gls-border-rounded"
+        class="gls-image-advanced-img gls-border-rounded"
         src="images/photo.jpg"
         alt="Single image 3:2 aspect ratio"
     />
@@ -286,30 +287,52 @@ Gloss adds responsive image collage layouts for single and dual image presentati
 </div>
 
 ```html
-<div class="gls-image-collage gls-image-collage-single">
+<div class="gls-image-advanced gls-image-advanced-ratio-3-2">
     <img
-        class="gls-image-collage-img gls-border-rounded"
+        class="gls-image-advanced-img gls-border-rounded"
         src="images/photo.jpg"
         alt="Single image 3:2 aspect ratio"
     />
 </div>
 ```
 
-### Double image (overlapping portrait)
+### Single image (Fixed height)
 
 <div class="gls-docs-example">
-<div class="gls-image-collage gls-image-collage-double">
-    <div class="gls-image-collage-wrapper">
-        <div class="gls-image-collage-primary gls-image-collage-image">
+<div class="gls-image-advanced gls-image-advanced-fixed-height">
+    <img
+        class="gls-image-advanced-img gls-border-rounded"
+        src="images/photo.jpg"
+        alt="Single image fixed responsive height"
+    />
+</div>
+</div>
+
+```html
+<div class="gls-image-advanced gls-image-advanced-fixed-height">
+    <img
+        class="gls-image-advanced-img gls-border-rounded"
+        src="images/photo.jpg"
+        alt="Single image fixed responsive height"
+    />
+</div>
+```
+
+### Double image (overlapping portrait collage)
+
+<div class="gls-docs-example">
+<div class="gls-image-advanced gls-image-advanced-collage">
+    <div class="gls-image-advanced-wrapper">
+        <div class="gls-image-advanced-primary gls-image-advanced-image">
             <img
-                class="gls-image-collage-img gls-border-rounded"
+                class="gls-image-advanced-img gls-border-rounded"
                 src="images/size-v.jpg"
                 alt="Primary lower-left portrait"
             />
         </div>
-        <div class="gls-image-collage-secondary gls-image-collage-image">
+        <div class="gls-image-advanced-secondary gls-image-advanced-image">
             <img
-                class="gls-image-collage-img gls-border-rounded"
+                class="gls-image-advanced-img gls-border-rounded"
                 src="images/photo2.jpg"
                 alt="Secondary upper-right portrait"
             />
@@ -319,18 +342,18 @@ Gloss adds responsive image collage layouts for single and dual image presentati
 </div>
 
 ```html
-<div class="gls-image-collage gls-image-collage-double">
-    <div class="gls-image-collage-wrapper">
-        <div class="gls-image-collage-primary gls-image-collage-image">
+<div class="gls-image-advanced gls-image-advanced-collage">
+    <div class="gls-image-advanced-wrapper">
+        <div class="gls-image-advanced-primary gls-image-advanced-image">
             <img
-                class="gls-image-collage-img gls-border-rounded"
+                class="gls-image-advanced-img gls-border-rounded"
                 src="images/size-v.jpg"
                 alt="Primary lower-left portrait"
             />
         </div>
-        <div class="gls-image-collage-secondary gls-image-collage-image">
+        <div class="gls-image-advanced-secondary gls-image-advanced-image">
             <img
-                class="gls-image-collage-img gls-border-rounded"
+                class="gls-image-advanced-img gls-border-rounded"
                 src="images/photo2.jpg"
                 alt="Secondary upper-right portrait"
             />
