@@ -20,6 +20,10 @@
             "slug": "story-card"
         },
         {
+            "title": "Hero Banner",
+            "slug": "hero-banner"
+        },
+        {
             "title": "Body",
             "slug": "body"
         }

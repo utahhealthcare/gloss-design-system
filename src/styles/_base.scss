@@ -38,11 +38,7 @@
     --base-margin-vertical: var(--global-small-space);
 
     --base-heading-font-family: var(--gls-font-family-heading);
-    --base-heading-font-feature-settings: var(
-        --gls-font-feature-settings-heading,
-        'ss01' 1,
-        'salt' 1
-    );
+    --base-heading-font-feature-settings: var(--gls-font-feature-settings-heading, normal);
     --base-heading-font-weight: var(--global-regular-font-weight);
     --base-heading-color: var(--global-emphasis-color, black);
     --base-heading-text-transform: none;
@@ -421,9 +417,12 @@ h6,
 .gls-heading-medium,
 .gls-heading-large,
 .gls-heading-xlarge,
-.gls-heading-2xlarge {
+.gls-heading-2xlarge,
+[class*='uk-heading-'],
+[class*='gls-heading-'] {
     margin: 0 0 var(--base-margin-vertical) 0;
     font-family: var(--base-heading-font-family);
+    font-feature-settings: var(--base-heading-font-feature-settings);
     font-weight: var(--base-heading-font-weight);
     color: var(--base-heading-color);
     /* text-transform: var(--base-heading-text-transform); */
