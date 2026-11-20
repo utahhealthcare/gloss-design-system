@@ -28,16 +28,21 @@
                 color: #ffffff;
             }
 
-            .gls-button-text,
-            .gls-button-link,
-            .gls-link {
+            .gls-button,
+            .gls-link,
+            a {
                 color: #ffffff;
 
                 .gls-button-label,
                 .gls-button-icon,
                 .gls-button-icon-leading,
-                .gls-button-icon-trailing {
-                    color: #ffffff;
+                .gls-button-icon-trailing,
+                .gls-trailing-arrow {
+                    color: #ffffff !important;
+
+                    svg {
+                        stroke: #ffffff !important;
+                    }
                 }
 
                 &.gls-button-text .gls-button-label::before {
@@ -51,8 +56,13 @@
                     .gls-button-label,
                     .gls-button-icon,
                     .gls-button-icon-leading,
-                    .gls-button-icon-trailing {
-                        color: #ffffff;
+                    .gls-button-icon-trailing,
+                    .gls-trailing-arrow {
+                        color: #ffffff !important;
+
+                        svg {
+                            stroke: #ffffff !important;
+                        }
                     }
                 }
             }
@@ -62,12 +72,44 @@
     &.gls-stat-card-sand {
         .gls-card {
             background: var(--color-sand-100, #f3efe8);
+            color: var(--global-color, #22201d);
+
+            .gls-h1,
+            [class*='gls-h'],
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: var(--global-emphasis-color, #22201d);
+            }
+
+            p {
+                color: var(--global-color, #22201d);
+            }
         }
     }
 
     &.gls-stat-card-lake {
         .gls-card {
             background: var(--color-lake-50, #f3f8f9);
+            color: var(--global-color, #22201d);
+
+            .gls-h1,
+            [class*='gls-h'],
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: var(--global-emphasis-color, #22201d);
+            }
+
+            p {
+                color: var(--global-color, #22201d);
+            }
         }
     }
 }

@@ -790,6 +790,86 @@
                 <div class="gls-heading-sm">Heading SM / Small (1.125rem / 18px)</div>
                 <div class="gls-heading-base">Heading Base (1rem / 16px)</div>
             </div>
+
+            <h2>Eyebrow &amp; Heading Lockups</h2>
+            <p class="gls-text-lead">
+                Uppercase section and category kickers paired with headlines, automatically adapting
+                across light and inverted dark surfaces.
+            </p>
+
+            <div class="gls-child-width-1-3@m gls-grid-match gls-margin" gls-grid>
+                <!-- 1. Default Surface (Brand Red Kicker) -->
+                <div>
+                    <div class="gls-card gls-card-default gls-card-body">
+                        <div class="gls-heading-lockup">
+                            <span class="gls-eyebrow">Department of Neurology</span>
+                            <h3 class="gls-card-title">Comprehensive Stroke Care</h3>
+                        </div>
+                        <p class="gls-text-small">
+                            Standard eyebrow kicker renders in Brand Red on light surfaces with
+                            tight vertical spacing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. Muted & White Eyebrow Modifiers -->
+                <div>
+                    <div class="gls-card gls-card-outline gls-card-body">
+                        <div class="gls-heading-lockup">
+                            <span class="gls-eyebrow gls-eyebrow-muted">Clinical Research</span>
+                            <h3 class="gls-card-title">Translational Medicine</h3>
+                        </div>
+                        <p class="gls-text-small">
+                            Optional <code>gls-eyebrow-muted</code> modifier provides low-contrast
+                            category labeling.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3. Inverted Dark Surface (White Kicker) -->
+                <div>
+                    <div class="gls-card gls-card-body gls-section-primary gls-border-rounded-lg">
+                        <div class="gls-heading-lockup">
+                            <span class="gls-eyebrow">Emergency Services</span>
+                            <h3 class="gls-card-title">Level 1 Trauma Center</h3>
+                        </div>
+                        <p class="gls-text-small">
+                            Inside inverted dark containers, <code>gls-eyebrow</code> automatically
+                            inverts to pure white for high contrast.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inverted Granite Section with Light Card Boundary -->
+            <div
+                class="gls-section-granite gls-padding gls-margin-medium-top gls-border-rounded-lg"
+            >
+                <div class="gls-heading-lockup gls-margin-medium-bottom">
+                    <span class="gls-eyebrow">Academic Medical Center</span>
+                    <h2 class="gls-margin-remove">Leading Healthcare Innovation</h2>
+                </div>
+                <div class="gls-child-width-1-2@m gls-grid-match" gls-grid>
+                    <div>
+                        <p>
+                            Eyebrows sitting directly on dark sections render in crisp white text,
+                            defeating red-on-red illegibility.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="gls-card gls-card-default gls-card-body">
+                            <div class="gls-heading-lockup">
+                                <span class="gls-eyebrow">Patient Story</span>
+                                <h4 class="gls-card-title">Surviving Against All Odds</h4>
+                            </div>
+                            <p class="gls-text-small">
+                                Inside a light card nested on an inverted background, the eyebrow
+                                safely restores brand red.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

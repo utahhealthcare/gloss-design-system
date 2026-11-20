@@ -1,0 +1,78 @@
+// ========================================================================
+// Component: Eyebrow
+// Description: Uppercase section/category kicker positioned above headings
+//              with automatic light/dark surface inversion.
+// ========================================================================
+
+// 1. Variables
+$eyebrow-font-size: var(--global-small-font-size, 0.875rem) !default;
+$eyebrow-font-weight: var(--global-bold-font-weight, 700) !default;
+$eyebrow-line-height: 1.4 !default;
+$eyebrow-letter-spacing: 0.05em !default;
+$eyebrow-margin-bottom: var(--global-xsmall-space, 8px) !default;
+$eyebrow-color: var(--color-primary, #be0000) !default;
+$eyebrow-inverse-color: #ffffff !default;
+
+// 2. Base Component
+.gls-eyebrow {
+    display: block;
+    font-size: $eyebrow-font-size;
+    font-weight: $eyebrow-font-weight;
+    line-height: $eyebrow-line-height;
+    letter-spacing: $eyebrow-letter-spacing;
+    text-transform: uppercase;
+    color: $eyebrow-color;
+    margin-bottom: $eyebrow-margin-bottom;
+
+    // Modifiers
+    &.gls-eyebrow-muted {
+        color: var(--global-muted-color, #666666);
+    }
+
+    &.gls-eyebrow-white {
+        color: #ffffff;
+    }
+
+    // Inverted context (container :--inverse or explicit .gls-light on the kicker)
+    :--inverse &,
+    &.gls-light {
+        color: $eyebrow-inverse-color;
+
+        &.gls-eyebrow-muted {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+
+// 3. Heading Lockup Container
+.gls-heading-lockup {
+    display: flex;
+    flex-direction: column;
+
+    > .gls-eyebrow {
+        margin-bottom: $eyebrow-margin-bottom;
+    }
+
+    > :is(h1, h2, h3, h4, h5, h6, [class*='gls-h']) {
+        margin-top: 0;
+    }
+}
+
+// 4. Nested Light Containers inside Inverted Dark Grandparents
+:is(:--inverse)
+    :is(
+        .gls-card-default,
+        .gls-card-outline,
+        .gls-card-muted,
+        .gls-card-primary-light,
+        .gls-card-secondary-light,
+        .gls-stat-card:not(.gls-stat-card-granite)
+    ) {
+    .gls-eyebrow:not(.gls-eyebrow-white) {
+        color: $eyebrow-color;
+
+        &.gls-eyebrow-muted {
+            color: var(--global-muted-color, #666666);
+        }
+    }
+}
