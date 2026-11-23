@@ -13,22 +13,20 @@ The Footer Nav component provides two coordinated navigation structures designed
 1. **Primary Navigation Columns (`.gls-footer-nav`):** Auto-adapts to 1, 2, or 3 columns on tablet and desktop via CSS `:has()` rules, while automatically converting to touch-friendly, collapsible accordion panels on mobile screens (&lt; 640px).
 2. **Secondary Utility / Legal Row (`.gls-footer-legal`):** A flexible wrapping row for compliance, disclaimer, privacy, and copyright notices.
 
-| Class                            | Description                                                                                                                                           |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `.gls-footer-nav`                | Primary navigation wrapper element (`<nav>`).                                                                                                        |
-| `.gls-footer-nav-columns`        | Columns container list (`<ul>`) with accordion integration (`.gls-accordion`).                                                                        |
-| `.gls-footer-nav-col`            | Individual column item (`<li>`). Converts to an accordion panel on mobile screens.                                                                   |
-| `.gls-footer-nav-heading-static` | Static non-interactive `<h3>` heading visible only on tablet and desktop (hidden on mobile).                                                          |
-| `.gls-footer-nav-heading-toggle` | Interactive mobile toggle trigger link/button (`.gls-accordion-title`, hidden on tablet/desktop). Provides a minimum 48px touch target.               |
-| `.gls-footer-nav-heading-label`  | Label text inside the mobile toggle trigger.                                                                                                         |
-| `.gls-footer-nav-heading-icon`   | Animated chevron indicator (`gls-icon="icon: chevron-down"`) that rotates 180&deg; when expanded.                                                     |
-| `.gls-footer-nav-content`        | Column links wrapper (`.gls-accordion-content`). Expandable on mobile and forced visible on tablet/desktop.                                           |
-| `.gls-footer-nav-item`           | Individual link list item (`<li>`).                                                                                                                   |
-| `.gls-footer-nav-link`           | Navigation link anchor (`<a>`) with clean text at rest and a 2px underline on hover and focus.                                                        |
-| `.gls-footer-legal`              | Wrapper container for secondary institutional and legal links (`<div>`).                                                                              |
-| `.gls-footer-legal-list`         | Horizontal wrapping flex list (`<ul>`) for utility links.                                                                                             |
-| `.gls-footer-legal-item`         | Individual legal/utility item (`<li>`). Anchors have a persistent 1px underline that transitions to Sand 200 (`#dfdad1`) on hover and focus.          |
-| `.gls-footer-legal-copyright`    | Copyright text notice item within the legal list.                                                                                                     |
+| Class                            | Description                                                                                                                                  |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `.gls-footer-nav`                | Primary navigation wrapper element (`<nav>`).                                                                                               |
+| `.gls-footer-nav-columns`        | Columns container list (`<ul>`) with accordion integration (`.gls-accordion`).                                                               |
+| `.gls-footer-nav-col`            | Individual column item (`<li>`). Converts to an accordion panel on mobile screens.                                                           |
+| `.gls-footer-nav-heading-static` | Static non-interactive `<h3>` heading visible only on tablet and desktop (hidden on mobile).                                                 |
+| `.gls-footer-nav-heading-toggle` | Interactive mobile toggle trigger link (`.gls-accordion-title`, hidden on tablet/desktop). Automatically provides 48px target and rotating chevron. |
+| `.gls-footer-nav-content`        | Column links wrapper (`.gls-accordion-content`). Expandable on mobile and forced visible on tablet/desktop.                                  |
+| `.gls-footer-nav-item`           | Individual link list item (`<li>`).                                                                                                          |
+| `.gls-footer-nav-link`           | Navigation link anchor (`<a>`) with clean text at rest and a 2px underline on hover and focus.                                               |
+| `.gls-footer-legal`              | Wrapper container for secondary institutional and legal links (`<div>`).                                                                     |
+| `.gls-footer-legal-list`         | Horizontal wrapping flex list (`<ul>`) for utility links.                                                                                    |
+| `.gls-footer-legal-item`         | Individual legal/utility item (`<li>`). Anchors have a persistent 1px underline that transitions to Sand 200 (`#dfdad1`) on hover and focus. |
+| `.gls-footer-legal-copyright`    | Copyright text notice item within the legal list.                                                                                            |
 
 ---
 
@@ -40,6 +38,7 @@ The Footer Nav component adapts automatically across viewport sizes:
   * Columns stack vertically with `1px` translucent white dividers (`rgba(255, 255, 255, 0.2)`).
   * Static headings are hidden; interactive accordion toggles (`.gls-footer-nav-heading-toggle`) are displayed with a minimum `48px` touch target.
   * Toggling a section smoothly reveals its links and rotates the trailing chevron indicator 180&deg;.
+  * Focus states are suppressed on click or tap, but clearly visible when navigating with a keyboard.
   * Navigation links have a `16px` font size and `6px` vertical padding for optimal touch ergonomics.
 * **Tablet and Desktop Viewports (&ge; 640px):**
   * Columns display side-by-side in a responsive CSS Grid with a `32px` column gap.
@@ -59,10 +58,7 @@ By default, three or more columns automatically arrange into a 3-column grid on 
             <ul class="gls-footer-nav-columns gls-accordion" gls-accordion="multiple: true; targets: .gls-footer-nav-col;">
                 <li class="gls-footer-nav-col">
                     <h3 class="gls-footer-nav-heading-static">Patient Care</h3>
-                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                        <span class="gls-footer-nav-heading-label">Patient Care</span>
-                        <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-                    </a>
+                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Patient Care</a>
                     <div class="gls-accordion-content gls-footer-nav-content">
                         <ul class="gls-list gls-margin-remove">
                             <li class="gls-footer-nav-item">
@@ -82,10 +78,7 @@ By default, three or more columns automatically arrange into a 3-column grid on 
                 </li>
                 <li class="gls-footer-nav-col">
                     <h3 class="gls-footer-nav-heading-static">Education &amp; Research</h3>
-                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                        <span class="gls-footer-nav-heading-label">Education &amp; Research</span>
-                        <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-                    </a>
+                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Education &amp; Research</a>
                     <div class="gls-accordion-content gls-footer-nav-content">
                         <ul class="gls-list gls-margin-remove">
                             <li class="gls-footer-nav-item">
@@ -105,10 +98,7 @@ By default, three or more columns automatically arrange into a 3-column grid on 
                 </li>
                 <li class="gls-footer-nav-col">
                     <h3 class="gls-footer-nav-heading-static">About Us</h3>
-                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                        <span class="gls-footer-nav-heading-label">About Us</span>
-                        <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-                    </a>
+                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">About Us</a>
                     <div class="gls-accordion-content gls-footer-nav-content">
                         <ul class="gls-list gls-margin-remove">
                             <li class="gls-footer-nav-item">
@@ -137,10 +127,7 @@ By default, three or more columns automatically arrange into a 3-column grid on 
         <!-- Column 1 -->
         <li class="gls-footer-nav-col">
             <h3 class="gls-footer-nav-heading-static">Patient Care</h3>
-            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                <span class="gls-footer-nav-heading-label">Patient Care</span>
-                <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-            </a>
+            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Patient Care</a>
             <div class="gls-accordion-content gls-footer-nav-content">
                 <ul class="gls-list gls-margin-remove">
                     <li class="gls-footer-nav-item">
@@ -156,10 +143,7 @@ By default, three or more columns automatically arrange into a 3-column grid on 
         <!-- Column 2 -->
         <li class="gls-footer-nav-col">
             <h3 class="gls-footer-nav-heading-static">Education &amp; Research</h3>
-            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                <span class="gls-footer-nav-heading-label">Education &amp; Research</span>
-                <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-            </a>
+            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Education &amp; Research</a>
             <div class="gls-accordion-content gls-footer-nav-content">
                 <ul class="gls-list gls-margin-remove">
                     <li class="gls-footer-nav-item">
@@ -175,10 +159,7 @@ By default, three or more columns automatically arrange into a 3-column grid on 
         <!-- Column 3 -->
         <li class="gls-footer-nav-col">
             <h3 class="gls-footer-nav-heading-static">About Us</h3>
-            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                <span class="gls-footer-nav-heading-label">About Us</span>
-                <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-            </a>
+            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">About Us</a>
             <div class="gls-accordion-content gls-footer-nav-content">
                 <ul class="gls-list gls-margin-remove">
                     <li class="gls-footer-nav-item">
@@ -206,10 +187,7 @@ When exactly two columns are present, the grid automatically adapts to two equal
             <ul class="gls-footer-nav-columns gls-accordion" gls-accordion="multiple: true; targets: .gls-footer-nav-col;">
                 <li class="gls-footer-nav-col">
                     <h3 class="gls-footer-nav-heading-static">Patient Resources</h3>
-                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                        <span class="gls-footer-nav-heading-label">Patient Resources</span>
-                        <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-                    </a>
+                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Patient Resources</a>
                     <div class="gls-accordion-content gls-footer-nav-content">
                         <ul class="gls-list gls-margin-remove">
                             <li class="gls-footer-nav-item">
@@ -226,10 +204,7 @@ When exactly two columns are present, the grid automatically adapts to two equal
                 </li>
                 <li class="gls-footer-nav-col">
                     <h3 class="gls-footer-nav-heading-static">Contact &amp; Connect</h3>
-                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                        <span class="gls-footer-nav-heading-label">Contact &amp; Connect</span>
-                        <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-                    </a>
+                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Contact &amp; Connect</a>
                     <div class="gls-accordion-content gls-footer-nav-content">
                         <ul class="gls-list gls-margin-remove">
                             <li class="gls-footer-nav-item">
@@ -254,10 +229,7 @@ When exactly two columns are present, the grid automatically adapts to two equal
     <ul class="gls-footer-nav-columns gls-accordion" gls-accordion="multiple: true; targets: .gls-footer-nav-col;">
         <li class="gls-footer-nav-col">
             <h3 class="gls-footer-nav-heading-static">Patient Resources</h3>
-            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                <span class="gls-footer-nav-heading-label">Patient Resources</span>
-                <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-            </a>
+            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Patient Resources</a>
             <div class="gls-accordion-content gls-footer-nav-content">
                 <ul class="gls-list gls-margin-remove">
                     <li class="gls-footer-nav-item">
@@ -271,10 +243,7 @@ When exactly two columns are present, the grid automatically adapts to two equal
         </li>
         <li class="gls-footer-nav-col">
             <h3 class="gls-footer-nav-heading-static">Contact &amp; Connect</h3>
-            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                <span class="gls-footer-nav-heading-label">Contact &amp; Connect</span>
-                <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-            </a>
+            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Contact &amp; Connect</a>
             <div class="gls-accordion-content gls-footer-nav-content">
                 <ul class="gls-list gls-margin-remove">
                     <li class="gls-footer-nav-item">
@@ -302,10 +271,7 @@ When a single column is used, it expands to full width via `:has(> :nth-child(1)
             <ul class="gls-footer-nav-columns gls-accordion" gls-accordion="multiple: true; targets: .gls-footer-nav-col;">
                 <li class="gls-footer-nav-col">
                     <h3 class="gls-footer-nav-heading-static">Quick Navigation</h3>
-                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                        <span class="gls-footer-nav-heading-label">Quick Navigation</span>
-                        <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-                    </a>
+                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Quick Navigation</a>
                     <div class="gls-accordion-content gls-footer-nav-content">
                         <ul class="gls-list gls-margin-remove">
                             <li class="gls-footer-nav-item">
@@ -330,10 +296,7 @@ When a single column is used, it expands to full width via `:has(> :nth-child(1)
     <ul class="gls-footer-nav-columns gls-accordion" gls-accordion="multiple: true; targets: .gls-footer-nav-col;">
         <li class="gls-footer-nav-col">
             <h3 class="gls-footer-nav-heading-static">Quick Navigation</h3>
-            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                <span class="gls-footer-nav-heading-label">Quick Navigation</span>
-                <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-            </a>
+            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Quick Navigation</a>
             <div class="gls-accordion-content gls-footer-nav-content">
                 <ul class="gls-list gls-margin-remove">
                     <li class="gls-footer-nav-item">
@@ -413,10 +376,7 @@ To compose a complete footer navigation structure, place `.gls-footer-legal` bel
             <ul class="gls-footer-nav-columns gls-accordion" gls-accordion="multiple: true; targets: .gls-footer-nav-col;">
                 <li class="gls-footer-nav-col">
                     <h3 class="gls-footer-nav-heading-static">Patient Care</h3>
-                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                        <span class="gls-footer-nav-heading-label">Patient Care</span>
-                        <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-                    </a>
+                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Patient Care</a>
                     <div class="gls-accordion-content gls-footer-nav-content">
                         <ul class="gls-list gls-margin-remove">
                             <li class="gls-footer-nav-item">
@@ -430,10 +390,7 @@ To compose a complete footer navigation structure, place `.gls-footer-legal` bel
                 </li>
                 <li class="gls-footer-nav-col">
                     <h3 class="gls-footer-nav-heading-static">Education &amp; Research</h3>
-                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                        <span class="gls-footer-nav-heading-label">Education &amp; Research</span>
-                        <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-                    </a>
+                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">Education &amp; Research</a>
                     <div class="gls-accordion-content gls-footer-nav-content">
                         <ul class="gls-list gls-margin-remove">
                             <li class="gls-footer-nav-item">
@@ -447,10 +404,7 @@ To compose a complete footer navigation structure, place `.gls-footer-legal` bel
                 </li>
                 <li class="gls-footer-nav-col">
                     <h3 class="gls-footer-nav-heading-static">About Us</h3>
-                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">
-                        <span class="gls-footer-nav-heading-label">About Us</span>
-                        <span class="gls-footer-nav-heading-icon" gls-icon="icon: chevron-down; ratio: 0.7"></span>
-                    </a>
+                    <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#">About Us</a>
                     <div class="gls-accordion-content gls-footer-nav-content">
                         <ul class="gls-list gls-margin-remove">
                             <li class="gls-footer-nav-item">

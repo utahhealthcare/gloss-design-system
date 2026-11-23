@@ -1035,6 +1035,69 @@
 .gls-overlay-primary) .gls-link:focus {
   color: #ffffff;
 }
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-section-granite:not(.gls-preserve-color),
+.gls-background-granite-700:not(.gls-preserve-color),
+.gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-stat-card-granite,
+.gls-overlay-primary) .gls-accordion > :nth-child(n+2) {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-section-granite:not(.gls-preserve-color),
+.gls-background-granite-700:not(.gls-preserve-color),
+.gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-stat-card-granite,
+.gls-overlay-primary) .gls-accordion-title {
+  color: #ffffff;
+}
+:is(.gls-light,
+.gls-section-primary:not(.gls-preserve-color),
+
+.gls-section-tertiary:not(.gls-preserve-color),
+.gls-section-granite:not(.gls-preserve-color),
+.gls-background-granite-700:not(.gls-preserve-color),
+.gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
+.gls-tile-primary:not(.gls-preserve-color),
+
+.gls-tile-tertiary:not(.gls-preserve-color),
+.gls-card-primary.gls-card-body,
+.gls-card-primary > :not([class*='gls-card-media']),
+
+
+.gls-card-tertiary.gls-card-body,
+.gls-card-tertiary > :not([class*='gls-card-media']),
+.gls-stat-card-granite,
+.gls-overlay-primary) .gls-accordion-title:hover {
+  color: #ffffff;
+}
 
 :is(.gls-section-tertiary, .gls-tile-tertiary, .gls-card-tertiary) .gls-button-default {
   background-color: var(--color-trans-white-1);
@@ -8952,7 +9015,9 @@ a.gls-badge {
 }
 
 .gls-accordion {
-  overflow: hidden; /* UofU */
+  overflow: visible;
+  padding: 0;
+  list-style: none;
 }
 
 /* Item Border */
@@ -8979,41 +9044,128 @@ a.gls-badge {
 .coh-accordion-title > a,
 a.gls-accordion-title,
 .gls-accordion-title {
-  display: block;
-  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 6px;
+  box-sizing: border-box;
+  border-radius: var(--global-rounded-sm, 4px);
+  font-family: var(--gls-font-family-base, "Sofia Pro", sans-serif);
+  font-weight: 600;
+  font-size: 18px;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.9);
-  text-decoration: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.coh-accordion-title > a::before,
+a.gls-accordion-title::before,
+.gls-accordion-title::before {
+  display: none !important;
+  content: none !important;
+}
+.coh-accordion-title > a:focus,
+a.gls-accordion-title:focus,
+.gls-accordion-title:focus {
+  outline: none;
+}
+.coh-accordion-title > a:focus-visible,
+a.gls-accordion-title:focus-visible,
+.gls-accordion-title:focus-visible {
+  outline: 2px solid transparent !important;
+  outline-offset: var(--focus-ring-offset, 0) !important;
+  box-shadow: var(--focus-ring-box-shadow) !important;
+  z-index: 2;
+}
+.coh-accordion-title > a:focus:not(:focus-visible),
+a.gls-accordion-title:focus:not(:focus-visible),
+.gls-accordion-title:focus:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-/* Hover + Focus States */
+/* Hover States */
 .coh-accordion-title > a:hover,
-.coh-accordion-title > a:focus,
 a.gls-accordion-title:hover,
-a.gls-accordion-title:focus,
-.gls-accordion-title:hover,
-.gls-accordion-title:focus {
+.gls-accordion-title:hover {
   color: rgba(0, 0, 0, 0.8);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-/* Custom Accordion Close/Open SVG Icons */
-.coh-accordion-title > a::before,
-.gls-accordion-title::before {
-  content: "";
-  width: calc(1.4 * 1em);
-  height: calc(1.4 * 1em);
-  margin-left: 10px;
-  float: right;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='13' height='13' viewBox='0 0 13 13' xmlns='http://www.w3.org/2000/svg' fill='%23666'%3E %3Crect width='13' height='1' x='0' y='6'/%3E %3Crect width='1' height='13' x='6' y='0'/%3E %3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+/* Modern Chevron Indicator */
+.gls-accordion-icon,
+[gls-accordion-icon],
+.gls-accordion-heading-icon,
+.gls-footer-nav-heading-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.gls-accordion-icon svg,
+[gls-accordion-icon] svg,
+.gls-accordion-heading-icon svg,
+.gls-footer-nav-heading-icon svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  color: currentColor;
+  transition: transform 0.25s ease;
 }
 
-.is-active.coh-accordion-title > a::before,
-.gls-open > .gls-accordion-title::before {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='13' height='13' viewBox='0 0 13 13' xmlns='http://www.w3.org/2000/svg' fill='%23666'%3E %3Crect width='13' height='1' x='0' y='6'/%3E %3C/svg%3E");
+.gls-accordion-title[aria-expanded=true] .gls-accordion-icon,
+.gls-accordion-title[aria-expanded=true] [gls-accordion-icon],
+.gls-accordion-title[aria-expanded=true] .gls-accordion-heading-icon,
+.gls-accordion-title[aria-expanded=true] .gls-footer-nav-heading-icon,
+.gls-accordion-title[aria-expanded=true] [gls-icon*=chevron],
+.gls-accordion-title[aria-expanded=true] [gls-icon*=chevron],
+.gls-open > .gls-accordion-title .gls-accordion-icon,
+.gls-open > .gls-accordion-title [gls-accordion-icon],
+.gls-open > .gls-accordion-title .gls-accordion-heading-icon,
+.gls-open > .gls-accordion-title .gls-footer-nav-heading-icon,
+.gls-open > .gls-accordion-title [gls-icon*=chevron],
+.gls-open > .gls-accordion-title [gls-icon*=chevron],
+.gls-open > * > .gls-accordion-heading-icon,
+.gls-open > * > .gls-footer-nav-heading-icon,
+.gls-open > * > [gls-icon*=chevron],
+.gls-open > * > [gls-icon*=chevron],
+.gls-open .gls-accordion-heading-icon,
+.gls-open .gls-footer-nav-heading-icon,
+.gls-open [gls-icon*=chevron],
+.gls-open [gls-icon*=chevron] {
+  transform: rotate(180deg);
+}
+
+.gls-accordion-title:not(:has(.gls-accordion-icon)):not(:has([gls-accordion-icon])):not(:has([class*=icon]))::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 10px;
+  flex-shrink: 0;
+  background-color: currentColor;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 7 10 13 16 7'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 7 10 13 16 7'/%3E%3C/svg%3E");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  transition: transform 0.25s ease;
+}
+
+.gls-open > .gls-accordion-title:not(:has(.gls-accordion-icon)):not(:has([gls-accordion-icon])):not(:has([class*=icon]))::after,
+.gls-open .gls-accordion-title:not(:has(.gls-accordion-icon)):not(:has([gls-accordion-icon])):not(:has([class*=icon]))::after,
+.gls-accordion-title[aria-expanded=true]:not(:has(.gls-accordion-icon)):not(:has([gls-accordion-icon])):not(:has([class*=icon]))::after {
+  transform: rotate(180deg);
 }
 
 /* Content */
@@ -23703,7 +23855,6 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow: visible !important;
 }
 .gls-footer-nav-columns > :nth-child(n+2) {
   margin-top: 0 !important;
@@ -23724,33 +23875,11 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
     display: none !important;
   }
   .gls-footer-nav-columns .gls-footer-nav-heading-toggle {
-    font-family: var(--gls-font-family-base, "Sofia Pro", sans-serif);
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.4;
-    color: #ffffff !important;
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
     width: calc(100% + 12px) !important;
-    min-height: 48px;
-    padding: 12px 6px;
     margin: 0 -6px;
-    border-radius: var(--global-rounded-sm, 4px);
-    box-sizing: border-box;
   }
-  .gls-footer-nav-columns .gls-footer-nav-heading-toggle::before, .gls-footer-nav-columns .gls-footer-nav-heading-toggle::after {
-    display: none !important;
-    content: none !important;
-  }
-  .gls-footer-nav-columns .gls-footer-nav-heading-toggle:focus-visible, .gls-footer-nav-columns .gls-footer-nav-heading-toggle:focus {
-    outline: 2px solid transparent !important;
-    box-shadow: var(--focus-ring-box-shadow) !important;
-    z-index: 2;
-  }
-  .gls-footer-nav-columns .gls-footer-nav-heading-icon {
+  .gls-footer-nav-columns .gls-footer-nav-heading-icon,
+  .gls-footer-nav-columns [gls-icon*=chevron] {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -23760,14 +23889,20 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
     width: 20px;
     height: 20px;
   }
-  .gls-footer-nav-columns .gls-footer-nav-heading-icon svg {
-    width: 14px !important;
-    height: 14px !important;
-    stroke: #ffffff !important;
-    color: #ffffff !important;
+  .gls-footer-nav-columns .gls-footer-nav-heading-icon svg,
+  .gls-footer-nav-columns [gls-icon*=chevron] svg {
+    width: 14px;
+    height: 14px;
+    stroke: #ffffff;
+    color: #ffffff;
+    transition: transform 0.25s ease;
   }
   .gls-footer-nav-columns .gls-footer-nav-col.gls-open .gls-footer-nav-heading-icon,
-  .gls-footer-nav-columns .gls-footer-nav-heading-toggle[aria-expanded=true] .gls-footer-nav-heading-icon {
+  .gls-footer-nav-columns .gls-footer-nav-col.gls-open [gls-icon*=chevron],
+  .gls-footer-nav-columns .gls-open > .gls-footer-nav-heading-toggle .gls-footer-nav-heading-icon,
+  .gls-footer-nav-columns .gls-open > .gls-footer-nav-heading-toggle [gls-icon*=chevron],
+  .gls-footer-nav-columns .gls-footer-nav-heading-toggle[aria-expanded=true] .gls-footer-nav-heading-icon,
+  .gls-footer-nav-columns .gls-footer-nav-heading-toggle[aria-expanded=true] [gls-icon*=chevron] {
     transform: rotate(180deg);
   }
   .gls-footer-nav-columns .gls-footer-nav-content {

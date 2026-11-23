@@ -14,7 +14,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: visible !important;
 
     // Strip UIkit accordion default item margins
     > :nth-child(n + 2) {
@@ -39,40 +38,16 @@
             display: none !important;
         }
 
-        // Interactive mobile accordion trigger
+        // Accordion toggle inherits flex layout, 48px touch targets,
+        // typography, rotating chevron, and keyboard-only focus ring from .gls-accordion-title
         .gls-footer-nav-heading-toggle {
-            font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif);
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 1.4;
-            color: #ffffff !important;
-            text-decoration: none;
-            display: flex !important;
-            justify-content: space-between !important;
-            align-items: center !important;
             width: calc(100% + 12px) !important;
-            min-height: 48px;
-            padding: 12px 6px;
             margin: 0 -6px;
-            border-radius: var(--global-rounded-sm, 4px);
-            box-sizing: border-box;
-
-            // Strip UIkit default plus/minus pseudo-elements
-            &::before,
-            &::after {
-                display: none !important;
-                content: none !important;
-            }
-
-            &:focus-visible,
-            &:focus {
-                outline: 2px solid transparent !important;
-                box-shadow: var(--focus-ring-box-shadow) !important;
-                z-index: 2;
-            }
         }
 
-        .gls-footer-nav-heading-icon {
+        // Explicit chevron icon styling and rotation when an icon element is used
+        .gls-footer-nav-heading-icon,
+        [gls-icon*='chevron'] {
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -83,16 +58,20 @@
             height: 20px;
 
             svg {
-                width: 14px !important;
-                height: 14px !important;
-                stroke: #ffffff !important;
-                color: #ffffff !important;
+                width: 14px;
+                height: 14px;
+                stroke: #ffffff;
+                color: #ffffff;
+                transition: transform 0.25s ease;
             }
         }
 
-        // Rotate chevron 180deg when accordion item is open
         .gls-footer-nav-col.gls-open .gls-footer-nav-heading-icon,
-        .gls-footer-nav-heading-toggle[aria-expanded='true'] .gls-footer-nav-heading-icon {
+        .gls-footer-nav-col.gls-open [gls-icon*='chevron'],
+        .gls-open > .gls-footer-nav-heading-toggle .gls-footer-nav-heading-icon,
+        .gls-open > .gls-footer-nav-heading-toggle [gls-icon*='chevron'],
+        .gls-footer-nav-heading-toggle[aria-expanded='true'] .gls-footer-nav-heading-icon,
+        .gls-footer-nav-heading-toggle[aria-expanded='true'] [gls-icon*='chevron'] {
             transform: rotate(180deg);
         }
 

@@ -4,12 +4,14 @@
 
 @mixin hook-accordion-misc() {
     .uk-accordion {
-        overflow: hidden; /* UofU */
+        overflow: visible;
+        padding: 0;
+        list-style: none;
     }
 
     /* Item Border */
-    .coh-accordion-tabs-content-wrapper > .coh-accordion-title:not(:first-child),  /* TEMP */
-  .uk-accordion > :nth-child(n+2) {
+    .coh-accordion-tabs-content-wrapper > .coh-accordion-title:not(:first-child),
+    .uk-accordion > :nth-child(n + 2) {
         margin-top: $accordion-item-margin-top;
         padding-top: $accordion-item-padding-top;
         border-top: $accordion-item-border-width solid $accordion-item-border;
@@ -31,71 +33,166 @@
     .coh-accordion-title > a,
     a.uk-accordion-title,
     .uk-accordion-title {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: $accordion-title-min-height;
+        padding: $accordion-title-padding-vertical $accordion-title-padding-horizontal;
+        box-sizing: border-box;
+        border-radius: $accordion-title-border-radius;
+        font-family: $accordion-title-font-family;
+        font-weight: $accordion-title-font-weight;
         font-size: $accordion-title-font-size;
         line-height: $accordion-title-line-height;
         color: $accordion-title-color;
         text-decoration: $accordion-title-text-decoration;
+
+        // Strip legacy plus/minus pseudo-element
+        &::before {
+            display: none !important;
+            content: none !important;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        // Show focus ring on keyboard navigation only
+        &:focus-visible {
+            outline: 2px solid transparent !important;
+            outline-offset: var(--focus-ring-offset, 0) !important;
+            box-shadow: var(--focus-ring-box-shadow) !important;
+            z-index: 2;
+        }
+
+        // Explicitly suppress focus state on click or tap
+        &:focus:not(:focus-visible) {
+            outline: none !important;
+            box-shadow: none !important;
+        }
     }
 
-    /* Hover + Focus States */
-    .coh-accordion-title > a:hover, /* TEMP */
-  .coh-accordion-title > a:focus, /* TEMP */
-  a.uk-accordion-title:hover,
-  a.uk-accordion-title:focus,
-  .uk-accordion-title:hover,
-  .uk-accordion-title:focus {
+    /* Hover States */
+    .coh-accordion-title > a:hover,
+    a.uk-accordion-title:hover,
+    .uk-accordion-title:hover {
         color: $accordion-title-hover-color;
         text-decoration: none;
     }
 
-    /* Custom Accordion Close/Open SVG Icons */
-    .coh-accordion-title > a::before, /* TEMP */
-  .uk-accordion-title::before {
-        content: '';
-        width: calc(#{$accordion-title-line-height} * 1em);
-        height: calc(#{$accordion-title-line-height} * 1em);
-        margin-left: $accordion-icon-margin-left;
-        float: right;
-        background-image: svg-load('../images/backgrounds/accordion-close.svg', fill=#666);
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
+    /* Modern Chevron Indicator */
+    .uk-accordion-icon,
+    [uk-accordion-icon],
+    .uk-accordion-heading-icon,
+    .gls-footer-nav-heading-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: $accordion-icon-color;
+        transition: transform 0.25s ease;
+        flex-shrink: 0;
+        width: $accordion-icon-width;
+        height: $accordion-icon-height;
+
+        svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            color: currentColor;
+            transition: transform 0.25s ease;
+        }
     }
 
-    .is-active.coh-accordion-title > a::before, /* TEMP */
-  .uk-open > .uk-accordion-title::before {
-        background-image: svg-load('../images/backgrounds/accordion-open.svg', fill=#666);
+    // Rotate chevron 180deg when accordion item is open
+    .uk-accordion-title[aria-expanded='true'] .uk-accordion-icon,
+    .uk-accordion-title[aria-expanded='true'] [uk-accordion-icon],
+    .uk-accordion-title[aria-expanded='true'] .uk-accordion-heading-icon,
+    .uk-accordion-title[aria-expanded='true'] .gls-footer-nav-heading-icon,
+    .uk-accordion-title[aria-expanded='true'] [uk-icon*='chevron'],
+    .uk-accordion-title[aria-expanded='true'] [gls-icon*='chevron'],
+    .uk-open > .uk-accordion-title .uk-accordion-icon,
+    .uk-open > .uk-accordion-title [uk-accordion-icon],
+    .uk-open > .uk-accordion-title .uk-accordion-heading-icon,
+    .uk-open > .uk-accordion-title .gls-footer-nav-heading-icon,
+    .uk-open > .uk-accordion-title [uk-icon*='chevron'],
+    .uk-open > .uk-accordion-title [gls-icon*='chevron'],
+    .uk-open > * > .uk-accordion-heading-icon,
+    .uk-open > * > .gls-footer-nav-heading-icon,
+    .uk-open > * > [uk-icon*='chevron'],
+    .uk-open > * > [gls-icon*='chevron'],
+    .uk-open .uk-accordion-heading-icon,
+    .uk-open .gls-footer-nav-heading-icon,
+    .uk-open [uk-icon*='chevron'],
+    .uk-open [gls-icon*='chevron'] {
+        transform: rotate(180deg);
+    }
+
+    // Default chevron via ::after when no explicit icon element is present
+    .uk-accordion-title:not(:has(.uk-accordion-icon)):not(:has([uk-accordion-icon])):not(
+            :has([class*='icon'])
+        )::after {
+        content: '';
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-left: $accordion-icon-margin-left;
+        flex-shrink: 0;
+        background-color: currentColor;
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 7 10 13 16 7'/%3E%3C/svg%3E");
+        -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 7 10 13 16 7'/%3E%3C/svg%3E");
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-position: center;
+        -webkit-mask-position: center;
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        transition: transform 0.25s ease;
+    }
+
+    .uk-open
+        > .uk-accordion-title:not(:has(.uk-accordion-icon)):not(:has([uk-accordion-icon])):not(
+            :has([class*='icon'])
+        )::after,
+    .uk-open
+        .uk-accordion-title:not(:has(.uk-accordion-icon)):not(:has([uk-accordion-icon])):not(
+            :has([class*='icon'])
+        )::after,
+    .uk-accordion-title[aria-expanded='true']:not(:has(.uk-accordion-icon)):not(
+            :has([uk-accordion-icon])
+        ):not(:has([class*='icon']))::after {
+        transform: rotate(180deg);
     }
 
     /* Content */
-    .coh-accordion-tabs-content, /* TEMP */
-  .uk-accordion-content {
+    .coh-accordion-tabs-content,
+    .uk-accordion-content {
         display: flow-root;
         margin-top: $accordion-content-margin-top;
     }
 
     /* Remove margin from the last-child */
-    .coh-accordion-tabs-content > :last-child, /* TEMP */
-  .uk-accordion-content > :last-child {
+    .coh-accordion-tabs-content > :last-child,
+    .uk-accordion-content > :last-child {
         margin-bottom: 0;
     }
 
     /* Size modifier (Large Accordions) */
-    .uk-accordion-large .coh-accordion-title:not(:first-child), /* TEMP */
-  .uk-accordion-large > :nth-child(n+2) {
+    .uk-accordion-large .coh-accordion-title:not(:first-child),
+    .uk-accordion-large > :nth-child(n + 2) {
         margin-top: $accordion-large-item-margin-top;
         padding-top: $accordion-large-item-padding-top;
     }
 
     /* Title */
-    .uk-accordion-large .coh-accordion-title,  /* TEMP */
-  .uk-accordion-large .uk-accordion-title {
+    .uk-accordion-large .coh-accordion-title,
+    .uk-accordion-large .uk-accordion-title {
         font-size: $accordion-large-title-font-size;
     }
 
     /* Content */
-    .uk-accordion-large .coh-accordion-tabs-content, /* TEMP */
-  .uk-accordion-large .uk-accordion-content {
+    .uk-accordion-large .coh-accordion-tabs-content,
+    .uk-accordion-large .uk-accordion-content {
         margin-top: $accordion-large-content-margin-top;
         padding-bottom: $accordion-large-content-padding-bottom;
     }

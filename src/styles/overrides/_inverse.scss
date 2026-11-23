@@ -42,6 +42,19 @@
             color: #ffffff;
         }
     }
+
+    // Inverted Accordion Overrides
+    .uk-accordion > :nth-child(n + 2) {
+        border-top-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .uk-accordion-title {
+        color: #ffffff;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
 }
 
 // Custom Tertiary Inverse Button Overrides (WCAG contrast on custom dark tertiary containers)
