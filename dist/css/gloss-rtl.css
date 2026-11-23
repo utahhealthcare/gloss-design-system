@@ -775,6 +775,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -816,6 +817,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -833,6 +835,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -853,6 +856,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -870,6 +874,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -887,6 +892,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -904,6 +910,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -921,6 +928,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -938,6 +946,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -958,6 +967,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -975,6 +985,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -992,6 +1003,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -1009,6 +1021,7 @@
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5029,6 +5042,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5047,6 +5061,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5065,6 +5080,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5083,6 +5099,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5101,6 +5118,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5119,6 +5137,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5139,6 +5158,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5157,6 +5177,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5175,6 +5196,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5193,6 +5215,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5211,6 +5234,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5229,6 +5253,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5247,6 +5272,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5265,6 +5291,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5283,6 +5310,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5301,6 +5329,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5319,6 +5348,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5337,6 +5367,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5355,6 +5386,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5373,6 +5405,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5391,6 +5424,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5409,6 +5443,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5427,6 +5462,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5445,6 +5481,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5463,6 +5500,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5481,6 +5519,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5499,6 +5538,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5517,6 +5557,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5535,6 +5576,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5553,6 +5595,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5571,6 +5614,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5589,6 +5633,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5607,6 +5652,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5625,6 +5671,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5643,6 +5690,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5661,6 +5709,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5679,6 +5728,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5697,6 +5747,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5715,6 +5766,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5733,6 +5785,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5751,6 +5804,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5769,6 +5823,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5787,6 +5842,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5805,6 +5861,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5823,6 +5880,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5841,6 +5899,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5859,6 +5918,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5877,6 +5937,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5895,6 +5956,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5913,6 +5975,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5931,6 +5994,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5949,6 +6013,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5967,6 +6032,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -5985,6 +6051,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6003,6 +6070,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6021,6 +6089,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6039,6 +6108,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6057,6 +6127,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6075,6 +6146,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6093,6 +6165,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6111,6 +6184,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6129,6 +6203,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6147,6 +6222,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6165,6 +6241,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6183,6 +6260,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6201,6 +6279,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6219,6 +6298,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6237,6 +6317,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6255,6 +6336,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6273,6 +6355,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6291,6 +6374,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6309,6 +6393,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6327,6 +6412,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6345,6 +6431,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6363,6 +6450,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6381,6 +6469,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6399,6 +6488,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6417,6 +6507,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6435,6 +6526,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6453,6 +6545,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6471,6 +6564,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6489,6 +6583,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6507,6 +6602,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6525,6 +6621,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6543,6 +6640,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6561,6 +6659,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6579,6 +6678,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6597,6 +6697,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6615,6 +6716,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6633,6 +6735,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6653,6 +6756,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6671,6 +6775,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6689,6 +6794,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6707,6 +6813,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6725,6 +6832,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6743,6 +6851,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6763,6 +6872,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6781,6 +6891,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6799,6 +6910,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6817,6 +6929,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6835,6 +6948,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6853,6 +6967,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6871,6 +6986,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6889,6 +7005,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6907,6 +7024,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6925,6 +7043,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6943,6 +7062,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6961,6 +7081,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6981,6 +7102,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -6998,6 +7120,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7016,6 +7139,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7034,6 +7158,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7052,6 +7177,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7070,6 +7196,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7088,6 +7215,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7106,6 +7234,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7124,6 +7253,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7142,6 +7272,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7160,6 +7291,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7178,6 +7310,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7196,6 +7329,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7214,6 +7348,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7232,6 +7367,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7250,6 +7386,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7268,6 +7405,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7286,6 +7424,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7304,6 +7443,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7322,6 +7462,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7340,6 +7481,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7358,6 +7500,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7376,6 +7519,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7394,6 +7538,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7414,6 +7559,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7432,6 +7578,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7450,6 +7597,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7468,6 +7616,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7486,6 +7635,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7504,6 +7654,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7522,6 +7673,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7540,6 +7692,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7558,6 +7711,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7576,6 +7730,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7594,6 +7749,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7612,6 +7768,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7632,6 +7789,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7650,6 +7808,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7668,6 +7827,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7686,6 +7846,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7704,6 +7865,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7722,6 +7884,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7742,6 +7905,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7760,6 +7924,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7778,6 +7943,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7796,6 +7962,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7814,6 +7981,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -7832,6 +8000,7 @@ select.gls-form-width-xsmall {
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -14472,6 +14641,10 @@ iframe[data-gls-cover] {
   background-color: var(--color-granite-900);
 }
 
+.gls-background-sand-800 {
+  background-color: var(--color-sand-800);
+}
+
 /* ========================================================================
    Component: Align
  ========================================================================== */
@@ -19073,6 +19246,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19095,6 +19269,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19112,6 +19287,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19129,6 +19305,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19146,6 +19323,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19169,6 +19347,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19186,6 +19365,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19208,6 +19388,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19225,6 +19406,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19242,6 +19424,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19259,6 +19442,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19276,6 +19460,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19293,6 +19478,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19310,6 +19496,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19327,6 +19514,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19353,6 +19541,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19370,6 +19559,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19392,6 +19582,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19414,6 +19605,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19431,6 +19623,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19448,6 +19641,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19465,6 +19659,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19488,6 +19683,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19505,6 +19701,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19527,6 +19724,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19544,6 +19742,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19561,6 +19760,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19578,6 +19778,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19595,6 +19796,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19612,6 +19814,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19629,6 +19832,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19646,6 +19850,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19672,6 +19877,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19689,6 +19895,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19711,6 +19918,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19733,6 +19941,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19750,6 +19959,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19767,6 +19977,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19784,6 +19995,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19807,6 +20019,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19824,6 +20037,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19846,6 +20060,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19863,6 +20078,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19880,6 +20096,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19897,6 +20114,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19914,6 +20132,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19931,6 +20150,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19948,6 +20168,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19965,6 +20186,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -19991,6 +20213,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20008,6 +20231,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20030,6 +20254,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20047,6 +20272,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20064,6 +20290,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20081,6 +20308,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20098,6 +20326,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20115,6 +20344,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20132,6 +20362,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20149,6 +20380,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20175,6 +20407,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20192,6 +20425,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20209,6 +20443,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20229,6 +20464,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20246,6 +20482,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20263,6 +20500,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20280,6 +20518,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20297,6 +20536,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20314,6 +20554,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20331,6 +20572,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20348,6 +20590,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20365,6 +20608,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20382,6 +20626,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20399,6 +20644,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20416,6 +20662,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20445,6 +20692,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20462,6 +20710,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20479,6 +20728,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20499,6 +20749,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20516,6 +20767,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20533,6 +20785,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20550,6 +20803,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20567,6 +20821,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20584,6 +20839,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20604,6 +20860,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20621,6 +20878,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20638,6 +20896,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20655,6 +20914,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20672,6 +20932,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20689,6 +20950,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20706,6 +20968,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20723,6 +20986,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20740,6 +21004,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20757,6 +21022,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20774,6 +21040,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20791,6 +21058,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20808,6 +21076,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20825,6 +21094,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20842,6 +21112,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20859,6 +21130,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20876,6 +21148,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20893,6 +21166,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20910,6 +21184,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20927,6 +21202,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20944,6 +21220,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20961,6 +21238,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20978,6 +21256,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -20995,6 +21274,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21034,6 +21314,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21061,6 +21342,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21084,6 +21366,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21107,6 +21390,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21130,6 +21414,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21155,6 +21440,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21177,6 +21463,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21204,6 +21491,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21227,6 +21515,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21250,6 +21539,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21273,6 +21563,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21295,6 +21586,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21318,6 +21610,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21341,6 +21634,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21364,6 +21658,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21389,6 +21684,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21412,6 +21708,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21435,6 +21732,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21458,6 +21756,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21481,6 +21780,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21504,6 +21804,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21529,6 +21830,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21552,6 +21854,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21575,6 +21878,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21598,6 +21902,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21621,6 +21926,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21644,6 +21950,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21669,6 +21976,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21692,6 +22000,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21715,6 +22024,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21738,6 +22048,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21761,6 +22072,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21784,6 +22096,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21807,6 +22120,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21830,6 +22144,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21853,6 +22168,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21876,6 +22192,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21899,6 +22216,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21922,6 +22240,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21945,6 +22264,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21968,6 +22288,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -21991,6 +22312,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22014,6 +22336,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22037,6 +22360,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22060,6 +22384,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22083,6 +22408,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22106,6 +22432,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22129,6 +22456,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22152,6 +22480,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22175,6 +22504,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22198,6 +22528,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22223,6 +22554,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22246,6 +22578,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22269,6 +22602,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22292,6 +22626,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22315,6 +22650,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22338,6 +22674,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22361,6 +22698,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22384,6 +22722,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22407,6 +22746,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22430,6 +22770,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22453,6 +22794,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22476,6 +22818,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22499,6 +22842,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22522,6 +22866,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22545,6 +22890,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22568,6 +22914,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22591,6 +22938,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22614,6 +22962,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22637,6 +22986,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22660,6 +23010,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22683,6 +23034,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22706,6 +23058,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22729,6 +23082,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22752,6 +23106,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22777,6 +23132,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22800,6 +23156,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22823,6 +23180,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22846,6 +23204,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22869,6 +23228,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22892,6 +23252,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -22984,6 +23345,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23001,6 +23363,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23018,6 +23381,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23035,6 +23399,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23059,6 +23424,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23076,6 +23442,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23093,6 +23460,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23110,6 +23478,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23188,6 +23557,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23208,6 +23578,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23240,6 +23611,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23265,6 +23637,7 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-section-granite:not(.gls-preserve-color),
 .gls-background-granite-700:not(.gls-preserve-color),
 .gls-background-granite-900:not(.gls-preserve-color),
+.gls-background-sand-800:not(.gls-preserve-color),
 .gls-tile-primary:not(.gls-preserve-color),
 
 .gls-tile-tertiary:not(.gls-preserve-color),
@@ -23319,6 +23692,239 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
   font-display: swap;
 }
 /* stylelint-enable */
+/* ========================================================================
+   1. Primary Column Navigation (.gls-footer-nav)
+ ========================================================================== */
+.gls-footer-nav {
+  width: 100%;
+}
+
+.gls-footer-nav-columns {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible !important;
+}
+.gls-footer-nav-columns > :nth-child(n+2) {
+  margin-top: 0 !important;
+  border-top: none !important;
+}
+@media (max-width: 639px) {
+  .gls-footer-nav-columns {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .gls-footer-nav-columns .gls-footer-nav-col {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-heading-static {
+    display: none !important;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-heading-toggle {
+    font-family: var(--gls-font-family-base, "Sofia Pro", sans-serif);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #ffffff !important;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: calc(100% + 12px) !important;
+    min-height: 48px;
+    padding: 12px 6px;
+    margin: 0 -6px;
+    border-radius: var(--global-rounded-sm, 4px);
+    box-sizing: border-box;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-heading-toggle::before, .gls-footer-nav-columns .gls-footer-nav-heading-toggle::after {
+    display: none !important;
+    content: none !important;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-heading-toggle:focus-visible, .gls-footer-nav-columns .gls-footer-nav-heading-toggle:focus {
+    outline: 2px solid transparent !important;
+    box-shadow: var(--focus-ring-box-shadow) !important;
+    z-index: 2;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-heading-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-heading-icon svg {
+    width: 14px !important;
+    height: 14px !important;
+    stroke: #ffffff !important;
+    color: #ffffff !important;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-col.gls-open .gls-footer-nav-heading-icon,
+  .gls-footer-nav-columns .gls-footer-nav-heading-toggle[aria-expanded=true] .gls-footer-nav-heading-icon {
+    transform: rotate(-180deg);
+  }
+  .gls-footer-nav-columns .gls-footer-nav-content {
+    padding-top: 4px;
+    padding-bottom: 16px;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-item {
+    padding: 6px 0;
+    list-style: none;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-item a.gls-footer-nav-link {
+    font-family: var(--gls-font-family-base, "Sofia Pro", sans-serif);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--gls-body-link-color, #ffffff) !important;
+    -webkit-text-decoration: none !important;
+    text-decoration: none !important;
+    text-underline-offset: var(--gls-body-link-underline-offset, 2px);
+    -webkit-text-decoration-skip: ink;
+            text-decoration-skip-ink: auto;
+    border-radius: var(--global-rounded-sm, 4px);
+    transition: color 0.2s ease, text-decoration-thickness 0.2s ease;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-item a.gls-footer-nav-link:hover, .gls-footer-nav-columns .gls-footer-nav-item a.gls-footer-nav-link:focus {
+    color: var(--gls-body-link-hover-color, #ffffff) !important;
+    -webkit-text-decoration: underline var(--gls-body-link-underline-color, #ffffff) !important;
+            text-decoration: underline var(--gls-body-link-underline-color, #ffffff) !important;
+    text-decoration-thickness: 2px !important;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-item a.gls-footer-nav-link:active {
+    color: var(--gls-body-link-active-color, #ffffff) !important;
+    text-decoration-thickness: 2px !important;
+  }
+}
+@media (min-width: 640px) {
+  .gls-footer-nav-columns {
+    display: grid;
+    gap: 32px;
+    align-items: start;
+    width: 100%;
+  }
+  .gls-footer-nav-columns:has(> :nth-child(1):last-child) {
+    grid-template-columns: 1fr;
+  }
+  .gls-footer-nav-columns:has(> :nth-child(2):last-child) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gls-footer-nav-columns:has(> :nth-child(3):last-child), .gls-footer-nav-columns:has(> :nth-child(n+4)) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gls-footer-nav-columns .gls-footer-nav-col {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-heading-static {
+    display: block !important;
+    font-family: var(--gls-font-family-base, "Sofia Pro", sans-serif);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #ffffff !important;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-heading-toggle {
+    display: none !important;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-content,
+  .gls-footer-nav-columns .gls-footer-nav-content[hidden] {
+    display: block !important;
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    padding: 0;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-item {
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-item a.gls-footer-nav-link {
+    font-family: var(--gls-font-family-base, "Sofia Pro", sans-serif);
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--gls-body-link-color, #ffffff) !important;
+    -webkit-text-decoration: none !important;
+    text-decoration: none !important;
+    text-underline-offset: var(--gls-body-link-underline-offset, 2px);
+    -webkit-text-decoration-skip: ink;
+            text-decoration-skip-ink: auto;
+    border-radius: var(--global-rounded-sm, 4px);
+    transition: color 0.2s ease, text-decoration-thickness 0.2s ease;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-item a.gls-footer-nav-link:hover, .gls-footer-nav-columns .gls-footer-nav-item a.gls-footer-nav-link:focus {
+    color: var(--gls-body-link-hover-color, #ffffff) !important;
+    -webkit-text-decoration: underline var(--gls-body-link-underline-color, #ffffff) !important;
+            text-decoration: underline var(--gls-body-link-underline-color, #ffffff) !important;
+    text-decoration-thickness: 2px !important;
+  }
+  .gls-footer-nav-columns .gls-footer-nav-item a.gls-footer-nav-link:active {
+    color: var(--gls-body-link-active-color, #ffffff) !important;
+    text-decoration-thickness: 2px !important;
+  }
+}
+
+/* ========================================================================
+   2. Secondary Legal & Utility Navigation (.gls-footer-legal)
+ ========================================================================== */
+.gls-footer-legal {
+  width: 100%;
+}
+
+.gls-footer-legal-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px 24px;
+  font-family: var(--gls-font-family-base, "Sofia Pro", sans-serif);
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media (min-width: 640px) {
+  .gls-footer-legal-list {
+    font-size: 18px;
+  }
+}
+.gls-footer-legal-list .gls-footer-legal-item a {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--gls-body-link-color, #ffffff);
+  -webkit-text-decoration: underline var(--gls-body-link-underline-color, #ffffff);
+          text-decoration: underline var(--gls-body-link-underline-color, #ffffff);
+  text-decoration-thickness: 1px;
+  text-underline-offset: var(--gls-body-link-underline-offset, 2px);
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  border-radius: var(--global-rounded-sm, 4px);
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.gls-footer-legal-list .gls-footer-legal-item a:hover, .gls-footer-legal-list .gls-footer-legal-item a:focus {
+  color: var(--color-sand-200, #dfdad1) !important;
+  text-decoration-color: var(--color-sand-200, #dfdad1) !important;
+  text-decoration-thickness: 1px;
+}
+.gls-footer-legal-list .gls-footer-legal-item a:active {
+  color: var(--color-sand-200, #dfdad1) !important;
+  text-decoration-color: var(--color-sand-200, #dfdad1) !important;
+  text-decoration-thickness: 1px;
+}
+.gls-footer-legal-list .gls-footer-legal-copyright {
+  color: #ffffff;
+}
+
 /**
  * Name:            Hack
  * Description:     Various hacks and workarounds

@@ -108,6 +108,10 @@
         "slug": "flex"
     },
     {
+        "title": "Footer Nav",
+        "slug": "footer-nav"
+    },
+    {
         "title": "Form",
         "slug": "form"
     },

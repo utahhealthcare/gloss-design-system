@@ -486,6 +486,7 @@
         'dropdown',
         'filter',
         'flex',
+        'footer-nav',
         'form',
         'grid-masonry',
         'grid-parallax',
