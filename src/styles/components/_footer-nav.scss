@@ -139,16 +139,25 @@
     .gls-footer-disclaimer {
         margin-top: 24px;
         font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif);
-        font-size: 14px;
-        line-height: 1.5;
-        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        color: rgba(255, 255, 255, 0.8) !important;
 
+        *,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
         p,
         div,
         span {
-            font-size: 14px;
-            line-height: 1.5;
-            color: rgba(255, 255, 255, 0.8);
+            font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif) !important;
+            font-size: 14px !important;
+            font-weight: 400;
+            line-height: 1.5 !important;
+            color: rgba(255, 255, 255, 0.8) !important;
             margin: 0 0 8px;
 
             &:last-child {
@@ -156,17 +165,19 @@
             }
         }
 
-        strong {
-            color: #ffffff;
+        strong,
+        b {
+            color: #ffffff !important;
+            font-weight: 700 !important;
         }
 
         a {
-            color: #ffffff;
-            text-decoration: underline;
+            color: #ffffff !important;
+            text-decoration: underline !important;
 
             &:hover,
             &:focus {
-                color: #ffffff;
+                color: #ffffff !important;
             }
         }
     }

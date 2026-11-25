@@ -24342,33 +24342,51 @@ a:not([class*=gls-button]):has(.gls-trailing-arrow):focus > span:not(.gls-traili
 .gls-footer-social-block .gls-footer-disclaimer {
   margin-top: 24px;
   font-family: var(--gls-font-family-base, "Sofia Pro", sans-serif);
-  font-size: 14px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
+.gls-footer-social-block .gls-footer-disclaimer *,
+.gls-footer-social-block .gls-footer-disclaimer h1,
+.gls-footer-social-block .gls-footer-disclaimer h2,
+.gls-footer-social-block .gls-footer-disclaimer h3,
+.gls-footer-social-block .gls-footer-disclaimer h4,
+.gls-footer-social-block .gls-footer-disclaimer h5,
+.gls-footer-social-block .gls-footer-disclaimer h6,
 .gls-footer-social-block .gls-footer-disclaimer p,
 .gls-footer-social-block .gls-footer-disclaimer div,
 .gls-footer-social-block .gls-footer-disclaimer span {
-  font-size: 14px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--gls-font-family-base, "Sofia Pro", sans-serif) !important;
+  font-size: 14px !important;
+  font-weight: 400;
+  line-height: 1.5 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
   margin: 0 0 8px;
 }
+.gls-footer-social-block .gls-footer-disclaimer *:last-child,
+.gls-footer-social-block .gls-footer-disclaimer h1:last-child,
+.gls-footer-social-block .gls-footer-disclaimer h2:last-child,
+.gls-footer-social-block .gls-footer-disclaimer h3:last-child,
+.gls-footer-social-block .gls-footer-disclaimer h4:last-child,
+.gls-footer-social-block .gls-footer-disclaimer h5:last-child,
+.gls-footer-social-block .gls-footer-disclaimer h6:last-child,
 .gls-footer-social-block .gls-footer-disclaimer p:last-child,
 .gls-footer-social-block .gls-footer-disclaimer div:last-child,
 .gls-footer-social-block .gls-footer-disclaimer span:last-child {
   margin-bottom: 0;
 }
-.gls-footer-social-block .gls-footer-disclaimer strong {
-  color: #ffffff;
+.gls-footer-social-block .gls-footer-disclaimer strong,
+.gls-footer-social-block .gls-footer-disclaimer b {
+  color: #ffffff !important;
+  font-weight: 700 !important;
 }
 .gls-footer-social-block .gls-footer-disclaimer a {
-  color: #ffffff;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #ffffff !important;
+  -webkit-text-decoration: underline !important;
+  text-decoration: underline !important;
 }
 .gls-footer-social-block .gls-footer-disclaimer a:hover, .gls-footer-social-block .gls-footer-disclaimer a:focus {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 /* ========================================================================
