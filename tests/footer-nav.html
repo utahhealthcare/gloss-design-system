@@ -3,155 +3,288 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Footer Nav - Gloss tests</title>
+        <title>Footer Suite &amp; Navigation - Gloss tests</title>
         <script src="js/test.js"></script>
     </head>
 
     <body>
         <div class="gls-container gls-margin-large-top gls-margin-large-bottom">
-            <h1>Footer Nav</h1>
+            <h1>Footer Component Suite</h1>
             <p class="gls-text-lead">
-                Responsive footer primary column navigation (<code>.gls-footer-nav</code>) with
-                mobile accordion disclosure and auto-adapting CSS grid layouts, paired with
-                institutional legal and policy links row (<code>.gls-footer-legal</code>).
+                Complete institutional global footer suite including outer shell
+                (<code>.gls-footer-global</code>), responsive layout grid
+                (<code>.gls-footer-main-grid</code>), branding column
+                (<code>.gls-footer-social-block</code>), social buttons
+                (<code>.gls-social-btn</code>), accordion/static navigation columns
+                (<code>.gls-footer-nav</code>), and utility row
+                (<code>.gls-footer-utility-row</code>).
             </p>
+        </div>
 
-            <h2>3-Column Primary Navigation &amp; Legal Row</h2>
-            <p class="gls-text-meta">
-                Responsive layout: collapsible accordion (&lt; 640px) &rarr; 3 columns (640px+).
-            </p>
+        <!-- Full Global Footer Suite Demo -->
+        <footer class="gls-footer-global gls-margin-large-bottom">
+            <div class="gls-container">
+                <div class="gls-footer-main-grid">
+                    <!-- Branding Column -->
+                    <div class="gls-footer-branding-col">
+                        <div class="gls-footer-social-block">
+                            <div class="gls-footer-brand-top">
+                                <div class="gls-footer-logo gls-margin-bottom">
+                                    <svg
+                                        width="216"
+                                        height="38"
+                                        viewBox="0 0 216 38"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        aria-label="University of Utah Health Logo"
+                                    >
+                                        <rect width="38" height="38" rx="4" fill="#CC0000" />
+                                        <text
+                                            x="19"
+                                            y="26"
+                                            font-family="Sofia Pro, sans-serif"
+                                            font-size="22"
+                                            font-weight="bold"
+                                            fill="#FFFFFF"
+                                            text-anchor="middle"
+                                        >
+                                            U
+                                        </text>
+                                        <text
+                                            x="48"
+                                            y="18"
+                                            font-family="Sofia Pro, sans-serif"
+                                            font-size="14"
+                                            font-weight="600"
+                                            fill="#FFFFFF"
+                                        >
+                                            HEALTH
+                                        </text>
+                                        <text
+                                            x="48"
+                                            y="32"
+                                            font-family="Sofia Pro, sans-serif"
+                                            font-size="11"
+                                            fill="#DFDAD1"
+                                        >
+                                            UNIVERSITY OF UTAH
+                                        </text>
+                                    </svg>
+                                </div>
+                                <address class="gls-footer-address">
+                                    50 North Medical Drive<br />
+                                    Salt Lake City, UT 84132
+                                </address>
+                            </div>
 
-            <div class="gls-background-sand-800 gls-padding gls-margin-bottom">
-                <nav class="gls-footer-nav" aria-label="Footer Navigation Demo">
-                    <ul
-                        class="gls-footer-nav-columns gls-accordion"
-                        gls-accordion="multiple: true; targets: .gls-footer-nav-col;"
-                    >
-                        <li class="gls-footer-nav-col">
-                            <h3 class="gls-footer-nav-heading-static">Patient Care</h3>
-                            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#"
-                                >Patient Care</a
-                            >
-                            <div class="gls-accordion-content gls-footer-nav-content">
-                                <ul class="gls-list gls-margin-remove">
-                                    <li class="gls-footer-nav-item">
+                            <div class="gls-footer-brand-bottom">
+                                <div class="gls-footer-contact-links">
+                                    <div class="gls-footer-contact-link-item">
+                                        <a href="tel:8015812121" class="gls-button gls-button-text">
+                                            <span class="gls-button-label">801-581-2121</span>
+                                        </a>
+                                    </div>
+                                    <div class="gls-footer-contact-link-item">
                                         <a
-                                            href="#find-a-doctor"
-                                            class="gls-footer-nav-link show-focus"
-                                            >Find a Doctor</a
+                                            href="mailto:contact@uhealth.utah.edu"
+                                            class="gls-button gls-button-text"
                                         >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#locations" class="gls-footer-nav-link show-focus"
-                                            >Locations &amp; Directions</a
-                                        >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#services" class="gls-footer-nav-link show-focus"
-                                            >Services &amp; Treatments</a
-                                        >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#mychart" class="gls-footer-nav-link show-focus"
-                                            >MyChart Patient Portal</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                                            <span class="gls-button-label"
+                                                >contact@uhealth.utah.edu</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
 
-                        <li class="gls-footer-nav-col">
-                            <h3 class="gls-footer-nav-heading-static">Academics &amp; Research</h3>
-                            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#"
-                                >Academics &amp; Research</a
-                            >
-                            <div class="gls-accordion-content gls-footer-nav-content">
-                                <ul class="gls-list gls-margin-remove">
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#som" class="gls-footer-nav-link show-focus"
-                                            >School of Medicine</a
-                                        >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#nursing" class="gls-footer-nav-link show-focus"
-                                            >College of Nursing</a
-                                        >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#pharmacy" class="gls-footer-nav-link show-focus"
-                                            >College of Pharmacy</a
-                                        >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a
-                                            href="#clinical-trials"
-                                            class="gls-footer-nav-link show-focus"
-                                            >Clinical Trials</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                                <div class="gls-footer-social-icons">
+                                    <a href="#" class="gls-social-btn" aria-label="Facebook">
+                                        <span gls-icon="icon: facebook"></span>
+                                    </a>
+                                    <a href="#" class="gls-social-btn" aria-label="X / Twitter">
+                                        <span gls-icon="icon: twitter"></span>
+                                    </a>
+                                    <a href="#" class="gls-social-btn" aria-label="Instagram">
+                                        <span gls-icon="icon: instagram"></span>
+                                    </a>
+                                    <a href="#" class="gls-social-btn" aria-label="YouTube">
+                                        <span gls-icon="icon: youtube"></span>
+                                    </a>
+                                </div>
 
-                        <li class="gls-footer-nav-col">
-                            <h3 class="gls-footer-nav-heading-static">About University Health</h3>
-                            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#"
-                                >About University Health</a
-                            >
-                            <div class="gls-accordion-content gls-footer-nav-content">
-                                <ul class="gls-list gls-margin-remove">
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#about" class="gls-footer-nav-link show-focus"
-                                            >About Our System</a
-                                        >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#careers" class="gls-footer-nav-link show-focus"
-                                            >Careers &amp; Jobs</a
-                                        >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#news" class="gls-footer-nav-link show-focus"
-                                            >Newsroom &amp; Media</a
-                                        >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#giving" class="gls-footer-nav-link show-focus"
-                                            >Giving &amp; Support</a
-                                        >
-                                    </li>
-                                </ul>
+                                <div class="gls-footer-disclaimer">
+                                    <p>
+                                        <strong>University of Utah Health</strong> is the state’s
+                                        only academic medical center.
+                                    </p>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
-                </nav>
+                        </div>
+                    </div>
 
-                <div class="gls-footer-legal gls-margin-large-top">
-                    <ul class="gls-footer-legal-list">
-                        <li class="gls-footer-legal-item">
-                            <a href="#pricing" class="show-focus">Price Transparency</a>
-                        </li>
-                        <li class="gls-footer-legal-item">
-                            <a href="#privacy" class="show-focus">Patient Privacy</a>
-                        </li>
-                        <li class="gls-footer-legal-item">
-                            <a href="#rights" class="show-focus"
-                                >Patient Rights &amp; Responsibilities</a
+                    <!-- Navigation Columns -->
+                    <div class="gls-footer-navigation-col">
+                        <nav class="gls-footer-nav" aria-label="Footer Navigation">
+                            <ul
+                                class="gls-footer-nav-columns gls-accordion"
+                                gls-accordion="multiple: true; targets: .gls-footer-nav-col;"
                             >
-                        </li>
-                        <li class="gls-footer-legal-item">
-                            <a href="#disclaimer" class="show-focus">Disclaimer</a>
-                        </li>
-                        <li class="gls-footer-legal-item gls-footer-legal-copyright">
-                            Copyright &copy; 2026 University of Utah Health
-                        </li>
-                    </ul>
+                                <li class="gls-footer-nav-col">
+                                    <h3 class="gls-footer-nav-heading-static">Patient Care</h3>
+                                    <a
+                                        class="gls-accordion-title gls-footer-nav-heading-toggle"
+                                        href="#"
+                                        >Patient Care</a
+                                    >
+                                    <div class="gls-accordion-content gls-footer-nav-content">
+                                        <ul class="gls-list gls-margin-remove">
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#find-a-doctor"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >Find a Doctor</a
+                                                >
+                                            </li>
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#locations"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >Locations &amp; Directions</a
+                                                >
+                                            </li>
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#services"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >Services &amp; Treatments</a
+                                                >
+                                            </li>
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#mychart"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >MyChart Patient Portal</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="gls-footer-nav-col">
+                                    <h3 class="gls-footer-nav-heading-static">Academics</h3>
+                                    <a
+                                        class="gls-accordion-title gls-footer-nav-heading-toggle"
+                                        href="#"
+                                        >Academics</a
+                                    >
+                                    <div class="gls-accordion-content gls-footer-nav-content">
+                                        <ul class="gls-list gls-margin-remove">
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#som"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >School of Medicine</a
+                                                >
+                                            </li>
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#nursing"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >College of Nursing</a
+                                                >
+                                            </li>
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#pharmacy"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >College of Pharmacy</a
+                                                >
+                                            </li>
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#clinical-trials"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >Clinical Trials</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="gls-footer-nav-col">
+                                    <h3 class="gls-footer-nav-heading-static">About Us</h3>
+                                    <a
+                                        class="gls-accordion-title gls-footer-nav-heading-toggle"
+                                        href="#"
+                                        >About Us</a
+                                    >
+                                    <div class="gls-accordion-content gls-footer-nav-content">
+                                        <ul class="gls-list gls-margin-remove">
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#about"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >About Our System</a
+                                                >
+                                            </li>
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#careers"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >Careers &amp; Jobs</a
+                                                >
+                                            </li>
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#news"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >Newsroom &amp; Media</a
+                                                >
+                                            </li>
+                                            <li class="gls-footer-nav-item">
+                                                <a
+                                                    href="#giving"
+                                                    class="gls-footer-nav-link show-focus"
+                                                    >Giving &amp; Support</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="gls-footer-utility-row">
+                    <div class="gls-footer-legal">
+                        <ul class="gls-footer-legal-list">
+                            <li class="gls-footer-legal-item">
+                                <a href="#pricing" class="show-focus">Price Transparency</a>
+                            </li>
+                            <li class="gls-footer-legal-item">
+                                <a href="#privacy" class="show-focus">Patient Privacy</a>
+                            </li>
+                            <li class="gls-footer-legal-item">
+                                <a href="#rights" class="show-focus"
+                                    >Patient Rights &amp; Responsibilities</a
+                                >
+                            </li>
+                            <li class="gls-footer-legal-item">
+                                <a href="#disclaimer" class="show-focus">Disclaimer</a>
+                            </li>
+                            <li class="gls-footer-legal-item gls-footer-legal-copyright">
+                                Copyright &copy; 2026 University of Utah Health
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </footer>
 
-            <h2>2-Column Primary Navigation</h2>
+        <div class="gls-container gls-margin-large-bottom">
+            <h2>Isolated Column Navigation Grids</h2>
             <p class="gls-text-meta">
-                Responsive layout: collapsible accordion (&lt; 640px) &rarr; 2 columns (640px+).
+                Stand-alone 2-column and 1-column layouts inside <code>.gls-footer-nav</code>.
             </p>
 
             <div class="gls-background-sand-800 gls-padding gls-margin-bottom">
@@ -177,11 +310,6 @@
                                             >Pay Your Bill</a
                                         >
                                     </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#insurance" class="gls-footer-nav-link show-focus"
-                                            >Insurance Coverage</a
-                                        >
-                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -201,53 +329,6 @@
                                     <li class="gls-footer-nav-item">
                                         <a href="#emergency" class="gls-footer-nav-link show-focus"
                                             >Emergency Department</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <h2>1-Column Primary Navigation</h2>
-            <p class="gls-text-meta">
-                Responsive layout: single accordion item (&lt; 640px) &rarr; full-width column
-                (640px+).
-            </p>
-
-            <div class="gls-background-sand-800 gls-padding">
-                <nav class="gls-footer-nav" aria-label="Footer 1-Column Demo">
-                    <ul
-                        class="gls-footer-nav-columns gls-accordion"
-                        gls-accordion="multiple: true; targets: .gls-footer-nav-col;"
-                    >
-                        <li class="gls-footer-nav-col">
-                            <h3 class="gls-footer-nav-heading-static">
-                                Explore University of Utah Health
-                            </h3>
-                            <a class="gls-accordion-title gls-footer-nav-heading-toggle" href="#"
-                                >Explore University of Utah Health</a
-                            >
-                            <div class="gls-accordion-content gls-footer-nav-content">
-                                <ul class="gls-list gls-margin-remove">
-                                    <li class="gls-footer-nav-item">
-                                        <a
-                                            href="#find-a-doctor"
-                                            class="gls-footer-nav-link show-focus"
-                                            >Find a Doctor</a
-                                        >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a href="#locations" class="gls-footer-nav-link show-focus"
-                                            >Locations &amp; Directions</a
-                                        >
-                                    </li>
-                                    <li class="gls-footer-nav-item">
-                                        <a
-                                            href="#patient-portal"
-                                            class="gls-footer-nav-link show-focus"
-                                            >MyChart Portal</a
                                         >
                                     </li>
                                 </ul>
