@@ -24,6 +24,10 @@
             "slug": "hero-banner"
         },
         {
+            "title": "Footer Nav",
+            "slug": "footer-nav"
+        },
+        {
             "title": "Body",
             "slug": "body"
         }

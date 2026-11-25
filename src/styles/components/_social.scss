@@ -219,3 +219,46 @@ a.gls-social-youtube:active {
     border-color: transparent;
     color: $social-text-color;
 }
+
+/* Social Button (.gls-social-btn)
+ ========================================================================== */
+
+.gls-footer-social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.gls-social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--border-rounded-lg, 8px);
+    background-color: transparent;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+
+    &:hover,
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: #ffffff;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus-visible {
+        outline: 2px solid transparent !important;
+        outline-offset: var(--focus-ring-offset, 0) !important;
+        box-shadow: var(--focus-ring-box-shadow) !important;
+        z-index: 2;
+    }
+
+    &:focus:not(:focus-visible) {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}

@@ -1,0 +1,444 @@
+// ========================================================================
+// Component: Global Footer & Navigation Suite
+// ========================================================================
+
+/* ========================================================================
+   1. Global Footer Shell (.gls-footer-global)
+ ========================================================================== */
+
+.gls-footer-global {
+    background: var(--color-sand-800, #4a4742) !important;
+    background-color: var(--color-sand-800, #4a4742) !important;
+    color: #ffffff;
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+
+    @media (min-width: $breakpoint-medium) {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+    }
+}
+
+/* ========================================================================
+   2. Main Layout Grid (.gls-footer-main-grid)
+ ========================================================================== */
+
+.gls-footer-main-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    // Tablet (640px – 959px): 2x2 Grid with flattened intermediate wrappers
+    @media (min-width: $breakpoint-small) and (max-width: ($breakpoint-medium - 1px)) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px 32px;
+
+        .gls-footer-navigation-col,
+        .gls-footer-navigation-col > div,
+        .gls-footer-navigation-col > nav,
+        .gls-footer-nav,
+        .gls-footer-nav-columns {
+            display: contents !important;
+        }
+    }
+
+    // Desktop (≥ 960px): 280px Branding + 1fr Navigation split
+    @media (min-width: $breakpoint-medium) {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 64px;
+        align-items: stretch;
+        justify-content: space-between;
+
+        .gls-footer-branding-col,
+        .gls-footer-branding-col > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .gls-footer-navigation-col,
+        .gls-footer-nav {
+            width: 100%;
+        }
+    }
+}
+
+/* ========================================================================
+   3. Institutional Branding & Contact Block (.gls-footer-social-block)
+ ========================================================================== */
+
+.gls-footer-social-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .gls-footer-brand-top {
+        flex-shrink: 0;
+    }
+
+    .gls-footer-brand-bottom {
+        margin-top: 24px;
+        flex-shrink: 0;
+
+        @media (min-width: $breakpoint-medium) {
+            margin-top: auto;
+        }
+    }
+
+    .gls-footer-logo img {
+        display: block;
+        max-width: 216px;
+        height: auto;
+    }
+
+    .gls-footer-address {
+        font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif);
+        font-size: 14px;
+        line-height: 1.6;
+        color: #ffffff;
+        margin: 0 0 20px;
+
+        @media (min-width: $breakpoint-medium) {
+            font-size: 16px;
+        }
+    }
+
+    .gls-footer-contact-links {
+        margin-bottom: 20px;
+
+        .gls-footer-contact-link-item {
+            margin-bottom: 6px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .gls-button-text {
+                font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.5;
+                min-height: 28px;
+                color: #ffffff;
+
+                @media (min-width: $breakpoint-medium) {
+                    font-size: 18px;
+                }
+
+                .gls-button-label {
+                    font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif);
+                    font-weight: 700;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .gls-footer-disclaimer {
+        margin-top: 24px;
+        font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif);
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        color: rgba(255, 255, 255, 0.8) !important;
+
+        *,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        div,
+        span {
+            font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif) !important;
+            font-size: 14px !important;
+            font-weight: 400;
+            line-height: 1.5 !important;
+            color: rgba(255, 255, 255, 0.8) !important;
+            margin: 0 0 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        strong,
+        b {
+            color: #ffffff !important;
+            font-weight: 700 !important;
+        }
+
+        a {
+            color: #ffffff !important;
+            text-decoration: underline !important;
+
+            &:hover,
+            &:focus {
+                color: #ffffff !important;
+            }
+        }
+    }
+}
+
+/* ========================================================================
+   4. Primary Column Navigation (.gls-footer-nav, .gls-footer-nav-columns)
+ ========================================================================== */
+
+.gls-footer-nav {
+    width: 100%;
+}
+
+.gls-footer-nav-columns {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    // Strip UIkit accordion default item margins
+    > :nth-child(n + 2) {
+        margin-top: 0 !important;
+        border-top: none !important;
+    }
+
+    // Mobile (< 640px): Collapsible Accordion Stack
+    @media (max-width: ($breakpoint-small - 1px)) {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+        .gls-footer-nav-col {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: none !important;
+            margin-top: 0 !important;
+            padding: 0 !important;
+            list-style: none;
+        }
+
+        // Static desktop heading is hidden on mobile
+        .gls-footer-nav-heading-static {
+            display: none !important;
+        }
+
+        // Accordion toggle inherits flex layout, 48px touch targets,
+        // typography, rotating chevron, and keyboard-only focus ring from .gls-accordion-title
+        .gls-footer-nav-heading-toggle {
+            width: calc(100% + 12px) !important;
+            margin: 0 -6px;
+        }
+
+        // Explicit chevron icon styling and rotation when an icon element is used
+        .gls-footer-nav-heading-icon,
+        [gls-icon*='chevron'] {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            transition: transform 0.25s ease;
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+
+            svg {
+                width: 14px;
+                height: 14px;
+                stroke: #ffffff;
+                color: #ffffff;
+                transition: transform 0.25s ease;
+            }
+        }
+
+        .gls-footer-nav-col.gls-open .gls-footer-nav-heading-icon,
+        .gls-footer-nav-col.gls-open [gls-icon*='chevron'],
+        .gls-open > .gls-footer-nav-heading-toggle .gls-footer-nav-heading-icon,
+        .gls-open > .gls-footer-nav-heading-toggle [gls-icon*='chevron'],
+        .gls-footer-nav-heading-toggle[aria-expanded='true'] .gls-footer-nav-heading-icon,
+        .gls-footer-nav-heading-toggle[aria-expanded='true'] [gls-icon*='chevron'] {
+            transform: rotate(180deg);
+        }
+
+        .gls-footer-nav-content {
+            padding-top: 4px;
+            padding-bottom: 16px;
+        }
+
+        .gls-footer-nav-item {
+            padding: 6px 0;
+            list-style: none;
+
+            a.gls-footer-nav-link {
+                font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif);
+                font-size: 16px;
+                line-height: 1.5;
+                color: var(--gls-body-link-color, #ffffff) !important;
+                text-decoration: none !important;
+                text-underline-offset: var(--gls-body-link-underline-offset, 2px);
+                text-decoration-skip-ink: auto;
+                border-radius: var(--global-rounded-sm, 4px);
+                transition:
+                    color 0.2s ease,
+                    text-decoration-thickness 0.2s ease;
+
+                &:hover,
+                &:focus {
+                    color: var(--gls-body-link-hover-color, #ffffff) !important;
+                    text-decoration: underline var(--gls-body-link-underline-color, #ffffff) !important;
+                    text-decoration-thickness: 2px !important;
+                }
+
+                &:active {
+                    color: var(--gls-body-link-active-color, #ffffff) !important;
+                    text-decoration-thickness: 2px !important;
+                }
+            }
+        }
+    }
+
+    // Tablet & Desktop (≥ 640px): Open Static Columns
+    @media (min-width: $breakpoint-small) {
+        display: grid;
+        gap: 32px;
+        align-items: start;
+        width: 100%;
+
+        // 1 column layout
+        &:has(> :nth-child(1):last-child) {
+            grid-template-columns: 1fr;
+        }
+
+        // 2 columns layout
+        &:has(> :nth-child(2):last-child) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        // 3 columns layout (default multi-column)
+        &:has(> :nth-child(3):last-child),
+        &:has(> :nth-child(n + 4)) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .gls-footer-nav-col {
+            list-style: none;
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none !important;
+        }
+
+        // Static non-interactive heading (never focusable via Tab)
+        .gls-footer-nav-heading-static {
+            display: block !important;
+            font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif);
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 1.4;
+            color: #ffffff !important;
+            margin: 0 0 16px;
+            padding: 0;
+        }
+
+        // Hide mobile interactive toggle on tablet/desktop
+        .gls-footer-nav-heading-toggle {
+            display: none !important;
+        }
+
+        // Force link content visible even if UIkit accordion attached [hidden]
+        .gls-footer-nav-content,
+        .gls-footer-nav-content[hidden] {
+            display: block !important;
+            height: auto !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            padding: 0;
+        }
+
+        .gls-footer-nav-item {
+            list-style: none;
+            margin-bottom: 12px;
+
+            a.gls-footer-nav-link {
+                font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif);
+                font-size: 18px;
+                line-height: 1.5;
+                color: var(--gls-body-link-color, #ffffff) !important;
+                text-decoration: none !important;
+                text-underline-offset: var(--gls-body-link-underline-offset, 2px);
+                text-decoration-skip-ink: auto;
+                border-radius: var(--global-rounded-sm, 4px);
+                transition:
+                    color 0.2s ease,
+                    text-decoration-thickness 0.2s ease;
+
+                &:hover,
+                &:focus {
+                    color: var(--gls-body-link-hover-color, #ffffff) !important;
+                    text-decoration: underline var(--gls-body-link-underline-color, #ffffff) !important;
+                    text-decoration-thickness: 2px !important;
+                }
+
+                &:active {
+                    color: var(--gls-body-link-active-color, #ffffff) !important;
+                    text-decoration-thickness: 2px !important;
+                }
+            }
+        }
+    }
+}
+
+/* ========================================================================
+   5. Utility Row & Legal Links (.gls-footer-utility-row, .gls-footer-legal)
+ ========================================================================== */
+
+.gls-footer-utility-row {
+    margin-top: 64px;
+}
+
+.gls-footer-legal {
+    width: 100%;
+}
+
+.gls-footer-legal-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px 24px;
+    font-family: var(--gls-font-family-base, 'Sofia Pro', sans-serif);
+    font-size: 14px;
+    line-height: 1.5;
+
+    @media (min-width: $breakpoint-small) {
+        font-size: 18px;
+    }
+
+    .gls-footer-legal-item a {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        color: var(--gls-body-link-color, #ffffff);
+        text-decoration: underline var(--gls-body-link-underline-color, #ffffff);
+        text-decoration-thickness: 1px;
+        text-underline-offset: var(--gls-body-link-underline-offset, 2px);
+        text-decoration-skip-ink: auto;
+        border-radius: var(--global-rounded-sm, 4px);
+        transition:
+            color 0.2s ease,
+            text-decoration-color 0.2s ease;
+
+        &:hover,
+        &:focus {
+            color: var(--color-sand-200, #dfdad1) !important;
+            text-decoration-color: var(--color-sand-200, #dfdad1) !important;
+            text-decoration-thickness: 1px;
+        }
+
+        &:active {
+            color: var(--color-sand-200, #dfdad1) !important;
+            text-decoration-color: var(--color-sand-200, #dfdad1) !important;
+            text-decoration-thickness: 1px;
+        }
+    }
+
+    .gls-footer-legal-copyright {
+        color: #ffffff;
+    }
+}
