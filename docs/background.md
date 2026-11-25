@@ -16,9 +16,8 @@ To apply a background color to an element, add one of the following classes. The
 | --------------------------- | ------------------------------------- |
 | `.gls-background-default`   | Applies the default background color. |
 | `.gls-background-muted`     | Applies a muted background color.     |
-| `.gls-background-primary`   | Applies the primary background color.  |
+| `.gls-background-primary`   | Applies the primary background color. |
 | `.gls-background-secondary` | Applies a secondary background color. |
-| `.gls-background-sand-800`  | Applies the sand-800 background color. |
 
 ```html
 <div class="gls-background-primary"></div>
